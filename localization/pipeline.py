@@ -246,6 +246,7 @@ class Pipeline:
             base_generation=None,
             model_fingerprint=f"{self.settings.model}:{self.settings.reasoning_effort}",
             staging=str(staging),
+            created_at=time.strftime("%Y-%m-%dT%H:%M:%S"),
         )
         reused: dict[str, str] = {}
         if resume:
