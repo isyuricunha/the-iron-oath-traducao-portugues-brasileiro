@@ -43,14 +43,18 @@ class _Handler(BaseHTTPRequestHandler):
                     "body": json.loads(body) if body else None,
                 }
             )
-            if server.responses:
-                status, payload = server.responses.pop(0)
-            else:
-                status, payload = 200, {
+            entry = server.responses.pop(0) if server.responses else None
+            if entry is None:
+                status, payload, delay = 200, {
                     "choices": [
                         {"message": {"content": '{"translations": {}}'}, "finish_reason": "stop"}
                     ]
-                }
+                }, 0
+            elif len(entry) == 3:
+                status, payload, delay = entry
+            else:
+                status, payload = entry
+                delay = 0
         self.send_response(status)
         if isinstance(payload, bytes):
             self.send_header("Content-Type", "text/event-stream")
@@ -59,6 +63,8 @@ class _Handler(BaseHTTPRequestHandler):
         if status == 429:
             self.send_header("Retry-After", "0")
         self.end_headers()
+        if delay:
+            time.sleep(delay)
         out = payload if isinstance(payload, bytes) else json.dumps(payload).encode()
         self.wfile.write(out)
 
@@ -184,6 +190,15 @@ class ProviderHttpTests(unittest.TestCase):
             [(200, {"choices": [{"message": {"content": ""}, "finish_reason": "stop"}]})]
         )
         provider = Provider(cfg_for(server, retries=0))
+        with self.assertRaises(TransientProviderError):
+            provider.complete([{"role": "user", "content": "x"}], make_batch(), 0)
+
+    def test_stream_idle_timeout_breaks_blocking_read(self):
+        # The gateway holds the stream open without bytes: the socket-level
+        # idle timeout must raise instead of blocking until the total
+        # request timeout.
+        server = self._server([(200, SSE_STREAM, 2.5)])
+        provider = Provider(cfg_for(server, stream=True, idle_timeout=1, retries=0))
         with self.assertRaises(TransientProviderError):
             provider.complete([{"role": "user", "content": "x"}], make_batch(), 0)
 

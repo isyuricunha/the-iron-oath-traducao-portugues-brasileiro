@@ -19,7 +19,9 @@ from __future__ import annotations
 
 import contextlib
 import json
+import queue
 import random
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -167,12 +169,44 @@ class Provider:
     def _read_stream(self, resp, req_id: str) -> ProviderResponse:
         content_parts: list[str] = []
         finish = ""
-        last_byte = time.monotonic()
-        for raw_line in resp:
+        idle = self.cfg.idle_timeout
+        # The idle timeout must fire even while readline() blocks: urllib's
+        # total timeout only applies to the initial socket, not to later
+        # reads. Read lines on a daemon thread and wait on a queue with the
+        # idle timeout; an empty queue means the gateway held the stream
+        # open without bytes.
+        lines: queue.Queue = queue.Queue(maxsize=64)
+
+        def reader() -> None:
+            try:
+                while True:
+                    raw = resp.readline()
+                    if raw == b"":
+                        lines.put(("eof", None))
+                        return
+                    lines.put(("line", raw))
+            except OSError as exc:
+                lines.put(("error", exc))
+
+        thread = threading.Thread(target=reader, daemon=True)
+        thread.start()
+        while True:
+            try:
+                kind, payload = lines.get(timeout=idle)
+            except queue.Empty as exc:
+                raise TransientProviderError(
+                    f"stream idle timeout (no bytes for {idle:.0f}s, request {req_id})"
+                ) from exc
+            if kind == "error":
+                raise TransientProviderError(
+                    f"stream read failed (request {req_id}): {payload}"
+                ) from payload
+            if kind == "eof":
+                break
+            raw_line: bytes = payload
             line = raw_line.decode("utf-8", "replace").strip()
             if not line:
                 continue
-            last_byte = time.monotonic()
             if line == "data: [DONE]":
                 break
             if not line.startswith("data: "):
@@ -181,8 +215,6 @@ class Provider:
                 event = json.loads(line[6:])
             except json.JSONDecodeError:
                 continue
-            if self._idle_expired(last_byte):
-                raise TransientProviderError(f"stream idle timeout (request {req_id})")
             delta = event.get("choices", [{}])[0].get("delta", {}) or {}
             piece = delta.get("content")
             if piece:
@@ -198,9 +230,6 @@ class Provider:
                 f"finish_reason=length before complete JSON (request {req_id})"
             )
         return ProviderResponse(content=content, finish_reason=finish, request_id=req_id)
-
-    def _idle_expired(self, last_byte: float) -> bool:
-        return (time.monotonic() - last_byte) > self.cfg.idle_timeout
 
     def _from_message(self, data: dict, req_id: str) -> ProviderResponse:
         try:

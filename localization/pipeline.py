@@ -317,7 +317,7 @@ class Pipeline:
             self.checkpoint.save_units(saves, self.generation_id)
             committed_prefix += 1
             self.stats.waves = (self.stats.waves or 0) + 1
-            if committed_prefix % 5 == 0 or committed_prefix == len(batches):
+            if committed_prefix == 1 or committed_prefix % 5 == 0 or committed_prefix == len(batches):
                 elapsed = time.monotonic() - start_time
                 rate = committed_prefix / elapsed if elapsed > 0 else 0
                 remaining = len(batches) - committed_prefix
