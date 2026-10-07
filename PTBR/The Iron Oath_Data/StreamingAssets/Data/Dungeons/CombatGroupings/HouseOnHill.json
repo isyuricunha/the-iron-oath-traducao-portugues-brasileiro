@@ -1,0 +1,15 @@
+{
+	Name: "HouseOnHill",
+	NameDisplay: "Inimigos",
+	Group: ["SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	ScoutingReport: ["Flagelado:Flagelado","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "HouseOnHill",
+	NameDisplay: "Inimigos",
+	Group: ["DeathLord","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

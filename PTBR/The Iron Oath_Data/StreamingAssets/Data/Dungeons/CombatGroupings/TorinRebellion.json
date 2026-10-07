@@ -1,0 +1,6 @@
+{
+	Name: "TorinRebellion",
+	Group: ["Warlord","BlackSkullHunter","BlackSkullKnight","BlackSkullRitualist","BlackSkullGrenadier","Warhound","NullbeastDisrupter","RebelKnight","RebelBannerman","RebelSkirmisher"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

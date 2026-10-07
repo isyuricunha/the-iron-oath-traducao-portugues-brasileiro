@@ -1,0 +1,6 @@
+{
+	Name: "VengeanceDaemond",
+	Group: ["MercArcher","Sabujo de Sangue","Warhound","AdultHoarwulf","YoungHoarwulf"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

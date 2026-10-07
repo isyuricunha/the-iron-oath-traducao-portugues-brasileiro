@@ -1,0 +1,59 @@
+{
+  Character: "Caçadora",
+  UniqueId: "Hone",
+  AbilityName: "tio_HuntressHoneName",
+  Description: "tio_HuntressHoneDescription",
+  DmgType: "Perfurante",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "0",
+}
+{
+  Character: "Caçadora",
+  UniqueId: "Overwatch",
+  AbilityName: "tio_HuntressOverwatchName",
+  Description: "tio_HuntressOverwatchDescription",
+  DmgType: "Perfurante",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "0",
+}
+{
+  Character: "Caçadora",
+  UniqueId: "RapidFire",
+  AbilityName: "tio_HuntressRapidFireName",
+  Description: "tio_HuntressRapidFireDescription",
+  DmgType: "Perfurante",
+  DmgValue: "0.9",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Caçadora",
+  UniqueId: "Volley",
+  AbilityName: "tio_HuntressVolleyName",
+  Description: "tio_HuntressVolleyDescription",
+  DmgType: "Perfurante",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Caçadora",
+  UniqueId: "RestrainingOrder",
+  AbilityName: "tio_HuntressRestrainingOrderName",
+  Description: "tio_HuntressRestrainingOrderDescription",
+  DmgType: "Perfurante",
+  Charges: "3",
+  DmgValue: "0.5",
+  Range: "1",
+}
+{
+  Character: "Caçadora",
+  UniqueId: "TrueSight",
+  AbilityName: "tio_HuntressTrueSightName",
+  Description: "tio_HuntressTrueSightDescription",
+  DmgType: "Perfurante",
+  Charges: "3",
+  Range: "99",
+}

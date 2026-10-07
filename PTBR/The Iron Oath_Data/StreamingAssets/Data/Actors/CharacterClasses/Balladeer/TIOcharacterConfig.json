@@ -1,0 +1,13 @@
+{
+	Name: "tio_ClassNameBalladeer",
+	Health: ["355","355"],
+	Defense: ["4","4"],
+	Power: ["25","25"],
+	Accuracy: ["75","75"],
+	CriticalChance: ["4","4"],
+	Evasion: ["3","3"],
+	Mending: ["32","32"],	
+	DefaultWeapon: "tio_defaultLute",
+	PortraitHead: ["male1","male2","male3","male4","male5"],
+	PortraitApparel: ["4","5","6","7","8","9"],
+}

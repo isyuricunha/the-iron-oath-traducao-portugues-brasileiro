@@ -1,0 +1,8 @@
+{
+	Name: "DarkDeeds",
+	NameDisplay: "Necromante",
+	Group: ["DeathLord","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	ScoutingReport: ["Necromancers:Necromantes","Undead:Mortos-Vivos"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

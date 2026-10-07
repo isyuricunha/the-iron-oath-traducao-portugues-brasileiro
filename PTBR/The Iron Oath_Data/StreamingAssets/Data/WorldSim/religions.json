@@ -1,0 +1,64 @@
+{
+  UniqueId: "vismyr",
+	Name: "Vismyr, o Criador de Tudo",
+    Diety: "",
+    Description: "",
+    Aggression: "100",
+    DietyName: "",
+    DietyDescription: "",
+    OtherReligionRelationship: [],
+    YearFounded: "0",
+    // if someone has the trait Religious then the following traits will be assigned to them also
+    TraitsForReligiousPeople: [],
+
+	// 0-1
+    Tithe: "0.1",
+}
+{
+  UniqueId: "divines",
+	Name: "Divindades",
+    Diety: "",
+    Description: "",
+    Aggression: "100",
+    DietyName: "",
+    DietyDescription: "",
+    OtherReligionRelationship: [],
+    YearFounded: "0",
+    // if someone has the trait Religious then the following traits will be assigned to them also
+    TraitsForReligiousPeople: [],
+
+	// 0-1
+    Tithe: "0.1",
+}
+{
+  UniqueId: "ascended",
+	Name: "Ascendidos",
+    Diety: "",
+    Description: "",
+    Aggression: "100",
+    DietyName: "",
+    DietyDescription: "",
+    OtherReligionRelationship: [],
+    YearFounded: "0",
+    // if someone has the trait Religious then the following traits will be assigned to them also
+    TraitsForReligiousPeople: [],
+
+	// 0-1
+    Tithe: "0.1",
+}
+{
+  UniqueId: "elderGods",
+	Name: "Deuses Anciões",
+    Diety: "",
+    Description: "",
+    Aggression: "100",
+    DietyName: "",
+    DietyDescription: "",
+    OtherReligionRelationship: [],
+    YearFounded: "0",
+    // if someone has the trait Religious then the following traits will be assigned to them also
+    TraitsForReligiousPeople: [],
+
+	// 0-1
+    Tithe: "0.1",
+}

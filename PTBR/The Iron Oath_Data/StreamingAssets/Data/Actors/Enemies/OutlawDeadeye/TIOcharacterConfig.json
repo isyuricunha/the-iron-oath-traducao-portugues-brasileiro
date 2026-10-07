@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameOutlawDeadeye",
+	Health: ["380"],
+	Power: ["160"],
+	Mending: ["0"],
+	Defense: ["5"],
+	Evasion: ["20"],
+	Accuracy: ["95"],
+	CriticalChance: ["25"],
+	Speed: ["4"],
+	Move: "4",
+	Resists: [],
+	Immunities: ["Marca"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "6",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["0","1","2","3","3"],
+}

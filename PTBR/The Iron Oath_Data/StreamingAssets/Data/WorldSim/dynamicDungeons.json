@@ -1,0 +1,5 @@
+{
+	id: "banditCamp",
+	icon: "fort",
+	enemies: "bandits",
+}

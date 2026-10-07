@@ -1,0 +1,421 @@
+{
+  "name": "The Iron Oath",
+  "ogmoVersion": "3.4.0",
+  "levelPaths": ["."],
+  "backgroundColor": "#282c34ff",
+  "gridColor": "#3c4049cc",
+  "anglesRadians": true,
+  "directoryDepth": 5,
+  "layerGridDefaultSize": {"x": 32, "y": 32},
+  "levelDefaultSize": {"x": 320, "y": 240},
+  "levelMinSize": {"x": 2048, "y": 2048},
+  "levelMaxSize": {"x": 2048, "y": 2048},
+  "levelValues": [
+    {"name": "ID", "definition": "Text", "display": 0, "defaults": ""},
+    {"name": "Tileset", "definition": "String", "display": 0, "defaults": "", "maxLength": 0, "trimWhitespace": true},
+    {
+      "name": "Size",
+      "definition": "Enum",
+      "display": 0,
+      "choices": ["Small", "Medium", "Large"],
+      "defaults": 0
+    },
+    {"name": "Tags", "definition": "Text", "display": 0, "defaults": ""}
+  ],
+  "defaultExportMode": ".json",
+  "compactExport": false,
+  "externalScript": "",
+  "playCommand": "",
+  "entityTags": [],
+  "layers": [
+    {
+      "definition": "entity",
+      "name": "Events",
+      "gridSize": {"x": 32, "y": 32},
+      "exportID": "76148432",
+      "requiredTags": [],
+      "excludedTags": []
+    },
+    {
+      "definition": "tile",
+      "name": "Layout",
+      "gridSize": {"x": 32, "y": 32},
+      "exportID": "76044470",
+      "exportMode": 0,
+      "arrayMode": 0,
+      "defaultTileset": "Dungeons"
+    }
+  ],
+  "entities": [
+    {
+      "exportID": "76055586",
+      "name": "Event",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff00eaff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "ScriptedEventName", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true},
+        {"name": "IsGoal", "definition": "Boolean", "display": 1, "defaults": false}
+      ]
+    },
+    {
+      "exportID": "76104019",
+      "name": "Start",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#58ff00ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "ScriptedEventName", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true}
+      ]
+    },
+    {
+      "exportID": "76105783",
+      "name": "Trap",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#fff300ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {
+          "name": "TrapType",
+          "definition": "Enum",
+          "display": 1,
+          "choices": ["PitTrap", "CavePitTrap"],
+          "defaults": 0
+        },
+        {"name": "Difficulty", "definition": "Integer", "display": 1, "defaults": 0, "bounded": false, "min": 0, "max": 100}
+      ]
+    },
+    {
+      "exportID": "76105222",
+      "name": "Combat",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#000bffff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "PossibleKey", "definition": "Boolean", "display": 1, "defaults": false}
+      ]
+    },
+    {
+      "exportID": "76108145",
+      "name": "Config",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#9800ffff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "Blocked", "definition": "Boolean", "display": 0, "defaults": false},
+        {"name": "Locked", "definition": "Boolean", "display": 0, "defaults": false},
+        {"name": "ScriptedEvent", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true}
+      ]
+    },
+    {
+      "exportID": "76103581",
+      "name": "Dialogue",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#5c0014ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "Dialogue", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true}
+      ]
+    },
+    {
+      "exportID": "76109838",
+      "name": "Secret",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#075c00ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "DiscoveryDifficulty", "definition": "Integer", "display": 1, "defaults": 0, "bounded": false, "min": 0, "max": 100},
+        {"name": "ScriptedEvent", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true},
+        {
+          "name": "Type",
+          "definition": "Enum",
+          "display": 0,
+          "choices": ["random", "consumables", "equipment", "miscItems", "enemyEncounter"],
+          "defaults": 0
+        }
+      ]
+    },
+    {
+      "exportID": "76108970",
+      "name": "OptionalEvent",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#00ffc6ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "ScriptedEventName", "definition": "String", "display": 1, "defaults": "", "maxLength": 0, "trimWhitespace": true}
+      ]
+    },
+    {
+      "exportID": "76103788",
+      "name": "RepeatableEvent",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff9300ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "PossibleKey", "definition": "Boolean", "display": 1, "defaults": false},
+        {
+          "name": "EventClassification",
+          "definition": "Enum",
+          "display": 1,
+          "choices": ["Unknown", "Positive", "Negative", "Neutral"],
+          "defaults": 0
+        }
+      ]
+    }
+  ],
+  "tilesets": [
+    {"label": "Dungeons", "path": "../TheIronOath/tiles.png", "image": "data:image/png;base64,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hjIqMBGlVSXFQIr2Yy7+IdufJJdErjIYORZQhQLR9oP/we9ujcLUpJMUigFdL5b1MQIEdoFm3bK+jy2reQL4noErte2vNoDZT9LrbS1yBPRtAxfXbU3aAy53gMEnTdRFW/LR9BYKwPsZfVMOGLgFgmtOb619nD4AGepq+QY4OARGi5S97vLu7s7e/j3T6u8Hbc1ypXPvgTEAAA0YaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOjdjMTQ5MGI1LTUwZjItNGZmMC1hYmFiLThjNzg5MWQ1MTczMSIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3Yjk0ZGU4Zi1kNTlkLTQ2NTgtOGRhYy03NDY3MmRiOGU0ZDAiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmOWYzNDJlZS0yNTYwLTQyN2YtODczNC1iMzQyNDg1ODczOWMiCiAgIGRjOkZvcm1hdD0iaW1hZ2UvcG5nIgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1QOlRpbWVTdGFtcD0iMTY4MTQ5Nzc1MDg5NTY3NiIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjI0IgogICB0aWZmOk9yaWVudGF0aW9uPSIxIgogICB4bXA6Q3JlYXRvclRvb2w9IkdJTVAgMi4xMCI+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InNhdmVkIgogICAgICBzdEV2dDpjaGFuZ2VkPSIvIgogICAgICBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjdjOTYxNWM1LTViMTItNDMyNy05OWE1LTUyNmEyODEwMjQ4OSIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iR2ltcCAyLjEwIChXaW5kb3dzKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMy0wNC0xNFQxNDo0MjozMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Rq4HeAAAABmJLR0QA/gDfACXDlvMJAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH5wQOEioeWAzWPAAAAJFJREFUeNrt29ENRUAQQNEZ0ZM+VKA0FehDVXwKee9PrJhzStjczJDsZkRs0VZGbU3PvwtKE0Bx/WkWbc9Mo8x08r92wbI+c/7jYAIgAK4rgMN889f59NK/HRPACkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAB8hjuBf0xFXiyZAFYAlWV4HNqax6EIgEZ27IsMpLuA2TEAAAAASUVORK5CYII=", "tileWidth": 32, "tileHeight": 32, "tileSeparationX": 0, "tileSeparationY": 0, "tileMarginX": 0, "tileMarginY": 0}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+	Name: "TorinFinal",
+	Group: ["Warlord","BlackSkullHunter","BlackSkullKnight","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","NullbeastDisrupter"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

@@ -1,0 +1,22 @@
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["Atormentado","Esfolador","Sedutora","Seduzida","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	ScoutingReport: ["Demônios:Demônio","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["Cavaleiro do Pavor","Atormentado","Esfolador","Sedutora","Encantadora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["SpectralReaper","Atormentado","Esfolador","Sedutora","Encantadora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

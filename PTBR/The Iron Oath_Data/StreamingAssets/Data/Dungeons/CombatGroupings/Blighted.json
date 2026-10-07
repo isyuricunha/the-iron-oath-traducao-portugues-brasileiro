@@ -1,0 +1,15 @@
+{
+	Name: "Corrompidos",
+	NameDisplay: "Corrompidos",
+	Group: ["BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch","DiseasedNullbeast"],
+	ScoutingReport: ["Corrompidos:Blighted","Nullbeasts:Nullbeast"],
+	Loot: ["Armadura,leve","Armadura,média","Encantamento,qualquer"],
+	Weight: 1,
+}
+{
+	Name: "Corrompidos",
+	NameDisplay: "Corrompidos",
+	Group: ["BlightedOverlord","BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

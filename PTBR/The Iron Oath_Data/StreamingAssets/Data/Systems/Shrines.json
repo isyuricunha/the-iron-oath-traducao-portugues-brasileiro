@@ -1,0 +1,137 @@
+{
+	Type: "Peras",
+	Name: "Peras, Deus da Fortitude",
+	Description: "Restaura 160 de Vida",
+	BuffShortDescription: "",
+	Value: "160",
+	Reward: "restoreHp",
+	IsActive: "true",
+}
+{
+	Type: "Haldrin",
+	Name: "Haldrin, Deus da Criação",
+	Description: "Restaura uma carga de cada habilidade de cada unidade",
+	Value: "4",
+	Reward: "restoreCharge",
+	IsActive: "true",
+}
+{
+	Type: "Dyaena",
+	Name: "Dyaena, Deusa da Misericórdia",
+	Description: "Remove todos os ferimentos",
+	Reward: "healInjuries",
+	IsActive: "true",
+}
+{
+	Type: "Hyldr",
+	Name: "Hyldr, o Guerreiro",
+	Description: "+20% de Poder pelo resto da masmorra",
+	Value: "1.2",
+	Reward: "atkBuff",
+	IsActive: "true",
+}
+{
+	Type: "Thera",
+	Name: "Thera, Deusa da Proteção",
+	Description: "Ganhe um Escudo de Dano (200) na próxima luta, com duração de 3 Rodadas",
+	Value: "200",
+	Reward: "shieldBuff",
+	IsActive: "true",
+}
+{
+	Type: "Phaetes",
+	Name: "Phaetes, Deus do Destino",
+	Description: "Revele os modificadores futuros da masmorra",
+	Reward: "revealTimeMods",
+	IsActive: "false",
+}
+{
+	Type: "Haera",
+	Name: "Haera, Deusa da Prosperidade",
+	Description: "Dobre as moedas em sua posse",
+	Value: "2",
+	Reward: "multiCoin",
+	IsActive: "true",
+}
+{
+	Type: "Teral",
+	Name: "Teral, Deus da Terra",
+	Description: "Desobstrua todas as passagens bloqueadas e trancadas",
+	Reward: "clearBlockAndLockedPassages",
+	IsActive: "false",
+}
+{
+	Type: "Ceres",
+	Name: "Ceres, Deus da Colheita",
+	Description: "Dobre os suprimentos que você possui atualmente",
+	Reward: "doubleProvisions",
+	IsActive: "true",
+}
+{
+	Type: "Osymus",
+	Name: "Osymus, Deus da Ganância",
+	Description: "Revele todos os eventos de Saque",
+	Reward: "revealLoot",
+	IsActive: "true",
+}
+{
+	Type: "TianWisdom",
+	Name: "Prova de Sabedoria de Tian",
+	Description: "Ganhe 200 XP e revele todos os eventos de Runas e Conhecimento",
+	Reward: "gainXp",
+	Value: "200",
+	IsActive: "true",
+}
+{
+	Type: "TianWar",
+	Name: "Tian's Trial of War",
+	Description: "Sempre embosque inimigos não-chefes em combates revelados",
+	Reward: "forceAmbush",
+	IsActive: "true",
+}
+{
+	Type: "TianValor",
+	Name: "Prova de Valor de Tian",
+	Description: "Restaure 30 de Moral",
+	Reward: "restoreMorale",
+	Value: "30",
+	IsActive: "true",
+}
+{
+	Type: "Tychros",
+	Name: "Tychros, Deus do Tempo",
+	Description: "Redefina o Medidor de Tempo para 0 e reduza o custo de Tempo do movimento em 1",
+	Reward: "resetTime",
+	IsActive: "true",
+}
+{
+	Type: "Vismyr",
+	Name: "Vismyr, o Todo-Criador",
+	Description: "Ganhe Resistência a 1 tipo de dano",
+	Reward: "gainRandomResistance",
+	IsActive: "true",
+}
+{
+	Type: "Anusa",
+	Name: "Anusa, Deusa da Doença",
+	Description: "Inimigos não-chefes no próximo encontro são reduzidos a 75% de Vida",
+	Reward: "enemyHealthReduced",
+	Value: "0.75",
+	IsActive: "true",
+}
+{
+	Type: "DymosPwr",
+	Name: "Dymos, Deus do Engano",
+	Description: "-20% de Poder pelo resto da masmorra",
+	Reward: "atkDebuff",
+	Value: "0.8",
+	IsActive: "true",
+}
+{
+	Type: "DymosNewEnemies",
+	Name: "Dymos, Deus do Engano",
+	Description: "Gere um evento de combate com Espectros",
+	Reward: "newEnemies",
+	ValueString: "Voidspawn",
+	IsActive: "true",
+}

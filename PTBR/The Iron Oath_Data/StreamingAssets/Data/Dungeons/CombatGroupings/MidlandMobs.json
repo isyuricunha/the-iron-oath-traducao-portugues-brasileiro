@@ -1,0 +1,30 @@
+{
+	Name: "MidlandMobs",
+	NameDisplay: "Criaturas das Terras Centrais",
+	Group: ["BrightmaneHunter","BrightmaneCub", "DiseasedBrightmane","CorruptedBrightmane","DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere"],
+	ScoutingReport: ["Brightmanes:Brightmane","Wealdere:Wealdere","Lenhador:Lenhador"],
+	Loot: ["Encantamento,qualquer","Encantamento,wealdere","Encantamento,brightmane"],
+	Weight: 1,
+}
+{
+	Name: "MidlandMobs",
+	Group: ["BrightmaneHunter","BrightmaneCub", "DiseasedBrightmane","CorruptedBrightmane","DoeWealdere","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "MidlandMobs",
+	Group: ["DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","BrightmaneCub","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "MidlandMobs",
+	Group: ["BrightmaneKing","BrightmaneHunter","BrightmaneCub", "DiseasedBrightmane","CorruptedBrightmane","DoeWealdere"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "MidlandMobs",
+	Group: ["AncientWealdere","DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","BrightmaneCub"],
+	Weight: 1,
+	IsBossEncounter: true,	
+}

@@ -1,0 +1,62 @@
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "FrozenTomb",
+  AbilityName: "tio_IcebinderFrozenTombName",
+  Description: "tio_IcebinderFrozenTombDescription",
+  DmgType: "Gelo",
+  DmgValue: "1",
+  BaseValue: "60",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "FrostBurst",
+  AbilityName: "tio_IcebinderFrostBurstName",
+  Description: "tio_IcebinderFrostBurstDescription",
+  DmgType: "Gelo",
+  DmgValue: "1.8",
+  Charges: "3",
+  Range: "4",
+}
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "ArcticArmor",
+  AbilityName: "tio_IceBinderArcticArmorName",
+  Description: "tio_IceBinderArcticArmorDescription",
+  DmgType: "Gelo",
+  DmgValue: "0.9",
+  Charges: "3",
+  Range: "4",
+  BaseValue: "145",
+}
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "ColdFeet",
+  AbilityName: "tio_IcebinderColdFeetName",
+  Description: "tio_IcebinderColdFeetDescription",
+  DmgType: "GELO",
+  DmgValue: "0.6",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "IceWall",
+  AbilityName: "tio_IcebinderIceWallOrderName",
+  Description: "tio_IcebinderIceWallOrderDescription",
+  DmgType: "GELO",
+  Charges: "3",
+  DmgValue: "0.6",
+  Range: "4",
+}
+{
+  Character: "Vinculador de Gelo",
+  UniqueId: "ImpalingIce",
+  AbilityName: "tio_IcebinderImpalingIceName",
+  Description: "tio_IcebinderImpalingIceDescription",
+  DmgType: "GELO",
+  Charges: "3",
+  DmgValue: "0.65",
+  Range: "4",
+}

@@ -1,0 +1,16 @@
+{
+	Tags: ["Padrão"],
+	Items: ["tioAmuletOfFun","tioSharpFork","tioLeatherArmor"], 
+}
+{
+	Tags: ["SmallCity"],
+	Items: ["tioAmuletOfFun","tioSharpFork","tioLeatherArmor"], 
+}
+{
+	Tags: ["MediumCity"],
+	Items: ["tioAmuletOfFun","tioSharpFork","tioLeatherArmor"], 
+}
+{
+	Tags: ["LargeCity"],
+	Items: ["tioAmuletOfFun","tioSharpFork","tioLeatherArmor"], 
+}

@@ -1,0 +1,24 @@
+{
+	Name: "NorthernHoldMobs",
+	NameDisplay: "Criaturas do Norte",
+	Group: ["AdultHoarwulf","YoungHoarwulf","CorruptedHoarwulf","DiseasedHoarwulf","DoeWealdere","BuckWealdere","CorruptedWealdere","DiseasedWealdere"],
+	ScoutingReport: ["Hoarwulfs:Hoarwulf","Wealdere:Wealdere","Lenhador:Lenhador"],
+	Loot: ["Encantamento,qualquer","Encantamento,wealdere","Encantamento,hoarwulf"],
+	Weight: 1,
+}
+{
+	Name: "NorthernHoldMobs",
+	Group: ["AdultHoarwulf","YoungHoarwulf","CorruptedHoarwulf","DiseasedHoarwulf","DoeWealdere","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "NorthernHoldMobs",
+	Group: ["DoeWealdere","BuckWealdere","CorruptedWealdere","DiseasedWealdere","YoungHoarwulf","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "NorthernHoldMobs",
+	Group: ["DireHoarwulf","AdultHoarwulf","YoungHoarwulf","CorruptedHoarwulf","DiseasedHoarwulf","DoeWealdere"],
+	Weight: 1,
+	IsBossEncounter: true,	
+}

@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameHouseSkirmisher",
+	Health: ["300"],
+	Power: ["120"],
+	Mending: ["0"],
+	Defense: ["18"],
+	Evasion: ["10"],
+	Accuracy: ["95"],
+	CriticalChance: ["15"],
+	Speed: ["6"],
+	Move: "3",
+	Resists: [],
+	Immunities: ["Provocação","Lentidão"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "4",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["3","3","4","5","5"],
+}

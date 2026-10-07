@@ -1,0 +1,56 @@
+{
+  Character: "Pirolanceiro",
+  UniqueId: "BlazingLance",
+  AbilityName: "tio_PyrolancerBlazingLanceName",
+  Description: "tio_PyrolancerBlazingLanceDescription",
+  DmgType: "Fogo",
+  DmgValue: "1.2",
+  Charges: "3",
+}
+{
+  Character: "Pirolanceiro",
+  UniqueId: "Pyromania",
+  AbilityName: "tio_PyrolancerPyromaniaName",
+  Description: "tio_PyrolancerPyromaniaDescription",
+  DmgType: "Fogo",
+  Charges: "3",
+  Range: "2",
+}
+{
+  Character: "Pirolanceiro",
+  UniqueId: "Wildfire",
+  AbilityName: "tio_PyrolancerWildfireName",
+  Description: "tio_PyrolancerWildfireDescription",
+  DmgType: "Fogo",
+  DmgValue: "0.5",
+  Charges: "3",
+  Range: "2",
+}
+{
+  Character: "Pirolanceiro",
+  UniqueId: "ReturnToCinder",
+  AbilityName: "tio_PyrolancerReturnToCinderName",
+  Description: "tio_PyrolancerReturnToCinderDescription",
+  DmgType: "Fogo",
+  DmgValue: "0.7",
+  Charges: "3",
+  Range: "2",
+}
+{
+  Character: "Pirolanceiro",
+  UniqueId: "Crossfire",
+  AbilityName: "tio_PyrolancerCrossfireName",
+  Description: "tio_PyrolancerCrossfireDescription",
+  DmgType: "Fogo",
+  DmgValue: "1",
+  Charges: "3",
+}
+{
+  Character: "Pirolanceiro",
+  UniqueId: "InfernalPillar",
+  AbilityName: "tio_PyrolancerInfernalPillarName",
+  Description: "tio_PyrolancerInfernalPillarDescription",
+  DmgType: "Fogo",
+  DmgValue: "1.5",
+  Charges: "3",
+}

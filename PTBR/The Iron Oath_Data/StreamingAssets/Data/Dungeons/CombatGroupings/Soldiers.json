@@ -1,0 +1,13 @@
+{
+	Name: "Soldados",
+	Group: ["HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Sabujo de Sangue"],
+	ScoutingReport: ["Soldados:Casa","Warhound:Warhound","Sabujo de Sangue:Sabujo de Sangue"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Soldados",
+	Group: ["HouseCommander","HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Sabujo de Sangue"],
+	IsBossEncounter: true,
+	Weight: 1,
+}

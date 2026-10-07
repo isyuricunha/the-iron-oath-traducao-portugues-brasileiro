@@ -1,0 +1,59 @@
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility1",
+  AbilityName: "tio_ValkyrieChampionsOrderName",
+  Description: "tio_ValkyrieChampionsOrderDescription",
+  DmgType: "SAGRADO",
+  DmgValue: "0",
+  Charges: "3",
+}
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility2",
+  AbilityName: "tio_ValkyrieAegisName",
+  Description: "tio_ValkyrieAegisDescription",
+  DmgType: "SAGRADO",
+  DmgValue: "0",
+  Charges: "3",
+  Range: "0",
+}
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility3",
+  AbilityName: "tio_ValkyrieGuardianAngelName",
+  Description: "tio_ValkyrieGuardianAngelDescription",
+  DmgType: "SAGRADO",
+  DmgValue: "0",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility4",
+  AbilityName: "tio_ValkyrieSkewerName",
+  Description: "tio_ValkyrieSkewerDescription",
+  DmgType: "PERFURANTE",
+  DmgValue: "1.35",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility5",
+  AbilityName: "tio_ValkyrieSweepingSpearName",
+  Description: "tio_ValkyrieSweepingSpearDescription",
+  DmgType: "Perfurante",
+  DmgValue: "0.4",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "HouseSkirmisherAlly",
+  UniqueId: "fakeAbility6",
+  AbilityName: "tio_ValkyrieTakeFlightName",
+  Description: "tio_ValkyrieTakeFlightDescription",
+  DmgType: "Perfurante",
+  DmgValue: "1.8",
+  Charges: "3",
+  Range: "4",
+}

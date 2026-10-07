@@ -1,0 +1,22 @@
+{
+	Name: "ScourgeDefense",
+	NameDisplay: "Flagelo",
+	Group: ["Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	ScoutingReport: ["Demônios:Demônio","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "ScourgeDefense",
+	NameDisplay: "Flagelo",
+	Group: ["Cavaleiro do Terror","Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "ScourgeDefense",
+	NameDisplay: "Flagelo",
+	Group: ["SpectralReaper","Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

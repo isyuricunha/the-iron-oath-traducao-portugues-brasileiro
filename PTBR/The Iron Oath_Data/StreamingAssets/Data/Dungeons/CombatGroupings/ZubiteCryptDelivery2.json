@@ -1,0 +1,13 @@
+{
+	Name: "ZubiteCryptDelivery2",
+	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	ScoutingReport: ["Morto-Vivo:Morto-Vivo","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "ZubiteCryptDelivery2",
+	Group: ["DeathLord","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

@@ -1,0 +1,61 @@
+{
+  Character: "Baladeiro",
+  UniqueId: "BattleChords",
+  AbilityName: "tio_BalladeerBattleChordsName",
+  Description: "tio_BalladeerBattleChordsDescription",
+  DmgType: "ESMAGADOR",
+  DmgValue: "1",
+  Charges: "5",
+  Range: "0",
+}
+{
+  Character: "Baladeiro",
+  UniqueId: "AnthemOfWarding",
+  AbilityName: "tio_BalladeerAnthemOfWardingName",
+  Description: "tio_BalladeerAnthemOfWardingDescription",
+  DmgType: "ESMAGADOR",
+  DmgValue: "1",
+  BaseValue: 120,
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Baladeiro",
+  UniqueId: "SmashingTune",
+  AbilityName: "tio_BalladeerSmashingTuneFireName",
+  Description: "tio_BalladeerSmashingTuneFireDescription",
+  DmgType: "ESMAGADOR",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Baladeiro",
+  UniqueId: "Serenade",
+  AbilityName: "tio_BalladeerSerenadeName",
+  Description: "tio_BalladeerSerenadeDescription",
+  DmgType: "ESMAGADOR",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Baladeiro",
+  UniqueId: "Lullaby",
+  AbilityName: "tio_BalladeerLullabyName",
+  Description: "tio_BalladeerLullabyDescription",
+  DmgType: "ESMAGADOR",
+  Charges: "3",
+  DmgValue: "1",
+  Range: "1",
+}
+{
+  Character: "Baladeiro",
+  UniqueId: "RenewingMelody",
+  AbilityName: "tio_BalladeerRenewingMelodyName",
+  Description: "tio_BalladeerRenewingMelodyDescription",
+  DmgType: "ESMAGADOR",
+  Charges: "3",
+  BaseValue: "70",
+  Range: "3",
+}

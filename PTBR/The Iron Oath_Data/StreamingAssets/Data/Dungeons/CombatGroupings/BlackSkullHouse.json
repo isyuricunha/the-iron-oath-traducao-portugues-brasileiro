@@ -1,0 +1,13 @@
+{
+	Name: "BlackSkullHouse",
+	Group: ["BlackSkullHunter","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","Sabujo de Sangue","RebelKnight","RebelBannerman","RebelSkirmisher"],
+	ScoutingReport: ["Black Skull:BlackSkull","Soldados Rebeldes:RebelHouse","Sabujo de Sangue:Sabujo de Sangue:"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "BlackSkullHouse",
+	Group: ["RebelCommander","BlackSkullHunter","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","Sabujo de Sangue","RebelKnight","RebelBannerman","RebelSkirmisher"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

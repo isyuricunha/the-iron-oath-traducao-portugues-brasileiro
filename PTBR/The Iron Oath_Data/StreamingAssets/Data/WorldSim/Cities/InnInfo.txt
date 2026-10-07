@@ -1,0 +1,2 @@
+Hungry,Lazy,Viscious,Sunny,Cloudy,Sad,Happy,Lumberous,Loud,Quiet,Humorous,Terrible,Amazing,Inspiring,Depressing,No Good,Friendly,Drunk'n,Delicious,Bloody,Clean,Dirty
+Bear,Fox,Dog,Dragon,Sun,Lance,Spear,Sword,Spire,Joke

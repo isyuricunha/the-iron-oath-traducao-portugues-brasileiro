@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameWarhound",
+	Health: ["180"],
+	Power: ["40"],
+	Mending: ["0"],
+	Defense: ["18"],
+	Evasion: ["10"],
+	Accuracy: ["95"],
+	CriticalChance: ["0"],
+	Speed: ["7"],
+	Move: "5",
+	Resists: [],
+	Immunities: ["MEDO"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "2",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["2","3","3","4","4"],
+}

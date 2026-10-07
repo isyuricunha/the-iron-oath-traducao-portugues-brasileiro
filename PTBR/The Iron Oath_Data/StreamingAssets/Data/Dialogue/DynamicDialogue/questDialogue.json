@@ -1,0 +1,670 @@
+{
+	UniqueName: "Tutorial0",
+	Catalyst: "Nenhum",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorial0",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Controles de Câmera", "Examine o campo de batalha usando W,A,S,D.\n\nVocê também pode mover a câmera segurando 3 <sprite name=\"PC-mouse3\"> e movendo o mouse.^Examine o campo de batalha usando o Joystick Esquerdo <sprite name=\"XboxOne-ls\">.\n\nVocê também pode mover a câmera com o Joystick Direito <sprite name=\"XboxOne-rs\">."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDialogue0",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialDialogue0",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Cuidado com aquele arqueiro e procure cobertura, [FNameP1]!"],
+}
+{
+	UniqueName: "TutorialMove",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialMove",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Mover|Correr|Trocar|Traçar Caminhos|Desfazer Movimento", "Na vez de cada personagem, é possível 'Mover' quantos hexágonos o atributo Movimento permitir. Ao mover para um hexágono verde, ainda é possível realizar uma ação depois.|Para percorrer mais terreno, é possível 'Correr' pelos hexágonos cinza tracejados, mas isso encerra o turno do personagem.|Você pode 'Trocar' de lugar com um aliado movendo-se para o espaço dele. A troca é útil para preparar ataques ou tirar um aliado do perigo.|Segurando <sprite name=\"PC-shift\">, você pode traçar uma rota de movimento personalizada.^Segurando <sprite name=\"XboxOne-rt\">, você pode traçar uma rota de movimento personalizada.|Para desfazer um movimento, clique no botão de desfazer na barra de habilidades ou pressione a tecla designada (<sprite name=\"PC-e\">). Se você sofrer dano ou ativar um perigo do cenário, não poderá desfazer o movimento.\n\nVamos mover o Invocador de Tempestades para a cobertura clicando em 'LMB' <sprite name=\"PC-leftClick\"> no hexágono indicado.^Para desfazer um movimento, clique no botão de desfazer na barra de habilidades. Se você sofrer dano ou ativar um perigo do cenário, não poderá desfazer o movimento.\n\nVamos mover o Invocador de Tempestades para a cobertura pressionando <sprite name=\"XboxOne-a\"> no hexágono indicado."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEndTurn",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialEndTurn",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Esperar|Usar Guarda|Emitir Comando de Espera", "Se você não tiver uma ação vantajosa para realizar, pode adiar o turno de um personagem até o fim da rodada clicando no botão 'Esperar'.|Alternativamente, você pode encerrar o turno de um personagem usando a ação 'Guarda', que concede um bônus temporário de Defesa e Esquiva.|Clique no botão 'Esperar' para adiar o turno do Invocador de Tempestades."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAbilities",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialAbilities",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Habilidades", "As habilidades únicas do seu personagem têm um número limitado de 'Cargas' disponíveis ao longo de uma masmorra. As cargas podem ser restauradas acampando ou usando certos suprimentos. Se uma habilidade ficar sem cargas, ela ainda pode ser usada, mas com um grande custo de Vida para o personagem.\n\nCom o inimigo avançando sobre nós, podemos armar uma armadilha usando a habilidade 'Return to Cinder' do Pirolanceiro no hexágono indicado."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialHazards",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialHazards",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Perigos de Combate|Empurrão e Puxão", "Como você pode ver, é importante prestar atenção aos possíveis perigos ao posicionar suas unidades.|Algumas habilidades conseguem 'Empurrar' ou 'Puxar' alvos. Ao forçar alvos contra obstáculos e o terreno, você pode causar dano bônus e outros efeitos nocivos.\n\nMova o Pugilista até a posição e use a habilidade 'Onda Crescente' dele para empurrar o inimigo para dentro do poço."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialProtectDialogue",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialProtectDialogue",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Mantenha [FNameP1] protegido e enfrente aquele inimigo, [FNameP0]!"],
+}
+{
+	UniqueName: "TutorialAoO",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialAoO",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Zona de Controle|Ataques de Oportunidade", "Toda unidade corpo a corpo no campo de batalha exerce uma zona de controle sobre os hexágonos adjacentes à sua posição.|Outra unidade não pode sair dessa zona sem sofrer um Ataque de Oportunidade do inimigo. Essa mecânica ajuda a imobilizar os inimigos e impedir que eles alcancem seus personagens mais vulneráveis."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDialogueConserveStam",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialDialogueConserveStam",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Conserve sua stamina e mantenha-o ocupado!"],
+}
+{
+	UniqueName: "TutorialBasicAttack",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialBasicAttack",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Ataques Básicos", "Cada personagem tem um ataque básico disponível. Ao contrário das habilidades, ataques básicos têm uso ilimitado, mas estão sujeitos a uma checagem de precisão e esquiva.\n\nExecute um ataque básico no inimigo clicando com 'LMB' <sprite name=\"PC-leftClick\"> no hexágono indicado.^Cada personagem tem um ataque básico disponível. Ao contrário das habilidades, ataques básicos têm uso ilimitado, mas estão sujeitos a uma checagem de precisão e esquiva.\n\nExecute um ataque básico no inimigo clicando em <sprite name=\"XboxOne-a\"> no hexágono indicado."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialStormcallerAttack",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialStormcallerAttack",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Você tem uma visão clara daquele arqueiro. Derrube-o!"],
+}
+{
+	UniqueName: "TutorialLineOfSight",
+	Catalyst: "NENHUM",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialLineOfSight",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Linha de Visão|Sem Linha de Visão|Linha de Visão Parcial|Atacando de Cobertura|Habilidades Canalizadas", "A maioria dos ataques e habilidades depende da Linha de Visão. Ao mirar, um olho vermelho indica que não há linha de visão, enquanto um olho amarelo indica linha de visão parcial.|Obstáculos grandes, como pilares, podem bloquear a linha de visão por completo. Quando um personagem não tem visão de um inimigo, não consegue mirá-lo diretamente. |Obstáculos menores, como um barril, uma caixa ou um personagem, obscurecem parcialmente a linha de visão nas circunstâncias certas. Um alvo parcialmente visível recebe 50% menos dano de ataques.|Ao se proteger diretamente atrás de um obstáculo pequeno, você pode olhar por cima dele e obter visão total do inimigo, permanecendo apenas parcialmente visível em troca.|A habilidade 'Conduto' do Invocador de Tempestades pode devastar um único inimigo à distância, mas leva alguns turnos para ser canalizada. Você pode ver onde a canalização vai terminar observando a seta indicadora azul na ordem de turnos.\n\nSelecione a habilidade 'Conduto' e mire no arqueiro inimigo."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAwareness",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialawareness",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Evitando Ataques de Oportunidade", "Com o inimigo mais próximo Atordoado, o Pirolanceiro pode passar pela zona de controle dele com segurança sem sofrer um Ataque de Oportunidade. Ataques de Oportunidade também podem ser evitados usando habilidades que incorporam movimento, ou usando a ação 'Troca'.\n\nVamos ajudar o Guardião e usar Correr para engajar o alvo dela."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFinishHimOff",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialfinishhimoff",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Acabe com ele, [FNameP2]"],
+}
+{
+	UniqueName: "TutorialSpirit",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialspirit",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Moral|Ganhando e Perdendo Moral|Consequências do Moral Baixo|Benefícios do Moral Alto", "Seu Pugilista matou um inimigo e ganhou Moral, que é representado pela barra branca abaixo do retrato de cada personagem. Moral é o estado de espírito de um personagem na missão atual.|O Moral é ganho e perdido por vários gatilhos de combate. Aplicar o golpe de misericórdia aumenta o moral, enquanto sofrer um acerto crítico de um inimigo o reduz.|Quando o Moral está abaixo de 25, há uma chance de o personagem adiar ou pular o turno. Além disso, um personagem com Moral baixo acumula mais Fadiga em missões e também perde 'Lealdade' com a companhia.|Quando o Moral está acima de 75, todas as condições negativas aplicadas a esse personagem têm a duração reduzida em 1 (com duração mínima de 1 Rodada)."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFlanking",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialflanking",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Flanqueamento", "Alvos são considerados Flanqueados quando você ocupa dois hexágonos opostos ao redor da posição deles. Todos os ataques contra alvos flanqueados causam 15% de dano extra e não podem errar.\n\nSe sua chance de acertar com um ataque básico for baixa, o melhor é tentar flanquear o inimigo primeiro para garantir o acerto, ou usar uma habilidade.\n\nVamos mover o Guardião para uma posição de flanqueamento e atacar o inimigo."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEndThis",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialendthis",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Hora de acabar com isso."],
+}
+{
+	UniqueName: "CombatOverTutorial",
+	Catalyst: "DISPLAY_MAP",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Exploração de Masmorras e Tempo", "A maioria das ações que você realizar ao explorar uma masmorra custará Tempo. A passagem do tempo pode ter consequências severas, e é representada pelo 'Medidor de Tempo' no canto inferior direito.\n\nDevemos começar a explorar. Use 'LMB' <sprite name=\"PC-leftClick\"> para mover nosso grupo para uma casa adjacente.^A maioria das ações que você realizar ao explorar uma masmorra custará Tempo. A passagem do tempo pode ter consequências severas, e é representada pelo 'Medidor de Tempo' no canto inferior direito.\n\nDevemos começar a explorar. Pressione <sprite name=\"XboxOne-a\"> para mover nosso grupo para uma casa adjacente."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialScout",
+	Catalyst: "NONE",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Priority: "2",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Reconhecimento", "O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nClique com 'RMB' <sprite name=\"PC-rightClick\"> para ativar o modo de reconhecimento e depois use 'LMB' <sprite name=\"PC-leftClick\"> em um evento inexplorado para revelá-lo.^O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nPressione <sprite name=\"XboxOne-x\"> para ativar o modo de reconhecimento e depois pressione <sprite name=\"XboxOne-a\"> em um evento inexplorado para revelá-lo."],
+	Text: ["3:Deveríamos gastar algum tempo reconhecendo o que está ao nosso redor. Não podemos nos dar ao luxo de cair em uma emboscada."],
+}
+{
+	UniqueName: "TutorialUsingProvisions",
+	ToolTip: ["Usando Provisões Durante a Exploração", "As provisões podem ser usadas tanto dentro quanto fora de combate. Durante a exploração, você pode acessar seu inventário de provisões no menu do canto inferior esquerdo ou pressionando <sprite name=\"PC-i\">. Como outras ações, provisões usadas durante a exploração têm seu próprio custo de Tempo associado.^As provisões podem ser usadas tanto dentro quanto fora de combate. Durante a exploração, você pode acessar seu inventário de provisões no menu do canto inferior esquerdo. Como outras ações, provisões usadas durante a exploração têm seu próprio custo de Tempo associado."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialSidePaths",
+	Catalyst: "NONE",
+	ToolTip: ["Caminhos Laterais em Masmorras", "Todas as masmorras têm um 'caminho principal' (que leva ao seu objetivo) e vários 'caminhos laterais' que se ramificam dele (indicados pelas casas cobertas de névoa). Os caminhos laterais trazem mais perigos para o seu grupo, mas também oferecem mais oportunidades de recompensa.\n\nÉ importante considerar o estado do seu grupo e a tarefa em questão antes de se aventurar por um caminho lateral, pois as coisas podem desandar muito rapidamente."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialTimeModifiers",
+	Catalyst: "NEW_TIME_MOD",
+	ToolTip: ["Modificadores de Masmorras", "Toda masmorra começa com um modificador positivo e um negativo, que podem afetar vários aspectos da exploração e do combate.\n\nCom o passar do tempo, até dois modificadores adicionais serão aplicados, apresentando novos desafios para você superar. Por isso, é importante ser eficiente e usar seu tempo com sabedoria.\n\nVocê pode ver quais modificadores estão ativos ao lado do Medidor de Tempo no canto inferior direito."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnemyPassives",
+	Catalyst: "ENEMY_DEATH_SAVED",
+	MetaData: "type=skeleton",
+	Tooltip: ["Passivas de Inimigos|Codex", "Alguns inimigos têm habilidades passivas. Esses esqueletos mortos-vivos conseguem reanimar depois de derrotados. Para impedir que eles reanimem, precisaremos mirar e destruir a pilha de ossos.|Se quiser ver mais detalhes sobre um inimigo específico, você pode clicar com o botão direito <sprite name=\"PC-rightClick\"> no retrato dele para abrir o Codex.^Se quiser ver mais detalhes sobre um inimigo específico, você também pode pressionar o botão <sprite name=\"XboxOne-view\"> no retrato dele para abrir o Codex."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDeploymentPhase",
+	Catalyst: "COMBAT_DEPLOYMENT",
+	Tooltip: ["Fase de Implantação|Posicionando Seu Grupo", "Durante a Fase de Implantação, você pode reposicionar seu grupo antes do combate. As zonas de implantação variam de luta para luta, e você terá que se virar com o que estiver disponível.\n\nClique com 'LMB' <sprite name=\"PC-leftClick\"> em qualquer personagem para movê-lo e clique novamente em qualquer hexágono válido para confirmar a nova posição.^Durante a Fase de Implantação, você pode reposicionar seu grupo antes do combate. As zonas de implantação variam de luta para luta, e você terá que se virar com o que estiver disponível.\n\nPressione <sprite name=\"XboxOne-a\"> em qualquer personagem para movê-lo e pressione novamente em qualquer hexágono válido para confirmar a nova posição.|Saber para onde os inimigos podem se mover e atacar ajudará você a posicionar seu grupo da melhor forma. Para ver o alcance de movimento e ataque de um inimigo, pressione <sprite name=\"PC-tab\"> sobre o sprite do personagem dele.\n\nQuando estiver satisfeito com sua formação, clique no botão 'Iniciar Combate' para prosseguir.^Saber para onde os inimigos podem se mover e atacar ajudará você a posicionar seu grupo da melhor forma.\n\nQuando estiver satisfeito com sua formação, clique no botão 'Iniciar Combate' para prosseguir."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialCamping",
+	Catalyst: "CONSIDER_CAMPING",
+	Tooltip: ["Acampando", "Em missões mais longas, você pode acampar para descansar seu grupo e aplicar vários bônus.\n\nAlguns locais são mais seguros que outros. Devemos escolher um lugar com menos pontos de entrada para diminuir as chances de sermos atacados por inimigos."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialCampingPt2",
+	Catalyst: "OPEN_CAMPSITE",
+	Tooltip: ["Queimar Incenso|Vigias", "Depois de montar seu acampamento, você pode selecionar vários incensos para queimar, que curam e oferecem outros benefícios únicos. Você só tem um número limitado de pontos de incenso disponíveis, então escolha com cuidado! Mais incensos podem ser desbloqueados na tela de 'Melhorias da Companhia' (<sprite name=\"PC-u\">) no mapa-múndi.^Depois de montar seu acampamento, você pode selecionar vários incensos para queimar, que curam e oferecem outros benefícios únicos. Você só tem um número limitado de pontos de incenso disponíveis, então escolha com cuidado! Mais incensos podem ser desbloqueados na tela de 'Melhorias da Companhia' no mapa-múndi.|Para diminuir as chances de seu acampamento ser interrompido, você pode colocar até dois membros do grupo de vigia. Cada vigia reduz pela metade a chance de interrupção. Lembre-se de que personagens de vigia não se beneficiam dos efeitos secundários dos incensos.\n\nQuando estiver satisfeito com suas escolhas, clique no botão 'Começar a Acampar' para prosseguir."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialMinorInjury",
+	Catalyst: "MINOR_INJURY",
+	ToolTip: ["Ferimentos", "Ferimentos têm chance de ocorrer quando um personagem está com menos de 50% de Vida e sempre ocorrem quando a Vida chega a 0. Se um personagem sofrer um ferimento, você pode usar uma Atadura para estabilizá-lo e evitar que os ferimentos piorem. Se ele continuar lutando com um ferimento não estabilizado, a gravidade dele pode aumentar."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialExpeditionSummary",
+	Catalyst: "EXPEDITION_SUMMARY",
+	QuestName: "Quest.CampaignPrologue",
+	ToolTip: ["Recuperação de Ferimentos|Enfermarias", "Depois de uma missão, você vai querer tratar quaisquer ferimentos que seu grupo tenha sofrido. Embora um personagem ferido ainda possa lutar, as penalidades dos ferimentos o tornam menos eficaz.|Para curar um ferimento, você deve pagar pelo tratamento na Enfermaria de uma cidade. Alguns ferimentos exigem tratamento imediato; caso contrário, há risco de dano permanente ou morte."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDebuff",
+	Catalyst: "SUSTAINED_DEBUFF",
+	UniqueName: "TutorialDebuffed",
+	QuestName: "Quest.CampaignPrologue",
+	ToolTip: ["Removendo Condições", "Você pode remover condições negativas dos seus personagens com habilidades de purificação ou usando um Antídoto neles. Isso também concede imunidade temporária a todas as condições por alguns turnos. Nem todos os efeitos nocivos podem ser purificados, como Ferimentos ou o status Flanqueado."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAmbushedEnemy",
+	Catalyst: "AMBUSHED_ENEMY",
+	UniqueName: "TutorialAmbushedEnemy",
+	ToolTip: ["Emboscando o Inimigo", "Você emboscou o inimigo, pegando-o desprevenido e garantindo uma vantagem no primeiro turno do combate!\n\nAo Usar Reconhecimento e revelar a localização do inimigo, você tem uma chance (padrão de 10%) de emboscá-lo quando o combate começa."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAmbushedByEnemy",
+	Catalyst: "AMBUSHED_BY_ENEMY",
+	UniqueName: "TutorialAmbushedByEnemy",
+	ToolTip: ["Emboscadas Inimigas", "O inimigo pegou você de surpresa e emboscou! Quando emboscado, você tem menos células disponíveis para posicionamento. Além disso, o lado emboscado tem -5 de Velocidade e sofre 15% mais dano durante o primeiro turno do combate.\n\nEm masmorras, avançar sem cuidado contra o inimigo traz o risco de ser emboscado (padrão de 20%). Você pode evitar isso usando Reconhecimento antes, o que pode fazer com que você embosque o oponente!"],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAllyKnockedOut",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	Priority: "100",
+	ToolTip: ["Morte Lenta|Reserva de Morte Lenta|Recuperando-se da Morte Lenta", "Quando a Vida de um personagem chega a 0 em combate, ele entra em estado de Morte Lenta e seu valor de vida é substituído por uma Reserva de Morte Lenta. Essa reserva persiste durante todo o percurso da masmorra.|A Reserva de Morte Lenta diminui em 1 no turno do personagem e com ataques sofridos. A morte permanente ocorre se a reserva se esgotar.|Para recuperar um personagem do estado de Morte Lenta, você pode curá-lo com provisões como ataduras ou poções de vida, usar uma habilidade de cura ou fazer com que um aliado o levante movendo-se para a célula dele."],
+	Text: [""],
+}
+{	
+	UniqueName: "TutorialAllyLowHealth",
+	Catalyst: "LOW_HEALTH",
+	ToolTip: ["Cura", "Certifique-se de curar seus personagens antes que eles sofram dano demais. A classe Guardião pode curar aliados com a habilidade 'Aurora'. Em uma emergência, você também pode usar uma poção de cura."],
+	Text: [""],
+	
+}
+{
+	UniqueName: "TutorialPartyScreen",
+	Catalyst: "SELECT_PARTY_SCREEN",
+	UniqueName: "TutorialPartyScreen",
+	ToolTip: ["Montando Seu Grupo", "Você pode selecionar até 5 personagens ao montar um grupo. É importante considerar o estado de cada um:\n\nBem Descansado: Personagens ficam bem descansados com a inatividade. Eles ganham +5% de Poder e recebem 25% mais XP.\n\nDisponível: Um personagem disponível está apto e pronto para o dever.\n\nFatigado: Um personagem fatigado ainda pode participar, mas sofre penalidades de -10% de Poder, -10 de Moral e -25% de XP ganho.\n\nFerido: Um personagem ferido pode participar, mas sofrerá penalidades específicas de seu ferimento.\n\nIndisponível: Às vezes, um personagem estará indisponível devido a um ferimento específico ou outros motivos."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialProvisions",
+	Catalyst: "PROVISIONS_SCREEN",
+	UniqueName: "TutorialProvisionsScreen",
+	ToolTip: ["Compra de Provisões", "Antes de entrar em uma masmorra, você poderá comprar Provisões para levar com você. Por padrão, Provisões não utilizadas ao final de uma masmorra são reembolsadas em 50% do custo. Esse valor pode ser aumentado com Melhorias da Companhia."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialOverworldNavigation",
+	ToolTip: ["Dificuldade|Navegando pelo Mundo|Controles de Navegação|", "Se você achar o combate difícil demais ou fácil demais, pode ajustar a dificuldade no menu pressionando <sprite name=\"PC-esc\">.\n\nEssa opção fica desativada durante o combate e no modo Ferro.^Se você achar o combate difícil demais ou fácil demais, pode ajustar a dificuldade no menu pressionando <sprite name=\"XboxOne-menu\">.\n\nEssa opção fica desativada durante o combate e no modo Ferro.|Conforme nossa caravana viaja pelo mundo, o tempo passa. Suprimentos e manutenção em geral são caros, e cada dia que passa custa dinheiro.\n\nEm The Iron Oath, 1 ano tem 120 dias.|No canto superior direito estão os controles de navegação, que permitem: avançar o tempo, parar de viajar e ajustar a velocidade da caravana.\n\nDiante da situação, não podemos arcar com uma jornada longa. Devemos seguir para a cidade de Andilon para descansar e nos reagrupar."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnterInn",
+	Catalyst: "ENTER_INN",
+	UniqueName: "TutorialInns",
+	ToolTip: ["Estalagens", "Toda cidade tem uma Estalagem onde você pode descansar, comprar bebidas ou recrutar novos membros. Descansar reduz a Fadiga de todo o seu grupo em 3 por noite comprada. Pagar uma rodada para a companhia aumenta a Lealdade deles por um tempo, embora beber com frequência demais possa ter efeitos adversos. Se precisar de novos membros para o seu grupo, você pode vasculhar os talentos locais e recrutá-los para a companhia."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRecruits",
+	Catalyst: "INN_RECRUITS_LIST",
+	UniqueName: "TutorialRecruits",
+	ToolTip: ["Recrutamento", "Esta é uma lista de todos os recrutas disponíveis na cidade. Conforme o tempo passa, novos recrutas aparecem. Você pode ver informações sobre cada recruta clicando no ícone à esquerda do retrato dele."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialBountyBoard",
+	Catalyst: "BOUNTY_BOARD",
+	UniqueName: "TutorialBountyBoard",
+	ToolTip: ["Quadro de Recompensas", "No Quadro de Recompensas, você pode aceitar tarefas de prioridade menor dos locais. Recompensas não têm uma masmorra ou local específico para visitar e, em vez disso, são concluídas passivamente enquanto você trabalha em outros contratos."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnterInfimary",
+	Catalyst: "ENTER_INFIRMARY",
+	UniqueName: "TutorialInfirmary",
+	ToolTip: ["Enfermaria", "Se você tiver um personagem ferido, deverá interná-lo na Enfermaria de uma cidade para que ele se recupere. Quando estiver totalmente curado, ele se juntará automaticamente à sua companhia. Lesões graves exigem cuidados imediatos para evitar dano permanente ou morte."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialContractsComplete",
+	Catalyst: "CONTRACT_COMPLETE",
+	UniqueName: "TutorialContractComplete",
+	ToolTip: ["Renome e Reputação|Renome|Reputação", "Ao concluir um contrato, você será recompensado com Renome e Reputação.|Renome é uma medida de sua fama geral no mundo. Conforme seu Renome cresce, você receberá a confiança de assumir contratos mais difíceis e terá acesso a equipamentos e recrutas melhores. Além disso, você ganhará Pontos de Renome que poderá gastar em Melhorias da Companhia.|Sua Reputação mede sua relação com cada Casa Nobre e cidade do mundo. Ao concluir um contrato ou tomar certas decisões, sua Reputação mudará de acordo. Ter Reputação alta pode reduzir os preços de serviços e mercadorias e desbloquear tipos adicionais de contrato."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRenown",
+	Catalyst: "NONE",
+	ToolTip: ["Compra de Melhorias da Companhia", "Você ganhou seu primeiro Ponto de Renome, que pode ser usado para melhorar as diversas facetas da sua companhia. Pontos de Renome podem ser gastos na tela 'Melhorias da Companhia' no menu inferior esquerdo, ou pressionando <sprite name=\"PC-U\">. Quanto mais contratos você concluir, mais Pontos de Renome terá para gastar.^Você ganhou seu primeiro Ponto de Renome, que pode ser usado para melhorar as diversas facetas da sua companhia. Pontos de Renome podem ser gastos na tela 'Melhorias da Companhia' no menu inferior esquerdo. Quanto mais contratos você concluir, mais Pontos de Renome terá para gastar."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEquipment",
+	Catalyst: "EXPEDITION_SUMMARY",
+	MetaData: "brokenGear",
+	UniqueName: "TutorialEquipment",
+	ToolTip: ["Durabilidade do Equipamento|Conserto", "Parte do seu equipamento quebrou! Todo equipamento tem uma classificação de Durabilidade e, com uso suficiente, acabará quebrando. Se um item perder toda a Durabilidade durante uma missão, ele não quebrará até que a missão seja concluída.|No mundo, você pode usar vários recursos para consertar equipamentos destacando o item e pressionando <sprite name=\"PC-r\">. Equipamentos também podem ser consertados no Mercado de uma cidade por um custo, mas isso costuma ser menos econômico do que usar recursos.^No mundo, você pode usar vários recursos para consertar equipamentos destacando o item e pressionando <sprite name=\"XboxOne-rb\">. Equipamentos também podem ser consertados no Mercado de uma cidade por um custo, mas isso costuma ser menos econômico do que usar recursos."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialLevelUp",
+	Catalyst: "ON_LEVEL_UP",
+	UniqueName: "TutorialLevelUp",
+	ToolTip: ["Subir de Nível|Pontos de Atributo|Desbloquear Habilidades|Pontos de Habilidade|Gerenciamento", "Quando um personagem ganha Pontos de Experiência suficientes, ele sobe de nível e recebe Pontos de Atributo e Pontos de Habilidade para gastar.|Há sete atributos nos quais você pode investir pontos e evoluir: Vitalidade, Poder, Cura, Esquiva, Precisão, Chance Crítica e Velocidade. Personagens se especializam em alguns atributos escolhidos aleatoriamente (representados por estrelas). Esses atributos exigem menos pontos para evoluir.|Ao subir de nível, você poderá desbloquear novas habilidades para cada personagem. Cada classe tem seis habilidades para desbloquear, embora só possam equipar quatro por vez (e habilidades não podem ser alteradas durante masmorras).|Pontos de Habilidade podem ser usados para melhorar ou alterar os efeitos das habilidades únicas de um personagem.|Tudo isso pode ser gerenciado na tela 'Gerenciar Recrutas' (<sprite name=\"PC-g\">) ou clicando no retrato de um personagem dentro de uma masmorra.^Tudo isso pode ser gerenciado na tela 'Gerenciar Recrutas' (<sprite name=\"XboxOne-y\">) ou clicando no retrato de um personagem dentro de uma masmorra."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAging",
+	Catalyst: "IS_GETTING_OLD",
+	ToolTip: ["Idade e Aposentadoria", "Um personagem do seu grupo atingiu a idade de 50 anos! Personagens mais velhos acumulam mais Fadiga em missões e começarão a cogitar a aposentadoria."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFlankReminder",
+	Catalyst: "ON_ATTACK_MISS",
+	ToolTip: ["Ataques Errados|Flanqueamento|Atordoar e Cambalear|Usar Habilidades", "Seu ataque errou! Sem a preparação adequada, Ataques Básicos têm risco de errar.\n\nPara garantir o acerto, flanqueie, atordoe ou canteele o alvo antes, especialmente se a Esquiva dele for alta.|Um alvo é considerado Flanqueado sempre que você ocupar dois hexágonos opostos ao redor da posição dele. Todos os ataques contra alvos flanqueados causam 15% de dano extra e não podem errar.|Se não puder flanquear o alvo, você pode Atordoá-lo ou Canteelá-lo. Cantelear pode ser infligido usando qualquer habilidade que Empurre ou Puxe alvos. Ataques Básicos contra alvos Cambaleando e Atordoados não podem errar.|Sem a preparação adequada, Ataques Básicos podem ser arriscados. Se precisar garantir o golpe final, muitas vezes é melhor gastar uma carga de habilidade."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRangedHelp",
+	ToolTip: ["Lidando com Inimigos de Longo Alcance|Cobertura Parcial|Cobertura Total|Engajamento em Combate Corpo a Corpo", "Inimigos de longo alcance podem ser perigosos, mas podem ser neutralizados com Linha de Visão ou engajando-os em combate corpo a corpo.|Quando a Linha de Visão deles está obstruída, unidades de longo alcance causarão apenas 50% de dano. Isso pode ser alcançado ao se abrigar diretamente atrás de obstáculos menores, como uma caixa, uma rocha ou qualquer unidade.|Obstáculos grandes podem bloquear completamente a Linha de Visão, impedindo que unidades de longo alcance mirem em quem está atrás deles.|Se cobertura não for uma opção, você pode avançar sobre um inimigo de longo alcance e engajá-lo corpo a corpo. Ao fazer isso, a unidade de longo alcance só pode atacar inimigos adjacentes, e o dano dela é reduzido em 50% ao fazê-lo.\n\nEssas mecânicas também se aplicam aos seus personagens, então é importante manter suas unidades de longo alcance a uma distância segura."],
+	Catalyst: "HIT_BY_RANGED_ATK_FULL_DMG",
+	Text: [""],
+}
+
+{
+	UniqueName: "TutorialBossFightTraits",
+	ToolTip: ["Atributos de Inimigos", "Chefes e inimigos de Elite surgem com atributos de combate únicos. Eles são um fator importante a se considerar ao enfrentar esses adversários.\n\nVocê pode ver esses atributos e seus efeitos passando o cursor sobre o retrato do inimigo no lado direito da tela e, em seguida, sobre o nome do Atributo na dica de ferramenta."],
+	Catalyst: "TUTORIAL_BOSS_FIGHT_START",
+	Text: [""],
+}
+{
+	UniqueName: "TutorialJobs",
+	Catalyst: "JOB_UNLOCKED",
+	UniqueName: "TutorialJobs",
+	ToolTip: ["Ofícios dos Personagens", "Você pode atribuir Ofícios aos seus personagens, permitindo que realizem tarefas especiais ou concedam bônus únicos ao seu grupo durante a exploração de masmorras.\n\nO conhecimento para desbloquear cada Ofício pode ser adquirido em masmorras ao longo do jogo. Quando um Ofício é desbloqueado, ele pode ser ensinado sempre que você estiver em uma cidade (o primeiro ofício de um personagem é gratuito, mas mudar de ofício custa moedas). Um personagem só pode ter um ofício por vez, e os bônus de dois ou mais personagens com o mesmo ofício não se acumulam quando usados juntos em um grupo."],
+	Text: [""],
+}
+
+
+
+
+
+{
+	UniqueName: "TutorialBlockedPathTile",
+	Catalyst: "BLOCKED_PATH_TILE",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  Priority: "2",
+  ClearQueueOnFinish: "true",
+  ToolTip: ["Passagens Bloqueadas", "O caminho à nossa frente está bloqueado, mas não estamos sem opções. Selecione o próximo painel para interagir com a obstrução."],
+	Text: ["0:Droga, esta rota está bloqueada. Vamos precisar resolver isso rapidamente."],
+}
+
+{
+    UniqueName: "TutorialPostBattle",
+	Catalyst: "NENHUM",
+	PartyMakeupReq: "QUALQUER",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+    Priority: "2",
+    ClearQueueOnFinish: "true",
+    ToolTip: ["Ferimentos", "Se um personagem se ferir, você pode usar uma Atadura para estabilizar o ferimento. Isso interrompe o sangramento e minimiza os efeitos negativos. Seus itens podem ser acessados pressionando 'I' ou clicando no ícone da bolsa."],
+	Text: [""],
+}
+{
+  UniqueName: "TutorialPreBossBattle",
+	Catalyst: "NENHUM",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  Priority: "2",
+  ClearQueueOnFinish: "true",
+	Text: ["1:Estamos quase saindo daqui. Só mais um pouco.", "0:Estejam prontos para qualquer coisa."],
+}
+{
+	Catalyst: "START_CAMPING",
+	PartyMakeupReq: "ENTIRE_PARTY",
+	FireImmediately: "true",
+    IsNewRelationship: "true",
+	Text: ["0:Sei que acabamos de nos conhecer, mas espero que possamos trabalhar bem juntos.", "1:Likewise.", "2:A noite será longa.", "3:Razão a mais para dormirmos um pouco."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.ClearingACreatureDen",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Não vamos nos alongar. Se houver qualquer chance de o marido dela ainda estar vivo, precisamos encontrá-lo, e rápido."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.LostPossessions",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Será difícil achar o que procuramos neste lugar; fiquem de olhos abertos."],
+}
+{ 
+  Catalyst: "ON_ENTER_DUNGEON", 
+  QuestName: "Quest.CampaignVoidBreach", 
+  PartyMakeupReq: "ANY", 
+  FireImmediately: "true", 
+  AutoAdvanceTime: "4", 
+  Text: ["0:De volta ao combate, então?", "1:Vamos encontrar essa tal brecha. Fiquem de guarda."], 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  UniqueName: "Tutorial1",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial1",
+  Priority: "99",
+  ClearQueueOnFinish: "true",
+	Text: ["0:Segurem a linha! Vamos atrair o inimigo para perto de nós."],
+}
+{
+  UniqueName: "guardTutorial",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "guardTutorial",
+  Priority: "100",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial2",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial2",
+  Priority: "98",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial3",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial3",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: ["0:Lá vem! Firmes!"],
+}
+{
+  UniqueName: "Tutorial4",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial4",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial5",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial5",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial6",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial6",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial8",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial8",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.OutlawsAndTheUndead",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["1:Precisamos nos apressar antes que o amuleto possa ser usado.", "0:O rastro vai por aqui. Vamos!"],
+}
+{
+	Catalyst: "COMBAT_START",
+	QuestName: "Quest.OutlawsAndTheUndead",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Não temos tempo para isso. Vamos despachar esses inimigos depressa"],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.ThiefChase",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Vamos precisar nos apressar se não quisermos que eles escapem."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.AtAnyCost",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Este deve ser o lugar. Vamos ficar de olho em qualquer surpresa."],
+}
+{
+	Catalyst: "LOW_HEALTH",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+  ClassReq: ["None", "Pirolanceiro"],
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["1:Agora é a hora de usar seu feitiço de cura, Guardião!"],
+}
+{
+	Catalyst: "ENEMY_DEATH_SAVED",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	MetaData: "type=skeleton",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Rápido, destrua os restos do esqueleto antes que eles reanimem!"],
+}

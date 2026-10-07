@@ -1,0 +1,15 @@
+{
+	Name: "Necromante",
+	NameDisplay: "Necromante",
+	Group: ["Ritualista","Bruxa","SoulConjurer","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	ScoutingReport: ["Necromantes:Necromantes","Mortos-vivos:Mortos-vivos"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Necromante",
+	NameDisplay: "Necromante",
+	Group: ["DeathLord","Ritualista","Bruxa","SoulConjurer","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

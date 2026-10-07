@@ -1,0 +1,90 @@
+{
+	Job: "Rastreador",
+	Name: "Rastreador",
+	Description: "",
+	Stat: "Velocidade +2",
+	StatBonus: "2",
+	BonusDescriptions: ["Rastros são revelados automaticamente ao entrar em masmorras e levam menos tempo para serem investigados.", "Limite de batedores aumentado em 1."],
+	Value: 1,
+}
+{
+	Job: "Erudito",
+	Name: "Erudito",
+	Description: "",
+	Stat: "Chance de Crítico +5",
+	StatBonus: "5",
+	BonusDescriptions: ["Pode identificar os efeitos de runas e outras anomalias mágicas.", "Aumenta o ganho de XP do grupo (+25%)."],
+	Value: 1.25,
+}
+{
+	Job: "Teólogo",
+	Name: "Teólogo",
+	Description: "",
+	Stat: "Moral +15",
+	StatBonus: "15",
+	BonusDescriptions: ["Pode identificar os efeitos de santuários e determinar o sacrifício apropriado.", "Aumenta a Moral inicial do grupo (+10)."],
+	Value: 10,
+}
+{
+	Job: "Herbalista",
+	Name: "Herbalista",
+	Description: "",
+	Stat: "Vida +40",
+	StatBonus: "40",
+	BonusDescriptions: ["Ganhe mais materiais em eventos de Coleta.", "+1 de Capacidade de Provisões."],
+	Value: 10,
+}
+{
+	Job: "Arrombador",
+	Name: "Arrombador",
+	Description: "",
+	Stat: "Precisão +8",
+	StatBonus: "8",
+	BonusDescriptions: ["Revela a localização de todas as passagens trancadas na masmorra.", "Consegue identificar fechaduras armadilhadas. Arrombar fechaduras leva menos tempo e tem mais chances de sucesso."],
+}
+{
+	Job: "Saqueador",
+	Name: "Saqueador",
+	Description: "",
+	Stat: "Evasion+3",
+	StatBonus: "3",
+	BonusDescriptions: ["Revela a localização de todos os eventos de butim desbloqueados na masmorra.", "Melhores chances de encontrar equipamentos de maior valor em eventos de butim."],
+	Value: 1.25,
+}
+{
+	Job: "Mineiro",
+	Name: "Mineiro",
+	Description: "",
+	Stat: "Poder +8",
+	StatBonus: "8",
+	BonusDescriptions: ["Capaz de interagir com eventos de Mineração sem exigir Ferramentas. A chance de resultados negativos é reduzida.", "Desobstruir Passagens Bloqueadas leva menos tempo e tem menor chance de resultados negativos."],
+	Value: 1.25,
+}
+{
+	Job: "Desbravador",
+	Name: "Desbravador",
+	Description: "",
+	Stat: "Movimento +1",
+	StatBonus: "1",
+	BonusDescriptions: ["25% de chance de identificar eventos de Perigo e Armadilha adjacentes.", "O limiar para novos Modificadores de Masmorra aumenta em 10 de Tempo."],
+	Value: 1.25,
+	Value2: 10,
+}
+{
+	Job: "FieldMedic",
+	Name: "Médico de Campo",
+	Description: "",
+	Stat: "Cura +6",
+	StatBonus: "6",
+	BonusDescriptions: ["Todos os ferimentos são estabilizados durante a exploração.", "Alcance do uso de provisões aumentado para 2."],
+	Value: 2,
+}
+{
+	Job: "Sobrevivencialista",
+	Name: "Sobrevivencialista",
+	Description: "",
+	Stat: "Defesa +3",
+	StatBonus: "3",
+	BonusDescriptions: ["Aumenta os Pontos de Incenso disponíveis ao acampar em 4.", "Revela a localização de todas as Áreas Fortificadas (se houver) para acampamento."],
+	Value: 4,
+}

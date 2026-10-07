@@ -1,0 +1,6 @@
+{
+	Name: "TorinFinalPowerup",
+	Group: ["WarlordPoweredUp","BlackSkullHunter","BlackSkullKnight","BlackSkullRitualist","BlackSkullMarksman","Sabujo de Sangue"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

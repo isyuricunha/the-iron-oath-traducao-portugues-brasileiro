@@ -1,0 +1,30 @@
+{
+	Name: "WestmireMobs",
+	NameDisplay: "Criaturas de Westmire",
+	Group: ["DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","NullbeastStalker","NullbeastDisrupter","DiseasedNullbeast","CorruptedNullbeast"],
+	ScoutingReport: ["Wealderes:Wealdere","Nullbeast:Nullbeast","Lenhador:Lenhador"],
+	Loot: ["Encantamento,qualquer","Encantamento,wealdere","Encantamento,nullbeast"],
+	Weight: 1,
+}
+{
+	Name: "WestmireMobs",
+	Group: ["DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "WestmireMobs",
+	Group: ["DoeWealdere","NullbeastStalker","NullbeastDisrupter","DiseasedNullbeast","CorruptedNullbeast","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "WestmireMobs",
+	Group: ["AncientWealdere","DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","NullbeastDisrupter"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "WestmireMobs",
+	Group: ["NullbeastPrime","NullbeastStalker","NullbeastDisrupter","DiseasedNullbeast","CorruptedNullbeast","DoeWealdere"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

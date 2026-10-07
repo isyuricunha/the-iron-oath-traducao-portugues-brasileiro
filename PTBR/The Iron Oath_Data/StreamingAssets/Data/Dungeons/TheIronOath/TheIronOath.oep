@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <OgmoVersion>1.0</OgmoVersion>
+  <Name>TheIronOath</Name>
+  <BackgroundColor A="255" R="125" G="160" B="255" />
+  <GridColor A="255" R="255" G="240" B="90" />
+  <LevelDefaultSize>
+    <Width>1280</Width>
+    <Height>1280</Height>
+  </LevelDefaultSize>
+  <LevelMinimumSize>
+    <Width>1280</Width>
+    <Height>1280</Height>
+  </LevelMinimumSize>
+  <LevelMaximumSize>
+    <Width>1280</Width>
+    <Height>1280</Height>
+  </LevelMaximumSize>
+  <Filename>E:\My Documents\!D&amp;D\BitBucket\TheIronOath\Assets\StreamingAssets\Data\Dungeons\TheIronOath\TheIronOath.oep</Filename>
+  <AngleMode>Radians</AngleMode>
+  <CameraEnabled>false</CameraEnabled>
+  <CameraSize>
+    <Width>640</Width>
+    <Height>480</Height>
+  </CameraSize>
+  <ExportCameraPosition>false</ExportCameraPosition>
+  <LevelValueDefinitions>
+    <ValueDefinition xsi:type="StringValueDefinition" Name="ID" Default="" MaxChars="-1" MultiLine="false" />
+    <ValueDefinition xsi:type="EnumValueDefinition" Name="Tileset">
+      <Elements>
+        <string>Any</string>
+        <string>Sewer</string>
+        <string>Crypt</string>
+        <string>Cave</string>
+      </Elements>
+    </ValueDefinition>
+    <ValueDefinition xsi:type="EnumValueDefinition" Name="Size">
+      <Elements>
+        <string>Small</string>
+        <string>Medium</string>
+        <string>Large</string>
+        <string>Enormous</string>
+      </Elements>
+    </ValueDefinition>
+    <ValueDefinition xsi:type="StringValueDefinition" Name="Tags" Default="" MaxChars="-1" MultiLine="false" />
+  </LevelValueDefinitions>
+  <LayerDefinitions>
+    <LayerDefinition xsi:type="TileLayerDefinition">
+      <Name>TilesetLayer</Name>
+      <Grid>
+        <Width>32</Width>
+        <Height>32</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+      <ExportMode>CSV</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="EntityLayerDefinition">
+      <Name>EventsLayer</Name>
+      <Grid>
+        <Width>32</Width>
+        <Height>32</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+    </LayerDefinition>
+  </LayerDefinitions>
+  <Tilesets>
+    <Tileset>
+      <Name>Tileset</Name>
+      <FilePath>tiles.png</FilePath>
+      <TileSize>
+        <Width>32</Width>
+        <Height>32</Height>
+      </TileSize>
+      <TileSep>0</TileSep>
+    </Tileset>
+  </Tilesets>
+  <EntityDefinitions>
+    <EntityDefinition Name="Event" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>-18</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="255" G="0" B="255" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="StringValueDefinition" Name="ScriptedEventName" Default="" MaxChars="-1" MultiLine="false" />
+        <ValueDefinition xsi:type="BoolValueDefinition" Name="IsGoal" Default="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Start" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>24</Width>
+        <Height>24</Height>
+      </Size>
+      <Origin>
+        <X>-4</X>
+        <Y>-4</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="128" G="255" B="128" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="StringValueDefinition" Name="ScriptedEventName" Default="" MaxChars="-1" MultiLine="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Trap" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>24</Width>
+        <Height>24</Height>
+      </Size>
+      <Origin>
+        <X>-4</X>
+        <Y>-4</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="255" G="255" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="EnumValueDefinition" Name="TrapType">
+          <Elements>
+            <string>PitTrap</string>
+            <string>CavePitTrap</string>
+          </Elements>
+        </ValueDefinition>
+        <ValueDefinition xsi:type="IntValueDefinition" Name="Difficulty" Default="0" Min="0" Max="10" ShowSlider="true" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Combat" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>0</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="255" G="0" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="BoolValueDefinition" Name="PossibleKeyLocation" Default="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Config" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>0</X>
+        <Y>-18</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="128" G="0" B="255" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="BoolValueDefinition" Name="Blocked" Default="false" />
+        <ValueDefinition xsi:type="BoolValueDefinition" Name="Locked" Default="false" />
+        <ValueDefinition xsi:type="StringValueDefinition" Name="ScriptedEvent" Default="" MaxChars="-1" MultiLine="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Dialogue" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>-8</X>
+        <Y>-8</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="128" G="0" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="StringValueDefinition" Name="Dialogue" Default="" MaxChars="-1" MultiLine="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Secret" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>-4</X>
+        <Y>-4</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="0" G="64" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="IntValueDefinition" Name="DiscoveryDifficulty" Default="0" Min="0" Max="10" ShowSlider="false" />
+        <ValueDefinition xsi:type="StringValueDefinition" Name="ScriptedEvent" Default="" MaxChars="-1" MultiLine="false" />
+        <ValueDefinition xsi:type="EnumValueDefinition" Name="Type">
+          <Elements>
+            <string>random</string>
+            <string>consumables</string>
+            <string>equipment</string>
+            <string>miscItems</string>
+            <string>enemyEncounter</string>
+          </Elements>
+        </ValueDefinition>
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="OptionalEvent" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>-18</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Image" ImagePath="optionalEvent.png" Tiled="false">
+        <RectColor A="255" R="255" G="0" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="StringValueDefinition" Name="ScriptedEventName" Default="" MaxChars="-1" MultiLine="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="RepeatableEvent" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>-18</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="255" G="128" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="BoolValueDefinition" Name="PossibleKeyLocation" Default="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+  </EntityDefinitions>
+</project>

@@ -1,0 +1,14 @@
+{
+	Name: "tio_ClassNameGuardian",
+	Level: 0,
+	STR: "8",
+	DEX: "5",
+	INT: "11",
+	CHA: "5",
+	CON: "8",
+	WIS: "12",
+	SPD: "7",
+	Move: "3",
+	Primary: "SAB",
+	Secondary: "CAR",
+}

@@ -1,0 +1,30 @@
+{
+	Name: "RedlandsMobs",
+	NameDisplay: "Criaturas das Terras Vermelhas",
+	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion"],
+	ScoutingReport: ["Brightmanes:Brightmane","Charions:Charion","Lenhador:Woodsman"],
+	Loot: ["Encantamento,qualquer","Encantamento,brightmane","Encantamento,charion"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub","NullbeastDisrupter","Lenhador"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["BrightmaneKing","BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["CharionBehemoth","CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

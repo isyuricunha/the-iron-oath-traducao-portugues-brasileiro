@@ -1,0 +1,690 @@
+{
+	Type: "ChanceToLoseTurnOnHit",
+	Amount: "0.2",
+	ID: "LoseTurnOnHitChance20"
+}
+{
+	Type: "ChanceToLoseTurnOnHit",
+	Amount: "0.5",
+	ID: "LoseTurnOnHitChance50"
+}
+{
+	Type: "ChanceToLoseTurnOnHit",
+	Amount: "0.75",
+	ID: "LoseTurnOnHitChance75"
+}
+
+
+
+{
+	Type: "ChanceToDieOnHit",
+	Amount: "0.25",
+	ID: "ChanceToDieOnHit25"
+}
+
+
+{
+	Type: "Morto",
+	Amount: "0",
+	ID: "Dead"
+}
+
+
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.05",
+	Attribute: "PRECISÃO",
+	ID: "AccReducedPerc5"
+}
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.1",
+	Attribute: "PRECISÃO",
+	ID: "AccReducedPerc10"
+}
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.15",
+	Attribute: "PRECISÃO",
+	ID: "AccReducedPerc15"
+}
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.25",
+	Attribute: "PRECISÃO",
+	ID: "AccReducedPerc25"
+}
+
+
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.1",
+	Attribute: "EVA",
+	ID: "EvaReducedPerc10"
+}
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.2",
+	Attribute: "EVA",
+	ID: "EvaReducedPerc20"
+}
+{
+	Type: "SubStatPercReduction",
+	Amount: "0.4",
+	Attribute: "EVA",
+	ID: "EvaReducedPerc40"
+}
+
+
+{
+	Type: "SubStatReduction",
+	Amount: "1",
+	Attribute: "SPD",
+	ID: "SpdReduced1"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "2",
+	Attribute: "SPD",
+	ID: "SpdReduced2"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "3",
+	Attribute: "SPD",
+	ID: "SpdReduced3"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "4",
+	Attribute: "SPD",
+	ID: "SpdReduced4"
+}
+
+
+
+{
+	Type: "SubStatReduction",
+	Amount: "1",
+	Attribute: "PER",
+	ID: "PerceptionReduced1"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "3",
+	Attribute: "PER",
+	ID: "PerceptionReduced3"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "5",
+	Attribute: "PER",
+	ID: "PerceptionReduced5"
+}
+
+
+{
+	Type: "DisableMovementChance",
+	Amount: "0.25",
+	ID: "DisableMovementPerc25"
+}
+
+
+{
+	Type: "AmbushedChance",
+	Amount: "0.1",
+	ID: "AmbushedChance10"
+}
+{
+	Type: "AmbushedChance",
+	Amount: "0.25",
+	ID: "AmbushedChance25"
+}
+
+
+{
+	Type: "SubStatReductionAfterRoundsOfCombat",
+	Amount: "1",
+	SecondaryAmount: "2",
+	TertiaryAmount: "2",
+	Attribute: "SPD",
+	ID: "Lose1SpeedEvery2RoundsMax2"
+}
+{
+	Type: "SubStatReductionAfterRoundsOfCombat",
+	Amount: "1",
+	SecondaryAmount: "2",
+	TertiaryAmount: "3",
+	Attribute: "SPD",
+	ID: "Lose1SpeedEvery2RoundsMax3"
+}
+{
+	Type: "SubStatReductionAfterRoundsOfCombat",
+	Amount: "1",
+	SecondaryAmount: "2",
+	TertiaryAmount: "4",
+	Attribute: "SPD",
+	ID: "Lose1SpeedEvery2RoundsMax4"
+}
+
+
+{
+	Type: "UnableToSprint",
+	Amount: "2",
+	ID: "UnableToSprintAfter2Rounds"
+}
+{
+	Type: "UnableToSprint",
+	Amount: "0",
+	ID: "UnableToSprint"
+}
+
+
+{
+	Type: "CoreStatReduction",
+	Amount: "1",
+	Attribute: "CHA",
+	ID: "Minus1CHA",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "3",
+	Attribute: "CHA",
+	ID: "Minus3CHA",
+}
+
+
+{
+	Type: "CoreStatReduction",
+	Amount: "3",
+	Attribute: "CON",
+	ID: "Minus3CON",
+}
+
+
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "STR",
+	ID: "Minus5Str",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "CON",
+	ID: "Minus5Con",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "WIS",
+	ID: "Minus5Wis",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "INT",
+	ID: "Minus5Int",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "CAR",
+	ID: "Minus5Cha",
+}
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "DES",
+	ID: "Minus5Dex",
+}
+
+
+
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.05",
+	ID: "Take5PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.1",
+	ID: "Take10PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.15",
+	ID: "Take15PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.25",
+	ID: "Take25PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.3",
+	ID: "Take30PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "0.5",
+	ID: "Take50PercExtraDmg"
+}
+{
+	Type: "TakeExtraDamagePercentFromHit",
+	Amount: "1.00",
+	ID: "Take100PercExtraDmg"
+}
+
+
+{
+	Type: "SpellsDealLessDamage",
+	Amount: "0.05",
+	ID: "5PercLessSpelldDmg"
+}
+{
+	Type: "SpellsDealLessDamage",
+	Amount: "0.1",
+	ID: "10PercLessSpelldDmg"
+}
+{
+	Type: "SpellsDealLessDamage",
+	Amount: "0.15",
+	ID: "15PercLessSpelldDmg"
+}
+{
+	Type: "SpellsDealLessDamage",
+	Amount: "0.2",
+	ID: "20PercLessSpelldDmg"
+}
+{
+	Type: "SpellsDealLessDamage",
+	Amount: "0.25",
+	ID: "25PercLessSpelldDmg"
+}
+
+
+{
+	Type: "CritChanceReduced",
+	Amount: "0.05",
+	ID: "5PercReducedCritChance"
+}
+{
+	Type: "CritChanceReduced",
+	Amount: "0.1",
+	ID: "10PercReducedCritChance"
+}
+{
+	Type: "CritChanceReduced",
+	Amount: "0.2",
+	ID: "20PercReducedCritChance"
+}
+{
+	Type: "CritChanceReduced",
+	Amount: "0.4",
+	ID: "40PercReducedCritChance"
+}
+
+
+{
+	Type: "CritDamageReduced",
+	Amount: "0.1",
+	ID: "10PercReducedCritDmg"
+}
+{
+	Type: "CritDamageReduced",
+	Amount: "0.2",
+	ID: "20PercReducedCritDmg"
+}
+{
+	Type: "CritDamageReduced",
+	Amount: "0.3",
+	ID: "30PercReducedCritDmg"
+}
+{
+	Type: "CritDamageReduced",
+	Amount: "0.5",
+	ID: "50PercReducedCritDmg"
+}
+
+
+{
+	Type: "TakeDmgWhenAttacking",
+	Amount: "0.02",
+	ID: "2PercDmgOnSelfFromAtk"
+}
+{
+	Type: "TakeDmgWhenAttacking",
+	Amount: "0.05",
+	ID: "5PercDmgOnSelfFromAtk"
+}
+{
+	Type: "TakeDmgWhenAttacking",
+	Amount: "0.1",
+	ID: "10PercDmgOnSelfFromAtk"
+}
+{
+	Type: "TakeDmgWhenAttacking",
+	Amount: "0.15",
+	ID: "15PercDmgOnSelfFromAtk"
+}
+
+
+{
+	Type: "TakeDamageFromBlock",
+	Amount: "0.1",
+	ID: "10PercDmgWhenBlocking"
+}
+{
+	Type: "TakeDamageFromBlock",
+	Amount: "0.2",
+	ID: "20PercDmgWhenBlocking"
+}
+{
+	Type: "TakeDamageFromBlock",
+	Amount: "0.3",
+	ID: "30PercDmgWhenBlocking"
+}
+{
+	Type: "TakeDamageFromBlock",
+	Amount: "0.5",
+	ID: "50PercDmgWhenBlocking"
+}
+
+
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.05",
+	ID: "5PercMeleeAtkReduction"
+}
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.1",
+	ID: "10PercMeleeAtkReduction"
+}
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.15",
+	ID: "15PercMeleeAtkReduction"
+}
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.2",
+	ID: "20PercMeleeAtkReduction"
+}
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.3",
+	ID: "30PercMeleeAtkReduction"
+}
+{
+	Type: "MeleeAttackReduction",
+	Amount: "0.4",
+	ID: "40PercMeleeAtkReduction"
+}
+
+
+{
+	Type: "SubStatReduction",
+	Amount: "5",
+	Attribute: "FOCO",
+	ID: "5MaxFocusReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "15",
+	Attribute: "FOCO",
+	ID: "15MaxFocusReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "25",
+	Attribute: "FOCO",
+	ID: "25MaxFocusReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "40",
+	Attribute: "FOCO",
+	ID: "40MaxFocusReduction"
+}
+
+
+{
+	Type: "SprintingTakesDamage",
+	Amount: "5",
+	ID: "5DmgFromSprint"
+}
+{
+	Type: "SprintingTakesDamage",
+	Amount: "10",
+	ID: "10DmgFromSprint"
+}
+{
+	Type: "SprintingTakesDamage",
+	Amount: "20",
+	ID: "20DmgFromSprint"
+}
+
+
+{
+	Type: "AllCoreStatsReduction",
+	Amount: "2",
+	ID: "AllCoreStatsDown2"
+}
+{
+	Type: "AllCoreStatsReduction",
+	Amount: "4",
+	ID: "AllCoreStatsDown4"
+}
+{
+	Type: "AllCoreStatsReduction",
+	Amount: "6",
+	ID: "AllCoreStatsDown6"
+}
+
+
+{
+	Type: "ChanceToWorsenInjuryInCombat",
+	Amount: "0.1",
+	ID: "10PercChanceWorsenInjury"
+}
+{
+	Type: "ChanceToWorsenInjuryInCombat",
+	Amount: "0.25",
+	ID: "25PercChanceWorsenInjury"
+}
+
+
+{
+	Type: "AlwaysInDownedState",
+	ID: "AlwaysInDownedState"
+}
+
+
+{
+	Type: "IncreasedChanceToBeCrit",
+	Amount: "0.02",
+	ID: "2PercIncreaseToBeCrit"
+}
+{
+	Type: "IncreasedChanceToBeCrit",
+	Amount: "0.05",
+	ID: "5PercIncreaseToBeCrit"
+}
+{
+	Type: "IncreasedChanceToBeCrit",
+	Amount: "0.08",
+	ID: "8PercIncreaseToBeCrit"
+}
+{
+	Type: "IncreasedChanceToBeCrit",
+	Amount: "0.1",
+	ID: "10PercIncreaseToBeCrit"
+}
+
+
+{
+	Type: "MovingTakesDamage",
+	Amount: "10",
+	ID: "10DmgFromMoving"
+}
+{
+	Type: "MovingTakesDamage",
+	Amount: "25",
+	ID: "25DmgFromMoving"
+}
+
+
+{
+	Type: "IncomingHealsReduced",
+	Amount: "0.1",
+	ID: "10PercHealReduction"
+}
+{
+	Type: "IncomingHealsReduced",
+	Amount: "0.15",
+	ID: "15PercHealReduction"
+}
+{
+	Type: "IncomingHealsReduced",
+	Amount: "0.2",
+	ID: "20PercHealReduction"
+}
+
+{
+	Type: "DodgeReduction",
+	Amount: "0.1",
+	ID: "10PercDodgeReduction"
+}
+{
+	Type: "DodgeReduction",
+	Amount: "0.2",
+	ID: "20PercDodgeReduction"
+}
+{
+	Type: "DodgeReduction",
+	Amount: "0.3",
+	ID: "30PercDodgeReduction"
+}
+{
+	Type: "DodgeReduction",
+	Amount: "0.5",
+	ID: "50PercDodgeReduction"
+}
+
+
+{
+	Type: "SubStatReduction",
+	Amount: "1",
+	Attribute: "MOV",
+	ID: "1MoveReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "2",
+	Attribute: "MOV",
+	ID: "2MoveReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "3",
+	Attribute: "MOV",
+	ID: "3MoveReduction"
+}
+
+
+{
+	Type: "SubStatReduction",
+	Amount: "1",
+	Attribute: "COR",
+	ID: "1SprintReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "2",
+	Attribute: "COR",
+	ID: "2SprintReduction"
+}
+{
+	Type: "SubStatReduction",
+	Amount: "3",
+	Attribute: "COR",
+	ID: "3SprintReduction"
+}
+
+
+{
+	Type: "DisableMovementAbilities",
+	ID: "DisableMovementAbilities"
+}
+
+
+{
+	Type: "MovingEndsTurn",
+	ID: "MovingEndsTurn"
+}
+
+
+{
+	Type: "EveryActionButWaitingTakesDmg",
+	Amount: "3",
+	ID: "Take3DmgFromActions"
+}
+{
+	Type: "EveryActionButWaitingTakesDmg",
+	Amount: "5",
+	ID: "Take5DmgFromActions"
+}
+{
+	Type: "EveryActionButWaitingTakesDmg",
+	Amount: "10",
+	ID: "Take10DmgFromActions"
+}
+
+{
+	Type: "StaggerOnMove",
+	ID: "StaggerOnMove"
+}
+
+{
+	Type: "MaxBleedOutReduced",
+	Amount: "2",
+	ID: "MaxBleedOutReducedBy2"
+}
+{
+	Type: "MaxBleedOutReduced",
+	Amount: "3",
+	ID: "MaxBleedOutReducedBy3"
+}
+{
+	Type: "MaxBleedOutReduced",
+	Amount: "4",
+	ID: "MaxBleedOutReducedBy4"
+}
+{
+	Type: "MaxBleedOutReduced",
+	Amount: "5",
+	ID: "MaxBleedOutReducedBy5"
+}
+
+
+{
+	Type: "CoreStatReduction",
+	Amount: "5",
+	Attribute: "FOR",
+	ID: "Test",
+}
+
+{
+	Type: "AddTrait",
+	Attribute: "EyeLoss",
+	ID: "LoseEye"
+}
+
+{
+	Type: "AddTrait",
+	Attribute: "EarLoss",
+	ID: "HearingLoss"
+}

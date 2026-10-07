@@ -1,0 +1,15 @@
+{
+	Name: "Mortos-Vivos",
+	NameDisplay: "Mortos-Vivos",
+	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
+	ScoutingReport: ["Mortos-Vivos:Morto-Vivo","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Mortos-Vivos",
+	NameDisplay: "Mortos-Vivos",
+	Group: ["RisenScourge","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

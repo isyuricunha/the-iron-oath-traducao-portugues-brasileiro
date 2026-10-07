@@ -1,0 +1,15 @@
+{
+	Name: "RuinsRoute3",
+	NameDisplay: "Flagelo",
+	Group: ["Angustiado","Esfolador","Sedutora","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
+	ScoutingReport: ["Demônios:Demônio","Mortos-Vivos:Morto-Vivo","Charions:Charion","Nullbeasts:Nullbeast"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "RuinsRoute3",
+	NameDisplay: "Flagelo",
+	Group: ["RisenScourge","Cavaleiro do Pavor","Atormentado","Esfolador","Sedutora","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

@@ -1,0 +1,7 @@
+{
+  uniqueId: "tioLore1",
+  icon: "equipmentScraps",
+  name: "Carta para Enrik",
+  description: "Uma carta curta escrita para um conhecido.",
+  extraText: ["Enrik, espero que esta carta o encontre mal. Sei que foi você que andou roubando minhas maçãs. Este é um aviso: se eu te pegar com essas mãos de unha de fome na minha bendita fruta de novo, não vou me limitar a mandar uma carta severa. Não, da próxima vez você vai encontrar um cutelo na sua maldita cabeça. Fique longe da minha propriedade ou vai se arrepender."]
+}

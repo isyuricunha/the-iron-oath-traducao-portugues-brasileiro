@@ -1,0 +1,15 @@
+{
+	Name: "Wealdere",
+	NameDisplay: "Wealdere",
+	Group: ["DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","NullbeastDisrupter","Lenhador"],
+	ScoutingReport: ["Wealderes:Wealdere","Woodsman:Woodsman","Nullbeast:Nullbeast"],
+	Loot: ["Enchantment,any","Enchantment,wealdere"],
+	Weight: 1,
+}
+{
+	Name: "Wealdere",
+	NameDisplay: "Wealdere",
+	Group: ["AncientWealdere","DoeWealdere","CorruptedWealdere","DiseasedWealdere","BuckWealdere","NullbeastDisrupter","Lenhador"],
+	IsBossEncounter: true,
+	Weight: 1,
+}

@@ -1,0 +1,13 @@
+{
+	Name: "Assassinos",
+	NameDisplay: "Assassinos",
+	Group: ["Assassin","OutlawBackstabber","OutlawThug","Warhound","Sabujo de Sangue","OutlawDeadeye","OutlawScout"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Assassinos",
+	Group: ["Assassino","OutlawBackstabber","OutlawThug","Warhound","Sabujo de Sangue","OutlawDeadeye","OutlawScout"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

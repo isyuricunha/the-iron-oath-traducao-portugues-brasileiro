@@ -1,0 +1,6 @@
+{
+	Name: "VengeanceNyra",
+	Group: ["Ritualista","OutlawBladedancer","AncientFamiliar","Sabujo de Sangue","OutlawMarauder","OutlawDeadeye","OutlawScout"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

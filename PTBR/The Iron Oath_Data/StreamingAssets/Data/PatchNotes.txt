@@ -1,0 +1,268 @@
+-- PATCH NOTES --
+
+<color=yellow>December 18 1.0.021</color>
+
+<color=white>Fixes</color>
+
+- Fixed a bug where entire campaigns couldn't be completely deleted (a bug introduced due to the addition of the 2nd autosave slot)
+- Fixed a bug where the Reputation discount at Markets was not working correctly
+- Fixed an issue with the 'Sand Storm' city event where the sell price bonus wasn't matching the description
+- Fixed a visual bug on a few specific quests where the Dungeon Modifiers in the Party Select screen were incorrectly colored (A positive mod was red instead of blue, and vice versa. This won't be fixed if you already have these quests active in your journal, but it's just a visual bug) 
+- Fixed a few syntax and grammar errors in various quests 
+
+<color=white>Changes</color>
+
+- Tweaked the Reputation discount values from -25,0,15,30% to -25,0,10,15% (now that it works correctly, the buy/sell prices could get a bit crazy with the right combo of modifiers, so we lowered this to keep the economy in check)
+
+<color=yellow>September 25 1.0.020</color>
+
+<color=white>New</color>
+
+- Added a new unique quest called Prison Break which can appear during a Noble Banquet event in a city (It's one of the more complex dungeons we've done so far and has some new mechanics which we'll be able to make further use of with future quests)
+- 2 additional unique quests (A Dagger for Dridge & Crypt Delivery) that are part of a longer chain
+
+<color=white>Changes</color>
+
+- Most city events will now be resolved when completing an associated contract (eg. driving off bandits during Bandit Activity)
+- Made a few changes to the flow of Dark Deeds quest chain and added Jorgen as an ally in combat
+- The game now keeps the last 2 autosaves instead of 1 (mostly a safeguard against any potential issues where you might not have manually saved in a while and wanted to reload to a certain spot)
+
+<color=white>Fixes</color>
+
+- Fixed an issue where the game would soft lock at the end up combat if one of your characters was still frozen by the Frozen Tomb ability (with the Clean Slate upgrade)
+- Fixed a bug where custom portraits could end up causing save files to get corrupted and deleted (if you had a temporary NPC ally who ended up dying in combat)
+- Possible fix for an issue where a line of dialogue meant for a character with a specific job would be spoken by someone else
+- When using the Pugilist's Mind, Body and Soul ability with the Restoration upgrade, it now correctly uses his Mending stat to determine the heal value (instead of the target's Mending)
+- Fixed a visual bug where Rooting a target who was already Rooted would cause the status effect icon to disappear (this was most commonly seen with the Icebinder's Impaling Ice ability when hitting the same target twice)
+- Fixed an issue with Shrines where some negative effects (and some effects that aren't currently implemented, such as seeing future dungeon modifiers) could show up as one of the two random choices when your offering was accepted
+- The displayed buy price in markets now takes your Reputation with the city into account (this one was a visual bug where the price displayed was incorrect, but you were always charged the correct price)
+- Fixed an issue on the Steam Deck where changing the number of days to rest at an inn could cause the UI to become unresponsive (we ended up redoing the way that popup window works globally)
+
+<color=yellow>May 13th 2024 1.0.019</color>
+
+<color=white>New</color>
+
+-Added 8 new 'Unknown' dungeon events
+
+<color=yellow>April 4th 2024 1.0.018</color>
+
+<color=white>New</color>
+
+- Added a new quest
+
+<color=yellow>March 17th 2024 1.0.017</color>
+
+<color=white>New</color>
+
+-Added 4 unique quests
+
+<color=white>Fixes</color>
+
+-Fixed an issue where unique quests that have been completed would show up again under certain circumstances
+-Fixed an issue preventing quests related to Earthquakes from appearing in cities
+-The proper amount of reinforcements remaining in the final campaign fight is now displayed and updated correctly
+-Tweaked the flavor text of some resource items to give a better indication of their use
+
+<color=yellow>December 20th 2023 1.0.016</color>
+
+<color=white>Fixes</color>
+
+- Fixed an issue loading some save files
+
+<color=yellow>December 20th 2023 1.0.015</color>
+
+<color=white>Fixes</color>
+
+- Fixed an issue where fire from a character's attack could destroy a ice/wood planks during an attack of opportunity against an enemy which could lead to a softlock
+- Fixed an issue during the scourge where if you tried to travel to a city under siege and viewed the city's info it would trigger an event as if you had arrived no matter where in the world you were currently
+- Fixed an issue where the Nullbeast Prime couldn't be found (only since 1.0.013)
+- Locked you out of traveling to Fort Vanguard until you visit the first city for the 'Path of Vengeance' quest (to prevent a potential bug)
+
+<color=white>Changes</color>
+
+-Removed some unnecessary dialogue from the tutorial dungeon
+
+<color=yellow>December 18th 2023 1.0.014</color>
+
+<color=white>Content</color>
+
+- The Vanguard/Wealden questline has been enabled, and we tweaked the final fight from what it was previously (if you've already completed the first mission of this, you will be prompted to do it again)
+
+<color=white>Changes</color>
+
+- The 'Devotion' achievement (interact with all shrines) has been changed so you only need to successfully interact with different 10 shrines instead of all 16 (which was hard to do even with a lot of hours)
+- Hoarwulfs are now immune to Slow (so they don't Slow themselves with Ice Tracks), but they are no longer Stagger Immune
+- Nullbeasts are now immune to Weaken, but they are no longer immune to Slow (didn't want to have too many Slow immune enemies with the change to Hoarwulfs)
+
+<color=white>Fixes</color>
+
+- Fixed an issue where you could sometimes ambush a boss 
+- Fixed a rare issue where loading a game during dialogue events could lead to a soft lock
+- Fixed an issue where friendly fire from the Pyrolancer's Return to Cinder trap could lead to a soft lock
+- Fixed an issue where the names of dynamic points of interest would have an incorrect name when saving and loading
+- Renewing Melody and Healing Trance can no longer be used on temporary allies if they die while the ability is still channeling
+
+<color=yellow>December 13th 2023 1.0.013</color>
+
+<color=white>New</color>
+
+- Added Veteran enemy types to bridge the gap between normal enemies and Elites (Veterans have a bronze flair on their HP bar and portrait). They have slightly increased Health, Defense and Power (values subject to change), but they do not possess traits like Elites
+- The party selection screen now displays the jobs of your selected characters under their portraits
+- Added a visual indicator of the path you will take when moving during dungeon exploration
+- Added a Company Upgrade that allows you to assign Jobs from anywhere in the overworld
+- Added an option to disable the screen flash effects that occur when killing a boss (Settings > Other > Strobing Effects)
+
+<color=white>Combat Changes</color>
+
+- Made some adjustments so 4 and 5 skull encounters should be a bit more challenging. Previously we felt that the difficulty tended to peak in 3 skull encounters and gradually fell off after that as you got more powerful (especially 5 skull). We'll likely make some more adjustments to this in the future
+- If an encounter is set to have reinforcements, Elite enemies will now be spread out a bit more, with approximately 2/3 appearing up front, and the rest coming as reinforcements (previously all elites would appear up front)
+- With the addition of Veteran enemies there will now be fewer reinforcements on average (for the most part they'll all come in a single wave, with a few exceptions)
+- Adjusted overworld encounters so they have a few more enemies up front compared to the average dungeon fight
+- Lowered the Health multiplier for Elite enemies (2x -> 1.75x) but increased their Power multiplier (1.5x -> 1.65x) to compensate for it
+- Bosses can no longer spawn as Elites, and their stats now scale based on the skull difficulty of the encounter
+- Fire Terrain now persists for 2 Rounds by default
+- Replaced one of the Wildfire duration upgrades with a new upgrade called Flamewalker, which grants the Pyrolancer immunity to all fire terrain effects (the effect is always active)
+- Bandages now restore 1 Bleedout point in addition to its other effects
+- Optimized enemy AI a bit more so they should act faster on average
+- Sped up character movement across the board to help speed up the flow of combat
+- Helping up an adjacent downed ally now has a sound effect
+- Slightly lowered the Defense of Wealderes and adjusted their point values so they won't be as numerous (they were a little undervalued relative to their strength)
+- Wealderes are no longer immune to Root
+- Slightly increased the Health of Brightmanes
+- When using an ability that has no remaining charges, your defense and damage shields are now ignored (it will always do 40% of your max health regardless of any status effects)
+- Removed instant death as a penalty for some injuries (especially when you were given no notice of the risk)
+- The Deathlord and Conjurer now start with 0 Soul Fragments instead of 2 and 1 respectively, giving you a bit more time before they're able to raise the dead
+
+<color=white>Other Changes</color>
+
+- Level 1 characters now start with 3 abilities instead of 2
+- The 4th, 5th, and 6th abilities are unlocked at levels 4, 7, 10
+- Frontloaded Ability Points a little bit more (they alternate between 2 and 1 each level until level 10, and then grant 1 per level from 11-20)
+- 1-3 Skull encounters grant more XP than before, while 4-5 Skull encounters grant less than before. This makes the early game progress a little faster and slows down the latter levels
+- Adjusted the XP required to level up from 20-40 so it's not so easy to hit the cap
+- Rebalanced contract difficulty so you're given a good balance of quests that are appropriate for your level (while still having a chance to see things that are higher/lower). Previously it would push higher difficulty quests on you too much (for example, if you were around level 6, you'd start seeing mostly 3 skull quests, aside from some patrols or escorts)
+- Slightly raised the floor of recruits available from inns as you progress through the game
+- Euric now starts with Rare medium armor instead of Epic medium armor, and his age is slightly reduced
+- Changed the enemies you encounter in the first mission during the prologue from demons to creatures so there is a bit more enemy variety early on (the quest still has a Demon boss, however)
+- The first job a character is assigned is free, but switching Jobs afterwards now costs 500 coin (reduced by the Retraining company upgrade)
+- Slightly adjusted the coin value of some equipment
+- Lowered the Falchion's critical chance and increased its accuracy (and damage slightly) so it's more in line with other swords
+- Lowered the critical chance of weapons across the board (high tier ones in particular) as it was a bit too easy to get an extremely high crit % (nothing too drastic, the biggest change is masterwork bows and staves are now 10% and 12%, down from 14% and 16%)
+- Rebalanced the costs of repairing gear so using resources is generally more cost effective than spending coin: Using coin to repair in cities is now roughly 2x as costly as using a primary resource (Iron, Wood, etc) to repair something (it previously was around 1.5x the cost)
+- Gear now takes more durability damage from use (taking damage for armor and shields, and dealing damage for weapons). We felt that durability and repairs played too small of a role, especially in the early-mid game, as you would usually find new gear before ever needing to repair
+- Increased the drop rate of scrap (to help with repairs)
+- Every combat is now guaranteed to drop at least one piece of gear or enchantment scroll
+- Gear that drops from enemies has less durability (20-50%) so it's not as lucrative to sell
+- Bosses now have an increased chance to drop enchantments along with a piece of gear
+- Coin rewards from quests have been lowered across the board (guaranteed drops from combats help to offset the loss a bit)
+- Lowered the coin value of some enchantment scrolls
+- Adjusted the gear that was available in a city's Market so higher tier gear doesn't appear too soon
+- If a city doesn't specialize in any gear, then they receive a tier/rarity penalty of -1
+- Removed the random resources you would receive upon completing a quest (with the exception of escort type quests), and instead display a sack of coin to represent your reward
+- Increased the default capacity of your storage/inventory and increased the effectiveness of the Draft Horse company upgrades
+- The tooltip for equipment now says 'or' in between the resources needed to repair (since it's not a combined cost and you can mix and match)
+- When going to repair gear you can now click and hold the arrow buttons to quickly add or subtract materials
+- Using Tools in dungeons now consumes the provision (so you'll likely need to bring more than one!)
+- Increased the cost of Health Potions and reduced their effectiveness (especially with higher tier potions) since it was too easy to go from 0 to full even without points invested in Mending
+- Reduced the XP granted from the generic 'Knowledge' events found in dungeons
+- Lowered the XP bonuses from the Training Dummies upgrade from 20/35/50% to 10/20/30%
+- The tooltip for Death Terrain now displays the damage it inflicts
+- Enemy traits and combat conditions are now sorted by alphabetical order in the Codex
+- Set the difficulty level for the Dark Deeds unique quest chain at 4 Skulls (it should only be completable once now, but let us know if it continues to show up multiple times!)
+- Updated the timers for the Scourge so it reoccurs a bit sooner than before (on existing saves, this will only take effect at the end of your next Scourge)
+- Patrol quests now only spawn 1 combat (instead of 2)
+- Markers for patrol quests no longer spawn right next to a city where it can be obscured by the city event icons
+- Tweaked the Thieves' Den quest so it's not as difficult and gives a better indication that it contains multiple fights
+- The Savage and Cannibal traits should now appear more often on characters
+- Buffed the 'Scroll of Leeching' enchantment to heal for 66% of damage done with basic attacks (instead of 25%)
+- Added a new video tutorial during the tutorial dungeon on how to quickly view enemy traits and their effects
+
+<color=white>Combat Fixes</color>
+
+- Stun and Freeze can no longer be overwritten by Taunt, Sleep, Charm, Fear (these latter 4 still overwrite each other as intended)
+- Charmed units will now move and attack their allies properly instead of sometimes passing their turn
+- Fixed a bug where Charmed and Feared enemies could sometimes move a lot further than they should be able to (or even teleport in some cases)
+- Fixed a bug where channels would get interrupted by Fear, Sleep, Taunt, Charm, Freeze, Stun even if the target had conditional immunity
+- Fixed some logic around buff durations and channels. Previously if you had a buff and used a channeled ability, the buff duration would tick down once when the channel started, and again when the channel finished. Buff durations will now only go down once when the channel completes.
+- If you have the Smart Arc upgrade for Arc Lightning, your allies' sprites will no longer be highlighted in red indicating friendly fire
+- The Pyrolancer's Fuelled by Fire passive now updates more often with the correct number of stacks
+- Fixed an exploit where having conditional immunity made you immune to taking damage when using an ability that had no charges left
+- Fixed a bug where Skewer was incorrectly doing 25% less damage to the second target
+- Fixed an issue where a Rooted character could not help up an adjacent downed ally
+- Fixed an issue where if you moved, undid the move, then moved again very quickly which resulted in you getting hit and downed by an Attack of Opportunity, you could still move the downed character
+- The Encore upgrade for the Balladeer's Renewing Melody ability now works properly
+- Fixed an issue where Cleansing Light's Twin Pillars upgrade wouldn't let you select the same target twice
+- Fixed an issue where using Rainfall would also clear Burn conditions on units that weren't targeted
+- Grievous Wounds will no longer be applied to a target that has conditional immunity
+- Fixed a softlock that was related to abilities and other mechanics that reflect damage
+- Fixed several softlocks that occurred from Attack of Opportunities
+- Fixed a softlock that could occur when getting knocked down from an Attack of Opportunity
+- Fixed an issue where a softlock could occur if multiple taunted units acted in a row
+- Fixed an issue where turns were sometimes being skipped after a taunted unit attacked
+- Nullbeasts can no longer use Deadzone Surge if they're Rooted
+- Bannerman and Hornblowers will no longer buff each other endlessly and should now prioritize other units
+- Units that run through Fire Terrain spawned from Wildfire now properly suffer Burn
+- Blighted Hulks should no longer be able to charge and get stuck in a charging animation for a few seconds if they hit a trap while charging
+- Ice Terrain and Water Terrain now lasts 3 rounds (previously was incorrectly lasting forever)
+- Fixed an unintentional interaction where Death Terrain would get cleared by Water Terrain when it was applied on top of Ice Terrain
+- Fixed the Risen Scourge's Boneyard ability so it no longer spawns in potentially problematic spots (such as on top of wood planks) which could cause various issues (like making the hole traversable once the object was destroyed)
+- The Conjurer is no longer able to perform Attacks of Opportunity
+- Fixed a bug where the enemy cap for individual units wasn't always working (ie. it was possible for 2 Anguished demons to spawn in a 1 Skull dungeon, but there now won't be more than 1 in that case)
+- A horn sound no longer plays when Dire Hoarwulfs use their Pack Hunt ability
+- Fixed an issue where some battles could spawn with unusable cells
+- Fixed a bug with "ghost" enemies in the final boss fight
+- Fixed a few bugs where you could pull Torin out of the sky when he was channeling his Death from Above ability (either by interrupting him with Blinding Light's interrupt upgrade or by removing his immunity buff and then cc'ing him)
+- Fixed an issue where enemies falling into ice pits could cause a softlock
+- Fixed an issue where if an enemies movement was interrupted (from something like Overwatch's Lockdown) it could lead to a softlock
+- Fixed an issue where bosses were counting as elites when filling out combat encounters, so there were less elites in boss fights then there should have been
+
+<color=white>UI Fixes</color>
+
+- Shields and Legendary items now display their rarity/tier in the tooltip
+- Fixed a bug where enemy portraits were appearing as if they had taken damage when playing on a difficulty level that lowered their health (this might have been something that was only bugged on public test)
+- Fixed a bug that was making Serenade, Ice Wall, Cyclone, Frozen Tomb and Rainfall show a damage value in the tooltip and a damage preview when hovering an enemy (now only shows now if you get a damage upgrade for them)
+- Arctic Armor, Guardian Angel, and Safeguard now displays the proper damage shield value in the ability tooltip (and takes Mending into account)
+- Wildfire now shows a damage value in the tooltip and a damage preview on enemies when you have the Firestarter upgrade
+- Fixed a bug where falling rock hazards were incorrectly being included in the 'total reinforcements remaining' number next to the turn order
+- The Morale tooltip (when hovering the Morale bar on a character's portrait) now updates to show the correct value
+- Fixed an issue where the ability tooltips could be formatted incorrectly when moving quickly between them
+- The save/load window when playing on Ironman is now properly sized
+- Fixed an issue where sometimes the system menu icons (in the bottom left corner) would be visible during combat
+- You can no longer change characters in roster management screens without the correct number of abilities equipped, preventing an issue where people could get into combat without the correct number of abilities
+- Fixed a bug where ally NPCs could show up in the camping UI and could be taught abilities (which would usually cause softlocks when used)
+- Fixed an issue where the exit dungeon UI element would sometimes pop in multiple times upon completing a quest objective
+- Updated some text that still mentioned the campaign length being 25 years instead of 30
+
+<color=white>Other Fixes</color>
+
+- Set up a warcamp theme for the Dunes and Marsh tileset
+- Fixed a few things around city specialty gear to ensure they show up in markets more consistently (shields in Jorhurst, for example)
+- Fixed some issues with city events where cities wouldn't always use the right parameters for market and recruit availability
+- Fixed a bug where refunding a character's attributes wasn't actually charging you any coin
+- Fixed an issue in one event where a character's name was displayed as a random string of letters and numbers when looking up their job
+- Fixed an issue with 'Dark Deeds' quest where the associated quest city would incorrectly change, and would incorrectly play the completion event upon arrival
+- Fixed a bug where the destination city for the first 'Path of Vengeance' quest (where you need to build your reputation) could incorrectly change to a different city
+- Fixed an issue where items could duplicate and go over the cap for a single stack
+- Named gear no longer drops at a higher rarity than what is appropriate for the encounter difficulty
+- Fixed an issue where default gear had repair costs at the market
+- Fixed an issue where repair costs for at the market could be incorrect
+- Fixed dungeon exploration pathfinding so it always tries to take the shortest route (if you still find yourself going down an undesirable path, you can hit Esc to stop moving)
+- Fixed the Scroll of Armor Penetration enchantment so it now correctly ignores 15% of the target's Defense (ie. If you attack a target that has 30 Defense, it is treated like they have 15)
+- Fixed a number of stat-based enchantments that weren't working (Speed, Evasion, etc)
+- Fixed a dialogue issue where sometimes the incorrect speaker would be chosen (particularly when it involved someone with a certain job acting and speaking)
+- Icebinders should now show up in the Northern Hold more often
+- Updated a few more Trait conflicts so they won't be applied to the same character (not retroactive)
+- Fixed an issue where the 'Crisis Averted' achievement for defending a city during the Scourge Crisis wasn't being given in some case (the fix is retroactive and should now be given when you load in)
+- Retroactively fixed the following achievements: Masters of their Craft, Devotion, The Librarian
+- Fixed a softlock that could occur from a certain quest during the Scourge Crisis in rare situations
+- Fixed an issue where if you won the Scourge Crisis and then loaded an autosave afterward before turning the quest in, the crisis would still be active with no way to interact with it
+- Fixed an issue where sometimes after finishing combat and completing your dungeon objective, you would be unable to move the camera
+- Fixed an issue where sometimes legendary items would become duplicated (any duped items will be retroactively removed)
+- Fixed an issue where some dungeons could spawn as a 'Long' dungeon (which no longer exists)
+- Fixed the 'Exhaustion' dungeon modifier so it properly reduces available ability charges by 1
+- Named Gear will no longer drop with 2 of the exact same enchantments
+- Fixed an issue so melee Named weapons won't come with an enchantment that increases the range of ranged basic attacks
+- Fixed an issue where some quests (such as A Blacksmith's Request) were issuing a random tier reward instead of something tied to the quest's difficulty
+- If tutorial tips are disabled you will no longer hear a sound effect as if it was still being shown
+- Fixed a rare issue where if you had a softlock and then loaded a save, some weird things could still occur
+- Fixed various typos and grammatical errors

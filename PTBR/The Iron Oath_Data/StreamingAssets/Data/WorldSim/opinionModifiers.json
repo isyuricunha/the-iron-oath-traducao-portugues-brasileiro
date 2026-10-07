@@ -1,0 +1,572 @@
+{	
+	Name: "Kingdom At War",
+    Description: "",
+    Value: "-1",
+    YearlyChange: "-1",
+    ValueMin: "-30",
+	TraitsToAdjust: ["Militant:5", "Pacifist:-5"],
+}
+{	
+	Name: "Reino em Paz",
+    Description: "",
+    Value: "2",
+    YearlyChange: "2",
+    ValueMax: "30",
+	TraitsToAdjust: ["Militant:-5", "Pacifist:5"],
+}
+{	
+	Name: "City At War",
+    Description: "",
+    Value: "-1",
+    YearlyChange: "-1",
+    ValueMin: "-30",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "Cidade em Paz",
+    Description: "",
+    Value: "2",
+    YearlyChange: "2",
+    ValueMax: "30",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "Opinião Diplomática",
+    Description: "",
+	Duration: "1",
+    Value: "5",
+}
+{	
+	Name: "Opinião de Governança",
+    Description: "",
+	Duration: "1",
+    Value: "5",
+}
+{	
+	Name: "Reservas de Comida Altas",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Reservas de Comida Médias",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Reservas de Comida Baixas",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Fome, Sem Comida",
+    Description: "",
+    Value: "-40",
+}
+{	
+	Name: "Reservas de Madeira Altas",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Reservas Médias de Madeira",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Reservas Baixas de Madeira",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Reservas Altas de Ferro",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Reservas Médias de Ferro",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Reservas Baixas de Ferro",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Reservas Altas de Pedra",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Reservas Médias de Pedra",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Reservas Baixas de Pedra",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Economia Estável",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Mesma Fé",
+    Description: "",
+    Value: "15",
+	TraitsToAdjust: ["Proud:5", "Modest:-5"],
+}
+{	
+	Name: "Fé Diferente",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Proud:-5", "Modest:5"],
+}
+{	
+	Name: "Mesma Cultura",
+    Description: "",
+    Value: "30",
+	TraitsToAdjust: ["Proud:5", "Modest:-5"],
+}
+{	
+	Name: "Cultura Diferente",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Proud:-5", "Modest:5"],
+}
+{	
+	Name: "Parente",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Proud:5", "Modest:-5"],
+}
+{	
+	Name: "Sequestrou Meu Parente",
+    Description: "",
+    Value: "-40",
+	Duration: "15",
+	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
+}
+{	
+	Name: "Tentou Sequestrar Meu Parente",
+    Description: "",
+    Value: "-30",
+	Duration: "10",
+	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
+}
+{	
+	Name: "Sequestrador Conhecido",
+    Description: "",
+    Value: "-20",
+	Duration: "10",
+}
+{	
+	Name: "Tentativa de Sequestro",
+    Description: "",
+    Value: "-10",
+	Duration: "5",
+}
+{	
+	Name: "Me Roubou",
+    Description: "",
+    Value: "-30",
+	Duration: "10",
+	TraitsToAdjust: ["Merciful:5","Harsh:-5"],
+}
+{
+	Name: "Tentou Me Roubar",
+    Description: "",
+    Value: "-20",
+	Duration: "5",
+	TraitsToAdjust: ["Merciful:5","Harsh:-5"],
+}
+{
+	Name: "Ladrão Conhecido",
+    Description: "",
+    Value: "-10",
+	Duration: "10",
+}
+{
+	Name: "Ladrão Frustrado",
+    Description: "",
+    Value: "-10",
+	Duration: "5",
+}
+{	
+	Name: "Assassinou Meus Parentes",
+    Description: "",
+    Value: "-60",
+	Duration: "25",
+	TraitsToAdjust: ["Merciful:10","Harsh:-10"],
+}
+{	
+	Name: "Tentou Me Assassinar",
+    Description: "",
+    Value: "-50",
+	Duration: "20",
+	TraitsToAdjust: ["Merciful:10","Harsh:-10"],
+}
+{
+	Name: "Assassino Conhecido",
+    Description: "",
+    Value: "-30",
+	Duration: "15",
+}
+{
+	Name: "Assassino Frustrado",
+    Description: "",
+    Value: "15",
+	Duration: "10",
+}
+{	
+	Name: "Tributos do Vassalo: Baixos",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Greedy:5"],
+}
+{	
+	Name: "Tributos do Vassalo: Médios",
+    Description: "",
+    Value: "-10",
+	TraitsToAdjust: ["Greedy:-5"],
+}
+{	
+	Name: "Tributos do Vassalo: Altos",
+    Description: "",
+    Value: "-20",
+	TraitsToAdjust: ["Greedy:-5"],
+}
+{	
+	Name: "Levas do Vassalo: Baixas",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Pacifist:5"],
+}
+{	
+	Name: "Levas do Vassalo: Médias",
+    Description: "",
+    Value: "-10",
+	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
+}
+{	
+	Name: "Levas do Vassalo: Altas",
+    Description: "",
+    Value: "-20",
+	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
+}
+{	
+	Name: "A Religião Oficial É a Minha",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Proud:5", "Modest:-5"],
+}
+{	
+	Name: "A Religião Oficial Não É a Minha",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Proud:-5", "Modest:5"],
+}
+{	
+	Name: "Minha Religião É Imposta",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Proud:5", "Modest:-5"],
+}
+{	
+	Name: "Minha Religião Não É Imposta",
+    Description: "",
+    Value: "-10",
+	TraitsToAdjust: ["Proud:-5", "Modest:5"],
+}
+{	
+	Name: "Outra Religião É Imposta",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Proud:-5", "Modest:5"],
+}
+{	
+	Name: "Embargo Arruinando Meu Comércio",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Lei de Sucessão: Eletiva",
+    Description: "",
+    Value: "20",
+	TraitsToAdjust: ["Ambitious:5"],
+}
+{	
+	Name: "Lei de Sucessão: Nomeada",
+    Description: "",
+    Value: "-10",
+	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
+}
+{	
+	Name: "Lei de Sucessão: Dinástica",
+    Description: "",
+    Value: "-20",
+	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
+}
+{	
+	Name: "Concedeu Posse a Mim",
+    Description: "",
+    Value: "40",
+	Duration: "25",
+}
+{	
+	Name: "Colocou-me no Trono",
+    Description: "",
+    Value: "40",
+	Duration: "25",
+}
+{	
+	Name: "Impostos Civis: Baixos",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Impostos Civis: Médios",
+    Description: "",
+    Value: "0",
+}
+{	
+	Name: "Impostos Civis: Altos",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Levas Pessoais: Baixas",
+    Description: "",
+    Value: "20",
+}
+{	
+	Name: "Levas Pessoais: Médias",
+    Description: "",
+    Value: "0",
+}
+{	
+	Name: "Levas Pessoais: Altas",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Embargo Contra Mim",
+    Description: "",
+    Value: "-20",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
+}
+{	
+	Name: "Novo Governo (Melhor)",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Novo Governo (Pior)",
+    Description: "",
+    Value: "-10",
+}
+{	
+	Name: "Governante Anterior Foi Mártir",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Governante Anterior Era Reverenciado",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Declared War On Me",
+    Description: "",
+    Value: "-15",
+	TraitsToAdjust: ["Pacifist:-5", "Militant:5"],
+}
+{	
+	Name: "Main Opponent In War",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Pacifist:-5", "Militant:5"],
+}
+{	
+	Name: "Secondary Opponent In War",
+    Description: "",
+    Value: "-15",
+	TraitsToAdjust: ["Pacifist:-5", "Militant:5"],
+}
+{	
+	Name: "Resolução Pacífica",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Pacifist:5"],
+}
+{	
+	Name: "Tomou Minha Cidade",
+    Description: "",
+    Value: "-40",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
+}
+{	
+	Name: "Veio em Meu Auxílio",
+    Description: "",
+    Value: "10",
+}
+{	
+	Name: "Rompou Nossa Aliança",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
+}
+{	
+	Name: "Suserano da Aliança",
+    Description: "",
+    Value: "-15",
+	TraitsToAdjust: ["Honorable:5", "Merciful:5", "Harsh:-5"],
+}
+{	
+	Name: "Meu Aliado",
+    Description: "",
+    Value: "40",
+	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
+}
+{	
+	Name: "Ex-Aliado",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
+}
+{	
+	Name: "Laços de Casamento",
+    Description: "",
+    Value: "10",
+	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
+}
+{	
+	Name: "Lost A War",
+    Description: "",
+    Value: "-10",
+	ValueMax:"-30",
+	TraitsToAdjust: ["Militant:5", "Pacifist:-5"],
+}
+{	
+	Name: "Won A War",
+    Description: "",
+    Value: "10",
+	ValueMax:"30",
+	TraitsToAdjust: ["Militant:5", "Pacifist:-5"],
+}
+{	
+	Name: "Traidor",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
+}
+{	
+	Name: "Perjuro",
+    Description: "",
+    Value: "-20",
+}
+{	
+	Name: "Saqueou Minhas Terras",
+    Description: "",
+    Value: "-10",
+	ValueMin: "-50",
+	YearlyChange:"-10",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
+}
+{	
+	Name: "Saqueador",
+    Description: "",
+    Value: "-15",
+}
+{	
+	Name: "Ameaça ao Meu Reino",
+    Description: "",
+    Value: "-15",
+	TraitsToAdjust: ["SelfPreserving:-5", "Ambitious:-5", "Content:5"],
+}
+{	
+	Name: "Baniu Meus Parentes",
+    Description: "",
+    Value: "-15",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5", "Proud:-5"],
+}
+{	
+	Name: "Aprisionou Meus Parentes",
+    Description: "",
+    Value: "-20",
+	TraitsToAdjust: ["Merciful:5", "Harsh:-5", "Proud:-5"],
+}
+{	
+	Name: "Executou Meus Parentes",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: ["Merciful:10", "Harsh:-10", "Proud:-5"],
+}
+{	
+	Name: "Cassou Meu Feudo",
+    Description: "",
+    Value: "-40",
+	TraitsToAdjust: ["Merciful:10", "Harsh:-10", "Proud:-5"],
+}
+{
+	Name: "Faminto por Poder",
+	Description: "",
+	Value: "-15",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitOpinionFromVassal",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitOpinionFromLiege",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitCivilianOpinion",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitGeneralOpinion",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitOpinionTowardVassal",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "TraitOpinionTowardLiege",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "SpymasterRumor",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "SuspiciousOpinion",
+    Description: "",
+    Value: "-30",
+	TraitsToAdjust: [],
+}
+{	
+	Name: "GeneralCivilianOpinion",
+    Description: "",
+    Value: "0",
+	TraitsToAdjust: [],
+}

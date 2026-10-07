@@ -1,0 +1,6 @@
+{
+	Name: "DemonBoss",
+	Group: ["SpectralReaper","Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

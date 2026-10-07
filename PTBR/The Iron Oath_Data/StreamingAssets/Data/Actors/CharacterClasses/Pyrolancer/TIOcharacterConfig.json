@@ -1,0 +1,14 @@
+{
+	Name: "tio_ClassNamePyrolancer",
+	Health: ["410","410"],
+	Defense: ["5","5"],
+	Power: ["42","42"],
+	Accuracy: ["75","75"],
+	CriticalChance: ["3","3"],
+	Evasion: ["2","2"],
+	Mending: ["8","8"],
+	DefaultWeapon: "tio_smallSpear",
+	PortraitHead: ["male1","male2","male3","male4","male5"],
+	PortraitApparel: ["0","1","2","3","8"],
+	PortraitFace: ["2","3"],
+}

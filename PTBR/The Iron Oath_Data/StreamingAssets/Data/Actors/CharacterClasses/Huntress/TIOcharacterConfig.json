@@ -1,0 +1,13 @@
+{
+	Name: "tio_ClassNameHuntress",
+	Health: ["310","310"],
+	Defense: ["0","0"],
+	Power: ["42","42"],
+	Accuracy: ["75","75"],
+	CriticalChance: ["2","2"],
+	Evasion: ["5","5"],
+	Mending: ["0","0"],	
+	DefaultWeapon: "tio_weakBow",
+	PortraitHead: ["female1","female2","female3","female4","female5"],
+	PortraitApparel: ["4","5","6","7","8","9"],
+}

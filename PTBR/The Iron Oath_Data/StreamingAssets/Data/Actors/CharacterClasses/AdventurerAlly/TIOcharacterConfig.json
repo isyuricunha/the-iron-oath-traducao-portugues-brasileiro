@@ -1,0 +1,12 @@
+{
+	Name: "tio_ClassNameAdventurerAlly",
+	Health: ["400"],
+	Power: ["70"],
+	Mending: ["0"],
+	Defense: ["18"],
+	Evasion: ["10"],
+	Accuracy: ["80"],
+	CriticalChance: ["0"],
+	Speed: ["3"],
+	Move: "3",
+}

@@ -1,0 +1,22 @@
+{
+	Name: "VoidBreach",
+	NameDisplay: "VoidBreach",
+	Group: ["Aflito","Esfolador","Sedutora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	ScoutingReport: ["Demônios:Demônio","Espectros:Espectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "VoidBreach",
+	NameDisplay: "VoidBreach",
+	Group: ["Cavaleiro do Pavor","Atormentado","Esfolador","Sedutora","Seduzida","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "VoidBreach",
+	NameDisplay: "VoidBreach",
+	Group: ["SpectralReaper","Atormentado","Esfolador","Sedutora","Seduzida","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

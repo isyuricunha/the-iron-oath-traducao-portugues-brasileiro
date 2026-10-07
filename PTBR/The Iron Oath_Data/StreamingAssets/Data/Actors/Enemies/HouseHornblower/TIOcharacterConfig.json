@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameHouseHornblower",
+	Health: ["380"],
+	Power: ["60"],
+	Mending: ["0"],
+	Defense: ["10"],
+	Evasion: ["0"],
+	Accuracy: ["95"],
+	CriticalChance: ["0"],
+	Speed: ["4"],
+	Move: "4",
+	Resists: ["Esmagamento"],
+	Immunities: ["Provocação","Lentidão"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "3",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["0","1","1","2","2"],
+}

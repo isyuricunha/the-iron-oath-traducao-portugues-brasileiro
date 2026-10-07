@@ -1,0 +1,61 @@
+{
+  Character: "Guardião",
+  UniqueId: "BlindingStrike",
+  AbilityName: "tio_GuardianBlindingStrikeName",
+  Description: "tio_GuardianBlindingStrikeDescription",
+  DmgType: "SAGRADO",
+  DmgValue: "1.0",
+  Charges: "3",
+}
+{
+  Character: "Guardião",
+  UniqueId: "CleansingLight",
+  AbilityName: "tio_GuardianCleansingLightName",
+  Description: "tio_GuardianCleansingLightDescription",
+  DmgType: "Sagrado",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "2",
+}
+{
+  Character: "Guardião",
+  UniqueId: "Dawn",
+  AbilityName: "tio_GuardianDawnName",
+  Description: "tio_GuardianDawnDescription",
+  DmgType: "Sagrado",
+  DmgValue: "1.75",
+  Charges: "3",
+  Range: "2",
+  BaseValue: "120",
+}
+{
+  Character: "Guardião",
+  UniqueId: "Safeguard",
+  AbilityName: "tio_GuardianSafeguardName",
+  Description: "tio_GuardianSafeguardDescription",
+  DmgType: "Sagrado",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "2",
+  BaseValue: "95",
+}
+{
+  Character: "Guardião",
+  UniqueId: "HolyBarrage",
+  AbilityName: "tio_GuardianHolyBarrageName",
+  Description: "tio_GuardianHolyBarrageDescription",
+  DmgType: "Sagrado",
+  DmgValue: "1.30",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Guardião",
+  UniqueId: "Judgment",
+  AbilityName: "tio_GuardianJudgmentName",
+  Description: "tio_GuardianJudgmentDescription",
+  DmgType: "Sagrado",
+  DmgValue: "2",
+  Charges: "3",
+  Range: "1",
+}

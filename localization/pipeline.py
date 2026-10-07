@@ -519,9 +519,30 @@ class Pipeline:
                                 )
                 if not found:
                     raise ValueError("resources.assets rebuilt without LocalizationText")
-        # Copy the untouched mirror tree so PTBR stays copy-ready.
-        for root, _dirs, files in os_walk(input_root):
+        # Copy the untouched mirror tree so PTBR stays copy-ready. The
+        # repository's own artifacts (git dir, env files, toolkit) must
+        # never ship inside the player overlay.
+        skip_names = {
+            ".git",
+            ".gitignore",
+            ".gitattributes",
+            ".env",
+            ".env.example",
+            "__pycache__",
+            ".pytest_cache",
+            ".ruff_cache",
+            "tools",
+            "localization",
+            "tests",
+            "translate_project.py",
+            "requirements.txt",
+            "game-profile.json",
+        }
+        for root, dirs, files in os_walk(input_root):
+            dirs[:] = [d for d in dirs if d not in skip_names]
             for name in files:
+                if name in skip_names or name.startswith((".env", ".staging-")):
+                    continue
                 src = Path(root) / name
                 rel = src.relative_to(input_root).as_posix()
                 if rel.startswith(("PTBR", ".checkpoints", ".staging")):

@@ -1,0 +1,6 @@
+{
+	Name: "OldFriendAssassins",
+	Group: ["Assassino","Sabujo de Sangue","Warhound","OutlawMarksman","OutlawDeadeye","OutlawBackstabber","OutlawThug"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

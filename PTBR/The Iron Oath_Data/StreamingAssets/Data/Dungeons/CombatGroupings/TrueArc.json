@@ -1,0 +1,15 @@
+{
+	Name: "TrueArc",
+	NameDisplay: "TrueArc",
+	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","RisenGhoul","DiseasedBrightmane","CorruptedBrightmane","CorruptedWealdere","DiseasedWealdere",],
+	ScoutingReport: ["Necromancers:Necromantes","Undead:Mortos-Vivos","Brightmanes:Brightmane","Wealdere:Wealdere"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "TrueArc",
+	NameDisplay: "TrueArc",
+	Group: ["SpectralReaper","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","DiseasedBrightmane","CorruptedBrightmane","CorruptedWealdere","DiseasedWealdere",],
+	Weight: 1,
+	IsBossEncounter: true,
+}
