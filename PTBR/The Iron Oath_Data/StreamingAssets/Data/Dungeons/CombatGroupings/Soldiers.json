@@ -2,7 +2,7 @@
 	Name: "Soldados",
 	Group: ["HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Sabujo de Sangue"],
 	ScoutingReport: ["Soldados:Casa","Warhound:Warhound","Sabujo de Sangue:Sabujo de Sangue"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

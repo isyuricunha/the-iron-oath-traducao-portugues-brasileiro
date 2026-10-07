@@ -1,5 +1,5 @@
 {
 	Name: "Tutorial",
-	Group: ["Esfolador"or", "NullbeastPrime", "Flayer"],
+	Group: ["Esfolador", "NullbeastPrime", "Esfolador"],
 	Weight: 1,
 }

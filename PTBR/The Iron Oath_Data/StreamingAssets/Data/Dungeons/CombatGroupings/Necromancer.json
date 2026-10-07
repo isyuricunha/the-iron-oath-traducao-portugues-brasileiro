@@ -3,7 +3,7 @@
 	NameDisplay: "Necromante",
 	Group: ["Ritualista","Bruxa","SoulConjurer","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
 	ScoutingReport: ["Necromantes:Necromantes","Mortos-vivos:Mortos-vivos"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

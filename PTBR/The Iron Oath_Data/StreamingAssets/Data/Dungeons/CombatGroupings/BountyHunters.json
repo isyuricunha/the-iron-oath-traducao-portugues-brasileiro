@@ -2,7 +2,7 @@
 	Name: "BountyHunter",
 	NameDisplay: "BountyHunter",
 	Group: ["BountyHunter","OutlawBackstabber","OutlawThug","Warhound","Sabujo de Sangue","OutlawDeadeye","OutlawScout"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

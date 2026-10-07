@@ -3,7 +3,7 @@
 	NameDisplay: "Flagelo",
 	Group: ["SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedWealdere","DiseasedWealdere","BuckWealdere","BlightedHulk","BlightedWretch","CorruptedWretch","HardenedWretch"],
 	ScoutingReport: ["Flagelados:Flagelados","Espectros:Espectral","Wealderes:Wealdere"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,any"","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,any","Encantamento,any"],
 	Weight: 1,
 }
 {

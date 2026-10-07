@@ -3,7 +3,7 @@
 	NameDisplay: "Flagelo",
 	Group: ["OutlawBladedancer","OutlawBackstabber","OutlawMarauder","OutlawMarksman","OutlawScout","BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","AdultHoarwulf","DiseasedHoarwulf","CorruptedHoarwulf"],
 	ScoutingReport: ["Foragidos:Foragidos","Brightmanes:Brightmane","Hoarwulfs:Hoarwulf"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,any"","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,any","Encantamento,any"],
 	Weight: 1,
 }
 {

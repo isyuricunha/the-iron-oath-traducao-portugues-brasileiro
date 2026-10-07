@@ -3,7 +3,7 @@
 	NameDisplay: "TrueArc",
 	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","RisenGhoul","DiseasedBrightmane","CorruptedBrightmane","CorruptedWealdere","DiseasedWealdere",],
 	ScoutingReport: ["Necromancers:Necromantes","Undead:Mortos-Vivos","Brightmanes:Brightmane","Wealdere:Wealdere"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

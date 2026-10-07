@@ -3,7 +3,7 @@
 	NameDisplay: "Flagelo",
 	Group: ["Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
 	ScoutingReport: ["Demônios:Demônio","Espectros:Espectral"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

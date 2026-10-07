@@ -2,7 +2,7 @@
 	Name: "BlackSkull",
 	Group: ["BlackSkullHunter","BlackSkullKnight","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","BlackSkullMarksman","NullbeastDisrupter","Sabujo de Sangue"],
 	ScoutingReport: ["Black Skull:BlackSkull","Nullbeast:Nullbeast","Sabujo de Sangue:Sabujo de Sangue:"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {

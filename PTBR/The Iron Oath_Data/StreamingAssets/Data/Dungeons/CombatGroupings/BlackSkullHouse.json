@@ -2,7 +2,7 @@
 	Name: "BlackSkullHouse",
 	Group: ["BlackSkullHunter","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","Sabujo de Sangue","RebelKnight","RebelBannerman","RebelSkirmisher"],
 	ScoutingReport: ["Black Skull:BlackSkull","Soldados Rebeldes:RebelHouse","Sabujo de Sangue:Sabujo de Sangue:"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer"lquer","Enchantment,any"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
 	Weight: 1,
 }
 {
