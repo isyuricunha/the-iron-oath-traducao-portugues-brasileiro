@@ -323,11 +323,12 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
         if settings.mode != "translate":
             print(f"mode {settings.mode}: publication skipped (review/remake must be published explicitly)")
 
-        pipeline.build_staging(settings.input_root, total_accepted, staging)
+        merged_accepted = {**reused, **total_accepted}
+        pipeline.build_staging(settings.input_root, merged_accepted, staging)
         pipeline.publish(staging, settings.output_root)
         stats = pipeline.stats
         print(
-            f"published {len(total_accepted)} units to {settings.output_root}; "
+            f"published {len(merged_accepted)} units to {settings.output_root}; "
             f"failed {len(failed)}; batches {stats.batches}; retries {stats.retries}"
         )
         if failed:
