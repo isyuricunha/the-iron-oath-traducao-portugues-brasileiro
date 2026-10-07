@@ -118,7 +118,10 @@ class TextAssetXmlFormat:
                 data = obj.read()
                 data.m_Script = xml
                 data.save()
-        env.save(pack="none", out_path=str(staging_path))
+        # UnityPy 1.25's Environment.save writes into a directory, keeping
+        # the source basename, which is exactly the staging layout.
+        staging_path.parent.mkdir(parents=True, exist_ok=True)
+        env.save(pack="none", out_path=str(staging_path.parent))
 
     @classmethod
     def validate_str(cls, xml: str, expected: dict[str, str]) -> int:
