@@ -290,11 +290,10 @@ class Pipeline:
         ]
         for t in threads:
             t.start()
-        for t in threads:
-            t.join()
 
-        # Deterministic commit in batch order: a batch commits only when
-        # all earlier batches are ready.
+        # Deterministic commit WHILE the threads run: a batch commits as
+        # soon as every earlier batch is ready, so progress and checkpoints
+        # stream out during the run instead of piling up until the end.
         start_time = time.monotonic()
         total_units = sum(len(b.units) for b in batches)
         while committed_prefix < len(batches):
@@ -330,6 +329,8 @@ class Pipeline:
                     f"ETA {eta/60:.1f}m",
                     flush=True,
                 )
+        for t in threads:
+            t.join()
         return accepted, failed
 
     def _translate_with_recovery(self, batch: Batch, profile_core: str) -> BatchOutcome:
