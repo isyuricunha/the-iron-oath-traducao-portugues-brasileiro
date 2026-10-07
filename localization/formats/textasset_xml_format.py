@@ -85,7 +85,10 @@ class TextAssetXmlFormat:
                     context={"key": key, "asset": ASSET_NAME},
                 )
             )
-            spans[unit_id] = (en_match.start(1), en_match.end(1))
+            # en_match offsets are relative to the block substring; make
+            # them absolute in the full XML for the rebuild stage.
+            block_start = block_match.start(1)
+            spans[unit_id] = (block_start + en_match.start(1), block_start + en_match.end(1))
         return units, spans
 
     @classmethod
