@@ -118,7 +118,7 @@ class TextAssetXmlFormat:
                 data = obj.read()
                 data.m_Script = xml
                 data.save()
-        env.save(destination=str(staging_path))
+        env.save(pack="none", out_path=str(staging_path))
 
     @classmethod
     def validate_str(cls, xml: str, expected: dict[str, str]) -> int:
