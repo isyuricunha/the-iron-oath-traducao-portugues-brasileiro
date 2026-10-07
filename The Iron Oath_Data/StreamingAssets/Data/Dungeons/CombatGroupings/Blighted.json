@@ -1,0 +1,15 @@
+{
+	Name: "Blighted",
+	NameDisplay: "Blighted",
+	Group: ["BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch","DiseasedNullbeast"],
+	ScoutingReport: ["Blighted:Blighted","Nullbeasts:Nullbeast"],
+	Loot: ["Armor,light","Armor,medium","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Blighted",
+	NameDisplay: "Blighted",
+	Group: ["BlightedOverlord","BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

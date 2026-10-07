@@ -1,0 +1,61 @@
+{
+  Character: "Stormcaller",
+  UniqueId: "Cyclone",
+  AbilityName: "tio_StormcallerCycloneName",
+  Description: "tio_StormcallerCycloneDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "0.5",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Stormcaller",
+  UniqueId: "Rainfall",
+  AbilityName: "tio_StormcallerRainfallName",
+  Description: "tio_StormcallerRainfallHealDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "0.35",
+  Charges: "3",
+  Range: "4",
+  BaseValue: "30",
+}
+{
+  Character: "Stormcaller",
+  UniqueId: "StaticCharge",
+  AbilityName: "tio_StormcallerStaticChargeName",
+  Description: "tio_StormcallerStaticChargeCleanseDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "0.35",
+  Charges: "3",
+  Range: "4",
+}
+{
+  Character: "Stormcaller",
+  UniqueId: "ArcLightning",
+  AbilityName: "tio_StormcallerArcLightningName",
+  Description: "tio_StormcallerArcLightningDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "0.85",
+  Charges: "3",
+  Range: "4",
+}
+{
+  Character: "Stormcaller",
+  UniqueId: "Tempest",
+  AbilityName: "tio_StormcallerTempestName",
+  Description: "tio_StormcallerTempestDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "0.75",
+  Charges: "3",
+  Range: "4",
+}
+{
+  Character: "Stormcaller",
+  UniqueId: "Conduit",
+  AbilityName: "tio_StormcallerConduitName",
+  Description: "tio_StormcallerConduitDescription",
+  DmgType: "LIGHTNING",
+  DmgValue: "2.3",
+  Charges: "3",
+  Range: "4",
+}

@@ -1,0 +1,30 @@
+{
+	Name: "RedlandsMobs",
+	NameDisplay: "Redlands Creatures",
+	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion"],
+	ScoutingReport: ["Brightmanes:Brightmane","Charions:Charion","Woodsman:Woodsman"],
+	Loot: ["Enchantment,any","Enchantment,brightmane","Enchantment,charion"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","NullbeastDisrupter","Woodsman"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub","NullbeastDisrupter","Woodsman"],
+	Weight: 1,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["BrightmaneKing","BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "RedlandsMobs",
+	Group: ["CharionBehemoth","CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

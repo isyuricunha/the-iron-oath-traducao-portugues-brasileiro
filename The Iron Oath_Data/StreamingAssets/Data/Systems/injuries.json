@@ -1,0 +1,1198 @@
+{
+	Name: "Skull",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Skull",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "20% chance to lose a turn when hit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["LoseTurnOnHitChance20"],
+	Category: "head"
+}
+{
+	Name: "Skull",
+	InjuryTier: 1,
+	InjuryLabel: "Fractured Skull",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "30",
+	Description: "50% chance to lose a turn when hit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["LoseTurnOnHitChance50"],
+	Category: "head"
+}
+{
+	Name: "Skull",
+	InjuryTier: 2,
+	InjuryLabel: "Severe Skull Fracture",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "75% chance to lose a turn when hit. 25% chance to die when hit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["LoseTurnOnHitChance75", "ChanceToDieOnHit25"],
+	Category: "head"
+}
+{
+	Name: "Skull",
+	InjuryTier: 3,
+	InjuryLabel: "Skull Caved In",
+	DaysUntilHealed: "0",
+	RequireTreatmentBy: "0",
+	Description: "Skull caved in causing death.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "head"
+}
+
+
+{
+	Name: "LeftEye",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Left Eye",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy reduced by 5%.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc5"],
+	Category: "head"
+}
+{
+	Name: "LeftEye",
+	InjuryTier: 1,
+	InjuryLabel: "Left Eye Abrasion",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy and Evasion reduced by 10%. -1 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc10", "EvaReducedPerc10", "PerceptionReduced1"],
+	Category: "head"
+}
+{
+	Name: "LeftEye",
+	InjuryTier: 2,
+	InjuryLabel: "Left Eye Orbital Fracture",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "30",
+	Description: "Accuracy reduced by 15%, Evasion reduced by 20% and -3 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc15", "EvaReducedPerc20", "PerceptionReduced3"],
+	Category: "head"
+}
+{
+	Name: "LeftEye",
+	InjuryTier: 3,
+	InjuryLabel: "Left Eye Puncture",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "Accuracy reduced by 25%, Evasion reduced by 40% and -5 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc25", "EvaReducedPerc40", "PerceptionReduced5"],
+	Category: "head"
+}
+{
+	Name: "LeftEye",
+	InjuryTier: 4,
+	InjuryLabel: "Left Eye Destroyed",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy permanently reduced by 10%, Evasion reduced by 10%, and  -3 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["EyeLoss"],
+	Category: "head"
+}
+
+
+{
+	Name: "RightEye",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Right Eye",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy reduced by 5%.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc5"],
+	Category: "head"
+}
+{
+	Name: "RightEye",
+	InjuryTier: 1,
+	InjuryLabel: "Right Eye Abrasion",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy and Evasion reduced by 10%. -1 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc10", "EvaReducedPerc10", "PerceptionReduced1"],
+	Category: "head"
+}
+{
+	Name: "RightEye",
+	InjuryTier: 2,
+	InjuryLabel: "Right Eye Orbital Fracture",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "30",
+	Description: "Accuracy reduced by 15%, Evasion reduced by 20% and -3 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc15", "EvaReducedPerc20", "PerceptionReduced3"],
+	Category: "head"
+}
+{
+	Name: "RightEye",
+	InjuryTier: 3,
+	InjuryLabel: "Right Eye Puncture",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "Accuracy reduced by 25%, Evasion reduced by 40% and -5 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc25", "EvaReducedPerc40", "PerceptionReduced5"],
+	Category: "head"
+}
+{
+	Name: "RightEye",
+	InjuryTier: 4,
+	InjuryLabel: "Right Eye Destroyed",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Accuracy permanently reduced by 10%, Evasion reduced by 10%, and  -3 Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["EyeLoss"],
+	Category: "head"
+}
+
+
+{
+	Name: "LeftEar",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Left Ear",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "10% increased chance to be Ambushed.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AmbushedChance10"],
+	Category: "head"
+}
+{
+	Name: "LeftEar",
+	InjuryTier: 1,
+	InjuryLabel: "Ruptured Left Ear Drum",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "25% increased chance to be Ambushed and -1 to Perception. 25% chance to experience vertigo and be unable to move on your turn.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AmbushedChance25", "PerceptionReduced1", "DisableMovementPerc25"],
+	Category: "head"
+}
+{
+	Name: "LeftEar",
+	InjuryTier: 2,
+	InjuryLabel: "Left Ear Torn Off",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "15% increased chance to be Ambushed and -3 to Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["EarLoss"],
+	Category: "head"
+}
+
+
+{
+	Name: "RightEar",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Right Ear",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "10% increased chance to be Ambushed.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AmbushedChance10"],
+	Category: "head"
+}
+{
+	Name: "RightEar",
+	InjuryTier: 1,
+	InjuryLabel: "Ruptured Right Ear Drum",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "25% increased chance to be Ambushed and -1 to Perception. 25% chance to experience vertigo and be unable to move on your turn.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AmbushedChance25", "PerceptionReduced1", "DisableMovementPerc25"],
+	Category: "head"
+}
+{
+	Name: "RightEar",
+	InjuryTier: 2,
+	InjuryLabel: "Right Ear Torn Off",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "15% increased chance to be Ambushed and -3 to Perception.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["EarLoss"],
+	Category: "head"
+}
+
+
+{
+	Name: "Nose",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Nose",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "You become winded more easily. Lose 1 Speed every 2 rounds (max of 2).",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Lose1SpeedEvery2RoundsMax2"],
+	Category: "head"
+}
+{
+	Name: "Nose",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Nose",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "30",
+	Description: "You become winded more easily. Lose 1 Speed every 2 rounds (max of 3). After 2 rounds you are unable to sprint.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Lose1SpeedEvery2RoundsMax3", "UnableToSprintAfter2Rounds"],
+	Category: "head"
+}
+{
+	Name: "Nose",
+	InjuryTier: 2,
+	InjuryLabel: "Disfigured Nose",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "You become winded more easily. Lose 1 Speed every 2 rounds (max of 4). After 2 rounds you are unable to sprint.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Lose1SpeedEvery2RoundsMax4", "UnableToSprintAfter2Rounds"],
+	Category: "head"
+}
+
+{
+	Name: "Jaw",
+	InjuryTier: 0,
+	InjuryLabel: "Swollen Jaw",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "-5 Accuracy",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc5"],
+	Category: "head"
+}
+{
+	Name: "Jaw",
+	InjuryTier: 1,
+	InjuryLabel: "Dislocated Jaw",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "-10 Accuracy",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc10"],
+	Category: "head"
+}
+{
+	Name: "Jaw",
+	InjuryTier: 2,
+	InjuryLabel: "Fractured Jaw",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "-15 Accuracy",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc15"],
+	Category: "head"
+}
+
+
+{
+	Name: "Neck",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Neck",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "Take 10% extra damage from all attacks.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take10PercExtraDmg"],
+	Category: "head"
+}
+{
+	Name: "Neck",
+	InjuryTier: 1,
+	InjuryLabel: "Severe Neck Trauma",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "30",
+	Description: "Take 25% extra damage from all attacks.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take25PercExtraDmg"],
+  Category: "head"
+}
+{
+	Name: "Neck",
+	InjuryTier: 2,
+	InjuryLabel: "Broken Neck",
+	DaysUntilHealed: "100",
+	RequireTreatmentBy: "30",
+	Description: "Take 100% extra damage from all attacks.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take100PercExtraDmg"],
+	Category: "head"
+}
+{
+	Name: "Neck",
+	InjuryTier: 3,
+	InjuryLabel: "Head Cut Off",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Decapitated.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "head"
+}
+
+
+{
+	Name: "Concussion",
+	InjuryTier: 0,
+	InjuryLabel: "Mild Concussion",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "Unable to concentrate, abilities deal 10% reduced damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercLessSpelldDmg"],
+	Category: "head"
+}
+{
+	Name: "Concussion",
+	InjuryTier: 1,
+	InjuryLabel: "Severe Concussion",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "35",
+	Description: "Unable to concentrate, abilities deal 20% reduced damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercLessSpelldDmg"],
+	Category: "head"
+}
+{
+	Name: "Concussion",
+	InjuryTier: 2,
+	InjuryLabel: "Brain Damage",
+	DaysUntilHealed: "200",
+	RequireTreatmentBy: "35",
+	Description: "Unable to concentrate, abilities deal 25% reduced damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["25PercLessSpelldDmg"],
+	Category: "head"
+}
+{
+	Name: "Concussion",
+	InjuryTier: 3,
+	InjuryLabel: "Brain Aneurysm",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Death from brain aneurysm.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "head"
+}
+
+
+{
+	Name: "Elbow",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Elbow",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Crit chance reduced by 5%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["5PercReducedCritChance"],
+	Category: "arm"
+}
+{
+	Name: "Elbow",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Elbow",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "30",
+	Description: "Crit chance reduced by 10%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercReducedCritChance"],
+	Category: "arm"
+}
+{
+	Name: "Elbow",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Elbow Fracture",
+	DaysUntilHealed: "45",
+	RequireTreatmentBy: "30",
+	Description: "Crit chance reduced by 20%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercReducedCritChance"],
+	Category: "arm"
+}
+{
+	Name: "Elbow",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Elbow",
+	DaysUntilHealed: "60",
+	RequireTreatmentBy: "-1",
+	Description: "Crit chance reduced by 40%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["40PercReducedCritChance"],
+	Category: "arm"
+}
+
+
+
+{
+	Name: "Hand",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Hand",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Receive 2% of damage dealt and critical hits deal 10% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["2PercDmgOnSelfFromAtk", "10PercReducedCritDmg"],
+	Category: "arm"
+}
+{
+	Name: "Hand",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Hand",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "Receive 5% of damage dealt and critical hits deal 20% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["5PercDmgOnSelfFromAtk", "20PercReducedCritDmg"],
+	Category: "arm"
+}
+{
+	Name: "Hand",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Hand Fracture",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "35",
+	Description: "Receive 10% of damage dealt and critical hits deal 30% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercDmgOnSelfFromAtk", "30PercReducedCritDmg"],
+	Category: "arm"
+}
+{
+	Name: "Hand",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Hand",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "-1",
+	Description: "Receive 15% of damage dealt and critical hits deal 50% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["15PercDmgOnSelfFromAtk", "50PercReducedCritDmg"],
+	Category: "arm"
+}
+
+
+
+{
+	Name: "Shoulder",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Shoulder",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Sustain 10% damage when blocking.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercDmgWhenBlocking"],
+	Category: "arm"
+}
+{
+	Name: "Shoulder",
+	InjuryTier: 1,
+	InjuryLabel: "Dislocated Shoulder",
+	DaysUntilHealed: "15",
+	RequireTreatmentBy: "-1",
+	Description: "Sustain 20% damage when blocking.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercDmgWhenBlocking"],
+	Category: "arm"
+}
+{
+	Name: "Shoulder",
+	InjuryTier: 2,
+	InjuryLabel: "Fractured Shoulder",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "60",
+	Description: "Sustain 30% damage when blocking.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["30PercDmgWhenBlocking"],
+	Category: "arm"
+}
+{
+	Name: "Shoulder",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Shoulder",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "-1",
+	Description: "Sustain 50% damage when blocking.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["50PercDmgWhenBlocking"],
+	Category: "arm"
+}
+
+
+
+{
+	Name: "Forearm",
+	InjuryTier: 0,
+	InjuryLabel: "Sprained Forearm",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Melee attack deal 10% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercMeleeAtkReduction"],
+	Category: "arm"
+}
+{
+	Name: "Forearm",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Forearm",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "Melee attack deal 20% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercMeleeAtkReduction"],
+	Category: "arm"
+}
+{
+	Name: "Forearm",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Forearm Fracture",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "35",
+	Description: "Melee attack deal 30% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["30PercMeleeAtkReduction"],
+	Category: "arm"
+}
+{
+	Name: "Forearm",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Forearm",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "-1",
+	Description: "Melee attack deal 40% less damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["40PercMeleeAtkReduction"],
+	Category: "arm"
+}
+
+
+
+{
+	Name: "RibCage",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Ribs",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "-1 to Speed.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced1"],
+	Category: "torso"
+}
+{
+	Name: "RibCage",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Ribs",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "-2 to Speed. Sprinting causes 5 damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced2", "5DmgFromSprint"],
+	Category: "torso"
+}
+{
+	Name: "RibCage",
+	InjuryTier: 2,
+	InjuryLabel: "Shattered Ribs",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "40",
+	Description: "-3 to Speed. Sprinting causes 20 damage.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced3", "20DmgFromSprint"],
+	Category: "torso"
+}
+{
+	Name: "RibCage",
+	InjuryTier: 3,
+	InjuryLabel: "Punctured Lung",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Suffered a punctured lung from a broken rib, leading to death.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "torso"
+}
+
+
+{
+	Name: "CollarBone",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Clavical",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Incoming heals are 10% less effective.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercHealReduction"],
+	Category: "torso"
+}
+{
+	Name: "CollarBone",
+	InjuryTier: 1,
+	InjuryLabel: "Broken Clavical",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "Incoming heals are 15% less effective.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["15PercHealReduction"],
+	Category: "torso"
+}
+{
+	Name: "CollarBone",
+	InjuryTier: 2,
+	InjuryLabel: "Shattered Clavical",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "Incoming heals are 20% less effective.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercHealReduction"],
+	Category: "torso"
+}
+
+
+
+{
+	Name: "Spine",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Spine",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "All stats reduced by 5%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["MaxBleedOutReducedBy3", "AllCoreStatsDown2"],
+	Category: "torso"
+}
+{
+	Name: "Spine",
+	InjuryTier: 1,
+	InjuryLabel: "Dislocated Spine",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "30",
+	Description: "All stats reduced by 25%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["MaxBleedOutReducedBy4", "AllCoreStatsDown4", "10PercChanceWorsenInjury"],
+	Category: "torso"
+}
+{
+	Name: "Spine",
+	InjuryTier: 2,
+	InjuryLabel: "Fractured Spine",
+	DaysUntilHealed: "200",
+	RequireTreatmentBy: "20",
+	Description: "All stats reduced by 50%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["MaxBleedOutReducedBy4", "AllCoreStatsDown6", "25PercChanceWorsenInjury"],
+	Category: "torso"
+}
+{
+	Name: "Spine",
+	InjuryTier: 3,
+	InjuryLabel: "Severed Spinal Cord",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Severed spinal cord causing death.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "torso"
+}
+
+
+
+{
+	Name: "Heart",
+	InjuryTier: 0,
+	InjuryLabel: "Mild Heart Attack",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "30",
+	Description: "All stats reduced by 4.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AllCoreStatsDown4"],
+	Category: "torso"
+}
+{
+	Name: "Heart",
+	InjuryTier: 1,
+	InjuryLabel: "Massive Heart Attack",
+	DaysUntilHealed: "120",
+	RequireTreatmentBy: "30",
+	Description: "All stats reduced by 6.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AllCoreStatsDown6"],
+	Category: "torso"
+}
+{
+	Name: "Heart",
+	InjuryTier: 2,
+	InjuryLabel: "Heart Failure",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Heart is beyond healing, leading to death.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "torso"
+}
+
+
+
+{
+	Name: "Groin",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Groin",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Unable to sprint. 2% higher chance for enemies to land a crit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["UnableToSprint", "2PercIncreaseToBeCrit"],
+	Category: "torso"
+}
+{
+	Name: "Groin",
+	InjuryTier: 1,
+	InjuryLabel: "Severe Groin Injury",
+	DaysUntilHealed: "15",
+	RequireTreatmentBy: "-1",
+	Description: "Unable to sprint. 5% higher chance for enemies to land a crit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["UnableToSprint", "5PercIncreaseToBeCrit"],
+	Category: "torso"
+}
+{
+	Name: "Groin",
+	InjuryTier: 2,
+	InjuryLabel: "Broken Pelvic Bone",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "60",
+	Description: "Unable to sprint. 8% higher chance for enemies to land a crit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["UnableToSprint", "8PercIncreaseToBeCrit"],
+	Category: "torso"
+}
+{
+	Name: "Groin",
+	InjuryTier: 3,
+	InjuryLabel: "Internal Groin Damage",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "-1",
+	Description: "Unable to sprint. 10% higher chance for enemies to land a crit.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["UnableToSprint", "10PercIncreaseToBeCrit"],
+	Category: "torso"
+}
+
+
+
+{
+	Name: "Sternum",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Sternum",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Incoming damage increased by 5%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take5PercExtraDmg"],
+	Category: "torso"
+}
+{
+	Name: "Sternum",
+	InjuryTier: 1,
+	InjuryLabel: "Fractured Sternum",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "10",
+	Description: "Incoming damage increased by 15%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["MaxBleedOutReducedBy3","Take15PercExtraDmg"],
+	Category: "torso"
+}
+{
+	Name: "Sternum",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Fractured Sternum",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "Incoming damage increased by 30%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take30PercExtraDmg"],
+	Category: "torso"
+}
+{
+	Name: "Sternum",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Sternum",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "50",
+	Description: "Incoming damage increased by 50%",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Take50PercExtraDmg"],
+	Category: "torso"
+}
+{
+	Name: "Sternum",
+	InjuryTier: 4,
+	InjuryLabel: "Punctured Heart",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Death from a piece of a bone puncturing the heart",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "torso"
+}
+
+
+
+{
+	Name: "Ankle",
+	InjuryTier: 0,
+	InjuryLabel: "Sprained Ankle",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "10% reduced Dodge chance.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["10PercDodgeReduction"],
+	Category: "leg"
+}
+{
+	Name: "Ankle",
+	InjuryTier: 1,
+	InjuryLabel: "Fractured Ankle",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "-1",
+	Description: "20% reduced Dodge chance. -1 to Movement and Sprint",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["20PercDodgeReduction", "1MoveReduction", "1SprintReduction"],
+	Category: "leg"
+}
+{
+	Name: "Ankle",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Ankle Fracture",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "30",
+	Description: "30% reduced Dodge chance. -2 to Movement and Sprint",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["30PercDodgeReduction", "2MoveReduction", "2SprintReduction"],
+	Category: "leg"
+}
+{
+	Name: "Ankle",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Ankle",
+	DaysUntilHealed: "80",
+	RequireTreatmentBy: "-1",
+	Description: "50% reduced Dodge chance. -3 to Movement and Sprint",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["50PercDodgeReduction", "3MoveReduction", "3SprintReduction"],
+	Category: "leg"
+}
+
+
+
+{
+	Name: "Knee",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Knee",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "-1 to Speed.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced1"],
+	Category: "leg"
+}
+{
+	Name: "Knee",
+	InjuryTier: 1,
+	InjuryLabel: "Sprained Knee Ligament",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "30",
+	Description: "-2 to Speed. Moving ends your turn.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced2"],
+	Category: "leg"
+}
+{
+	Name: "Knee",
+	InjuryTier: 2,
+	InjuryLabel: "Torn Knee Ligament",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "35",
+	Description: "-3 to Speed. Moving ends your turn.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced3", "MovingEndsTurn"],
+	Category: "leg"
+}
+{
+	Name: "Knee",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Knee",
+	DaysUntilHealed: "50",
+	RequireTreatmentBy: "-1",
+	Description: "-4 to Speed. Moving ends your turn.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["SpdReduced4""MovingEndsTurn"],
+	Category: "leg"
+}
+
+
+
+{
+	Name: "Thigh",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Femur",
+	DaysUntilHealed: "10",
+	RequireTreatmentBy: "-1",
+	Description: "Become staggered after moving.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["StaggerOnMove"],
+	Category: "leg"
+}
+{
+	Name: "Thigh",
+	InjuryTier: 1,
+	InjuryLabel: "Fractured Femur",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "30",
+	Description: "Become staggered after moving. Movement -2 and Sprint -2. Movement Abilities disabled.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["StaggerOnMove", "2MoveReduction", "2SprintReduction", "DisableMovementAbilities"],
+	Category: "leg"
+}
+{
+	Name: "Thigh",
+	InjuryTier: 2,
+	InjuryLabel: "Compound Femoral Fracture",
+	DaysUntilHealed: "60",
+	RequireTreatmentBy: "30",
+	Description: "Become staggered after moving. Movement -3 and Sprint -3. Movement Abilities disabled.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["StaggerOnMove", "3MoveReduction", "3SprintReduction", "DisableMovementAbilities"],
+	Category: "leg"
+}
+{
+	Name: "Thigh",
+	InjuryTier: 3,
+	InjuryLabel: "Shattered Femur",
+	DaysUntilHealed: "80",
+	RequireTreatmentBy: "30",
+	Description: "Become staggered after moving. Movement -3 and Sprint -3. Movement Abilities disabled.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["StaggerOnMove", "3MoveReduction", "3SprintReduction", "DisableMovementAbilities"],
+	Category: "leg"
+}
+{
+	Name: "Thigh",
+	InjuryTier: 4,
+	InjuryLabel: "Lacerated Femoral Artery",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Death caused by massive blood loss from lacerated femoral artery.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+	Category: "leg"
+}
+
+
+
+{
+	Name: "Hamstring",
+	InjuryTier: 0,
+	InjuryLabel: "Bruised Hamstring",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "-1 to sprint.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["1SprintReduction"],
+	Category: "leg"
+}
+{
+	Name: "Hamstring",
+	InjuryTier: 1,
+	InjuryLabel: "Pulled Hamstring",
+	DaysUntilHealed: "20",
+	RequireTreatmentBy: "-1",
+	Description: "-1 to sprint and movemenent.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["1SprintReduction", "1MoveReduction"],
+	Category: "leg"
+}
+{
+	Name: "Hamstring",
+	InjuryTier: 2,
+	InjuryLabel: "Torn Hamstring",
+	DaysUntilHealed: "65",
+	RequireTreatmentBy: "-1",
+	Description: "Unable to sprint and -2 to movement. Become staggered after moving.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["UnableToSprint", "2MoveReduction", "StaggerOnMove"],
+	Category: "leg"
+}
+
+
+
+{
+	Name: "Laceration",
+	InjuryTier: 0,
+	InjuryLabel: "Light Laceration",
+	DaysUntilHealed: "5",
+	RequireTreatmentBy: "-1",
+	Description: "Any combat action besides Waiting or Guarding applies 3 damage until injury is stabilized by bandages.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	NextInjury: "Complication",
+	Debuffs: ["Take3DmgFromActions"],
+}
+{
+	Name: "Laceration",
+	InjuryTier: 1,
+	InjuryLabel: "Deep Laceration",
+	DaysUntilHealed: "30",
+	RequireTreatmentBy: "35",
+	Description: "Any combat action besides Waiting or Guarding applies 5 damage until injury is stabilized by bandages.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	NextInjury: "Complication",
+	Debuffs: ["Take5DmgFromActions"],
+}
+{
+	Name: "Laceration",
+	InjuryTier: 2,
+	InjuryLabel: "Severe Laceration",
+	DaysUntilHealed: "40",
+	RequireTreatmentBy: "45",
+	Description: "Any combat action besides Waiting or Guarding applies 10 damage until injury is stabilized by bandages.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	NextInjury: "Complication",
+	Debuffs: ["Take10DmgFromActions"]
+}
+
+
+
+{
+	Name: "Complication",
+	InjuryTier: 0,
+	InjuryLabel: "Infection",
+	DaysUntilHealed: "45",
+	RequireTreatmentBy: "30",
+	Description: "Infection causing -10 Evasion.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["EvaReducedPerc10"],
+}
+{
+	Name: "Complication",
+	InjuryTier: 1,
+	InjuryLabel: "Fever",
+	DaysUntilHealed: "60",
+	RequireTreatmentBy: "30",
+	Description: "Fever causing -5 Accuracy and -10 Evasion.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["AccReducedPerc5","EvaReducedPerc10","Minus5Con","Minus5Dex","Minus5Int","Minus5Wis","Minus5Cha"],
+}
+{
+	Name: "Complication",
+	InjuryTier: 2,
+	InjuryLabel: "Death",
+	DaysUntilHealed: "-1",
+	RequireTreatmentBy: "-1",
+	Description: "Complications from the infection leading to death.",
+	TraitsAppliedInstantly: [""],
+	TraitsAppliedIfUntreated: [""],
+	Debuffs: ["Dead"],
+}

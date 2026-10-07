@@ -1,0 +1,45 @@
+{
+	// categories
+	Head: "0.15",
+	LeftArm: "0.17",
+	RightArm: "0.17",
+	MidSection: "0.2",
+	LeftLeg: "0.15",
+	RightLeg: "0.15",
+	
+	// head locations
+	Skull: "0.1",
+	LeftEye: "0.12",
+	RightEye: "0.12",
+	LeftEar: "0.09",
+	RightEar: "0.09",
+	Nose: "0.1",
+	Jaw: "0.1",
+	Neck: "0.1",
+	Concussion: "0.11",
+	
+	// arm locations
+	Elbow : "0.2",
+	Hand : "0.15",
+	Shoulder : "0.2",
+	Forearm : "0.2",
+	
+	// mid section
+	RibCage : "0.2",
+	CollarBone : "0.15",
+	Spine : "0.1",
+	Heart : "0.08",
+	Groin : "0.15",
+	Sternum : "0.2",
+	
+	// leg locations
+	Ankle : "0.3",
+	Knee : "0.3",
+	Thigh : "0.2",
+	Hamstring : "0.2",
+	
+	// other injury data
+	DamageIntakeToCauseInjuryPerc: "0.50",
+	ChanceToGetInjuryFromStrongHit: "0.2",
+	LacerationChance: "0.2",
+}

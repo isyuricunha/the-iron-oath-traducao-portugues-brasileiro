@@ -1,0 +1,148 @@
+<XmlPortraitDoc id="male2" label="Male 2">
+	<category id="Aging">
+		<content id="0" face="0" img="aging_black"/>
+		<content id="1" face="1" img="aging_brown"/>
+		<content id="2" face="2" img="aging_light"/>
+		<content id="3" face="3" img="aging_pale"/>
+	</category>
+	<category id="Apparel">
+		<content id="0" img="clothes1" label="Clothes 1"/>
+		<content id="1" img="clothes2" label="Clothes 2"/>
+		<content id="2" img="clothes3" label="Clothes 3"/>
+		<content id="3" img="clothes4" label="Clothes 4"/>
+		<content id="4" img="hood1_black" label="Black Hood"/>
+		<content id="5" img="hood1_blue" label="Blue Hood"/>
+		<content id="6" img="hood1_brown" label="Brown Hood"/>
+		<content id="7" img="hood1_green" label="Green Hood"/>
+		<content id="8" img="hood1_red" label="Red Hood"/>
+		<content id="9" img="hood1_white" label="White Hood"/>
+		<content id="10" img="plateArmor1" label="Plate Armor"/>
+	</category>
+	<category id="ApparelTop">
+		<content id="4" img="hood1_black_top"/>
+		<content id="5" img="hood1_blue_top"/>
+		<content id="6" img="hood1_brown_top"/>
+		<content id="7" img="hood1_green_top"/>
+		<content id="8" img="hood1_red_top"/>
+		<content id="9" img="hood1_white_top"/>
+	</category>	
+	<category id="Backgrounds">
+		<content id="0" img="bg_green" label="Background 1"/>
+		<content id="1" img="bg_maroon" label="Background 2"/>
+		<content id="2" img="bg_red" label="Background 3"/>
+		<content id="3" img="bg_teal" label="Background 4"/>
+		<content id="4" img="bg_violet" label="Background 5"/>
+	</category>
+	<category id="Eyebrows">
+		<content id="0" img="eyebrows_black" label="Black"/>
+		<content id="1" img="eyebrows_blonde" label="Blonde"/>
+		<content id="2" img="eyebrows_brown" label="Brown"/>
+		<content id="3" img="eyebrows_grey" label="Grey"/>
+		<content id="4" img="eyebrows_red" label="Red"/>
+	</category>
+	<category id="Eyes">
+		<content id="0" img="eyes_amber" label="Amber"/>
+		<content id="1" img="eyes_black" label="Black"/>
+		<content id="2" img="eyes_blue" label="Blue"/>
+		<content id="3" img="eyes_brown" label="Brown"/>
+		<content id="4" img="eyes_emerald" label="Emerald"/>
+		<content id="5" img="eyes_green" label="Green"/>
+		<content id="6" img="eyes_grey" label="Grey"/>
+		<content id="7" img="eyes_violet" label="Violet"/>
+	</category>
+	<category id="Face">
+		<content id="0" img="male2_black" label="Black" palette="0"/>
+		<content id="1" img="male2_brown" label="Brown" palette="3"/>
+		<content id="2" img="male2_light" label="Light" palette="1"/>
+		<content id="3" img="male2_pale" label="Pale" palette="2"/>
+	</category>
+	<category id="FacialHair">
+		<content id="0" img="short_red" label="Short Red"/>
+		<content id="1" img="short_grey" label="Short Grey" oldAge="true"/>
+		<content id="2" img="short_brown" label="Short Brown"/>
+		<content id="3" img="short_blonde" label="Short Blonde"/>
+		<content id="4" img="short_black" label="Short Black"/>
+		<content id="5" img="moustache_red" label="Moustache Red"/>
+		<content id="6" img="moustache_grey" label="Moustache Grey" oldAge="true"/>
+		<content id="7" img="moustache_brown" label="Moustache Brown"/>
+		<content id="8" img="moustache_blonde" label="Moustache Blonde"/>
+		<content id="9" img="moustache_black" label="Moustache Black"/>
+		<content id="10" img="longBeard_red" label="Long Beard Red"/>
+		<content id="11" img="longBeard_grey" label="Long Beard Grey" oldAge="true"/>
+		<content id="12" img="longBeard_brown" label="Long Beard Brown"/>
+		<content id="13" img="longBeard_blonde" label="Long Beard Blonde"/>
+		<content id="14" img="longBeard_black" label="Long Beard Black"/>
+		<content id="15" img="goatee_red" label="Goatee Red"/>
+		<content id="16" img="goatee_grey" label="Goatee Grey" oldAge="true"/>
+		<content id="17" img="goatee_brown" label="Goatee Brown"/>
+		<content id="18" img="goatee_blonde" label="Goatee Blonde"/>
+		<content id="19" img="goatee_black" label="Goatee Black"/>
+		<content id="20" img="chops_red" label="Chops Red"/>
+		<content id="21" img="chops_grey" label="Chops Grey" oldAge="true"/>
+		<content id="22" img="chops_brown" label="Chops Brown"/>
+		<content id="23" img="chops_blonde" label="Chops Blonde"/>
+		<content id="24" img="chops_black" label="Chops Black"/>
+	</category>
+	<category id="Hair">
+		<content id="0" img="viking_red" label="Viking Red" palette="3"/>
+		<content id="1" img="viking_grey" label="Viking Grey" palette="4" oldAge="true"/>
+		<content id="2" img="viking_brown" label="Viking Brown" palette="1"/>
+		<content id="3" img="viking_blonde" label="Viking Blonde" palette="2"/>
+		<content id="4" img="viking_black" label="Viking Black" palette="0"/>
+		<content id="5" img="undercut_red" label="Undercut Red" palette="3"/>
+		<content id="6" img="undercut_grey" label="Undercut Grey" palette="4" oldAge="true"/>
+		<content id="7" img="undercut_brown" label="Undercut Brown" palette="1"/>
+		<content id="8" img="undercut_blonde" label="Undercut Blonde" palette="2"/>
+		<content id="9" img="undercut_black" label="Undercut Black" palette="0"/>
+		<content id="10" img="short_red" label="Short Red" palette="3"/>
+		<content id="11" img="short_grey" label="Short Grey" palette="4" oldAge="true"/>
+		<content id="12" img="short_brown" label="Short Brown" palette="1"/>
+		<content id="13" img="short_blonde" label="Short Blonde" palette="2"/>
+		<content id="14" img="short_black" label="Short Black" palette="0"/>
+		<content id="15" img="shaggy_red" label="Shaggy Red" palette="3"/>
+		<content id="16" img="shaggy_grey" label="Shaggy Grey" palette="4" oldAge="true"/>
+		<content id="17" img="shaggy_brown" label="Shaggy Brown" palette="1"/>
+		<content id="18" img="shaggy_blonde" label="Shaggy Blonde" palette="2"/>
+		<content id="19" img="shaggy_black" label="Shaggy Black" palette="0"/>
+		<content id="20" img="ponytail_red" label="Ponytail Red" palette="3"/>
+		<content id="21" img="ponytail_grey" label="Ponytail Grey" palette="4" oldAge="true"/>
+		<content id="22" img="ponytail_brown" label="Ponytail Brown" palette="1"/>
+		<content id="23" img="ponytail_blonde" label="Ponytail Blonde" palette="2"/>
+		<content id="24" img="ponytail_black" label="Ponytail Black" palette="0"/>
+		<content id="25" img="long_red" label="Long Red" palette="3"/>
+		<content id="26" img="long_grey" label="Long Grey" palette="4" oldAge="true"/>
+		<content id="27" img="long_brown" label="Long Brown" palette="1"/>
+		<content id="28" img="long_blonde" label="Long Blonde" palette="2"/>
+		<content id="29" img="long_black" label="Long Black" palette="0"/>
+		<content id="30" img="balding_red" label="Balding Red" palette="3"/>
+		<content id="31" img="balding_grey" label="Balding Grey" palette="4" oldAge="true"/>
+		<content id="32" img="balding_brown" label="Balding Brown" palette="1"/>
+		<content id="33" img="balding_blonde" label="Balding Blonde" palette="2"/>
+		<content id="34" img="balding_black" label="Balding Black" palette="0"/>
+		<content id="35" img="stubble" label="Stubble" palette="0"/>
+	</category>
+	<category id="Scars">
+		<content id="0" face="0" img="scar1_black" label="Scar 1"/>
+		<content id="1" face="1" img="scar1_brown" label="Scar 1"/>
+		<content id="2" face="2" img="scar1_light" label="Scar 1"/>
+		<content id="3" face="3" img="scar1_pale" label="Scar 1"/>
+		<content id="4" face="0" img="scar2_black" label="Scar 2"/>
+		<content id="5" face="1" img="scar2_brown" label="Scar 2"/>
+		<content id="6" face="2" img="scar2_light" label="Scar 2"/>
+		<content id="7" face="3" img="scar2_pale" label="Scar 2"/>
+		<content id="8" face="0" img="scar3_black" label="Scar 3"/>
+		<content id="9" face="1" img="scar3_brown" label="Scar 3"/>
+		<content id="10" face="2" img="scar3_light" label="Scar 3"/>
+		<content id="11" face="3" img="scar3_pale" label="Scar 3"/>
+		<content id="12" face="0" img="scar4_black" label="Scar 4"/>
+		<content id="13" face="1" img="scar4_brown" label="Scar 4"/>
+		<content id="14" face="2" img="scar4_light" label="Scar 4"/>
+		<content id="15" face="3" img="scar4_pale" label="Scar 4"/>
+	</category>
+	<category id="Tattoos">
+		<content id="0" img="tattoo1" label="Tattoo 1"/>
+		<content id="1" img="tattoo2" label="Tattoo 2"/>
+		<content id="2" img="tattoo3" label="Tattoo 3"/>
+		<content id="3" img="tattoo4" label="Tattoo 4"/>
+	</category>
+</XmlPortraitDoc>

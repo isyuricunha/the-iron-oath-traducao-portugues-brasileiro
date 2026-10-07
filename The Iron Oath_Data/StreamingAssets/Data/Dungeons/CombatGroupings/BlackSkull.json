@@ -1,0 +1,13 @@
+{
+	Name: "BlackSkull",
+	Group: ["BlackSkullHunter","BlackSkullKnight","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","BlackSkullMarksman","NullbeastDisrupter","Bloodhound"],
+	ScoutingReport: ["Black Skull:BlackSkull","Nullbeast:Nullbeast","Bloodhound:Bloodhound:"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "BlackSkull",
+	Group: ["BlackSkullCaptain","BlackSkullHunter","BlackSkullKnight","BlackSkullJourneyman","BlackSkullRitualist","BlackSkullGrenadier","BlackSkullMarksman","NullbeastDisrupter","Bloodhound"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

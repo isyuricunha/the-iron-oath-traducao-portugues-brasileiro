@@ -1,0 +1,264 @@
+{	
+	Id: "OriginSmallVillage",
+	Category: "Origin",
+    StoryPrereq: [],
+    OtherPrereq: [],
+    Text: ["[fullName] was born in the small town of [birthTown] in [birthYear].", "[fullName] was born in the heart of [birthTown] in the year [birthYear].", "In the year [birthYear], [fullName] was born in the small town of [birthTown]."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+	Traits: []
+}
+{	
+	Id: "OriginLargeCity",
+	Category: "Origin",
+    StoryPrereq: [],
+    OtherPrereq: [],
+    Text: ["[fullName] grew up in the inner city of [birthTown] in [birthYear].", "[fullName] was born in [birthTown] in the year [birthYear].", "It was in the bustling city of [birthTown] in [birthYear] that [fullName] was born."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+	Traits: []
+}
+{	
+	Id: "OriginCapital",
+	Category: "Origin",
+    StoryPrereq: [],
+    OtherPrereq: [],
+    Text: ["[fullName] was born in the Capital city [birthKingdom] in the year [birthYear]."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+	Traits: []
+}
+
+
+
+
+
+{	
+	Id: "FamilyFarmers",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity"],
+    OtherPrereq: [],
+    Text: ["[PronounSingular] was raised by a couple of farmers who led a mostly quiet life and kept to themselves.", "[PronounPossessive] parents were simple farmers who kept to themselves most of their lives other than when they needed to trade excess crops in town.", "[pronounSingular] was raised on a small farm just outside of town."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyLivestock",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity"],
+    OtherPrereq: [],
+    Text: ["[PronounSingular] was raised by a couple of livestock farmers. [PronounPossessive] family was not wealthy but they made a decent living."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyBlacksmith",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
+    OtherPrereq: [],
+    Text: ["[PronounSingular] had parents in the Blacksmith business where [pronounPossessive] mother looked after the store while [pronounPossessive] dad worked with his forge.","[PronounPossessive] parents made a living in the Blacksmith business. [PronounSingular] had one dad that looked after the store and tended to the customers while [pronounPossessive] other dad worked in the fires of their forge.", "[PronounSingular] had parents that made a living in the Blacksmith business. [PronounPossessive] parent's business thrived but sometimes at the cost of the attention that [pronounSingular] wanted."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyHunter",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage"],
+    OtherPrereq: [],
+    Text: ["[PronounPossessive] dad was a hunter for trade while [pronounPossessive] mother tended to the home.","[PronounPossessive] mother was a skilled hunter for trade. [PronounPossessive] dad worked the fields to bring in some extra coin."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyCarpenter",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
+    OtherPrereq: [],
+    Text: ["For several generations [pronounPossessive] parents made a living as skilled carpenters."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyHealer",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
+    OtherPrereq: [],
+    Text: ["[PronounPossessive] parents were both healers where they grew up and made a modest living."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyOwnedStore",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
+    OtherPrereq: [],
+    Text: ["[PronounPossessive] parents owned a small store where they made a living selling produce to locals."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "FamilyThieves",
+	Category: "Family",
+    StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
+    OtherPrereq: [],
+    Text: ["[PronounSingular] was never quite sure where the money came from but was fairly sure [pronounPossessive] dad wasn't getting it legally. [PronounSingular] always felt like any day [pronounPossessive] dad might just never return."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+
+
+
+{	
+	Id: "ChildEventFamilyKilledBySoldiers",
+	Category: "ChildhoodEvent",
+    StoryPrereq: ["FamilyFarmers", "FamilyLivestock", "FamilyStablemaster", "FamilyBlacksmith", "FamilyHunter", "FamilyCarpenter", "FamilyHealer", "FamilyOwnedStore", "FamilyThieves", "FamilyMageOutcasts", "FamilyBastard", "FamilyDescendantPastKing", "FamilyIllegitimateChildOfKing"],
+    OtherPrereq: ["DuringWar"],
+    Text: ["One day, soldiers from House [houseNameOfOppositionArmy] attacked [pronounPossessive] home and slaughtered [pronounPossessive] parents. [firstName] managed to escape but never forgot the faces of the men who crossed [pronounObjective]. [pronounSingular] vowed to get revenge if it was the last thing [pronounSingular] ever did."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "ChildEventFamilyLesson",
+	Category: "ChildhoodEvent",
+    StoryPrereq: ["FamilyHealer", "FamilyOwnedStore", "FamilyCarpenter"],
+    OtherPrereq: [],
+    Text: ["[firstName] was taught from a young age to value everyone's lives equally."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "ChildEventFamilyKilledByBandits",
+	Category: "ChildhoodEvent",
+    StoryPrereq: ["FamilyFarmers", "FamilyLivestock", "FamilyStablemaster", "FamilyBlacksmith", "FamilyHunter", "FamilyCarpenter", "FamilyHealer", "FamilyOwnedStore", "FamilyThieves"],
+    OtherPrereq: [],
+    Text: ["When [firstName] was still a child, [pronounPossessive] parents were murdered by a group of bandits. Though [pronounSingular] managed to survive, their death's never strayed far from [pronounPossessive] thoughts. [pronounSingular] hopes to rid the world of all evil so others won't have to endure the pain [pronounSingular] had to go through."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "ChildEventFamilyGoodTeacher",
+	Category: "ChildhoodEvent",
+    StoryPrereq: ["FamilyFarmers", "FamilyLivestock", "FamilyStablemaster", "FamilyBlacksmith", "FamilyHunter", "FamilyCarpenter", "FamilyHealer", "FamilyOwnedStore"],
+    OtherPrereq: [],
+    Text: ["When [firstName] was a small child in school, [pronounPossessive] teacher's guidance left a profound impact on [pronounObjective]."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+}
+
+
+
+{	
+	Id: "YoungAdultEventSurvivingBySelf",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyKilledByBanditsInWar", "ChildEventFamilyKilledByBandits"],
+    OtherPrereq: ["ClassTypeRogue"],
+    Text: ["Alone and distraught, [firstName] managed to eke by an existence by stealing food and supplies. This life in the shadows helped hone [pronounPossessive] new talents and taught [pronounObjective] to attack without being seen."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+    LoyaltyQuest: [],
+    Goal: "",
+	Traits: [],
+	TraitType: ["Ninja", "Scout", "NeverGiveUp"],
+}
+{	
+	Id: "YoungAdultEventSurvivingBySelf",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyKilledByBanditsInWar", "ChildEventFamilyKilledByBandits"],
+    OtherPrereq: ["ClassTypeMelee", "ClassTypeRogue"],
+    Text: ["Determined to survive, [firstName] joined a local mercenary group at the earliest age they would take [pronounObjective]. From there [pronounSingular] trained and honed [pronounPossessive] skills in battle to become a skilled [className]."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Power", "Tactical"],
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "YoungAdultEventStriveToHelpOthers",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyLesson", "ChildEventFamilyGoodTeacher"],
+    OtherPrereq: [],
+    Text: ["[PronounSingular] took these lessons to heart and made a vow to always help those that were being oppressed."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Reliable", "NeverGiveUp"],
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "YoungAdultEventLearnedFromScholars",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyKilledByBanditsInWar", "ChildEventFamilyKilledByBandits", "ChildEventFamilyGoodTeacher"],
+    OtherPrereq: ["ClassTypeMage"],
+    Text: ["[PronounSingular] would eventually find [pronounPossessive] way into a local academy after acing an entrance exam. Advancing [pronounPossessive] Scholarly pursuits are never far from [firstName]'s mind."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Student", "Tactical"],
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "YoungAdultEventTrainedToLead",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyGoodTeacher"],
+    OtherPrereq: [],
+    Text: ["After graduating from school, [pronounSingular] came across some city guards harassing the locals. [firstName] gathered all those that were being targeted together so that they could fight back. Even at a young age [pronounSingular] was a born leader."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Tactical", "NeverGiveUp", "Reliable"],
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "YoungAdultEventTrainedToLead",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyGoodTeacher"],
+    OtherPrereq: [],
+    Text: ["After school, [firstName] got a job as a hunter where [pronounSingular] learned to master a lot of techniques for tracking prey which is always helpful for a good mercenary."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Scout", "Ninja"],
+    LoyaltyQuest: [],
+    Goal: "",
+}
+{	
+	Id: "YoungAdultEventTrainedToLead",
+	Category: "YoungAdultEvent",
+    StoryPrereq: ["ChildEventFamilyKilledBySoldiers", "ChildEventFamilyKilledByBanditsInWar", "ChildEventFamilyKilledByBandits", "ChildEventFamilyGoodTeacher"],
+    OtherPrereq: [],
+    Text: ["[firstName] was becoming a young adult and wanted to get stronger. [PronounSingular] joined a local guild where [pronounSingular] trained in both mind and body."],
+    ProbabilityWeight: "100",
+    DaysUntilRepeatable: "-1",
+	TraitType: ["Power", "Student"],
+    LoyaltyQuest: [],
+    Goal: "",
+}

@@ -1,0 +1,22 @@
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	ScoutingReport: ["Demons:Demon","Specters:Spectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["Dreadknight","Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}
+{
+	Name: "Voidspawn",
+	NameDisplay: "Voidspawn",
+	Group: ["SpectralReaper","Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

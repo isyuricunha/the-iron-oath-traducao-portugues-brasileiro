@@ -1,0 +1,257 @@
+{
+	Mod: "ENEMY_REINFORCEMENTS",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Enemy Reinforcements",
+	Description: "You've perhaps lingered longer than you should have, giving your foes the chance to bolster their numbers.",
+	PlainText: "The difficulty of combat encounters has increased.",
+	Value: 1.15,	
+}
+{
+	Mod: "DEAD_WALK",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "The Dead Walk",
+	Description: "You can sense dark forces at work. Your recently vanquished enemies have risen once more.",
+	PlainText: "One previous combat encounter is repopulated with the undead."
+}
+{
+	Mod: "RANDOM_ENCOUNTER",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Random Encounter",
+	Description: "Your enemies grow more numerous by the minute. Be on the lookout for more foes.",
+	PlainText: "A new combat encounter has appeared in the dungeon."
+}
+{
+	Mod: "ENEMY_PREPARATIONS",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Enemy Preparations",
+	Description: "Your foes are now well aware of your presence and have prepared accordingly.",
+	PlainText: "Enemies will ambush you in every unscouted combat event."
+}
+{
+	Mod: "INJURY_PRONE",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Weight: 0.7,
+	Name: "Injury Prone",
+	Description: "One misstep or lapse in judgement is all it takes to get seriously hurt around here. One can only concentrate on so many things.",
+	PlainText: "Your chance of incurring an injury has increased significantly."
+}
+{
+	Mod: "WALK_DONT_RUN",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 4,
+	Weight: 0.3,
+	Name: "Walk, Don't Run",
+	Description: "You can feel exhaustion begin to take hold, It's probably best to conserve your energy from here on out.",
+	PlainText: "You are now unable to Sprint in combat."
+}
+{
+	Mod: "LOST_TIME",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 0.7,
+	Name: "Lost Time",
+	Description: "The journey seems to have clouded your sense of time. You can't say for certain how long you've been here.",
+	PlainText: "One less unit of time required for each revolution on the time meter."
+}
+{
+	Mod: "ON_THE_LOOKOUT",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Weight: 0.8,
+	Name: "Not On Lookout",
+	Description: "You can't help but feel as if your every action is being observed. Nothing you can do about it but press on however...",
+	PlainText: "The chance of getting ambushed while resting has doubled for the next time you make camp."
+}
+{
+	Mod: "MISPLACED_PROVISIONS",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Weight: 0.6,
+	Name: "Misplaced Provisions",
+	Description: "You're not sure when or how it happened, but you seem to have misplaced a few items from your pack.",
+	PlainText: "You lost 1 {[PARAM1]}.",
+}
+{
+	Mod: "HEAVY_EYES",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 12,
+	MinTier: 0,
+	Weight: 0.6,
+	Name: "Heavy Eyes",
+	Description: "Everyone's eyes grow heavy from the journey. We should rest soon....",
+	PlainText: "Next time you camp everyone will be forced to rest with no lookout.",
+}
+{
+	Mod: "DISORGANIZATION",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Disorganization",
+	Description: "As the mission drags on, you find it difficult to maintain proper discipline and formation.",
+	PlainText: "The deployment phase is skipped and you are unable to reposition your party.",
+}
+{
+	Mod: "MORTAL_REMINDER",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 5,
+	Weight: 0.5,
+	Name: "Mortal Reminder",
+	Description: "Your party begins to look more ragged by the minute. It dawns on you that maybe not all will make it out alive.",
+	PlainText: "{[PARAM1]} has lost all of their bleedout points. The next time they are downed could be fatal if we don't act now.",
+}
+{
+	Mod: "DEADLY_CONTRAPTIONS",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Weight: 0.8,
+	Name: "Deadly Contraptions",
+	Description: "You've noticed that the traps here seem to be more sophisticated than most. Best remind everyone to be careful.",
+	PlainText: "Traps deal double damage.",
+}
+{
+	Mod: "HARROWING_EXPERIENCE",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Harrowing Experience",
+	Description: "Even the bravest soldier is not immune to traumatic events. It will take a while to forget this one...",
+	PlainText: "Accrue additional post-mission Fatigue and reduce current Morale by 35.",
+}
+{
+	Mod: "HUNGER",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 25,
+	MinTier: 3,
+	Weight: 0.5,
+	Name: "Hunger",
+	Description: "The pangs of hunger creep into your weary party. They won't be willing to go much further without first making camp.",
+	PlainText: "Every action that costs time will make your troops lose 1 point of loyalty with you until you make camp.",
+}
+{
+	Mod: "ENEMY_UNKNOWN",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Enabled: false,
+	Weight: 0.4,
+	Name: "Enemy Unknown",
+	Description: "As darkness encroaches, you can barely make out the shape of your enemies, let alone the state they're in.",
+	PlainText: "Unable to see enemy Health and Defense values.",
+}
+{
+	Mod: "DEATH_MARCH",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 15,
+	Weight: 1,
+	Name: "Death March",
+	Description: "We've taken too long. We've got to get back to the rest of our company. Where even are they? I fear we might not make it back with our lives.",
+	PlainText: "Everyone immediately loses 20% of their HP."
+}
+{
+	Mod: "REPRIEVE",
+	Image: "reprieve",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Reprieve",
+	Description: "A much needed break. We take a moment to gather our bearings before we push onward back into the unknown.",
+	PlainText: "The march of time has spared your troop from further challenges."
+}
+{
+	Mod: "ENRAGED_FOES",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Enraged Foes",
+	Description: "You've left a pile of corpses in your wake, infuriating your enemies.",
+	PlainText: "Enemy units gain 100% Critical Chance in the first round of combat."
+}
+{
+	Mod: "EXHAUSTION",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Exhaustion",
+	Description: "Your party is tired, but you must push forward nonetheless.",
+	PlainText: "Reduce available ability charges by 1."
+}
+{
+	Mod: "TIRED_EYES",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 1,
+	Weight: 1,
+	Name: "Tired Eyes",
+	Description: "Your troop grows increasingly weary and sluggish as the journey takes its toll.",
+	PlainText: "Your units can no longer Evade or perform Attacks of Opportunity."
+}
+{
+	Mod: "MORALE_LOSS",
+	Image: "negativeModifier",
+	MaxTimes: 1,
+	MinTimeSinceCamp: 0,
+	MinTier: 2,
+	Weight: 0,
+	Name: "Morale Loss",
+	Description: "As time marches on, your weary party begins to lose hope. They won't put up with much more of this.",
+	PlainText: "Everyone loses 15 Morale",
+	Value: 15,
+}
+{
+	Mod: "SPREADING_FIRE",
+	Image: "negativeModifier",
+	MaxTimes: -1,
+	MinTimeSinceCamp: 0,
+	MinTier: 0,
+	Weight: 0,
+	Name: "Spreading Fire",
+	Description: "A fire threatens to burn the whole structure down. We have to get out as soon as possible!",
+	PlainText: "For every action you take in the dungeon, your party loses 10 Health. Battles have fire hazards strewn throughout. If any unit runs out of Health outside of combat, you will be forced to abandon your loot and leave the dungeon immediately.",
+	Value: 10,
+}

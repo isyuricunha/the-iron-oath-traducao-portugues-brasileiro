@@ -1,0 +1,12 @@
+{
+	Name: "tio_ClassNameOutlawEnforcerAlly",
+	Health: ["600"],
+	Power: ["100"],
+	Mending: ["0"],
+	Defense: ["24"],
+	Evasion: ["10"],
+	Accuracy: ["80"],
+	CriticalChance: ["0"],
+	Speed: ["5"],
+	Move: "3",
+}

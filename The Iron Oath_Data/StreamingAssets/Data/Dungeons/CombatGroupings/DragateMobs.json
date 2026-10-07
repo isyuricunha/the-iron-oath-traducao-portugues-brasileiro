@@ -1,0 +1,19 @@
+{
+	Name: "DragateMobs",
+	NameDisplay: "Hoarwulf",
+	Group: ["AdultHoarwulf","YoungHoarwulf", "YoungHoarwulf"],
+	Weight: 1,
+}
+{
+	Name: "DragateMobs",
+	NameDisplay: "Hoarwulf",
+	Group: ["AdultHoarwulf","YoungHoarwulf", "AdultHoarwulf", "YoungHoarwulf"],
+	Weight: 1,
+}
+{
+	Name: "DragateMobs",
+	NameDisplay: "Hoarwulf",
+	Group: ["DireHoarwulf","DireHoarwulf", "DireHoarwulf", "AdultHoarwulf", "AdultHoarwulf"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

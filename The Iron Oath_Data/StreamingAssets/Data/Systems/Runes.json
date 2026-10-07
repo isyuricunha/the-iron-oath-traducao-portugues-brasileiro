@@ -1,0 +1,8 @@
+{
+	Type: "RuneOfKnowledge",
+	Name: "Rune Of Knowledge",
+	Description: "Gain 1 Level",
+	Tier: 5,
+	Value: "1",
+	IsActive: "true",
+}

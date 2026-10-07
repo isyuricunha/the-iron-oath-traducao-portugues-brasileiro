@@ -1,0 +1,137 @@
+{
+	Type: "Peras",
+	Name: "Peras, God Of Fortitude",
+	Description: "Restore 160 Health",
+	BuffShortDescription: "",
+	Value: "160",
+	Reward: "restoreHp",
+	IsActive: "true",
+}
+{
+	Type: "Haldrin",
+	Name: "Haldrin, God of Creation",
+	Description: "Restore an ability charge to every ability for each unit",
+	Value: "4",
+	Reward: "restoreCharge",
+	IsActive: "true",
+}
+{
+	Type: "Dyaena",
+	Name: "Dyaena, Goddess of Mercy",
+	Description: "Remove all injuries",
+	Reward: "healInjuries",
+	IsActive: "true",
+}
+{
+	Type: "Hyldr",
+	Name: "Hyldr the Warrior",
+	Description: "+20% Power for the rest of the dungeon",
+	Value: "1.2",
+	Reward: "atkBuff",
+	IsActive: "true",
+}
+{
+	Type: "Thera",
+	Name: "Thera, Goddess of Protection",
+	Description: "Gain a Damage Shield (200) in the next fight lasting for 3 Rounds",
+	Value: "200",
+	Reward: "shieldBuff",
+	IsActive: "true",
+}
+{
+	Type: "Phaetes",
+	Name: "Phaetes, God of Destiny",
+	Description: "Reveal future dungeon modifiers",
+	Reward: "revealTimeMods",
+	IsActive: "false",
+}
+{
+	Type: "Haera",
+	Name: "Haera, Goddess of Prosperity",
+	Description: "Double your coin on hand",
+	Value: "2",
+	Reward: "multiCoin",
+	IsActive: "true",
+}
+{
+	Type: "Teral",
+	Name: "Teral, God of Land",
+	Description: "Clear all blocked and locked passages",
+	Reward: "clearBlockAndLockedPassages",
+	IsActive: "false",
+}
+{
+	Type: "Ceres",
+	Name: "Ceres, God of the Harvest",
+	Description: "Double the provisions currently in your possession",
+	Reward: "doubleProvisions",
+	IsActive: "true",
+}
+{
+	Type: "Osymus",
+	Name: "Osymus, God of Greed",
+	Description: "Reveal all Loot events",
+	Reward: "revealLoot",
+	IsActive: "true",
+}
+{
+	Type: "TianWisdom",
+	Name: "Tian's Trial of Wisdom",
+	Description: "Gain 200 XP and reveal all Runes and Knowledge events",
+	Reward: "gainXp",
+	Value: "200",
+	IsActive: "true",
+}
+{
+	Type: "TianWar",
+	Name: "Tian's Trial of War",
+	Description: "Always ambush non-boss enemies on revealed combats",
+	Reward: "forceAmbush",
+	IsActive: "true",
+}
+{
+	Type: "TianValor",
+	Name: "Tian's Trial of Valor",
+	Description: "Restore 30 Morale",
+	Reward: "restoreMorale",
+	Value: "30",
+	IsActive: "true",
+}
+{
+	Type: "Tychros",
+	Name: "Tychros, God of Time",
+	Description: "Reset the Time Meter to 0 and reduce the Time cost of movement by 1",
+	Reward: "resetTime",
+	IsActive: "true",
+}
+{
+	Type: "Vismyr",
+	Name: "Vismyr the Allmaker",
+	Description: "Gain Resistance to 1 damage type",
+	Reward: "gainRandomResistance",
+	IsActive: "true",
+}
+{
+	Type: "Anusa",
+	Name: "Anusa, Goddess of Sickness",
+	Description: "Non-boss enemies in the next encounter are reduced to 75% Health",
+	Reward: "enemyHealthReduced",
+	Value: "0.75",
+	IsActive: "true",
+}
+{
+	Type: "DymosPwr",
+	Name: "Dymos, God of Deception",
+	Description: "-20% Power for the rest of the dungeon",
+	Reward: "atkDebuff",
+	Value: "0.8",
+	IsActive: "true",
+}
+{
+	Type: "DymosNewEnemies",
+	Name: "Dymos, God of Deception",
+	Description: "Spawn a combat event with Specters",
+	Reward: "newEnemies",
+	ValueString: "Voidspawn",
+	IsActive: "true",
+}

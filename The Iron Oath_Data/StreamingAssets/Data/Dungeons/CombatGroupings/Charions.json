@@ -1,0 +1,14 @@
+{
+	Name: "Charions",
+	Group: ["MatureCharion","DiseasedCharion","CorruptedCharion","CharionBroodling","Woodsman","NullbeastDisrupter"],
+	ScoutingReport: ["Charions:Charion","Woodsman:Woodsman","Nullbeasts:Nullbeast"],
+	Loot: ["Enchantment,any","Enchantment,charion"],
+	Weight: 1,
+}
+{
+	Name: "Charions",
+	NameDisplay: "Charion",
+	Group: ["CharionBehemoth","MatureCharion","DiseasedCharion","CorruptedCharion","CharionBroodling"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

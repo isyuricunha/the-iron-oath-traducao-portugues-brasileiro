@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameRebelBannerman",
+	Health: ["300"],
+	Power: ["60"],
+	Mending: ["0"],
+	Defense: ["10"],
+	Evasion: ["0"],
+	Accuracy: ["95"],
+	CriticalChance: ["0"],
+	Speed: ["9"],
+	Move: "5",
+	Resists: ["CRUSHING"],
+	Immunities: ["TAUNT","SLOW"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "3",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["1","1","2","2","3"],
+}

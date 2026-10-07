@@ -1,0 +1,14 @@
+{
+	Name: "Slow Boat",
+	Description: "The boat look like it will float at least. Might be on the slow side.",
+	Speed: "0.8",
+	Defenses: "0.25",
+	Cost: "25",
+}
+{
+	Name: "Fast Boat",
+	Description: "This boat is really fast but a little more costly.",
+	Speed: "1.7",
+	Defenses: "0.5",
+	Cost: "80",
+}

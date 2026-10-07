@@ -1,0 +1,90 @@
+{
+	Job: "Tracker",
+	Name: "Tracker",
+	Description: "",
+	Stat: "Speed +2",
+	StatBonus: "2",
+	BonusDescriptions: ["Tracks are automatically revealed when entering dungeons and take less time to investigate.", "Scout limit increased by 1."],
+	Value: 1,
+}
+{
+	Job: "Scholar",
+	Name: "Scholar",
+	Description: "",
+	Stat: "Critical Chance +5",
+	StatBonus: "5",
+	BonusDescriptions: ["Can identify the effects of Runes and other magical anomalies.", "Increased Party XP Gain (+25%)."],
+	Value: 1.25,
+}
+{
+	Job: "Theologian",
+	Name: "Theologian",
+	Description: "",
+	Stat: "Morale +15",
+	StatBonus: "15",
+	BonusDescriptions: ["Can identify the effects of Shrines and determine the appropriate sacrifice.", "Increased Party starting Morale (+10)."],
+	Value: 10,
+}
+{
+	Job: "Herbalist",
+	Name: "Herbalist",
+	Description: "",
+	Stat: "Health +40",
+	StatBonus: "40",
+	BonusDescriptions: ["Gain more materials from Gathering events.", "+1 Provision Capacity."],
+	Value: 10,
+}
+{
+	Job: "Picklock",
+	Name: "Picklock",
+	Description: "",
+	Stat: "Accuracy +8",
+	StatBonus: "8",
+	BonusDescriptions: ["Reveal the locations of all locked passages in the dungeon.", "Can identify booby-trapped locks. Picking locks takes less time and has better odds."],
+}
+{
+	Job: "Scavenger",
+	Name: "Scavenger",
+	Description: "",
+	Stat: "Evasion+3",
+	StatBonus: "3",
+	BonusDescriptions: ["Reveal the locations of all unlocked loot events in the dungeon.", "Better odds of finding higher value equipment from loot events."],
+	Value: 1.25,
+}
+{
+	Job: "Miner",
+	Name: "Miner",
+	Description: "",
+	Stat: "Power +8",
+	StatBonus: "8",
+	BonusDescriptions: ["Able to interact with Mining events without requiring Tools. The chance of negative outcomes is reduced.", "Clearing Blocked Passages takes less time with a reduced chance of negative outcomes."],
+	Value: 1.25,
+}
+{
+	Job: "Pathfinder",
+	Name: "Pathfinder",
+	Description: "",
+	Stat: "Movement +1",
+	StatBonus: "1",
+	BonusDescriptions: ["25% chance to identify adjacent Hazard and Trap events.", "The threshold for new Dungeon Modifiers is increased by 10 Time."],
+	Value: 1.25,
+	Value2: 10,
+}
+{
+	Job: "FieldMedic",
+	Name: "Field Medic",
+	Description: "",
+	Stat: "Mending +6",
+	StatBonus: "6",
+	BonusDescriptions: ["All injuries are stabilized during exploration.", "Range of using provisions increased to 2."],
+	Value: 2,
+}
+{
+	Job: "Survivalist",
+	Name: "Survivalist",
+	Description: "",
+	Stat: "Defense +3",
+	StatBonus: "3",
+	BonusDescriptions: ["Increase available Incense Points when camping by 4.", "Reveal the locations of all Fortified Areas (if any) for camping."],
+	Value: 4,
+}

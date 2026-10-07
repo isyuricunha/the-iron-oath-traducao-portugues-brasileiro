@@ -1,0 +1,7 @@
+{
+  uniqueId: "tioLore1",
+  icon: "equipmentScraps",
+  name: "Letter To Enrik",
+  description: "A short letter written to an aquaintance.",
+  extraText: ["Enrik, I hope this letter finds you unwell. I know it's been you stealing my apples. This is a warning that if I find you with your meat paws on my god damn fruit again I won't just send a stern letter. No, next time you will be met with a cleaver to your fucking dome. Stay off my property or you'll regret it."]
+}

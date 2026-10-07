@@ -1,0 +1,15 @@
+{
+	Name: "Brightmanes",
+	NameDisplay: "Brightmane",
+	Group: ["BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","BrightmaneCub","Woodsman","NullbeastStalker"],
+	ScoutingReport: ["Brightmanes:Brightmane","Woodsman:Woodsman:","Nullbeasts:Nullbeast"],
+	Loot: ["Enchantment,any","Enchantment,brightmane"],
+	Weight: 1,
+}
+{
+	Name: "Brightmanes",
+	NameDisplay: "Brightmane",
+	Group: ["BrightmaneKing","BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","BrightmaneCub"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

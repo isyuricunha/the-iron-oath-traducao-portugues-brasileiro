@@ -1,0 +1,15 @@
+{
+	Name: "Nullbeasts",
+	NameDisplay: "Nullbeast",
+	Group: ["NullbeastStalker", "NullbeastDisrupter", "DiseasedNullbeast","CorruptedNullbeast","Woodsman"],
+	ScoutingReport: ["Nullbeast:Nullbeast","Woodsman:Woodsman"],
+	Loot: ["Enchantment,any","Enchantment,nullbeast"],
+	Weight: 1,
+}
+{
+	Name: "Nullbeasts",
+	NameDisplay: "Nullbeast",
+	Group: ["NullbeastPrime","NullbeastStalker", "NullbeastDisrupter", "DiseasedNullbeast", "CorruptedNullbeast"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

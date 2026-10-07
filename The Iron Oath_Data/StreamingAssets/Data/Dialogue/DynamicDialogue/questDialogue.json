@@ -1,0 +1,670 @@
+{
+	UniqueName: "Tutorial0",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorial0",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Camera Controls", "Survey the battlefield by using W,A,S,D.\n\nYou can also pan by holding 'M3' <sprite name=\"PC-mouse3\"> and moving the mouse.^Survey the battlefield by using Left Joystick <sprite name=\"XboxOne-ls\">.\n\nYou can also pan by using the Right Joystick <sprite name=\"XboxOne-rs\">."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDialogue0",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialDialogue0",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Mind that archer and find yourself some cover, [FNameP1]!"],
+}
+{
+	UniqueName: "TutorialMove",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialMove",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Move|Sprint|Swap|Drawing Paths|Undo Movement", "On their turn, each character can 'Move' as many hexes as their Movement stat allows. By moving onto a green hex, they can still perform an action afterward.|To cover more ground, they can 'Sprint' onto the dashed grey hexes, but doing so will end their turn.|You can 'Swap' places with an ally by moving onto their location. Swapping is useful for setting up attacks, or for getting an ally out of harm's way.|By holding <sprite name=\"PC-shift\">, you can draw a custom movement route.^By holding <sprite name=\"XboxOne-rt\">, you can draw a custom movement route.|To undo a movement, click the undo button on the hotbar, or press the hotkey assigned to it (<sprite name=\"PC-e\">). If you take damage or trigger a stage hazard you will be unable to undo your movement.\n\nLet's move the Stormcaller into cover by clicking 'LMB' <sprite name=\"PC-leftClick\"> on the indicated hex.^To undo a movement, click the undo button on the hotbar. If you take damage or trigger a stage hazard you will be unable to undo your movement.\n\nLet's move the Stormcaller into cover by pressing <sprite name=\"XboxOne-a\"> on the indicated hex."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEndTurn",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialEndTurn",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Waiting|Using Guard|Issue a Wait Command", "If you don't have a desirable action to perform, you can delay a character's turn until the end of the round by hitting the 'Wait' button.|Alternatively, you can end a character's turn by using the 'Guard' action, which provides a temporary bonus to Defense and Evasion.|Click the 'Wait' button to delay the Stormcaller's turn."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAbilities",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialAbilities",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Abilities", "Your character's unique abilities have a limited number of 'Charges' available during the course of a dungeon. Charges can be restored by camping, or by using certain provisions. If an ability runs out of charges, it can still be used, but at a large cost to the character's Health.\n\nWith the enemy advancing on us, we can set a trap by using the Pyrolancer's 'Return to Cinder' ability on the indicated hex."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialHazards",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialHazards",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Combat Hazards|Push and Pull", "As you can see, it's important to pay attention to any potential hazards when positioning your units.|Some abilities are able to 'Push' or 'Pull' targets. By forcing targets into obstacles and terrain, you can inflict bonus damage and other harmful effects.\n\nMove the Pugilist into position and use his 'Crescent Wave' ability to push the enemy into the pit."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialProtectDialogue",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialProtectDialogue",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Keep [FNameP1] protected and engage that enemy, [FNameP0]!"],
+}
+{
+	UniqueName: "TutorialAoO",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialAoO",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Zone of Control|Attacks of Opportunity", "Every melee unit on the battlefield exerts a zone of control on hexes adjacent to their position.|Another unit can not leave this zone without suffering an Attack of Opportunity from their foe. This mechanic helps to lock down enemies and prevent them from reaching your more vulnerable characters."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDialogueConserveStam",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialDialogueConserveStam",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Conserve your stamina and keep him busy!"],
+}
+{
+	UniqueName: "TutorialBasicAttack",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialBasicAttack",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Basic Attacks", "Each character has a basic attack available to them. Unlike abilities, basic attacks have unlimited uses but are subject to an accuracy and evasion check.\n\nPerform a basic attack on the enemy by clicking 'LMB' <sprite name=\"PC-leftClick\"> on the indicated hex.^Each character has a basic attack available to them. Unlike abilities, basic attacks have unlimited uses but are subject to an accuracy and evasion check.\n\nPerform a basic attack on the enemy by clicking <sprite name=\"XboxOne-a\"> on the indicated hex."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialStormcallerAttack",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialStormcallerAttack",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:You have a clear view of that archer. Take him down!"],
+}
+{
+	UniqueName: "TutorialLineOfSight",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialLineOfSight",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Line of Sight|No Line of Sight|Partial Line of Sight|Attacking from Cover|Channeled Abilities", "Most attacks and abilities are subject to Line of Sight. When targeting, a red eye indicates that there is no line of sight, while a yellow eye indicates a partial line of sight.|Large obstacles such as pillars can block line of sight entirely. When a character has no vision of an enemy, they are unable to directly target them. |Smaller obstacles, such as a barrel, crate, or character will partially obscure line of sight under the right circumstances. A target who is partially visible will receive 50% less damage from attacks.|By taking cover directly behind a small obstacle, you can look over the obstacle and gain full vision of an enemy, while remaining only partially visible in return.|The Stormcaller's 'Conduit' ability can devastate a single enemy from range, but takes a few turns to channel. You can see where a channel will finish by looking at the blue indicator arrow on the turn order.\n\nSelect the 'Conduit' ability and target the enemy archer."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAwareness",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialawareness",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Avoiding Attacks of Opportunity", "With the nearest enemy Stunned, the Pyrolancer can safely move past their zone of control without incurring an Attack of Opportunity. Attacks of Opportunity can also be avoided by using abilities that incorporate movement, or by utilizing the 'Swap' action.\n\nLet's aid the Guardian and Sprint to engage her target."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFinishHimOff",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialfinishhimoff",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Finish him off, [FNameP2]"],
+}
+{
+	UniqueName: "TutorialSpirit",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialspirit",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Morale|Gaining and Losing Morale|Consequences of Low Morale|Benefits of High Morale", "Your Pugilist has killed an enemy and gained Morale, which is represented by the white bar under each character's portrait. Morale is a character's state of mind for the current mission.|Morale is gained and lost through various combat triggers. Landing a killing blow will increase morale, while suffering a critical strike from an enemy will lower it.|When Morale is under 25, there is a chance for that character to delay or pass their turn. Additionally, a character with low Morale will accrue more Fatigue from missions, and will also lose 'Loyalty' towards the company.|When Morale is over 75, all negative conditons applied to that character will have their duration reduced by 1 (to a minimum duration of 1 Round)."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFlanking",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialflanking",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Flanking", "Targets are considered Flanked whenever you occupy two opposing hexes around their location. All attacks against flanked targets deal 15% extra damage and cannot miss.\n\nIf your chance to hit with a basic attack is low, it's best to try and flank the enemy first in order to guarantee a hit, or use an ability instead.\n\nLet's move the Guardian into a flanking position and attack the enemy."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEndThis",
+	Catalyst: "NONE",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	MetaData: "tutorialendthis",
+	Priority: "100",
+	ClearQueueOnFinish: "true",
+	Text: ["3:Time to end this."],
+}
+{
+	UniqueName: "CombatOverTutorial",
+	Catalyst: "DISPLAY_MAP",
+	QuestName: "Quest.CampaignPrologue",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Dungeon Exploration and Time", "Most actions you take while exploring a dungeon will cost Time. The passage of time can have harsh consequences, and is represented by the 'Time Meter' in the bottom right.\n\nWe should begin exploring. Use 'LMB' <sprite name=\"PC-leftClick\"> to move our party to an adjacent tile.^Most actions you take while exploring a dungeon will cost Time. The passage of time can have harsh consequences, and is represented by the 'Time Meter' in the bottom right.\n\nWe should begin exploring. Press <sprite name=\"XboxOne-a\"> to move our party to an adjacent tile."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialScout",
+	Catalyst: "NONE",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Priority: "2",
+	ClearQueueOnFinish: "true",
+	ToolTip: ["Scouting", "Scouting can be used to reveal the identity of a nearby event, and can help to avoid traps and other surprises that may await you. By scouting an enemy location, you prevent them from being able to ambush you. It does have limited uses, so it should be used sparingly.\n\nClick 'RMB' <sprite name=\"PC-rightClick\"> to toggle scouting mode and then use 'LMB' <sprite name=\"PC-leftClick\"> on an unexplored event to reveal it.^Scouting can be used to reveal the identity of a nearby event, and can help to avoid traps and other surprises that may await you. By scouting an enemy location, you prevent them from being able to ambush you. It does have limited uses, so it should be used sparingly.\n\nPress <sprite name=\"XboxOne-x\"> to toggle scouting mode and then press <sprite name=\"XboxOne-a\"> on an unexplored event to reveal it."],
+	Text: ["3:We should spend some time to scout around us. We can ill-afford to walk into an ambush."],
+}
+{
+	UniqueName: "TutorialUsingProvisions",
+	ToolTip: ["Using Provisions During Exploration", "Provisions can be used both in and out of combat. While exploring, you can access your provision inventory in the bottom left menu, or by pressing <sprite name=\"PC-i\">. Like other actions, provisions used during exploration have their own associated Time cost.^Provisions can be used both in and out of combat. While exploring, you can access your provision inventory in the bottom left menu. Like other actions, provisions used during exploration have their own associated Time cost."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialSidePaths",
+	Catalyst: "NONE",
+	ToolTip: ["Side Paths in Dungeons", "All dungeons have a 'main path' (which leads to your objective) and various 'side paths' that branch off from it (denoted by the fog-covered tiles). Side paths carry more dangers to your party, but they also provide more opportunities for reward.\n\nIt's important to consider the state of your party and the task at hand before venturing down a side path, as things could turn sideways very quickly."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialTimeModifiers",
+	Catalyst: "NEW_TIME_MOD",
+	ToolTip: ["Dungeon Modifiers", "Every dungeon begins with one positive and one negative modifier which can affect various aspects of exploration and combat.\n\nWith the passage of time, up to two additional modifiers will be applied, presenting new challenges for you to overcome. Due to this, it's important to be efficient and spend your time wisely.\n\nYou can see which modifiers are currently active next to the Time Meter in the bottom right."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnemyPassives",
+	Catalyst: "ENEMY_DEATH_SAVED",
+	MetaData: "type=skeleton",
+	Tooltip: ["Enemy Passives|Codex", "Some enemies have passive abilities. These undead skeletons are able to reanimate after being defeated. To prevent them from reanimating, we'll need to target and destroy the pile of bones.|If you want to see more details on a specific enemy, you can right click <sprite name=\"PC-rightClick\"> their portrait to bring up the Codex.^If you want to see more details on a specific enemy, you can also press the <sprite name=\"XboxOne-view\"> button on their portrait to bring up the Codex."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDeploymentPhase",
+	Catalyst: "COMBAT_DEPLOYMENT",
+	Tooltip: ["Deployment Phase|Positioning Your Party", "During the Deployment Phase, you can reposition your party ahead of combat. Deployment zones vary from fight to fight, and you'll have to make do with what's available.\n\nClick 'LMB' <sprite name=\"PC-leftClick\"> on any character to move them, and click again on any valid hex to confirm their new position.^During the Deployment Phase, you can reposition your party ahead of combat. Deployment zones vary from fight to fight, and you'll have to make do with what's available.\n\nPress <sprite name=\"XboxOne-a\"> on any character to move them, and click again on any valid hex to confirm their new position.|Knowing where enemies can move and attack will help you position your party optimally. To view an enemy's movement and attack range, you can press <sprite name=\"PC-tab\"> over their character sprite.\n\nOnce you're satisfied with your formation, click the 'Start Combat' button to proceed.^Knowing where enemies can move and attack will help you position your party optimally.\n\nOnce you're satisfied with your formation, click the 'Start Combat' button to proceed."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialCamping",
+	Catalyst: "CONSIDER_CAMPING",
+	Tooltip: ["Making Camp", "During longer missions, you can make camp in order to rest your party and apply various bonuses.\n\nSome locations are safer than others. We should pick a spot that has fewer points of entry to lessen the chances of being set upon by enemies."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialCampingPt2",
+	Catalyst: "OPEN_CAMPSITE",
+	Tooltip: ["Burn Incense|Lookouts", "Once you've established your campsite, you can select various incenses to burn that provide healing and other unique benefits. You only have a limited number of incense points available, so choose carefully! More incense can be unlocked in the 'Company Upgrades' (<sprite name=\"PC-u\">) screen in the overworld.^Once you've established your campsite, you can select various incenses to burn that provide healing and other unique benefits. You only have a limited number of incense points available, so choose carefully! More incense can be unlocked in the 'Company Upgrades' screen in the overworld.|To decrease the chance of your camp being interrupted, you can place up to two party members on lookout. Each lookout will decrease the interrupt chance by half. Keep in mind that characters who are on lookout will not benefit from the secondary effects of incenses.\n\nOnce you're satisfied with your choices, click the 'Begin Camping' button to proceed."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialMinorInjury",
+	Catalyst: "MINOR_INJURY",
+	ToolTip: ["Injuries", "Injuries have a chance to occur when a character is under 50% Health, and will always occur when their Health reaches 0. If a character sustains an injury, you can use a Bandage to stabilize them and prevent their injuries from worsening. If they continue fighting with an unstabilized injury, the severity of it can increase."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialExpeditionSummary",
+	Catalyst: "EXPEDITION_SUMMARY",
+	QuestName: "Quest.CampaignPrologue",
+	ToolTip: ["Injury Recovery|Infirmaries", "After a mission, you'll want to seek treatment for any injuries your party has incurred. While an injured character can still fight, injury penalties make them less effective.|In order to heal an injury, you must pay for their treatment at a city's Infirmary. Some injuries require prompt treatment, otherwise they risk permanent damage or death."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialDebuff",
+	Catalyst: "SUSTAINED_DEBUFF",
+	UniqueName: "TutorialDebuffed",
+	QuestName: "Quest.CampaignPrologue",
+	ToolTip: ["Cleansing Conditions", "You can remove negative conditions from your characters with cleansing abilities, or by using an Antidote on them. Doing this will also provide temporary immunity to all conditions for a few rounds. Not all harmful effects can be cleansed, such as Injuries or the Flanked status."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAmbushedEnemy",
+	Catalyst: "AMBUSHED_ENEMY",
+	UniqueName: "TutorialAmbushedEnemy",
+	ToolTip: ["Ambushing the Enemy", "You've ambushed the enemy, putting them on the backfoot and giving you an advantage in the opening round of combat!\n\nBy Scouting and revealing the location of the enemy, you have a chance (Default of 10%) to ambush them when combat begins."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAmbushedByEnemy",
+	Catalyst: "AMBUSHED_BY_ENEMY",
+	UniqueName: "TutorialAmbushedByEnemy",
+	ToolTip: ["Enemy Ambushes", "The enemy has caught you by surprise and ambushed you! When ambushed, you are presented with fewer cells to deploy to. Additionally, the ambushed side has -5 Speed and suffers 15% more damage during the opening round of combat.\n\nIn dungeons, walking blindly into the enemy runs the risk of being ambushed (Default of 20%). You can prevent this by Scouting ahead beforehand, which can result in you ambushing the opponent instead!"],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAllyKnockedOut",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	Priority: "100",
+	ToolTip: ["Bleedout|Bleedout Pool|Recovering from Bleedout", "When a character's Health drops to 0 in combat, they will enter a Bleedout state and their health value will be replaced by a Bleedout Pool. This pool is persistent throughout the course of a dungeon.|Their Bleedout Pool will drop by 1 on their turn, and from attacks suffered. Permanent death will occur if the pool is depleted.|To recover a character from the Bleedout state, you can heal them with provisions such as a bandage or health potion, use a healing ability, or have an ally pick them up by moving onto their location."],
+	Text: [""],
+}
+{	
+	UniqueName: "TutorialAllyLowHealth",
+	Catalyst: "LOW_HEALTH",
+	ToolTip: ["Healing", "Make sure to heal your characters before they take too much damage. The Guardian class can heal allies with her 'Dawn' ability. In a pinch, you can also use a healing potion."],
+	Text: [""],
+	
+}
+{
+	UniqueName: "TutorialPartyScreen",
+	Catalyst: "SELECT_PARTY_SCREEN",
+	UniqueName: "TutorialPartyScreen",
+	ToolTip: ["Assembling Your Party", "You can select up to 5 characters when forming a party. It is important to consider the status of each:\n\nWell-Rested: Characters become well-rested with inactivity. They gain +5% to Power, and earn 25% more XP.\n\nAvailable: An available character is fit and ready for duty.\n\nFatigued: A character who is fatigued can still participate, but they are debuffed with -10% to Power, -10 Morale, and -25% to XP earned.\n\nInjured: An injured character can participate, but they will suffer from penalties specific to their injury.\n\nUnavailable: Sometimes a character will be unavailable due to a specific injury or other reasons."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialProvisions",
+	Catalyst: "PROVISIONS_SCREEN",
+	UniqueName: "TutorialProvisionsScreen",
+	ToolTip: ["Purchasing Provisions", "Before entering a dungeon, you will be able to purchase Provisions to bring with you. By default, unused provisions at the end of a dungeon are refunded  for 50% of their cost. This amount can be increased with Company Upgrades."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialOverworldNavigation",
+	ToolTip: ["Difficulty|Navigating the Overworld|Navigation Controls|", "If you are finding combat to be too hard or too easy, you can adjust the difficulty setting in the menu by pressing <sprite name=\"PC-esc\">.\n\nThis option is disabled during combat and when playing on Iron Man mode.^If you are finding combat to be too hard or too easy, you can adjust the difficulty setting in the menu by pressing <sprite name=\"XboxOne-menu\">.\n\nThis option is disabled during combat and when playing on Iron Man mode.|As our caravan travels throughout the world, time will progress. Supplies and general upkeep can be expensive, and every day that passes will cost us coin.\n\nIn The Iron Oath, 1 year consists of 120 days.|In the top right corner are the navigation controls, allowing you to: advance time, stop traveling, and adjust the speed of your caravan.\n\nGiven the situation, we can't afford a long journey. We should make our way to the city of Andilon to rest and regroup."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnterInn",
+	Catalyst: "ENTER_INN",
+	UniqueName: "TutorialInns",
+	ToolTip: ["Inns", "Every city has an Inn which allows you to rest, buy drinks, or recruit new members. Resting will reduce your entire roster's Fatigue by 3 for each night purchased. Buying a round for your company will increase their Loyalty for a time, though drinking too frequently can result in adverse effects. If you are in need of new members for your roster, you can scour the local talent and recruit them to your company."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRecruits",
+	Catalyst: "INN_RECRUITS_LIST",
+	UniqueName: "TutorialRecruits",
+	ToolTip: ["Recruiting", "This is a list of all available recruits in the city. As time passes, new recruits will appear. You can view information on each recruit by clicking the icon to the left of their portrait."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialBountyBoard",
+	Catalyst: "BOUNTY_BOARD",
+	UniqueName: "TutorialBountyBoard",
+	ToolTip: ["Bounty Board", "At the Bounty Board, you can accept lower priority tasks from locals. Bounties do not have a specific dungeon or location to visit, and are instead completed passively as you work on other contracts."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEnterInfimary",
+	Catalyst: "ENTER_INFIRMARY",
+	UniqueName: "TutorialInfirmary",
+	ToolTip: ["Infirmary", "If you have an injured character, you must admit them to a city's Infirmary in order for them to recover. Once they are fully healed, they will automatically re-join your company. Severe injuries require immediate care in order to avoid permanent injury or death."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialContractsComplete",
+	Catalyst: "CONTRACT_COMPLETE",
+	UniqueName: "TutorialContractComplete",
+	ToolTip: ["Renown and Reputation|Renown|Reputation", "When you complete a contract, you will be rewarded with both Renown and Reputation.|Renown is a measure of your overall fame within the world. As your Renown grows, you will be trusted with more difficult contracts and gain access to better equipment and recruits. Additionally, you will gain Renown Points which can then be spent on Company Upgrades.|Your Reputation measures your relationship with each Noble House and City in the world. When you complete a contract or make certain choices, your Reputation will change accordingly. Having high Reputation can lead to lower prices on services and wares, and unlock additional contract types."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRenown",
+	Catalyst: "NONE",
+	ToolTip: ["Purchasing Company Upgrades", "You've gained your first Renown Point which can be used to upgrade the many facets of your company. Renown Points can be spent in the 'Company Upgrades' screen in the bottom left menu, or by pressing <sprite name=\"PC-U\">. The more contracts you complete, the more Renown Points you'll have to spend.^You've gained your first Renown Point which can be used to upgrade the many facets of your company. Renown Points can be spent in the 'Company Upgrades' screen in the bottom left menu. The more contracts you complete, the more Renown Points you'll have to spend."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialEquipment",
+	Catalyst: "EXPEDITION_SUMMARY",
+	MetaData: "brokenGear",
+	UniqueName: "TutorialEquipment",
+	ToolTip: ["Gear Durability|Repairing", "Some of your equipment has broken! All gear has a Durability rating and will eventually break with enough use. If an item loses all Durability while on a mission, it will not break until the mission is complete.|In the overworld, you can use various resources to repair gear by highlighting the item and pressing <sprite name=\"PC-r\">. Gear can also be repaired in a town's Marketplace for a cost, but doing so is usually less cost-effective than using resources.^In the overworld, you can use various resources to repair gear by highlighting the item and pressing <sprite name=\"XboxOne-rb\">. Gear can also be repaired in a town's Marketplace for a cost, but doing so is usually less cost-effective than using resources."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialLevelUp",
+	Catalyst: "ON_LEVEL_UP",
+	UniqueName: "TutorialLevelUp",
+	ToolTip: ["Level Up|Attribute Points|Unlocking Abilities|Ability Points|Management", "When a character gains enough Experience Points, they will level up and receive Attribute Points and Ability Points to spend.|There are seven attributes for you to put points into and rank up: Health, Power, Mending, Evasion, Accuracy, Critical Chance, and Speed. Characters specialize in a few randomly chosen attributes (represented by stars). These attributes require fewer points to rank up.|By leveling up, you'll be able to unlock new abilities for each character. Each class has six abilities to unlock, though they can only equip four at a time (and abilities can not be changed during dungeons).|Ability Points can be spent to upgrade or alter the effects of a character's unique abilities.|All of this can be managed in the 'Manage Roster' screen (<sprite name=\"PC-g\">), or by clicking on a character's portrait in a dungeon.^All of this can be managed in the 'Manage Roster' screen (<sprite name=\"XboxOne-y\">), or by clicking on a character's portrait in a dungeon."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialAging",
+	Catalyst: "IS_GETTING_OLD",
+	ToolTip: ["Age and Retirement", "A character on your roster has reached the age of 50! Older characters accrue more Fatigue from missions and will begin to contemplate retirement."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialFlankReminder",
+	Catalyst: "ON_ATTACK_MISS",
+	ToolTip: ["Missed Attacks|Flanking|Stagger and Stun|Using Abilities", "Your attack missed! Without proper setup, Basic Attacks have a risk of missing.\n\nIn order to guarantee a hit, make sure to Flank, Stun, or Stagger your target first, especially if their Evasion is high.|Targets are considered Flanked whenever you occupy two opposing hexes around their location. All attacks against flanked targets deal 15% extra damage and cannot miss.|If you're unable to Flank your target, you can Stun or Stagger them instead. Stagger can be inflicted by using any ability that Pushes or Pulls targets. Basic Attacks against Staggered and Stunned targets cannot miss.|Without proper setup, Basic Attacks can be risky. If you need to guarantee a killing blow, it's often best to spend an ability charge."],
+	Text: [""],
+}
+{
+	UniqueName: "TutorialRangedHelp",
+	ToolTip: ["Dealing with Ranged Enemies|Partial Cover|Full Cover|Engaging in Melee", "Ranged enemies can pack a punch, but they can be countered with Line of Sight or by engaging them in melee.|When their Line of Sight is obscured, ranged units will only deal 50% damage. This can be achieved by taking cover directly behind smaller obstacles such as a crate, rock, or any unit.|Large obstacles can block Line of Sight completely, preventing ranged units from targeting those behind them.|If cover is not an option, you can jump on top of a ranged enemy and engage them in melee. By doing this, the ranged unit can only attack adjacent enemies, and their damage is reduced by 50% when doing so.\n\nThese mechanics also apply to your characters, so it's important to keep your ranged units at a safe distance."],
+	Catalyst: "HIT_BY_RANGED_ATK_FULL_DMG",
+	Text: [""],
+}
+
+{
+	UniqueName: "TutorialBossFightTraits",
+	ToolTip: ["Enemy Traits", "Bosses and Elite enemies will spawn with unique combat traits. They are an important thing to consider when facing these foes.\n\nYou can view these traits and their effects by hovering the enemy's portrait on the right side of the screen and then mousing over the Trait's name in the tooltip."],
+	Catalyst: "TUTORIAL_BOSS_FIGHT_START",
+	Text: [""],
+}
+{
+	UniqueName: "TutorialJobs",
+	Catalyst: "JOB_UNLOCKED",
+	UniqueName: "TutorialJobs",
+	ToolTip: ["Character Jobs", "You can assign Jobs to your characters, allowing them to perform special tasks or give unique bonuses to your party during dungeon exploration.\n\nThe knowledge to unlock each Job can be acquired in dungeons as you play through the game. Once a Job is unlocked, they can be taught whenever you're in a city (a character's first job is free, but changing jobs will cost coin). A character can only hold one job at a time, and the bonuses from two or more characters with the same job do not stack when they are used together in a party."],
+	Text: [""],
+}
+
+
+
+
+
+{
+	UniqueName: "TutorialBlockedPathTile",
+	Catalyst: "BLOCKED_PATH_TILE",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  Priority: "2",
+  ClearQueueOnFinish: "true",
+  ToolTip: ["Blocked Passages", "The path in front of us is blocked, but we're not without options. Select the next tile to interact with the obstruction."],
+	Text: ["0:Dammit, this route is blocked. We'll need to deal with this quickly."],
+}
+
+{
+    UniqueName: "TutorialPostBattle",
+	Catalyst: "NONE",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+    Priority: "2",
+    ClearQueueOnFinish: "true",
+    ToolTip: ["Injuries", "If a character becomes injured, you can use a Bandage to stabilize the injury. This will stop any bleeding and minimize negative effects. Your items can be accessed by pressing 'I' or clicking the bag icon."],
+	Text: [""],
+}
+{
+  UniqueName: "TutorialPreBossBattle",
+	Catalyst: "NONE",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  Priority: "2",
+  ClearQueueOnFinish: "true",
+	Text: ["1:We're almost out of here. Just a little farther.", "0:Be ready for anything."],
+}
+{
+	Catalyst: "START_CAMPING",
+	PartyMakeupReq: "ENTIRE_PARTY",
+	FireImmediately: "true",
+    IsNewRelationship: "true",
+	Text: ["0:I know we've only just met but I hope we can work well together.", "1:Likewise.", "2:It's going to be a long night.", "3:All the more reason we should get some sleep."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.ClearingACreatureDen",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Let's not dabble. If there's any chance her husband is still alive we need to find him, and quickly."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.LostPossessions",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:It'll be tough to find what we're looking for in this place, keep your eyes peeled."],
+}
+{ 
+  Catalyst: "ON_ENTER_DUNGEON", 
+  QuestName: "Quest.CampaignVoidBreach", 
+  PartyMakeupReq: "ANY", 
+  FireImmediately: "true", 
+  AutoAdvanceTime: "4", 
+  Text: ["0:Back into the fray then, are we?", "1:Let's find this supposed breach. Be on your guard."], 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  UniqueName: "Tutorial1",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial1",
+  Priority: "99",
+  ClearQueueOnFinish: "true",
+	Text: ["0:Hold the line! Let's draw the enemy towards us."],
+}
+{
+  UniqueName: "guardTutorial",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "guardTutorial",
+  Priority: "100",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial2",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial2",
+  Priority: "98",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial3",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial3",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: ["0:Here it comes! Steady!"],
+}
+{
+  UniqueName: "Tutorial4",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial4",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial5",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial5",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial6",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial6",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+{
+  UniqueName: "Tutorial8",
+	Catalyst: "NONE",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+  MetaData: "tutorial8",
+  Priority: "97",
+  ClearQueueOnFinish: "true",
+	Text: [""],
+}
+
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.OutlawsAndTheUndead",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["1:We need to hurry before the amulet can be used.", "0:The trail leads this way. Come on."],
+}
+{
+	Catalyst: "COMBAT_START",
+	QuestName: "Quest.OutlawsAndTheUndead",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:We don't have time for this. Let's dispatch these foes quickly"],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.ThiefChase",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:We'll need hurry if we don't want them to get away."],
+}
+{
+	Catalyst: "ON_ENTER_DUNGEON",
+	QuestName: "Quest.AtAnyCost",
+	PartyMakeupReq: "TARGET",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:This should be the place. Let's keep an eye out for any surprises."],
+}
+{
+	Catalyst: "LOW_HEALTH",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
+  ClassReq: ["None", "Pyrolancer"],
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["1:Now's the time to use that healing spell of yours, Guardian!"],
+}
+{
+	Catalyst: "ENEMY_DEATH_SAVED",
+	QuestName: "Quest.TutorialQuest",
+	PartyMakeupReq: "ANY",
+	MetaData: "type=skeleton",
+	FireImmediately: "true",
+	AutoAdvanceTime: "4",
+	Text: ["0:Quickly, destroy the skeleton remains before they reanimate!"],
+}

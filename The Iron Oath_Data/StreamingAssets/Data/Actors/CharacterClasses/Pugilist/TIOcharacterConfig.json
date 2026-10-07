@@ -1,0 +1,14 @@
+{
+	Name: "tio_ClassNamePugilist",
+	Health: ["375","375"],
+	Defense: ["2","2"],
+	Power: ["37","37"],
+	Accuracy: ["75","75"],
+	CriticalChance: ["2","2"],
+	Evasion: ["5","5"],
+	Mending: ["20","20"],
+	DefaultWeapon: "tio_bareFists",
+	PortraitHead: ["male1","male2","male3","male4","male5"],
+	PortraitApparel: ["0","1","2","3"],
+	PortraitFace: ["0","1"],
+}

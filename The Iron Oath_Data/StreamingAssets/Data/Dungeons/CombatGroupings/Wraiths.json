@@ -1,0 +1,15 @@
+{
+	Name: "Wraiths",
+	NameDisplay: "Wraiths",
+	Group: ["SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	ScoutingReport: ["Specters:Spectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Wraiths",
+	NameDisplay: "Wraiths",
+	Group: ["SpectralReaper","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

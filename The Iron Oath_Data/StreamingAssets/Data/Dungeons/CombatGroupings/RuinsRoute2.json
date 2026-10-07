@@ -1,0 +1,15 @@
+{
+	Name: "RuinsRoute2",
+	NameDisplay: "Scourge",
+	Group: ["SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedWealdere","DiseasedWealdere","BuckWealdere","BlightedHulk","BlightedWretch","CorruptedWretch","HardenedWretch"],
+	ScoutingReport: ["Blighted:Blighted","Wraiths:Spectral","Wealderes:Wealdere"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "RuinsRoute2",
+	NameDisplay: "Scourge",
+	Group: ["SpectralReaper","AncientWealdere","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedWealdere","DiseasedWealdere","BuckWealdere","BlightedHulk","BlightedWretch","CorruptedWretch","HardenedWretch"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

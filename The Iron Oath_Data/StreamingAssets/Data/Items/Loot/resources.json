@@ -1,0 +1,344 @@
+{
+  uniqueId: "tioWealth",
+  icon: "iron",
+  name: "Wealth (delete this)",
+  description: "This is a resource used to calculate money for a city but I need it during debug stuff. Delete before shipping.",
+  value: "100",
+  type: "Wealth",
+  tags: ["wealth"],
+}
+{
+  uniqueId: "tioMilitary",
+  icon: "iron",
+  name: "Military (delete this)",
+  description: "This is a resource used to calculate strength for a city but I need it during debug stuff. Delete before shipping.",
+  value: "100",
+  type: "Military",
+  tags: ["military"],
+}
+{
+  uniqueId: "tioAether",
+  icon: "aetherCrystals",
+  name: "Aether Crystals",
+  description: "A beautiful formation of crystals, magical in nature. Merchants will pay a high price for such a thing.",
+  value: "1000",
+  type: "Aether",
+  tags: ["aether","rare"],
+  purchasable: "true",
+}
+{
+  uniqueId: "tioGems",
+  icon: "gems",
+  name: "Gems",
+  description: "Rare, uncut gems from a nearby mine. They have little practical use but will fetch a high price on the market.",
+  value: "300",
+  type: "Gems",
+  tags: ["gems","rare"],
+  purchasable: "true",
+}
+{
+  uniqueId: "tioGold",
+  icon: "gold",
+  name: "Gold Ore",
+  description: "Raw gold ore. Wealthy merchants will pay a fine price for such a thing.",
+  value: "220",
+  type: "Gold",
+  tags: ["gold","rare"],
+  purchasable: "true",
+}
+{
+  uniqueId: "tioMeat",
+  icon: "meat",
+  name: "Meat",
+  description: "A crate of salted meats. Used for trading at markets.",
+  value: "50",
+  type: "Meat",
+  tags: ["meat","food"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioFish",
+  icon: "fish",
+  name: "Fish",
+  description: "A packed crate of salt-cured fish. Used for trading at markets.",
+  value: "40",
+  type: "Fish",
+  tags: ["food","fish"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioGrain",
+  icon: "grain",
+  name: "Grain",
+  description: "A sack of grain. Used for trading at markets.",
+  value: "30",
+  type: "Grain",
+  tags: ["grain","food"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioSalt",
+  icon: "salt",
+  name: "Salt",
+  description: "A sack of salt. A highly sought-after commodity that can be bought and sold at markets.",
+  value: "160",
+  type: "Salt",
+  tags: ["salt"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioSpice",
+  icon: "spice",
+  name: "Spice",
+  description: "An assortment of spices that make everything taste better. Used for trading at markets.",
+  value: "100",
+  type: "Spice",
+  tags: ["spice","luxury"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioAle",
+  icon: "ale",
+  name: "Ale",
+  description: "Kegs of ale. A city can never have enough. Used for trading at markets.",
+  value: "45",
+  type: "Ale",
+  tags: ["ale","luxury"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioWine",
+  icon: "wine",
+  name: "Wine",
+  description: "Bottles of fine wine. A must-have for any great feast. Used for trading at markets.",
+  value: "75",
+  type: "Wine",
+  tags: ["wine","luxury"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioMedicine",
+  icon: "medicine",
+  name: "Medicine",
+  description: "Medicinal herbs and supplies for treating the sick. Used for trading at markets.",
+  value: "65",
+  type: "Medicine",
+  tags: ["medicine"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioWood",
+  icon: "wood",
+  name: "Wood",
+  description: "Fine timber. Can be sold in markets or used to repair gear.",
+  value: "80",
+  type: "Wood",
+  tags: ["commonResource","wood"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioStone",
+  icon: "stone",
+  name: "Stone",
+  description: "Stone cut from a quarry. Useful to cities that are in need of repairs.",
+  value: "120",
+  type: "Stone",
+  tags: ["commonResource","stone"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioIron",
+  icon: "iron",
+  name: "Iron",
+  description: "A few bars of iron. Can be sold in markets or used to repair gear.",
+  value: "140",
+  type: "Iron",
+  tags: ["commonResource","iron"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioCloth",
+  icon: "cloth",
+  name: "Cloth",
+  description: "Fine linen and wool cloths. Can be sold in markets or used to repair gear.",
+  value: "60",
+  type: "Cloth",
+  tags: ["cloth"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioPelts",
+  icon: "furs",
+  name: "Pelts",
+  description: "Skin and fur from various animals. Can be sold in markets or used to repair gear.",
+  value: "70",
+  type: "Furs",
+  tags: ["fur"],
+  isGenericDrop: true,
+  purchasable: "true",
+}
+{
+  uniqueId: "tioScrap",
+  icon: "equipmentScraps",
+  name: "Scrap",
+  type: "Other",
+  description: "An assortment of scrap materials. Can be sold in markets or used to repair gear.",
+  value: "25",
+  maxStack: "99",
+  isGenericDrop: true,
+  purchasable: "true",
+  chanceToLootFromSpecialEnemy: "0.15",
+}
+{
+  uniqueId: "tioBrightmaneFur",
+  icon: "brightmaneFur",
+  name: "Brightmane Fur",
+  description: "A tuft of fur from the hide of a Brightmane. Can be sold in markets.",
+  value: "15",
+  type: "Furs",
+  tags: ["fur"],
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tio_breachPouch",
+  icon: "breachPouch",
+  name: "Breach Pouch",
+  description: "A small pouch with magical properties, carefully crafted by the Circle of Aether. Used for the closure of Void Breaches.",
+  type: "Other",
+  canDiscard: "false",
+  value: "100",
+}
+{
+  uniqueId: "tioDemonsBlood",
+  icon: "demonsBlood",
+  name: "Demon's Blood",
+  description: "A small vial of demon's blood. Can be sold in markets.",
+  value: "20",
+  type: "Other",
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tioHoarwulfTail",
+  icon: "hoarwulfTail",
+  name: "Hoarwulf Tail",
+  description: "The severed tail of a hoarwulf. Can be sold in markets.",
+  value: "15",
+  tags: ["fur"],
+  type: "Furs",
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tioNullbeastTeeth",
+  icon: "nullbeastTeeth",
+  name: "Nullbeast Teeth",
+  description: "A large tooth taken from a dead nullbeast. Can be sold in markets.",
+  value: "18",
+  type: "Other",
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tioWealdereHide",
+  icon: "wealdereHide",
+  name: "Wealdere Hide",
+  description: "A section of hide from a wealdere. Can be sold in markets.",
+  value: "25",
+  type: "Other",
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tioCharionScales",
+  icon: "charionScales",
+  name: "Charion Scales",
+  description: "Scales from a charion. Can be sold in markets.",
+  value: "20",
+  type: "Other",
+  chanceToLootFromSpecialEnemy: "0.1",
+}
+{
+  uniqueId: "tioUndeadBones",
+  icon: "undeadBones",
+  name: "Undead Bones",
+  description: "The bones from a reanimated skeleton. Can be sold in markets.",
+  value: "8",
+  type: "Other",
+}
+{
+  uniqueId: "tio_DungeonKey",
+  icon: "dungeonKey",
+  name: "Key",
+  description: "An iron key. Surely it must unlock something in here...",
+  value: "100",
+  type: "Other",
+  isStealable: "false",
+  canDiscard: "false",
+}
+{
+  uniqueId: "tioMedicineIngredients",
+  icon: "medicine",
+  name: "Medicinal Ingredients",
+  description: "Special ingredients for various medicines. A quest-related item that can be sold at markets.",
+  value: "65",
+  type: "Other",
+}
+{
+  uniqueId: "tioRareMedicalHerbs",
+  icon: "crate",
+  name: "Roka Fruit",
+  description: "A rare ingredient for life-saving medicines. A quest-related item that can be sold at markets.",
+  value: "150",
+  type: "Other",
+}
+{
+  uniqueId: "tio_rottingHumanHead",
+  icon: "severedHead",
+  name: "Severed Head",
+  description: "A rotting human head. Surely there's a use for it? Other than attracting flies, that is.",
+  value: "0",
+  type: "Other",
+  canDiscard: "true",
+}
+{
+  uniqueId: "tioDeadmansOre",
+  icon: "crate",
+  name: "Deadman's Ore",
+  description: "A rare type of mineral that only grows in the vicinity of the dead. A quest-related item that can be sold at markets.",
+  value: "100",
+  type: "Other",
+  canDiscard: "false",
+}
+{
+  uniqueId: "tioDemonHead",
+  icon: "severedHead",
+  name: "Demon's Head",
+  description: "The head of a decapitated demon. During the Scourge, the Vanguard will pay a bounty for it.",
+  value: "30",
+  type: "Other",
+}
+{
+  uniqueId: "tio_dungeonMap",
+  icon: "dungeonMapForSale",
+  name: "Dungeon Map",
+  description: "A map of a dungeon we fully explored. Can be sold for extra coin.",
+  type: "Other",
+  value: "100",
+}
+{
+  uniqueId: "tio_coinPouch",
+  icon: "coinPouch",
+  name: "Coin Pouch",
+  description: "A pouch of coins",
+  type: "Other",
+  value: "0",
+}

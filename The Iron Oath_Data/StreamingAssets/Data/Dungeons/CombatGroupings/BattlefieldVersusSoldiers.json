@@ -1,0 +1,13 @@
+{
+	Name: "BattlefieldVersusSoldiers",
+	Group: ["HouseKnight", "HouseGrenadier", "HouseSkirmisher", "Warhound", "HouseBannerman"],
+	ScoutingReport: ["Soldiers:House"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "BattlefieldVersusSoldiers",
+	IsBossEncounter: true,
+	Group: ["HouseBannerman", "HouseKnight","HouseKnight","HouseCommander", "HouseSkirmisher", "HouseSkirmisher", "HouseGrenadier","Warhound"],
+	Weight: 1,
+}

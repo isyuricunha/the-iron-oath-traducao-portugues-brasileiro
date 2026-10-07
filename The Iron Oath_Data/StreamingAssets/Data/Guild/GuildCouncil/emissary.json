@@ -1,0 +1,10 @@
+{
+	Description: "Has studied their entire life in the different cultures of Caelum.",
+	Sex: "m",
+	Levels: [0,1,2,3,4,5],
+}
+{
+	Description: "An unrivaled scholar in the history and cultures of Caleum.",
+	Sex: "m",
+	Levels: [7,8,9,10],
+}

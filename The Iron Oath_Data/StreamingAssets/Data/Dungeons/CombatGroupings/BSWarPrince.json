@@ -1,0 +1,6 @@
+{
+	Name: "BSWarPrince",
+	Group: ["RebelCommander","BlackSkullJourneyman","Bloodhound","Warhound","RebelKnight","RebelBannerman","RebelSkirmisher"],
+	IsBossEncounter: true,
+	Weight: 1,
+}

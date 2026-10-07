@@ -1,0 +1,10 @@
+{
+	Description: "Learned the ways of combat as a mercenary before getting an injury that ended his career. Now he trains others with his expertise.",
+	Sex: "m",
+	Levels: [0,1,2,3,4,5,6],
+}
+{
+	Description: "An absolute master in the ways of combat and an unrivaled teacher.",
+	Sex: "m",
+	Levels: [7,8,9,10],
+}

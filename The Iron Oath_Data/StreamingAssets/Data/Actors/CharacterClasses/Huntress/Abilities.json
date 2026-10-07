@@ -1,0 +1,59 @@
+{
+  Character: "Huntress",
+  UniqueId: "Hone",
+  AbilityName: "tio_HuntressHoneName",
+  Description: "tio_HuntressHoneDescription",
+  DmgType: "PIERCING",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "0",
+}
+{
+  Character: "Huntress",
+  UniqueId: "Overwatch",
+  AbilityName: "tio_HuntressOverwatchName",
+  Description: "tio_HuntressOverwatchDescription",
+  DmgType: "PIERCING",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "0",
+}
+{
+  Character: "Huntress",
+  UniqueId: "RapidFire",
+  AbilityName: "tio_HuntressRapidFireName",
+  Description: "tio_HuntressRapidFireDescription",
+  DmgType: "PIERCING",
+  DmgValue: "0.9",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Huntress",
+  UniqueId: "Volley",
+  AbilityName: "tio_HuntressVolleyName",
+  Description: "tio_HuntressVolleyDescription",
+  DmgType: "PIERCING",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Huntress",
+  UniqueId: "RestrainingOrder",
+  AbilityName: "tio_HuntressRestrainingOrderName",
+  Description: "tio_HuntressRestrainingOrderDescription",
+  DmgType: "PIERCING",
+  Charges: "3",
+  DmgValue: "0.5",
+  Range: "1",
+}
+{
+  Character: "Huntress",
+  UniqueId: "TrueSight",
+  AbilityName: "tio_HuntressTrueSightName",
+  Description: "tio_HuntressTrueSightDescription",
+  DmgType: "PIERCING",
+  Charges: "3",
+  Range: "99",
+}

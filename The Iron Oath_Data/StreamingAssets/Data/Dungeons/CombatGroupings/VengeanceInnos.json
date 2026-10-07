@@ -1,0 +1,6 @@
+{
+	Name: "VengeanceInnos",
+	Group: ["MercSwordsman","OutlawThug","OutlawEnforcer","OutlawMarauder","OutlawMarksman","OutlawTrapper"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

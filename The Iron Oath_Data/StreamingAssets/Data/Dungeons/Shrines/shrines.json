@@ -1,0 +1,22 @@
+{
+	ID: "ArlaTheGatekeeper",
+	Visual: "Arla",
+	Tags: "smallBuff",
+	Name: "Shrine Of Arla The Gatekeeper",
+	Text: "The goddess of Arla looks to grant you power if you can show your devotion through a donation worthy of her favor.",
+	Type: "MakeSacrifice",
+	SacrificeType: "ItemWorth",
+	WrongSacrificeMsg: "The sacrifice is rejected and the light on the shrine dims.",
+	Options: ["The first person that is knocked down will be restored to 10% health.|FirstKnockdownGetPercHp|10|100", "The first person that is knocked down will be restored to 25% health.|FirstKnockdownGetPercHp|25|200", "The first person that is knocked down will be restored to 50% health|FirstKnockdownGetPercHp|50|300"],
+}
+{
+	ID: "TianSmallBoon",
+	Visual: "Tian",
+	Tags: "smallBuff",
+	Name: "Tian The Just Shrine",
+	Text: "Tian looks to bestow a gift on you. Select a boon to help you with your journey.",
+	Type: "ChooseBoon",
+	SacrificeType: "None",
+	WrongSacrificeMsg: "",
+	Options: ["Your most injured party member will be restored to full health.|HpChangeWeakest|99999","Your most tired party member will regain their full focus.|FocusChangeWeakest|99999", "Receive 100[CoinName]|ReceiveGold|100"],
+}

@@ -1,0 +1,247 @@
+{
+	ModType: "AdvancedScouting",
+	Name: "Advanced Scouting",
+	Description: "The identity of 3 random events are revealed.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "Bounty",
+	Name: "Bounty",
+	Description: "More likely to find loot events.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "Burden",
+	Name: "Burden",
+	Description: "Unable to use Provisions in combat",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "CaveIns",
+	Name: "Cave-Ins",
+	Description: "More likely to encounter blocked passages.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "DeadlyTraps",
+	Name: "Deadly Traps",
+	Description: "Traps do double damage.",
+	Value: "2",
+	IsPositive: "false",
+}
+{
+	ModType: "DeadRising",
+	Name: "Dead Rising",
+	Description: "Undead will rise from coffin obstacles after 5 Rounds of combat.",
+	Value: "5",
+	IsPositive: "false",
+}
+{
+	ModType: "Energized",
+	Name: "Energized",
+	Description: "Well-Rested characters gain +1 max charges for all abilities.",
+	Value: "1",
+	IsPositive: "true",
+}
+{
+	ModType: "Exhausting",
+	Name: "Exhausting Trek",
+	Description: "Unable to sprint in combat.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "ExtraCamp",
+	Name: "Extra Camp",
+	Description: "Will allow you to camp for free.",
+	Value: "0",
+	IsPositive: "true",
+	IsEnabled: "false",
+}
+{
+	ModType: "FootTraffic",
+	Name: "Foot Traffic",
+	Description: "Discovered enemy tracks reveal the locations of nearby combat events without the need to interact further with them.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "Gloom",
+	Name: "Gloom",
+	Description: "Cannot manually Scout.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "GruelingPath",
+	Name: "Grueling Path",
+	Description: "Exploration movement costs +1 Time.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "HealDampening",
+	Name: "Heal Dampening",
+	Description: "Your healing spells are 30% less effective.",
+	Value: "0.7",
+	IsPositive: "false",
+}
+{
+	ModType: "HighSpirits",
+	Name: "High Spirits",
+	Description: "All characters in your party start with full Morale.",
+	Value: "0",
+	IsPositive: "true",
+	IsEnabled: "false",
+}
+{
+	ModType: "HighWinds",
+	Name: "High Winds",
+	Description: "All ranged attacks deal 75% damage.",
+	Value: "0.75",
+	IsPositive: "false",
+	IsEnabled: "false",
+}
+{
+	ModType: "Hunger",
+	Name: "Hunger",
+	Description: "Hunger will set in after the first combat and your party will demand to camp.",
+	Value: "0",
+	IsPositive: "false",
+	IsEnabled: "false",
+}
+{
+	ModType: "LingeringEffects",
+	Name: "Lingering Effects",
+	Description: "Negative conditions on your characters last +1 Round.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "MedicinalHerbs",
+	Name: "Medicinal Herbs",
+	Description: "Provisions that restore Health and Morale are 50% more effective.",
+	Value: "1.5",
+	IsPositive: "true",
+}
+{
+	ModType: "MagicDampening",
+	Name: "Magic Dampening",
+	Description: "The presence of Aether is barely noticeable in this place and your magic-based attacks do 20% less damage.",
+	Value: "0",
+	IsPositive: "false",
+	IsEnabled: "false",
+}
+{
+	ModType: "MagicPotency",
+	Name: "Magic Potency",
+	Description: "The presence of Aether is strong in this place and your magic-based attacks do 20% more damage.",
+	Value: "0",
+	IsPositive: "true",
+	IsEnabled: "false",
+}
+{
+	ModType: "MortalReminder",
+	Name: "Mortal Reminder",
+	Description: "Everyone in your party begins with 2 Bleedout points.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "NoEscape",
+	Name: "No Escape",
+	Description: "Unable to flee from combat.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "PresenceOfGods",
+	Name: "Presence of Gods",
+	Description: "More likely to find Shrine events.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "PunishingTerrain",
+	Name: "Punishing Terrain",
+	Description: "Units pushed into obstacles and pits take 50% more damage.",
+	Value: "1.5",
+	IsPositive: "true",
+}
+{
+	ModType: "RelaxedEnemies",
+	Name: "Relaxed Enemies",
+	Description: "You are guaranteed to ambush the enemy if their location is revealed (remove this).",
+	Value: "0",
+	IsPositive: "true",
+	IsEnabled: "false",
+}
+{
+	ModType: "RichVeins",
+	Name: "Rich Veins",
+	Description: "More likely to find Mining events.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "RottingWoods",
+	Name: "Rotten Wood",
+	Description: "Boarded up pitfalls will break after 3 Rounds of combat.",
+	Value: "5",
+	IsPositive: "false",
+}
+{
+	ModType: "SecurityMeasures",
+	Name: "Security Measures",
+	Description: "All locked doors and chests are booby-trapped.",
+	Value: "0",
+	IsPositive: "false",
+	IsEnabled: "false",
+}
+{
+	ModType: "TimeDilation",
+	Name: "Time Dilation",
+	Description: "The threshold for Time Modifiers is increased.",
+	Value: "18",
+	IsPositive: "true",
+}
+{
+	ModType: "TutorialTime",
+	Name: "Time Dilation",
+	Description: "The threshold for Time Modifiers is increased.",
+	Value: "50",
+	IsPositive: "true",
+	IsEnabled: "false",
+}
+{
+	ModType: "UnstableEnvironment",
+	Name: "Unstable Environment",
+	Description: "Higher chance for falling debris hazards in exploration and combat.",
+	Value: "0",
+	IsPositive: "false",
+}
+{
+	ModType: "VulnerableFoes",
+	Name: "Vulnerable Foes",
+	Description: "Do +50% more damage (instead +25%) when an enemy is vulnerable to the damage type.",
+	Value: "1.5",
+	IsPositive: "true",
+}
+{
+	ModType: "WealthOfKnowledge",
+	Name: "Wealth of Knowledge",
+	Description: "Increased chance of finding Runes and Knowledge events.",
+	Value: "0",
+	IsPositive: "true",
+}
+{
+	ModType: "XP",
+	Name: "Learning Experience",
+	Description: "Combat gives double XP.",
+	Value: "2",
+	IsPositive: "true",
+}

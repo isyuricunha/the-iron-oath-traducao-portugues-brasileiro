@@ -1,0 +1,150 @@
+{
+	Type: "LOW_GOLD",
+	DelayUntilRepeat: 0,
+	Text: "We're running low on funds. We might need to consider picking up better paying jobs or we won't be able to afford paying everyone's salaries.",
+}
+{
+	Type: "FEW_QUESTS",
+	DelayUntilRepeat: 200,
+	Text: "We currently don't have a lot of jobs on the books. We should find a town and look for anyone looking to hire our services.",
+}
+{
+	Type: "NEED_BATTLEMASTER",
+	DelayUntilRepeat: 200,
+	Text: "Keeping our troops well trained will be difficult without a Battlemaster. We should consider employing somebody for that position.",
+}
+{
+	Type: "NEED_EMISSARY",
+	DelayUntilRepeat: 200,
+	Text: "We should hire an Emissary to help improve relations with our existing allies and forge new ones.",
+}
+{
+	Type: "NEED_SPYMASTER",
+	DelayUntilRepeat: 200,
+	Text: "We don't currently have a Spymaster in our ranks. A Spymaster could help us discover and exploit weaknesses among our enemies.",
+}
+{
+	Type: "LOW_LOYALTY",
+	DelayUntilRepeat: 300,
+	Text: "I'm noticing a worrisome trend among our ranks. They have disagreed with a number our your decision as of late and are questioning their loyalty. I recommend either cutting them from the guild and finding troops who better allign with your values, or making sure ",
+}
+{
+	Type: "UNSPENT_RENOWN",
+	DelayUntilRepeat: 200,
+	Text: "We have earned enough resources to upgrade our guild. There is no reason to not make lives easier for you and your troops.",
+}
+{
+	Type: "BELOW_AVG_PROFITS",
+	DelayUntilRepeat: 0,
+	Text: "I noticed this month our profits are down. Perhaps we could look for more jobs or consider lightening our costs.",
+}
+{
+	Type: "ABOVE_AVG_PROFITS",
+	DelayUntilRepeat: 200,
+	Text: "We had an exceptional past month. We were well above our average monthly income. Keep up the great work. Consider giving a bonus to your troops. They've earned it.",
+}
+{
+	Type: "GUILD_SKILL_SUGGESTION",
+	DelayUntilRepeat: 350,
+	Text: "Have you considered upgrading our guild with this?",
+}
+{
+	Type: "ADVISER_GENERAL_TIP",
+	DelayUntilRepeat: 0,
+	Text: "Let's make sure we keep taking on new quests so we have plenty of income and can pay our troops. As long as they are happy we should be able to continue thriving.",
+}
+{
+	Type: "LOW_UNITS",
+	DelayUntilRepeat: 400,
+	Text: "We could use some fresh recruits. At this point any will do. We just need more bodies filling out our ranks.",
+}
+{
+	Type: "LOW_SUPPORTS",
+	DelayUntilRepeat: 400,
+	Text: "We could use more healers and support units in our ranks. Consider hiring one or two more the next time we reach a city.",
+}
+{
+	Type: "LOW_TANKS",
+	DelayUntilRepeat: 400,
+	Text: "We need more defense focused troops. We should hire one or two more in the near future.",
+}
+{
+	Type: "LOW_DPS",
+	DelayUntilRepeat: 400,
+	Text: "We could use some more troops that focus on attacking and pushing back against our enemies. Consider hiring some as soon as possible.",
+}
+{
+	Type: "INJURIES",
+	DelayUntilRepeat: 400,
+	Text: "We have a large number of units injured. Perhaps now would be a good time to let them rest before embarking any farther or we could hire a few extra replacements.",
+}
+{
+	Type: "REMOVE_TRAIT_SUGGESTION",
+	DelayUntilRepeat: 400,
+	Text: "I wanted to recommend talking to this person and removing one of their worse traits.",
+}
+{
+	Type: "UNSPENT_ABILITY_POINTS",
+	DelayUntilRepeat: 400,
+	Text: "We've gained the experience required, now we just need to figure out what to teach these recruits.",
+}
+{
+	Type: "SUGGEST_TRAIT",
+	DelayUntilRepeat: 400,
+	Text: "We should consider letting me train this person personally. I can help them become stronger.",
+}
+{
+	Type: "SUGGEST_MISSION",
+	DelayUntilRepeat: 400,
+	Text: "This mission might be wise to take on. The experienced gained from finishing it will be valuable.",
+}
+{
+	Type: "SUGGEST_UNIT_FOR_MISSION",
+	DelayUntilRepeat: 400,
+	Text: "This person hasn't been on any missions in a while. It might be a good idea to include them so they don't become rusty in their abilities.",
+}
+{
+	Type: "BATTLEMASTER_GENERAL_TIP",
+	DelayUntilRepeat: 0,
+	Text: "As long as we keep a good number of fresh recruits coming in we'll always have someone to replace those that retire or fall in combat.",
+}
+{
+	Type: "FEW_ALLIES",
+	DelayUntilRepeat: 300,
+	Text: "We could use more allies. More allies will help us take on more quests from different regions. Not to mention will allow us to depend on their help if we need it.",
+}
+{
+	Type: "ASSIST_OLD_ALLIES",
+	DelayUntilRepeat: 300,
+	Text: "We haven't had contact with House [houseName] in a while. We should consider taking on a mission or two from them so our relationship doesn't sour.",
+}
+{
+	Type: "MAKE_POWERFUL_ALLIES",
+	DelayUntilRepeat: 300,
+	Text: "House [houseName] has grown quite powerful and I noticed we've yet to make contact. We should consider seeing if our interests align or at least see how they feel about us.",
+}
+{
+	Type: "MAKE_FRIENDS_FROM_ENEMIES",
+	DelayUntilRepeat: 300,
+	Text: "House [houseName] still aren't our friends but I think if we played nice with them we could turn our relationship around. Consider taking on a mission or two from them.",
+}
+{
+	Type: "CONFLICTING_ALLIES_IN_WAR",
+	DelayUntilRepeat: 300,
+	Text: "House [houseName] and House [houseName2] are both our allies but are at war with each other. We should either avoid contact with both houses in the meantime or choose a side.",
+}
+{
+	Type: "EMISSARY_GENERAL_TIP",
+	DelayUntilRepeat: 0,
+	Text: "Let's continue to foster our existing alliances while building new ones.",
+}
+{
+	Type: "FORCE_WAR_BETWEEN_HOUSES",
+	DelayUntilRepeat: 300,
+	Text: "I noticed House [houseName] and [houseName2] are on the brink of war. Perhaps I could go in there and tip the scales. War brings opportunities for new missions.",
+}
+{
+	Type: "SPYMASTER_GENERAL_TIP",
+	DelayUntilRepeat: 0,
+	Text: "My agents and I can build a network of spies so we can have eyes and ears in all corners of Caelum.",
+}

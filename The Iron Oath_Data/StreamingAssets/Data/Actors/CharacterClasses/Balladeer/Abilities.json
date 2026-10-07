@@ -1,0 +1,61 @@
+{
+  Character: "Balladeer",
+  UniqueId: "BattleChords",
+  AbilityName: "tio_BalladeerBattleChordsName",
+  Description: "tio_BalladeerBattleChordsDescription",
+  DmgType: "CRUSHING",
+  DmgValue: "1",
+  Charges: "5",
+  Range: "0",
+}
+{
+  Character: "Balladeer",
+  UniqueId: "AnthemOfWarding",
+  AbilityName: "tio_BalladeerAnthemOfWardingName",
+  Description: "tio_BalladeerAnthemOfWardingDescription",
+  DmgType: "CRUSHING",
+  DmgValue: "1",
+  BaseValue: 120,
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Balladeer",
+  UniqueId: "SmashingTune",
+  AbilityName: "tio_BalladeerSmashingTuneFireName",
+  Description: "tio_BalladeerSmashingTuneFireDescription",
+  DmgType: "CRUSHING",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Balladeer",
+  UniqueId: "Serenade",
+  AbilityName: "tio_BalladeerSerenadeName",
+  Description: "tio_BalladeerSerenadeDescription",
+  DmgType: "CRUSHING",
+  DmgValue: "1",
+  Charges: "3",
+  Range: "3",
+}
+{
+  Character: "Balladeer",
+  UniqueId: "Lullaby",
+  AbilityName: "tio_BalladeerLullabyName",
+  Description: "tio_BalladeerLullabyDescription",
+  DmgType: "CRUSHING",
+  Charges: "3",
+  DmgValue: "1",
+  Range: "1",
+}
+{
+  Character: "Balladeer",
+  UniqueId: "RenewingMelody",
+  AbilityName: "tio_BalladeerRenewingMelodyName",
+  Description: "tio_BalladeerRenewingMelodyDescription",
+  DmgType: "CRUSHING",
+  Charges: "3",
+  BaseValue: "70",
+  Range: "3",
+}

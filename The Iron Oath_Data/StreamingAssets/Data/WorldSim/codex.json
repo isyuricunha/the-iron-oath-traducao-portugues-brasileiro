@@ -1,0 +1,336 @@
+{
+	Name: "Spymaster",
+	Description: "Someone who is responsible for all matters of intrigue, subterfuge, and secrets. Usually they work for a nobleman or high ranking government officials but are sometimes employed by larger guilds.",
+}
+{
+	Name: "Caelum",
+	Description: "The known world, consisting of five regions",
+}
+{
+	Name: "Vanguard",
+	Description: "An ancient order that is tasked with defending the Mortal Realm against all unnatural evils. They were established during the Dark Age by Tian, the first King of the now-dissolved Kingdom of Caelum. The Vanguard have garrisons all across Caelum, with their main headquarters situated in the Northern Hold.",
+}
+{
+	Name: "Scourge",
+	Description: "The Scourge is a global event that occurs every few decades, in which the dragon - accompanied by demonic hordes from the Void - returns to the Mortal Realm, attacking cities and inflicting the Blight upon their inhabitants.",
+}
+{
+	Name: "Overseers",
+	Description: "The Overseers are an organization that monitors the activities of mages, hunting down any who meddle in forbidden schools of magic. Those with who can wield magic are somewhat of a rarity in Caelum, and the origins of their affinity for it remain unknown. Though the existence of magic dates back into the Dark Age, the use of it is still frowned upon by some, holding to the belief that humanity was not meant to wield it.",
+}
+{
+	Name: "Circle of Aether",
+	Description: "The Circle of Aether - or Circle, as referred to by many - was originally founded as a branch of the Vanguard Order, with the express purpose of training promising mages and studying magic itself. Though the Circle is now an autonomous order, they remain closely linked with the Vanguard and often work together in times of crisis.",
+}
+{
+	Name: "Void Breach",
+	Description: "A Void Breach occurs when a rift opens between the Mortal Realm and the Void, allowing demons and spirits to pass freely between the two realms of existence.",
+}
+{
+	Name: "Void",
+	Description: "Though knowledge of the Void is limited, it has been described as a realm of infinite darkness which corrupts everything within. It harbors many foul creatures borne of this corruption such as spirits, demons, and the dragon itself.",
+}
+{
+	Name: "Blighted",
+	Description: "Once human, the Blighted are aggressive and mindless abominations that no longer resemble the person they once were. The transformation is brought on by the Dragon's Blight, which is inflicted on citizens during every Scourge.",
+}
+{
+	Name: "Voidspawn",
+	Description: "Creatures of the Void such as demons and spirits are referred to as Voidspawn.",
+}
+{
+	Name: "Redlands",
+	Description: "Caelum's southernmost region is a vast desert landscape with a warm climate. Their inhabitants, the Tyrosene, claim to have come from an entirely other land many ages ago. Though the Tyrosene no longer hold to the ideas of a traditional religion, they do maintain a deep respect for their Kings of old, known as The Divines.",
+}
+{
+	Name: "Midland",
+	Description: "With its temperate climate and lush green plains, it is generally regarded as the most pleasant region to inhabit. Midland is the birthplace of the Ascended Faith and home to its influential religious head, the Archpriest. The Capital of Midland, Solace, was once Capital to the Kingdom of Caelum, before the Red Plague and subsequent wars brought about its dissolution.",
+}
+{
+	Name: "Northern Hold",
+	Description: "Home to the hardy Nurren people, this northernmost region experiences snowy conditions almost year-round. Though their ancient ancestors belonged to nomadic tribes, the majority of Nurren have long since adopted the ways of modern civilization. However, their old ways haven't been abandoned entirely, as they still maintain devotion to their creator: Vismyr the Allmaker.",
+}
+{
+	Name: "Dragate",
+	Description: "Dragate is by all accounts a harsh land inhabited by dragon-worshipping fanatics. Little is known of the region's current state however, as the Black Wall of Dragate, constructed some time ago, prevents any from entering or leaving. Given the inhospitable nature of the region, few care to risk their lives by attempting to do so.",
+}
+{
+	Name: "Westmire",
+	Description: "The westernmost region in Caelum where wetlands are abundant. Though their inhabitants are of Midden descent, their religious beliefs differ from their cultural counterparts in Midland, choosing to favor the Elder Gods.",
+}
+{
+	Name: "Midden",
+	Description: "A culture of people from the Northern Hold.",
+}
+{
+	Name: "Nurren",
+	Description: "A culture of people from the Northern Hold.",
+}
+{
+	Name: "Normedic",
+	Description: "A culture of people from Dragate.",
+}
+{
+	Name: "Tyrosene",
+	Description: "A culture of people from the Redlands.",
+}
+{
+	Name: "Elder Gods",
+	Description: "According to oral history, The Elder Faith existed in Midden culture even prior to the Dark Age, and is based upon a pantheon of Gods who are credited with the creation of life as it is today. Though followers of the Ascended Faith include Tian in this pantheon, the notion is rejected by practitioners of The Elder Faith.",
+}
+{
+	Name: "Elder Faith",
+	Description: "According to oral history, The Elder Faith existed in Midden culture even prior to the Dark Age, and is based upon a pantheon of Gods who are credited with the creation of life as it is today. Though followers of the Ascended Faith include Tian in this pantheon, the notion is rejected by practitioners of The Elder Faith.",
+}
+{
+	Name: "Tian",
+	Description: "Tian, also known as the Ascended, was a hero of the Dark Age who became the first King of the now-defunct Kingdom of Caelum, and also founded the Vanguard Order. The Ascended Faith asserts that he was chosen for this task by the Elder Gods themselves, and upon his death he ascended to the Aether to join their godly pantheon.",
+}
+{
+	Name: "Ascended Faith",
+	Description: "The Ascended Faith was founded upon the stories written by Lorrec near the end of The Dark Age. These stories recounted the life of Tian, a great hero who was chosen by the Elder Gods to unite humanity, and did so as the first King of Caelum. Upon his death, it is believed that he ascended to the Aether, joining the pantheon of the Elder Gods.",
+}
+{
+	Name: "Vismyr",
+	Description: "Vismyr the Allmaker is a Nurren god, whom they believe to be the creator of everything. After being impressed by the strength and valor of an ancient Nurren Chieftain named Hyldr, Vismyr created the plane of Hvillholl for him and other great Nurren warriors to reside upon their death. Because of this, death is not feared in Nurren culture, and is instead viewed as a great privilege.",
+}
+{
+	Name: "Allmaker",
+	Description: "Vismyr the Allmaker is a Nurren god, whom they believe to be the creator of everything. After being impressed by the strength and valor of an ancient Nurren Chieftain named Hyldr, Vismyr created the plane of Hvillholl for him and other great Nurren warriors to reside upon their death. Because of this, death is not feared in Nurren culture, and is instead viewed as a great privilege.",
+}
+{
+	Name: "Divines",
+	Description: "The Divines are ancient Kings of old who ruled the Tyrosene people. They were originally treated as godlike beings, and their entombed bodies were visited by many who offered gifts and sacrifices in return for protection. Most Tyrosene today do not believe such things, but they do maintain a deep respect for The Divines.",
+}
+{
+	Name: "Faith of the Dragon",
+	Description: "The Faith of the Dragon has little following outside of Dragate, though occasionally small groups of cultists are reported. It is viewed as fanatical religion, where ritual sacrifice is apparently commonplace, done in an effort to appease the dragon and spare worshippers from the Scourge.",
+}
+{
+	Name: "Black Wall",
+	Description: "The Black Wall of Dragate is a large impenetrable wall whose construction effectively cut off Dragate from the rest of Caelum. The current state of the region is anyone's best guess, and it has been that way for decades.",
+}
+{
+	Name: "Red Plague",
+	Description: "The Red Plague was one of the earliest recorded events in Caelum's written history, occurring shortly after the Dark Age ended. It was a deadly plague that spread all throughout Caelum, taking the lives of lowborn and Noble alike. The eventual death of Caelum's King and subsequent heir led to the Kingdom's dissolution, as Noble Houses from each region vied for power.",
+}
+{
+	Name: "Sundered Hollows",
+	Description: "The Sundered Hollows is a massive chasm that exists in the Redlands, housing miles of uncharted and maze-like tunnels that reach far underground. Many brave souls have lost their lives in pursuit of rumoured riches, and the depths below have become a graveyard of overzealous adventurers.",
+}
+{
+	Name: "Pyramid of the Divine",
+	Description: "The Tyrosene originally believed the Sundered Hollows to be a source of great evil. Over many years, they built the massive Pyramid of the Divine which overlooked the great chasm - a place from which their entombed Kings could ward off any evils.",
+}
+{
+	Name: "First Age",
+	Description: "According to legend, The First Age is the time in which the world and all life was created by the Gods.",
+}
+{
+	Name: "Age of Gods",
+	Description: "The Gods were said to have lived alongside humanity during this era, but an unknown cataclysmic event brought about its end. History and knowledge was lost in the chaos, plunging the world into the Dark Age.",
+}
+{
+	Name: "Dark Age",
+	Description: "There is little known of the Dark Age, only stories which were passed down. It is during this age that Tian - a great warrior, favored by the Gods - was said to have led humanity against a great threat, and ultimately united Caelum into one Kingdom under his reign. The Dark Age neared its end with the advent of the common script, enabling subsequent events in Caelum's history to be officially documented.",
+}
+{
+	Name: "Common Age",
+	Description: "With the advent of the Common Script, the Dark Age soon came to an end. A new era of record keeping followed and marked the beginning of the Common Age, which spans from the year 0 to the present day.",
+}
+{
+	Name: "Common Script",
+	Description: "The Common Script is a written language that is used across Caelum. Its development brought about a new era of record keeping and thrust humanity into the Common Age. Though another form of writing seems to have existed during the Age of Gods, it was likely a skill that only few possessed, and all knowledge of it was lost in the Dark Age.",
+}
+{
+	Name: "Aether",
+	Description: "According to legend, the Aether is the lifeblood of the world which flows between the Mortal Realm and the Void, containing the fuel for all creation and destruction. Some theorize it to be the source of a mage's power.",
+}
+{
+	Name: "Lorrec",
+	Description: "Lorrec was a famous writer who lived at the end of the Dark Age. With the advent of the Common Script, he was one of the first to adopt it, and put the storied life of Tian into written words for the very first time. The book gained popularity across Midland, and a few decades after Lorrec's death, it became the basis on which the Ascended Faith was founded. His other famous works include 'The Pantheon', and 'The War of Gods'.",
+}
+{
+	Name: "'Move'",
+	Description: "On their turn, a character can move to any hex within range.",
+}
+{
+	Name: "'Movement'",
+	Description: "The max number of hexes a character can move on their turn and still perform an action afterward.",
+}
+{
+	Name: "'Sprint'",
+	Description: "A character can sprint beyond their normal movement range, at the cost of ending their turn.",
+}
+{
+	Name: "'Swap'",
+	Description: "Allows two allied characters to swap positions. Does not incur Attacks of Opportunity.",
+}
+{
+	Name: "'Wait'",
+	Description: "Delay a character's turn until the end of the current round.",
+}
+{
+	Name: "'Guard'",
+	Description: "A defensive stance that boosts Defense and Evasion and ends a character's turn.",
+}
+{
+	Name: "'Defense'",
+	Description: "Mitigates incoming damage by percentage.",
+}
+{
+	Name: "'Evasion'",
+	Description: "The percentage chance to block or dodge an incoming attack. ",
+}
+{
+	Name: "'Abilities'",
+	Description: "The unique abilities of a class that have limited usage.",
+}
+{
+	Name: "'Charges'",
+	Description: "How many uses an ability has remaining.",
+}
+{
+	Name: "Attack of Opportunity",
+	Description: "A free attack that is triggered when a character moves away from an adjacent enemy.",
+}
+{
+	Name: "'Stun'",
+	Description: "Stunned characters are unable to act in any fashion and forfeit their turn.",
+}
+{
+	Name: "'Basic Attack'",
+	Description: "Deals less damage than most abilities, but has unlimited usage.",
+}
+{
+	Name: "'Line of Sight'",
+	Description: "A vision check to determine which targets are valid. Partially visible enemies will take 50% damage from attacks.",
+}
+{
+	Name: "'Spirit'",
+	Description: "Represents a character's mood towards the current mission and plays a role in how fatigued they will be afterward.",
+}
+{
+	Name: "'Fatigue'",
+	Description: "Days before a character's Health, Spirit and Ability Charges will fully recover.",
+}
+{
+	Name: "'Flanked'",
+	Description: "Damage taken is increased by 15% when two enemies occupy opposing hexes adjacent to the target.",
+}
+{
+	Name: "'Time'",
+	Description: "A measure of how much time has passed in a dungeon, determined through exploration actions and combat.",
+}
+{
+	Name: "'Scout'",
+	Description: "The Scout action reveals any exploration events on the tiles ahead.",
+}
+{
+	Name: "'Exploration Event'",
+	Description: "A dungeon tile that holds a narrative or combat encounter, represented by a unique icon.",
+}
+{
+	Name: "'Loyalty'",
+	Description: "A measure of a character's feelings towards you and the company as a whole (from 0-100). Loyal characters are easier to please and easier to retain through contract negotiation.",
+}
+{
+	Name: "'Tools'",
+	Description: "A type of provision that can be consumed to boost the likelihood of success for certain actions such as lockpicking. Tools can also enable certain actions that cost less Time and otherwise wouldn't be available.",
+}
+{
+	Name: "'Provisions'",
+	Description: "Items that you can purchase and bring with you when entering a dungeon. They can also be looted from enemies and events throughout the course of a dungeon.  ",
+}
+{
+	Name: "'Health'",
+	Description: "A character's health is determined by their Constitution and Strength attributes. When the value drops to 0, they will enter Bleedout.",
+}
+{
+	Name: "'Time Modifiers'",
+	Description: "Various modifiers that alter the current dungeon. New modifiers are added whenever the time meter fills.",
+}
+{
+	Name: "'Camp'",
+	Description: "Rest on an empty tile and burn incenses that can recover Health, Spirit and provide other bonuses. Camping is only available when the dungeon length is medium or long. ",
+}
+{
+	Name: "'Incenses'",
+	Description: "A combination of ingredients imbued with magical properties, used while camping to provide various bonuses to your party. You can unlock more Incenses via Company Upgrades in the 'Alchemy' tree.",
+}
+{
+	Name: "'Perception'",
+	Description: "A secondary attribute that is used to detect exploration events such as traps and secrets that may otherwise be hidden from you. Characters with high Perception are also more effective than others when placed on lookout while camping.",
+}
+{
+	Name: "'Traits'",
+	Description: "Character Traits can be Positive, Negative, or Neutral. They modify a variety of things such as attributes, combat functionality and other stats. ",
+}
+{
+	Name: "'Bandage'",
+	Description: "A consumable provision that can be used both in and out of combat to stabilize injuries and restore a small fraction of Health.",
+}
+{
+	Name: "'Infirmary'",
+	Description: "A building found at any city hub in which characters can be admitted to speed up the recovery of their injuries. ",
+}
+{
+	Name: "'Antidote'",
+	Description: "A consumable provision that can be used in combat to cleanse any negative conditions and provide temporary immunity. ",
+}
+{
+	Name: "'Bleedout'",
+	Description: "A downed state that a character enters when their Health reaches 0. Does not apply to enemies.",
+}
+{
+	Name: "'Bleedout Pool'",
+	Description: "During Bleedout, a character's Health value is replaced by a Bleedout Pool. This pool is persistent throughout the dungeon, and the character will die if the pool reaches 0.",
+}
+{
+	Name: "'Affinity'",
+	Description: "Affinity represents how strong a relationship is between two members of your company (from 0-100). If an assembled party has a high enough average Affinity, each character will receive a Spirit bonus for the mission.",
+}
+{
+	Name: "'Company Upgrades'",
+	Description: "Upgrades that can be purchased with Renown Points to improve various aspects of your company.",
+}
+{
+	Name: "'Renown'",
+	Description: "A measure of your overall level of fame within the world. Earning Renown will gain you Renown Points which can be in turn spent on Company Upgrades.",
+}
+{
+	Name: "'Reputation'",
+	Description: "A measure of your relationship with each noble House, City and Faction in the world. High reputation offers various benefits, while low reputation can provoke consequences. ",
+}
+{
+	Name: "'Renown Points'",
+	Description: "Used to purchase Company Upgrades. Gain more by completing contracts and earning Renown.",
+}
+{
+	Name: "'Durability'",
+	Description: "Durability displays the condition of your weapons and armor. When equipment reaches 0 durability, it will break and turn into scrap.",
+}
+{
+	Name: "'Scrap'",
+	Description: "Scrap is gained when a piece of gear loses all durability and breaks. Gear with higher durability will net you more scrap. It can be sold in a city's marketplace, or saved to complete specific Bounties.",
+}
+{
+	Name: "'XP'",
+	Description: "Characters gain Experience (XP) by winning battles. With enough XP, they will level up.",
+}
+{
+	Name: "'Attribute Points'",
+	Description: "Points gained from levelling up, which can be spent to increase a specific Attribute value.",
+}
+{
+	Name: "'Abiltiy Points'",
+	Description: "Points gained from levelling up, which can be spent to upgrade or alter the unique abilities of a character.",
+}
+{
+	Name: "'Dexterity'",
+	Description: "A primary attribute that plays a role in determining a character's Accuracy, Critical Chance and Evasion.",
+}
+{
+	Name: "'Wisdom'",
+	Description: "A primary attribute that plays a role in determining a character's Critical Damage and Perception.",
+}

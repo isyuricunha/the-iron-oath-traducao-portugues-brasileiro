@@ -1,0 +1,5 @@
+{
+	Name: "Tutorial",
+	Group: ["Flayer", "NullbeastPrime", "Flayer"],
+	Weight: 1,
+}

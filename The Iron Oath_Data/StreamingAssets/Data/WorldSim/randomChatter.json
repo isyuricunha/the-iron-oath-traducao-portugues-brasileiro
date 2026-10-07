@@ -1,0 +1,8 @@
+{
+	NPC: "Merchant",
+	Dialogue: "Check out my wares! Best prices in Caelum!",
+}
+{
+	NPC: "Merchant",
+	Dialogue: "What are you looking for? I've got plenty of supplies.",
+}

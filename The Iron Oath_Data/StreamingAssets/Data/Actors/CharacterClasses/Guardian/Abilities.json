@@ -1,0 +1,61 @@
+{
+  Character: "Guardian",
+  UniqueId: "BlindingStrike",
+  AbilityName: "tio_GuardianBlindingStrikeName",
+  Description: "tio_GuardianBlindingStrikeDescription",
+  DmgType: "HOLY",
+  DmgValue: "1.0",
+  Charges: "3",
+}
+{
+  Character: "Guardian",
+  UniqueId: "CleansingLight",
+  AbilityName: "tio_GuardianCleansingLightName",
+  Description: "tio_GuardianCleansingLightDescription",
+  DmgType: "HOLY",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "2",
+}
+{
+  Character: "Guardian",
+  UniqueId: "Dawn",
+  AbilityName: "tio_GuardianDawnName",
+  Description: "tio_GuardianDawnDescription",
+  DmgType: "HOLY",
+  DmgValue: "1.75",
+  Charges: "3",
+  Range: "2",
+  BaseValue: "120",
+}
+{
+  Character: "Guardian",
+  UniqueId: "Safeguard",
+  AbilityName: "tio_GuardianSafeguardName",
+  Description: "tio_GuardianSafeguardDescription",
+  DmgType: "HOLY",
+  DmgValue: "1.5",
+  Charges: "3",
+  Range: "2",
+  BaseValue: "95",
+}
+{
+  Character: "Guardian",
+  UniqueId: "HolyBarrage",
+  AbilityName: "tio_GuardianHolyBarrageName",
+  Description: "tio_GuardianHolyBarrageDescription",
+  DmgType: "HOLY",
+  DmgValue: "1.30",
+  Charges: "3",
+  Range: "1",
+}
+{
+  Character: "Guardian",
+  UniqueId: "Judgment",
+  AbilityName: "tio_GuardianJudgmentName",
+  Description: "tio_GuardianJudgmentDescription",
+  DmgType: "HOLY",
+  DmgValue: "2",
+  Charges: "3",
+  Range: "1",
+}

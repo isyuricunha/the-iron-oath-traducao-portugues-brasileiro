@@ -1,0 +1,18 @@
+{
+	Name: "tio_ClassNameOutlawTrapper",
+	Health: ["320"],
+	Power: ["80"],
+	Mending: ["0"],
+	Defense: ["5"],
+	Evasion: ["5"],
+	Accuracy: ["95"],
+	CriticalChance: ["5"],
+	Speed: ["6"],
+	Move: "2",
+	Resists: [],
+	Immunities: ["MARKED","RESTRAIN"],
+	ResourceDrop: ["tioScrap"],
+	EncounterValue: "3",
+	EncounterValueEliteOverride: "0",
+	EncounterCap: ["2","2","3","4","5"],
+}

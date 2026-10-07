@@ -1,0 +1,15 @@
+{
+	Name: "Necromancer",
+	NameDisplay: "Necromancer",
+	Group: ["Ritualist","Hag","SoulConjurer","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	ScoutingReport: ["Necromancers:Necromancers","Undead:Undead"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
+	Weight: 1,
+}
+{
+	Name: "Necromancer",
+	NameDisplay: "Necromancer",
+	Group: ["DeathLord","Ritualist","Hag","SoulConjurer","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	Weight: 1,
+	IsBossEncounter: true,
+}

@@ -1,0 +1,157 @@
+{
+	Type: "None",
+	Value: "0",
+	Description: "None",
+}
+{
+	Type: "LargeHealthRecovery",
+	Value: "0.5",
+	Description: "Restore 50% Health",
+}
+{
+	Type: "MediumHealthRecovery",
+	Value: "0.25",
+	Description: "Restore 25% Health",
+}
+{
+	Type: "LowHealthRecovery",
+	Value: "0.1",
+	Description: "Restore 10% Health",
+}
+{
+	Type: "LargeSpiritRecovery",
+	Value: "40",
+	Description: "Gain 40 Morale",
+}
+{
+	Type: "MediumSpiritRecovery",
+	Value: "25",
+	Description: "Gain 25 Morale",
+}
+{
+	Type: "LowSpiritRecovery",
+	Value: "15",
+	Description: "Gain 15 Morale",
+}
+{
+	Type: "UncoverShrines",
+	Value: "0",
+	Description: "Reveal all Shrine locations",
+}
+{
+	Type: "RandomlyRestoreAbilityChargesLarge",
+	Value: "6",
+	Description: "Recover 6 ability charges at random",
+}
+{
+	Type: "RandomlyRestoreAbilityChargesMedium",
+	Value: "4",
+	Description: "Recover 4 ability charges at random",
+}
+{
+	Type: "RandomlyRestoreAbilityChargesSmall",
+	Value: "2",
+	Description: "Recover 2 ability charges at random",
+}
+{
+	Type: "GainHealthPerCombatCleared",
+	Value: "0.15",
+	Description: "Restore 15% Health for every battle completed",
+}
+{
+	Type: "Random1Stamina",
+	Value: "1",
+	Description: "Recover 1 ability charge for every battle completed",
+}
+{
+	Type: "Random1StaminaPerCombat",
+	Value: "1",
+	Description: "Recover 1 ability charge at random for each battle",
+}
+{
+	Type: "RestoreBleedoutFully",
+	Value: "99",
+	Description: "Restore all bleedout points",
+}
+{
+	Type: "LoseHpSmall",
+	Value: "25",
+	Description: "Lose 25 HP",
+}
+{
+	Type: "IncreaseResourceDropRate",
+	Value: "1",
+	Description: "Receive extra resource drops for the rest of the dungeon",
+}
+{
+	Type: "BonusXpForRestOfDungeon",
+	Value: "2",
+	Description: "Earn double XP for the rest of the mission",
+}
+{
+	Type: "BonusGoldForRestOfDungeon",
+	Value: "1.5",
+	Description: "Earn 50% more coin for the rest of the mission",
+}
+{
+	Type: "StabilizeInjuries",
+	Value: "99",
+	Description: "All injuries are stabilized",
+}
+{
+	Type: "NextEncounterHpReduced75Percent",
+	Value: "0.75",
+	Description: "Health of non boss enemies are reduced to 75% for the next combat encounter",
+}
+{
+	Type: "Lose25PercentOfMaxHp",
+	Value: "0.25",
+	Description: "Lose 25% of max Health",
+}
+{
+	Type: "ReduceCampEventsChance",
+	Value: "0.25",
+	Description: "Camping disrupt chance reduced",
+}
+{
+	Type: "DivideSpiritUpEvenly",
+	Value: "1",
+	Description: "Divide Morale equally among all party members",
+}
+{
+	Type: "RestoreHpForSpiritLost",
+	Value: "25",
+	Value2: "10",
+	Description: "Lose up to 25 Morale and restore 10 Health per point of Morale lost",
+}
+{
+	Type: "MediumSpiritLoss",
+	Value: "20",
+	Description: "Lose 20 Morale",
+}
+{
+	Type: "AdvanceTimeToNextModifier",
+	Value: "1",
+	Description: "Advance Time and trigger the next Dungeon Modifier",
+}
+{
+	Type: "LargeHealthAndMoraleRecovery",
+	Value: "1.5",
+	Value2: "25",
+	Description: "Restore 50% Health and 25 Morale",
+}
+{
+	Type: "GainScouting",
+	Value: "2",
+	Description: "Gain 2 more Scouts",
+}
+{
+	Type: "RandomlyRestoreAbilityChargesAll",
+	Value: "99",
+	Description: "Fully Restore all Ability Charges",
+}
+{
+	Type: "HpSetToLowPercentOfMaxHp",
+	Value: "0.1",
+	Description: "Health reduced to 10% of Max",
+}
