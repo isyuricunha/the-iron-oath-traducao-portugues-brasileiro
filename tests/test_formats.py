@@ -87,11 +87,15 @@ class HjsonFormatTests(unittest.TestCase):
         hjson.loads(rebuilt)
 
     def test_guard_blocks_invalid_rebuild(self):
-        rel = self.sample.relative_to(self.root).as_posix()
+        strict = self.root / "The Iron Oath_Data/StreamingAssets/Data/Strict"
+        strict.mkdir(parents=True)
+        sample = strict / "clean.json"
+        sample.write_bytes(b'{\r\n\tName: "Tutorial",\r\n}\r\n')
+        rel = sample.relative_to(self.root).as_posix()
         with self.assertRaises(ValueError):
-            _guard_rebuild_validity(self.root, rel, b"{ broken")
-        # A byte-identical rebuild passes the guard silently.
-        _guard_rebuild_validity(self.root, rel, self.sample.read_bytes())
+            _guard_rebuild_validity(self.root, rel, b'{\r\n\tName: "Tutorial"\r\n')
+        # A still-valid rebuild passes the guard silently.
+        _guard_rebuild_validity(self.root, rel, sample.read_bytes())
 
     def test_rebuild_applies_only_translation_spans(self):
         rel = self.sample.relative_to(self.root).as_posix()
