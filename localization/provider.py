@@ -187,6 +187,8 @@ class Provider:
                     lines.put(("line", raw))
             except OSError as exc:
                 lines.put(("error", exc))
+            except Exception as exc:  # noqa: BLE001 - response closed underneath
+                lines.put(("error", exc))
 
         thread = threading.Thread(target=reader, daemon=True)
         thread.start()
