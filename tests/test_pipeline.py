@@ -82,16 +82,29 @@ class PipelineTestBase(unittest.TestCase):
 
 
 class ParseTests(unittest.TestCase):
-    def test_translation_envelope_strict(self):
+    def test_translation_envelope_tolerant(self):
         batch = Batch(batch_id="b", units=[make_unit(0, "Hello")])
-        ok = _parse_translation_response('{"translations": {"u0": "Olá"}}', batch)
-        assert ok == {"u0": "Olá"}
-        with self.assertRaises(ValueError):
-            _parse_translation_response('{"translations": {"u1": "Outro"}}', batch)
-        with self.assertRaises(ValueError):
-            _parse_translation_response('{"translations": {"u0": ""}}', batch)
+        valid, problems = _parse_translation_response(
+            '{"translations": {"u0": "Olá"}}', batch
+        )
+        assert valid == {"u0": "Olá"}
+        assert problems == {}
+        # Missing id: reported, not fatal: the caller retries only that id.
+        valid, problems = _parse_translation_response(
+            '{"translations": {"u1": "Outro"}}', batch
+        )
+        assert valid == {}
+        assert "u0" in problems
+        valid, problems = _parse_translation_response(
+            '{"translations": {"u0": ""}}', batch
+        )
+        assert valid == {}
+        assert "empty or non-string" in problems["u0"]
+        # Envelope garbage stays fatal.
         with self.assertRaises(ValueError):
             _parse_translation_response('{"other": 1}', batch)
+        with self.assertRaises(ValueError):
+            _parse_translation_response("not json at all", batch)
 
     def test_review_envelope_keep_exact(self):
         batch = Batch(batch_id="b", units=[make_unit(0, "Hello")])
@@ -173,7 +186,7 @@ class PipelineTests(PipelineTestBase):
         assert len(accepted) == 4
         del failed
         assert all("—" not in v for v in accepted.values())
-        assert pipe.stats.retries_by_reason.get("validation", 0) >= 1
+        assert pipe.stats.retries >= 1
 
     def test_provider_stop_error_aborts(self):
         from localization.provider import ProviderStopError

@@ -87,8 +87,17 @@ def _parse_review_response(raw: str, batch: Batch, currents: dict[str, str]) -> 
     return out
 
 
-def _parse_translation_response(raw: str, batch: Batch) -> dict[str, str]:
-    """Parse and envelope-validate a translation response strictly."""
+def _parse_translation_response(
+    raw: str, batch: Batch
+) -> tuple[dict[str, str], dict[str, str]]:
+    """Parse a translation response tolerantly.
+
+    Returns (valid, problems): `valid` holds every requested id with a
+    non-empty string value; `problems` maps each missing or malformed
+    requested id to a reason. The caller accepts `valid` immediately and
+    retries only the ids in `problems`. Envelope-level garbage (unparseable
+    JSON, missing translations object) still raises ResponseError.
+    """
     try:
         data = json.loads(raw)
     except json.JSONDecodeError as exc:
@@ -98,19 +107,17 @@ def _parse_translation_response(raw: str, batch: Batch) -> dict[str, str]:
     translations = data["translations"]
     if not isinstance(translations, dict):
         raise ResponseError("translations is not an object")
-    if set(translations) != batch.unit_ids:
-        missing = batch.unit_ids - set(translations)
-        extra = set(translations) - batch.unit_ids
-        problems = []
-        if missing:
-            problems.append(f"missing ids: {sorted(missing)[:5]}")
-        if extra:
-            problems.append(f"extra ids: {sorted(extra)[:5]}")
-        raise ResponseError("; ".join(problems))
-    for unit_id, value in translations.items():
-        if not isinstance(value, str) or not value.strip():
-            raise ResponseError(f"id {unit_id!r} has an empty or non-string value")
-    return translations
+    valid: dict[str, str] = {}
+    problems: dict[str, str] = {}
+    for unit_id in batch.unit_ids:
+        value = translations.get(unit_id)
+        if isinstance(value, str) and value.strip():
+            valid[unit_id] = value
+        elif value is None:
+            problems[unit_id] = "missing id in the response"
+        else:
+            problems[unit_id] = "empty or non-string value"
+    return valid, problems
 
 
 _GLOSSARY_SEED_KEYS = {"locked", "confirmed"}
@@ -175,6 +182,13 @@ class BatchOutcome:
     accepted: dict[str, TranslationUnit]
     failed: list[TranslationUnit]
     attempts: int
+
+
+def _problems_text(batch: Batch) -> str:
+    """Bounded corrective feedback built from the batch failure state."""
+    if not batch.failure:
+        return "Every requested id must appear exactly once with a non-empty value."
+    return batch.failure
 
 
 class Pipeline:
@@ -280,6 +294,8 @@ class Pipeline:
 
         # Deterministic commit in batch order: a batch commits only when
         # all earlier batches are ready.
+        start_time = time.monotonic()
+        total_units = sum(len(b.units) for b in batches)
         while committed_prefix < len(batches):
             batch = batches[committed_prefix]
             done_events[batch.batch_id].wait()
@@ -300,10 +316,29 @@ class Pipeline:
             self.checkpoint.save_units(saves, self.generation_id)
             committed_prefix += 1
             self.stats.waves = (self.stats.waves or 0) + 1
+            if committed_prefix % 5 == 0 or committed_prefix == len(batches):
+                elapsed = time.monotonic() - start_time
+                rate = committed_prefix / elapsed if elapsed > 0 else 0
+                remaining = len(batches) - committed_prefix
+                eta = remaining / rate if rate > 0 else 0
+                accepted_now = len(accepted)
+                print(
+                    f"[progress] batches {committed_prefix}/{len(batches)} "
+                    f"committed; units accepted {accepted_now}/{total_units}; "
+                    f"failed {len(failed)}; elapsed {elapsed/60:.1f}m; "
+                    f"ETA {eta/60:.1f}m",
+                    flush=True,
+                )
         return accepted, failed
 
     def _translate_with_recovery(self, batch: Batch, profile_core: str) -> BatchOutcome:
-        """Retry, accept valid subsets, split persistent invalid subsets."""
+        """Retry, accept valid subsets immediately, split persistent failures.
+
+        Every successful request accepts its valid subset right away; only
+        the still-missing or invalid units are retried (as a child batch
+        with corrective feedback), so one defective unit never blocks or
+        re-sends the units that already passed.
+        """
         accepted_units: dict[str, TranslationUnit] = {}
         failed_units: list[TranslationUnit] = []
         open_batches: list[Batch] = [batch]
@@ -322,6 +357,17 @@ class Pipeline:
                         unit.status = UnitStatus.ACCEPTED
                         accepted_units[unit_id] = unit
                     self.stats.batches += 1
+                    remaining = [u for u in current.units if u.unit_id not in accepted_units]
+                    if remaining and budget > 0:
+                        self.stats.retries += 1
+                        self._count_retry("partial_recovery")
+                        child = Batch(
+                            batch_id=f"{current.batch_id}r",
+                            units=remaining,
+                            reason="partial",
+                            failure=_problems_text(current),
+                        )
+                        open_batches.insert(0, child)
                     break
                 except ResponseError as exc:
                     current.failure = str(exc)
@@ -358,9 +404,14 @@ class Pipeline:
     def _translate_batch(
         self, batch: Batch, profile_core: str, attempt: int
     ) -> dict[str, str]:
-        """One provider round trip for a batch; strict validation."""
+        """One provider round trip for a batch; tolerant per-unit validation.
+
+        Returns the accepted subset: items that fail token, punctuation or
+        restore validation are recorded on the batch failure state with the
+        exact reason and retried by the recovery loop, never blocking the
+        units that passed.
+        """
         requests = []
-        raw_by_id: dict[str, str] = {}
         review_current: dict[str, str] = {}
         for unit in batch.units:
             protected = protect(unit.source)
@@ -376,7 +427,6 @@ class Pipeline:
                 review_current[unit.unit_id] = current
                 unit_ctx["current"] = current
             requests.append({"id": unit.unit_id, "source": unit.protected_source, "context": unit_ctx})
-            raw_by_id[unit.unit_id] = unit.source
         if self.settings.mode == "review":
             prompt = build_review_prompt(
                 profile_core,
@@ -402,11 +452,12 @@ class Pipeline:
             attempt,
         )
         if self.settings.mode == "review":
-            translations = _parse_review_response(response.content, batch, review_current)
+            valid = _parse_review_response(response.content, batch, review_current)
+            problems: dict[str, str] = {}
         else:
-            translations = _parse_translation_response(response.content, batch)
+            valid, problems = _parse_translation_response(response.content, batch)
         validated: dict[str, str] = {}
-        for unit_id, raw_target in translations.items():
+        for unit_id, raw_target in valid.items():
             unit = next(u for u in batch.units if u.unit_id == unit_id)
             by_token = {t.token: t for t in unit.tokens}
             try:
@@ -416,8 +467,12 @@ class Pipeline:
                     raise ProtectionError("; ".join(violations))
                 final = restore(raw_target, by_token)
             except ProtectionError as exc:
-                raise ResponseError(f"unit {unit_id}: {exc}") from exc
+                problems[unit_id] = str(exc)
+                continue
             validated[unit_id] = final
+        if problems:
+            reasons = sorted(set(problems.values()))
+            batch.failure = "rejected units: " + "; ".join(reasons[:3])
         return validated
 
     # ---------------- publication ----------------
