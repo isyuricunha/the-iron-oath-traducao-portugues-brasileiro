@@ -1,0 +1,15 @@
+# Environment
+.env
+
+# Checkpoints, generations and staging
+.checkpoints*/
+.staging-*
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Local tooling (never committed)
+/tools/

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "title": "The Iron Oath",
+  "revision": "io-1.0.0",
+  "identity": {
+    "titles": ["The Iron Oath"],
+    "developer": "Curious Panda Games",
+    "publisher": null,
+    "release": "2023-11-02 (1.0)",
+    "genre": ["dark fantasy", "strategy", "tactical turn-based combat", "mercenary company management", "roguelike-lite world simulation"],
+    "premise": "The player leads a mercenary company in a crumbling medieval-fantasy realm, completing contracts, managing and recruiting mercenaries, and surviving a world where evil steadily grows.",
+    "original_language": "English",
+    "ev": ["e1", "e2", "e3"]
+  },
+  "setting": {
+    "world_summary": "Grim medieval-fantasy world divided among rival houses and factions; overland map with cities, wilderness, ruins and dungeons; an ongoing conflict against monstrous factions (black skell, wealdere, nullbeasts, voidspawn).",
+    "tech_and_magic": "Medieval technology; magic exists as combat abilities, enchantments and scrolls; no firearms.",
+    "locations": [
+      {"name": "Wealden", "type": "city", "policy": "preserve"},
+      {"name": "Haestenhold", "type": "city", "policy": "preserve"},
+      {"name": "Jorhurst", "type": "city", "policy": "preserve"},
+      {"name": "Raynelheim", "type": "city", "policy": "preserve"},
+      {"name": "Korunhal", "type": "city", "policy": "preserve"},
+      {"name": "Shepfeld", "type": "city", "policy": "preserve"},
+      {"name": "Graveswood", "type": "city", "policy": "preserve"},
+      {"name": "Athirton", "type": "city", "policy": "preserve"},
+      {"name": "Turrenhold", "type": "city", "policy": "preserve"},
+      {"name": "Solace", "type": "city", "policy": "translate_maybe"},
+      {"name": "Andilon", "type": "city", "policy": "preserve"},
+      {"name": "Terham", "type": "city", "policy": "preserve"},
+      {"name": "Talayse", "type": "city", "policy": "preserve"},
+      {"name": "Kashaat", "type": "city", "policy": "preserve"},
+      {"name": "Eyros", "type": "city", "policy": "preserve"},
+      {"name": "Tyr", "type": "city", "policy": "preserve"}
+    ],
+    "religions": [
+      {"name": "Vismyr the Allmaker", "type": "religion", "policy": "preserve"},
+      {"name": "Divines", "type": "religion", "policy": "translate"},
+      {"name": "Ascended", "type": "religion", "policy": "translate"},
+      {"name": "Elder Gods", "type": "religion", "policy": "translate_maybe"}
+    ],
+    "ev": ["e4", "e5"]
+  },
+  "tone": {
+    "range": "Dark, grim and serious, with dry humor in mercenary banter and light moments in camp dialogue; high-stakes survival tone in events and contracts.",
+    "localization_consequences": [
+      "Keep the medieval register: avoid modern slang and corporate language.",
+      "Combat and trait text must stay concise (UI), dialogue must sound spoken.",
+      "Terms like Attack, Defense, Speed, Accuracy are core stat names: keep the PT-BR gamer register (Ataque, Defesa, Velocidade, Precisão).",
+      "Names of abilities keep original English names where they are identity-bearing (e.g. class names preserved, spell names localized when natural)."
+    ],
+    "ev": ["e1", "e3"]
+  },
+  "text_domains": [
+    "UI labels and menus",
+    "Combat ability names and tooltips (TMP rich text with <color> and <sprite> tags)",
+    "Item names, types and descriptions",
+    "Trait, perk and injury names and descriptions",
+    "World events and random chatter",
+    "Dialogue (dynamic dialogue JSON nodes, quest dialogue)",
+    "Codex entries",
+    "City/house/guild reports",
+    "Character backstories"
+  ],
+  "style_rules": [
+    "Preserve <color=...> and <sprite name=...> tags exactly (they are protected tokens).",
+    "Trait and ability names use Title Case in the source: preserve a capitalized PT-BR form.",
+    "Placeholder {0} tokens move naturally inside the sentence.",
+    "British spellings in source stay British in meaning but are written in PT-BR orthography.",
+    "NPC names, house names and place names are preserved unless a natural PT-BR form exists and the glossary locks it.",
+    "Numbers, percentages, dice and duration values are always preserved exactly."
+  ],
+  "entities": [
+    {"name": "Black Skull", "type": "faction", "policy": "preserve", "note": "Enemy faction (Black Skull Fort, Black Skull Captain)."},
+    {"name": "Brightmanes", "type": "faction_boss", "policy": "preserve"},
+    {"name": "Wealdere", "type": "faction_boss", "policy": "preserve"},
+    {"name": "Hoarwulfs", "type": "faction_boss", "policy": "preserve"},
+    {"name": "Charions", "type": "faction_boss", "policy": "preserve"},
+    {"name": "Nullbeasts", "type": "faction_boss", "policy": "preserve"},
+    {"name": "Voidspawn", "type": "faction", "policy": "preserve"},
+    {"name": "Risen Scourge", "type": "faction", "policy": "translate_maybe"},
+    {"name": "Guardian", "type": "class", "policy": "translate", "target": "Guardião"},
+    {"name": "Valkyrie", "type": "class", "policy": "preserve", "note": "Common PT-BR form Valquíria exists but class identity suggests preserve; locked by glossary."},
+    {"name": "Stormcaller", "type": "class", "policy": "translate", "target": "Invocador de Tempestades"},
+    {"name": "Icebinder", "type": "class", "policy": "translate", "target": "Vinculador de Gelo"},
+    {"name": "Bloodhound", "type": "class", "policy": "translate", "target": "Sabujo de Sangue"},
+    {"name": "Pyrolancer", "type": "class", "policy": "translate", "target": "Pirolanceiro"},
+    {"name": "Woodsman", "type": "class", "policy": "translate", "target": "Lenhador"},
+    {"name": "Warhound", "type": "class", "policy": "translate", "target": "Cão de Guerra"},
+    {"name": "Pugilist", "type": "class", "policy": "translate", "target": "Pugilista"},
+    {"name": "Huntress", "type": "class", "policy": "translate", "target": "Caçadora"},
+    {"name": "Balladeer", "type": "class", "policy": "translate", "target": "Baladeiro"},
+    {"name": "Caelum", "type": "region_or_kingdom", "policy": "preserve"},
+    {"name": "Vanguard Order", "type": "faction", "policy": "translate", "target": "Ordem de Vanguarda", "note": "Lore faction mentioned in codex lore text."},
+    {"name": "Vismyr", "type": "deity", "policy": "preserve"},
+    {"name": "Elder Gods", "type": "religion", "policy": "translate_maybe", "note": "Natural PT-BR 'Deuses Antigos' if the context is narrative."}
+  ],
+  "gaps": [
+    "Full authoritative faction roster and world map lore not audited from primary sources yet.",
+    "Voice direction per named NPC not documented (backstories sampled; per-character voices not catalogued).",
+    "Official PT-BR release does not exist: no official terminology to inherit."
+  ],
+  "evidence": {
+    "e1": {"source": "https://store.steampowered.com/app/699330/The_Iron_Oath/", "title": "Steam store page: The Iron Oath", "date": "2026-10-06", "authority": "official store page"},
+    "e2": {"source": "https://balorgames.com/games/iron-oath", "title": "Balor Games: The Iron Oath", "date": "2026-10-06", "authority": "aggregator"},
+    "e3": {"source": "https://steamcommunity.com/app/699330/discussions/0/3118172724635423548/", "title": "Official FAQ thread on the Steam community", "date": "2026-10-06", "authority": "developer announcement"},
+    "e4": {"source": "The Iron Oath_Data/StreamingAssets/Data/WorldSim/Cities/cities.json", "title": "City roster from the installed corpus (16 cities)", "date": "2026-10-06", "authority": "repository primary evidence"},
+    "e5": {"source": "The Iron Oath_Data/StreamingAssets/Data/WorldSim/religions.json", "title": "Religion roster from the installed corpus", "date": "2026-10-06", "authority": "repository primary evidence"}
+  }
+}
