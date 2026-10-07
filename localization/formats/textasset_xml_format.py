@@ -115,7 +115,9 @@ class TextAssetXmlFormat:
         env = UnityPy.load(str(input_root / ASSET_PATH))
         for obj in env.objects:
             if obj.type.name == "TextAsset" and cls._name_of(obj) == ASSET_NAME:
-                obj.set_typetree({"m_Name": ASSET_NAME, "m_Script": xml})
+                data = obj.read()
+                data.m_Script = xml
+                data.save()
         env.save(destination=str(staging_path))
 
     @classmethod
