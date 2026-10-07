@@ -97,6 +97,31 @@ class CheckpointTests(unittest.TestCase):
         info.profile_fingerprint = "fp2"
         assert self.checkpoint.latest_compatible(info) is None
 
+    def test_accepted_units_merge_across_generations(self):
+        from localization.models import UnitStatus
+
+        info_older = self._info("g1")
+        info_older.created_at = "2026-10-07T01:00:00"
+        self.checkpoint.new_generation(info_older)
+        info_newer = self._info("g2")
+        info_newer.created_at = "2026-10-07T02:00:00"
+        self.checkpoint.new_generation(info_newer)
+
+        def accept(gen: str, unit_id: int, target: str):
+            unit = make_unit(unit_id)
+            unit.status = UnitStatus.ACCEPTED
+            unit.accepted_target = target
+            self.checkpoint.save_units([unit], gen)
+
+        accept("g1", 0, "Velho")
+        accept("g1", 1, "So no g1")
+        accept("g2", 0, "Novo")
+
+        ids = self.checkpoint.compatible_generation_ids(self._info("gX"))
+        assert ids == ["g2", "g1"]
+        merged = self.checkpoint.accepted_units_merged(ids)
+        assert merged == {"u0": "Novo", "u1": "So no g1"}
+
 
 class ConfigTests(unittest.TestCase):
     def test_dotenv_forms(self):

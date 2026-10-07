@@ -116,6 +116,43 @@ class Checkpoint:
             created_at=row["created_at"],
         )
 
+    def compatible_generation_ids(self, info: GenerationInfo) -> list[str]:
+        """All generation ids whose compatibility fields match, newest first.
+
+        Generation status is deliberately not a filter: an abandoned
+        generation still holds valid committed units that a new generation
+        can seed from.
+        """
+        rows = self.conn.execute(
+            "SELECT id FROM generations WHERE mode=? AND source_manifest=? "
+            "AND target_lang=? AND profile_fingerprint=? AND policy_revision=? "
+            "AND protection_revision=? AND model_fingerprint=? "
+            "ORDER BY created_at DESC, id DESC",
+            (
+                info.mode,
+                info.source_manifest,
+                info.target_lang,
+                info.profile_fingerprint,
+                info.policy_revision,
+                info.protection_revision,
+                info.model_fingerprint,
+            ),
+        ).fetchall()
+        return [r["id"] for r in rows]
+
+    def accepted_units_merged(self, generation_ids: list[str]) -> dict[str, str]:
+        """Accepted targets across generations, newest generation wins per unit."""
+        merged: dict[str, str] = {}
+        for generation_id in reversed(generation_ids):
+            rows = self.conn.execute(
+                "SELECT unit_id, accepted_target FROM units "
+                "WHERE generation_id=? AND status='accepted'",
+                (generation_id,),
+            ).fetchall()
+            for r in rows:
+                merged[r["unit_id"]] = r["accepted_target"]
+        return merged
+
     def accepted_units(self, generation_id: str) -> dict[str, str]:
         rows = self.conn.execute(
             "SELECT unit_id, accepted_target FROM units "

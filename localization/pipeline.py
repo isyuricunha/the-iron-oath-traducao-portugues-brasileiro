@@ -250,9 +250,10 @@ class Pipeline:
         )
         reused: dict[str, str] = {}
         if resume:
-            previous = self.checkpoint.latest_compatible(info)
-            if previous is not None:
-                reused = self.checkpoint.accepted_units(previous.generation_id)
+            compatible = self.checkpoint.compatible_generation_ids(info)
+            if compatible:
+                info.base_generation = compatible[0]
+                reused = self.checkpoint.accepted_units_merged(compatible)
         self.checkpoint.new_generation(info)
         return self.generation_id, reused
 
