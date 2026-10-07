@@ -44,6 +44,30 @@ class ResponseError(ValueError):
     pass
 
 
+def _guard_rebuild_validity(input_root: Path, relpath: str, rebuilt: bytes) -> None:
+    """Refuse to stage a rebuilt HJSON file that lost strict-parse validity.
+
+    The toolkit's own lenient parser accepts the game's HJSON dialect, so
+    validity is compared with the strict reference parser and only when
+    the original file itself parses cleanly. A missing hjson module
+    disables the guard instead of blocking publication.
+    """
+    try:
+        import hjson
+    except ImportError:
+        return
+    original = (input_root / relpath).read_bytes().decode("utf-8-sig")
+    try:
+        hjson.loads(original)
+    except Exception:  # noqa: BLE001 - original dialect quirks are not our failure
+        return
+    rebuilt_text = rebuilt.decode("utf-8-sig")
+    try:
+        hjson.loads(rebuilt_text)
+    except Exception as exc:  # noqa: BLE001 - any parse failure must block staging
+        raise ValueError(f"{relpath}: rebuild produced invalid HJSON: {exc}") from None
+
+
 def _parse_review_response(raw: str, batch: Batch, currents: dict[str, str]) -> dict[str, str]:
     """Parse and envelope-validate a review response strictly."""
     try:
@@ -489,6 +513,7 @@ class Pipeline:
             if handler_name == "hjson":
                 for relpath in paths:
                     rebuilt = handler.rebuild(input_root, relpath, accepted)
+                    _guard_rebuild_validity(input_root, relpath, rebuilt)
                     target = staging / relpath
                     target.parent.mkdir(parents=True, exist_ok=True)
                     target.write_bytes(rebuilt)

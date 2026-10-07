@@ -144,11 +144,23 @@ class HjsonFormat:
         """
         if path and path[-1][0] == "idx" and expected is not None:
             parent = HjsonFormat.locate(text, obj_start, path[:-1])
-            if parent is None:
-                return None
-            literal = HjsonFormat._literal_search(text, parent, expected)
-            if literal is not None:
-                return literal
+            if parent is not None:
+                # Positional navigation first: two elements may hold the
+                # same value and the literal search would map both to the
+                # first occurrence, corrupting the rebuild.
+                child = HjsonFormat._nth_element(text, parent[0], path[-1][1])
+                if child is not None:
+                    extent = HjsonFormat._value_extent(text, child)
+                    if extent is not None and HjsonFormat._span_matches(
+                        text, extent, expected
+                    ):
+                        return extent
+                # Comma-less adjacent-string elements resolve to one value
+                # whose positional extent does not match; fall back to the
+                # literal search inside the parent container.
+                literal = HjsonFormat._literal_search(text, parent, expected)
+                if literal is not None:
+                    return literal
         window_start = obj_start
         for idx, segment in enumerate(path):
             if segment[0] == "key":

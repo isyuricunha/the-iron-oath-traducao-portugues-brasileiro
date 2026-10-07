@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import hjson
 import tempfile
 import unittest
 from pathlib import Path
 
 from localization.formats.hjson_format import HjsonFormat
 from localization.formats.textasset_xml_format import TextAssetXmlFormat
+from localization.pipeline import _guard_rebuild_validity
 
 HJSON_SAMPLE = (
     "{\r\n"
@@ -63,6 +65,33 @@ class HjsonFormatTests(unittest.TestCase):
         rel = self.sample.relative_to(self.root).as_posix()
         rebuilt = HjsonFormat.rebuild(self.root, rel, {})
         assert rebuilt == self.sample.read_bytes()
+
+    def test_duplicate_array_values_get_distinct_spans(self):
+        base = self.root / "The Iron Oath_Data/StreamingAssets/Data/Dungeons/CombatGroupings"
+        base.mkdir(parents=True)
+        sample = base / "tutorial.json"
+        sample.write_bytes(
+            b'{\r\n\tName: "Tutorial",\r\n\tGroup: ["Flayer", "NullbeastPrime", "Flayer"],\r\n}\r\n'
+        )
+        rel = sample.relative_to(self.root).as_posix()
+        units, spans = HjsonFormat.extract(self.root, rel)
+        id0 = next(u.unit_id for u in units if u.source == "Flayer" and u.unit_id.endswith("Group[0]"))
+        id2 = next(u.unit_id for u in units if u.source == "Flayer" and u.unit_id.endswith("Group[2]"))
+        assert spans[id0] != spans[id2]
+        rebuilt = HjsonFormat.rebuild(
+            self.root, rel, {id0: "Esfolador", id2: "Esfolador"}
+        ).decode("utf-8")
+        assert '"Esfolador"' in rebuilt
+        assert rebuilt.count('"Esfolador"') == 2
+        assert "Flayer" not in rebuilt
+        hjson.loads(rebuilt)
+
+    def test_guard_blocks_invalid_rebuild(self):
+        rel = self.sample.relative_to(self.root).as_posix()
+        with self.assertRaises(ValueError):
+            _guard_rebuild_validity(self.root, rel, b"{ broken")
+        # A byte-identical rebuild passes the guard silently.
+        _guard_rebuild_validity(self.root, rel, self.sample.read_bytes())
 
     def test_rebuild_applies_only_translation_spans(self):
         rel = self.sample.relative_to(self.root).as_posix()
