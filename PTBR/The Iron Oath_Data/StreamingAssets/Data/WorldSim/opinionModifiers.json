@@ -7,7 +7,7 @@
 	TraitsToAdjust: ["Militant:5", "Pacifist:-5"],
 }
 {	
-	Name: "Reino em Paz",
+	Name: "Kingdom At Peace",
     Description: "",
     Value: "2",
     YearlyChange: "2",
@@ -23,7 +23,7 @@
 	TraitsToAdjust: [],
 }
 {	
-	Name: "Cidade em Paz",
+	Name: "City At Peace",
     Description: "",
     Value: "2",
     YearlyChange: "2",
@@ -31,107 +31,107 @@
 	TraitsToAdjust: [],
 }
 {	
-	Name: "Opiniao Diplomatica",
+	Name: "Diplomacy Opinion",
     Description: "",
 	Duration: "1",
     Value: "5",
 }
 {	
-	Name: "Opiniao de Governanca",
+	Name: "Governance Opinion",
     Description: "",
 	Duration: "1",
     Value: "5",
 }
 {	
-	Name: "Reservas de Comida Altas",
+	Name: "High Food Stores",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Reservas de Comida Medias",
+	Name: "Medium Food Stores",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Reservas de Comida Baixas",
+	Name: "Low Food Stores",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Fome, Sem Comida",
+	Name: "Starving No Food",
     Description: "",
     Value: "-40",
 }
 {	
-	Name: "Reservas de Madeira Altas",
+	Name: "High Wood Stores",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Reservas Medias de Madeira",
+	Name: "Medium Wood Stores",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Reservas Baixas de Madeira",
+	Name: "Low Wood Stores",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Reservas Altas de Ferro",
+	Name: "High Iron Stores",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Reservas Medias de Ferro",
+	Name: "Medium Iron Stores",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Reservas Baixas de Ferro",
+	Name: "Low Iron Stores",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Reservas Altas de Pedra",
+	Name: "High Stone Stores",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Reservas Medias de Pedra",
+	Name: "Medium Stone Stores",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Reservas Baixas de Pedra",
+	Name: "Low Stone Stores",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Economia Estavel",
+	Name: "Stable Economy",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Mesma Fe",
+	Name: "Same Faith",
     Description: "",
     Value: "15",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Fe Diferente",
+	Name: "Different Faith",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Mesma Cultura",
+	Name: "Same Culture",
     Description: "",
     Value: "30",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Cultura Diferente",
+	Name: "Different Culture",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
@@ -143,237 +143,237 @@
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Sequestrou Meu Parente",
+	Name: "Kidnapped My Kin",
     Description: "",
     Value: "-40",
 	Duration: "15",
 	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
 }
 {	
-	Name: "Tentou Sequestrar Meu Parente",
+	Name: "Attempted To Kidnap My Kin",
     Description: "",
     Value: "-30",
 	Duration: "10",
 	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
 }
 {	
-	Name: "Sequestrador Conhecido",
+	Name: "Known Kidnapper",
     Description: "",
     Value: "-20",
 	Duration: "10",
 }
 {	
-	Name: "Tentativa de Sequestro",
+	Name: "Attempted Kidnapper",
     Description: "",
     Value: "-10",
 	Duration: "5",
 }
 {	
-	Name: "Me Roubou",
+	Name: "Stole From Me",
     Description: "",
     Value: "-30",
 	Duration: "10",
 	TraitsToAdjust: ["Merciful:5","Harsh:-5"],
 }
 {
-	Name: "Tentou Me Roubar",
+	Name: "Attempted To Steal From Me",
     Description: "",
     Value: "-20",
 	Duration: "5",
 	TraitsToAdjust: ["Merciful:5","Harsh:-5"],
 }
 {
-	Name: "Ladrao Conhecido",
+	Name: "Known Thief",
     Description: "",
     Value: "-10",
 	Duration: "10",
 }
 {
-	Name: "Ladrao Frustrado",
+	Name: "Attempted Thief",
     Description: "",
     Value: "-10",
 	Duration: "5",
 }
 {	
-	Name: "Assassinou Meus Parentes",
+	Name: "Murdered My Kin",
     Description: "",
     Value: "-60",
 	Duration: "25",
 	TraitsToAdjust: ["Merciful:10","Harsh:-10"],
 }
 {	
-	Name: "Tentou Me Assassinar",
+	Name: "Attempted To Murder Me",
     Description: "",
     Value: "-50",
 	Duration: "20",
 	TraitsToAdjust: ["Merciful:10","Harsh:-10"],
 }
 {
-	Name: "Assassino Conhecido",
+	Name: "Known Murderer",
     Description: "",
     Value: "-30",
 	Duration: "15",
 }
 {
-	Name: "Assassino Frustrado",
+	Name: "Attempted Murderer",
     Description: "",
     Value: "15",
 	Duration: "10",
 }
 {	
-	Name: "Tributos do Vassalo: Baixos",
+	Name: "Vassal Taxes: Low",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Greedy:5"],
 }
 {	
-	Name: "Tributos do Vassalo: Medios",
+	Name: "Vassal Taxes: Medium",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Greedy:-5"],
 }
 {	
-	Name: "Tributos do Vassalo: Altos",
+	Name: "Vassal Taxes: High",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Greedy:-5"],
 }
 {	
-	Name: "Levas do Vassalo: Baixas",
+	Name: "Vassal Levies: Low",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Pacifist:5"],
 }
 {	
-	Name: "Levas do Vassalo: Medias",
+	Name: "Vassal Levies: Medium",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
 }
 {	
-	Name: "Levas do Vassalo: Altas",
+	Name: "Vassal Levies: High",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
 }
 {	
-	Name: "A Religiao Oficial E a Minha",
+	Name: "Official Religion Is Mine",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "A Religiao Oficial Nao E a Minha",
+	Name: "Official Religion Is Not Mine",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Minha Religiao E Imposta",
+	Name: "My Religion Is Enforced",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Minha Religiao Nao E Imposta",
+	Name: "My Religion Is Not Enforced",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Outra Religiao E Imposta",
+	Name: "Another Religion Is Enforced",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Embargo Arruinando Meu Comercio",
+	Name: "Embargo Ruining My Trade",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Lei de Sucessao: Eletiva",
+	Name: "Succession Law: Elective",
     Description: "",
     Value: "20",
 	TraitsToAdjust: ["Ambitious:5"],
 }
 {	
-	Name: "Lei de Sucessao: Nomeada",
+	Name: "Succession Law: Appointed",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
 }
 {	
-	Name: "Lei de Sucessao: Dinastica",
+	Name: "Succession Law: Dynastic",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
 }
 {	
-	Name: "Concedeu Posse a Mim",
+	Name: "Granted Holding To Me",
     Description: "",
     Value: "40",
 	Duration: "25",
 }
 {	
-	Name: "Colocou-me no Trono",
+	Name: "Put Me On The Throne",
     Description: "",
     Value: "40",
 	Duration: "25",
 }
 {	
-	Name: "Impostos Civis: Baixos",
+	Name: "Civilian Taxes: Low",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Impostos Civis: Medios",
+	Name: "Civilian Taxes: Medium",
     Description: "",
     Value: "0",
 }
 {	
-	Name: "Impostos Civis: Altos",
+	Name: "Civilian Taxes: High",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Levas Pessoais: Baixas",
+	Name: "Personal Levies: Low",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Levas Pessoais: Medias",
+	Name: "Personal Levies: Medium",
     Description: "",
     Value: "0",
 }
 {	
-	Name: "Levas Pessoais: Altas",
+	Name: "Personal Levies: High",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Embargo Contra Mim",
+	Name: "Embargo Against Me",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Novo Governo (Melhor)",
+	Name: "New Government (Better)",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Novo Governo (Pior)",
+	Name: "New Government (Worse)",
     Description: "",
     Value: "-10",
 }
 {	
-	Name: "Governante Anterior Foi Martir",
+	Name: "Former Ruler Was Martyr",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Governante Anterior Era Reverenciado",
+	Name: "Former Ruler Was Revered",
     Description: "",
     Value: "-20",
 }
@@ -396,48 +396,48 @@
 	TraitsToAdjust: ["Pacifist:-5", "Militant:5"],
 }
 {	
-	Name: "Resolucao Pacifica",
+	Name: "Peaceful Resolution",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Pacifist:5"],
 }
 {	
-	Name: "Tomou Minha Cidade",
+	Name: "Took My City",
     Description: "",
     Value: "-40",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Veio em Meu Auxilio",
+	Name: "Came To My Aid",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Rompou Nossa Alianca",
+	Name: "Broke Our Alliance",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Suserano da Alianca",
+	Name: "Liege Over Alliance",
     Description: "",
     Value: "-15",
 	TraitsToAdjust: ["Honorable:5", "Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Meu Aliado",
+	Name: "My Ally",
     Description: "",
     Value: "40",
 	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
 }
 {	
-	Name: "Ex-Aliado",
+	Name: "Former Ally",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
 }
 {	
-	Name: "Lacos de Casamento",
+	Name: "Marriage Ties",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
@@ -468,7 +468,7 @@
     Value: "-20",
 }
 {	
-	Name: "Saqueou Minhas Terras",
+	Name: "Raided My Lands",
     Description: "",
     Value: "-10",
 	ValueMin: "-50",
@@ -481,37 +481,37 @@
     Value: "-15",
 }
 {	
-	Name: "Ameaca ao Meu Reino",
+	Name: "Threat To My Realm",
     Description: "",
     Value: "-15",
 	TraitsToAdjust: ["SelfPreserving:-5", "Ambitious:-5", "Content:5"],
 }
 {	
-	Name: "Baniu Meus Parentes",
+	Name: "Banished My Kin",
     Description: "",
     Value: "-15",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5", "Proud:-5"],
 }
 {	
-	Name: "Aprisionou Meus Parentes",
+	Name: "Imprisoned My Kin",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5", "Proud:-5"],
 }
 {	
-	Name: "Executou Meus Parentes",
+	Name: "Executed My Kin",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Merciful:10", "Harsh:-10", "Proud:-5"],
 }
 {	
-	Name: "Cassou Meu Feudo",
+	Name: "Revoked My Holding",
     Description: "",
     Value: "-40",
 	TraitsToAdjust: ["Merciful:10", "Harsh:-10", "Proud:-5"],
 }
 {
-	Name: "Faminto por Poder",
+	Name: "Power Hungry",
 	Description: "",
 	Value: "-15",
 	TraitsToAdjust: [],

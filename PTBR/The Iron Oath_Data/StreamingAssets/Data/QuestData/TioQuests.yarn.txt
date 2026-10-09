@@ -30468,46 +30468,46 @@ currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Recompensas de Masmorra
+label: Dungeon Bounties
 isEnabled: true
 groupType: collecton
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Momentos da Companhia
+label: Company Moments
 isEnabled: true
 groupType: collecton
 currentStatus: inReview
 author: 
 comments: 
 ===
-label: Eventos Dinamicos de Exploracao
+label: Dynamic Exploration Events
 isEnabled: true
 groupType: collecton
-statusAtual: em revisao
-autor: 
-comentarios: 
+currentStatus: inReview
+author: 
+comments: 
 ===
-rotulo: Eventos de Masmorras Desconhecidas
-habilitado: verdadeiro
-tipoDeGrupo: colecao
-statusAtual: em andamento
-autor: 
-comentarios: 
+label: Unknown Dungeon Events
+isEnabled: true
+groupType: collecton
+currentStatus: inProgress
+author: 
+comments: 
 ===
-rotulo: Eventos de Santuario
-habilitado: verdadeiro
-tipoDeGrupo: colecao
-statusAtual: em andamento
-autor: 
-comentarios: 
+label: Shrine Events
+isEnabled: true
+groupType: collecton
+currentStatus: inProgress
+author: 
+comments: 
 ===
-rotulo: Chaves, Portas e Caminhos Bloqueados
-habilitado: verdadeiro
-tipoDeGrupo: colecao
-statusAtual: em andamento
-autor: 
+label: KeysDoorsBlockedPaths
+isEnabled: true
+groupType: collecton
+currentStatus: inProgress
+author: 
 comments: 
 ===
 label: Town Events
@@ -30545,61 +30545,61 @@ currentStatus: inProgress
 author: 
 comments: 
 ===
-label: A Qualquer Custo
+label: At Any Cost
 isEnabled: false
 groupType: noble
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Trabalho da Companhia
+label: Company Work
 isEnabled: true
 groupType: noble
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: O Dilema do Historiador
+label: Historians Plight
 isEnabled: false
 groupType: noble
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Ladrao na Estrada
+label: Thief On The Road
 isEnabled: false
 groupType: noble
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Limpando um Covil de Criaturas
+label: Clearing A Creature Den
 isEnabled: true
 groupType: noble
 currentStatus: inProgress
 author: 
-comentarios: 
+comments: 
 ===
-Missao: Pertences Perdidos
-habilitado: true
-tipoDeGrupo: nobre
-statusAtual: emAndamento
-autor: 
-comentarios: 
+label: Lost Possessions
+isEnabled: true
+groupType: noble
+currentStatus: inProgress
+author: 
+comments: 
 ===
-Missao: Atividade Pestilenta
-habilitado: true
-tipoDeGrupo: civil
-statusAtual: emAndamento
-autor: 
-comentarios: 
+label: Blighted Activity
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
 ===
-Missao: Crise da Praga
-habilitado: true
-tipoDeGrupo: civil
-statusAtual: emAndamento
-autor: 
-comentarios: 
+label: Scourge Crisis
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
 ===
 label: War Quests
 isEnabled: true
@@ -30608,154 +30608,154 @@ currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Assalto a Torre de Vigia
+label: Watchtower Assault
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes de Evento de Tensao entre Casas
+label: House Tension Event Quests
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes do Flagelo
+label: Scourge Quests
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Atividade dos Voidspawn
+label: Voidspawn Activity
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Vida Selvagem Aproximando-se
+label: EncroachingWildlife
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Atividade de Bandidos
-isEnabled: true
-groupType: civilian
-currentStatus: inProgress
-author: 
-comentarios: 
-===
-rotulo: Atividade Morta-Viva
-habilitado: verdadeiro
-tipoDeGrupo: civil
-statusAtual: emAndamento
-autor: 
-comentarios: 
-===
-rotulo: Fome
-habilitado: verdadeiro
-tipoDeGrupo: civil
-statusAtual: emAndamento
-autor: 
-comentarios: 
-===
-rotulo: Doenca
-habilitado: verdadeiro
-tipoDeGrupo: civil
-statusAtual: emAndamento
-autor: 
-comentarios: 
-===
-rotulo: Missoes Dinamicas
+label: Bandit Activity
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes de Recompensa
+label: UndeadActivity
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Foras da Lei e os Mortos-Vivos
+label: Famine
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Investigacoes
+label: Sickness
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Protegendo um Carregamento
+label: DynamicQuests
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: O Pedido de um Ferreiro
+label: Bounty Quests
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Desertores da Vanguarda
+label: Outlaws And The Undead
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Disputa de Recursos
+label: Investigations
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes da Vanguarda
+label: Safeguarding A Shipment
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes Gerais
+label: A Blacksmith's Request
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missao Tutorial
+label: Vanguard Deserters
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
+===
+label: Resource Dispute
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
+===
+label: Vanguard Quests
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
+===
+label: GeneralQuests
+isEnabled: true
+groupType: civilian
+currentStatus: inProgress
+author: 
+comments: 
+===
+label: TutorialQuest
 isEnabled: false
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Missoes do Terremoto
+label: Earthquake Quests
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
 author: 
 comments: 
 ===
-label: Toca dos Ladroes
+label: Thieves Den
 isEnabled: true
 groupType: civilian
 currentStatus: inProgress
@@ -30788,30 +30788,30 @@ isEnabled: true
 groupType: campaign
 currentStatus: inProgress
 author: 
-comentarios: 
+comments: 
 ===
-rotulo: CampaignBetrayedAndBroken
-ativado: true
-tipoDeGrupo: campaign
-statusAtual: inProgress
-autor: 
-comentarios: 
+label: CampaignBetrayedAndBroken
+isEnabled: true
+groupType: campaign
+currentStatus: inProgress
+author: 
+comments: 
 ===
-rotulo: CampaignVoidBreach
-ativado: true
-tipoDeGrupo: campaign
-statusAtual: inProgress
-autor: 
-comentarios: 
+label: CampaignVoidBreach
+isEnabled: true
+groupType: campaign
+currentStatus: inProgress
+author: 
+comments: 
 ===
-rotulo: CampaignBackOnYourFeet
-ativado: true
-tipoDeGrupo: campaign
-statusAtual: inProgress
-autor: 
-comentarios: 
+label: CampaignBackOnYourFeet
+isEnabled: true
+groupType: campaign
+currentStatus: inProgress
+author: 
+comments: 
 ===
-rotulo: CampaignPathOfVengence
+label: CampaignPathOfVengence
 isEnabled: true
 groupType: campaign
 currentStatus: inProgress

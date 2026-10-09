@@ -220,7 +220,7 @@
 	Category: "Abilities",
 }
 {	
-	Name: "Lider de Batalha",
+	Name: "Battlefield Leader",
 	Description: "Um guerreiro habilidoso que lidera pelo exemplo no campo de batalha, aumentando a eficacia de seus exercitos e conquistando o respeito e a admiracao dos cidadaos.",
 	AttributeEffect: ["Warfare:20"],
 	ConflictingTraits: [],
@@ -259,7 +259,7 @@
 	Category: "Abilities",
 }
 {	
-	Name: "Incapaz Taticamente",
+	Name: "Tactically Inept",
 	Description: "Nao tem experiencia nos detalhes mais sutis da estrategia militar, e suas ordens muitas vezes levam a derrotas esmagadoras",
 	AttributeEffect: ["Warfare:-30"],
 	ConflictingTraits: ["Strategist"],
