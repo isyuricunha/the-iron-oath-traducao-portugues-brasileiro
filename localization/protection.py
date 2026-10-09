@@ -35,6 +35,7 @@ _PATTERNS: list[tuple[TokenCategory, str | None, str]] = [
     (TokenCategory.GROUP, "color", r"</color>"),
     (TokenCategory.PAIRED, None, r"<(/?)[a-zA-Z][a-zA-Z0-9]*>"),
     (TokenCategory.INDEPENDENT, "placeholder", r"\{[^{}]+\}"),
+    (TokenCategory.INDEPENDENT, "square", r"\[[^\[\]]+\]"),
     (TokenCategory.INDEPENDENT, "printf", r"%[-+0-9# .]*[a-zA-Z%]"),
     (TokenCategory.INDEPENDENT, "number", r"\d+(?:[.,]\d+)*%?"),
     (TokenCategory.GROUP, "url", r"https?://\S+"),

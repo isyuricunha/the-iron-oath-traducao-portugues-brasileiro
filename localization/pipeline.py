@@ -517,6 +517,12 @@ class Pipeline:
                     target = staging / relpath
                     target.parent.mkdir(parents=True, exist_ok=True)
                     target.write_bytes(rebuilt)
+            elif handler_name == "yarn":
+                for relpath in paths:
+                    rebuilt = handler.rebuild(input_root, relpath, accepted)
+                    target = staging / relpath
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(rebuilt)
             elif handler_name == "textasset_xml":
                 relpath = paths[0]
                 xml = handler.rebuild(input_root, relpath, accepted)

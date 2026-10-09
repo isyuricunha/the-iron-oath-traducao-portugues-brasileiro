@@ -50,7 +50,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--input", default=".", help="input root (default: repository root)")
     parser.add_argument("--output", default="PTBR", help="output root (default: PTBR)")
     parser.add_argument(
-        "--format", default="auto", choices=["auto", "hjson", "textasset_xml"],
+        "--format", default="auto", choices=["auto", "hjson", "textasset_xml", "yarn"],
         help="format handler to use (default: auto)",
     )
     parser.add_argument("--source-lang", default="en")
@@ -261,7 +261,9 @@ def validate_only(settings: Settings, profile: dict) -> int:
     problems = 0
     for handler_name, paths in discovered.items():
         handler = formats.HANDLERS[handler_name]
-        if handler_name != "hjson":
+        if handler_name not in ("hjson", "yarn"):
+            # textasset round-trips differ by the utf-8 declaration by
+            # design; data files must round-trip byte-identically.
             continue
         for relpath in paths:
             rebuilt = handler.rebuild(settings.input_root, relpath, {})

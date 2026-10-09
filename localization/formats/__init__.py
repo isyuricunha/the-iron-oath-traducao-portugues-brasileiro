@@ -10,10 +10,12 @@ from __future__ import annotations
 
 from .hjson_format import HjsonFormat
 from .textasset_xml_format import TextAssetXmlFormat
+from .yarn_format import YarnFormat
 
 HANDLERS = {
     "hjson": HjsonFormat,
     "textasset_xml": TextAssetXmlFormat,
+    "yarn": YarnFormat,
 }
 
 
@@ -28,4 +30,8 @@ def discover(input_root, fmt: str | None) -> dict[str, list[str]]:
         paths = TextAssetXmlFormat.discover(input_root)
         if paths:
             result["textasset_xml"] = paths
+    if fmt in (None, "auto", "yarn"):
+        paths = YarnFormat.discover(input_root)
+        if paths:
+            result["yarn"] = paths
     return result

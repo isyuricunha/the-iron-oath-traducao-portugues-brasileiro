@@ -1,0 +1,198 @@
+"""Yarn Spinner dialogue and quest script handler (.yarn.txt).
+
+The game loads these files from StreamingAssets at runtime, so a rebuilt
+file with translated display lines is picked up verbatim. Node headers,
+comments, separators and commands are structural and never extracted;
+only narration, choice lines, spoken lines and whitelisted display
+variables inside <<set>> commands are translated. Everything else keeps
+its original bytes.
+"""
+
+from __future__ import annotations
+
+import re
+from pathlib import Path
+
+from ..models import TranslationUnit
+
+BASE_DIRECTORY = "The Iron Oath_Data/StreamingAssets/Data"
+YARN_SUFFIX = ".yarn.txt"
+
+_HEADER_RE = re.compile(r"^(?:title|tags|groupName|position):", re.IGNORECASE)
+_SET_RE = re.compile(r'^<<set\s+\$(\w+)\s+to\s+"([^"]*)"\s*>>\s*$')
+_CHOICE_RE = re.compile(r"^(->\s*|\+\s*)(.+)$")
+_SPEAKER_RE = re.compile(r"^([A-Z][A-Za-z0-9 ]{0,24}:\s*)(.+)$")
+
+# <<set>> variables whose values are displayed to the player. Every other
+# variable is a reference (node names, enums, locations, numbers) and is
+# never touched.
+_SET_VAR_WHITELIST = {
+    "EventTitle",
+    "EventDescription",
+    "QuestDescription",
+    "QuestIntro",
+    "ShortDescription",
+    "LongDescription",
+    "Objective",
+    "ObjectiveText",
+}
+
+
+def _translatable(value: str) -> bool:
+    """Yarn body lines are always display text, so the HJSON identifier
+    filters do not apply; only numbers, punctuation and single all-caps
+    tokens (enums) are refused."""
+    s = value.strip()
+    if len(s) < 2 or not re.search(r"[A-Za-z]", s) or re.fullmatch(r"[\W_]+", s):
+        return False
+    return not (s == s.upper() and len(s.split()) == 1)
+
+
+class YarnFormat:
+    BASE_DIRECTORY = BASE_DIRECTORY
+
+    @classmethod
+    def discover(cls, input_root: Path) -> list[str]:
+        base = input_root / BASE_DIRECTORY
+        if not base.is_dir():
+            return []
+        return [
+            p.relative_to(input_root).as_posix()
+            for p in sorted(base.rglob(f"*{YARN_SUFFIX}"))
+        ]
+
+    @staticmethod
+    def _name_of(obj) -> str:  # pragma: no cover - interface parity only
+        return ""
+
+    @classmethod
+    def extract(cls, input_root: Path, relpath: str) -> tuple[list[TranslationUnit], dict]:
+        """Return (units, spans); span values are (start, end, in_quotes)."""
+        units: list[TranslationUnit] = []
+        spans: dict[str, tuple[int, int, bool]] = {}
+        path = input_root / relpath
+        if not path.is_file():
+            return units, spans
+        decoded = path.read_bytes().decode("utf-8-sig")
+        node = ""
+        offset = 0
+        for index, raw_line in enumerate(decoded.splitlines(keepends=True)):
+            eol_len = len(raw_line) - len(raw_line.rstrip("\r\n"))
+            content = raw_line[: len(raw_line) - eol_len] if eol_len else raw_line
+            stripped = content.strip()
+            start = offset + (len(content) - len(content.lstrip()))
+            end = offset + len(content.rstrip())
+            if not stripped or stripped.startswith("//") or stripped in ("---", "==="):
+                pass
+            elif _HEADER_RE.match(stripped):
+                if stripped.lower().startswith("title:"):
+                    node = stripped[6:].strip()
+            elif stripped.startswith("<<"):
+                match = _SET_RE.match(stripped)
+                if (
+                    match
+                    and match.group(1) in _SET_VAR_WHITELIST
+                    and _translatable(match.group(2))
+                ):
+                    # The span sits strictly inside the quotes so the
+                    # command text itself stays untouched.
+                    value_start = offset + content.index('"', start - offset) + 1
+                    spans[cls._unit_id(relpath, index)] = (
+                        value_start,
+                        value_start + len(match.group(2)),
+                        True,
+                    )
+                    units.append(
+                        cls._unit(relpath, index, node, match.group(2), match.group(1))
+                    )
+            elif (choice := _CHOICE_RE.match(stripped)) is not None:
+                if _translatable(choice.group(2)):
+                    spans[cls._unit_id(relpath, index)] = (
+                        start + len(choice.group(1)),
+                        end,
+                        False,
+                    )
+                    units.append(
+                        cls._unit(relpath, index, node, choice.group(2), "choice")
+                    )
+            else:
+                speaker = _SPEAKER_RE.match(stripped)
+                if speaker:
+                    if _translatable(speaker.group(2)):
+                        spans[cls._unit_id(relpath, index)] = (
+                            start + len(speaker.group(1)),
+                            end,
+                            False,
+                        )
+                        units.append(
+                            cls._unit(relpath, index, node, speaker.group(2), speaker.group(1).strip())
+                        )
+                elif _translatable(stripped):
+                    # Bold narration: the ** markers are formatting; the
+                    # span covers only the text between them.
+                    bold = stripped.startswith("**") and stripped.endswith("**") and len(stripped) > 4
+                    unit_id = cls._unit_id(relpath, index)
+                    spans[unit_id] = (start + (2 if bold else 0), end - (2 if bold else 0), False)
+                    units.append(
+                        cls._unit(
+                            relpath,
+                            index,
+                            node,
+                            stripped[2:-2] if bold else stripped,
+                            "narration",
+                        )
+                    )
+            offset += len(raw_line)
+        return units, spans
+
+    @staticmethod
+    def _unit_id(relpath: str, line_index: int) -> str:
+        return f"yarn:{relpath}:{line_index}"
+
+    @staticmethod
+    def _unit(relpath: str, line_index: int, node: str, source: str, kind: str) -> TranslationUnit:
+        return TranslationUnit(
+            unit_id=YarnFormat._unit_id(relpath, line_index),
+            source=source,
+            source_hash=f"{len(source)}:{source[:24]}",
+            path=relpath,
+            context={"node": node, "kind": kind},
+        )
+
+    @classmethod
+    def rebuild(cls, input_root: Path, relpath: str, translations_by_id: dict[str, str]) -> bytes:
+        """Return rebuilt file bytes with translated lines applied by span."""
+        path = input_root / relpath
+        raw = path.read_bytes()
+        bom = raw.startswith(b"\xef\xbb\xbf")
+        decoded = raw.decode("utf-8-sig")
+        units, spans = cls.extract(input_root, relpath)
+        edits: list[tuple[int, int, str]] = []
+        for unit in units:
+            value = translations_by_id.get(unit.unit_id)
+            if value is None:
+                continue
+            start, end, in_quotes = spans[unit.unit_id]
+            text = value.replace("\r", " ").replace("\n", " ").replace("\t", " ").strip()
+            if in_quotes:
+                text = text.replace('"', '\"')
+            edits.append((start, end, text))
+        for start, end, text in sorted(edits, reverse=True):
+            decoded = decoded[:start] + text + decoded[end:]
+        data = decoded.encode("utf-8")
+        if bom:
+            data = b"\xef\xbb\xbf" + data
+        return data
+
+    @classmethod
+    def validate_file(cls, input_root: Path, relpath: str) -> int:
+        units, _ = cls.extract(input_root, relpath)
+        return len(units)
+
+    @classmethod
+    def write_asset(cls, input_root: Path, staging_path: Path, xml: str) -> None:  # pragma: no cover
+        raise NotImplementedError("yarn files are written directly by build_staging")
+
+    @classmethod
+    def validate_str(cls, xml: str, expected: dict[str, str]) -> int:  # pragma: no cover
+        raise NotImplementedError("yarn validation is file-based")

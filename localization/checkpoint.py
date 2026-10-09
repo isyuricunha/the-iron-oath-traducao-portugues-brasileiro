@@ -119,18 +119,20 @@ class Checkpoint:
     def compatible_generation_ids(self, info: GenerationInfo) -> list[str]:
         """All generation ids whose compatibility fields match, newest first.
 
-        Generation status is deliberately not a filter: an abandoned
-        generation still holds valid committed units that a new generation
-        can seed from.
+        Compatibility on the manifest is subset-based: a generation whose
+        source set is contained in the current one (the corpus grew, e.g.
+        a new file format joined discovery) still seeds unit reuse, since
+        unit ids are stable per path. Generation status is deliberately
+        not a filter: an abandoned generation still holds valid committed
+        units that a new generation can seed from.
         """
         rows = self.conn.execute(
-            "SELECT id FROM generations WHERE mode=? AND source_manifest=? "
+            "SELECT id, source_manifest FROM generations WHERE mode=? "
             "AND target_lang=? AND profile_fingerprint=? AND policy_revision=? "
             "AND protection_revision=? AND model_fingerprint=? "
             "ORDER BY created_at DESC, id DESC",
             (
                 info.mode,
-                info.source_manifest,
                 info.target_lang,
                 info.profile_fingerprint,
                 info.policy_revision,
@@ -138,7 +140,13 @@ class Checkpoint:
                 info.model_fingerprint,
             ),
         ).fetchall()
-        return [r["id"] for r in rows]
+        new_paths = {p for p in (info.source_manifest or "").split(",") if p}
+        out: list[str] = []
+        for row in rows:
+            old_paths = {p for p in (row["source_manifest"] or "").split(",") if p}
+            if old_paths and old_paths <= new_paths:
+                out.append(row["id"])
+        return out
 
     def accepted_units_merged(self, generation_ids: list[str]) -> dict[str, str]:
         """Accepted targets across generations, newest generation wins per unit."""
