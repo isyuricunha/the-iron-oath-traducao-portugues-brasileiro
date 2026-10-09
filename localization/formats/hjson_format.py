@@ -32,6 +32,12 @@ KEY_DENY = {
 # Whole-directory reference data: combat group files only contain unit
 # type references and loot pairs, never display prose.
 PATH_DENY = ("Dungeons/CombatGroupings",)
+# File-scoped reference keys: in these files the value of these keys IS
+# the lookup name the game deserializes (multi-word included).
+FILE_KEY_DENY = {
+    "WorldSim/traits.json": {"name"},
+    "WorldSim/opinionModifiers.json": {"name"},
+}
 VALUE_ID_RE = re.compile(r"[_/\\]|[0-9]{2,}|://")
 CAMEL_ID_RE = re.compile(r"^[a-z0-9]+(?:[A-Z][a-z0-9]+)+$")
 
@@ -299,7 +305,7 @@ class HjsonFormat:
             if not cls._translatable(node):
                 return
             keypath = cls._path_key(path)
-            if not cls._translatable_key(keypath):
+            if not cls._translatable_key(keypath, relpath):
                 return
             span = cls.locate(decoded, obj_start, path, node)
             if span is None:
@@ -412,11 +418,16 @@ class HjsonFormat:
         return raw.strip() == expected
 
     @staticmethod
-    def _translatable_key(keypath: str) -> bool:
-        if keypath.lower() == "id" or keypath.lower().startswith("uniqueid"):
-            return False
+    def _translatable_key(keypath: str, relpath: str = "") -> bool:
         last = keypath.split(".")[-1].lower()
-        return last not in KEY_DENY
+        if last in KEY_DENY:
+            return False
+        # File-scoped reference keys: in these files the name IS the
+        # lookup key the game deserializes, not a display string.
+        for file_part, keys in FILE_KEY_DENY.items():
+            if file_part in relpath and last in keys:
+                return False
+        return True
 
     # ---------------- rebuild & validation ----------------
 

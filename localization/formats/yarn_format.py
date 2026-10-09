@@ -67,7 +67,14 @@ class YarnFormat:
 
     @classmethod
     def extract(cls, input_root: Path, relpath: str) -> tuple[list[TranslationUnit], dict]:
-        """Return (units, spans); span values are (start, end, in_quotes)."""
+        """Return (units, spans); span values are (start, end, in_quotes).
+
+        Chunks are delimited by === lines. Header lines (before the ---
+        separator) are always structural: old-format nodes use label:
+        instead of title: and their labels are node keys the game looks
+        up, so a chunk with a label: header is skipped entirely and only
+        body lines of normal nodes are ever extracted.
+        """
         units: list[TranslationUnit] = []
         spans: dict[str, tuple[int, int, bool]] = {}
         path = input_root / relpath
@@ -75,6 +82,8 @@ class YarnFormat:
             return units, spans
         decoded = path.read_bytes().decode("utf-8-sig")
         node = ""
+        in_header = True
+        node_skip = False
         offset = 0
         for index, raw_line in enumerate(decoded.splitlines(keepends=True)):
             eol_len = len(raw_line) - len(raw_line.rstrip("\r\n"))
@@ -82,11 +91,19 @@ class YarnFormat:
             stripped = content.strip()
             start = offset + (len(content) - len(content.lstrip()))
             end = offset + len(content.rstrip())
-            if not stripped or stripped.startswith("//") or stripped in ("---", "==="):
-                pass
-            elif _HEADER_RE.match(stripped):
+            if stripped == "===":
+                node = ""
+                in_header = True
+                node_skip = False
+            elif stripped == "---":
+                in_header = False
+            elif in_header:
                 if stripped.lower().startswith("title:"):
                     node = stripped[6:].strip()
+                if stripped.lower().startswith("label:"):
+                    node_skip = True
+            elif node_skip or not stripped or stripped.startswith("//"):
+                pass
             elif stripped.startswith("<<"):
                 match = _SET_RE.match(stripped)
                 if (
