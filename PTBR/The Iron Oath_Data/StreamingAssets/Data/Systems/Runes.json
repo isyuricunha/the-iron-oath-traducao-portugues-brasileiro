@@ -1,7 +1,7 @@
 {
 	Type: "RuneOfKnowledge",
 	Name: "Runa do Conhecimento",
-	Description: "Ganhe 1 Nível",
+	Description: "Ganhe 1 Nivel",
 	Tier: 5,
 	Value: "1",
 	IsActive: "true",

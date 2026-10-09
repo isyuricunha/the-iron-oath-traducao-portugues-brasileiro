@@ -48,7 +48,7 @@
 }
 {
   UniqueId: "elderGods",
-	Name: "Deuses Anciões",
+	Name: "Deuses Ancioes",
     Diety: "",
     Description: "",
     Aggression: "100",

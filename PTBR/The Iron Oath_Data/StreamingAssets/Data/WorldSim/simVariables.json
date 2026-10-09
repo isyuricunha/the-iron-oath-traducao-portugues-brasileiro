@@ -92,7 +92,7 @@
 	DefaultDaysToRemoveTraits: "45",
 	
 	// Random House related variables
-	KingdomCouncilPositions: ["Mão do Rei", "Árbitro Sagrado", "Mestre das Sombras", "Supervisor Financeiro"],
+	KingdomCouncilPositions: ["Mao do Rei", "Arbitro Sagrado", "Mestre das Sombras", "Supervisor Financeiro"],
 	
 	// House Simming Logic
 	FertilityScorePercentMultiplier: "5",

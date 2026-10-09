@@ -1,132 +1,132 @@
 {
 	Type: "LOW_GOLD",
 	DelayUntilRepeat: 0,
-	Text: "Estamos ficando sem fundos. Talvez seja melhor considerarmos aceitar trabalhos que paguem melhor, ou não teremos como pagar o salário de todo mundo.",
+	Text: "Estamos ficando sem fundos. Talvez seja melhor considerarmos aceitar trabalhos que paguem melhor, ou nao teremos como pagar o salario de todo mundo.",
 }
 {
 	Type: "FEW_QUESTS",
 	DelayUntilRepeat: 200,
-	Text: "No momento não temos muitos trabalhos em aberto. Devíamos encontrar uma cidade e procurar alguém que queira contratar nossos serviços.",
+	Text: "No momento nao temos muitos trabalhos em aberto. Deviamos encontrar uma cidade e procurar alguem que queira contratar nossos servicos.",
 }
 {
 	Type: "NEED_BATTLEMASTER",
 	DelayUntilRepeat: 200,
-	Text: "Manter nossas tropas bem treinadas será difícil sem um Mestre de Batalhas. Devíamos considerar contratar alguém para esse cargo.",
+	Text: "Manter nossas tropas bem treinadas sera dificil sem um Mestre de Batalhas. Deviamos considerar contratar alguem para esse cargo.",
 }
 {
 	Type: "NEED_EMISSARY",
 	DelayUntilRepeat: 200,
-	Text: "Devíamos contratar um Emissário para ajudar a melhorar as relações com nossos aliados atuais e forjar novas.",
+	Text: "Deviamos contratar um Emissario para ajudar a melhorar as relacoes com nossos aliados atuais e forjar novas.",
 }
 {
 	Type: "NEED_SPYMASTER",
 	DelayUntilRepeat: 200,
-	Text: "No momento não temos um Mestre Espião em nossas fileiras. Um Mestre Espião poderia nos ajudar a descobrir e explorar fraquezas entre nossos inimigos.",
+	Text: "No momento nao temos um Mestre Espiao em nossas fileiras. Um Mestre Espiao poderia nos ajudar a descobrir e explorar fraquezas entre nossos inimigos.",
 }
 {
 	Type: "LOW_LOYALTY",
 	DelayUntilRepeat: 300,
-	Text: "Estou notando uma tendência preocupante em nossas fileiras. Eles têm discordado de várias das suas decisões ultimamente e estão questionando sua lealdade. Recomendo dispensá-los da guilda e procurar tropas que se alinhem melhor aos seus valores, ou certificar-se de que suas decisões daqui em diante reflitam as expectativas deles.",
+	Text: "Estou notando uma tendencia preocupante em nossas fileiras. Eles tem discordado de varias das suas decisoes ultimamente e estao questionando sua lealdade. Recomendo dispensa-los da guilda e procurar tropas que se alinhem melhor aos seus valores, ou certificar-se de que suas decisoes daqui em diante reflitam as expectativas deles.",
 }
 {
 	Type: "UNSPENT_RENOWN",
 	DelayUntilRepeat: 200,
-	Text: "Acumulamos recursos suficientes para melhorar nossa guilda. Não há motivo para não tornar a vida mais fácil para você e suas tropas.",
+	Text: "Acumulamos recursos suficientes para melhorar nossa guilda. Nao ha motivo para nao tornar a vida mais facil para voce e suas tropas.",
 }
 {
 	Type: "BELOW_AVG_PROFITS",
 	DelayUntilRepeat: 0,
-	Text: "Notei que nossos lucros caíram neste mês. Talvez possamos procurar mais trabalhos ou considerar reduzir nossos custos.",
+	Text: "Notei que nossos lucros cairam neste mes. Talvez possamos procurar mais trabalhos ou considerar reduzir nossos custos.",
 }
 {
 	Type: "ABOVE_AVG_PROFITS",
 	DelayUntilRepeat: 200,
-	Text: "Tivemos um mês excepcional. Ficamos bem acima da nossa renda mensal média. Continue com o ótimo trabalho. Considere dar um bônus às suas tropas. Elas mereceram.",
+	Text: "Tivemos um mes excepcional. Ficamos bem acima da nossa renda mensal media. Continue com o otimo trabalho. Considere dar um bonus as suas tropas. Elas mereceram.",
 }
 {
 	Type: "GUILD_SKILL_SUGGESTION",
 	DelayUntilRepeat: 350,
-	Text: "Já considerou melhorar a nossa guilda com isto?",
+	Text: "Ja considerou melhorar a nossa guilda com isto?",
 }
 {
 	Type: "ADVISER_GENERAL_TIP",
 	DelayUntilRepeat: 0,
-	Text: "Vamos garantir que continuemos aceitando novas missões para termos renda de sobra e podermos pagar nossas tropas. Enquanto elas estiverem satisfeitas, devemos conseguir continuar prosperando.",
+	Text: "Vamos garantir que continuemos aceitando novas missoes para termos renda de sobra e podermos pagar nossas tropas. Enquanto elas estiverem satisfeitas, devemos conseguir continuar prosperando.",
 }
 {
 	Type: "LOW_UNITS",
 	DelayUntilRepeat: 400,
-	Text: "Precisaríamos de novos recrutas. Neste ponto, qualquer um serve. Só precisamos de mais gente preenchendo nossas fileiras.",
+	Text: "Precisariamos de novos recrutas. Neste ponto, qualquer um serve. So precisamos de mais gente preenchendo nossas fileiras.",
 }
 {
 	Type: "LOW_SUPPORTS",
 	DelayUntilRepeat: 400,
-	Text: "Poderíamos usar mais curandeiros e unidades de apoio em nossas fileiras. Considere contratar mais um ou dois na próxima vez em que chegarmos a uma cidade.",
+	Text: "Poderiamos usar mais curandeiros e unidades de apoio em nossas fileiras. Considere contratar mais um ou dois na proxima vez em que chegarmos a uma cidade.",
 }
 {
 	Type: "LOW_TANKS",
 	DelayUntilRepeat: 400,
-	Text: "Precisamos de mais tropas focadas em defesa. Devíamos contratar mais uma ou duas num futuro próximo.",
+	Text: "Precisamos de mais tropas focadas em defesa. Deviamos contratar mais uma ou duas num futuro proximo.",
 }
 {
 	Type: "LOW_DPS",
 	DelayUntilRepeat: 400,
-	Text: "Poderíamos usar mais tropas focadas em atacar e repelir nossos inimigos. Considere contratá-las o quanto antes.",
+	Text: "Poderiamos usar mais tropas focadas em atacar e repelir nossos inimigos. Considere contrata-las o quanto antes.",
 }
 {
 	Type: "INJURIES",
 	DelayUntilRepeat: 400,
-	Text: "Temos um grande número de unidades feridas. Talvez agora seja uma boa hora para deixá-las descansar antes de partirmos para mais longe, ou podemos contratar alguns substitutos extras.",
+	Text: "Temos um grande numero de unidades feridas. Talvez agora seja uma boa hora para deixa-las descansar antes de partirmos para mais longe, ou podemos contratar alguns substitutos extras.",
 }
 {
 	Type: "REMOVE_TRAIT_SUGGESTION",
 	DelayUntilRepeat: 400,
-	Text: "Queria recomendar conversar com essa pessoa e remover um dos seus piores traços.",
+	Text: "Queria recomendar conversar com essa pessoa e remover um dos seus piores tracos.",
 }
 {
 	Type: "UNSPENT_ABILITY_POINTS",
 	DelayUntilRepeat: 400,
-	Text: "Já ganhamos a experiência necessária; agora só precisamos decidir o que ensinar a esses recrutas.",
+	Text: "Ja ganhamos a experiencia necessaria; agora so precisamos decidir o que ensinar a esses recrutas.",
 }
 {
 	Type: "SUGGEST_TRAIT",
 	DelayUntilRepeat: 400,
-	Text: "Devíamos considerar me deixar treinar essa pessoa pessoalmente. Posso ajudá-la a ficar mais forte.",
+	Text: "Deviamos considerar me deixar treinar essa pessoa pessoalmente. Posso ajuda-la a ficar mais forte.",
 }
 {
 	Type: "SUGGEST_MISSION",
 	DelayUntilRepeat: 400,
-	Text: "Aceitar esta missão pode ser uma decisão sábia. A experiência ganha ao concluí-la será valiosa.",
+	Text: "Aceitar esta missao pode ser uma decisao sabia. A experiencia ganha ao conclui-la sera valiosa.",
 }
 {
 	Type: "SUGGEST_UNIT_FOR_MISSION",
 	DelayUntilRepeat: 400,
-	Text: "Essa pessoa não participa de nenhuma missão há um tempo. Pode ser uma boa ideia incluí-la para que não enferruje em suas habilidades.",
+	Text: "Essa pessoa nao participa de nenhuma missao ha um tempo. Pode ser uma boa ideia inclui-la para que nao enferruje em suas habilidades.",
 }
 {
 	Type: "BATTLEMASTER_GENERAL_TIP",
 	DelayUntilRepeat: 0,
-	Text: "Enquanto continuarmos recebendo um bom número de novos recrutas, sempre teremos alguém para substituir aqueles que se aposentam ou caem em combate.",
+	Text: "Enquanto continuarmos recebendo um bom numero de novos recrutas, sempre teremos alguem para substituir aqueles que se aposentam ou caem em combate.",
 }
 {
 	Type: "FEW_ALLIES",
 	DelayUntilRepeat: 300,
-	Text: "Poderíamos usar mais aliados. Mais aliados nos ajudarão a aceitar mais missões de diferentes regiões. Sem falar que poderemos contar com a ajuda deles se precisarmos.",
+	Text: "Poderiamos usar mais aliados. Mais aliados nos ajudarao a aceitar mais missoes de diferentes regioes. Sem falar que poderemos contar com a ajuda deles se precisarmos.",
 }
 {
 	Type: "ASSIST_OLD_ALLIES",
 	DelayUntilRepeat: 300,
-	Text: "Não temos tido contato com a Casa [houseName] há um tempo. Devíamos considerar aceitar uma missão ou duas deles para que nossa relação não azede.",
+	Text: "Nao temos tido contato com a Casa [houseName] ha um tempo. Deviamos considerar aceitar uma missao ou duas deles para que nossa relacao nao azede.",
 }
 {
 	Type: "MAKE_POWERFUL_ALLIES",
 	DelayUntilRepeat: 300,
-	Text: "A Casa [houseName] ficou bastante poderosa e notei que ainda não fizemos contato. Devíamos considerar ver se nossos interesses se alinham ou, ao menos, ver como eles se sentem em relação a nós.",
+	Text: "A Casa [houseName] ficou bastante poderosa e notei que ainda nao fizemos contato. Deviamos considerar ver se nossos interesses se alinham ou, ao menos, ver como eles se sentem em relacao a nos.",
 }
 {
 	Type: "MAKE_FRIENDS_FROM_ENEMIES",
 	DelayUntilRepeat: 300,
-	Text: "A Casa [houseName] ainda não é nossa amiga, mas acho que se formos gentis com eles, podemos reverter nossa relação. Considere aceitar uma missão ou duas deles.",
+	Text: "A Casa [houseName] ainda nao e nossa amiga, mas acho que se formos gentis com eles, podemos reverter nossa relacao. Considere aceitar uma missao ou duas deles.",
 }
 {
 	Type: "CONFLICTING_ALLIES_IN_WAR",
@@ -136,7 +136,7 @@
 {
 	Type: "EMISSARY_GENERAL_TIP",
 	DelayUntilRepeat: 0,
-	Text: "Vamos continuar a fortalecer nossas alianças existentes enquanto construímos novas.",
+	Text: "Vamos continuar a fortalecer nossas aliancas existentes enquanto construimos novas.",
 }
 {
 	Type: "FORCE_WAR_BETWEEN_HOUSES",
@@ -146,5 +146,5 @@
 {
 	Type: "SPYMASTER_GENERAL_TIP",
 	DelayUntilRepeat: 0,
-	Text: "Meus agentes e eu podemos montar uma rede de espiões para termos olhos e ouvidos em todos os cantos de Caelum.",
+	Text: "Meus agentes e eu podemos montar uma rede de espioes para termos olhos e ouvidos em todos os cantos de Caelum.",
 }

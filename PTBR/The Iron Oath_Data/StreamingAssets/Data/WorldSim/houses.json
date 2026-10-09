@@ -29,7 +29,7 @@
 	Banner: "",
 	Colors: [0xc71437,0x1b1d22],
 	ForcesReligionOnOwnPeople: "true", 
-	CodexEntry: "A nobre Casa de Jorsten começou com Jorun Jorsten, um cacique nurren durante a Era das Trevas. Os Jorsten governaram o Domínio do Norte por séculos como vassalos do Reino de Caelum, mas com o tempo se rebelaram e conquistaram a independência do Domínio do Norte.",	
+	CodexEntry: "A nobre Casa de Jorsten comecou com Jorun Jorsten, um cacique nurren durante a Era das Trevas. Os Jorsten governaram o Dominio do Norte por seculos como vassalos do Reino de Caelum, mas com o tempo se rebelaram e conquistaram a independencia do Dominio do Norte.",	
 }
 {	
 	HouseName: "Stoneshield",
@@ -146,7 +146,7 @@
 	Banner: "",
 	Colors: [0xe7964b,0x42a0c0],
 	ForcesReligionOnOwnPeople: "true", 
-	CodexEntry: "A Nobre Casa de Volaros começou com Nasos Volaros, cujas ações deflagraram a Reconquista, uma revolta que arrancou o controle das Terras Vermelhas das mãos de invasores estrangeiros e o devolveu às mãos tyrosenes. No ano 58, ele foi escolhido por unanimidade por seus pares para governar a região.",
+	CodexEntry: "A Nobre Casa de Volaros comecou com Nasos Volaros, cujas acoes deflagraram a Reconquista, uma revolta que arrancou o controle das Terras Vermelhas das maos de invasores estrangeiros e o devolveu as maos tyrosenes. No ano 58, ele foi escolhido por unanimidade por seus pares para governar a regiao.",
 }
 {	
 	HouseName: "Grym",

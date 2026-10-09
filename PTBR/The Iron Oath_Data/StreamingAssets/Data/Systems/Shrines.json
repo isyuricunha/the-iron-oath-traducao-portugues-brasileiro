@@ -9,7 +9,7 @@
 }
 {
 	Type: "Haldrin",
-	Name: "Haldrin, Deus da Criação",
+	Name: "Haldrin, Deus da Criacao",
 	Description: "Restaura uma carga de cada habilidade de cada unidade",
 	Value: "4",
 	Reward: "restoreCharge",
@@ -17,7 +17,7 @@
 }
 {
 	Type: "Dyaena",
-	Name: "Dyaena, Deusa da Misericórdia",
+	Name: "Dyaena, Deusa da Misericordia",
 	Description: "Remove todos os ferimentos",
 	Reward: "healInjuries",
 	IsActive: "true",
@@ -32,8 +32,8 @@
 }
 {
 	Type: "Thera",
-	Name: "Thera, Deusa da Proteção",
-	Description: "Ganhe um Escudo de Dano (200) na próxima luta, com duração de 3 Rodadas",
+	Name: "Thera, Deusa da Protecao",
+	Description: "Ganhe um Escudo de Dano (200) na proxima luta, com duracao de 3 Rodadas",
 	Value: "200",
 	Reward: "shieldBuff",
 	IsActive: "true",
@@ -63,13 +63,13 @@
 {
 	Type: "Ceres",
 	Name: "Ceres, Deus da Colheita",
-	Description: "Dobre os suprimentos que você possui atualmente",
+	Description: "Dobre os suprimentos que voce possui atualmente",
 	Reward: "doubleProvisions",
 	IsActive: "true",
 }
 {
 	Type: "Osymus",
-	Name: "Osymus, Deus da Ganância",
+	Name: "Osymus, Deus da Ganancia",
 	Description: "Revele todos os eventos de Saque",
 	Reward: "revealLoot",
 	IsActive: "true",
@@ -85,7 +85,7 @@
 {
 	Type: "TianWar",
 	Name: "Tian's Trial of War",
-	Description: "Sempre embosque inimigos não-chefes em combates revelados",
+	Description: "Sempre embosque inimigos nao-chefes em combates revelados",
 	Reward: "forceAmbush",
 	IsActive: "true",
 }
@@ -107,14 +107,14 @@
 {
 	Type: "Vismyr",
 	Name: "Vismyr, o Todo-Criador",
-	Description: "Ganhe Resistência a 1 tipo de dano",
+	Description: "Ganhe Resistencia a 1 tipo de dano",
 	Reward: "gainRandomResistance",
 	IsActive: "true",
 }
 {
 	Type: "Anusa",
-	Name: "Anusa, Deusa da Doença",
-	Description: "Inimigos não-chefes no próximo encontro são reduzidos a 75% de Vida",
+	Name: "Anusa, Deusa da Doenca",
+	Description: "Inimigos nao-chefes no proximo encontro sao reduzidos a 75% de Vida",
 	Reward: "enemyHealthReduced",
 	Value: "0.75",
 	IsActive: "true",

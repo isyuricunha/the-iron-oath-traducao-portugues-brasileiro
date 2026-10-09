@@ -20,7 +20,7 @@
 	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
 	ClassReq: ["None", "None"],
 	DaysUntilRepeat: "400",
-	Text: ["1:Seu tolo. Sua incompetência colocou todos nós em perigo."],
+	Text: ["1:Seu tolo. Sua incompetencia colocou todos nos em perigo."],
 }
 {
 	UniqueName: "AllyDeath3",
@@ -28,7 +28,7 @@
 	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
 	ClassReq: ["None", "None"],
 	DaysUntilRepeat: "400",
-	Text: ["1:Eu sempre soube que você morreria antes de mim."],
+	Text: ["1:Eu sempre soube que voce morreria antes de mim."],
 }
 {
 	UniqueName: "AllyDeath4",
@@ -36,7 +36,7 @@
 	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
 	ClassReq: ["None", "None"],
 	DaysUntilRepeat: "400",
-	Text: ["1:Nããão! [FNameP0]!", "1:Esses malditos vão pagar por isso!"],
+	Text: ["1:Naaao! [FNameP0]!", "1:Esses malditos vao pagar por isso!"],
 }
 {
 	UniqueName: "AllyDeath5",
@@ -52,7 +52,7 @@
 	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
 	ClassReq: ["None", "None"],
 	DaysUntilRepeat: "400",
-	Text: ["1:Sua morte será vingada!"],
+	Text: ["1:Sua morte sera vingada!"],
 }
 {
 	UniqueName: "AllyKnockedOut0",
@@ -78,7 +78,7 @@
 	CatalystTriggerTags: ["RANDOM_CHANCE_5_PERCENT"],
 	ClassReq: ["None"],
 	DaysUntilRepeat: "120",
-	Text: ["0:Não sei se aguento muito mais pancada dessa."],
+	Text: ["0:Nao sei se aguento muito mais pancada dessa."],
 } 
 {
 	UniqueName: "AllyKnockedOut2",
@@ -112,7 +112,7 @@
 	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
 	ClassReq: ["None", "T:Harsh"],
 	DaysUntilRepeat: "200",
-	Text: ["1:Pior que uma criança."],
+	Text: ["1:Pior que uma crianca."],
 }
 {
 	UniqueName: "AllyKnockedOut5",
@@ -121,13 +121,13 @@
 	CatalystTriggerTags: ["RANDOM_CHANCE_10_PERCENT"],
 	ClassReq: ["T:Cowardly"],
 	DaysUntilRepeat: "120",
-	Text: ["0:Não! Não quero morrer!"],
+	Text: ["0:Nao! Nao quero morrer!"],
 }
 {
 	UniqueName: "TracksCombatComplete",
 	Catalyst: "NONE",
 	PartyMakeupReq: "TARGET",
-	Text: ["0:Acredito que esses rastros sejam daqueles demônios que enfrentamos mais cedo."],
+	Text: ["0:Acredito que esses rastros sejam daqueles demonios que enfrentamos mais cedo."],
 }
 {
 	UniqueName: "TracksCombatNearby",
@@ -149,7 +149,7 @@
 	PartyMakeupReq: "TARGET",
 	ClassReq: ["None"],
 	DaysUntilRepeat: "0",
-	Text: ["0:Não estou pronto."],
+	Text: ["0:Nao estou pronto."],
 }
 {
 	UniqueName: "MoraleCheckFail2",
@@ -157,7 +157,7 @@
 	PartyMakeupReq: "TARGET",
 	ClassReq: ["None"],
 	DaysUntilRepeat: "0",
-	Text: ["0:Dê-me um momento para me recompor."],
+	Text: ["0:De-me um momento para me recompor."],
 }
 {
 	UniqueName: "MoraleCheckFail3",
@@ -165,7 +165,7 @@
 	PartyMakeupReq: "TARGET",
 	ClassReq: ["None"],
 	DaysUntilRepeat: "0",
-	Text: ["0:Não sei se consigo fazer isso."],
+	Text: ["0:Nao sei se consigo fazer isso."],
 }
 {
 	UniqueName: "MoraleCheckFail4",
@@ -173,7 +173,7 @@
 	PartyMakeupReq: "TARGET",
 	ClassReq: ["None"],
 	DaysUntilRepeat: "0",
-	Text: ["0:Será que a gente consegue?"],
+	Text: ["0:Sera que a gente consegue?"],
 }
 {
 	UniqueName: "MoraleCheckFail5",
@@ -181,7 +181,7 @@
 	PartyMakeupReq: "TARGET",
 	ClassReq: ["None"],
 	DaysUntilRepeat: "0",
-	Text: ["0:Não estou muito confiante nas nossas chances."],
+	Text: ["0:Nao estou muito confiante nas nossas chances."],
 }
 {
 	UniqueName: "MoraleCheckFail6",

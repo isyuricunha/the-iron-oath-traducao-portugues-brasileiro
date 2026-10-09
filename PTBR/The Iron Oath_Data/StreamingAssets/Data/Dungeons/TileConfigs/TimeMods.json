@@ -5,8 +5,8 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Reforços Inimigos",
-	Description: "Talvez você tenha ficado mais tempo do que devia, dando aos seus inimigos a chance de reforçar suas fileiras.",
+	Name: "Reforcos Inimigos",
+	Description: "Talvez voce tenha ficado mais tempo do que devia, dando aos seus inimigos a chance de reforcar suas fileiras.",
 	PlainText: "A dificuldade dos combates aumentou.",
 	Value: 1.15,	
 }
@@ -18,8 +18,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Os Mortos Caminham",
-	Description: "Você pode sentir forças sombrias em ação. Seus inimigos recém-derrotados se ergueram novamente.",
-	PlainText: "Um encontro de combate anterior é repovoado com mortos-vivos."
+	Description: "Voce pode sentir forcas sombrias em acao. Seus inimigos recem-derrotados se ergueram novamente.",
+	PlainText: "Um encontro de combate anterior e repovoado com mortos-vivos."
 }
 {
 	Mod: "RANDOM_ENCOUNTER",
@@ -28,8 +28,8 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Encontro Aleatório",
-	Description: "Seus inimigos ficam mais numerosos a cada minuto. Fique de olho em mais adversários.",
+	Name: "Encontro Aleatorio",
+	Description: "Seus inimigos ficam mais numerosos a cada minuto. Fique de olho em mais adversarios.",
 	PlainText: "Um novo encontro de combate apareceu na masmorra."
 }
 {
@@ -40,8 +40,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Preparativos Inimigos",
-	Description: "Seus inimigos agora estão bem cientes da sua presença e se prepararam de acordo.",
-	PlainText: "Inimigos emboscarão você em todo evento de combate não explorado."
+	Description: "Seus inimigos agora estao bem cientes da sua presenca e se prepararam de acordo.",
+	PlainText: "Inimigos emboscarao voce em todo evento de combate nao explorado."
 }
 {
 	Mod: "INJURY_PRONE",
@@ -51,7 +51,7 @@
 	MinTier: 0,
 	Weight: 0.7,
 	Name: "Propenso a Ferimentos",
-	Description: "Um passo em falso ou uma falha de julgamento é tudo o que é preciso para se ferir gravemente por aqui. Só se consegue concentrar em poucas coisas.",
+	Description: "Um passo em falso ou uma falha de julgamento e tudo o que e preciso para se ferir gravemente por aqui. So se consegue concentrar em poucas coisas.",
 	PlainText: "Sua chance de sofrer um ferimento aumentou significativamente."
 }
 {
@@ -61,9 +61,9 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 4,
 	Weight: 0.3,
-	Name: "Ande, Não Corra",
-	Description: "Você sente a exaustão começar a tomar conta. É melhor conservar suas energias daqui em diante.",
-	PlainText: "Agora você não pode mais Correr em combate."
+	Name: "Ande, Nao Corra",
+	Description: "Voce sente a exaustao comecar a tomar conta. E melhor conservar suas energias daqui em diante.",
+	PlainText: "Agora voce nao pode mais Correr em combate."
 }
 {
 	Mod: "LOST_TIME",
@@ -73,8 +73,8 @@
 	MinTier: 1,
 	Weight: 0.7,
 	Name: "Tempo Perdido",
-	Description: "A jornada parece ter nublado sua noção de tempo. Você não sabe dizer ao certo há quanto tempo está aqui.",
-	PlainText: "Uma unidade de tempo a menos é exigida a cada volta no medidor de tempo."
+	Description: "A jornada parece ter nublado sua nocao de tempo. Voce nao sabe dizer ao certo ha quanto tempo esta aqui.",
+	PlainText: "Uma unidade de tempo a menos e exigida a cada volta no medidor de tempo."
 }
 {
 	Mod: "ON_THE_LOOKOUT",
@@ -84,8 +84,8 @@
 	MinTier: 0,
 	Weight: 0.8,
 	Name: "Sem Vigia",
-	Description: "Você não consegue evitar a sensação de que cada ação sua está sendo observada. Não há o que fazer além de seguir em frente...",
-	PlainText: "A chance de ser emboscado enquanto descansa dobrou para a próxima vez que acampar."
+	Description: "Voce nao consegue evitar a sensacao de que cada acao sua esta sendo observada. Nao ha o que fazer alem de seguir em frente...",
+	PlainText: "A chance de ser emboscado enquanto descansa dobrou para a proxima vez que acampar."
 }
 {
 	Mod: "MISPLACED_PROVISIONS",
@@ -95,8 +95,8 @@
 	MinTier: 0,
 	Weight: 0.6,
 	Name: "Suprimentos Extraviados",
-	Description: "Você não sabe quando ou como aconteceu, mas parece ter extraviado alguns itens da sua mochila.",
-	PlainText: "Você perdeu 1 {[PARAM1]}.",
+	Description: "Voce nao sabe quando ou como aconteceu, mas parece ter extraviado alguns itens da sua mochila.",
+	PlainText: "Voce perdeu 1 {[PARAM1]}.",
 }
 {
 	Mod: "HEAVY_EYES",
@@ -106,8 +106,8 @@
 	MinTier: 0,
 	Weight: 0.6,
 	Name: "Olhos Pesados",
-	Description: "Os olhos de todos pesam com a jornada. Devíamos descansar em breve...",
-	PlainText: "No próximo acampamento, todos serão forçados a descansar sem vigia.",
+	Description: "Os olhos de todos pesam com a jornada. Deviamos descansar em breve...",
+	PlainText: "No proximo acampamento, todos serao forcados a descansar sem vigia.",
 }
 {
 	Mod: "DISORGANIZATION",
@@ -117,8 +117,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Disorganization",
-	Description: "Conforme a missão se arrasta, fica difícil manter a disciplina e a formação adequadas.",
-	PlainText: "A fase de posicionamento é ignorada e você não conseguirá reposicionar seu grupo.",
+	Description: "Conforme a missao se arrasta, fica dificil manter a disciplina e a formacao adequadas.",
+	PlainText: "A fase de posicionamento e ignorada e voce nao conseguira reposicionar seu grupo.",
 }
 {
 	Mod: "MORTAL_REMINDER",
@@ -128,8 +128,8 @@
 	MinTier: 5,
 	Weight: 0.5,
 	Name: "Lembrete Mortal",
-	Description: "Seu grupo começa a parecer mais esfarrapado a cada minuto. Cai a ficha de que talvez nem todos saiam vivos daqui.",
-	PlainText: "{[PARAM1]} perdeu todos os pontos de sangramento. A próxima vez que for derrubado pode ser fatal se não agirmos agora.",
+	Description: "Seu grupo comeca a parecer mais esfarrapado a cada minuto. Cai a ficha de que talvez nem todos saiam vivos daqui.",
+	PlainText: "{[PARAM1]} perdeu todos os pontos de sangramento. A proxima vez que for derrubado pode ser fatal se nao agirmos agora.",
 }
 {
 	Mod: "DEADLY_CONTRAPTIONS",
@@ -139,7 +139,7 @@
 	MinTier: 0,
 	Weight: 0.8,
 	Name: "Armadilhas Mortais",
-	Description: "Você notou que as armadilhas daqui parecem mais sofisticadas que o normal. Melhor lembrar todos de terem cuidado.",
+	Description: "Voce notou que as armadilhas daqui parecem mais sofisticadas que o normal. Melhor lembrar todos de terem cuidado.",
 	PlainText: "Armadilhas causam o dobro do dano.",
 }
 {
@@ -149,9 +149,9 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Experiência Aterrorizante",
-	Description: "Nem o soldado mais corajoso está imune a eventos traumáticos. Vai levar um tempo para esquecer este...",
-	PlainText: "Acumule Fadiga adicional pós-missão e reduza o Moral atual em 35.",
+	Name: "Experiencia Aterrorizante",
+	Description: "Nem o soldado mais corajoso esta imune a eventos traumaticos. Vai levar um tempo para esquecer este...",
+	PlainText: "Acumule Fadiga adicional pos-missao e reduza o Moral atual em 35.",
 }
 {
 	Mod: "HUNGER",
@@ -161,8 +161,8 @@
 	MinTier: 3,
 	Weight: 0.5,
 	Name: "Hunger",
-	Description: "As pontadas de fome tomam conta do seu grupo exausto. Eles não vão querer ir muito mais longe sem primeiro montar acampamento.",
-	PlainText: "Toda ação que custar tempo fará suas tropas perderem 1 ponto de lealdade com você até que acampem.",
+	Description: "As pontadas de fome tomam conta do seu grupo exausto. Eles nao vao querer ir muito mais longe sem primeiro montar acampamento.",
+	PlainText: "Toda acao que custar tempo fara suas tropas perderem 1 ponto de lealdade com voce ate que acampem.",
 }
 {
 	Mod: "ENEMY_UNKNOWN",
@@ -173,8 +173,8 @@
 	Enabled: false,
 	Weight: 0.4,
 	Name: "Inimigo Desconhecido",
-	Description: "Conforme a escuridão avança, você mal consegue distinguir a forma de seus inimigos, quanto mais o estado em que se encontram.",
-	PlainText: "Não é possível ver os valores de Vida e Defesa dos inimigos.",
+	Description: "Conforme a escuridao avanca, voce mal consegue distinguir a forma de seus inimigos, quanto mais o estado em que se encontram.",
+	PlainText: "Nao e possivel ver os valores de Vida e Defesa dos inimigos.",
 }
 {
 	Mod: "DEATH_MARCH",
@@ -184,7 +184,7 @@
 	MinTier: 15,
 	Weight: 1,
 	Name: "Marcha da Morte",
-	Description: "Já demoramos demais. Temos que voltar para o resto da nossa companhia. Onde será que eles estão? Temo que não voltaremos com vida.",
+	Description: "Ja demoramos demais. Temos que voltar para o resto da nossa companhia. Onde sera que eles estao? Temo que nao voltaremos com vida.",
 	PlainText: "Todos perdem imediatamente 20% do HP."
 }
 {
@@ -195,8 +195,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Reprieve",
-	Description: "Uma pausa muito necessária. Aproveitamos um momento para nos reorientar antes de seguirmos de volta ao desconhecido.",
-	PlainText: "O avanço do tempo poupou sua tropa de novos desafios."
+	Description: "Uma pausa muito necessaria. Aproveitamos um momento para nos reorientar antes de seguirmos de volta ao desconhecido.",
+	PlainText: "O avanco do tempo poupou sua tropa de novos desafios."
 }
 {
 	Mod: "ENRAGED_FOES",
@@ -206,8 +206,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Inimigos Enfurecidos",
-	Description: "Você deixou uma pilha de cadáveres em seu rastro, enfurecendo seus inimigos.",
-	PlainText: "Unidades inimigas ganham 100% de Chance de Crítico no primeiro turno do combate."
+	Description: "Voce deixou uma pilha de cadaveres em seu rastro, enfurecendo seus inimigos.",
+	PlainText: "Unidades inimigas ganham 100% de Chance de Critico no primeiro turno do combate."
 }
 {
 	Mod: "EXHAUSTION",
@@ -217,8 +217,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Exhaustion",
-	Description: "Sua tropa está cansada, mas vocês precisam seguir em frente mesmo assim.",
-	PlainText: "Reduza as cargas de habilidade disponíveis em 1."
+	Description: "Sua tropa esta cansada, mas voces precisam seguir em frente mesmo assim.",
+	PlainText: "Reduza as cargas de habilidade disponiveis em 1."
 }
 {
 	Mod: "TIRED_EYES",
@@ -228,8 +228,8 @@
 	MinTier: 1,
 	Weight: 1,
 	Name: "Olhos Cansados",
-	Description: "Sua tropa fica cada vez mais exausta e lenta conforme a jornada cobra seu preço.",
-	PlainText: "Suas unidades não podem mais Esquivar ou realizar Ataques de Oportunidade."
+	Description: "Sua tropa fica cada vez mais exausta e lenta conforme a jornada cobra seu preco.",
+	PlainText: "Suas unidades nao podem mais Esquivar ou realizar Ataques de Oportunidade."
 }
 {
 	Mod: "MORALE_LOSS",
@@ -239,7 +239,7 @@
 	MinTier: 2,
 	Weight: 0,
 	Name: "Perda de Moral",
-	Description: "Conforme o tempo avança, seu grupo exausto começa a perder a esperança. Eles não vão aguentar muito mais isso.",
+	Description: "Conforme o tempo avanca, seu grupo exausto comeca a perder a esperanca. Eles nao vao aguentar muito mais isso.",
 	PlainText: "Todos perdem 15 de Moral",
 	Value: 15,
 }
@@ -251,7 +251,7 @@
 	MinTier: 0,
 	Weight: 0,
 	Name: "Fogo Alastrante",
-	Description: "Um incêndio ameaça destruir a estrutura inteira. Temos que sair o quanto antes!",
-	PlainText: "Para cada ação sua na masmorra, seu grupo perde 10 de Vida. As batalhas terão perigos de fogo espalhados pelo cenário. Se qualquer unidade ficar sem Vida fora do combate, você será forçado a abandonar o saque e deixar a masmorra imediatamente.",
+	Description: "Um incendio ameaca destruir a estrutura inteira. Temos que sair o quanto antes!",
+	PlainText: "Para cada acao sua na masmorra, seu grupo perde 10 de Vida. As batalhas terao perigos de fogo espalhados pelo cenario. Se qualquer unidade ficar sem Vida fora do combate, voce sera forcado a abandonar o saque e deixar a masmorra imediatamente.",
 	Value: 10,
 }

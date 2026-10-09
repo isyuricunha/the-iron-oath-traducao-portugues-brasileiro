@@ -6,8 +6,8 @@
 	Cost: "25",
 }
 {
-	Name: "Barco Rápido",
-	Description: "Este barco é bem rápido, mas custa um pouco mais caro.",
+	Name: "Barco Rapido",
+	Description: "Este barco e bem rapido, mas custa um pouco mais caro.",
 	Speed: "1.7",
 	Defenses: "0.5",
 	Cost: "80",

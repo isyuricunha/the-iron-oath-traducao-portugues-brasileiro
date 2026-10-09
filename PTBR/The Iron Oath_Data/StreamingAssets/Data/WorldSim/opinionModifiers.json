@@ -31,13 +31,13 @@
 	TraitsToAdjust: [],
 }
 {	
-	Name: "Opinião Diplomática",
+	Name: "Opiniao Diplomatica",
     Description: "",
 	Duration: "1",
     Value: "5",
 }
 {	
-	Name: "Opinião de Governança",
+	Name: "Opiniao de Governanca",
     Description: "",
 	Duration: "1",
     Value: "5",
@@ -48,7 +48,7 @@
     Value: "20",
 }
 {	
-	Name: "Reservas de Comida Médias",
+	Name: "Reservas de Comida Medias",
     Description: "",
     Value: "10",
 }
@@ -68,7 +68,7 @@
     Value: "20",
 }
 {	
-	Name: "Reservas Médias de Madeira",
+	Name: "Reservas Medias de Madeira",
     Description: "",
     Value: "10",
 }
@@ -83,7 +83,7 @@
     Value: "20",
 }
 {	
-	Name: "Reservas Médias de Ferro",
+	Name: "Reservas Medias de Ferro",
     Description: "",
     Value: "10",
 }
@@ -98,7 +98,7 @@
     Value: "20",
 }
 {	
-	Name: "Reservas Médias de Pedra",
+	Name: "Reservas Medias de Pedra",
     Description: "",
     Value: "10",
 }
@@ -108,18 +108,18 @@
     Value: "-20",
 }
 {	
-	Name: "Economia Estável",
+	Name: "Economia Estavel",
     Description: "",
     Value: "20",
 }
 {	
-	Name: "Mesma Fé",
+	Name: "Mesma Fe",
     Description: "",
     Value: "15",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Fé Diferente",
+	Name: "Fe Diferente",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
@@ -183,13 +183,13 @@
 	TraitsToAdjust: ["Merciful:5","Harsh:-5"],
 }
 {
-	Name: "Ladrão Conhecido",
+	Name: "Ladrao Conhecido",
     Description: "",
     Value: "-10",
 	Duration: "10",
 }
 {
-	Name: "Ladrão Frustrado",
+	Name: "Ladrao Frustrado",
     Description: "",
     Value: "-10",
 	Duration: "5",
@@ -227,7 +227,7 @@
 	TraitsToAdjust: ["Greedy:5"],
 }
 {	
-	Name: "Tributos do Vassalo: Médios",
+	Name: "Tributos do Vassalo: Medios",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Greedy:-5"],
@@ -245,7 +245,7 @@
 	TraitsToAdjust: ["Pacifist:5"],
 }
 {	
-	Name: "Levas do Vassalo: Médias",
+	Name: "Levas do Vassalo: Medias",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
@@ -257,54 +257,54 @@
 	TraitsToAdjust: ["Militant:5","Pacifist:-5"],
 }
 {	
-	Name: "A Religião Oficial É a Minha",
+	Name: "A Religiao Oficial E a Minha",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "A Religião Oficial Não É a Minha",
+	Name: "A Religiao Oficial Nao E a Minha",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Minha Religião É Imposta",
+	Name: "Minha Religiao E Imposta",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
 }
 {	
-	Name: "Minha Religião Não É Imposta",
+	Name: "Minha Religiao Nao E Imposta",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Outra Religião É Imposta",
+	Name: "Outra Religiao E Imposta",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Embargo Arruinando Meu Comércio",
+	Name: "Embargo Arruinando Meu Comercio",
     Description: "",
     Value: "-20",
 }
 {	
-	Name: "Lei de Sucessão: Eletiva",
+	Name: "Lei de Sucessao: Eletiva",
     Description: "",
     Value: "20",
 	TraitsToAdjust: ["Ambitious:5"],
 }
 {	
-	Name: "Lei de Sucessão: Nomeada",
+	Name: "Lei de Sucessao: Nomeada",
     Description: "",
     Value: "-10",
 	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
 }
 {	
-	Name: "Lei de Sucessão: Dinástica",
+	Name: "Lei de Sucessao: Dinastica",
     Description: "",
     Value: "-20",
 	TraitsToAdjust: ["Ambitious:-5", "Content:5"],
@@ -327,7 +327,7 @@
     Value: "20",
 }
 {	
-	Name: "Impostos Civis: Médios",
+	Name: "Impostos Civis: Medios",
     Description: "",
     Value: "0",
 }
@@ -342,7 +342,7 @@
     Value: "20",
 }
 {	
-	Name: "Levas Pessoais: Médias",
+	Name: "Levas Pessoais: Medias",
     Description: "",
     Value: "0",
 }
@@ -368,7 +368,7 @@
     Value: "-10",
 }
 {	
-	Name: "Governante Anterior Foi Mártir",
+	Name: "Governante Anterior Foi Martir",
     Description: "",
     Value: "-20",
 }
@@ -396,7 +396,7 @@
 	TraitsToAdjust: ["Pacifist:-5", "Militant:5"],
 }
 {	
-	Name: "Resolução Pacífica",
+	Name: "Resolucao Pacifica",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Pacifist:5"],
@@ -408,18 +408,18 @@
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Veio em Meu Auxílio",
+	Name: "Veio em Meu Auxilio",
     Description: "",
     Value: "10",
 }
 {	
-	Name: "Rompou Nossa Aliança",
+	Name: "Rompou Nossa Alianca",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Suserano da Aliança",
+	Name: "Suserano da Alianca",
     Description: "",
     Value: "-15",
 	TraitsToAdjust: ["Honorable:5", "Merciful:5", "Harsh:-5"],
@@ -437,7 +437,7 @@
 	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
 }
 {	
-	Name: "Laços de Casamento",
+	Name: "Lacos de Casamento",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Optimist:5", "Skeptic:-5"],
@@ -481,7 +481,7 @@
     Value: "-15",
 }
 {	
-	Name: "Ameaça ao Meu Reino",
+	Name: "Ameaca ao Meu Reino",
     Description: "",
     Value: "-15",
 	TraitsToAdjust: ["SelfPreserving:-5", "Ambitious:-5", "Content:5"],

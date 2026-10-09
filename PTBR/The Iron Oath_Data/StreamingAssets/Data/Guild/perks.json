@@ -51,7 +51,7 @@
   valueC: "",
   label: "Recovery",
   cost: "1",
-  description: "Recupera-se de Fadiga e Ferimentos 10% mais rápido.",
+  description: "Recupera-se de Fadiga e Ferimentos 10% mais rapido.",
   category: "General",
 }
 {
@@ -65,7 +65,7 @@
   valueC: "",
   label: "Recovery",
   cost: "1",
-  description: "Recupera-se de Fadiga e Ferimentos 20% mais rápido.",
+  description: "Recupera-se de Fadiga e Ferimentos 20% mais rapido.",
   category: "General",
 }
 {
@@ -79,7 +79,7 @@
   valueC: "",
   label: "Recovery",
   cost: "1",
-  description: "Recupera-se de Fadiga e Ferimentos 30% mais rápido.",
+  description: "Recupera-se de Fadiga e Ferimentos 30% mais rapido.",
   category: "General",
 }
 {
@@ -135,7 +135,7 @@
   valueC: "",
   label: "Bookkeeping",
   cost: "1",
-  description: "Reduza os custos salariais dos seus mercenários em 10%.",
+  description: "Reduza os custos salariais dos seus mercenarios em 10%.",
   category: "General",
 }
 {
@@ -149,7 +149,7 @@
   valueC: "",
   label: "Bookkeeping",
   cost: "1",
-  description: "Reduza os custos salariais dos seus mercenários em 15%.",
+  description: "Reduza os custos salariais dos seus mercenarios em 15%.",
   category: "General",
 }
 {
@@ -163,7 +163,7 @@
   valueC: "",
   label: "Bookkeeping",
   cost: "1",
-  description: "Reduza os custos salariais dos seus mercenários em 25%.",
+  description: "Reduza os custos salariais dos seus mercenarios em 25%.",
   category: "General",
 }
 {
@@ -245,9 +245,9 @@
   valueA: "1.10",
   valueB: "",
   valueC: "",
-  label: "Espírito de Equipe",
+  label: "Espirito de Equipe",
   cost: "1",
-  description: "Aumenta a velocidade com que Lealdade é ganha com a companhia em 10%.",
+  description: "Aumenta a velocidade com que Lealdade e ganha com a companhia em 10%.",
   category: "General",
 }
 {
@@ -259,9 +259,9 @@
   valueA: "1.20",
   valueB: "1.20",
   valueC: "",
-  label: "Espírito de Equipe",
+  label: "Espirito de Equipe",
   cost: "1",
-  description: "Aumenta a velocidade com que Lealdade com a companhia e Afinidade entre personagens são ganhas em 20%.",
+  description: "Aumenta a velocidade com que Lealdade com a companhia e Afinidade entre personagens sao ganhas em 20%.",
   category: "General",
 }
 {
@@ -273,7 +273,7 @@
   valueA: "1.25",
   valueB: "1.25",
   valueC: "1.25",
-  label: "Espírito de Equipe",
+  label: "Espirito de Equipe",
   cost: "1",
   description: "Aumenta a velocidade com que personagens ganham Afinidade, Moral e Lealdade em 25%.",
   category: "General",
@@ -289,7 +289,7 @@
   valueC: "",
   label: "Recruiting",
   cost: "1",
-  description: "Novos recrutas começam com +5 de Lealdade.",
+  description: "Novos recrutas comecam com +5 de Lealdade.",
   category: "General",
 }
 {
@@ -303,7 +303,7 @@
   valueC: "",
   label: "Recruiting",
   cost: "1",
-  description: "Novos recrutas começam com +10 de Lealdade.",
+  description: "Novos recrutas comecam com +10 de Lealdade.",
   category: "General",
 }
 {
@@ -317,7 +317,7 @@
   valueC: "",
   label: "Recruiting",
   cost: "1",
-  description: "Novos recrutas começam com +20 de Lealdade.",
+  description: "Novos recrutas comecam com +20 de Lealdade.",
   category: "General",
 }
 {
@@ -421,7 +421,7 @@
   valueC: "",
   label: "Treinamento de Cavalos",
   cost: "1",
-  description: "Velocidade de deslocamento aumentada no mapa-múndi em 25%.",
+  description: "Velocidade de deslocamento aumentada no mapa-mundi em 25%.",
   category: "General",
 }
 {
@@ -435,7 +435,7 @@
   valueC: "",
   label: "Treinamento de Cavalos",
   cost: "1",
-  description: "Velocidade de viagem aumentada no mapa-múndi em 50%.",
+  description: "Velocidade de viagem aumentada no mapa-mundi em 50%.",
   category: "General",
 }
 {
@@ -449,7 +449,7 @@
   valueC: "",
   label: "Outriders",
   cost: "1",
-  description: "10% de chance de receber aviso prévio de encontros em potencial no mapa-múndi.",
+  description: "10% de chance de receber aviso previo de encontros em potencial no mapa-mundi.",
   category: "General",
   active: "false",
 }
@@ -464,7 +464,7 @@
   valueC: "",
   label: "Outriders",
   cost: "1",
-  description: "25% de chance de receber aviso prévio de encontros em potencial no mapa-múndi.",
+  description: "25% de chance de receber aviso previo de encontros em potencial no mapa-mundi.",
   category: "General",
   active: "false",
 }
@@ -479,7 +479,7 @@
   valueC: "",
   label: "Outriders",
   cost: "1",
-  description: "50% de chance de receber aviso prévio de encontros em potencial no mapa-múndi.",
+  description: "50% de chance de receber aviso previo de encontros em potencial no mapa-mundi.",
   category: "General",
   active: "false",
 }
@@ -494,7 +494,7 @@
   valueC: "",
   label: "Tamanho da Mochila",
   cost: "1",
-  description: "Capacidade de provisões em missões aumentada em 2.",
+  description: "Capacidade de provisoes em missoes aumentada em 2.",
   category: "Expeditions",
 }
 {
@@ -508,7 +508,7 @@
   valueC: "",
   label: "Tamanho da Mochila",
   cost: "1",
-  description: "Capacidade de provisões em missões aumentada em 3.",
+  description: "Capacidade de provisoes em missoes aumentada em 3.",
   category: "Expeditions",
 }
 {
@@ -522,7 +522,7 @@
   valueC: "",
   label: "Tamanho da Mochila",
   cost: "1",
-  description: "A capacidade de provisões para missões aumenta em 4.",
+  description: "A capacidade de provisoes para missoes aumenta em 4.",
   category: "Expeditions",
 }
 {
@@ -536,7 +536,7 @@
   valueC: "",
   label: "Warehouse",
   cost: "1",
-  description: "Seu mercador agora oferece uma seleção um pouco maior de provisões.",
+  description: "Seu mercador agora oferece uma selecao um pouco maior de provisoes.",
   category: "Expeditions",
   active: "false",
 }
@@ -551,7 +551,7 @@
   valueC: "",
   label: "Warehouse",
   cost: "1",
-  description: "Seu mercador agora oferece uma seleção ainda maior de provisões.",
+  description: "Seu mercador agora oferece uma selecao ainda maior de provisoes.",
   category: "Expeditions",
   active: "false",
 }
@@ -566,7 +566,7 @@
   valueC: "",
   label: "Warehouse",
   cost: "1",
-  description: "Seu mercador agora oferece uma seleção enorme de provisões.",
+  description: "Seu mercador agora oferece uma selecao enorme de provisoes.",
   category: "Expeditions",
   active: "false",
 }
@@ -581,7 +581,7 @@
   valueC: "",
   label: "Linhas de Suprimento",
   cost: "1",
-  description: "Seu mercador agora pode fornecer poções médias de vida e moral. Estimulantes agora estão à venda.",
+  description: "Seu mercador agora pode fornecer pocoes medias de vida e moral. Estimulantes agora estao a venda.",
   category: "Expeditions",
 }
 {
@@ -595,7 +595,7 @@
   valueC: "",
   label: "Linhas de Suprimento",
   cost: "1",
-  description: "Seu mercador agora pode fornecer poções grandes de vida e moral. O Elixir de Aceleração agora está à venda.",
+  description: "Seu mercador agora pode fornecer pocoes grandes de vida e moral. O Elixir de Aceleracao agora esta a venda.",
   category: "Expeditions",
 }
 {
@@ -609,7 +609,7 @@
   valueC: "",
   label: "Linhas de Suprimento",
   cost: "1",
-  description: "Seu mercador agora pode fornecer os melhores elixires, poções de vida e moral.",
+  description: "Seu mercador agora pode fornecer os melhores elixires, pocoes de vida e moral.",
   category: "Expeditions",
 }
 {
@@ -623,7 +623,7 @@
   valueC: "",
   label: "Discount",
   cost: "1",
-  description: "Receba 10% de desconto em provisões compradas do seu mercador.",
+  description: "Receba 10% de desconto em provisoes compradas do seu mercador.",
   category: "Expeditions",
 }
 {
@@ -637,7 +637,7 @@
   valueC: "",
   label: "Discount",
   cost: "1",
-  description: "Receba 20% de desconto em provisões compradas do seu mercador.",
+  description: "Receba 20% de desconto em provisoes compradas do seu mercador.",
   category: "Expeditions",
 }
 {
@@ -651,7 +651,7 @@
   valueC: "",
   label: "Discount",
   cost: "1",
-  description: "Receba 35% de desconto em provisões compradas do seu mercador.",
+  description: "Receba 35% de desconto em provisoes compradas do seu mercador.",
   category: "Expeditions",
 }
 {
@@ -665,7 +665,7 @@
   valueC: "",
   label: "Reimbursement",
   cost: "1",
-  description: "Receba um reembolso de 100% em provisões não utilizadas compradas do seu mercador.",
+  description: "Receba um reembolso de 100% em provisoes nao utilizadas compradas do seu mercador.",
   category: "Expeditions",
 }
 {
@@ -677,9 +677,9 @@
   valueA: "0.5",
   valueB: "",
   valueC: "",
-  label: "Fortificação do Acampamento",
+  label: "Fortificacao do Acampamento",
   cost: "1",
-  description: "Reduz em 50% a chance de interrupção ao acampar.",
+  description: "Reduz em 50% a chance de interrupcao ao acampar.",
   category: "Expeditions",
 }
 {
@@ -691,9 +691,9 @@
   valueA: "",
   valueB: "",
   valueC: "",
-  label: "Estabilização de Ferimentos",
+  label: "Estabilizacao de Ferimentos",
   cost: "1",
-  description: "Após acampar, personagens que não estiverem de vigia terão seus ferimentos estabilizados.",
+  description: "Apos acampar, personagens que nao estiverem de vigia terao seus ferimentos estabilizados.",
   category: "Expeditions",
   active: "false",
 }
@@ -706,9 +706,9 @@
   valueA: "",
   valueB: "",
   valueC: "",
-  label: "Estabilização de Ferimentos",
+  label: "Estabilizacao de Ferimentos",
   cost: "1",
-  description: "Após acampar, todos os personagens com ferimentos serão estabilizados.",
+  description: "Apos acampar, todos os personagens com ferimentos serao estabilizados.",
   category: "Expeditions",
   active: "false",
 }
@@ -723,7 +723,7 @@
   valueC: "",
   label: "Acampamento Estendido",
   cost: "1",
-  description: "Eventos de masmorra fortificados concedem +4 pontos de Incenso ao acampar (+2 em masmorras curtas) e não têm custo de tempo para usar provisões.",
+  description: "Eventos de masmorra fortificados concedem +4 pontos de Incenso ao acampar (+2 em masmorras curtas) e nao tem custo de tempo para usar provisoes.",
   category: "Expeditions",
 }
 {
@@ -735,9 +735,9 @@
   valueA: "",
   valueB: "",
   valueC: "",
-  label: "Inteligência de Combate",
+  label: "Inteligencia de Combate",
   cost: "1",
-  description: "Faça algo.",
+  description: "Faca algo.",
   category: "Expeditions",
   active: "false",
 }
@@ -750,9 +750,9 @@
   valueA: "1",
   valueB: "",
   valueC: "",
-  label: "Distância de Exploração",
+  label: "Distancia de Exploracao",
   cost: "1",
-  description: "A distância máxima de Exploração aumenta de 1 para 2 tiles.",
+  description: "A distancia maxima de Exploracao aumenta de 1 para 2 tiles.",
   category: "Expeditions",
 }
 {
@@ -764,9 +764,9 @@
   valueA: "2",
   valueB: "",
   valueC: "",
-  label: "Distância de Exploração",
+  label: "Distancia de Exploracao",
   cost: "1",
-  description: "A distância máxima de Exploração aumenta de 2 para 3 tiles.",
+  description: "A distancia maxima de Exploracao aumenta de 2 para 3 tiles.",
   category: "Expeditions",
 }
 {
@@ -778,9 +778,9 @@
   valueA: "10",
   valueB: "",
   valueC: "",
-  label: "Precisão de Reconhecimento",
+  label: "Precisao de Reconhecimento",
   cost: "1",
-  description: "Percepção aprimorada durante o reconhecimento, aumentando a chance de detectar perigos e segredos em 10%.",
+  description: "Percepcao aprimorada durante o reconhecimento, aumentando a chance de detectar perigos e segredos em 10%.",
   category: "Expeditions",
   active: "false",
 }
@@ -793,9 +793,9 @@
   valueA: "25",
   valueB: "",
   valueC: "",
-  label: "Precisão de Reconhecimento",
+  label: "Precisao de Reconhecimento",
   cost: "1",
-  description: "Percepção muito aprimorada durante o reconhecimento, aumentando ainda mais a chance de detectar perigos e segredos em 25%.",
+  description: "Percepcao muito aprimorada durante o reconhecimento, aumentando ainda mais a chance de detectar perigos e segredos em 25%.",
   category: "Expeditions",
   active: "false",
 }
@@ -808,7 +808,7 @@
   valueA: "20",
   valueB: "",
   valueC: "",
-  label: "Táticas de Emboscada",
+  label: "Taticas de Emboscada",
   cost: "1",
   description: "Aumenta sua chance de emboscada em locais de combate reconhecidos ou revelados, de 10% para 20%.",
   category: "Expeditions",
@@ -822,7 +822,7 @@
   valueA: "30",
   valueB: "",
   valueC: "",
-  label: "Táticas de Emboscada",
+  label: "Taticas de Emboscada",
   cost: "1",
   description: "Aumenta sua chance de emboscada em locais de combate reconhecidos ou revelados, de 20% para 30%.",
   category: "Expeditions",
@@ -836,9 +836,9 @@
   valueA: "5",
   valueB: "",
   valueC: "",
-  label: "Prevenção de Emboscada",
+  label: "Prevencao de Emboscada",
   cost: "1",
-  description: "Reduz a chance de ser emboscado ao entrar às cegas em um local de combate, de 20% para 10%.",
+  description: "Reduz a chance de ser emboscado ao entrar as cegas em um local de combate, de 20% para 10%.",
   category: "Expeditions",
 }
 {
@@ -850,7 +850,7 @@
   valueA: "10",
   valueB: "",
   valueC: "",
-  label: "Prevenção de Emboscada",
+  label: "Prevencao de Emboscada",
   cost: "1",
   description: "Reduz a penalidade por ser emboscado no primeiro turno, diminuindo o dano recebido extra de 15% para 10%.",
   category: "Expeditions",
@@ -864,7 +864,7 @@
   valueA: "20",
   valueB: "",
   valueC: "",
-  label: "Cavalo de Tração",
+  label: "Cavalo de Tracao",
   cost: "1",
   description: "Aumenta a capacidade de carga da Companhia em 20.",
   category: "General",
@@ -936,7 +936,7 @@
   valueC: "",
   label: "Retraining",
   cost: "1",
-  description: "Reduz os custos de treinar uma nova profissão e de reembolsar pontos de Atributo e Habilidade em 30%.",
+  description: "Reduz os custos de treinar uma nova profissao e de reembolsar pontos de Atributo e Habilidade em 30%.",
   category: "General",
 }
 {
@@ -950,7 +950,7 @@
   valueC: "",
   label: "Treinamento de Guarda",
   cost: "1",
-  description: "Aumenta Defesa e Evasão em 5 ao Guardar",
+  description: "Aumenta Defesa e Evasao em 5 ao Guardar",
   category: "Training",
 }
 {
@@ -964,7 +964,7 @@
   valueC: "",
   label: "Treinamento de Foco",
   cost: "1",
-  description: "Sempre que errar um ataque básico, até acertar um, você tem +20 de chance de acerto",
+  description: "Sempre que errar um ataque basico, ate acertar um, voce tem +20 de chance de acerto",
   category: "Training",
 }
 {
@@ -976,9 +976,9 @@
   valueA: "25",
   valueB: "0",
   valueC: "",
-  label: "Treinamento Atlético",
+  label: "Treinamento Atletico",
   cost: "1",
-  description: "Aumenta Evasão em 25 contra qualquer Ataque de Oportunidade",
+  description: "Aumenta Evasao em 25 contra qualquer Ataque de Oportunidade",
   category: "Training",
 }
 {
@@ -992,7 +992,7 @@
   valueC: "",
   label: "Teamwork",
   cost: "1",
-  description: "Para cada aliado adjacente a um inimigo, sua chance de acerto aumenta em 5% em ataques básicos",
+  description: "Para cada aliado adjacente a um inimigo, sua chance de acerto aumenta em 5% em ataques basicos",
   category: "Training",
 }
 {
@@ -1020,7 +1020,7 @@
   valueC: "",
   label: "Disponibilidade de Mercador",
   cost: "1",
-  description: "Agora você pode levar provisões em encontros pelo mundo. O tamanho da mochila é reduzido em 2 em relação a expedições completas normais.",
+  description: "Agora voce pode levar provisoes em encontros pelo mundo. O tamanho da mochila e reduzido em 2 em relacao a expedicoes completas normais.",
   category: "Expeditions",
 }
 {
@@ -1032,8 +1032,8 @@
   valueA: "",
   valueB: "",
   valueC: "",
-  label: "Treinamento de Ofício",
+  label: "Treinamento de Oficio",
   cost: "1",
-  description: "Agora você pode atribuir ofícios a pessoas de qualquer lugar do mapa-múndi, e não apenas dentro de uma cidade.",
+  description: "Agora voce pode atribuir oficios a pessoas de qualquer lugar do mapa-mundi, e nao apenas dentro de uma cidade.",
   category: "Training",
 }

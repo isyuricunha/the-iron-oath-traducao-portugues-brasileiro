@@ -36,7 +36,7 @@
 {
 	Type: "UncoverShrines",
 	Value: "0",
-	Description: "Revela a localização de todos os Santuários",
+	Description: "Revela a localizacao de todos os Santuarios",
 }
 {
 	Type: "RandomlyRestoreAbilityChargesLarge",
@@ -56,12 +56,12 @@
 {
 	Type: "GainHealthPerCombatCleared",
 	Value: "0.15",
-	Description: "Restaura 15% de Vida por batalha concluída.",
+	Description: "Restaura 15% de Vida por batalha concluida.",
 }
 {
 	Type: "Random1Stamina",
 	Value: "1",
-	Description: "Recupera 1 carga de habilidade por batalha concluída.",
+	Description: "Recupera 1 carga de habilidade por batalha concluida.",
 }
 {
 	Type: "Random1StaminaPerCombat",
@@ -86,32 +86,32 @@
 {
 	Type: "BonusXpForRestOfDungeon",
 	Value: "2",
-	Description: "Ganha o dobro de XP pelo restante da missão.",
+	Description: "Ganha o dobro de XP pelo restante da missao.",
 }
 {
 	Type: "BonusGoldForRestOfDungeon",
 	Value: "1.5",
-	Description: "Ganha 50% mais moedas pelo restante da missão.",
+	Description: "Ganha 50% mais moedas pelo restante da missao.",
 }
 {
 	Type: "StabilizeInjuries",
 	Value: "99",
-	Description: "Todos os ferimentos são estabilizados.",
+	Description: "Todos os ferimentos sao estabilizados.",
 }
 {
 	Type: "NextEncounterHpReduced75Percent",
 	Value: "0.75",
-	Description: "A Vida dos inimigos que não são chefes é reduzida para 75% no próximo combate.",
+	Description: "A Vida dos inimigos que nao sao chefes e reduzida para 75% no proximo combate.",
 }
 {
 	Type: "Lose25PercentOfMaxHp",
 	Value: "0.25",
-	Description: "Perde 25% da Vida máxima.",
+	Description: "Perde 25% da Vida maxima.",
 }
 {
 	Type: "ReduceCampEventsChance",
 	Value: "0.25",
-	Description: "Chance de interrupção ao acampar reduzida.",
+	Description: "Chance de interrupcao ao acampar reduzida.",
 }
 {
 	Type: "DivideSpiritUpEvenly",
@@ -122,7 +122,7 @@
 	Type: "RestoreHpForSpiritLost",
 	Value: "25",
 	Value2: "10",
-	Description: "Perde até 25 de Moral e restaura 10 de Vida por ponto de Moral perdido.",
+	Description: "Perde ate 25 de Moral e restaura 10 de Vida por ponto de Moral perdido.",
 }
 {
 	Type: "MediumSpiritLoss",
@@ -132,7 +132,7 @@
 {
 	Type: "AdvanceTimeToNextModifier",
 	Value: "1",
-	Description: "Avança o Tempo e ativa o próximo Modificador de Masmorra.",
+	Description: "Avanca o Tempo e ativa o proximo Modificador de Masmorra.",
 }
 {
 	Type: "LargeHealthAndMoraleRecovery",
@@ -153,5 +153,5 @@
 {
 	Type: "HpSetToLowPercentOfMaxHp",
 	Value: "0.1",
-	Description: "Vida reduzida a 10% do Máximo",
+	Description: "Vida reduzida a 10% do Maximo",
 }
