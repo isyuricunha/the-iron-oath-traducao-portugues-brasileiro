@@ -13,3 +13,6 @@ __pycache__/
 
 # Local tooling (never committed)
 /tools/
+# Unity blob data (900 MB class, stays out of git)
+*.resS
+*.resource
