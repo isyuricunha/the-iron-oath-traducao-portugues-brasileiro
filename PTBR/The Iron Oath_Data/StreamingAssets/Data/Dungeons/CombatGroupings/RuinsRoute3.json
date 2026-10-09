@@ -1,15 +1,15 @@
 {
 	Name: "RuinsRoute3",
-	NameDisplay: "Flagelo",
-	Group: ["Angustiado","Esfolador","Sedutora","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
-	ScoutingReport: ["Demônios:Demônio","Mortos-Vivos:Morto-Vivo","Charions:Charion","Nullbeasts:Nullbeast"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	NameDisplay: "Scourge",
+	Group: ["Anguished","Flayer","Seductress","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
+	ScoutingReport: ["Demons:Demon","Undead:Undead","Charions:Charion","Nullbeast:Nullbeast"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
 	Name: "RuinsRoute3",
-	NameDisplay: "Flagelo",
-	Group: ["RisenScourge","Cavaleiro do Pavor","Atormentado","Esfolador","Sedutora","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
+	NameDisplay: "Scourge",
+	Group: ["RisenScourge","Dreadknight","Anguished","Flayer","Seductress","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher","RisenGhoul","MatureCharion","CorruptedCharion","NullbeastDisrupter","CorruptedNullbeast"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

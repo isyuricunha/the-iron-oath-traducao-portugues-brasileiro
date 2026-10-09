@@ -1,14 +1,14 @@
 {
-	Name: "Corrompidos",
-	NameDisplay: "Corrompidos",
+	Name: "Blighted",
+	NameDisplay: "Blighted",
 	Group: ["BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch","DiseasedNullbeast"],
-	ScoutingReport: ["Corrompidos:Blighted","Nullbeasts:Nullbeast"],
-	Loot: ["Armadura,leve","Armadura,média","Encantamento,qualquer"],
+	ScoutingReport: ["Blighted:Blighted","Nullbeasts:Nullbeast"],
+	Loot: ["Armor,light","Armor,medium","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Corrompidos",
-	NameDisplay: "Corrompidos",
+	Name: "Blighted",
+	NameDisplay: "Blighted",
 	Group: ["BlightedOverlord","BlightedHulk","BlightedCleaver","BlightedWretch","CorruptedWretch","HardenedWretch"],
 	Weight: 1,
 	IsBossEncounter: true,

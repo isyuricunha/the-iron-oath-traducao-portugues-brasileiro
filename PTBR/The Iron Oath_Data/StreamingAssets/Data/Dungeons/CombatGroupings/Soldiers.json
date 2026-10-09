@@ -1,13 +1,13 @@
 {
-	Name: "Soldados",
-	Group: ["HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Sabujo de Sangue"],
-	ScoutingReport: ["Soldados:Casa","Warhound:Warhound","Sabujo de Sangue:Sabujo de Sangue"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	Name: "Soldiers",
+	Group: ["HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Bloodhound"],
+	ScoutingReport: ["Soldiers:House","Warhound:Warhound","Bloodhound:Bloodhound"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Soldados",
-	Group: ["HouseCommander","HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Sabujo de Sangue"],
+	Name: "Soldiers",
+	Group: ["HouseCommander","HouseKnight","HedgeKnight","HouseBannerman","HouseHornblower","HouseSkirmisher","HousePikeman","HouseScout","HouseGrenadier","Warhound","Bloodhound"],
 	IsBossEncounter: true,
 	Weight: 1,
 }

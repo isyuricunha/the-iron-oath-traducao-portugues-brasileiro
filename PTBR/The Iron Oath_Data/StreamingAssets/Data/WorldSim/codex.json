@@ -1,5 +1,5 @@
 {
-	Name: "Mestre dos Espiões",
+	Name: "Spymaster",
 	Description: "Alguém responsável por todos os assuntos de intriga, subterfúgio e segredos. Geralmente trabalha para um nobre ou para altos funcionários do governo, mas às vezes é contratado por guildas maiores.",
 }
 {
@@ -7,15 +7,15 @@
 	Description: "O mundo conhecido, formado por cinco regiões.",
 }
 {
-	Name: "Vanguarda",
+	Name: "Vanguard",
 	Description: "Uma ordem ancestral encarregada de defender o Reino Mortal contra todos os males não naturais. Foi estabelecida durante a Era das Trevas por Tian, o primeiro Rei do agora dissolvido Reino de Caelum. A Vanguarda possui guarnições por toda Caelum, com sua sede principal no Baluarte do Norte.",
 }
 {
-	Name: "Flagelo",
+	Name: "Scourge",
 	Description: "O Flagelo é um evento global que ocorre a cada poucas décadas, no qual o dragão - acompanhado por hordas demoníacas do Vazio - retorna ao Reino Mortal, atacando cidades e infligindo a Praga sobre seus habitantes.",
 }
 {
-	Name: "Vigias",
+	Name: "Overseers",
 	Description: "Os Vigias são uma organização que monitora as atividades dos magos, caçando qualquer um que se envolva com escolas proibidas de magia. Aqueles que conseguem empunhar magia são uma raridade em Caelum, e as origens dessa afinidade permanecem desconhecidas. Embora a existência da magia remonte à Era das Trevas, seu uso ainda é malvisto por alguns, que sustentam a crença de que a humanidade não deveria manejá-la.",
 }
 {
@@ -27,11 +27,11 @@
 	Description: "Uma Ruptura do Vazio ocorre quando uma fenda se abre entre o Reino Mortal e o Vazio, permitindo que demônios e espíritos transitem livremente entre os dois reinos de existência.",
 }
 {
-	Name: "Vazio",
+	Name: "Void",
 	Description: "Embora o conhecimento sobre o Vazio seja limitado, ele foi descrito como um reino de escuridão infinita que corrompe tudo o que há em seu interior. Abriga muitas criaturas abjetas nascidas dessa corrupção, como espíritos, demônios e o próprio dragão.",
 }
 {
-	Name: "Flagelados",
+	Name: "Blighted",
 	Description: "Outrora humanos, os Flagelados são abominações agressivas e sem mente que não se parecem mais com a pessoa que um dia foram. A transformação é provocada pela Praga do Dragão, infligida sobre os cidadãos durante todo Flagelo.",
 }
 {
@@ -39,11 +39,11 @@
 	Description: "Criaturas do Vazio, como demônios e espíritos, são chamadas de Voidspawn.",
 }
 {
-	Name: "Terras Vermelhas",
+	Name: "Redlands",
 	Description: "A região mais ao sul de Caelum é uma vasta paisagem desértica de clima quente. Seus habitantes, os Tyrosene, afirmam ter vindo de uma terra inteiramente diferente há muitas eras. Embora os Tyrosene não sigam mais as ideias de uma religião tradicional, mantêm profundo respeito por seus Reis antigos, conhecidos como os Divinos.",
 }
 {
-	Name: "Terra do Meio",
+	Name: "Midland",
 	Description: "Com seu clima ameno e planícies verdejantes, é geralmente considerada a região mais agradável de se habitar. Midland é o berço da Fé Ascendida e o lar de seu influente líder religioso, o Arquipadre. A Capital de Midland, Solace, já foi a Capital do Reino de Caelum, antes de a Praga Vermelha e as guerras subsequentes provocarem sua dissolução.",
 }
 {
@@ -95,11 +95,11 @@
 	Description: "Vismyr, o Tudo-Criador, é um deus nurren no qual eles creem ser o criador de tudo. Impressionado com a força e a coragem de um antigo chefe nurren chamado Hyldr, Vismyr criou o plano de Hvillholl para que ele e outros grandes guerreiros nurren ali residissem após a morte. Por causa disso, a morte não é temida na cultura nurren; em vez disso, é vista como um grande privilégio.",
 }
 {
-	Name: "Tudo-Criador",
+	Name: "Allmaker",
 	Description: "Vismyr, o Tudo-Criador, é um deus nurren no qual eles creem ser o criador de tudo. Impressionado com a força e a coragem de um antigo chefe nurren chamado Hyldr, Vismyr criou o plano de Hvillholl para que ele e outros grandes guerreiros nurren ali residissem após a morte. Por causa disso, a morte não é temida na cultura nurren; em vez disso, é vista como um grande privilégio.",
 }
 {
-	Name: "Divinos",
+	Name: "Divines",
 	Description: "Os Divinos são reis ancestrais que governaram o povo tiroseno. Foram tratados como seres divinos, e seus corpos embalsamados eram visitados por muitos que ofereciam dádivas e sacrifícios em troca de proteção. A maioria dos tirosenos de hoje não acredita nessas coisas, mas mantém profundo respeito pelos Divinos.",
 }
 {
@@ -143,7 +143,7 @@
 	Description: "A Escrita Comum é uma língua escrita utilizada em toda Caelum. Seu desenvolvimento trouxe uma nova era de registros e impulsionou a humanidade para a Era Comum. Embora outra forma de escrita pareça ter existido durante a Era dos Deuses, provavelmente era uma habilidade que poucos possuíam, e todo o seu conhecimento se perdeu na Era Sombria.",
 }
 {
-	Name: "Éter",
+	Name: "Aether",
 	Description: "Segundo a lenda, o Éter é o sangue vital do mundo, que flui entre o Reino Mortal e o Vazio, contendo o combustível de toda criação e destruição. Alguns teorizam que ele seja a fonte do poder de um mago.",
 }
 {
@@ -151,43 +151,43 @@
 	Description: "Lorrec was a famous writer who lived at the end of the Dark Age. With the advent of the Common Script, he was one of the first to adopt it, and put the storied life of Tian into written words for the very first time. The book gained popularity across Midland, and a few decades after Lorrec's death, it became the basis on which the Ascended Faith was founded. His other famous works include 'The Pantheon', and 'The War of Gods'.",
 }
 {
-	Name: "'Mover'",
+	Name: "'Move'",
 	Description: "Em seu turno, um personagem pode se mover para qualquer hexágono dentro do alcance.",
 }
 {
-	Name: "'Movimento'",
+	Name: "'Movement'",
 	Description: "O número máximo de hexágonos que um personagem pode percorrer em seu turno e ainda realizar uma ação em seguida.",
 }
 {
-	Name: "'Correr'",
+	Name: "'Sprint'",
 	Description: "Um personagem pode correr além de seu alcance normal de movimento, ao custo de encerrar seu turno.",
 }
 {
-	Name: "'Trocar'",
+	Name: "'Swap'",
 	Description: "Permite que dois personagens aliados troquem de posição. Não provoca Ataques de Oportunidade.",
 }
 {
-	Name: "'Esperar'",
+	Name: "'Wait'",
 	Description: "Adia o turno de um personagem até o fim da rodada atual.",
 }
 {
-	Name: "'Defender'",
+	Name: "'Guard'",
 	Description: "Uma postura defensiva que aumenta a Defesa e a Evasão e encerra o turno do personagem.",
 }
 {
-	Name: "'Defesa'",
+	Name: "'Defense'",
 	Description: "Reduz o dano recebido em porcentagem.",
 }
 {
-	Name: "'Evasão'",
+	Name: "'Evasion'",
 	Description: "A chance percentual de bloquear ou esquivar de um ataque recebido.",
 }
 {
-	Name: "'Habilidades'",
+	Name: "'Abilities'",
 	Description: "As habilidades únicas de uma classe que possuem uso limitado.",
 }
 {
-	Name: "'Cargas'",
+	Name: "'Charges'",
 	Description: "Quantos usos restam para uma habilidade.",
 }
 {
@@ -195,7 +195,7 @@
 	Description: "Um ataque gratuito que é acionado quando um personagem se afasta de um inimigo adjacente.",
 }
 {
-	Name: "'Atordoamento'",
+	Name: "'Stun'",
 	Description: "Personagens atordoados não conseguem agir de forma alguma e perdem o turno.",
 }
 {
@@ -207,23 +207,23 @@
 	Description: "Uma checagem de visão para determinar quais alvos são válidos. Inimigos parcialmente visíveis sofrerão 50% de dano de ataques.",
 }
 {
-	Name: "Espírito",
+	Name: "'Spirit'",
 	Description: "Representa o ânimo de um personagem em relação à missão atual e influencia o quão fatigado ele ficará depois.",
 }
 {
-	Name: "Fadiga",
+	Name: "'Fatigue'",
 	Description: "Dias até a Saúde, o Espírito e as Cargas de Habilidade de um personagem se recuperarem totalmente.",
 }
 {
-	Name: "Flanqueado",
+	Name: "'Flanked'",
 	Description: "O dano recebido aumenta em 15% quando dois inimigos ocupam hexágonos opostos adjacentes ao alvo.",
 }
 {
-	Name: "Tempo",
+	Name: "'Time'",
 	Description: "Uma medida de quanto tempo passou em uma masmorra, determinada por ações de exploração e combate.",
 }
 {
-	Name: "Explorar",
+	Name: "'Scout'",
 	Description: "A ação Explorar revela quaisquer eventos de exploração nas casas à frente.",
 }
 {
@@ -231,19 +231,19 @@
 	Description: "Uma casa de masmorra que contém um encontro narrativo ou de combate, representada por um ícone único.",
 }
 {
-	Name: "Lealdade",
+	Name: "'Loyalty'",
 	Description: "Uma medida dos sentimentos de um personagem por você e pela companhia como um todo (de 0 a 100). Personagens leais são mais fáceis de agradar e de manter por meio da negociação de contratos.",
 }
 {
-	Name: "Ferramentas",
+	Name: "'Tools'",
 	Description: "Um tipo de provisão que pode ser consumida para aumentar a chance de sucesso de certas ações, como arrombar fechaduras. Ferramentas também podem habilitar ações que custam menos Tempo e que, de outro modo, não estariam disponíveis.",
 }
 {
-	Name: "Provisões",
+	Name: "'Provisions'",
 	Description: "Itens que você pode comprar e levar ao entrar em uma masmorra. Eles também podem ser saqueados de inimigos e eventos ao longo do percurso de uma masmorra.",
 }
 {
-	Name: "Saúde",
+	Name: "'Health'",
 	Description: "A vida de um personagem é determinada por seus atributos de Constituição e Força. Quando o valor cai para 0, ele entra em Sangramento.",
 }
 {
@@ -251,35 +251,35 @@
 	Description: "Vários modificadores que alteram a masmorra atual. Novos modificadores são adicionados sempre que a barra de tempo enche.",
 }
 {
-	Name: "'Acampamento'",
+	Name: "'Camp'",
 	Description: "Descanse em um tile vazio e queime incensos que podem recuperar Vida, Espírito e conceder outros bônus. Acampar só está disponível quando a duração da masmorra é média ou longa.",
 }
 {
-	Name: "'Incensos'",
+	Name: "'Incenses'",
 	Description: "Uma combinação de ingredientes imbuídos de propriedades mágicas, usada durante o acampamento para conceder vários bônus ao seu grupo. Você pode desbloquear mais Incensos por meio das Melhorias da Companhia na árvore de 'Alquimia'.",
 }
 {
-	Name: "'Percepção'",
+	Name: "'Perception'",
 	Description: "Um atributo secundário usado para detectar eventos de exploração, como armadilhas e segredos que, de outra forma, permaneceriam escondidos de você. Personagens com Percepção alta também são mais eficazes que outros quando ficam de vigia durante o acampamento.",
 }
 {
-	Name: "'Traços'",
+	Name: "'Traits'",
 	Description: "Os Traços de Personagem podem ser positivos, negativos ou neutros. Eles modificam uma variedade de coisas, como atributos, funcionalidades de combate e outras estatísticas.",
 }
 {
-	Name: "'Bandagem'",
+	Name: "'Bandage'",
 	Description: "Um item consumível que pode ser usado tanto em combate quanto fora dele para estabilizar ferimentos e recuperar uma pequena fração da Vida.",
 }
 {
-	Name: "'Enfermaria'",
+	Name: "'Infirmary'",
 	Description: "Um edifício encontrado em qualquer centro urbano, no qual personagens podem ser internados para acelerar a recuperação de seus ferimentos.",
 }
 {
-	Name: "'Antídoto'",
+	Name: "'Antidote'",
 	Description: "Um item consumível que pode ser usado em combate para remover quaisquer condições negativas e conceder imunidade temporária.",
 }
 {
-	Name: "'Sangramento'",
+	Name: "'Bleedout'",
 	Description: "Um estado de caído no qual o personagem entra quando sua Vida chega a 0. Não se aplica a inimigos.",
 }
 {
@@ -287,7 +287,7 @@
 	Description: "Durante o Sangramento, o valor de Vida de um personagem é substituído por uma Reserva de Sangramento. Essa reserva persiste por toda a masmorra, e o personagem morrerá se a reserva chegar a 0.",
 }
 {
-	Name: "'Afinidade'",
+	Name: "'Affinity'",
 	Description: "A Afinidade representa o quão forte é o relacionamento entre dois membros da sua companhia (de 0 a 100). Se um grupo formado tiver Afinidade média alta o suficiente, cada personagem receberá um bônus de Espírito para a missão.",
 }
 {
@@ -295,11 +295,11 @@
 	Description: "Melhorias que podem ser compradas com Pontos de Renome para aprimorar diversos aspectos da sua companhia.",
 }
 {
-	Name: "'Renome'",
+	Name: "'Renown'",
 	Description: "Uma medida do seu nível geral de fama no mundo. Acumular Renome lhe renderá Pontos de Renome, que podem ser gastos, por sua vez, em Melhorias da Companhia.",
 }
 {
-	Name: "'Reputação'",
+	Name: "'Reputation'",
 	Description: "Uma medida do seu relacionamento com cada Casa nobre, Cidade e Facção no mundo. Reputação alta oferece diversos benefícios, enquanto reputação baixa pode provocar consequências.",
 }
 {
@@ -307,11 +307,11 @@
 	Description: "Usados para comprar Melhorias da Companhia. Ganhe mais ao completar contratos e acumular Renome.",
 }
 {
-	Name: "'Durabilidade'",
+	Name: "'Durability'",
 	Description: "A Durabilidade indica a condição das suas armas e armaduras. Quando um equipamento chega a 0 de durabilidade, ele se quebra e vira sucata.",
 }
 {
-	Name: "'Sucata'",
+	Name: "'Scrap'",
 	Description: "Sucata é obtida quando um equipamento perde toda a durabilidade e se quebra. Equipamentos com durabilidade maior rendem mais sucata. Ela pode ser vendida no mercado de uma cidade ou guardada para completar Recompensas específicas.",
 }
 {
@@ -327,10 +327,10 @@
 	Description: "Pontos obtidos ao subir de nível, que podem ser gastos para aprimorar ou alterar as habilidades únicas de um personagem.",
 }
 {
-	Name: "'Destreza'",
+	Name: "'Dexterity'",
 	Description: "Um atributo primário que influencia a Precisão, a Chance de Crítico e a Esquiva de um personagem.",
 }
 {
-	Name: "'Sabedoria'",
+	Name: "'Wisdom'",
 	Description: "Um atributo primário que influencia o Dano Crítico e a Percepção de um personagem.",
 }

@@ -4,10 +4,10 @@
   "height": 2048,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "Quest.HouseOnHill", "Tileset": "", "Size": "Médio", "Tags": ""},
+  "values": {"ID": "Quest.HouseOnHill", "Tileset": "", "Size": "Medium", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -17,7 +17,7 @@
       "gridCellsY": 64,
       "entities": [
         {
-          "name": "Início",
+          "name": "Start",
           "id": 0,
           "_eid": "76104019",
           "x": 640,
@@ -27,7 +27,7 @@
           "values": {"ScriptedEventName": ""}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 1,
           "_eid": "76055586",
           "x": 832,
@@ -37,7 +37,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillGhost", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 2,
           "_eid": "76055586",
           "x": 1216,
@@ -47,7 +47,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillBurnCheck", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 4,
           "_eid": "76055586",
           "x": 1344,
@@ -57,7 +57,7 @@
           "values": {"ScriptedEventName": "1", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 6,
           "_eid": "76055586",
           "x": 1280,
@@ -67,7 +67,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillPile2", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 7,
           "_eid": "76055586",
           "x": 896,
@@ -77,7 +77,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillPile1", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 8,
           "_eid": "76055586",
           "x": 1024,
@@ -87,7 +87,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillCaptives", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 9,
           "_eid": "76055586",
           "x": 1088,
@@ -97,7 +97,7 @@
           "values": {"ScriptedEventName": "SE.HouseOnHillVanguard", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 13,
           "_eid": "76055586",
           "x": 1024,
@@ -107,7 +107,7 @@
           "values": {"ScriptedEventName": "2", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 15,
           "_eid": "76055586",
           "x": 1536,
@@ -117,7 +117,7 @@
           "values": {"ScriptedEventName": "0", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 19,
           "_eid": "76055586",
           "x": 896,

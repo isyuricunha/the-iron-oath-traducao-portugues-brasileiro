@@ -9,7 +9,7 @@
 	CriticalChance: ["10"],
 	Speed: ["3"],
 	Move: "4",
-	Resists: ["Cortante"],
+	Resists: ["SLASHING"],
 	Vulnerabilities: [],
 	Immunities: [],
 	ResourceDrop: ["tioScrap"],

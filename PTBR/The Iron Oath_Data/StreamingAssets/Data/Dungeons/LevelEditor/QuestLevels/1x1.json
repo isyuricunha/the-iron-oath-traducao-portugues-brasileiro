@@ -4,10 +4,10 @@
   "height": 1280,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "1x1", "Tileset": "Qualquer", "Size": "Pequeno", "Tags": ""},
+  "values": {"ID": "1x1", "Tileset": "Any", "Size": "Small", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -17,7 +17,7 @@
       "gridCellsY": 40,
       "entities": [
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 0,
           "_eid": "76055586",
           "x": 480,
@@ -27,7 +27,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 1,
           "_eid": "76055586",
           "x": 544,
@@ -37,7 +37,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 2,
           "_eid": "76055586",
           "x": 608,
@@ -47,7 +47,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 3,
           "_eid": "76055586",
           "x": 672,
@@ -57,7 +57,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 4,
           "_eid": "76055586",
           "x": 736,
@@ -67,7 +67,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Início",
+          "name": "Start",
           "id": 5,
           "_eid": "76104019",
           "x": 416,

@@ -1,5 +1,5 @@
 {
-	Name: "Crânio",
+	Name: "Skull",
 	InjuryTier: 0,
 	InjuryLabel: "Crânio Contundido",
 	DaysUntilHealed: "10",
@@ -11,7 +11,7 @@
 	Category: "head"
 }
 {
-	Name: "Crânio",
+	Name: "Skull",
 	InjuryTier: 1,
 	InjuryLabel: "Crânio Fraturado",
 	DaysUntilHealed: "20",
@@ -23,7 +23,7 @@
 	Category: "head"
 }
 {
-	Name: "Crânio",
+	Name: "Skull",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Grave no Crânio",
 	DaysUntilHealed: "40",
@@ -35,7 +35,7 @@
 	Category: "head"
 }
 {
-	Name: "Crânio",
+	Name: "Skull",
 	InjuryTier: 3,
 	InjuryLabel: "Crânio Afundado",
 	DaysUntilHealed: "0",
@@ -43,7 +43,7 @@
 	Description: "Crânio afundado, causando a morte.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "head"
 }
 
@@ -249,7 +249,7 @@
 
 
 {
-	Name: "Nariz",
+	Name: "Nose",
 	InjuryTier: 0,
 	InjuryLabel: "Nariz Contuso",
 	DaysUntilHealed: "5",
@@ -261,7 +261,7 @@
 	Category: "head"
 }
 {
-	Name: "Nariz",
+	Name: "Nose",
 	InjuryTier: 1,
 	InjuryLabel: "Nariz Quebrado",
 	DaysUntilHealed: "30",
@@ -273,7 +273,7 @@
 	Category: "head"
 }
 {
-	Name: "Nariz",
+	Name: "Nose",
 	InjuryTier: 2,
 	InjuryLabel: "Nariz Desfigurado",
 	DaysUntilHealed: "40",
@@ -286,7 +286,7 @@
 }
 
 {
-	Name: "Mandíbula",
+	Name: "Jaw",
 	InjuryTier: 0,
 	InjuryLabel: "Mandíbula Inchada",
 	DaysUntilHealed: "5",
@@ -298,7 +298,7 @@
 	Category: "head"
 }
 {
-	Name: "Mandíbula",
+	Name: "Jaw",
 	InjuryTier: 1,
 	InjuryLabel: "Mandíbula Deslocada",
 	DaysUntilHealed: "20",
@@ -310,7 +310,7 @@
 	Category: "head"
 }
 {
-	Name: "Mandíbula",
+	Name: "Jaw",
 	InjuryTier: 2,
 	InjuryLabel: "Mandíbula Fraturada",
 	DaysUntilHealed: "30",
@@ -324,7 +324,7 @@
 
 
 {
-	Name: "Pescoço",
+	Name: "Neck",
 	InjuryTier: 0,
 	InjuryLabel: "Pescoço Contundido",
 	DaysUntilHealed: "10",
@@ -336,7 +336,7 @@
 	Category: "head"
 }
 {
-	Name: "Pescoço",
+	Name: "Neck",
 	InjuryTier: 1,
 	InjuryLabel: "Trauma Cervical Grave",
 	DaysUntilHealed: "50",
@@ -348,7 +348,7 @@
   Category: "head"
 }
 {
-	Name: "Pescoço",
+	Name: "Neck",
 	InjuryTier: 2,
 	InjuryLabel: "Pescoço Quebrado",
 	DaysUntilHealed: "100",
@@ -360,21 +360,21 @@
 	Category: "head"
 }
 {
-	Name: "Pescoço",
+	Name: "Neck",
 	InjuryTier: 3,
 	InjuryLabel: "Cabeça decepada",
 	DaysUntilHealed: "-1",
 	RequireTreatmentBy: "-1",
-	Description: "Decapitado.",
+	Description: "Decapitated.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "head"
 }
 
 
 {
-	Name: "Concussão",
+	Name: "Concussion",
 	InjuryTier: 0,
 	InjuryLabel: "Concussão Leve",
 	DaysUntilHealed: "20",
@@ -386,7 +386,7 @@
 	Category: "head"
 }
 {
-	Name: "Concussão",
+	Name: "Concussion",
 	InjuryTier: 1,
 	InjuryLabel: "Concussão Grave",
 	DaysUntilHealed: "50",
@@ -398,7 +398,7 @@
 	Category: "head"
 }
 {
-	Name: "Concussão",
+	Name: "Concussion",
 	InjuryTier: 2,
 	InjuryLabel: "Dano Cerebral",
 	DaysUntilHealed: "200",
@@ -410,7 +410,7 @@
 	Category: "head"
 }
 {
-	Name: "Concussão",
+	Name: "Concussion",
 	InjuryTier: 3,
 	InjuryLabel: "Aneurisma Cerebral",
 	DaysUntilHealed: "-1",
@@ -418,13 +418,13 @@
 	Description: "Morte por aneurisma cerebral.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "head"
 }
 
 
 {
-	Name: "Cotovelo",
+	Name: "Elbow",
 	InjuryTier: 0,
 	InjuryLabel: "Cotovelo Contundido",
 	DaysUntilHealed: "5",
@@ -436,7 +436,7 @@
 	Category: "arm"
 }
 {
-	Name: "Cotovelo",
+	Name: "Elbow",
 	InjuryTier: 1,
 	InjuryLabel: "Cotovelo Quebrado",
 	DaysUntilHealed: "30",
@@ -448,7 +448,7 @@
 	Category: "arm"
 }
 {
-	Name: "Cotovelo",
+	Name: "Elbow",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Exposta do Cotovelo",
 	DaysUntilHealed: "45",
@@ -460,7 +460,7 @@
 	Category: "arm"
 }
 {
-	Name: "Cotovelo",
+	Name: "Elbow",
 	InjuryTier: 3,
 	InjuryLabel: "Cotovelo Estilhaçado",
 	DaysUntilHealed: "60",
@@ -475,7 +475,7 @@
 
 
 {
-	Name: "Mão",
+	Name: "Hand",
 	InjuryTier: 0,
 	InjuryLabel: "Mão Contundida",
 	DaysUntilHealed: "5",
@@ -487,7 +487,7 @@
 	Category: "arm"
 }
 {
-	Name: "Mão",
+	Name: "Hand",
 	InjuryTier: 1,
 	InjuryLabel: "Mão Quebrada",
 	DaysUntilHealed: "30",
@@ -499,7 +499,7 @@
 	Category: "arm"
 }
 {
-	Name: "Mão",
+	Name: "Hand",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Exposta na Mão",
 	DaysUntilHealed: "40",
@@ -511,7 +511,7 @@
 	Category: "arm"
 }
 {
-	Name: "Mão",
+	Name: "Hand",
 	InjuryTier: 3,
 	InjuryLabel: "Mão Estilhaçada",
 	DaysUntilHealed: "50",
@@ -526,7 +526,7 @@
 
 
 {
-	Name: "Ombro",
+	Name: "Shoulder",
 	InjuryTier: 0,
 	InjuryLabel: "Ombro Contundido",
 	DaysUntilHealed: "5",
@@ -538,7 +538,7 @@
 	Category: "arm"
 }
 {
-	Name: "Ombro",
+	Name: "Shoulder",
 	InjuryTier: 1,
 	InjuryLabel: "Ombro Deslocado",
 	DaysUntilHealed: "15",
@@ -550,7 +550,7 @@
 	Category: "arm"
 }
 {
-	Name: "Ombro",
+	Name: "Shoulder",
 	InjuryTier: 2,
 	InjuryLabel: "Ombro Fraturado",
 	DaysUntilHealed: "30",
@@ -562,7 +562,7 @@
 	Category: "arm"
 }
 {
-	Name: "Ombro",
+	Name: "Shoulder",
 	InjuryTier: 3,
 	InjuryLabel: "Ombro Estilhaçado",
 	DaysUntilHealed: "50",
@@ -577,7 +577,7 @@
 
 
 {
-	Name: "Antebraço",
+	Name: "Forearm",
 	InjuryTier: 0,
 	InjuryLabel: "Antebraço Torcido",
 	DaysUntilHealed: "5",
@@ -589,7 +589,7 @@
 	Category: "arm"
 }
 {
-	Name: "Antebraço",
+	Name: "Forearm",
 	InjuryTier: 1,
 	InjuryLabel: "Antebraço Quebrado",
 	DaysUntilHealed: "30",
@@ -601,7 +601,7 @@
 	Category: "arm"
 }
 {
-	Name: "Antebraço",
+	Name: "Forearm",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Exposta no Antebraço",
 	DaysUntilHealed: "40",
@@ -613,7 +613,7 @@
 	Category: "arm"
 }
 {
-	Name: "Antebraço",
+	Name: "Forearm",
 	InjuryTier: 3,
 	InjuryLabel: "Antebraço Estilhaçado",
 	DaysUntilHealed: "50",
@@ -672,7 +672,7 @@
 	Description: "Teve um pulmão perfurado por uma costela quebrada, levando à morte.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "torso"
 }
 
@@ -717,7 +717,7 @@
 
 
 {
-	Name: "Coluna",
+	Name: "Spine",
 	InjuryTier: 0,
 	InjuryLabel: "Coluna Machucada",
 	DaysUntilHealed: "20",
@@ -729,7 +729,7 @@
 	Category: "torso"
 }
 {
-	Name: "Coluna",
+	Name: "Spine",
 	InjuryTier: 1,
 	InjuryLabel: "Coluna Deslocada",
 	DaysUntilHealed: "50",
@@ -741,7 +741,7 @@
 	Category: "torso"
 }
 {
-	Name: "Coluna",
+	Name: "Spine",
 	InjuryTier: 2,
 	InjuryLabel: "Coluna Fraturada",
 	DaysUntilHealed: "200",
@@ -753,7 +753,7 @@
 	Category: "torso"
 }
 {
-	Name: "Espinha",
+	Name: "Spine",
 	InjuryTier: 3,
 	InjuryLabel: "Medula Espinhal Seccionada",
 	DaysUntilHealed: "-1",
@@ -761,14 +761,14 @@
 	Description: "Medula espinhal seccionada, causando a morte.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "torso"
 }
 
 
 
 {
-	Name: "Coração",
+	Name: "Heart",
 	InjuryTier: 0,
 	InjuryLabel: "Ataque Cardíaco Leve",
 	DaysUntilHealed: "50",
@@ -780,7 +780,7 @@
 	Category: "torso"
 }
 {
-	Name: "Coração",
+	Name: "Heart",
 	InjuryTier: 1,
 	InjuryLabel: "Ataque Cardíaco Grave",
 	DaysUntilHealed: "120",
@@ -792,7 +792,7 @@
 	Category: "torso"
 }
 {
-	Name: "Coração",
+	Name: "Heart",
 	InjuryTier: 2,
 	InjuryLabel: "Falência Cardíaca",
 	DaysUntilHealed: "-1",
@@ -800,14 +800,14 @@
 	Description: "O coração está além de qualquer cura, levando à morte.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "torso"
 }
 
 
 
 {
-	Name: "Virilha",
+	Name: "Groin",
 	InjuryTier: 0,
 	InjuryLabel: "Virilha Contundida",
 	DaysUntilHealed: "5",
@@ -819,7 +819,7 @@
 	Category: "torso"
 }
 {
-	Name: "Virilha",
+	Name: "Groin",
 	InjuryTier: 1,
 	InjuryLabel: "Lesão Grave na Virilha",
 	DaysUntilHealed: "15",
@@ -831,7 +831,7 @@
 	Category: "torso"
 }
 {
-	Name: "Virilha",
+	Name: "Groin",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura do Osso Pélvico",
 	DaysUntilHealed: "30",
@@ -843,7 +843,7 @@
 	Category: "torso"
 }
 {
-	Name: "Virilha",
+	Name: "Groin",
 	InjuryTier: 3,
 	InjuryLabel: "Lesão Interna na Virilha",
 	DaysUntilHealed: "50",
@@ -858,7 +858,7 @@
 
 
 {
-	Name: "Esterno",
+	Name: "Sternum",
 	InjuryTier: 0,
 	InjuryLabel: "Esterno Contundido",
 	DaysUntilHealed: "5",
@@ -870,7 +870,7 @@
 	Category: "torso"
 }
 {
-	Name: "Esterno",
+	Name: "Sternum",
 	InjuryTier: 1,
 	InjuryLabel: "Esterno Fraturado",
 	DaysUntilHealed: "30",
@@ -882,7 +882,7 @@
 	Category: "torso"
 }
 {
-	Name: "Esterno",
+	Name: "Sternum",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Exposta no Esterno",
 	DaysUntilHealed: "40",
@@ -894,7 +894,7 @@
 	Category: "torso"
 }
 {
-	Name: "Esterno",
+	Name: "Sternum",
 	InjuryTier: 3,
 	InjuryLabel: "Esterno Estilhaçado",
 	DaysUntilHealed: "50",
@@ -906,7 +906,7 @@
 	Category: "torso"
 }
 {
-	Name: "Esterno",
+	Name: "Sternum",
 	InjuryTier: 4,
 	InjuryLabel: "Coração Perfurado",
 	DaysUntilHealed: "-1",
@@ -914,14 +914,14 @@
 	Description: "Morte causada por um fragmento de osso perfurando o coração",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "torso"
 }
 
 
 
 {
-	Name: "Tornozelo",
+	Name: "Ankle",
 	InjuryTier: 0,
 	InjuryLabel: "Tornozelo Torcido",
 	DaysUntilHealed: "10",
@@ -933,7 +933,7 @@
 	Category: "leg"
 }
 {
-	Name: "Tornozelo",
+	Name: "Ankle",
 	InjuryTier: 1,
 	InjuryLabel: "Tornozelo Fraturado",
 	DaysUntilHealed: "30",
@@ -945,7 +945,7 @@
 	Category: "leg"
 }
 {
-	Name: "Tornozelo",
+	Name: "Ankle",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura Exposta no Tornozelo",
 	DaysUntilHealed: "50",
@@ -957,7 +957,7 @@
 	Category: "leg"
 }
 {
-	Name: "Tornozelo",
+	Name: "Ankle",
 	InjuryTier: 3,
 	InjuryLabel: "Tornozelo Destroçado",
 	DaysUntilHealed: "80",
@@ -972,7 +972,7 @@
 
 
 {
-	Name: "Joelho",
+	Name: "Knee",
 	InjuryTier: 0,
 	InjuryLabel: "Joelho Contundido",
 	DaysUntilHealed: "5",
@@ -984,7 +984,7 @@
 	Category: "leg"
 }
 {
-	Name: "Joelho",
+	Name: "Knee",
 	InjuryTier: 1,
 	InjuryLabel: "Entorse do ligamento do joelho",
 	DaysUntilHealed: "30",
@@ -996,7 +996,7 @@
 	Category: "leg"
 }
 {
-	Name: "Joelho",
+	Name: "Knee",
 	InjuryTier: 2,
 	InjuryLabel: "Ligamento do joelho rompido",
 	DaysUntilHealed: "40",
@@ -1008,7 +1008,7 @@
 	Category: "leg"
 }
 {
-	Name: "Joelho",
+	Name: "Knee",
 	InjuryTier: 3,
 	InjuryLabel: "Joelho estilhaçado",
 	DaysUntilHealed: "50",
@@ -1023,7 +1023,7 @@
 
 
 {
-	Name: "Coxa",
+	Name: "Thigh",
 	InjuryTier: 0,
 	InjuryLabel: "Fêmur contundido",
 	DaysUntilHealed: "10",
@@ -1035,7 +1035,7 @@
 	Category: "leg"
 }
 {
-	Name: "Coxa",
+	Name: "Thigh",
 	InjuryTier: 1,
 	InjuryLabel: "Fêmur fraturado",
 	DaysUntilHealed: "40",
@@ -1047,7 +1047,7 @@
 	Category: "leg"
 }
 {
-	Name: "Coxa",
+	Name: "Thigh",
 	InjuryTier: 2,
 	InjuryLabel: "Fratura exposta do fêmur",
 	DaysUntilHealed: "60",
@@ -1059,7 +1059,7 @@
 	Category: "leg"
 }
 {
-	Name: "Coxa",
+	Name: "Thigh",
 	InjuryTier: 3,
 	InjuryLabel: "Fêmur estilhaçado",
 	DaysUntilHealed: "80",
@@ -1071,7 +1071,7 @@
 	Category: "leg"
 }
 {
-	Name: "Coxa",
+	Name: "Thigh",
 	InjuryTier: 4,
 	InjuryLabel: "Artéria Femoral Rompida",
 	DaysUntilHealed: "-1",
@@ -1079,14 +1079,14 @@
 	Description: "Morte causada por perda massiva de sangue devido à artéria femoral rompida.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 	Category: "leg"
 }
 
 
 
 {
-	Name: "Tendão da Coxa",
+	Name: "Hamstring",
 	InjuryTier: 0,
 	InjuryLabel: "Tendão da Coxa Contundido",
 	DaysUntilHealed: "5",
@@ -1098,7 +1098,7 @@
 	Category: "leg"
 }
 {
-	Name: "Tendão da Coxa",
+	Name: "Hamstring",
 	InjuryTier: 1,
 	InjuryLabel: "Tendão da Coxa Distendido",
 	DaysUntilHealed: "20",
@@ -1110,7 +1110,7 @@
 	Category: "leg"
 }
 {
-	Name: "Tendão da Coxa",
+	Name: "Hamstring",
 	InjuryTier: 2,
 	InjuryLabel: "Tendão da Coxa Rompido",
 	DaysUntilHealed: "65",
@@ -1125,7 +1125,7 @@
 
 
 {
-	Name: "Laceração",
+	Name: "Laceration",
 	InjuryTier: 0,
 	InjuryLabel: "Laceração Leve",
 	DaysUntilHealed: "5",
@@ -1133,11 +1133,11 @@
 	Description: "Qualquer ação de combate além de Aguardar ou Guardar aplica 3 de dano até o ferimento ser estabilizado com ataduras.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	NextInjury: "Complicação",
+	NextInjury: "Complication",
 	Debuffs: ["Take3DmgFromActions"],
 }
 {
-	Name: "Laceração",
+	Name: "Laceration",
 	InjuryTier: 1,
 	InjuryLabel: "Laceração Profunda",
 	DaysUntilHealed: "30",
@@ -1145,11 +1145,11 @@
 	Description: "Qualquer ação de combate além de Aguardar ou Guardar aplica 5 de dano até o ferimento ser estabilizado com ataduras.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	NextInjury: "Complicação",
+	NextInjury: "Complication",
 	Debuffs: ["Take5DmgFromActions"],
 }
 {
-	Name: "Laceração",
+	Name: "Laceration",
 	InjuryTier: 2,
 	InjuryLabel: "Laceração Severa",
 	DaysUntilHealed: "40",
@@ -1157,16 +1157,16 @@
 	Description: "Qualquer ação de combate além de Aguardar ou Defender aplica 10 de dano até o ferimento ser estabilizado com bandagens.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	NextInjury: "Complicação",
+	NextInjury: "Complication",
 	Debuffs: ["Take10DmgFromActions"]
 }
 
 
 
 {
-	Name: "Complicação",
+	Name: "Complication",
 	InjuryTier: 0,
-	InjuryLabel: "Infecção",
+	InjuryLabel: "Infection",
 	DaysUntilHealed: "45",
 	RequireTreatmentBy: "30",
 	Description: "Infecção causando -10 de Esquiva.",
@@ -1175,9 +1175,9 @@
 	Debuffs: ["EvaReducedPerc10"],
 }
 {
-	Name: "Complicação",
+	Name: "Complication",
 	InjuryTier: 1,
-	InjuryLabel: "Febre",
+	InjuryLabel: "Fever",
 	DaysUntilHealed: "60",
 	RequireTreatmentBy: "30",
 	Description: "Febre causando -5 de Precisão e -10 de Esquiva.",
@@ -1186,13 +1186,13 @@
 	Debuffs: ["AccReducedPerc5","EvaReducedPerc10","Minus5Con","Minus5Dex","Minus5Int","Minus5Wis","Minus5Cha"],
 }
 {
-	Name: "Complicação",
+	Name: "Complication",
 	InjuryTier: 2,
-	InjuryLabel: "Morte",
+	InjuryLabel: "Death",
 	DaysUntilHealed: "-1",
 	RequireTreatmentBy: "-1",
 	Description: "Complicações da infecção que levam à morte.",
 	TraitsAppliedInstantly: [""],
 	TraitsAppliedIfUntreated: [""],
-	Debuffs: ["Morto"],
+	Debuffs: ["Dead"],
 }

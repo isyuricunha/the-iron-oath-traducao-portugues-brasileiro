@@ -1,6 +1,6 @@
 {	
 	Id: "OriginSmallVillage",
-	Category: "Origem",
+	Category: "Origin",
     StoryPrereq: [],
     OtherPrereq: [],
     Text: ["[fullName] nasceu na pequena cidade de [birthTown] em [birthYear].", "[fullName] nasceu no coração de [birthTown] no ano de [birthYear].", "No ano de [birthYear], [fullName] nasceu na pequena cidade de [birthTown]."],
@@ -12,7 +12,7 @@
 }
 {	
 	Id: "OriginLargeCity",
-	Category: "Origem",
+	Category: "Origin",
     StoryPrereq: [],
     OtherPrereq: [],
     Text: ["[fullName] cresceu no centro da cidade de [birthTown] em [birthYear].", "[fullName] nasceu em [birthTown] no ano de [birthYear].", "Foi na movimentada cidade de [birthTown], em [birthYear], que [fullName] nasceu."],
@@ -24,7 +24,7 @@
 }
 {	
 	Id: "OriginCapital",
-	Category: "Origem",
+	Category: "Origin",
     StoryPrereq: [],
     OtherPrereq: [],
     Text: ["[fullName] nasceu na cidade capital [birthKingdom] no ano de [birthYear]."],
@@ -41,7 +41,7 @@
 
 {	
 	Id: "FamilyFarmers",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity"],
     OtherPrereq: [],
     Text: ["[PronounSingular] foi criado por um casal de agricultores que levava uma vida pacata e não se misturava com ninguém.", "[PronounPossessive] pais eram agricultores simples que, na maior parte da vida, não se misturavam com os outros, exceto quando precisavam negociar o excedente das colheitas na cidade.", "[pronounSingular] foi criado em uma pequena fazenda logo fora da cidade."],
@@ -52,7 +52,7 @@
 }
 {	
 	Id: "FamilyLivestock",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity"],
     OtherPrereq: [],
     Text: ["[PronounSingular] foi criado(a) por um casal de criadores de gado. A família de [PronounPossessive] não era rica, mas vivia decentemente."],
@@ -63,7 +63,7 @@
 }
 {	
 	Id: "FamilyBlacksmith",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
     OtherPrereq: [],
     Text: ["[PronounSingular] tinha pais na profissão de ferreiro, onde [pronounPossessive] mãe cuidava da loja enquanto [pronounPossessive] pai trabalhava na forja.","Os pais de [PronounPossessive] ganhavam a vida como ferreiros. [PronounSingular] tinha um pai que cuidava da loja e atendia os clientes, enquanto [pronounPossessive] outro pai trabalhava no fogo da forja.", "[PronounSingular] tinha pais que ganhavam a vida como ferreiros. O negócio de [PronounPossessive] pais prosperava, mas às vezes às custas da atenção que [pronounSingular] desejava."],
@@ -74,7 +74,7 @@
 }
 {	
 	Id: "FamilyHunter",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage"],
     OtherPrereq: [],
     Text: ["[PronounPossessive] pai era caçador de profissão, enquanto [pronounPossessive] mãe cuidava do lar.","[PronounPossessive] mãe era uma caçadora habilidosa de profissão. [PronounPossessive] pai trabalhava nos campos para ganhar um dinheiro extra."],
@@ -85,7 +85,7 @@
 }
 {	
 	Id: "FamilyCarpenter",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
     OtherPrereq: [],
     Text: ["Por várias gerações, os pais de [pronounPossessive] viveram como carpinteiros habilidosos."],
@@ -96,7 +96,7 @@
 }
 {	
 	Id: "FamilyHealer",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
     OtherPrereq: [],
     Text: ["Os pais de [PronounPossessive] eram ambos curandeiros onde cresceram e viviam modestamente."],
@@ -107,7 +107,7 @@
 }
 {	
 	Id: "FamilyOwnedStore",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
     OtherPrereq: [],
     Text: ["Os pais de [PronounPossessive] tinham uma pequena loja onde ganhavam a vida vendendo produtos para os locais."],
@@ -118,7 +118,7 @@
 }
 {	
 	Id: "FamilyThieves",
-	Category: "Família",
+	Category: "Family",
     StoryPrereq: ["OriginSmallVillage", "OriginLargeCity", "OriginCapital", "OriginPortCity"],
     OtherPrereq: [],
     Text: ["[PronounSingular] nunca soube ao certo de onde vinha o dinheiro, mas tinha quase certeza de que [pronounPossessive] pai não o conseguia legalmente. [PronounSingular] sempre sentiu que, a qualquer dia, [pronounPossessive] pai poderia simplesmente não voltar."],
@@ -188,7 +188,7 @@
     LoyaltyQuest: [],
     Goal: "",
 	Traits: [],
-	TraitType: ["Ninja", "Batedor", "NeverGiveUp"],
+	TraitType: ["Ninja", "Scout", "NeverGiveUp"],
 }
 {	
 	Id: "YoungAdultEventSurvivingBySelf",
@@ -198,7 +198,7 @@
     Text: ["Determinado a sobreviver, [firstName] se juntou a um grupo de mercenários local assim que aceitaram [pronounObjective]. A partir daí, [pronounSingular] treinou e aprimorou as próprias habilidades em batalha até se tornar um [className] habilidoso."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Força", "Tático"],
+	TraitType: ["Power", "Tactical"],
     LoyaltyQuest: [],
     Goal: "",
 }
@@ -210,7 +210,7 @@
     Text: ["[PronounSingular] levou esses ensinamentos a sério e fez um voto de sempre ajudar aqueles que eram oprimidos."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Confiável", "NeverGiveUp"],
+	TraitType: ["Reliable", "NeverGiveUp"],
     LoyaltyQuest: [],
     Goal: "",
 }
@@ -222,7 +222,7 @@
     Text: ["[PronounSingular] acabaria encontrando [pronounPossessive] caminho até uma academia local depois de passar com louvor no exame de admissão. Os estudos de [pronounPossessive] nunca estão longe da mente de [firstName]."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Estudante", "Tático"],
+	TraitType: ["Student", "Tactical"],
     LoyaltyQuest: [],
     Goal: "",
 }
@@ -234,7 +234,7 @@
     Text: ["Depois de se formar na escola, [pronounSingular] viu alguns guardas da cidade importunando os moradores. [firstName] reuniu todos os que estavam sendo perseguidos para que pudessem revidar. Mesmo jovem, [pronounSingular] já era um líder nato."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Tático", "NeverGiveUp", "Confiável"],
+	TraitType: ["Tactical", "NeverGiveUp", "Reliable"],
     LoyaltyQuest: [],
     Goal: "",
 }
@@ -246,7 +246,7 @@
     Text: ["Depois da escola, [firstName] arranjou um emprego de caçador, onde [pronounSingular] aprendeu a dominar diversas técnicas de rastreamento de presas, o que sempre é útil para um bom mercenário."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Batedor", "Ninja"],
+	TraitType: ["Scout", "Ninja"],
     LoyaltyQuest: [],
     Goal: "",
 }
@@ -258,7 +258,7 @@
     Text: ["[firstName] estava se tornando um jovem adulto e queria ficar mais forte. [PronounSingular] entrou para uma guilda local, onde treinou tanto a mente quanto o corpo."],
     ProbabilityWeight: "100",
     DaysUntilRepeatable: "-1",
-	TraitType: ["Força", "Estudante"],
+	TraitType: ["Power", "Student"],
     LoyaltyQuest: [],
     Goal: "",
 }

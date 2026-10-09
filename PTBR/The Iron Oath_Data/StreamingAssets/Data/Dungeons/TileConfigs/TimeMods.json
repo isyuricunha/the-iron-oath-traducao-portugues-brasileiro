@@ -116,7 +116,7 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Desorganização",
+	Name: "Disorganization",
 	Description: "Conforme a missão se arrasta, fica difícil manter a disciplina e a formação adequadas.",
 	PlainText: "A fase de posicionamento é ignorada e você não conseguirá reposicionar seu grupo.",
 }
@@ -160,7 +160,7 @@
 	MinTimeSinceCamp: 25,
 	MinTier: 3,
 	Weight: 0.5,
-	Name: "Fome",
+	Name: "Hunger",
 	Description: "As pontadas de fome tomam conta do seu grupo exausto. Eles não vão querer ir muito mais longe sem primeiro montar acampamento.",
 	PlainText: "Toda ação que custar tempo fará suas tropas perderem 1 ponto de lealdade com você até que acampem.",
 }
@@ -194,7 +194,7 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Trégua",
+	Name: "Reprieve",
 	Description: "Uma pausa muito necessária. Aproveitamos um momento para nos reorientar antes de seguirmos de volta ao desconhecido.",
 	PlainText: "O avanço do tempo poupou sua tropa de novos desafios."
 }
@@ -216,7 +216,7 @@
 	MinTimeSinceCamp: 0,
 	MinTier: 1,
 	Weight: 1,
-	Name: "Exaustão",
+	Name: "Exhaustion",
 	Description: "Sua tropa está cansada, mas vocês precisam seguir em frente mesmo assim.",
 	PlainText: "Reduza as cargas de habilidade disponíveis em 1."
 }

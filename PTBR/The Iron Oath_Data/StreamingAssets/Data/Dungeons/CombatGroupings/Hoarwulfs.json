@@ -1,8 +1,8 @@
 {
 	Name: "Hoarwulfs",
 	NameDisplay: "Hoarwulf",
-	Group: ["AdultHoarwulf","DiseasedHoarwulf","CorruptedHoarwulf","YoungHoarwulf","BuckWealdere","Lenhador"],
-	ScoutingReport: ["Hoarwulfs:Hoarwulf","Lenhador:Lenhador:","Wealderes:Wealdere"],
+	Group: ["AdultHoarwulf","DiseasedHoarwulf","CorruptedHoarwulf","YoungHoarwulf","BuckWealdere","Woodsman"],
+	ScoutingReport: ["Hoarwulfs:Hoarwulf","Woodsman:Woodsman:","Wealderes:Wealdere"],
 	Loot: ["Enchantment,any","Enchantment,hoarwulf"],
 	Weight: 1,
 }

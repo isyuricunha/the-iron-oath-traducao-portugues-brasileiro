@@ -21,8 +21,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "1",
 	repairCoin: "40",
-	classReq: ["Pugilista","Vinculador de Gelo","Invocador de Tempestades"],
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade","Movimento"],
+	classReq: ["Pugilist","Icebinder","Stormcaller"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
     namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2","1,1"],
 	
 }
@@ -49,8 +49,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "80",
-	classReq: ["Pugilista","Vinculador de Gelo","Invocador de Tempestades"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Pugilist","Icebinder","Stormcaller"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
     namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3","1,1"],
 	
 }
@@ -77,8 +77,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "3",
 	repairCoin: "120",
-	classReq: ["Pugilista","Vinculador de Gelo","Invocador de Tempestades"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Pugilist","Icebinder","Stormcaller"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
     namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3","1,1"],
 	
 }
@@ -105,8 +105,8 @@
 	repairMatCount: "2",
 	repairScrapCount: "5",
 	repairCoin: "210",
-	classReq: ["Pugilista","Vinculador de Gelo","Invocador de Tempestades"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Pugilist","Icebinder","Stormcaller"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
     namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3","1,2"],
 	
 }
@@ -115,7 +115,7 @@
 	icon: "gambeson",
 	buff: [""],
 	type: "light",
-	name: "Gambesão",
+	name: "Gamebeson",
 	description: "Uma jaqueta acolchoada e espessa que oferece proteção adequada e grande mobilidade.",
 	def: "10",
 	durability: "180",
@@ -133,8 +133,8 @@
 	repairMatCount: "3",
 	repairScrapCount: "8",
 	repairCoin: "350",
-	classReq: ["Pugilista","Vinculador de Gelo","Invocador de Tempestades"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","Evasão","Velocidade","Movimento"],
+	classReq: ["Pugilist","Icebinder","Stormcaller"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
     namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4","1,2"],
 	
 }
@@ -161,8 +161,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "90",
-	classReq: ["Pirolanceiro","Caçadora"],
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade","Movimento"],
+	classReq: ["Pyrolancer","Huntress"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2","1,1"],
 	
 }
@@ -189,8 +189,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "5",
 	repairCoin: "185",
-	classReq: ["Pirolanceiro","Caçadora"],
-	namedVariantStat: ["Ataque","Cura","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Pyrolancer","Huntress"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3","1,1"],
 	
 }
@@ -217,8 +217,8 @@
 	repairMatCount: "2",
 	repairScrapCount: "8",
 	repairCoin: "300",
-	classReq: ["Pirolanceiro","Caçadora"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Pyrolancer","Huntress"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3","1,1"],
 	
 }
@@ -245,8 +245,8 @@
 	repairMatCount: "2",
 	repairScrapCount: "12",
 	repairCoin: "480",
-	classReq: ["Pirolanceiro","Caçadora"],
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade","Movimento"],
+	classReq: ["Pyrolancer","Huntress"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3","1,2"],
 	
 }
@@ -255,7 +255,7 @@
 	icon: "mail",
 	buff: [""],
 	type: "medium",
-	name: "Cota de Malha",
+	name: "Mail",
 	description: "Anéis de ferro entrelaçados oferecem forte proteção sem sacrificar muito a mobilidade.",
 	def: "21",
 	durability: "280",
@@ -273,8 +273,8 @@
 	repairMatCount: "3",
 	repairScrapCount: "18",
 	repairCoin: "675",
-	classReq: ["Pirolanceiro","Caçadora"],
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade","Movimento"],
+	classReq: ["Pyrolancer","Huntress"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4","1,2"],
 	
 }
@@ -301,8 +301,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "6",
 	repairCoin: "225",
-	classReq: ["Valkyrie","Guardião","Pirolanceiro"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL","MOV"],
+	classReq: ["Valkyrie","Guardian","Pyrolancer"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2","1,1"],
 	
 }
@@ -329,8 +329,8 @@
 	repairMatCount: "1",
 	repairScrapCount: "10",
 	repairCoin: "375",
-	classReq: ["Valkyrie","Guardião","Pirolanceiro"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
+	classReq: ["Valkyrie","Guardian","Pyrolancer"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3","1,1"],
 	
 }
@@ -339,7 +339,7 @@
 	icon: "brigandine",
 	buff: [""],
 	type: "heavy",
-	name: "Brigandina",
+	name: "Brigandine",
 	description: "Placas de metal sobrepostas que se moldam ao corpo são rebitadas a uma grossa vestimenta de tecido, proporcionando excelente proteção, mas reduzindo a mobilidade.",
 	def: "26",
 	durability: "340",
@@ -357,8 +357,8 @@
 	repairMatCount: "2",
 	repairScrapCount: "16",
 	repairCoin: "600",
-	classReq: ["Valkyrie","Guardião"],
-	namedVariantStat: ["ATQ","MENDING","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
+	classReq: ["Valkyrie","Guardian"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3","1,1"],
 	
 }
@@ -385,8 +385,8 @@
 	repairMatCount: "4",
 	repairScrapCount: "28",
 	repairCoin: "1050",
-	classReq: ["Valkyrie","Guardião"],
-	namedVariantStat: ["ATQ","MENDING","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
+	classReq: ["Valkyrie","Guardian"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3","1,2"],
 	
 }
@@ -413,8 +413,8 @@
 	repairMatCount: "6",
 	repairScrapCount: "42",
 	repairCoin: "1575",
-	classReq: ["Valkyrie","Guardião"],
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
+	classReq: ["Valkyrie","Guardian"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD","MOV"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4","1,2"],
 	
 }
@@ -435,7 +435,7 @@
 	value: "2400",
 	fittingCost: "0",
 	rarity: "5",  
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	legendaryEffect: "Lumella",
 	purchasable: "false",
 }

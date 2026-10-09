@@ -10,7 +10,7 @@
 	Speed: ["8"],
 	Move: "4",
 	Resists: [],
-	Immunities: ["Marca","Lentidão"],
+	Immunities: ["MARKED","SLOW"],
 	ResourceDrop: ["tioScrap"],
 	EncounterValue: "14",
 	EncounterValueEliteOverride: "0",

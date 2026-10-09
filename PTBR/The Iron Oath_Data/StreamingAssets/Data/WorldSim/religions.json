@@ -16,7 +16,7 @@
 }
 {
   UniqueId: "divines",
-	Name: "Divindades",
+	Name: "Divines",
     Diety: "",
     Description: "",
     Aggression: "100",
@@ -32,7 +32,7 @@
 }
 {
   UniqueId: "ascended",
-	Name: "Ascendidos",
+	Name: "Ascended",
     Diety: "",
     Description: "",
     Aggression: "100",

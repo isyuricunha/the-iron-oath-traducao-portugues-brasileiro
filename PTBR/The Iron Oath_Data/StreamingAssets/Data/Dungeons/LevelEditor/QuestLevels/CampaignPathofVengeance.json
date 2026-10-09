@@ -4,10 +4,10 @@
   "height": 1280,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "Quest.CampaignPathOfVengeanceA2Pt2", "Tileset": "", "Size": "Média", "Tags": ""},
+  "values": {"ID": "Quest.CampaignPathOfVengeanceA2Pt2", "Tileset": "", "Size": "Medium", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -24,7 +24,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecida"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -34,7 +34,7 @@
           "y": 224,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecida"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -44,7 +44,7 @@
           "y": 608,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Positiva"}
+          "values": {"PossibleKey": false, "EventClassification": "Positive"}
         },
         {
           "name": "RepeatableEvent",
@@ -54,7 +54,7 @@
           "y": 544,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Positiva"}
+          "values": {"PossibleKey": false, "EventClassification": "Positive"}
         },
         {
           "name": "OptionalEvent",
@@ -84,7 +84,7 @@
           "y": 416,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecida"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -94,7 +94,7 @@
           "y": 736,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecida"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -104,10 +104,10 @@
           "y": 736,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecida"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 14,
           "_eid": "76105222",
           "x": 640,
@@ -117,7 +117,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 16,
           "_eid": "76105222",
           "x": 576,
@@ -127,7 +127,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 18,
           "_eid": "76055586",
           "x": 384,
@@ -137,7 +137,7 @@
           "values": {"ScriptedEventName": "0", "IsGoal": true}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 19,
           "_eid": "76055586",
           "x": 768,
@@ -147,7 +147,7 @@
           "values": {"ScriptedEventName": "1", "IsGoal": false}
         },
         {
-          "name": "Início",
+          "name": "Start",
           "id": 20,
           "_eid": "76104019",
           "x": 384,
@@ -157,7 +157,7 @@
           "values": {"ScriptedEventName": ""}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 21,
           "_eid": "76105222",
           "x": 768,
@@ -174,7 +174,7 @@
           "y": 864,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -184,7 +184,7 @@
           "y": 544,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -194,7 +194,7 @@
           "y": 352,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -204,7 +204,7 @@
           "y": 480,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -214,7 +214,7 @@
           "y": 352,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -224,7 +224,7 @@
           "y": 224,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -234,7 +234,7 @@
           "y": 672,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -244,7 +244,7 @@
           "y": 480,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -254,7 +254,7 @@
           "y": 352,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -264,7 +264,7 @@
           "y": 800,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         }
       ]
     },
@@ -277,7 +277,7 @@
       "gridCellHeight": 32,
       "gridCellsX": 40,
       "gridCellsY": 40,
-      "tileset": "Masmorras",
+      "tileset": "Dungeons",
       "data": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, 2, 0, 2, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3, 2, 3, 2, 3, 2, 3, 2, 3, -1, -1, -1, 0, 2, 0, 2, 0, 2, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, 2, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, -1, -1, -1, 3, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, 3, 2, 3, 2, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, -1, -1, -1, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, -1, 0, -1, -1, -1, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, 0, -1, -1, -1, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
       "exportMode": 0,
       "arrayMode": 0

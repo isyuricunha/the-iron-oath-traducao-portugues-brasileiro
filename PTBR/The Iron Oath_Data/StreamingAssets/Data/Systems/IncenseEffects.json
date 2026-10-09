@@ -1,7 +1,7 @@
 {
-	Type: "Nenhum",
+	Type: "None",
 	Value: "0",
-	Description: "Nenhum",
+	Description: "None",
 }
 {
 	Type: "LargeHealthRecovery",

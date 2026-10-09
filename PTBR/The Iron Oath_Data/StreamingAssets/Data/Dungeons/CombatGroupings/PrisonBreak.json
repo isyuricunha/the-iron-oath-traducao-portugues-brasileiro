@@ -2,8 +2,8 @@
 	Name: "PrisonBreak",
 	NameDisplay: "Hoarwulf",
 	Group: ["AdultHoarwulf","DiseasedHoarwulf","CorruptedHoarwulf","YoungHoarwulf","NullbeastDisrupter"],
-	ScoutingReport: ["Soldados:House","Warhound:Warhound","Sabujo de Sangue:Bloodhound","Hoarwulfs:Hoarwulf"],
-	Loot: ["Encantamento,qualquer","Encantamento,hoarwulf"],
+	ScoutingReport: ["Soldiers:House","Warhound:Warhound","Bloodhound:Bloodhound","Hoarwulfs:Hoarwulf"],
+	Loot: ["Enchantment,any","Enchantment,hoarwulf"],
 	Weight: 1,
 }
 

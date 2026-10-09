@@ -1,8 +1,8 @@
 {
 	Name: "DiseasedTomb",
-	NameDisplay: "Bestas Doentes",
+	NameDisplay: "Diseased Beasts",
 	Group: ["DiseasedBrightmane","DiseasedWealdere","DiseasedCharion","DiseasedNullbeast","RisenGeneral","RisenSoldier","RisenWarden","SkeletonArcher"],
-	ScoutingReport: ["Brightmanes:Brightmane","Wealdere:Wealdere","Undead:Mortos-vivos","Nullbeast:Nullbeast"],
+	ScoutingReport: ["Brightmanes:Brightmane","Wealdere:Wealdere","Undead:Undead","Nullbeast:Nullbeast"],
 	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }

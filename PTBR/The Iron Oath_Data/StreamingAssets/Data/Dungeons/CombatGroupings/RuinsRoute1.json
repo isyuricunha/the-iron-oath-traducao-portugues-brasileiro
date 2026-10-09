@@ -1,9 +1,9 @@
 {
 	Name: "RuinsRoute1",
-	NameDisplay: "Flagelo",
+	NameDisplay: "Scourge",
 	Group: ["OutlawBladedancer","OutlawBackstabber","OutlawMarauder","OutlawMarksman","OutlawScout","BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","AdultHoarwulf","DiseasedHoarwulf","CorruptedHoarwulf"],
-	ScoutingReport: ["Foragidos:Foragidos","Brightmanes:Brightmane","Hoarwulfs:Hoarwulf"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,any","Encantamento,any"],
+	ScoutingReport: ["Outlaws:Outlaws","Brightmanes:Brightmane","Hoarwulfs:Hoarwulf"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {

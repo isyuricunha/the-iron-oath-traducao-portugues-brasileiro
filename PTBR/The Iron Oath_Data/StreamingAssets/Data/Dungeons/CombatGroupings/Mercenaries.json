@@ -1,13 +1,13 @@
 {
-	Name: "Bandidos",
+	Name: "Bandits",
 	Group: ["OutlawBladedancer","OutlawBackstabber","OutlawThug","OutlawEnforcer","OutlawMarauder","OutlawMarksman","OutlawDeadeye","OutlawTrapper","OutlawScout","Warhound","Bloodhound"],
-	ScoutingReport: ["Foragidos:Foragidos","Warhound:Warhound","Sabujo de Sangue:Sabujo de Sangue:"],
+	ScoutingReport: ["Outlaws:Outlaws","Warhound:Warhound","Bloodhound:Bloodhound:"],
 	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Bandidos",
-	Group: ["OutlawChief","OutlawBladedancer","OutlawBackstabber","OutlawThug","OutlawEnforcer","OutlawMarauder","OutlawMarksman","OutlawDeadeye","OutlawTrapper","OutlawScout","Warhound","Sabujo de Sangue"],
+	Name: "Bandits",
+	Group: ["OutlawChief","OutlawBladedancer","OutlawBackstabber","OutlawThug","OutlawEnforcer","OutlawMarauder","OutlawMarksman","OutlawDeadeye","OutlawTrapper","OutlawScout","Warhound","Bloodhound"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

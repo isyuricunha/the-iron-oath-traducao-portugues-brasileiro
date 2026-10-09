@@ -9,7 +9,7 @@
 	LengthOfBattles: ["40", "60"], // if a battle lasts longer than this it will be considered over with no real victor (doesnt count for sieges which can last a lot longer)
 	
 	// Wealth
-	WealthResourceName: "Riqueza",
+	WealthResourceName: "Wealth",
 	WealthResourceMax: "10000",
 	WealthResourceStartingAmount: ["2000","3000"],
 	WealthDesiredMinPercent: "0.3", // they will begin spending less when below this amount
@@ -17,7 +17,7 @@
 	ResourceLostFromRaid: "40",
 	
 	// Food
-	FoodResourceName: "Comida",
+	FoodResourceName: "Food",
 	FoodResourceStartingAmount: "100",
 	FoodResourceSmallCityMax: "200",
 	FoodResourceMediumCityMax: "225",
@@ -31,7 +31,7 @@
 	FoodResourceLowValue: "20",
 	
 	// Wood
-	WoodResourceName: "Madeira",
+	WoodResourceName: "Wood",
 	WoodResourceStartingAmount: "50",
 	WoodResourceSmallCityMax: "150",
 	WoodResourceMediumCityMax: "175",
@@ -45,7 +45,7 @@
 	WoodResourceLowValue: "15",
 	
 	// Stone
-	StoneResourceName: "Pedra",
+	StoneResourceName: "Stone",
 	StoneResourceStartingAmount: "50",
 	StoneResourceSmallCityMax: "125",
 	StoneResourceMediumCityMax: "140",
@@ -59,7 +59,7 @@
 	StoneResourceLowValue: "10",
 	
 	// Iron
-	IronResourceName: "Ferro",
+	IronResourceName: "Iron",
 	IronResourceStartingAmount: "50",
 	IronResourceSmallCityMax: "100",
 	IronResourceMediumCityMax: "115",
@@ -73,7 +73,7 @@
 	IronResourceLowValue: "10",
 	
 	// Military
-	MilitaryResourceName: "Soldados",
+	MilitaryResourceName: "Soldiers",
 	MilitaryResourceStartingAmount: "50",
 	MilitaryResourceSmallCityMax: "80",
 	MilitaryResourceMediumCityMax: "95",

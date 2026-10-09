@@ -10,7 +10,7 @@
 	Speed: ["6"],
 	Move: "2",
 	Resists: [],
-	Immunities: ["Marca","CONTENÇÃO"],
+	Immunities: ["MARKED","RESTRAIN"],
 	ResourceDrop: ["tioScrap"],
 	EncounterValue: "3",
 	EncounterValueEliteOverride: "0",

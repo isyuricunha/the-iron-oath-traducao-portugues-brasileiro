@@ -1,15 +1,15 @@
 {
-	Name: "Necromante",
-	NameDisplay: "Necromante",
-	Group: ["Ritualista","Bruxa","SoulConjurer","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
-	ScoutingReport: ["Necromantes:Necromantes","Mortos-vivos:Mortos-vivos"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	Name: "Necromancer",
+	NameDisplay: "Necromancer",
+	Group: ["Ritualist","Hag","SoulConjurer","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	ScoutingReport: ["Necromancers:Necromancers","Undead:Undead"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Necromante",
-	NameDisplay: "Necromante",
-	Group: ["DeathLord","Ritualista","Bruxa","SoulConjurer","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
+	Name: "Necromancer",
+	NameDisplay: "Necromancer",
+	Group: ["DeathLord","Ritualist","Hag","SoulConjurer","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

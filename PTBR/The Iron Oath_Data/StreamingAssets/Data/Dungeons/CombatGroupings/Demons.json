@@ -1,15 +1,15 @@
 {
 	Name: "Demons",
-	NameDisplay: "Demônio",
+	NameDisplay: "Demon",
 	Group: ["Anguished","Flayer","Temptress","Seductress","RisenGhoul","CorruptedNullbeast"],
-	ScoutingReport: ["Demons:Demônio"],
+	ScoutingReport: ["Demons:Demon"],
 	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
 	Name: "Demons",
-	NameDisplay: "Demônio",
-	Group: ["Cavaleiro do Pavor","Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","CorruptedNullbeast"],
+	NameDisplay: "Demon",
+	Group: ["Dreadknight","Anguished","Flayer","Temptress","Seductress","RisenGhoul","CorruptedNullbeast"],
 	IsBossEncounter: true,
 	Weight: 1,
 }

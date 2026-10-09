@@ -6,7 +6,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistEarth"],
   tags: ["armor","any","wealdere","nullbeast"],
 }
@@ -18,7 +18,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistFire"],
   tags: ["armor","any","charion","nullbeast"],
 }
@@ -30,7 +30,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistFrost"],
   tags: ["armor","any","hoarwulf","nullbeast"],
 }
@@ -42,7 +42,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistHoly"],
   tags: ["armor","any","brightmane","nullbeast"],
 }
@@ -54,7 +54,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistDark"],
   tags: ["armor","any","nullbeast"],
 }
@@ -66,7 +66,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistLightning"],
 }
 {
@@ -77,7 +77,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistSlashing"],
   tags: ["armor","any"],
 }
@@ -89,7 +89,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistPiercing"],
   tags: ["armor","any"],
 }
@@ -101,7 +101,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgResistCrushing"],
   tags: ["armor","any"],
 }
@@ -113,7 +113,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityKnockback"],
   tags: ["armor","any","wealdere","charion"],
 }
@@ -125,7 +125,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityStagger"],
   tags: ["armor","any","wealdere"],
 }
@@ -137,7 +137,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityBleed"],
   tags: ["armor","any","brightmane"],
 }
@@ -149,7 +149,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityPoison"],
   tags: ["armor","any"],
 }
@@ -161,7 +161,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityStun"],
   tags: ["armor","any"],
 }
@@ -173,7 +173,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityCharm"],
   tags: ["armor","any"],
 }
@@ -185,7 +185,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunitySleep"],
   tags: ["armor","any"],
 }
@@ -197,7 +197,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityFreeze"],
   tags: ["armor","any","hoarwulf"],
 }
@@ -209,7 +209,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityBurn"],
   tags: ["armor","any","charion"],
 }
@@ -221,7 +221,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunitySilence"],
   tags: ["armor","any","nullbeast"],
 }
@@ -233,7 +233,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityFear"],
   tags: ["armor","any"],
 }
@@ -245,7 +245,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityBlind"],
   tags: ["armor","any","brightmane"],
 }
@@ -257,7 +257,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityTaunt"],
   tags: ["armor","any"],
 }
@@ -269,7 +269,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunitySlow"],
   tags: ["armor","any","hoarwulf"],
 }
@@ -281,7 +281,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityRoot"],
   tags: ["armor","any","wealdere"],
 }
@@ -293,7 +293,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDmgImmunityMarked"],
   tags: ["armor","any","brightmane"],
 }
@@ -305,7 +305,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectWeaponIncreaseLv1"],
   tags: ["weapon","any","brightmane"],
 }
@@ -317,7 +317,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectWeaponIncreaseLv2"],
   tags: ["weapon","any","brightmane"],
 }
@@ -329,7 +329,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectWeaponIncreaseLv3"],
   tags: ["weapon","any","brightmane"],
 }
@@ -341,7 +341,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectWeaponIncreaseLv4"],
   tags: ["weapon","any","brightmane"],
 }
@@ -353,7 +353,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectWeaponIncreaseLv5"],
   tags: ["weapon","any","brightmane"],
 }
@@ -365,7 +365,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpIncreaseLv1"],
   tags: ["armor","any"],
 }
@@ -377,7 +377,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpIncreaseLv2"],
   tags: ["armor","any"],
 }
@@ -389,7 +389,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpIncreaseLv3"],
   tags: ["armor","any"],
 }
@@ -401,7 +401,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpIncreaseLv4"],
   tags: ["armor","any"],
 }
@@ -413,7 +413,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpIncreaseLv5"],
   tags: ["armor","any"],
 }
@@ -425,7 +425,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDefIncreaseLv1"],
   tags: ["armor","any","charion","hoarwulf"],
 }
@@ -437,7 +437,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDefIncreaseLv2"],
   tags: ["armor","any","charion","hoarwulf"],
 }
@@ -449,7 +449,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDefIncreaseLv3"],
   tags: ["armor","any","charion","hoarwulf"],
 }
@@ -461,7 +461,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDefIncreaseLv4"],
   tags: ["armor","any","charion","hoarwulf"],
 }
@@ -473,7 +473,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectDefIncreaseLv5"],
   tags: ["armor","any","charion","hoarwulf"],
 }
@@ -485,7 +485,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectEvaIncreaseLv1"],
   tags: ["weapon","any","nullbeast"],
 }
@@ -497,7 +497,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectEvaIncreaseLv2"],
   tags: ["weapon","any","nullbeast"],
 }
@@ -509,7 +509,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectEvaIncreaseLv3"],
   tags: ["weapon","any","nullbeast"],
 }
@@ -521,7 +521,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectEvaIncreaseLv4"],
   tags: ["weapon","any","nullbeast"],
 }
@@ -533,7 +533,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectEvaIncreaseLv5"],
   tags: ["weapon","any","nullbeast"],
 }
@@ -725,7 +725,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Nenhum",
+  type: "None",
   effects: ["effectDurabilityLv1"],
   tags: ["any"],
 }
@@ -737,7 +737,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Nenhum",
+  type: "None",
   effects: ["effectDurabilityLv2"],
   tags: ["any"],
 }
@@ -749,7 +749,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Nenhum",
+  type: "None",
   effects: ["effectDurabilityLv3"],
   tags: ["any"],
 }
@@ -761,7 +761,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectSpdIncreaseLv1"],
   tags: ["weapon","any"],
 }
@@ -773,7 +773,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectSpdIncreaseLv2"],
   tags: ["weapon","any"],
 }
@@ -785,7 +785,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectSpdIncreaseLv3"],
   tags: ["weapon","any"],
 }
@@ -797,7 +797,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectCritIncreaseLv1"],
   tags: ["weapon","any"],
 }
@@ -809,7 +809,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectCritIncreaseLv2"],
   tags: ["weapon","any"],
 }
@@ -821,7 +821,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectCritIncreaseLv3"],
   tags: ["weapon","any"],
 }
@@ -833,7 +833,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectCritIncreaseLv4"],
   tags: ["weapon","any"],
 }
@@ -845,7 +845,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectCritIncreaseLv5"],
   tags: ["weapon","any"],
 }
@@ -857,7 +857,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectFlankIncreaseLv1"],
   tags: ["weapon","any"],
 }
@@ -869,7 +869,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectFlankIncreaseLv2"],
   tags: ["weapon","any"],
 }
@@ -881,7 +881,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectFlankIncreaseLv3"],
   tags: ["weapon","any"],
 }
@@ -893,7 +893,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectFlankIncreaseLv4"],
   tags: ["weapon","any"],
 }
@@ -905,7 +905,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectFlankIncreaseLv5"],
   tags: ["weapon","any"],
 }
@@ -917,7 +917,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectMovIncreaseLv1"],
   tags: ["armor","any"],
 }
@@ -953,7 +953,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectAccIncreaseLv1"],
   tags: ["weapon","any"],
 }
@@ -965,7 +965,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   lootable: "False",
   effects: ["effectBasicAttackRepel"],
 }
@@ -977,7 +977,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Nenhum",
+  type: "None",
   effects: ["effectXpBonus"],
   tags: ["any"],
 }
@@ -989,7 +989,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   lootable: "False",
   effects: ["effectXpBonus"],
 }
@@ -1001,7 +1001,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectInjuryThresholdReduction"],
   tags: ["armor","any"],
 }
@@ -1013,7 +1013,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "2",
-  type: "Armadura",
+  type: "Armor",
   effects: ["effectHpRegen"],
   tags: ["armor","any","wealdere"],
 }
@@ -1025,7 +1025,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectAoOReduction"],
   tags: ["weapon","any"],
 }
@@ -1037,7 +1037,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "2",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectLeeching"],
   tags: ["weapon","any","wealdere"],
 }
@@ -1049,7 +1049,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectStaggerOnCrit"],
   tags: ["weapon","any"],
 }
@@ -1061,7 +1061,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectRangeIncrease"],
   tags: ["weapon","any"],
 }
@@ -1073,7 +1073,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectArmorPenetration"],
   tags: ["weapon","any","brightmane"],
 }
@@ -1086,7 +1086,7 @@
   value: "35",
   rarity: "0",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectMendIncreaseLv1"],
   tags: ["weapon","any","wealdere"],
 }
@@ -1098,7 +1098,7 @@
   value: "50",
   rarity: "1",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectMendIncreaseLv2"],
   tags: ["weapon","any","wealdere"],
 }
@@ -1110,7 +1110,7 @@
   value: "70",
   rarity: "2",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectMendIncreaseLv3"],
   tags: ["weapon","any","wealdere"],
 }
@@ -1122,7 +1122,7 @@
   value: "85",
   rarity: "3",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectMendIncreaseLv4"],
   tags: ["weapon","any","wealdere"],
 }
@@ -1134,7 +1134,7 @@
   value: "100",
   rarity: "4",
   slotsUsed: "1",
-  type: "Arma",
+  type: "Weapon",
   effects: ["effectMendIncreaseLv5"],
   tags: ["weapon","any","wealdere"],
 }

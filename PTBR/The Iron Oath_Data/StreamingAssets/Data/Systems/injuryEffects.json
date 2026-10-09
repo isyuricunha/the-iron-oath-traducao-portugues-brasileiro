@@ -24,7 +24,7 @@
 
 
 {
-	Type: "Morto",
+	Type: "Dead",
 	Amount: "0",
 	ID: "Dead"
 }
@@ -33,25 +33,25 @@
 {
 	Type: "SubStatPercReduction",
 	Amount: "0.05",
-	Attribute: "PRECISÃO",
+	Attribute: "ACCURACY",
 	ID: "AccReducedPerc5"
 }
 {
 	Type: "SubStatPercReduction",
 	Amount: "0.1",
-	Attribute: "PRECISÃO",
+	Attribute: "ACCURACY",
 	ID: "AccReducedPerc10"
 }
 {
 	Type: "SubStatPercReduction",
 	Amount: "0.15",
-	Attribute: "PRECISÃO",
+	Attribute: "ACCURACY",
 	ID: "AccReducedPerc15"
 }
 {
 	Type: "SubStatPercReduction",
 	Amount: "0.25",
-	Attribute: "PRECISÃO",
+	Attribute: "ACCURACY",
 	ID: "AccReducedPerc25"
 }
 
@@ -229,13 +229,13 @@
 {
 	Type: "CoreStatReduction",
 	Amount: "5",
-	Attribute: "CAR",
+	Attribute: "CHA",
 	ID: "Minus5Cha",
 }
 {
 	Type: "CoreStatReduction",
 	Amount: "5",
-	Attribute: "DES",
+	Attribute: "DEX",
 	ID: "Minus5Dex",
 }
 
@@ -428,25 +428,25 @@
 {
 	Type: "SubStatReduction",
 	Amount: "5",
-	Attribute: "FOCO",
+	Attribute: "FOCUS",
 	ID: "5MaxFocusReduction"
 }
 {
 	Type: "SubStatReduction",
 	Amount: "15",
-	Attribute: "FOCO",
+	Attribute: "FOCUS",
 	ID: "15MaxFocusReduction"
 }
 {
 	Type: "SubStatReduction",
 	Amount: "25",
-	Attribute: "FOCO",
+	Attribute: "FOCUS",
 	ID: "25MaxFocusReduction"
 }
 {
 	Type: "SubStatReduction",
 	Amount: "40",
-	Attribute: "FOCO",
+	Attribute: "FOCUS",
 	ID: "40MaxFocusReduction"
 }
 
@@ -598,19 +598,19 @@
 {
 	Type: "SubStatReduction",
 	Amount: "1",
-	Attribute: "COR",
+	Attribute: "SPRINT",
 	ID: "1SprintReduction"
 }
 {
 	Type: "SubStatReduction",
 	Amount: "2",
-	Attribute: "COR",
+	Attribute: "SPRINT",
 	ID: "2SprintReduction"
 }
 {
 	Type: "SubStatReduction",
 	Amount: "3",
-	Attribute: "COR",
+	Attribute: "SPRINT",
 	ID: "3SprintReduction"
 }
 
@@ -673,7 +673,7 @@
 {
 	Type: "CoreStatReduction",
 	Amount: "5",
-	Attribute: "FOR",
+	Attribute: "STR",
 	ID: "Test",
 }
 

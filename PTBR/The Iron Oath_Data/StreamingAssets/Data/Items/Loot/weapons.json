@@ -12,7 +12,7 @@
 	speed: "-1",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Valkyrie", "Pirolanceiro"],
+	classReq: ["Valkyrie", "Pyrolancer"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -21,7 +21,7 @@
 	uniqueId: "tio_pitchfork",
 	icon: "pitchfork",
 	type: "polearm",
-	name: "Forcado",
+	name: "Pitchfork",
 	description: "Não é a melhor escolha de arma, mas dá conta do recado. Usável por: Pirolanceiro e Valkyrie.",
 	atk: "60",
 	acc: "0",
@@ -31,7 +31,7 @@
 	speed: "-1",
 	value: "130",
 	fittingCost: "0",
-	classReq: ["Valkyrie", "Pirolanceiro"],
+	classReq: ["Valkyrie", "Pyrolancer"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",
 	purchasable: "true",
@@ -39,7 +39,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "85",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -57,7 +57,7 @@
 	speed: "-1",
 	value: "280",
 	fittingCost: "0",
-	classReq: ["Valkyrie", "Pirolanceiro"],
+	classReq: ["Valkyrie", "Pyrolancer"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",
 	purchasable: "true",
@@ -65,7 +65,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "5",
 	repairCoin: "195",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -73,7 +73,7 @@
 	uniqueId: "tio_pike",
 	icon: "pike",
 	type: "polearm",
-	name: "Pique",
+	name: "Pike",
 	description: "Uma arma potente, confiável por muitos soldados. Usável por: Pirolanceiro e Valkyrie.",
 	atk: "78",
 	acc: "8",
@@ -83,7 +83,7 @@
 	speed: "-1",
 	value: "500",
 	fittingCost: "0",
-	classReq: ["Valkyrie", "Pirolanceiro"],
+	classReq: ["Valkyrie", "Pyrolancer"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -91,7 +91,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "8",
 	repairCoin: "320",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -109,7 +109,7 @@
 	speed: "-1",
 	value: "760",
 	fittingCost: "0",
-	classReq: ["Valkyrie", "Pirolanceiro"],
+	classReq: ["Valkyrie", "Pyrolancer"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -117,7 +117,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "13",
 	repairCoin: "490",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -126,7 +126,7 @@
 	uniqueId: "tio_halberd",
 	icon: "halberd",
 	type: "polearm",
-	name: "Alabarda",
+	name: "Halberd",
 	description: "Uma peça de fino artesanato, tão letal quanto aparenta. Pode ser usada por: Pirolanceiro e Valkyrie.",
 	atk: "102",
 	acc: "16",
@@ -162,7 +162,7 @@
 	speed: "0",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -181,7 +181,7 @@
 	speed: "0",
 	value: "120",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -189,7 +189,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "80",
-	namedVariantStat: ["ATK","MENDING","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -197,7 +197,7 @@
 	uniqueId: "tio_shortsword",
 	icon: "shortsword",
 	type: "sword",
-	name: "Espada Curta",
+	name: "Shortsword",
 	description: "A espada preferida de muitos guardas e soldados por todo o Caelum. Usável por: Guardião.",
 	atk: "58",
 	acc: "6",
@@ -207,7 +207,7 @@
 	speed: "0",
 	value: "270",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -215,7 +215,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "4",
 	repairCoin: "185",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -223,7 +223,7 @@
 	uniqueId: "tio_falchion",
 	icon: "falchion",
 	type: "sword",
-	name: "Falcata",
+	name: "Falchion",
 	description: "Um gume brutal capaz de abrir cortes profundos e terríveis. Usável por: Guardião.",
 	atk: "68",
 	acc: "8",
@@ -233,7 +233,7 @@
 	speed: "0",
 	value: "480",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -241,7 +241,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "8",
 	repairCoin: "320",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -259,7 +259,7 @@
 	speed: "0",
 	value: "720",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -267,7 +267,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "12",
 	repairCoin: "480",
-	namedVariantStat: ["ATQ","CURA","PREC","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -285,7 +285,7 @@
 	speed: "0",
 	value: "860",
 	fittingCost: "0",
-	classReq: ["Guardião"],
+	classReq: ["Guardian"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",  
 	purchasable: "true",
@@ -293,7 +293,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "15",
 	repairCoin: "560",
-	namedVariantStat: ["ATQ","CURA","PREC","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }
@@ -301,7 +301,7 @@
 	uniqueId: "tio_longsword",
 	icon: "longsword",
 	type: "twoHandedSword",
-	name: "Espada Longa",
+	name: "Longsword",
 	description: "Nível 1, espada de 2 mãos. Utilizável por: nenhum no momento! Texto provisório.",
 	atk: "82",
 	acc: "-5",
@@ -385,7 +385,7 @@
 	uniqueId: "tio_zweihander",
 	icon: "zweihander",
 	type: "twoHandedSword",
-	name: "Zweihänder",
+	name: "Zweihander",
 	description: "Nível 5, espada de 2 mãos. Utilizável por: nenhum no momento! Texto provisório.",
 	atk: "133",
 	acc: "7",
@@ -416,7 +416,7 @@
 	speed: "1",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -436,7 +436,7 @@
 	speed: "1",
 	value: "140",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -445,7 +445,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "90",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -453,7 +453,7 @@
 	uniqueId: "tio_longbow",
 	icon: "longbow",
 	type: "bow",
-	name: "Arco Longo",
+	name: "Longbow",
 	description: "Um arco simples, porém forte. Usado por muitos soldados em guerras. Utilizável por: Caçadora.",
 	atk: "79",
 	acc: "3",
@@ -463,7 +463,7 @@
 	speed: "1",
 	value: "320",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -472,7 +472,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "5",
 	repairCoin: "215",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -490,7 +490,7 @@
 	speed: "1",
 	value: "600",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -499,7 +499,7 @@
 	repairMatCount: "3",
 	repairScrapCount: "10",
 	repairCoin: "400",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -517,7 +517,7 @@
 	speed: "1",
 	value: "940",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -526,7 +526,7 @@
 	repairMatCount: "4",
 	repairScrapCount: "16",
 	repairCoin: "620",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -544,7 +544,7 @@
 	speed: "1",
 	value: "1300",
 	fittingCost: "0",
-	classReq: ["Caçadora"],
+	classReq: ["Huntress"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",
 	purchasable: "true",
@@ -553,7 +553,7 @@
 	repairMatCount: "6",
 	repairScrapCount: "22",
 	repairCoin: "860",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }
@@ -571,7 +571,7 @@
 	speed: "2",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -591,7 +591,7 @@
 	speed: "2",
 	value: "110",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -600,7 +600,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "80",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -618,7 +618,7 @@
 	speed: "2",
 	value: "240",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -627,7 +627,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "4",
 	repairCoin: "155",
-	namedVariantStat: ["ATQ","CURA","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -645,7 +645,7 @@
 	speed: "2",
 	value: "440",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -654,7 +654,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "7",
 	repairCoin: "290",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -672,7 +672,7 @@
 	speed: "2",
 	value: "700",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -681,7 +681,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "12",
 	repairCoin: "480",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -699,7 +699,7 @@
 	speed: "2",
 	value: "820",
 	fittingCost: "0",
-	classReq: ["Pugilista"],
+	classReq: ["Pugilist"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",  
 	purchasable: "true",
@@ -708,7 +708,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "14",
 	repairCoin: "550",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }
@@ -726,7 +726,7 @@
 	speed: "-1",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -745,7 +745,7 @@
 	speed: "1",
 	value: "105",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -754,7 +754,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "80",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -772,7 +772,7 @@
 	speed: "1",
 	value: "210",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -781,7 +781,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "3",
 	repairCoin: "140",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -799,7 +799,7 @@
 	speed: "1",
 	value: "420",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -808,7 +808,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "7",
 	repairCoin: "280",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Esquiva","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -826,7 +826,7 @@
 	speed: "1",
 	value: "640",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -835,7 +835,7 @@
 	repairMatCount: "3",
 	repairScrapCount: "11",
 	repairCoin: "420",
-	namedVariantStat: ["ATQ","CURA","PREC","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -853,7 +853,7 @@
 	speed: "1",
 	value: "780",
 	fittingCost: "0",
-	classReq: ["Baladeiro"],
+	classReq: ["Balladeer"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",  
 	purchasable: "true",
@@ -862,7 +862,7 @@
 	repairMatCount: "3",
 	repairScrapCount: "13",
 	repairCoin: "500",
-	namedVariantStat: ["ATQ","CURA","PREC","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }
@@ -880,7 +880,7 @@
 	speed: "0",
 	value: "0",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	rarity: "0",
 	lootable: "false",
 	purchasable: "false",
@@ -899,7 +899,7 @@
 	speed: "0",
 	value: "140",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -907,7 +907,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "2",
 	repairCoin: "85",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -925,7 +925,7 @@
 	speed: "0",
 	value: "300",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -933,7 +933,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "5",
 	repairCoin: "195",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -951,7 +951,7 @@
 	speed: "0",
 	value: "540",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -959,7 +959,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "9",
 	repairCoin: "350",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -977,7 +977,7 @@
 	speed: "0",
 	value: "880",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -985,7 +985,7 @@
 	repairMatCount: "4",
 	repairScrapCount: "15",
 	repairCoin: "580",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -1003,7 +1003,7 @@
 	speed: "0",
 	value: "1050",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",  
 	purchasable: "true",
@@ -1011,7 +1011,7 @@
 	repairMatCount: "5",
 	repairScrapCount: "18",
 	repairCoin: "700",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }
@@ -1029,7 +1029,7 @@
 	speed: "-2",
 	value: "180",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:2",
 	rarity: "0",  
 	purchasable: "true",
@@ -1038,7 +1038,7 @@
 	repairMatCount: "1",
 	repairScrapCount: "3",
 	repairCoin: "130",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","Velocidade"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,8","4,6","4,6","1,2","1,2","1,2","1,2"],
 	
 }
@@ -1056,7 +1056,7 @@
 	speed: "-2",
 	value: "390",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:4",
 	rarity: "1",  
 	purchasable: "true",
@@ -1065,7 +1065,7 @@
 	repairMatCount: "2",
 	repairScrapCount: "7",
 	repairCoin: "270",
-	namedVariantStat: ["Ataque","Cura","Precisão","CRIT_CHANCE","Defesa","Evasão","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["5,9","4,7","4,7","2,3","2,3","2,3","2,3"],
 	
 }
@@ -1083,7 +1083,7 @@
 	speed: "-2",
 	value: "680",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:6",
 	rarity: "2",  
 	purchasable: "true",
@@ -1092,7 +1092,7 @@
 	repairMatCount: "3",
 	repairScrapCount: "11",
 	repairCoin: "440",
-	namedVariantStat: ["ATQ","CURA","PRE","CRIT_CHANCE","DEF","EVA","VEL"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["6,10","5,8","5,8","2,4","2,4","2,4","2,3"],
 	
 }
@@ -1110,7 +1110,7 @@
 	speed: "-2",
 	value: "1100",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:8",
 	rarity: "3",  
 	purchasable: "true",
@@ -1119,7 +1119,7 @@
 	repairMatCount: "5",
 	repairScrapCount: "18",
 	repairCoin: "715",
-	namedVariantStat: ["ATQ","CURA","PRE","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["7,12","6,10","6,10","3,5","3,5","3,5","2,3"],
 	
 }
@@ -1137,7 +1137,7 @@
 	speed: "-2",
 	value: "1400",
 	fittingCost: "0",
-	classReq: ["Místico","Vinculador de Gelo","Invocador de Tempestades"],
+	classReq: ["Mystic","Icebinder","Stormcaller"],
 	turnIntoThisWhenBroken: "tioScrap:10",
 	rarity: "4",  
 	purchasable: "true",
@@ -1146,7 +1146,7 @@
 	repairMatCount: "6",
 	repairScrapCount: "23",
 	repairCoin: "880",
-	namedVariantStat: ["ATQ","CURA","PRECISÃO","CRIT_CHANCE","DEF","EVA","SPD"],
+	namedVariantStat: ["ATK","MENDING","ACCURACY","CRIT_CHANCE","DEF","EVA","SPD"],
 	namedVariantMods: ["8,14","7,12","7,12","4,6","4,6","4,6","2,4"],
 	
 }

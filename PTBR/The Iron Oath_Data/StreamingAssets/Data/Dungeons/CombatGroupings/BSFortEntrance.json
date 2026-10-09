@@ -1,8 +1,8 @@
 {
 	Name: "BSFortEntrance",
 	Group: ["MatureCharion","DiseasedCharion","CorruptedCharion","CharionBroodling","NullbeastDisrupter","CorruptedNullbeast","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
-	ScoutingReport: ["Charions:Charion","Espectros:Espectral","Nullbeasts:Nullbeast","Black Skull:BlackSkull"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	ScoutingReport: ["Charions:Charion","Specters:Spectral","Nullbeasts:Nullbeast","Black Skull:BlackSkull"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {

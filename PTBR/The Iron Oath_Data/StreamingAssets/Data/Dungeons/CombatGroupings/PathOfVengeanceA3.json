@@ -1,6 +1,6 @@
 {
 	Name: "PathOfVengeanceA2",
-	Group: ["MercSwordsman", "Aventureiro", "Assassino", "OutlawDeadeye","OutlawTrapper","OutlawMarksman","OutlawMarauder","OutlawThug","Warhound","Sabujo de Sangue"],
+	Group: ["MercSwordsman", "Adventurer", "Assassin", "OutlawDeadeye","OutlawTrapper","OutlawMarksman","OutlawMarauder","OutlawThug","Warhound","Bloodhound"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

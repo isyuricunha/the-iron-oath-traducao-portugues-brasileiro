@@ -1,15 +1,15 @@
 {
-	Name: "Mortos-Vivos",
-	NameDisplay: "Mortos-Vivos",
-	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
-	ScoutingReport: ["Mortos-Vivos:Morto-Vivo","Espectros:Espectral"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	Name: "Undead",
+	NameDisplay: "Undead",
+	Group: ["RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
+	ScoutingReport: ["Undead:Undead","Specters:Spectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Mortos-Vivos",
-	NameDisplay: "Mortos-Vivos",
-	Group: ["RisenScourge","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
+	Name: "Undead",
+	NameDisplay: "Undead",
+	Group: ["RisenScourge","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenFamiliar","AncientFamiliar","RisenGhoul","SpectralMatriarch","SpectralWeeper"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

@@ -14,14 +14,14 @@
 }
 {
 	ModType: "Burden",
-	Name: "Fardo",
+	Name: "Burden",
 	Description: "Impossível usar Provisões em combate.",
 	Value: "0",
 	IsPositive: "false",
 }
 {
 	ModType: "CaveIns",
-	Name: "Desabamentos",
+	Name: "Cave-Ins",
 	Description: "Maior chance de encontrar passagens bloqueadas.",
 	Value: "0",
 	IsPositive: "false",
@@ -41,14 +41,14 @@
 	IsPositive: "false",
 }
 {
-	ModType: "Energizado",
-	Name: "Energizado",
+	ModType: "Energized",
+	Name: "Energized",
 	Description: "Personagens Bem-Descansados ganham +1 de carga máxima em todas as habilidades.",
 	Value: "1",
 	IsPositive: "true",
 }
 {
-	ModType: "Exaustante",
+	ModType: "Exhausting",
 	Name: "Marcha Exaustiva",
 	Description: "Impossível correr em combate.",
 	Value: "0",
@@ -70,8 +70,8 @@
 	IsPositive: "true",
 }
 {
-	ModType: "Obscuridade",
-	Name: "Obscuridade",
+	ModType: "Gloom",
+	Name: "Gloom",
 	Description: "Não é possível Explorar manualmente.",
 	Value: "0",
 	IsPositive: "false",
@@ -107,8 +107,8 @@
 	IsEnabled: "false",
 }
 {
-	ModType: "Fome",
-	Name: "Fome",
+	ModType: "Hunger",
+	Name: "Hunger",
 	Description: "A fome se instalará após o primeiro combate e seu grupo exigirá acampar.",
 	Value: "0",
 	IsPositive: "false",

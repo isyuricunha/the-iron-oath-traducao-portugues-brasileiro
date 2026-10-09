@@ -1,6 +1,6 @@
 {
-	Job: "Rastreador",
-	Name: "Rastreador",
+	Job: "Tracker",
+	Name: "Tracker",
 	Description: "",
 	Stat: "Velocidade +2",
 	StatBonus: "2",
@@ -8,8 +8,8 @@
 	Value: 1,
 }
 {
-	Job: "Erudito",
-	Name: "Erudito",
+	Job: "Scholar",
+	Name: "Scholar",
 	Description: "",
 	Stat: "Chance de Crítico +5",
 	StatBonus: "5",
@@ -17,8 +17,8 @@
 	Value: 1.25,
 }
 {
-	Job: "Teólogo",
-	Name: "Teólogo",
+	Job: "Theologian",
+	Name: "Theologian",
 	Description: "",
 	Stat: "Moral +15",
 	StatBonus: "15",
@@ -26,8 +26,8 @@
 	Value: 10,
 }
 {
-	Job: "Herbalista",
-	Name: "Herbalista",
+	Job: "Herbalist",
+	Name: "Herbalist",
 	Description: "",
 	Stat: "Vida +40",
 	StatBonus: "40",
@@ -35,16 +35,16 @@
 	Value: 10,
 }
 {
-	Job: "Arrombador",
-	Name: "Arrombador",
+	Job: "Picklock",
+	Name: "Picklock",
 	Description: "",
 	Stat: "Precisão +8",
 	StatBonus: "8",
 	BonusDescriptions: ["Revela a localização de todas as passagens trancadas na masmorra.", "Consegue identificar fechaduras armadilhadas. Arrombar fechaduras leva menos tempo e tem mais chances de sucesso."],
 }
 {
-	Job: "Saqueador",
-	Name: "Saqueador",
+	Job: "Scavenger",
+	Name: "Scavenger",
 	Description: "",
 	Stat: "Evasion+3",
 	StatBonus: "3",
@@ -52,8 +52,8 @@
 	Value: 1.25,
 }
 {
-	Job: "Mineiro",
-	Name: "Mineiro",
+	Job: "Miner",
+	Name: "Miner",
 	Description: "",
 	Stat: "Poder +8",
 	StatBonus: "8",
@@ -61,8 +61,8 @@
 	Value: 1.25,
 }
 {
-	Job: "Desbravador",
-	Name: "Desbravador",
+	Job: "Pathfinder",
+	Name: "Pathfinder",
 	Description: "",
 	Stat: "Movimento +1",
 	StatBonus: "1",
@@ -80,8 +80,8 @@
 	Value: 2,
 }
 {
-	Job: "Sobrevivencialista",
-	Name: "Sobrevivencialista",
+	Job: "Survivalist",
+	Name: "Survivalist",
 	Description: "",
 	Stat: "Defesa +3",
 	StatBonus: "3",

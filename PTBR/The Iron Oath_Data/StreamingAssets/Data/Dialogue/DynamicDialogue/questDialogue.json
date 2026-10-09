@@ -1,8 +1,8 @@
 {
 	UniqueName: "Tutorial0",
-	Catalyst: "Nenhum",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorial0",
@@ -15,7 +15,7 @@
 	UniqueName: "TutorialDialogue0",
 	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialDialogue0",
@@ -27,7 +27,7 @@
 	UniqueName: "TutorialMove",
 	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialMove",
@@ -40,7 +40,7 @@
 	UniqueName: "TutorialEndTurn",
 	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialEndTurn",
@@ -53,20 +53,20 @@
 	UniqueName: "TutorialAbilities",
 	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialAbilities",
 	Priority: "100",
 	ClearQueueOnFinish: "true",
-	ToolTip: ["Habilidades", "As habilidades únicas do seu personagem têm um número limitado de 'Cargas' disponíveis ao longo de uma masmorra. As cargas podem ser restauradas acampando ou usando certos suprimentos. Se uma habilidade ficar sem cargas, ela ainda pode ser usada, mas com um grande custo de Vida para o personagem.\n\nCom o inimigo avançando sobre nós, podemos armar uma armadilha usando a habilidade 'Return to Cinder' do Pirolanceiro no hexágono indicado."],
+	ToolTip: ["Abilities", "As habilidades únicas do seu personagem têm um número limitado de 'Cargas' disponíveis ao longo de uma masmorra. As cargas podem ser restauradas acampando ou usando certos suprimentos. Se uma habilidade ficar sem cargas, ela ainda pode ser usada, mas com um grande custo de Vida para o personagem.\n\nCom o inimigo avançando sobre nós, podemos armar uma armadilha usando a habilidade 'Return to Cinder' do Pirolanceiro no hexágono indicado."],
 	Text: [""],
 }
 {
 	UniqueName: "TutorialHazards",
 	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialHazards",
@@ -77,9 +77,9 @@
 }
 {
 	UniqueName: "TutorialProtectDialogue",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialProtectDialogue",
@@ -89,9 +89,9 @@
 }
 {
 	UniqueName: "TutorialAoO",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialAoO",
@@ -102,9 +102,9 @@
 }
 {
 	UniqueName: "TutorialDialogueConserveStam",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialDialogueConserveStam",
@@ -114,9 +114,9 @@
 }
 {
 	UniqueName: "TutorialBasicAttack",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialBasicAttack",
@@ -127,9 +127,9 @@
 }
 {
 	UniqueName: "TutorialStormcallerAttack",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	MetaData: "tutorialStormcallerAttack",
@@ -139,7 +139,7 @@
 }
 {
 	UniqueName: "TutorialLineOfSight",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	QuestName: "Quest.CampaignPrologue",
 	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
@@ -198,7 +198,7 @@
 	MetaData: "tutorialflanking",
 	Priority: "100",
 	ClearQueueOnFinish: "true",
-	ToolTip: ["Flanqueamento", "Alvos são considerados Flanqueados quando você ocupa dois hexágonos opostos ao redor da posição deles. Todos os ataques contra alvos flanqueados causam 15% de dano extra e não podem errar.\n\nSe sua chance de acertar com um ataque básico for baixa, o melhor é tentar flanquear o inimigo primeiro para garantir o acerto, ou usar uma habilidade.\n\nVamos mover o Guardião para uma posição de flanqueamento e atacar o inimigo."],
+	ToolTip: ["Flanking", "Alvos são considerados Flanqueados quando você ocupa dois hexágonos opostos ao redor da posição deles. Todos os ataques contra alvos flanqueados causam 15% de dano extra e não podem errar.\n\nSe sua chance de acertar com um ataque básico for baixa, o melhor é tentar flanquear o inimigo primeiro para garantir o acerto, ou usar uma habilidade.\n\nVamos mover o Guardião para uma posição de flanqueamento e atacar o inimigo."],
 	Text: [""],
 }
 {
@@ -232,7 +232,7 @@
 	AutoAdvanceTime: "4",
 	Priority: "2",
 	ClearQueueOnFinish: "true",
-	ToolTip: ["Reconhecimento", "O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nClique com 'RMB' <sprite name=\"PC-rightClick\"> para ativar o modo de reconhecimento e depois use 'LMB' <sprite name=\"PC-leftClick\"> em um evento inexplorado para revelá-lo.^O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nPressione <sprite name=\"XboxOne-x\"> para ativar o modo de reconhecimento e depois pressione <sprite name=\"XboxOne-a\"> em um evento inexplorado para revelá-lo."],
+	ToolTip: ["Scouting", "O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nClique com 'RMB' <sprite name=\"PC-rightClick\"> para ativar o modo de reconhecimento e depois use 'LMB' <sprite name=\"PC-leftClick\"> em um evento inexplorado para revelá-lo.^O reconhecimento pode ser usado para revelar a identidade de um evento próximo e pode ajudar a evitar armadilhas e outras surpresas que possam estar à sua espera. Ao reconhecer a localização de um inimigo, você impede que ele possa emboscar você. Ele tem usos limitados, então deve ser usado com moderação.\n\nPressione <sprite name=\"XboxOne-x\"> para ativar o modo de reconhecimento e depois pressione <sprite name=\"XboxOne-a\"> em um evento inexplorado para revelá-lo."],
 	Text: ["3:Deveríamos gastar algum tempo reconhecendo o que está ao nosso redor. Não podemos nos dar ao luxo de cair em uma emboscada."],
 }
 {
@@ -280,7 +280,7 @@
 {
 	UniqueName: "TutorialMinorInjury",
 	Catalyst: "MINOR_INJURY",
-	ToolTip: ["Ferimentos", "Ferimentos têm chance de ocorrer quando um personagem está com menos de 50% de Vida e sempre ocorrem quando a Vida chega a 0. Se um personagem sofrer um ferimento, você pode usar uma Atadura para estabilizá-lo e evitar que os ferimentos piorem. Se ele continuar lutando com um ferimento não estabilizado, a gravidade dele pode aumentar."],
+	ToolTip: ["Injuries", "Ferimentos têm chance de ocorrer quando um personagem está com menos de 50% de Vida e sempre ocorrem quando a Vida chega a 0. Se um personagem sofrer um ferimento, você pode usar uma Atadura para estabilizá-lo e evitar que os ferimentos piorem. Se ele continuar lutando com um ferimento não estabilizado, a gravidade dele pode aumentar."],
 	Text: [""],
 }
 {
@@ -322,7 +322,7 @@
 {	
 	UniqueName: "TutorialAllyLowHealth",
 	Catalyst: "LOW_HEALTH",
-	ToolTip: ["Cura", "Certifique-se de curar seus personagens antes que eles sofram dano demais. A classe Guardião pode curar aliados com a habilidade 'Aurora'. Em uma emergência, você também pode usar uma poção de cura."],
+	ToolTip: ["Healing", "Certifique-se de curar seus personagens antes que eles sofram dano demais. A classe Guardião pode curar aliados com a habilidade 'Aurora'. Em uma emergência, você também pode usar uma poção de cura."],
 	Text: [""],
 	
 }
@@ -349,14 +349,14 @@
 	UniqueName: "TutorialEnterInn",
 	Catalyst: "ENTER_INN",
 	UniqueName: "TutorialInns",
-	ToolTip: ["Estalagens", "Toda cidade tem uma Estalagem onde você pode descansar, comprar bebidas ou recrutar novos membros. Descansar reduz a Fadiga de todo o seu grupo em 3 por noite comprada. Pagar uma rodada para a companhia aumenta a Lealdade deles por um tempo, embora beber com frequência demais possa ter efeitos adversos. Se precisar de novos membros para o seu grupo, você pode vasculhar os talentos locais e recrutá-los para a companhia."],
+	ToolTip: ["Inns", "Toda cidade tem uma Estalagem onde você pode descansar, comprar bebidas ou recrutar novos membros. Descansar reduz a Fadiga de todo o seu grupo em 3 por noite comprada. Pagar uma rodada para a companhia aumenta a Lealdade deles por um tempo, embora beber com frequência demais possa ter efeitos adversos. Se precisar de novos membros para o seu grupo, você pode vasculhar os talentos locais e recrutá-los para a companhia."],
 	Text: [""],
 }
 {
 	UniqueName: "TutorialRecruits",
 	Catalyst: "INN_RECRUITS_LIST",
 	UniqueName: "TutorialRecruits",
-	ToolTip: ["Recrutamento", "Esta é uma lista de todos os recrutas disponíveis na cidade. Conforme o tempo passa, novos recrutas aparecem. Você pode ver informações sobre cada recruta clicando no ícone à esquerda do retrato dele."],
+	ToolTip: ["Recruiting", "Esta é uma lista de todos os recrutas disponíveis na cidade. Conforme o tempo passa, novos recrutas aparecem. Você pode ver informações sobre cada recruta clicando no ícone à esquerda do retrato dele."],
 	Text: [""],
 }
 {
@@ -370,7 +370,7 @@
 	UniqueName: "TutorialEnterInfimary",
 	Catalyst: "ENTER_INFIRMARY",
 	UniqueName: "TutorialInfirmary",
-	ToolTip: ["Enfermaria", "Se você tiver um personagem ferido, deverá interná-lo na Enfermaria de uma cidade para que ele se recupere. Quando estiver totalmente curado, ele se juntará automaticamente à sua companhia. Lesões graves exigem cuidados imediatos para evitar dano permanente ou morte."],
+	ToolTip: ["Infirmary", "Se você tiver um personagem ferido, deverá interná-lo na Enfermaria de uma cidade para que ele se recupere. Quando estiver totalmente curado, ele se juntará automaticamente à sua companhia. Lesões graves exigem cuidados imediatos para evitar dano permanente ou morte."],
 	Text: [""],
 }
 {
@@ -441,7 +441,7 @@
 {
 	UniqueName: "TutorialBlockedPathTile",
 	Catalyst: "BLOCKED_PATH_TILE",
-	PartyMakeupReq: "QUALQUER",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
   Priority: "2",
@@ -452,18 +452,18 @@
 
 {
     UniqueName: "TutorialPostBattle",
-	Catalyst: "NENHUM",
-	PartyMakeupReq: "QUALQUER",
+	Catalyst: "NONE",
+	PartyMakeupReq: "ANY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
     Priority: "2",
     ClearQueueOnFinish: "true",
-    ToolTip: ["Ferimentos", "Se um personagem se ferir, você pode usar uma Atadura para estabilizar o ferimento. Isso interrompe o sangramento e minimiza os efeitos negativos. Seus itens podem ser acessados pressionando 'I' ou clicando no ícone da bolsa."],
+    ToolTip: ["Injuries", "Se um personagem se ferir, você pode usar uma Atadura para estabilizar o ferimento. Isso interrompe o sangramento e minimiza os efeitos negativos. Seus itens podem ser acessados pressionando 'I' ou clicando no ícone da bolsa."],
 	Text: [""],
 }
 {
   UniqueName: "TutorialPreBossBattle",
-	Catalyst: "NENHUM",
+	Catalyst: "NONE",
 	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
@@ -654,7 +654,7 @@
 	Catalyst: "LOW_HEALTH",
 	QuestName: "Quest.TutorialQuest",
 	PartyMakeupReq: "TARGET_AND_RAND_ALLY",
-  ClassReq: ["None", "Pirolanceiro"],
+  ClassReq: ["None", "Pyrolancer"],
 	FireImmediately: "true",
 	AutoAdvanceTime: "4",
 	Text: ["1:Agora é a hora de usar seu feitiço de cura, Guardião!"],

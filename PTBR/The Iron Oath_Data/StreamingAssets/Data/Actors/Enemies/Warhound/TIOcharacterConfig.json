@@ -10,7 +10,7 @@
 	Speed: ["7"],
 	Move: "5",
 	Resists: [],
-	Immunities: ["MEDO"],
+	Immunities: ["FEAR"],
 	ResourceDrop: ["tioScrap"],
 	EncounterValue: "2",
 	EncounterValueEliteOverride: "0",

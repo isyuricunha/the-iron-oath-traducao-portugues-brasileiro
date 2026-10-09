@@ -1,8 +1,8 @@
 {
 	Name: "Brightmanes",
 	NameDisplay: "Brightmane",
-	Group: ["BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","BrightmaneCub","Lenhador","NullbeastStalker"],
-	ScoutingReport: ["Brightmanes:Brightmane","Lenhador:Lenhador:","Nullbeasts:Nullbeast"],
+	Group: ["BrightmaneHunter","DiseasedBrightmane","CorruptedBrightmane","BrightmaneCub","Woodsman","NullbeastStalker"],
+	ScoutingReport: ["Brightmanes:Brightmane","Woodsman:Woodsman:","Nullbeasts:Nullbeast"],
 	Loot: ["Enchantment,any","Enchantment,brightmane"],
 	Weight: 1,
 }

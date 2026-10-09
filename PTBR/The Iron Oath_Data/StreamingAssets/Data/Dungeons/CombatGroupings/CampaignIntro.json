@@ -6,6 +6,6 @@
 {
 	Name: "CampaignIntro",
 	IsBossEncounter: true,
-	Group: ["RisenGeneral","SkeletonArcher","RisenGhoul", "Esqueleto"],
+	Group: ["RisenGeneral","SkeletonArcher","RisenGhoul", "Skeleton"],
 	Weight: 1,
 }

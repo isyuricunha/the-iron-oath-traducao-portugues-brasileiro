@@ -53,7 +53,7 @@
 	value: "200",
 	rarity: "5",  
 	purchasable: "false",
-	legendaryEffect: "Imobilidade",
+	legendaryEffect: "Stillness",
 }
 {
 	uniqueId: "tio_fleetFootedBoots",

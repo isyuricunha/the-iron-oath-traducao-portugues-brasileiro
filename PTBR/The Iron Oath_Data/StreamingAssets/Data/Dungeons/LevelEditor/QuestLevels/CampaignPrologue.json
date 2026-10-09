@@ -4,10 +4,10 @@
   "height": 1280,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "Quest.CampaignPrologue", "Tileset": "", "Size": "Pequeno", "Tags": ""},
+  "values": {"ID": "Quest.CampaignPrologue", "Tileset": "", "Size": "Small", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -17,7 +17,7 @@
       "gridCellsY": 40,
       "entities": [
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 1,
           "_eid": "76055586",
           "x": 576,
@@ -27,7 +27,7 @@
           "values": {"ScriptedEventName": "SE.CampaignIntroDiscardedPack", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 2,
           "_eid": "76055586",
           "x": 704,
@@ -37,7 +37,7 @@
           "values": {"ScriptedEventName": "SE.CampaignIntroCaveIn", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 3,
           "_eid": "76055586",
           "x": 832,
@@ -47,7 +47,7 @@
           "values": {"ScriptedEventName": "SE.CampaignIntroStashFound", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 4,
           "_eid": "76055586",
           "x": 960,
@@ -57,7 +57,7 @@
           "values": {"ScriptedEventName": "SE.CampaignIntroUndeadBoss", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 5,
           "_eid": "76055586",
           "x": 896,
@@ -67,7 +67,7 @@
           "values": {"ScriptedEventName": "SE.CampaignIntroExit", "IsGoal": true}
         },
         {
-          "name": "Início",
+          "name": "Start",
           "id": 6,
           "_eid": "76104019",
           "x": 576,
@@ -77,7 +77,7 @@
           "values": {"ScriptedEventName": "SE.CampaignPrologueIntro"}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 7,
           "_eid": "76105222",
           "x": 704,
@@ -87,7 +87,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 8,
           "_eid": "76105222",
           "x": 768,
@@ -97,7 +97,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Diálogo",
+          "name": "Dialogue",
           "id": 9,
           "_eid": "76103581",
           "x": 576,

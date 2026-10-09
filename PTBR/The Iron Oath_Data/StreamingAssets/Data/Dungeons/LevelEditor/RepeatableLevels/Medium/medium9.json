@@ -4,10 +4,10 @@
   "height": 2048,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "", "Tileset": "", "Size": "Pequeno", "Tags": ""},
+  "values": {"ID": "", "Tileset": "", "Size": "Small", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -17,7 +17,7 @@
       "gridCellsY": 64,
       "entities": [
         {
-          "name": "Início",
+          "name": "Start",
           "id": 0,
           "_eid": "76104019",
           "x": 640,
@@ -27,7 +27,7 @@
           "values": {"ScriptedEventName": ""}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 1,
           "_eid": "76055586",
           "x": 1152,
@@ -37,7 +37,7 @@
           "values": {"ScriptedEventName": "0", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 5,
           "_eid": "76055586",
           "x": 896,
@@ -47,7 +47,7 @@
           "values": {"ScriptedEventName": "2", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 6,
           "_eid": "76055586",
           "x": 1024,
@@ -57,7 +57,7 @@
           "values": {"ScriptedEventName": "", "IsGoal": false}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 7,
           "_eid": "76105222",
           "x": 1024,
@@ -67,7 +67,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 8,
           "_eid": "76105222",
           "x": 1024,
@@ -77,7 +77,7 @@
           "values": {"PossibleKey": false}
         },
         {
-          "name": "Combate",
+          "name": "Combat",
           "id": 9,
           "_eid": "76105222",
           "x": 832,
@@ -94,7 +94,7 @@
           "y": 1024,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -104,7 +104,7 @@
           "y": 1024,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -114,7 +114,7 @@
           "y": 1472,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -124,7 +124,7 @@
           "y": 1216,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -134,7 +134,7 @@
           "y": 960,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": true, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": true, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -144,7 +144,7 @@
           "y": 1152,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -154,7 +154,7 @@
           "y": 1536,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -164,7 +164,7 @@
           "y": 1344,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -174,7 +174,7 @@
           "y": 1536,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -184,7 +184,7 @@
           "y": 1536,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -194,7 +194,7 @@
           "y": 1216,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -204,7 +204,7 @@
           "y": 1152,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",

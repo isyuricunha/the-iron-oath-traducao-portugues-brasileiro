@@ -1,13 +1,13 @@
 {
-	Name: "Assassinos",
-	NameDisplay: "Assassinos",
-	Group: ["Assassin","OutlawBackstabber","OutlawThug","Warhound","Sabujo de Sangue","OutlawDeadeye","OutlawScout"],
+	Name: "Assassins",
+	NameDisplay: "Assassins",
+	Group: ["Assassin","OutlawBackstabber","OutlawThug","Warhound","Bloodhound","OutlawDeadeye","OutlawScout"],
 	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
-	Name: "Assassinos",
-	Group: ["Assassino","OutlawBackstabber","OutlawThug","Warhound","Sabujo de Sangue","OutlawDeadeye","OutlawScout"],
+	Name: "Assassins",
+	Group: ["Assassin","OutlawBackstabber","OutlawThug","Warhound","Bloodhound","OutlawDeadeye","OutlawScout"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

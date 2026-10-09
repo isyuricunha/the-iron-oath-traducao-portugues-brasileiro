@@ -9,6 +9,6 @@
 	WIS: "12",
 	SPD: "7",
 	Move: "3",
-	Primary: "SAB",
-	Secondary: "CAR",
+	Primary: "WIS",
+	Secondary: "CHA",
 }

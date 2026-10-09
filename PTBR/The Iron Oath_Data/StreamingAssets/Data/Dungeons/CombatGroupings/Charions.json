@@ -1,7 +1,7 @@
 {
 	Name: "Charions",
-	Group: ["MatureCharion","DiseasedCharion","CorruptedCharion","CharionBroodling","Lenhador","NullbeastDisrupter"],
-	ScoutingReport: ["Charions:Charion","Lenhador:Lenhador","Nullbeasts:Nullbeast"],
+	Group: ["MatureCharion","DiseasedCharion","CorruptedCharion","CharionBroodling","Woodsman","NullbeastDisrupter"],
+	ScoutingReport: ["Charions:Charion","Woodsman:Woodsman","Nullbeasts:Nullbeast"],
 	Loot: ["Enchantment,any","Enchantment,charion"],
 	Weight: 1,
 }

@@ -4,7 +4,7 @@
   name: "Riqueza (excluir isto)",
   description: "Este é um recurso usado para calcular o dinheiro de uma cidade, mas preciso dele durante os testes. Excluir antes do lançamento.",
   value: "100",
-  type: "Riqueza",
+  type: "Wealth",
   tags: ["wealth"],
 }
 {
@@ -13,7 +13,7 @@
   name: "Militar (excluir isto)",
   description: "Este é um recurso usado para calcular a força de uma cidade, mas preciso dele durante os testes. Excluir antes do lançamento.",
   value: "100",
-  type: "Militar",
+  type: "Military",
   tags: ["military"],
 }
 {
@@ -29,10 +29,10 @@
 {
   uniqueId: "tioGems",
   icon: "gems",
-  name: "Gemas",
+  name: "Gems",
   description: "Gemas raras e brutas de uma mina próxima. Têm pouca utilidade prática, mas alcançarão um alto preço no mercado.",
   value: "300",
-  type: "Gemas",
+  type: "Gems",
   tags: ["gems","rare"],
   purchasable: "true",
 }
@@ -42,17 +42,17 @@
   name: "Minério de Ouro",
   description: "Minério de ouro bruto. Mercadores abastados pagarão um bom preço por algo assim.",
   value: "220",
-  type: "Ouro",
+  type: "Gold",
   tags: ["gold","rare"],
   purchasable: "true",
 }
 {
   uniqueId: "tioMeat",
   icon: "meat",
-  name: "Carne",
+  name: "Meat",
   description: "Uma caixa de carnes salgadas. Usada para comércio nos mercados.",
   value: "50",
-  type: "Carne",
+  type: "Meat",
   tags: ["meat","food"],
   isGenericDrop: true,
   purchasable: "true",
@@ -60,10 +60,10 @@
 {
   uniqueId: "tioFish",
   icon: "fish",
-  name: "Peixe",
+  name: "Fish",
   description: "Uma caixa repleta de peixes salgados. Usada para comércio nos mercados.",
   value: "40",
-  type: "Peixe",
+  type: "Fish",
   tags: ["food","fish"],
   isGenericDrop: true,
   purchasable: "true",
@@ -71,10 +71,10 @@
 {
   uniqueId: "tioGrain",
   icon: "grain",
-  name: "Grãos",
+  name: "Grain",
   description: "Um saco de grãos. Usado para comércio nos mercados.",
   value: "30",
-  type: "Grãos",
+  type: "Grain",
   tags: ["grain","food"],
   isGenericDrop: true,
   purchasable: "true",
@@ -82,10 +82,10 @@
 {
   uniqueId: "tioSalt",
   icon: "salt",
-  name: "Sal",
+  name: "Salt",
   description: "Um saco de sal. Uma mercadoria muito procurada que pode ser comprada e vendida nos mercados.",
   value: "160",
-  type: "Sal",
+  type: "Salt",
   tags: ["salt"],
   isGenericDrop: true,
   purchasable: "true",
@@ -93,10 +93,10 @@
 {
   uniqueId: "tioSpice",
   icon: "spice",
-  name: "Especiarias",
+  name: "Spice",
   description: "Uma variedade de especiarias que deixa qualquer prato mais saboroso. Usada para comércio nos mercados.",
   value: "100",
-  type: "Especiarias",
+  type: "Spice",
   tags: ["spice","luxury"],
   isGenericDrop: true,
   purchasable: "true",
@@ -104,10 +104,10 @@
 {
   uniqueId: "tioAle",
   icon: "ale",
-  name: "Cerveja",
+  name: "Ale",
   description: "Barris de cerveja. Uma cidade nunca tem o bastante. Usados para comércio nos mercados.",
   value: "45",
-  type: "Cerveja",
+  type: "Ale",
   tags: ["ale","luxury"],
   isGenericDrop: true,
   purchasable: "true",
@@ -115,10 +115,10 @@
 {
   uniqueId: "tioWine",
   icon: "wine",
-  name: "Vinho",
+  name: "Wine",
   description: "Garrafas de vinho fino. Item indispensável em qualquer grande festim. Usadas para comércio nos mercados.",
   value: "75",
-  type: "Vinho",
+  type: "Wine",
   tags: ["wine","luxury"],
   isGenericDrop: true,
   purchasable: "true",
@@ -126,10 +126,10 @@
 {
   uniqueId: "tioMedicine",
   icon: "medicine",
-  name: "Medicamentos",
+  name: "Medicine",
   description: "Ervas medicinais e suprimentos para tratar os enfermos. Usados para comércio nos mercados.",
   value: "65",
-  type: "Medicamentos",
+  type: "Medicine",
   tags: ["medicine"],
   isGenericDrop: true,
   purchasable: "true",
@@ -137,10 +137,10 @@
 {
   uniqueId: "tioWood",
   icon: "wood",
-  name: "Madeira",
+  name: "Wood",
   description: "Madeira de boa qualidade. Pode ser vendida nos mercados ou usada para reparar equipamentos.",
   value: "80",
-  type: "Madeira",
+  type: "Wood",
   tags: ["commonResource","wood"],
   isGenericDrop: true,
   purchasable: "true",
@@ -148,10 +148,10 @@
 {
   uniqueId: "tioStone",
   icon: "stone",
-  name: "Pedra",
+  name: "Stone",
   description: "Pedra extraída de uma pedreira. Útil para cidades que precisam de reparos.",
   value: "120",
-  type: "Pedra",
+  type: "Stone",
   tags: ["commonResource","stone"],
   isGenericDrop: true,
   purchasable: "true",
@@ -159,10 +159,10 @@
 {
   uniqueId: "tioIron",
   icon: "iron",
-  name: "Ferro",
+  name: "Iron",
   description: "Alguns lingotes de ferro. Podem ser vendidos nos mercados ou usados para reparar equipamentos.",
   value: "140",
-  type: "Ferro",
+  type: "Iron",
   tags: ["commonResource","iron"],
   isGenericDrop: true,
   purchasable: "true",
@@ -170,10 +170,10 @@
 {
   uniqueId: "tioCloth",
   icon: "cloth",
-  name: "Tecido",
+  name: "Cloth",
   description: "Tecidos finos de linho e lã. Podem ser vendidos nos mercados ou usados para reparar equipamentos.",
   value: "60",
-  type: "Tecido",
+  type: "Cloth",
   tags: ["cloth"],
   isGenericDrop: true,
   purchasable: "true",
@@ -181,10 +181,10 @@
 {
   uniqueId: "tioPelts",
   icon: "furs",
-  name: "Peles",
+  name: "Pelts",
   description: "Peles e pelos de vários animais. Podem ser vendidos nos mercados ou usados para reparar equipamentos.",
   value: "70",
-  type: "Peles",
+  type: "Furs",
   tags: ["fur"],
   isGenericDrop: true,
   purchasable: "true",
@@ -192,8 +192,8 @@
 {
   uniqueId: "tioScrap",
   icon: "equipmentScraps",
-  name: "Sucata",
-  type: "Outros",
+  name: "Scrap",
+  type: "Other",
   description: "Uma variedade de materiais de sucata. Podem ser vendidos nos mercados ou usados para reparar equipamentos.",
   value: "25",
   maxStack: "99",
@@ -207,7 +207,7 @@
   name: "Pelo de Brightmane",
   description: "Um tufo de pelo da pele de um Brightmane. Pode ser vendido nos mercados.",
   value: "15",
-  type: "Peles",
+  type: "Furs",
   tags: ["fur"],
   chanceToLootFromSpecialEnemy: "0.1",
 }
@@ -216,7 +216,7 @@
   icon: "breachPouch",
   name: "Bolsa de Brecha",
   description: "Uma pequena bolsa com propriedades mágicas, cuidadosamente confeccionada pelo Círculo de Aether. Usada para fechar Brechas do Vazio.",
-  type: "Outros",
+  type: "Other",
   canDiscard: "false",
   value: "100",
 }
@@ -226,7 +226,7 @@
   name: "Sangue de Demônio",
   description: "Um pequeno frasco de sangue de demônio. Pode ser vendido nos mercados.",
   value: "20",
-  type: "Outros",
+  type: "Other",
   chanceToLootFromSpecialEnemy: "0.1",
 }
 {
@@ -236,7 +236,7 @@
   description: "A cauda decepada de um hoarwulf. Pode ser vendida em mercados.",
   value: "15",
   tags: ["fur"],
-  type: "Peles",
+  type: "Furs",
   chanceToLootFromSpecialEnemy: "0.1",
 }
 {
@@ -245,7 +245,7 @@
   name: "Dentes de Nullbeast",
   description: "Um grande dente retirado de um nullbeast morto. Pode ser vendido em mercados.",
   value: "18",
-  type: "Outros",
+  type: "Other",
   chanceToLootFromSpecialEnemy: "0.1",
 }
 {
@@ -254,7 +254,7 @@
   name: "Pele de Wealdere",
   description: "Um pedaço de pele de um wealdere. Pode ser vendido em mercados.",
   value: "25",
-  type: "Outros",
+  type: "Other",
   chanceToLootFromSpecialEnemy: "0.1",
 }
 {
@@ -263,7 +263,7 @@
   name: "Escamas de Charion",
   description: "Escamas de um charion. Podem ser vendidas em mercados.",
   value: "20",
-  type: "Outros",
+  type: "Other",
   chanceToLootFromSpecialEnemy: "0.1",
 }
 {
@@ -272,15 +272,15 @@
   name: "Ossos de Morto-Vivo",
   description: "Os ossos de um esqueleto reanimado. Podem ser vendidos em mercados.",
   value: "8",
-  type: "Outros",
+  type: "Other",
 }
 {
   uniqueId: "tio_DungeonKey",
   icon: "dungeonKey",
-  name: "Chave",
+  name: "Key",
   description: "Uma chave de ferro. Certamente deve destravar algo por aqui...",
   value: "100",
-  type: "Outros",
+  type: "Other",
   isStealable: "false",
   canDiscard: "false",
 }
@@ -290,7 +290,7 @@
   name: "Ingredientes Medicinais",
   description: "Ingredientes especiais para diversos medicamentos. Um item de missão que pode ser vendido em mercados.",
   value: "65",
-  type: "Outros",
+  type: "Other",
 }
 {
   uniqueId: "tioRareMedicalHerbs",
@@ -298,7 +298,7 @@
   name: "Fruto Roka",
   description: "Um ingrediente raro usado em medicamentos que salvam vidas. Item de missão que pode ser vendido em mercados.",
   value: "150",
-  type: "Outro",
+  type: "Other",
 }
 {
   uniqueId: "tio_rottingHumanHead",
@@ -306,7 +306,7 @@
   name: "Cabeça Decepada",
   description: "Uma cabeça humana em decomposição. Certamente há algum uso para ela? Além de atrair moscas, claro.",
   value: "0",
-  type: "Outro",
+  type: "Other",
   canDiscard: "true",
 }
 {
@@ -315,7 +315,7 @@
   name: "Minério do Morto",
   description: "Um tipo raro de mineral que só se forma nas proximidades dos mortos. Item de missão que pode ser vendido em mercados.",
   value: "100",
-  type: "Outro",
+  type: "Other",
   canDiscard: "false",
 }
 {
@@ -324,14 +324,14 @@
   name: "Cabeça de Demônio",
   description: "A cabeça de um demônio decapitado. Durante a Praga, a Vanguarda pagará uma recompensa por ela.",
   value: "30",
-  type: "Outro",
+  type: "Other",
 }
 {
   uniqueId: "tio_dungeonMap",
   icon: "dungeonMapForSale",
   name: "Mapa de Masmorra",
   description: "Um mapa de uma masmorra que exploramos por completo. Pode ser vendido por moedas extras.",
-  type: "Outro",
+  type: "Other",
   value: "100",
 }
 {
@@ -339,6 +339,6 @@
   icon: "coinPouch",
   name: "Bolsa de Moedas",
   description: "Uma bolsa de moedas",
-  type: "Outro",
+  type: "Other",
   value: "0",
 }

@@ -137,7 +137,7 @@
 	TraitsToAdjust: ["Proud:-5", "Modest:5"],
 }
 {	
-	Name: "Parente",
+	Name: "Kin",
     Description: "",
     Value: "10",
 	TraitsToAdjust: ["Proud:5", "Modest:-5"],
@@ -457,13 +457,13 @@
 	TraitsToAdjust: ["Militant:5", "Pacifist:-5"],
 }
 {	
-	Name: "Traidor",
+	Name: "Traitor",
     Description: "",
     Value: "-30",
 	TraitsToAdjust: ["Merciful:10", "Harsh:-10"],
 }
 {	
-	Name: "Perjuro",
+	Name: "Oathbreaker",
     Description: "",
     Value: "-20",
 }
@@ -476,7 +476,7 @@
 	TraitsToAdjust: ["Merciful:5", "Harsh:-5"],
 }
 {	
-	Name: "Saqueador",
+	Name: "Raider",
     Description: "",
     Value: "-15",
 }

@@ -1,8 +1,8 @@
 {
 	Name: "BattlefieldVersusSoldiers",
 	Group: ["HouseKnight", "HouseGrenadier", "HouseSkirmisher", "Warhound", "HouseBannerman"],
-	ScoutingReport: ["Soldados:Casa"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	ScoutingReport: ["Soldiers:House"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {

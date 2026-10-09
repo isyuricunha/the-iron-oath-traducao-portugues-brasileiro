@@ -74,7 +74,7 @@
 	Text: "Poderíamos usar mais tropas focadas em atacar e repelir nossos inimigos. Considere contratá-las o quanto antes.",
 }
 {
-	Type: "FERIDOS",
+	Type: "INJURIES",
 	DelayUntilRepeat: 400,
 	Text: "Temos um grande número de unidades feridas. Talvez agora seja uma boa hora para deixá-las descansar antes de partirmos para mais longe, ou podemos contratar alguns substitutos extras.",
 }

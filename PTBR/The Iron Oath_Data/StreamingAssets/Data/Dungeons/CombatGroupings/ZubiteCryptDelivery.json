@@ -1,13 +1,13 @@
 {
 	Name: "ZubiteCryptDelivery",
-	Group: ["RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
-	ScoutingReport: ["Mortos-Vivos:Morto-Vivo","Espectros:Espectral"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	Group: ["RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	ScoutingReport: ["Undead:Undead","Specters:Spectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
 	Name: "ZubiteCryptDelivery",
-	Group: ["RisenScourge","RisenGeneral","RisenSoldier","Esqueleto","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
+	Group: ["RisenScourge","RisenGeneral","RisenSoldier","Skeleton","RisenWarden","SkeletonArcher","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

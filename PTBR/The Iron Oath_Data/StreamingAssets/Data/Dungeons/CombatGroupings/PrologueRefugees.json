@@ -2,8 +2,8 @@
 	Name: "PrologueRefugees",
 	NameDisplay: "Brightmane",
 	Group: ["BrightmaneCub","NullbeastStalker","NullbeastDisrupter","DiseasedNullbeast"],
-	ScoutingReport: ["Brightmanes:Brightmane","Nullbeast:Nullbeast","Demônios:Demon"],
-	Loot: ["Encantamento,qualquer","Encantamento,brightmane","Encantamento,nullbeast"],
+	ScoutingReport: ["Brightmanes:Brightmane","Nullbeast:Nullbeast","Demons:Demon"],
+	Loot: ["Enchantment,any","Enchantment,brightmane","Enchantment,nullbeast"],
 	Weight: 1,
 }
 {

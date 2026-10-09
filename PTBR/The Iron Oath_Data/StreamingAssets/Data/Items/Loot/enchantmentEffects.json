@@ -2,135 +2,135 @@
   uniqueId: "effectDmgResistEarth",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Terra",
+  relatedDamageType: "EARTH",
 }
 {
   uniqueId: "effectDmgResistFire",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Fogo",
+  relatedDamageType: "FIRE",
 }
 {
   uniqueId: "effectDmgResistFrost",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Gelo",
+  relatedDamageType: "FROST",
 }
 {
   uniqueId: "effectDmgResistHoly",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Sagrado",
+  relatedDamageType: "HOLY",
 }
 {
   uniqueId: "effectDmgResistDark",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Sombrio",
+  relatedDamageType: "DARK",
 }
 {
   uniqueId: "effectDmgResistLightning",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Raio",
+  relatedDamageType: "LIGHTNING",
 }
 {
   uniqueId: "effectDmgResistSlashing",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Cortante",
+  relatedDamageType: "SLASHING",
 }
 {
   uniqueId: "effectDmgResistPiercing",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Perfurante",
+  relatedDamageType: "PIERCING",
 }
 {
   uniqueId: "effectDmgResistCrushing",
   type: "DamageTypeResist",
   valueA: "0.75",
-  relatedDamageType: "Esmagador",
+  relatedDamageType: "CRUSHING",
 }
 {
   uniqueId: "effectDmgImmunityKnockback",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Repulsão",
+  relatedDamageType: "KNOCKBACK",
 }
 {
   uniqueId: "effectDmgImmunityStagger",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Cambaleante",
+  relatedDamageType: "STAGGERED",
 }
 {
   uniqueId: "effectDmgImmunityBleed",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Sangramento",
+  relatedDamageType: "BLEED",
 }
 {
   uniqueId: "effectDmgImmunityPoison",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Veneno",
+  relatedDamageType: "POISON",
 }
 {
   uniqueId: "effectDmgImmunityStun",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Atordoamento",
+  relatedDamageType: "STUN",
 }
 {
   uniqueId: "effectDmgImmunityCharm",
   type: "DamageTypeImmunity",
-  relatedDamageType: "Encantamento",
+  relatedDamageType: "CHARM",
 }
 {
   uniqueId: "effectDmgImmunitySleep",
   type: "DamageTypeImmunity",
-  relatedDamageType: "SONO",
+  relatedDamageType: "SLEEP",
 }
 {
   uniqueId: "effectDmgImmunityFreeze",
   type: "DamageTypeImmunity",
-  relatedDamageType: "CONGELAMENTO",
+  relatedDamageType: "FREEZE",
 }
 {
   uniqueId: "effectDmgImmunityBurn",
   type: "DamageTypeImmunity",
-  relatedDamageType: "QUEIMADURA",
+  relatedDamageType: "BURN",
 }
 {
   uniqueId: "effectDmgImmunitySilence",
   type: "DamageTypeImmunity",
-  relatedDamageType: "SILÊNCIO",
+  relatedDamageType: "SILENCE",
 }
 {
   uniqueId: "effectDmgImmunityFear",
   type: "DamageTypeImmunity",
-  relatedDamageType: "MEDO",
+  relatedDamageType: "FEAR",
 }
 {
   uniqueId: "effectDmgImmunityBlind",
   type: "DamageTypeImmunity",
-  relatedDamageType: "CEGUEIRA",
+  relatedDamageType: "BLIND",
 }
 {
   uniqueId: "effectDmgImmunityTaunt",
   type: "DamageTypeImmunity",
-  relatedDamageType: "PROVOCAÇÃO",
+  relatedDamageType: "TAUNT",
 }
 {
   uniqueId: "effectDmgImmunitySlow",
   type: "DamageTypeImmunity",
-  relatedDamageType: "LENTIDÃO",
+  relatedDamageType: "SLOW",
 }
 {
   uniqueId: "effectDmgImmunityRoot",
   type: "DamageTypeImmunity",
-  relatedDamageType: "IMOBILIZAÇÃO",
+  relatedDamageType: "RESTRAIN",
 }
 {
   uniqueId: "effectDmgImmunityMarked",
   type: "DamageTypeImmunity",
-  relatedDamageType: "MARCADO",
+  relatedDamageType: "MARKED",
 }
 {
   uniqueId: "effectWeaponIncreaseLv1",
@@ -161,31 +161,31 @@
   uniqueId: "effectHpIncreaseLv1",
   type: "SubStatIncrease",
   valueA: "50",
-  relatedSubStat: "PV",
+  relatedSubStat: "HP",
 }
 {
   uniqueId: "effectHpIncreaseLv2",
   type: "SubStatIncrease",
   valueA: "60",
-  relatedSubStat: "PV",
+  relatedSubStat: "HP",
 }
 {
   uniqueId: "effectHpIncreaseLv3",
   type: "SubStatIncrease",
   valueA: "70",
-  relatedSubStat: "PV",
+  relatedSubStat: "HP",
 }
 {
   uniqueId: "effectHpIncreaseLv4",
   type: "SubStatIncrease",
   valueA: "80",
-  relatedSubStat: "PV",
+  relatedSubStat: "HP",
 }
 {
   uniqueId: "effectHpIncreaseLv5",
   type: "SubStatIncrease",
   valueA: "90",
-  relatedSubStat: "PV",
+  relatedSubStat: "HP",
 }
 {
   uniqueId: "effectDefIncreaseLv1",
@@ -447,7 +447,7 @@
 }
 {
   uniqueId: "effectAutoBandaged",
-  type: "Bandagem"
+  type: "Bandaging"
 }
 {
   uniqueId: "effectInjuryThresholdReduction",
@@ -466,7 +466,7 @@
 }
 {
   uniqueId: "effectLeeching",
-  type: "Dreno de Vida",
+  type: "Leeching",
   valueA: "0.5",
   valueB: "0.33",
 }

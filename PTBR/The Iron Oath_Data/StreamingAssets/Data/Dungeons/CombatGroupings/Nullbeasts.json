@@ -1,9 +1,9 @@
 {
 	Name: "Nullbeasts",
 	NameDisplay: "Nullbeast",
-	Group: ["NullbeastStalker", "NullbeastDisrupter", "DiseasedNullbeast","CorruptedNullbeast","Lenhador"],
-	ScoutingReport: ["Nullbeast:Nullbeast","Lenhador:Lenhador"],
-	Loot: ["Encantamento,qualquer","Encantamento,nullbeast"],
+	Group: ["NullbeastStalker", "NullbeastDisrupter", "DiseasedNullbeast","CorruptedNullbeast","Woodsman"],
+	ScoutingReport: ["Nullbeast:Nullbeast","Woodsman:Woodsman"],
+	Loot: ["Enchantment,any","Enchantment,nullbeast"],
 	Weight: 1,
 }
 {

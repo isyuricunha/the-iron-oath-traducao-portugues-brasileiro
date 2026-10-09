@@ -1,19 +1,19 @@
 {
 	Name: "RedlandsMobs",
-	NameDisplay: "Criaturas das Terras Vermelhas",
+	NameDisplay: "Redlands Creatures",
 	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion"],
-	ScoutingReport: ["Brightmanes:Brightmane","Charions:Charion","Lenhador:Woodsman"],
-	Loot: ["Encantamento,qualquer","Encantamento,brightmane","Encantamento,charion"],
+	ScoutingReport: ["Brightmanes:Brightmane","Charions:Charion","Woodsman:Woodsman"],
+	Loot: ["Enchantment,any","Enchantment,brightmane","Enchantment,charion"],
 	Weight: 1,
 }
 {
 	Name: "RedlandsMobs",
-	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","NullbeastDisrupter","Lenhador"],
+	Group: ["BrightmaneCub","BrightmaneHunter","CorruptedBrightmane","DiseasedBrightmane","CharionBroodling","NullbeastDisrupter","Woodsman"],
 	Weight: 1,
 }
 {
 	Name: "RedlandsMobs",
-	Group: ["CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub","NullbeastDisrupter","Lenhador"],
+	Group: ["CharionBroodling","MatureCharion","CorruptedCharion","DiseasedCharion","BrightmaneCub","NullbeastDisrupter","Woodsman"],
 	Weight: 1,
 }
 {

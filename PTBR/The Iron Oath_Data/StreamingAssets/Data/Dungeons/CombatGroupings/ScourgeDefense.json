@@ -1,22 +1,22 @@
 {
 	Name: "ScourgeDefense",
-	NameDisplay: "Flagelo",
-	Group: ["Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
-	ScoutingReport: ["Demônios:Demônio","Espectros:Espectral"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Encantamento,qualquer","Encantamento,qualquer"],
+	NameDisplay: "Scourge",
+	Group: ["Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	ScoutingReport: ["Demons:Demon","Wraiths:Spectral"],
+	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
 	Weight: 1,
 }
 {
 	Name: "ScourgeDefense",
-	NameDisplay: "Flagelo",
-	Group: ["Cavaleiro do Terror","Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	NameDisplay: "Scourge",
+	Group: ["Dreadknight","Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
 	Weight: 1,
 	IsBossEncounter: true,
 }
 {
 	Name: "ScourgeDefense",
-	NameDisplay: "Flagelo",
-	Group: ["SpectralReaper","Atormentado","Esfolador","Tentadora","Sedutora","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
+	NameDisplay: "Scourge",
+	Group: ["SpectralReaper","Anguished","Flayer","Temptress","Seductress","RisenGhoul","SpectralSoulpiercer","SpectralPhalanx","SpectralWeeper","SpectralMatriarch","CorruptedNullbeast"],
 	Weight: 1,
 	IsBossEncounter: true,
 }

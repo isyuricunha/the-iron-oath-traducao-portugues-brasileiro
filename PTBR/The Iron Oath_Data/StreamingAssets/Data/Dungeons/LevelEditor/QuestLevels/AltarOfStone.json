@@ -4,10 +4,10 @@
   "height": 2048,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"ID": "Quest.AltarOfStone", "Tileset": "", "Size": "Médio", "Tags": ""},
+  "values": {"ID": "Quest.AltarOfStone", "Tileset": "", "Size": "Medium", "Tags": ""},
   "layers": [
     {
-      "name": "Eventos",
+      "name": "Events",
       "_eid": "76148432",
       "offsetX": 0,
       "offsetY": 0,
@@ -17,7 +17,7 @@
       "gridCellsY": 64,
       "entities": [
         {
-          "name": "Início",
+          "name": "Start",
           "id": 0,
           "_eid": "76104019",
           "x": 672,
@@ -27,7 +27,7 @@
           "values": {"ScriptedEventName": ""}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 1,
           "_eid": "76055586",
           "x": 928,
@@ -37,7 +37,7 @@
           "values": {"ScriptedEventName": "SE.AltarOfStoneCheck", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 2,
           "_eid": "76055586",
           "x": 928,
@@ -47,7 +47,7 @@
           "values": {"ScriptedEventName": "SE.AltarOfStoneRetrieve", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 3,
           "_eid": "76055586",
           "x": 736,
@@ -57,7 +57,7 @@
           "values": {"ScriptedEventName": "SE.AltarOfStoneWest", "IsGoal": false}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 4,
           "_eid": "76055586",
           "x": 1120,
@@ -74,7 +74,7 @@
           "y": 1440,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -84,7 +84,7 @@
           "y": 1120,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -94,7 +94,7 @@
           "y": 1312,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -104,10 +104,10 @@
           "y": 1056,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
-          "name": "Evento",
+          "name": "Event",
           "id": 10,
           "_eid": "76055586",
           "x": 864,
@@ -124,7 +124,7 @@
           "y": 1248,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
           "name": "RepeatableEvent",
@@ -134,10 +134,10 @@
           "y": 1376,
           "originX": 0,
           "originY": 0,
-          "values": {"PossibleKey": false, "EventClassification": "Desconhecido"}
+          "values": {"PossibleKey": false, "EventClassification": "Unknown"}
         },
         {
-          "name": "Configuração",
+          "name": "Config",
           "id": 16,
           "_eid": "76108145",
           "x": 928,
@@ -147,7 +147,7 @@
           "values": {"Blocked": true, "Locked": false, "ScriptedEvent": ""}
         },
         {
-          "name": "Configuração",
+          "name": "Config",
           "id": 17,
           "_eid": "76108145",
           "x": 928,
@@ -157,7 +157,7 @@
           "values": {"Blocked": true, "Locked": false, "ScriptedEvent": ""}
         },
         {
-          "name": "Configuração",
+          "name": "Config",
           "id": 18,
           "_eid": "76108145",
           "x": 640,
