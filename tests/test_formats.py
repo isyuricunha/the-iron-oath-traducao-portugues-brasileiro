@@ -22,7 +22,7 @@ HJSON_SAMPLE = (
     "\tSpecial: \"Spawns every {0} days\",\r\n"
     "},\r\n"
     "{\r\n"
-    "\tName: 'Voidspawn',\r\n"
+    "    Name: 'Void Spawn',\r\n"
     "\tDescription: \"It crawls from the dark.\",\r\n"
     "}"
 )
@@ -67,23 +67,22 @@ class HjsonFormatTests(unittest.TestCase):
         assert rebuilt == self.sample.read_bytes()
 
     def test_duplicate_array_values_get_distinct_spans(self):
-        base = self.root / "The Iron Oath_Data/StreamingAssets/Data/Dungeons/CombatGroupings"
+        base = self.root / "The Iron Oath_Data/StreamingAssets/Data/Dungeons/Encounters"
         base.mkdir(parents=True)
         sample = base / "tutorial.json"
         sample.write_bytes(
-            b'{\r\n\tName: "Tutorial",\r\n\tGroup: ["Flayer", "NullbeastPrime", "Flayer"],\r\n}\r\n'
+            b'{\r\n\tName: "Tutorial",\r\n\tGroup: ["Iron Flayer", "Nullbeast Prime", "Iron Flayer"],\r\n}\r\n'
         )
         rel = sample.relative_to(self.root).as_posix()
         units, spans = HjsonFormat.extract(self.root, rel)
-        id0 = next(u.unit_id for u in units if u.source == "Flayer" and u.unit_id.endswith("Group[0]"))
-        id2 = next(u.unit_id for u in units if u.source == "Flayer" and u.unit_id.endswith("Group[2]"))
+        id0 = next(u.unit_id for u in units if u.source == "Iron Flayer" and u.unit_id.endswith("Group[0]"))
+        id2 = next(u.unit_id for u in units if u.source == "Iron Flayer" and u.unit_id.endswith("Group[2]"))
         assert spans[id0] != spans[id2]
         rebuilt = HjsonFormat.rebuild(
-            self.root, rel, {id0: "Esfolador", id2: "Esfolador"}
+            self.root, rel, {id0: "Esfolador de Ferro", id2: "Esfolador de Ferro"}
         ).decode("utf-8")
-        assert '"Esfolador"' in rebuilt
-        assert rebuilt.count('"Esfolador"') == 2
-        assert "Flayer" not in rebuilt
+        assert rebuilt.count('"Esfolador de Ferro"') == 2
+        assert "Iron Flayer" not in rebuilt
         hjson.loads(rebuilt)
 
     def test_guard_blocks_invalid_rebuild(self):
@@ -96,6 +95,27 @@ class HjsonFormatTests(unittest.TestCase):
             _guard_rebuild_validity(self.root, rel, b'{\r\n\tName: "Tutorial"\r\n')
         # A still-valid rebuild passes the guard silently.
         _guard_rebuild_validity(self.root, rel, sample.read_bytes())
+
+    def test_combat_groupings_are_reference_only(self):
+        base = self.root / "The Iron Oath_Data/StreamingAssets/Data/Dungeons/CombatGroupings"
+        base.mkdir(parents=True)
+        sample = base / "bandits.json"
+        sample.write_bytes(b'{\r\n\tGroup: ["Bloodhound"],\r\n\tLoot: ["Enchantment,any"],\r\n}\r\n')
+        rel = sample.relative_to(self.root).as_posix()
+        units, spans = HjsonFormat.extract(self.root, rel)
+        assert units == [] and spans == {}
+        assert HjsonFormat.rebuild(self.root, rel, {"x": "y"}) == sample.read_bytes()
+
+    def test_single_token_values_are_identifiers(self):
+        base = self.root / "The Iron Oath_Data/StreamingAssets/Data/Enemies"
+        base.mkdir(parents=True, exist_ok=True)
+        sample = base / "dark.json"
+        sample.write_bytes(b'{\r\n\tResists: ["Dark"],\r\n\tElement: "Dark",\r\n\tTitle: "Dark Warden",\r\n}\r\n')
+        rel = sample.relative_to(self.root).as_posix()
+        units, _ = HjsonFormat.extract(self.root, rel)
+        sources = {u.source for u in units}
+        assert "Dark" not in sources
+        assert "Dark Warden" in sources
 
     def test_rebuild_applies_only_translation_spans(self):
         rel = self.sample.relative_to(self.root).as_posix()
@@ -120,7 +140,7 @@ class HjsonFormatTests(unittest.TestCase):
     def test_single_quote_style_preserved(self):
         rel = self.sample.relative_to(self.root).as_posix()
         units, _ = HjsonFormat.extract(self.root, rel)
-        target = next(u for u in units if u.source == "Voidspawn")
+        target = next(u for u in units if u.source == "Void Spawn")
         rebuilt = HjsonFormat.rebuild(self.root, rel, {target.unit_id: "Prole do Vazio"})
         assert b"'Prole do Vazio'" in rebuilt
 

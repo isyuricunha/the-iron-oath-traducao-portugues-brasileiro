@@ -23,7 +23,15 @@ KEY_DENY = {
     "uniqueid", "id", "icon", "sprite", "spritename", "prefab", "script",
     "guid", "path", "file", "animation", "texture", "sound", "music",
     "settings",
+    # Reference keys: the game deserializes these values into enums by
+    # exact name, so they must stay verbatim even when multi-word.
+    "eventid", "catalyst", "partymakeupreq", "modtype", "loot", "job",
+    "resists", "immunities", "conflictingtraits", "attributeeffect",
+    "missionsgenerated", "category",
 }
+# Whole-directory reference data: combat group files only contain unit
+# type references and loot pairs, never display prose.
+PATH_DENY = ("Dungeons/CombatGroupings",)
 VALUE_ID_RE = re.compile(r"[_/\\]|[0-9]{2,}|://")
 CAMEL_ID_RE = re.compile(r"^[a-z0-9]+(?:[A-Z][a-z0-9]+)+$")
 
@@ -245,6 +253,9 @@ class HjsonFormat:
     @classmethod
     def extract(cls, input_root: Path, relpath: str) -> tuple[list[TranslationUnit], dict]:
         """Return (units, spans) where spans maps unit_id -> (start, end)."""
+        if any(d in relpath for d in PATH_DENY):
+            # Reference-only data: unit type groups and loot pairs.
+            return [], {}
         full = input_root / relpath
         raw = full.read_bytes()
         decoded = raw.decode("utf-8-sig")
@@ -327,6 +338,12 @@ class HjsonFormat:
     def _translatable(value: str) -> bool:
         s = value.strip()
         if len(s) < 2:
+            return False
+        # Single-token values are code identifiers (enums, unit types,
+        # resist tags) the game deserializes by exact name. Every value
+        # the game failed to bind was a single token; display prose
+        # always has a space.
+        if " " not in s:
             return False
         if not re.search(r"[A-Za-z]", s):
             return False
