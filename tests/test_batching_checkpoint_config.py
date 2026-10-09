@@ -176,6 +176,8 @@ class ConfigTests(unittest.TestCase):
             "# TRANSLATION_MODEL=deepseek-v4-flash\n"
             "# GLOSSARY_MODEL=\n"
             "# TRANSLATION_REASONING_EFFORT=max\n"
+            "\n"
+            "# Strip accents from published text (the shipped fonts lack the glyphs)\n"
             "# TRANSLATION_STRIP_DIACRITICS=1\n"
         )
         assert content == expected
