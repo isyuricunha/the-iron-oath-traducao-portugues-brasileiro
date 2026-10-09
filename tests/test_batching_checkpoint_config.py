@@ -176,6 +176,7 @@ class ConfigTests(unittest.TestCase):
             "# TRANSLATION_MODEL=deepseek-v4-flash\n"
             "# GLOSSARY_MODEL=\n"
             "# TRANSLATION_REASONING_EFFORT=max\n"
+            "# TRANSLATION_STRIP_DIACRITICS=1\n"
         )
         assert content == expected
 

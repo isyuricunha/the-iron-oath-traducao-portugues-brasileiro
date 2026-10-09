@@ -25,6 +25,7 @@ from localization.config import (
     load_dotenv,
     settings_from_env,
     startup_report,
+    strip_diacritics,
 )
 from localization.models import RunStats, UnitStatus
 from localization.pipeline import Pipeline
@@ -324,6 +325,13 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
             print(f"mode {settings.mode}: publication skipped (review/remake must be published explicitly)")
 
         merged_accepted = {**reused, **total_accepted}
+        if settings.strip_diacritics:
+            # The shipped fonts lack PT-BR diacritic glyphs (boxes in game).
+            # Strip only here: the checkpoint keeps the accented targets
+            # so a future font fix can republish without retranslating.
+            merged_accepted = {
+                k: strip_diacritics(v) for k, v in merged_accepted.items()
+            }
         pipeline.build_staging(settings.input_root, merged_accepted, staging)
         pipeline.publish(staging, settings.output_root)
         stats = pipeline.stats

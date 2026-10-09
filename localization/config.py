@@ -54,6 +54,7 @@ class Settings:
     input_root: Path = field(default_factory=lambda: Path("."))
     output_root: Path = field(default_factory=lambda: Path("PTBR"))
     format: str = "auto"
+    strip_diacritics: bool = False
     project_context: str = ""
     mode: str = "translate"
     verbose: bool = False
@@ -128,6 +129,14 @@ def resolve_key(env: dict[str, str]) -> str:
     return os.environ.get("FREEINFERENCE_API_KEY") or env.get("FREEINFERENCE_API_KEY", "")
 
 
+def strip_diacritics(text: str) -> str:
+    """Decompose and drop combining marks (voce, acao)."""
+    import unicodedata
+
+    decomposed = unicodedata.normalize("NFKD", text)
+    return "".join(c for c in decomposed if not unicodedata.combining(c))
+
+
 def settings_from_env(env: dict[str, str] | None = None) -> Settings:
     env = dict(env) if env is not None else load_dotenv()
     s = Settings()
@@ -136,6 +145,9 @@ def settings_from_env(env: dict[str, str] | None = None) -> Settings:
     s.model = env.get("TRANSLATION_MODEL", s.model)
     s.glossary_model = env.get("GLOSSARY_MODEL") or s.model
     s.reasoning_effort = env.get("TRANSLATION_REASONING_EFFORT", s.reasoning_effort)
+    flag = env.get("TRANSLATION_STRIP_DIACRITICS")
+    if flag is not None:
+        s.strip_diacritics = flag.strip().lower() in ("1", "true", "yes", "on")
     s.validate_profile()
     return s
 
