@@ -104,6 +104,43 @@ class YarnFormat:
                     node_skip = True
             elif node_skip or not stripped or stripped.startswith("//"):
                 pass
+            elif stripped.startswith("<<Show"):
+                # Dialog commands carry display text in quoted args:
+                # ShowTutorialMessage ("id", "title", "text"), ShowLetter
+                # ("title", "body"), ShowAdvisorMessage ("id", "", "body").
+                # With three or more arguments the first is an id and is
+                # skipped.
+                space = stripped.find(" ", 2)
+                family = stripped[2:space if space != -1 else len(stripped)].strip("<>")
+                quoted = list(re.finditer(r'"([^"]*)"', stripped))
+                display = (
+                    quoted[1:]
+                    if family == "ShowTutorialMessage" and len(quoted) >= 3
+                    else quoted
+                )
+                if family in ("ShowTutorialMessage", "ShowAdvisorMessage", "ShowLetter"):
+                    for arg_index, match in enumerate(display, start=1):
+                        value = match.group(1)
+                        if not _translatable(value):
+                            continue
+                        value_start = (
+                            offset
+                            + (len(content) - len(content.lstrip()))
+                            + match.start(1)
+                            + 1
+                        )
+                        unit_id = cls._unit_id(relpath, index, arg_index)
+                        spans[unit_id] = (value_start, value_start + len(value), True)
+                        units.append(
+                            cls._unit(
+                                relpath,
+                                index,
+                                node,
+                                value,
+                                f"{family}:{arg_index}",
+                                arg_index,
+                            )
+                        )
             elif stripped.startswith("<<"):
                 match = _SET_RE.match(stripped)
                 if (
@@ -163,13 +200,22 @@ class YarnFormat:
         return units, spans
 
     @staticmethod
-    def _unit_id(relpath: str, line_index: int) -> str:
+    def _unit_id(relpath: str, line_index: int, arg_index: int = 0) -> str:
+        if arg_index:
+            return f"yarn:{relpath}:{line_index}:a{arg_index}"
         return f"yarn:{relpath}:{line_index}"
 
     @staticmethod
-    def _unit(relpath: str, line_index: int, node: str, source: str, kind: str) -> TranslationUnit:
+    def _unit(
+        relpath: str,
+        line_index: int,
+        node: str,
+        source: str,
+        kind: str,
+        arg_index: int = 0,
+    ) -> TranslationUnit:
         return TranslationUnit(
-            unit_id=YarnFormat._unit_id(relpath, line_index),
+            unit_id=YarnFormat._unit_id(relpath, line_index, arg_index),
             source=source,
             source_hash=f"{len(source)}:{source[:24]}",
             path=relpath,
