@@ -132,6 +132,10 @@ def apply_cli(settings: Settings, args: argparse.Namespace) -> Settings:
         # interface translations; default to it so every run keeps them.
         settings.map_file = str(map_file)
         settings.manual_translations = load_manual_map(map_file)
+    elif args.map_file:
+        # An explicitly requested map that does not exist must never be
+        # silently ignored: the interface would ship in English.
+        raise SystemExit(f"map file not found: {map_file}")
     if args.review and args.remake:
         raise SystemExit("--review and --remake are mutually exclusive")
     settings.mode = "review" if args.review else ("remake" if args.remake else "translate")
@@ -549,13 +553,13 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
         # never sent to the provider; their targets arrive via resume
         # (checkpointed hand translations) and interface_map_from_accepted.
         manual_only = {"i2_mono": "i2:", "scene_mono": "scene:", "dll": "dll:"}
+        manual_units: dict[str, str] = {}
         # Hand-written map targets are validated against their sources and
         # accepted directly, so provider runs keep the interface patched
         # even when the checkpoint has no compatible generation yet.
         if settings.manual_translations:
             from localization.protection import ProtectionError, validate_manual_target
 
-            manual_units: dict[str, str] = {}
             for handler_name, paths in discovered.items():
                 if handler_name not in manual_only:
                     continue
@@ -580,6 +584,20 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
                 except ProtectionError as exc:
                     print(f"map target rejected for {uid}: {exc}", file=sys.stderr)
                     return 2
+        stale_map = [
+            uid
+            for uid in settings.manual_translations
+            if uid.startswith(("i2:", "scene:"))
+            and uid not in total_accepted
+            and (uid.split(":", 1)[1] in manual_units or uid.startswith("i2:"))
+        ]
+        if stale_map:
+            # A map entry with no live source means the corpus changed;
+            # publishing would silently revert that string to English.
+            print("stale map entries (source gone from the game files):", file=sys.stderr)
+            for uid in stale_map[:10]:
+                print(f"  {uid}", file=sys.stderr)
+            return 2
         for handler_name, paths in discovered.items():
             if handler_name in manual_only:
                 prefix = manual_only[handler_name]
