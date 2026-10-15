@@ -2767,6 +2767,242 @@
       "Out of range.": "Fora do alcance.",
       "Vismyr the Allmaker Buff\n\n": "Buff de Vismyr, o Criador de Todos\n\n",
       "Resistance to ": "Resistência a "
+    },
+    "AbilityToolTipUi": {
+      "Casting Time": "Tempo de Conjuração",
+      "Instant": "Instantâneo",
+      "Power": "Poder",
+      "Range": "Alcance",
+      "Remaining Charges": "Cargas Restantes",
+      "Toggle Equip": "Alternar Equipamento",
+      "Upgrade Ability": "Aprimorar Habilidade",
+      "1 Turn": "1 Turno",
+      " Turns": " Turnos"
+    },
+    "SkillToolTipInfo": {
+      "Instant": "Instantâneo"
+    },
+    "Resist": {
+      "A temporary shield which can absorb damage": "Um escudo temporário que pode absorver dano",
+      "Accuracy and Evasion are reduced by 75%": "Precisão e Evasão reduzidas em 75%",
+      "All Lightning attacks received take an additional 50% damage": "Todos os ataques de Raio recebidos causam 50% a mais de dano",
+      "Attacks that can Push or Pull a character": "Ataques que podem Empurrar ou Puxar um personagem",
+      "Base Attack Power is halved": "O Poder de Ataque básico é reduzido à metade",
+      "Cannot be Healed, Shielded, or receive any buffs": "Não pode ser curado, receber escudo ou buffs",
+      "Evasion is dropped to 0. Unable to land Critical Hits or perform Attack Of Opportunities.": "A Evasão cai para 0. Impossível acertar Críticos ou realizar Ataques de Oportunidade.",
+      "Every round your maximum Health is reduced temporarily": "A cada turno, a sua Vida máxima é reduzida temporariamente",
+      "Fear clouds the victim's mind. You have a chance equal to your Morale to resist running away on your turn and remove Fear.": "O medo ofusca a mente da vítima. Você tem uma chance igual à sua Moral de resistir à fuga no seu turno e remover o Medo.",
+      "Once per round, suffer damage equal to 10% of your current Health": "Uma vez por turno, sofra dano igual a 10% da sua Vida atual",
+      "Receive an addition 15% damage from all incoming attacks. Evasion dropped to 0.": "Receba 15% a mais de dano de todos os ataques recebidos. Evasão cai para 0.",
+      "Taunted units are forced to attack the source of the taunt, so long as they remain in range. They can not perform Attacks of Opportunity on others.": "Unidades provocadas são forçadas a atacar a fonte da provocação enquanto permanecerem no alcance. Elas não podem realizar Ataques de Oportunidade em outros.",
+      "The victim is unable to act and will lose their next turn. Defense is also reduced by 50% for the duration. Cannot evade attacks while stunned.": "A vítima não pode agir e vai perder o próximo turno. A Defesa também é reduzida em 50% durante a duração. Não é possível esquivar de ataques enquanto atordoado.",
+      "Unable to act on your turn. Lose 1 Bleedout point per turn. If you lose all Bleedout points the character is permanently dead.": "Não pode agir no próprio turno. Perde 1 ponto de Agonia por turno. Se perder todos os pontos de Agonia, o personagem morre permanentemente.",
+      "Unable to act while frozen, also immune to all damage for the duration of the effect": "Não pode agir enquanto congelado, além de ficar imune a todo dano durante a duração do efeito",
+      "Unable to act. Any damage incurred will dispel the condition. While asleep, character is healed by a small amount": "Não pode agir. Qualquer dano recebido dissipa a condição. Enquanto dorme, o personagem é curado por uma pequena quantidade",
+      "Victim suffers Fire damage once per round on their turn": "A vítima sofre dano de Fogo uma vez por turno",
+      "Victim will attack friendly units on their turn": "A vítima ataca unidades aliadas no turno dela",
+      "While Bleeding, any action besides Waiting or Guarding will inflict damage. Use a Bandage to remove this condition": "Enquanto sangra, qualquer ação além de Esperar ou Proteger causa dano. Use uma Bandagem para remover esta condição"
+    },
+    "AbilityDawn": {
+      "Single target heal for ": "Cura de alvo único de ",
+      "Resist Dark attacks": "Resiste a ataques de Trevas",
+      "Instant": "Instantâneo",
+      "N/A": "N/D"
+    },
+    "AbilityRainfall": {
+      "Single target heal for ": "Cura de alvo único de ",
+      "Instant": "Instantâneo"
+    },
+    "AbilityHealingTrance": {
+      "Heal a target for ": "Cura um alvo em ",
+      "Instant": "Instantâneo",
+      "N/A": "N/D"
+    },
+    "AbilityRenewingMelody": {
+      "Heal a target for ": "Cura um alvo em ",
+      "Instant": "Instantâneo",
+      "+20 Critical Chance": "+20 de Chance de Crítico",
+      "N/A": "N/D"
+    },
+    "AbilityReturnToCinder": {
+      "Refunding ": "Reembolsando ",
+      " charges of return to cinder": " cargas de Retorno às Cinzas",
+      "Instant": "Instantâneo"
+    },
+    "AbilityHone": {
+      "Increase Defense and Evasion by 25 for 1 Round.": "Aumenta a Defesa e a Evasão em 25 por 1 Turno.",
+      "Instant": "Instantâneo"
+    },
+    "AbilityArrowShot": {
+      "Shoot an arrow dealing [dmg] Piercing damage.": "Dispare uma flecha causando [dmg] de dano de Perfuração.",
+      "No target for the arrow to hit": "Sem alvo para a flecha acertar"
+    },
+    "AbilityBodyMindSoul": {
+      "% Power": "% de Poder",
+      "Instant": "Instantâneo"
+    },
+    "AbilityFistsOfFury": {
+      "Channel": "Canalizar"
+    },
+    "AbilityAnthemOfWarding": {
+      "+10 Speed": "+10 de Velocidade",
+      "+15 Evasion": "+15 de Evasão",
+      "Instant": "Instantâneo"
+    },
+    "AbilitySerenade": {
+      "+10 Speed": "+10 de Velocidade",
+      "1 Turn": "1 Turno"
+    },
+    "AbilityOverwatch": {
+      "+10 Critical Hit Chance": "+10 de Chance de Acerto Crítico",
+      "Instant": "Instantâneo"
+    },
+    "AbilityCrescentWave": {
+      "Critical Chance Up": "Chance de Crítico Aumentada",
+      "Increased Critical Chance for 1 round by ": "Chance de Crítico aumentada por 1 turno em ",
+      "Instant": "Instantâneo"
+    },
+    "AbilityPyromania": {
+      "Crit Chance Increased by 20%": "Chance de Crítico aumentada em 20%",
+      "Instant": "Instantâneo"
+    },
+    "AbilityUpgradeEffect": {
+      "EVA Increased": "Aumento de EVA",
+      "MOV Increased": "Aumento de MOV",
+      "EVA increased by ": "EVA aumentado em ",
+      "MOV increased by ": "MOV aumentado em ",
+      "Defense reduced by ": "Defesa reduzida em ",
+      "Sundered Armor": "Armadura Rasgada"
+    },
+    "AbilityUpgradeScreenItem": {
+      "Ability Locked": "Habilidade Trancada",
+      "Available at Level 5\n\n": "Disponível no Nível 5\n\n",
+      "Available at Level 10\n\n": "Disponível no Nível 10\n\n",
+      "Before spending upgrade points, you must first level up and unlock this ability.": "Antes de gastar pontos de aprimoramento, você precisa primeiro subir de nível e desbloquear esta habilidade."
+    },
+    "AbilityChiefNoQuarter": {
+      "+25% Critical Chance": "+25% de Chance de Crítico",
+      "Increased Critical Chance": "Chance de Crítico Aumentada",
+      "Speed Increased by 5": "Velocidade Aumentada em 5"
+    },
+    "AbilityTakeFlight": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityBattleInstinct": {
+      "Already In Use": "Já Em Uso",
+      "Instant": "Instantâneo"
+    },
+    "AbilityAegis": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityArcLightning": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityArcticArmor": {
+      "3 Turns": "3 Turnos"
+    },
+    "AbilityBackstabberPuncture": {},
+    "AbilityBackstabberVanish": {},
+    "AbilityBattleChords": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityBlazingLance": {},
+    "AbilityBlindingStrike": {},
+    "AbilityChampionsOrder": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityCharionBlaze": {},
+    "AbilityCharionHeatwave": {},
+    "AbilityChiefLeapingStrike": {},
+    "AbilityChiefMarkAndCleave": {},
+    "AbilityChiefStagger": {},
+    "AbilityCleansingLight": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityColdFeet": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityConduit": {
+      "1 Turn": "1 Turno"
+    },
+    "AbilityCripplingForce": {},
+    "AbilityCrossfire": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityCyclone": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityDarkFragment": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityEnforcerRepel": {},
+    "AbilityFrostBurst": {
+      "1 Turn": "1 Turno"
+    },
+    "AbilityFrostcall": {},
+    "AbilityFrozenTomb": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityGuardianAngel": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityHoarwulfFrostBreath": {},
+    "AbilityHouseCommanderCripple": {},
+    "AbilityHouseCommanderHoldTheLine": {},
+    "AbilityHouseCommanderPulverize": {},
+    "AbilityHouseCommanderUnburden": {},
+    "AbilityIceWall": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityIcon": {},
+    "AbilityImpalingIce": {},
+    "AbilityInfernalPillar": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityJudgement": {
+      "5 Turns": "5 Turnos"
+    },
+    "AbilityLightningRod": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityLullaby": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityLumellasWings": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityRapidFire": {},
+    "AbilityRestrainingOrder": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityRisenGeneralTerror": {},
+    "AbilityRisenScourgeBoneSeeker": {},
+    "AbilityRushOfLight": {
+      "Instant": "Instantâneo"
+    },
+    "AbilitySafeguard": {
+      "3 Turns": "3 Turnos"
+    },
+    "AbilitySimpleSummon": {},
+    "AbilitySkewer": {
+      "Instant": "Instantâneo"
+    },
+    "AbilitySmashingTune": {},
+    "AbilitySoulConjurerAbsorb": {},
+    "AbilitySummonSkeleton": {},
+    "AbilitySweepingSpear": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityTempest": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityTrueSight": {},
+    "AbilityUpgradeTierObject": {},
+    "AbilityVolley": {
+      "Instant": "Instantâneo"
+    },
+    "AbilityWildfire": {
+      "Instant": "Instantâneo"
     }
   },
   "units": {
