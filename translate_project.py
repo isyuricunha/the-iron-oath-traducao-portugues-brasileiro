@@ -158,6 +158,8 @@ def load_manual_map(path: Path) -> dict[str, str]:
     for type_name, string_map in data.get("dll", {}).items():
         for source, target in string_map.items():
             flat[f"dll:{type_name}:{source}"] = target
+    for source, target in data.get("yarn_commands", {}).items():
+        flat[f"ycmd:{source}"] = target
     for unit_id, target in data.get("units", {}).items():
         flat[unit_id] = target
     return flat
@@ -384,6 +386,8 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
                 source = unit_id.split(":", 2)[2]
             elif unit_id.startswith("scene:"):
                 source = unit_id.split(":", 1)[1]
+            elif unit_id.startswith("ycmd:"):
+                source = unit_id.split(":", 1)[1]
             else:
                 source = source_by_id.get(unit_id, "")
             if not source:
@@ -432,6 +436,11 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
                 if uid.startswith("scene:")
             },
             "dll": {},
+            "yarn_commands": {
+                uid.split(":", 1)[1]: target
+                for uid, target in manual.items()
+                if uid.startswith("ycmd:")
+            },
         }
         for uid, target in manual.items():
             if uid.startswith("dll:"):
@@ -440,6 +449,9 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
         if settings.strip_diacritics:
             merged = {k: strip_diacritics(v) for k, v in merged.items()}
             interface_map["scenes"] = {k: strip_diacritics(v) for k, v in interface_map["scenes"].items()}
+            interface_map["yarn_commands"] = {
+                k: strip_diacritics(v) for k, v in interface_map["yarn_commands"].items()
+            }
             interface_map["dll"] = {
                 t: {k: strip_diacritics(v) for k, v in m.items()}
                 for t, m in interface_map["dll"].items()
@@ -469,11 +481,12 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
                 "i2_mono": report.get("i2_mono", {}).get("changed", 0),
                 "scene_mono": report.get("scene_mono", {}).get("patched_strings", 0),
                 "dll": report.get("dll", {}).get("total", 0),
+                "yarn_commands": report.get("yarn_commands", {}).get("patched", 0),
             }
             if previous.get("semantics") == 2:
                 drops = {
                     key: (previous[key], current.get(key, 0))
-                    for key in ("i2_mono", "scene_mono", "dll")
+                    for key in ("i2_mono", "scene_mono", "dll", "yarn_commands")
                     if current.get(key, 0) < previous.get(key, 0)
                 }
                 if drops:
@@ -524,13 +537,15 @@ def interface_map_from_accepted(accepted: dict[str, str]) -> dict:
     publication (manual or provider run) must reconstruct their maps
     from the accepted unit ids, otherwise a future run would drop them.
     """
-    interface_map: dict = {"scenes": {}, "dll": {}}
+    interface_map: dict = {"scenes": {}, "dll": {}, "yarn_commands": {}}
     for unit_id, target in accepted.items():
         if unit_id.startswith("scene:"):
             interface_map["scenes"][unit_id.split(":", 1)[1]] = target
         elif unit_id.startswith("dll:"):
             _, type_name, source = unit_id.split(":", 2)
             interface_map["dll"].setdefault(type_name, {})[source] = target
+        elif unit_id.startswith("ycmd:"):
+            interface_map["yarn_commands"][unit_id.split(":", 1)[1]] = target
     return interface_map
 
 
@@ -550,57 +565,47 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
         total_accepted: dict[str, str] = {}
         failed: list = []
         # i2_mono, scene_mono and dll are manual-map sources: they are
-        # never sent to the provider; their targets arrive via resume
-        # (checkpointed hand translations) and interface_map_from_accepted.
-        manual_only = {"i2_mono": "i2:", "scene_mono": "scene:", "dll": "dll:"}
+        # never sent to the provider. Hand-written map targets are
+        # validated against their sources and accepted directly, so
+        # provider runs keep the interface patched even when the
+        # checkpoint has no compatible generation yet.
+        manual_only = {"i2_mono", "scene_mono", "dll"}
         manual_units: dict[str, str] = {}
-        # Hand-written map targets are validated against their sources and
-        # accepted directly, so provider runs keep the interface patched
-        # even when the checkpoint has no compatible generation yet.
+        scene_census: set[str] = set()
         if settings.manual_translations:
             from localization.protection import ProtectionError, validate_manual_target
 
             for handler_name, paths in discovered.items():
-                if handler_name not in manual_only:
-                    continue
                 handler = formats.HANDLERS[handler_name]
                 for relpath in paths:
                     units, _ = handler.extract(settings.input_root, relpath)
                     for unit in units:
                         manual_units[unit.unit_id] = unit.source
+                        if handler_name == "scene_mono":
+                            scene_census.add(unit.source)
             for uid, target in settings.manual_translations.items():
-                if not uid.startswith(tuple(f"{p}" for p in manual_only.values())):
-                    continue
-                source = (
-                    uid.split(":", 2)[2] if uid.startswith("dll:")
-                    else uid.split(":", 1)[1] if uid.startswith("scene:")
-                    else manual_units.get(uid, "")
-                )
-                if not source:
-                    print(f"stale map entry skipped: {uid}", file=sys.stderr)
-                    continue
+                if uid.startswith("scene:"):
+                    source = uid.split(":", 1)[1]
+                    if source not in scene_census:
+                        print(f"stale map entry (source gone from the scenes): {uid}", file=sys.stderr)
+                        return 2
+                elif uid.startswith("dll:"):
+                    source = uid.split(":", 2)[2]
+                elif uid.startswith("ycmd:"):
+                    source = uid.split(":", 1)[1]
+                else:
+                    source = manual_units.get(uid, "")
+                    if not source:
+                        print(f"stale map entry (source gone from the game files): {uid}", file=sys.stderr)
+                        return 2
                 try:
                     total_accepted[uid] = validate_manual_target(source, target)
                 except ProtectionError as exc:
                     print(f"map target rejected for {uid}: {exc}", file=sys.stderr)
                     return 2
-        stale_map = [
-            uid
-            for uid in settings.manual_translations
-            if uid.startswith(("i2:", "scene:"))
-            and uid not in total_accepted
-            and (uid.split(":", 1)[1] in manual_units or uid.startswith("i2:"))
-        ]
-        if stale_map:
-            # A map entry with no live source means the corpus changed;
-            # publishing would silently revert that string to English.
-            print("stale map entries (source gone from the game files):", file=sys.stderr)
-            for uid in stale_map[:10]:
-                print(f"  {uid}", file=sys.stderr)
-            return 2
         for handler_name, paths in discovered.items():
             if handler_name in manual_only:
-                prefix = manual_only[handler_name]
+                prefix = {"i2_mono": "i2:", "scene_mono": "scene:", "dll": "dll:"}[handler_name]
                 for uid, target in reused.items():
                     if uid.startswith(prefix) and uid not in total_accepted:
                         total_accepted[uid] = target
@@ -622,7 +627,11 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
                 all_units.extend(extracted)
             if not all_units:
                 continue
-            pending = [u for u in all_units if u.unit_id not in reused]
+            pending = [
+                u
+                for u in all_units
+                if u.unit_id not in reused and u.unit_id not in total_accepted
+            ]
             for unit in all_units:
                 if unit.unit_id in reused:
                     unit.status = UnitStatus.REUSED

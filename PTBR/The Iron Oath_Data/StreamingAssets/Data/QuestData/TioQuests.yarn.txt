@@ -41,7 +41,7 @@ position: 601,567
 <<set $Tileset to "sewer">>
 //<<set $Shrine to "ArlaTheGatekeeper">>
 // these next 2 are what are shown when we look at the quest log or objective text on screen
-<<set $QuestName to "A Looming Darkness">>
+<<set $QuestName to "Uma Escuridao que Se Aproxima">>
 <<set $QuestDescription to "Um lider religioso local contratou seus servicos para recuperar um amuleto antigo, guardado por sua familia ha geracoes. Ele contem poderes de males indescritiveis, contidos apenas pelos solos sagrados de onde foi roubado. Os ladroes tem um esconderijo nos esgotos da cidade.">>
 // this is the shortened version of the text used in places like the objective tracker mid dungeon
 <<set $ShortDescription to "Recupere o amuleto antes que seja tarde demais.">>
@@ -185,7 +185,7 @@ position: 3006,2223
 
 
 // these next 2 are what are shown when we look at the quest log or objective text on screen
-<<set $QuestName to "Skeletons For A Ritual">>
+<<set $QuestName to "Esqueletos para um Ritual">>
 <<set $QuestDescription to "Os oficiais da Igreja precisam de um incenso que so pode ser feito com os restos moidos de esqueletos de mortos-vivos. Por favor, traga 3 cranios de esqueleto.">>
 // this is the shortened version of the text used in places like the objective tracker mid dungeon
 <<set $ShortDescription to "Recupere 3 cranios de esqueletos mortos-vivos.">>
@@ -322,7 +322,7 @@ position: 954,436
 <<set $Tileset to "cave">>
 //<<set $Shrine to "ArlaTheGatekeeper">>
 // these next 2 are what are shown when we look at the quest log or objective text on screen
-<<set $QuestName to "At Any Cost">>
+<<set $QuestName to "A Qualquer Custo">>
 <<set $QuestDescription to "Um nobre suspeito de [questTown] lhe deu instrucoes vagas para encontrar uma criatura perigosa chamada Wight e captura-la usando uma magia que ele conseguiu. Devolva-a a ele e ele promete uma recompensa generosa pelo seu trabalho.">>
 // this is the shortened version of the text used in places like the objective tracker mid dungeon
 <<set $ShortDescription to "Capture um Wight.">>
@@ -659,7 +659,7 @@ position: 140,98
 ---
 <<set $StartDungeonImmediately to true>>
 <<set $Tileset to "cave">>
-<<set $QuestName to "Thief on the Road">>
+<<set $QuestName to "Ladrao na Estrada">>
 <<set $QuestDescription to "Encontramos um homem na estrada que acabara de ser roubado de sua bolsa. Seguimos o agressor ate uma caverna proxima para tentar recupera-la.">>
 <<set $ShortDescription to "Encontre a bolsa roubada">>
 <<set $EnemyCategoryGroup to "local">>
@@ -960,7 +960,7 @@ position: -94,-95
 ///<<set $Tileset to "plains">>
 <<set $Tileset to "cave">>
 ///<<set $Tileset to "sewer">>
-<<set $QuestName to "The Coming Scourge">>
+<<set $QuestName to "O Flagelo que Vem">>
 <<set $QuestDescription to "Voce foi encarregado de escoltar um punhado de refugiados ate Haestenhold. Eles buscam refugio de todos os tipos de demonios e bestas malignas que devastaram sua terra natal. Tantas perturbacoes vindas do Vazio normalmente so significam uma coisa... O proximo Flagelo se aproxima.">>
 <<set $ShortDescription to "Escolte os refugiados em seguranca.">>
 <<set $EnemyCategoryGroup to "Tutorial">>
@@ -1389,7 +1389,7 @@ groupName: DynamicQuests
 position: -233,-595
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Bandits Of [questTown]">>
+<<set $QuestName to "Bandidos De [questTown]">>
 <<set $QuestDescription to "Recebemos a tarefa de expulsar alguns bandidos e recuperar algumas mercadorias roubadas perto de [questTown].">>
 <<set $ShortDescription to "Livre-se dos bandidos e recupere as mercadorias roubadas.">>
 <<set $QuestGiverLocation to "Citizen">> // Citizen or House or BattleMaster
@@ -1399,7 +1399,7 @@ position: -233,-595
 ///<<set $DungeonStart to "Normal">> // event to run at start of dungeon
 ///<<set $QuestGoal to "BossFight">>
 ///<<set $QuestTurnInEventNode to "">> // event to run when quest is turned in
-<<set $DungeonLocName to "Bandit Hideout">>
+<<set $DungeonLocName to "Esconderijo de Bandoleiros">>
 <<set $EnemyCategoryGroup to "Bandits">>
 ///<<set $PartyRequirements to "">>
 <<set $TurnInSpot to "NearestTown">>
@@ -1530,7 +1530,7 @@ groupName: Bounty Quests
 position: 3012,1935
 ---
 // these next 2 are what are shown when we look at the quest log or objective text on screen
-<<set $QuestName to "Find Scrap">>
+<<set $QuestName to "Encontrar Sucata">>
 <<set $QuestDescription to "Estou pagando bem por sucata de armaduras e armas! Estou sem materiais, e nao posso me dar ao luxo de parar de trabalhar na forja.">>
 // this is the shortened version of the text used in places like the objective tracker mid dungeon
 <<set $ShortDescription to "Encontre 10 pedacos de sucata de armadura.">>
@@ -1564,14 +1564,14 @@ groupName: UndeadActivity
 position: -354,1468
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "The Undead Live">>
+<<set $QuestName to "Os Mortos-Vivos Vivem">>
 <<set $QuestDescription to "Alguem esta conjurando mortos-vivos. A localizacao exata ainda e um misterio, mas ha uma serie de tuneis subterraneos perto de [questTown] onde se suspeita que o culpado esteja operando. Devemos ir para la imediatamente e por fim a isso.">>
 <<set $ShortDescription to "Livre-se de quem esta ressuscitando os mortos.">>
 <<set $QuestGiverLocation to "Citizen">> 
 <<set $MinDaysBeforeRepeat to "300">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
 ///<<set $QuestTurnInEventNode to "">> // event to run when quest is turned in
-<<set $DungeonLocName to "[RandomLocationName] Crypt">>
+<<set $DungeonLocName to "Cripta de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "UndeadMix">>
 ///<<set $PartyRequirements to "">>
 <<set $TurnInSpot to "NearestTown">>
@@ -1654,7 +1654,7 @@ position: 2624,2227
 
 
 // these next 2 are what are shown when we look at the quest log or objective text on screen
-<<set $QuestName to "Lacking Resources">>
+<<set $QuestName to "Faltando Recursos">>
 <<set $QuestDescription to "Agora que a Praga acabou, muitos de nos temos reparos a fazer e precisamos de Ferro!">>
 // this is the shortened version of the text used in places like the objective tracker mid dungeon
 <<set $ShortDescription to "Encontre 10 de ferro.">>
@@ -1669,12 +1669,12 @@ groupName: DynamicQuests
 position: -235,-888
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Scourge On The Horizon">>
+<<set $QuestName to "O Flagelo no Horizonte">>
 <<set $QuestDescription to "[questTown] viu um aumento na atividade demoniaca. E uma tendencia perturbadora que aponta para outro Flagelo em breve. No entanto, no nosso ramo, e uma boa hora para ganhar algum dinheiro ajudando a livrar [questTown] do problema.">>
 <<set $ShortDescription to "Elimine os demonios.">>
 <<set $QuestGiverLocation to "Citizen">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Demon Cave">>
+<<set $DungeonLocName to "Caverna do Demonio">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Ajude a se preparar para o Flagelo que se aproxima.">>
@@ -1824,7 +1824,7 @@ position: 1999,1192
 ---
 
 
-<<set $QuestName to "Brightmane Furs">>
+<<set $QuestName to "Pelas de Brightmane">>
 <<set $QuestDescription to "Atencao, cacadores! Sou apenas um simples alfaiate que precisa de algumas peles de Brightmane para a confeccao de minhas roupas. Estou disposto a pagar generosamente por cada pele trazida a minha loja.">>
 <<set $ShortDescription to "Obter [goal] Peles de Brightmane.">>
 <<set $BountyItem to "tioBrightmaneFur:2-3">>
@@ -1838,7 +1838,7 @@ groupName: Safeguarding A Shipment
 position: -680,6
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Safeguarding A Shipment">>
+<<set $QuestName to "Protegendo uma Carga">>
 <<set $QuestDescription to "Um comerciante da cidade de [questTown] nos contratou para garantir que ele e suas mercadorias cheguem em seguranca a [destinationCity]. Com toda a atividade recente de bandidos, a probabilidade de problemas e bem alta.">>
 <<set $ShortDescription to "Um comerciante precisa de uma escolta armada.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -1993,7 +1993,7 @@ position: -904,-456
 ---
 //TODO: the sword you loot/are given should be a Named piece of gear, that way we can easily remove it from your inventory without it being a quest item (we wouldnt want the quest to fail just because you sold it)
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Would-Be Hunter">>
+<<set $QuestName to "O Aspirante a Cacador">>
 <<set $QuestDescription to "A populacao de feras ao redor de [questTown] esta ficando fora de controle e e motivo de preocupacao crescente para os moradores. Uma fazendeira chamada Ada diz que ela e o marido ja perderam uma quantidade significativa de gado por causa dos ataques repetidos da vida selvagem local. Ha uma caverna proxima onde as criaturas habitam, e ela gostaria que os eliminassemos pela seguranca da fazenda dela e dos demais moradores. O marido dela ja havia tomado para si a tarefa de ir cacar as criaturas, mas ainda nao voltou. Ela teme o pior e espera que possamos recupera-lo no processo, vivo ou nao.">>
 <<set $ShortDescription to "Elimine as feras na caverna. Encontre o marido de Ada">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -2251,7 +2251,7 @@ groupName: Lost Possessions
 position: -307,229
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Lost Possessions">>
+<<set $QuestName to "Pertences Perdidos">>
 <<set $QuestDescription to "Um homem de [questTown] nos contratou para encontrar um anel que a filha dele perdeu recentemente. Ele afirma que o anel provavelmente esta em uma caverna logo alem da cidade. Nao e muita informacao, mas ele conseguiu marcar o local em nosso mapa. Ele prometeu uma recompensa se conseguirmos encontrar e devolver o anel.">>
 <<set $ShortDescription to "Encontre o anel perdido">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -2385,7 +2385,7 @@ tags: Quest
 groupName: Famine
 position: -467,-654
 ---
-<<set $QuestName to "Mouths to Feed">>
+<<set $QuestName to "Bocas para Alimentar">>
 <<set $QuestDescription to "A cidade de [questTown] esta enfrentando uma fome e seus suprimentos de comida estao acabando. Um abastado morador local garantiu um carregamento de comida muito necessario vindo da cidade de [destinationCity]. Como nao pode fazer a viagem pessoalmente, ele nos contratou para obter o carregamento em seu nome e retornar com ele para [questTown]. Ele nos deu as moedas necessarias para a compra e prometeu nos recompensar quando voltarmos.">>
 <<set $ShortDescription to "Pague e busque o carregamento de comida em [destinationCity]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -2466,7 +2466,7 @@ position: 744,-687
 ->Trouxemos. **Entregar o pagamento**
     <<RemoveItem itm_coinsForFood>>  
     <<UpdateTurnInLocation origin>>
-    <<SetPrimaryQuestObjectiveComplete "Return the crates of food to [questTown].">>
+    <<SetPrimaryQuestObjectiveComplete "Devolva as caixas de comida a [questTown].">>
     **Ela conta as moedas rapidamente para garantir que esta tudo certo. Satisfeita, ela as guarda no bolso com um sorriso.**
     {npc:mouthsToFeedNpc2}Esplendido! O resto fica com voces, entao. Mandem minhas recomendacoes ao seu contratante. 
     <<GiveQuestItem itm_foodCrates>>
@@ -2531,7 +2531,7 @@ groupName: A Blacksmith's Request
 position: -371,-120
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "A Blacksmith's Request">>
+<<set $QuestName to "O Pedido do Ferreiro">>
 <<set $QuestDescription to "Fomos contratados por um ferreiro local em [questTown] para buscar um pouco de ferro-negro em uma mina proxima. Ha muitos veios la dentro dos quais devemos conseguir extrai-lo, embora possa demorar um pouco sem as ferramentas adequadas. Embora ele nao possa nos pagar da forma tradicional, prometeu nos recompensar com uma de suas proprias criacoes.">>
 <<set $ShortDescription to "Obter minerio de ferro-negro de uma mina proxima.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -2585,13 +2585,13 @@ position: 419,-111
 ->[Time:4]Todo mundo ao trabalho! **Extrair**
     **E preciso esforco e engenho, mas depois de um tempo voces conseguem extrair um pouco do minerio raro.**
     <<GiveQuestItem itm_blackIron>>
-    <<UpdateQuestObjectiveText "Obtain black iron ore (1/3)">>
+    <<UpdateQuestObjectiveText "Obtenha minerio de ferro negro (1/3)">>
     ->Vamos continuar procurando. **Continuar**
         <<stop>>
 ->[RemoveRequiredItem:tio_tools,Time:1]Isso deve ser util. **Extrair com ferramentas.** 
     **O processo e mais rapido do que voces esperavam gracas as ferramentas que trouxeram, e depois de um tempo voces conseguem extrair um pouco do minerio raro.**
     <<GiveQuestItem itm_blackIron>>
-    <<UpdateQuestObjectiveText "Obtain black iron ore (1/3)">>
+    <<UpdateQuestObjectiveText "Obtenha minerio de ferro negro (1/3)">>
     ->Vamos continuar procurando. **Continuar**
         <<stop>>
 ===
@@ -2678,12 +2678,12 @@ groupName: Watchtower Assault
 position: -588,-422
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Watchtower Assault">>
+<<set $QuestName to "Assalto a Torre de Vigia">>
 <<set $QuestDescription to "We have been hired by House [thisHouse] to execute an assault on a watchtower that is vital to their war effort. It is currently in the hands of House [otherHouse], but reports indicate that it is not heavily guarded and our company should be able to overwhelm their forces. Once the task is done, we are to hold the position until allied forces relieve us.">>
 <<set $ShortDescription to "Capture a torre de vigia e elimine as forcas de [otherHouse].">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Fort">>
+<<set $DungeonLocName to "Forte de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $QuestCity to "NearestTown">>
 <<set $QuestIntro to "Retome uma torre de vigia vital.">>
@@ -2814,7 +2814,7 @@ groupName: Resource Dispute
 position: -359,-468
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Resource Dispute">>
+<<set $QuestName to "Disputa de Recursos">>
 <<set $QuestDescription to "Fomos contratados pela nobre Casa de [rulerLName] para ajudar a reivindicar uma mina recem-descoberta perto de suas terras. A posse dessa mina esta sob disputa, e diversos conflitos ja ocorreram, pois os dois lados se recusam a ceder suas posicoes. Devemos ir ate a mina e ajudar a expulsar o inimigo de uma vez por todas; em troca, seremos recompensados com [goldReward].">>
 <<set $ShortDescription to "Elimine todas as forcas inimigas da mina disputada.">>
 <<set $QuestGiverLocation to "Noble">>
@@ -2924,7 +2924,7 @@ groupName: Vanguard Deserters
 position: -490,-686
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Vanguard Deserters">>
+<<set $QuestName to "Desertores da Vanguarda">>
 <<set $QuestDescription to "Um grupo de recrutas em treinamento fugiu da Ordem de Vanguarda. Fomos informados de que a pena para isso e a morte. Owayn, Comandante da Vanguarda, pediu que rastreemos esses desertores e os passemos na espada antes que causem dano a outros. Ele nos deu a localizacao de onde devem estar, e e improvavel que tenham ido para outro lugar.">>
 <<set $ShortDescription to "Rastreie e execute os desertores da Vanguarda.">>
 <<set $QuestGiverLocation to "Vanguard">>
@@ -3041,7 +3041,7 @@ groupName: CampaignVoidBreach
 position: -518,-87
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Void Breach">>
+<<set $QuestName to "Ruptura do Vazio">>
 <<set $QuestDescription to "{npcName:prologueVanguardNpc} de Andilon nos contratou para fechar uma Brecha do Vazio nas proximidades. Ele ja havia enviado um grupo para resolver a questao, mas nao voltaram. Podemos esperar encontrar muitos vazio-gerados, especialmente conforme nos aproximamos da brecha.">>
 <<set $ShortDescription to "Feche a Brecha do Vazio.">>
 <<set $QuestGiverLocation to "None">>
@@ -3233,7 +3233,7 @@ position: 2370,1198
 ---
 
 
-<<set $QuestName to "Nullbeast Teeth">>
+<<set $QuestName to "Dentes de Nullbeast">>
 <<set $QuestDescription to "Sei que e um pedido um tanto estranho, mas espero que algum aventureiro corajoso possa me ajudar a conseguir alguns dentes de Nullbeast. Voce sera bem pago se puder entrega-los para mim.">>
 <<set $ShortDescription to "Adquira [goal] dentes de Nullbeast.">>
 <<set $BountyItem to "tioNullbeastTeeth:2-3">>
@@ -3248,7 +3248,7 @@ position: 2379,1497
 ---
 
 
-<<set $QuestName to "Hoarwulf Tails">>
+<<set $QuestName to "Caudas de Hoarwulf">>
 <<set $QuestDescription to "Se alguns cacadores tiverem algumas caudas por ai, ou tiverem meios de conseguir mais, ficarei muito grato se as trouxerem para mim, para que eu possa continuar meu estudo delas. Nao sou um homem rico, mas oferecerei o que puder em troca.">>
 <<set $ShortDescription to "Adquira [goal] caudas de Hoarwulf.">>
 <<set $BountyItem to "tioHoarwulfTail:2-3">>
@@ -3263,7 +3263,7 @@ position: 2766,1200
 ---
 
 
-<<set $QuestName to "Nullbeast Teeth">>
+<<set $QuestName to "Dentes de Nullbeast">>
 <<set $QuestDescription to "Nossos ferreiros trabalham nas forjas dia e noite para armar bem nossos bravos soldados, mas estamos precisando urgentemente de mais materiais! No momento, precisamos mais de aco do que de moedas, e voce sera muito bem recompensado em troca.">>
 <<set $ShortDescription to "Adquira [goal] sucatas de equipamento para a cidade de [questTown].">>
 <<set $BountyItem to "tioScrap:15">>
@@ -3278,7 +3278,7 @@ position: 2782,1501
 ---
 
 
-<<set $QuestName to "Repair Materials">>
+<<set $QuestName to "Materiais de Reparo">>
 <<set $QuestDescription to "Those damned fires from the war burned through many buildings, but we'll get them fixed up so long as we have enough timber. You will be well paid for any contributions you can make to our stockpiles.">>
 <<set $ShortDescription to "Forneca [goal] feixes de madeira a cidade de [questTown].">>
 <<set $BountyItem to "tioWood:2-3">>
@@ -3291,7 +3291,7 @@ tags: Quest Bounty
 groupName: Bounty Quests
 position: 2003,1836
 ---
-<<set $QuestName to "Kill [targetFName] [targetLName]">>
+<<set $QuestName to "Mate [targetFName] [targetLName]">>
 <<set $QuestDescription to "Autorizamos uma recompensa pela cabeca de [targetFName] [targetLName]. Ele foi visto pela ultima vez fugindo da cidade, e provavelmente ainda esta escondido dentro de nossas fronteiras. Volte com a cabeca decepada dele e sera generosamente recompensado.">>
 <<set $ShortDescription to "Encontre e mate [targetFName] [targetLName] e leve a cabeca decepada dele de volta a cidade de [questTown].">>
 <<set $BountyItem to "tioSeveredHead:1">>
@@ -3304,7 +3304,7 @@ tags: Quest Bounty
 groupName: Bounty Quests
 position: 2010,1493
 ---
-<<set $QuestName to "Demon's Blood">>
+<<set $QuestName to "Sangue de Demonio">>
 <<set $QuestDescription to "Agora que o Flagelo esta sobre nos, eu esperava que alguns guerreiros corajosos pudessem me ajudar a conseguir um pouco de sangue de demonio. Como alquimista de oficio, acho que e um ingrediente particularmente versatil! E claro que voce sera compensado por seus esforcos.">>
 <<set $ShortDescription to "Adquira [goal] frascos de Sangue de Demonio.">>
 <<set $BountyItem to "tioDemonsBlood:3-4">>
@@ -3645,7 +3645,7 @@ position: -121,-484
 <<set $StartDungeonImmediately to false>>
 
 <<set $Tileset to "cave">>
-<<set $QuestName to "Hyldr's Tomb">>
+<<set $QuestName to "Tumba de Hyldr">>
 <<set $QuestDescription to "Estivemos apurando alguns rumores que circulam pelo norte. Dizem que o tumulo de um dos primeiros chefes Nurren conhecidos, Hyldr, foi localizado recentemente. Nossos espioes descobriram o local e pode valer a pena uma viagem para investigar.">>
 <<set $ShortDescription to "Encontre o local de descanso de Hyldr.">>
 <<set $EnemyCategoryGroup to "UndeadMix">>
@@ -3718,7 +3718,7 @@ position: -890,-26
 ///When you leave the town you you are confronted by someone who works with the historian. He tells you the reason he knows the book is there is because it's where they used to work out of because the place seemed to have a strong connection with the void. The book is his notes they took while living there doing research before it was overrun with monsters. He tells you to not bother and that this mission is far too dangerous and that he's sent countless others to retrieve the book and nobody has ever returned. He says if you decide to still go that instead of looking for the book to look for a room that has tons of dynamite stored there from when the miners used the facility. He says to bring a long fuse and just blow the entire building to the ground to rid the world of everything in there.
 ///This will be a long mission but you can optionally find the dynamite room fairly early on and just decide to take the easy way out or you can head deeper in and find the book. You will get more rewards for doing the full dungeon but more reputation with the town for just destroying the building. You can optionally get the book then go back and blow up the place too.
 <<set $Tileset to "cave">>
-<<set $QuestName to "Coveting The Past">>
+<<set $QuestName to "Cobicando o Passado">>
 <<set $QuestDescription to "Fomos contratados para encontrar um livro para um historiador local. Ele parecia muito importante para ele, entao concordamos em localiza-lo. Ele diz que devemos conseguir encontra-lo bem no fundo de uma mina abandonada. Afirma que sera dificil nao notar, por causa do simbolo de duas serpentes na capa.">>
 <<set $ShortDescription to "Ajude o historiador a encontrar o livro dele.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -3857,7 +3857,7 @@ position: -541,613
 <<AllowDungeonEventToTriggerAgain>>
 ->Vamos explodir. **Sair da mina**
     <<ModifyQuestVar "Quest.HistoriansPlight" "BlewUpMine" "true">>
-    <<SetPrimaryQuestObjectiveComplete "Return to the historian.">>
+    <<SetPrimaryQuestObjectiveComplete "Volte para o historiador.">>
     Certo, esta armado. Vamos sair daqui.
     ->**Sair**
         3
@@ -3945,12 +3945,12 @@ groupName: House Tension Event Quests
 position: -408,-851
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Kidnapping An Heir">>
+<<set $QuestName to "Sequestrando um Herdeiro">>
 <<set $QuestDescription to "As tensoes entre [thisHouse] e [otherHouse] escalaram a ponto de um lado decidir agir antes do outro. [thisHouse] quer que voce sequestre o herdeiro de [otherHouse].">>
 <<set $ShortDescription to "Sequestre o herdeiro de [otherHouse].">>
 <<set $QuestGiverLocation to "House">>
 <<set $DungeonLocation to "RIVAL_HOUSE">>
-<<set $DungeonLocName to "Manor">>
+<<set $DungeonLocName to "Solar">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Prepare-se para sujar as maos.">>
@@ -4018,12 +4018,12 @@ groupName: House Tension Event Quests
 position: -401,-510
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Seizing Wealth From House [otherHouse]">>
+<<set $QuestName to "Tomando a Riqueza da Casa [otherHouse]">>
 <<set $QuestDescription to "As tensoes crescentes entre [thisHouse] e [otherHouse] chegaram ao ponto de um lado decidir agir antes que o outro aja. [thisHouse] quer que voces roubem uma reliquia de [otherHouse].">>
 <<set $ShortDescription to "Roubar uma reliquia de [otherHouse].">>
 <<set $QuestGiverLocation to "House">>
 <<set $DungeonLocation to "RIVAL_HOUSE">>
-<<set $DungeonLocName to "Manor">>
+<<set $DungeonLocName to "Solar">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Raptar um nobre.">>
@@ -4083,12 +4083,12 @@ groupName: House Tension Event Quests
 position: -415,-182
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Ending The Line">>
+<<set $QuestName to "Acabando com a Linhagem">>
 <<set $QuestDescription to "Com as tensoes aumentando entre a Casa [thisHouse] e a [otherHouse], e so uma questao de quem desfere o primeiro golpe. Representantes da Casa [thisHouse] nos contrataram para fazer exatamente isso: assassinar o herdeiro da Casa [otherHouse].">>
 <<set $ShortDescription to "Assassinar o herdeiro da Casa [otherHouse]">>
 <<set $QuestGiverLocation to "House">>
 <<set $DungeonLocation to "RIVAL_HOUSE">>
-<<set $DungeonLocName to "Manor">>
+<<set $DungeonLocName to "Solar">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $DungeonLength to "Medium">>
 <<set $TurnInSpot to "NearestTown">>
@@ -4219,7 +4219,7 @@ groupName: War Quests
 position: -318,-295
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Protect The Roads">>
+<<set $QuestName to "Proteja as Estradas">>
 <<set $QuestDescription to "[thisHouse] precisa que voce patrulhe as estradas entre [questTown] e [destinationCity]. Fique atento a quaisquer tropas de [otherHouse] que tenham conseguido cruzar as fronteiras.">>
 <<set $ShortDescription to "Patrulhe a estrada de [questTown] ate [destinationCity].">>
 <<set $QuestGiverLocation to "Noble">>
@@ -4265,12 +4265,12 @@ groupName: War Quests
 position: -324,14
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Aiding The War Effort">>
+<<set $QuestName to "Ajudando o Esforco de Guerra">>
 <<set $QuestDescription to "[thisHouse] esta enviando voce em uma missao para atacar um forte de [otherHouse].">>
 <<set $ShortDescription to "Atacar o forte de [otherHouse].">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_REGION">>
-<<set $DungeonLocName to "Fort">>
+<<set $DungeonLocName to "Forte">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Invadir um acampamento militar.">>
@@ -4330,7 +4330,7 @@ groupName: Scourge Quests
 position: -328,-314
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Scourge Hunt">>
+<<set $QuestName to "Caca ao Flagelo">>
 <<set $QuestDescription to "Com a Praga sobre nos, fomos encarregados de proteger as estradas entre [curTown] e [destinationCity], e de eliminar qualquer voidspawn que encontrarmos pelo caminho.">>
 <<set $ShortDescription to "Patrulhe as estradas entre [curTown] e [destinationCity] em busca de voidspawn.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -4372,12 +4372,12 @@ groupName: Scourge Quests
 position: -331,-4
 ---
 <<set $Tileset to "cave,crypt">>
-<<set $QuestName to "Voidspawn Burrow">>
+<<set $QuestName to "Toca dos Voidspawn">>
 <<set $QuestDescription to "Com a Praga em pleno vigor, a guarnicao da Vanguarda em [questTown] precisa de ajuda. Fomos encarregados de eliminar um grupo de voidspawn avistados nas profundezas.">>
 <<set $ShortDescription to "Elimine os voidspawn.">>
 <<set $QuestGiverLocation to "Vanguard">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Depths">>
+<<set $DungeonLocName to "Profundezas de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Um grupo de voidspawn precisa ser eliminado.">>
@@ -4484,12 +4484,12 @@ groupName: War Quests
 position: -332,322
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Fortify The Garrison">>
+<<set $QuestName to "Fortalecer a Guarnicao">>
 <<set $QuestDescription to "[thisHouse] espera um ataque do exercito de [otherHouse] e pediu reforcos. Va ate [DungeonLocationName] e prepare-se para o ataque.">>
 <<set $ShortDescription to "Defenda o forte de [thisHouse].">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Fort [RandomLocationName]">>
+<<set $DungeonLocName to "Forte [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Defenda uma fortaleza vital.">>
@@ -4602,12 +4602,12 @@ position: -336,305
 ---
 //TODO: make sure this occurs postscourge while there are still some unturned Blighted around
 <<set $Tileset to "cave">>
-<<set $QuestName to "Condemned Runaways">>
+<<set $QuestName to "Fugitivos Condenados">>
 <<set $QuestDescription to "[thisHouse] localizou um grupo de empestados que fugiram da quarentena. Encontre-os e, se eles se recusarem a voltar, elimine-os.">>
 <<set $ShortDescription to "Encontre os fugitivos empestados.">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_REGION">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Localize fugitivos empestados perigosos.">>
@@ -4623,7 +4623,7 @@ position: -330,-589
 ---
 //disabled because it no longer fits. will need to be re-worked into a group of civilians trying to illegally escape the city's quarantine
 <<set $Tileset to "cave">>
-<<set $QuestName to "A New Home">>
+<<set $QuestName to "Um Novo Lar">>
 <<set $QuestDescription to "Com o lar devastado pelos ataques do dragao, um grupo de refugiados precisa de escolta ate [destinationCity].">>
 <<set $ShortDescription to "Escoltar refugiados ate [destinationCity].">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -4671,7 +4671,7 @@ groupName: Voidspawn Activity
 position: -338,618
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Defending The Roads">>
+<<set $QuestName to "Defendendo as Estradas">>
 <<set $QuestDescription to "A Casa [questHouse] nos encarregou de proteger as estradas entre [curTown] e [destinationCity]. Com o aumento da atividade de Voidspawn ultimamente, e mais que provavel que cruzemos com alguns.">>
 <<set $ShortDescription to "Patrulhe em busca de Voidspawn entre [curTown] e [destinationCity].">>
 <<set $QuestGiverLocation to "Noble">>
@@ -4769,12 +4769,12 @@ groupName: Voidspawn Activity
 position: -334,945
 ---
 <<set $Tileset to "cave,crypt">>
-<<set $QuestName to "A Worried Mother">>
+<<set $QuestName to "Uma Mae Preocupada">>
 <<set $QuestDescription to "Uma mae esta preocupada com o filho que desapareceu. Ele e abencoado com magia e costuma sair para praticar seus feiticos longe dos outros, mas ainda nao voltou. Com a recente atividade de voidspawn perto de [questTown], ela teme que possa haver uma ligacao com o desaparecimento dele.">>
 <<set $ShortDescription to "Encontre o menino desaparecido.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Depths of [RandomLocationName]">>
+<<set $DungeonLocName to "Profundezas de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Uma mae esta procurando pelo filho.">>
@@ -4871,12 +4871,12 @@ groupName: Voidspawn Activity
 position: -339,1265
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Eradicate Voidspawn">>
+<<set $QuestName to "Erradicar os Voidspawn">>
 <<set $QuestDescription to "Os relatos de Voidspawn no condado de [questTown] so tem aumentado. Fomos contratados em nome da Casa [questHouse] para retomar um forte que foi recentemente invadido e perdido para os Voidspawn.">>
 <<set $ShortDescription to "Elimine todos os Voidspawn do forte.">>
 <<set $QuestGiverLocation to "House">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Fort">>
+<<set $DungeonLocName to "Forte de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Os nobres precisam de ajuda com os Voidspawn.">>
@@ -4910,12 +4910,12 @@ groupName: Blighted Activity
 position: -347,2350
 ---
 <<set $Tileset to "crypt,cave">>
-<<set $QuestName to "The Blighted Problem">>
+<<set $QuestName to "O Problema dos Pragados">>
 <<set $QuestDescription to "Ha relatos de Blighted avistados na area proxima a [questTown]. Fomos contratados pela Vanguarda para elimina-los.">>
 <<set $ShortDescription to "Mate os Blighted.">>
 <<set $QuestGiverLocation to "Vanguard">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Depths">>
+<<set $DungeonLocName to "Profundezas de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Blighted">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Moradores afirmam ter visto um grupo de Blighted.">>
@@ -4980,12 +4980,12 @@ groupName: Blighted Activity
 position: -338,2028
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Finding The Lost">>
+<<set $QuestName to "Encontrando os Desaparecidos">>
 <<set $QuestDescription to "Estamos tentando localizar alguem que desapareceu.">>
 <<set $ShortDescription to "Localize uma pessoa desaparecida.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Blighted">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Localize uma pessoa desaparecida.">>
@@ -5078,7 +5078,7 @@ groupName: Blighted Activity
 position: -344,1708
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "On The Lookout">>
+<<set $QuestName to "De Vigia">>
 <<set $QuestDescription to "Fomos encarregados de proteger as estradas entre [curTown] e [destinationCity]. Hordas de Flagelados foram avistadas ao longo delas.">>
 <<set $ShortDescription to "Patrulhe entre [curTown] e [destinationCity] a procura de Flagelados.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -5375,12 +5375,12 @@ groupName: Bandit Activity
 position: -345,1053
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Attempted Rescue">>
+<<set $QuestName to "Tentativa de Resgate">>
 <<set $QuestDescription to "Com toda a atividade recente de bandidos, alguns cidadaos perto de [questTown] desapareceram. Embora provavelmente estejam mortos, fomos contratados para localiza-los e resgata-los.">>
 <<set $ShortDescription to "Localizar os cidadaos desaparecidos.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Abandoned Fort">>
+<<set $DungeonLocName to "Forte Abandonado">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Acredita-se que bandidos sejam responsaveis pelo desaparecimento de algumas pessoas.">>
@@ -5396,7 +5396,7 @@ groupName: Bandit Activity
 position: -340,746
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Vandals In Our Path">>
+<<set $QuestName to "Vandalos no Caminho">>
 <<set $QuestDescription to "As estradas tem estado infestadas de bandidos ultimamente. Fomos encarregados de patrulhar a area entre [curTown] e [destinationCity].">>
 <<set $ShortDescription to "Mate os bandidos na estrada entre [curTown] e [destinationCity].">>
 <<set $QuestGiverLocation to "Civilian">>
@@ -5417,12 +5417,12 @@ groupName: Bandit Activity
 position: -342,1348
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Track Down The Brigands">>
+<<set $QuestName to "Cacar os Bandoleiros">>
 <<set $QuestDescription to "Um grupo de bandidos tem causado problemas para os moradores de [questTown]. Fomos contratados para cuidar deles.">>
 <<set $ShortDescription to "Elimine os bandidos.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Os moradores estao tendo problemas com bandidos.">>
@@ -5490,12 +5490,12 @@ groupName: Bandit Activity
 position: -339,1654
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Reclaiming A Fort">>
+<<set $QuestName to "Retomando um Forte">>
 <<set $QuestDescription to "Limpe os bandidos de um forte local.">>
 <<set $ShortDescription to "Elimine os bandidos.">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Fort [RandomLocationName]">>
+<<set $DungeonLocName to "Forte [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Retome um forte dominado por bandidos.">>
@@ -5560,12 +5560,12 @@ groupName: Bandit Activity
 position: -344,1952
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Dangerous Marauders">>
+<<set $QuestName to "Saqueadores Perigosos">>
 <<set $QuestDescription to "Elimine os bandidos e o lider deles em um forte proximo.">>
 <<set $ShortDescription to "Elimine o lider dos bandidos.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Elimine um lider de bandidos.">>
@@ -5580,7 +5580,7 @@ tags: Quest
 groupName: Bandit Activity
 position: -357,2262
 ---
-<<set $QuestName to "Escort To [destinationCity]">>
+<<set $QuestName to "Escolta Ate [destinationCity]">>
 <<set $QuestDescription to "Precisamos escoltar um grupo de civis ate [destinationCity]. Os avistamentos de bandidos na regiao vem aumentando, tornando as estradas cada vez mais perigosas para viajar. Viajar com uma caravana tao grande nos tornara um alvo principal, entao precisaremos redobrar a atencao ao nosso redor.">>
 <<set $ShortDescription to "Escolte os civis ate [destinationCity].">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -5673,12 +5673,12 @@ groupName: Bandit Activity
 position: -356,2574
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Helping Hand">>
+<<set $QuestName to "Mao Amiga">>
 <<set $QuestDescription to "Recupere alguns bens roubados de bandidos.">>
 <<set $ShortDescription to "Recupere bens roubados.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Recupere alguns bens roubados.">>
@@ -5866,12 +5866,12 @@ groupName: UndeadActivity
 position: -344,821
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Help Wanted">>
+<<set $QuestName to "Procura-se Ajuda">>
 <<set $QuestDescription to "Uma mae esta preocupada com o filho, que desapareceu. Ele e dotado de magia e costuma se afastar para praticar seus feiticos longe dos outros, mas ainda nao voltou. Com a recente atividade dos mortos-vivos perto de [questTown], ela teme que possa haver uma ligacao com o desaparecimento dele.">>
 <<set $ShortDescription to "Encontre o garoto desaparecido.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Crypt">>
+<<set $DungeonLocName to "Cripta de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Undead">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Uma mae esta a procura do filho.">>
@@ -5887,12 +5887,12 @@ groupName: UndeadActivity
 position: -357,1143
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Threat In The Catacombs">>
+<<set $QuestName to "Ameaca nas Catacumbas">>
 <<set $QuestDescription to "Fomos contratados para eliminar os mortos-vivos de uma cripta proxima.">>
 <<set $ShortDescription to "Elimine os mortos-vivos.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Crypt">>
+<<set $DungeonLocName to "Cripta de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Undead">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Os moradores precisam de ajuda com os mortos-vivos.">>
@@ -5910,7 +5910,7 @@ groupName: UndeadActivity
 position: -346,502
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Undead Problems">>
+<<set $QuestName to "Problemas com Mortos-Vivos">>
 <<set $QuestDescription to "Precisamos patrulhar as estradas de [curTown] a [destinationCity] e ficar de olho em qualquer morto-vivo.">>
 <<set $ShortDescription to "Patrulhe em busca de mortos-vivos entre [curTown] e [destinationCity].">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -5931,7 +5931,7 @@ groupName: EncroachingWildlife
 position: -353,1906
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Thinning The Herd">>
+<<set $QuestName to "Afinando o Rebanho">>
 <<set $QuestDescription to "Precisamos patrulhar as estradas de [curTown] a [destinationCity] e ficar de olho em bestas perigosas.">>
 <<set $ShortDescription to "Patrulhe a estrada de [curTown] a [destinationCity].">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -5989,12 +5989,12 @@ groupName: EncroachingWildlife
 position: -352,2226
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Missing Hunters">>
+<<set $QuestName to "Cacadores Desaparecidos">>
 <<set $QuestDescription to "Com o aumento da vida selvagem perto de [questTown], dois cacadores sairam pela mata para tentar a sorte. Nao sao vistos ha algum tempo, e um velho amigo deles nos pediu para encontra-los.">>
 <<set $ShortDescription to "Localize os cacadores desaparecidos.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Dois cacadores desapareceram.">>
@@ -6106,12 +6106,12 @@ groupName: EncroachingWildlife
 position: -361,2545
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Culling Their Numbers">>
+<<set $QuestName to "Dizimando as Fileiras">>
 <<set $QuestDescription to "Com a populacao da vida selvagem local fora de controle, um homem nos pediu para limpar uma caverna repleta de bestas que esta causando problemas para a fazenda dele.">>
 <<set $ShortDescription to "Elimine as criaturas dentro da caverna.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "A vida selvagem invasora esta causando problemas para um morador local.">>
@@ -6179,7 +6179,7 @@ position: 91,-522
 ->**Entregar o pagamento**
     <<RemoveItem itm_coinsForMedicine>>  
     <<UpdateTurnInLocation origin>> 
-    <<SetPrimaryQuestObjectiveComplete "Return the medicine to [questTown].">>
+    <<SetPrimaryQuestObjectiveComplete "Devolva o remedio em [questTown].">>
     **Ela conta as moedas rapidamente para garantir que esta tudo certo. Satisfeita, ela as guarda no bolso com um sorriso.**
     {npc:mouthsToFeedNpc2}Se cuidem.
     <<GiveQuestItem itm_medicineCrates>>
@@ -6204,7 +6204,7 @@ tags: Quest
 groupName: Sickness
 position: -677,-527
 ---
-<<set $QuestName to "Medical Help">>
+<<set $QuestName to "Ajuda Medica">>
 <<set $QuestDescription to "A cidade de [questTown] esta sendo devastada por uma doenca que atinge seus cidadaos. Vao ate [destinationCity] e peguem um carregamento de remedios antes que eles acabem.">>
 <<set $ShortDescription to "Obtenha o medicamento em [destinationCity].">>
 <<set $QuestGiverLocation to "Noble">>
@@ -6998,12 +6998,12 @@ groupName: Vanguard Quests
 position: -364,-692
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Blighted Horde">>
+<<set $QuestName to "Horda Pragada">>
 <<set $QuestDescription to "A Vanguarda encarregou voce de investigar um suposto covil de Corrompidos.">>
 <<set $ShortDescription to "Investigue um covil de Corrompidos.">>
 <<set $QuestGiverLocation to "Vanguard">>
 <<set $DungeonLocation to "RANDOM_IN_REGION">>
-<<set $DungeonLocName to "Blighted Lair">>
+<<set $DungeonLocName to "Toca dos Pragados">>
 <<set $EnemyCategoryGroup to "Blighted">>
 <<set $TurnInSpot to "Vanguard">>
 <<set $QuestIntro to "Investigue um covil de Corrompidos.">>
@@ -7073,7 +7073,7 @@ position: 12,-99
 /// NOTE! DO NOT CHANGE THE NAME OF THE PROLOGUE QUEST NODE NAME! ITS THE ONLY QUEST REFERENCED IN CODE WITH THE TUTORIAL!!!!!
 <<set $Tileset to "crypt">>
 ///<<set $Tileset to "sewer">>
-<<set $QuestName to "Prologue">>
+<<set $QuestName to "Prologo">>
 <<set $QuestDescription to "Seu contratante o encarregou de recuperar um estojo de frascos roubados. Eles contem um soro capaz de retardar os efeitos da Praga. Em troca da entrega segura, ele prometeu pagar generosamente. Voce rastreou os frascos ate uma cripta em ruinas, de todos os lugares, embora a posicao exata deles ainda lhe escape.">>
 <<set $ShortDescription to "Encontre o contrabando escondido. [FNameC0] deve sobreviver">>
 <<set $EnemyCategoryGroup to "CampaignIntro">>
@@ -7161,7 +7161,7 @@ groupName: CampaignPrologue
 position: 23,184
 ---
 <<set $Icon to "Loot">>
-<<ShowTutorialMessage "EEEEventos de Exploracao "WAo interagir com um Evento de Exploracao, voce geralmente tera varias escolhas disponiveis, as vezes custando varias quantidades de Tempo. Os seus personagens terao opiniao propria sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.>> 
+<<ShowTutorialMessage "EEEventos de Exploracao "WAo interagir com um Evento de Exploracao, voce geralmente tera varias escolhas disponiveis, as vezes custando varias quantidades de Tempo. Os seus personagens terao opiniao propria sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.>> 
 **Voce avista uma mochila descartada adiante, provavelmente largada as pressas pelos violadores de tumulos.**
 {mainChar0}Nao espere encontrar muito valor, mas nao faz sentido deixa-la para tras.
 ->[Time:1]Pegue o que parecer util. **Saquear**
@@ -7228,7 +7228,7 @@ position: 786,475
 {advisor}Isto aqui e uma cura para a Praga, ou pelo menos retarda o processo. A Vanguarda mantem isso bem controlado, porem, tratando apenas aqueles que se comprometem com sua Ordem. Como voce pode imaginar, e muito procurado no mercado negro. 
 ->Ao menos nossos esforcos nao foram em vao. Esperemos que os outros tenham assegurado uma saida para nos. **Continuar**
     <<SetEventFinished>> 
-    <<SetPrimaryQuestObjectiveComplete "Find The Exit">>
+    <<SetPrimaryQuestObjectiveComplete "Ache a Saida">>
 ===
 title: SE.CampaignIntroExit
 tags: ScriptedEvent
@@ -7337,7 +7337,7 @@ position: 25,745
 ->Conseguimos o que viemos buscar. Nao vamos desafiar o destino. **Sair**
 <<SetEventFinished>> 
 <<ResetCompanyCharges>>
-<<SetPrimaryQuestObjectiveComplete "Deliver the vials to your employer">>
+<<SetPrimaryQuestObjectiveComplete "Entregue os frascos ao seu empregador">>
 <<TriggerDungeonComplete true>>
 ===
 title: campaignIntroRubblePt2
@@ -7440,7 +7440,7 @@ position: 693,-105
 ---
 //unused atm
 **Voces examinam o campo de batalha, os musculos ainda tensos enquanto o furor audivel da batalha continua em outros pontos da fortaleza. Voces avistam um mensageiro se aproximando correndo, que acena para voces e para ao seu lado, com as maos apoiadas nos joelhos enquanto se curva e ofega por ar.**
-<<UpdateQuestObjectiveText "Fend Off the waves of Blighted (1/2)">>
+<<UpdateQuestObjectiveText "Resista as ondas de Pragados (1/2)">>
 {npc:campaignGenericVanguardSoldierNpc}Ainda ha mais por vir. **Ele inspira o ar com desespero entre as palavras.** O Comandante Owayn solicita sua presenca no portao norte. Por favor, siga-me!
 {player:0}Que inferno, mais deles?
 ->Pois vamos. **Lutar** 
@@ -7675,7 +7675,7 @@ position: -222,-41
 <<SetFacingLeft [npc8]>>
 <<AddPause 1.5>> 
 <<MoveNpc 8 400 0 true>>
-<<ShowTutorialMessage "FFFLute ate a Morte! "WQuando as chances estao contra voce, as vezes tudo o que se pode fazer e minimizar as perdas. Use tudo o que estiver ao seu alcance e nao segure nada!>>
+<<ShowTutorialMessage "FFLute ate a Morte! "WQuando as chances estao contra voce, as vezes tudo o que se pode fazer e minimizar as perdas. Use tudo o que estiver ao seu alcance e nao segure nada!>>
 //Torin and other antagonists escape
 
 //combat starts, new mission name: 'Betrayed and Broken', objective: 'Fight to the Death'
@@ -7690,7 +7690,7 @@ position: -642,-336
 ///<<set $Tileset to "plains">>
 <<set $Tileset to "crypt">>
 ///<<set $Tileset to "sewer">>
-<<set $QuestName to "Betrayed And Broken">>
+<<set $QuestName to "Traido e Quebrado">>
 <<set $QuestDescription to "A traicao de [FNameA0] nao foi prevista e causou consequencias devastadoras para a nossa Companhia. Precisamos sobreviver e pensar em nos reerguer depois.">>
 <<set $ShortDescription to "Lutar Ate a Morte">>
 <<set $QuestGoal to "Open">>
@@ -7850,7 +7850,7 @@ groupName: CampaignBetrayedAndBroken
 position: 603,-33
 ---
 <<SetTimeOfDayNoon false>>
-<<UpdateQuestObjective Quest.CampaignBetrayedAndBroken primary success "Travel to Andilon.">>
+<<UpdateQuestObjective Quest.CampaignBetrayedAndBroken primary success "Viaje para Andilon.">>
 <<StartTutorial WorldTravel RequireTravelTo Andilon TutorialOverworldNavigation>>
 <<stop>>
 ===
@@ -7975,7 +7975,7 @@ position: -409,-571
 ///<<set $Tileset to "plains">>
 <<set $Tileset to "crypt">>
 ///<<set $Tileset to "sewer">>
-<<set $QuestName to "Back on Your Feet">>
+<<set $QuestName to "De Pe Novamente">>
 <<set $QuestDescription to "Recebemos uma dica de que poderiamos encontrar novos trabalhos com os Vanguardas. Eles sempre precisam de maos extras e acontece que alguns estao em Andilon. Falaremos com eles imediatamente.">>
 <<set $ShortDescription to "Falar com o Vanguarda">>
 <<set $QuestGoal to "Open">>
@@ -7992,7 +7992,7 @@ groupName: CampaignBackOnYourFeet
 position: -9,-572
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Back on Your Feet">>
+<<set $QuestName to "De Pe Novamente">>
 <<set $QuestDescription to "Conseguimos uma missao para localizar e escoltar alguns refugiados de volta a Andilon. O ultimo paradeiro deles foi marcado no mapa. Eles deveriam ter uma escolta dos Vanguardas, mas o fato de ainda nao terem retornado e preocupante, entao tente ser o mais rapido possivel em sua busca.">>
 <<set $ShortDescription to "Escoltar refugiados ate Andilon">>
 <<set $QuestGoal to "Open">>
@@ -8000,7 +8000,7 @@ position: -9,-572
 <<set $QuestGiverLocation to "Vanguard">>
 <<set $EnemyCategoryGroup to "PrologueRefugees">>
 <<set $DungeonLocation to "ON_PATH">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $QuestIntro to "Conseguir trabalho com um representante local dos Vanguardas">>
 <<set $IntroEvent to "SE.CampaignBackOnYourFeetRefugeesIntro">>
 <<set $DungeonEvents to "SE.CampaignRefugeesCaveCamp,SE.CampaignRefugeesCaveBoss">>
@@ -8089,7 +8089,7 @@ position: -9,-19
 **[FNameP1] se afasta, resmungando algo inaudivel enquanto se manda porta afora. Aparecendo ao seu lado, [FNameP0] da de ombros, com um leve sorriso de canto no rosto de [pronounPoss0].**
 {player:0}Nao da para agradar a todos, [myTitle], mas creio que seja a escolha certa. E verdade que nao sabemos o que nos espera nessas cavernas. Mas sabemos muito bem o perigo que enfrentamos aqui em cima.
 ->**Continuar**
-<<UpdateQuestObjective Quest.CampaignBackOnYourFeetRefugees primary active "Find the cave's exit.">>
+<<UpdateQuestObjective Quest.CampaignBackOnYourFeetRefugees primary active "Ache a saida da caverna.">>
 <<EnterQuestDungeon Quest.CampaignBackOnYourFeetRefugees>>
 ===
 title: SE.CampaignRefugeesCaveEntrance
@@ -8108,7 +8108,7 @@ position: 361,-566
 {player:0}Ele estava com isso. Achei que poderiamos dar utilidade a isso.
 <<GiveItem "tioEnchantmentAccuracy1">>
 ->Bom olho, [FNameP0]. **Continuar**
-<<ShowTutorialMessage "TutorialEnchantment" "EEEEncantamentos "E>>). Clique com o botao esquerdo <sprite name=\PC-leftClick\PC-g\">>). Clique com o botao esquerdo <sprite name=\PC-leftClick\">> sobre o encantamento que deseja aplicar, e depois clique com o botao direito <sprite name=\PC-rightClick\">> sobre uma peca de equipamento adequada para aplica-lo.>>
+<<ShowTutorialMessage "TutorialEnchantment" "EEEncantamentos "E>>). Clique com o botao esquerdo <sprite name=\PC-leftClick\PC-g\">>). Clique com o botao esquerdo <sprite name=\PC-leftClick\">> sobre o encantamento que deseja aplicar, e depois clique com o botao direito <sprite name=\PC-rightClick\">> sobre uma peca de equipamento adequada para aplica-lo.>>
     <<stop>>
 ===
 title: SE.CampaignRefugeesCaveCamp
@@ -8189,7 +8189,7 @@ position: 746,-568
     **Voce emerge da caverna, e alguns refugiados se aproximam hesitantes para oferecer seus agradecimentos nervosos. Voce lhes da um leve sorriso antes de voltar a atencao para as planicies abertas diante de voce, olhando de canto para [FNameAdvisor], que faz o mesmo. 
     {advisor}Fizemos um bom trabalho, [myTitle], contra todas as probabilidades. Andilon ainda esta a alguns dias de distancia, mas suspeito que o pior ja ficou para tras. **Ele aponta para a estrada enquanto voce comeca a avancar.** Vamos buscar essa recompensa, entao?
     ->**Continuar**
-        <<UpdateQuestObjective Quest.CampaignBackOnYourFeetRefugees primary success "Travel to Andilon.">>
+        <<UpdateQuestObjective Quest.CampaignBackOnYourFeetRefugees primary success "Viaje para Andilon.">>
         <<stop>>
 }
 <<else>> 
@@ -8342,7 +8342,7 @@ groupName: CampaignBackOnYourFeet
 position: 1566,-561
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Back On Your Feet">>
+<<set $QuestName to "De Pe Novamente">>
 <<set $QuestDescription to "">>
 <<set $ShortDescription to "Reuna-se com a Vanguarda nos arredores de Andilon">>
 <<set $QuestGoal to "Open">>
@@ -8364,7 +8364,7 @@ position: 1949,-563
 ---
 <<set $EventTrigger to "ON_QUEST_DESTINATION_ARRIVAL">>
 <<set $CheckForActiveQuest to "Quest.CampaignBackOnYourFeetHorde">>
-<<UpdateQuestObjectiveText "Defend Andilon from the Voidspawn">>
+<<UpdateQuestObjectiveText "Defenda Andilon dos Voidspawn">>
 <<CreateNpc "id:prologueVanguardNpc,name:Captain Hewford,img:vanguardOfficer">>
 **Ao alcancar os arredores da cidade, voce observa homens e mulheres trabalhando as pressas nos preparativos finais de defesa - uma fileira de estacas de madeira, trincheiras e barricadas - tudo montado de forma impressionante em apenas alguns dias.**
 <<if isCharacterAlive("mainChar0") is "true">>
@@ -8441,7 +8441,7 @@ position: 2333,-25
 {npc:prologueVanguardNpc}Ainda tenho muito a supervisionar por aqui, mas passe no quartel mais tarde e trataremos do seu pagamento.
 ->Muito bem. **Continuar**
 <<RemoveTempAlliesFromThisQuest>>
-<<UpdateQuestObjective Quest.CampaignBackOnYourFeetHorde primary success "Head back to Andilon">>
+<<UpdateQuestObjective Quest.CampaignBackOnYourFeetHorde primary success "Volte para Andilon">>
 //<<UpdateQuestObjective Quest.CampaignBackOnYourFeetHorde primary failed "Head back to Andilon">>
 ===
 title: SE.CampaignBackOnYourFeetHordeAttackPostBattle
@@ -8476,7 +8476,7 @@ position: 2336,237
 {npc:prologueVanguardNpc}Uma vitoria custosa, mas ainda assim uma vitoria. Fico feliz em ver que voce continua de pe. **Ele observa os feridos sendo levados e os mortos amontoados em pilhas.** Tenho muito a supervisionar por aqui, mas passe no quartel mais tarde e trataremos do seu pagamento.
 ->Muito bem. **Continuar**
 <<RemoveTempAlliesFromThisQuest>>
-<<UpdateQuestObjective Quest.CampaignBackOnYourFeetHorde primary success "Head back to Andilon">>
+<<UpdateQuestObjective Quest.CampaignBackOnYourFeetHorde primary success "Volte para Andilon">>
 ===
 title: SE.CampaignBackOnYourFeetHordeAttackPt2
 tags: ScriptedEvent
@@ -8541,7 +8541,7 @@ groupName: EncroachingWildlife
 position: -358,2854
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Protection">>
+<<set $QuestName to "Protecao">>
 <<set $QuestDescription to "Precisamos escoltar um grupo de civis ate [destinationCity]. Recentemente houve um aumento massivo de ataques dos mais variados animais locais. Algo esta fazendo com que fiquem mais audaciosos, as vezes atacando caravanas em plena luz do dia.">>
 <<set $ShortDescription to "Lidere uma escolta ate [destinationCity].">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -8560,7 +8560,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: -143,-553
 ---
-<<set $QuestName to "Path of Vengeance">>
+<<set $QuestName to "Caminho da Vinganca">>
 <<set $QuestDescription to "Descubra o que aconteceu com Gedrick. A unica pista que temos e ir ate [destinationCity] para procurar um daqueles que nos trairam.">>
 <<set $ShortDescription to "Procure respostas em [destinationCity].">>
 <<set $QuestGiverLocation to "None">>
@@ -9020,7 +9020,7 @@ position: 486,-221
 <<SetEventFinished>>
 **Voce encontrou algumas das ervas que lhe pediram para procurar. Ainda precisara de mais, porem.**
 <<GiveQuestItem tioMedicineIngredients>>
-<<UpdateQuestObjectiveText "Find ingredients for medicine (1/3)">>
+<<UpdateQuestObjectiveText "Encontre ingredientes para o remedio (1/3)">>
 ->Vamos.
     <<stop>>
 ===
@@ -9072,7 +9072,7 @@ groupName: Sickness
 position: -677,-229
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Recipe For Relief">>
+<<set $QuestName to "Receita de Alivio">>
 <<set $QuestDescription to "Fomos contratados para procurar algumas ervas medicinais especiais que crescem em uma caverna fora de [questTown]. Com a doenca se espalhando pela cidade, os curandeiros locais precisam muito delas.">>
 <<set $ShortDescription to "Encontre (3) ingredientes para remedio.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -9087,7 +9087,7 @@ position: -677,-229
 <<set $RepeatableDetails to "Common,Sickness">>
 <<set $RequiredEvents to "Sickness">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $DungeonEvents to "SE.SicknessRecipeForReliefSpot1,SE.SicknessRecipeForReliefSpot2,SE.SicknessRecipeForReliefSpot3">>
 <<set $OptionalDungeonEvents to "SE.SicknessRecipeForRelifeOptionalSpot1,SE.SicknessRecipeForRelifeOptionalSpot2">>
 ===
@@ -9101,7 +9101,7 @@ position: 874,-227
 <<SetEventFinished>>
 **Voce avista outro tufo das ervas crescendo no chao adiante. Ainda precisara encontrar mais algumas para satisfazer seu contratante.**
 <<GiveQuestItem tioMedicineIngredients>>
-<<UpdateQuestObjectiveText "Find ingredients for medicine (2/3)">>
+<<UpdateQuestObjectiveText "Encontre ingredientes para o remedio (2/3)">>
 ->**Continuar**
     **Ao guardar as ervas na mochila, um grupo de criaturas surge das sombras atras de voce, com os dentes arreganhados e prontas para atacar a qualquer momento.**
     {player:0}Talvez essas ervas facam parte da dieta delas? 
@@ -9179,7 +9179,7 @@ position: 1651,-225
 <<set $CheckForActiveQuest to "Quest.SicknessRecipeForRelief">>
 **Depois de lidar com a ultima das criaturas, voce atravessa a camara, recolhendo o ultimo lote de ervas que procurava.**
 <<GiveQuestItem tioMedicineIngredients>>
-<<SetPrimaryQuestObjectiveComplete "Bring the herbs to the healer in [questTown].">>
+<<SetPrimaryQuestObjectiveComplete "Leve as ervas ao curandeiro em [questTown].">>
 ->Conseguimos o que viemos buscar. Vamos embora. **Sair**
     <<TriggerDungeonComplete true>>
     <<stop>>
@@ -9611,7 +9611,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 268,-553
 ---
-<<set $QuestName to "Path of Vengeance">>
+<<set $QuestName to "Caminho da Vinganca">>
 <<set $QuestDescription to "Devemos completar alguns contratos para o povo de [questTown] e aumentar nossa reputacao com eles. Com sorte, encontraremos alguem que possa nos dar informacoes sobre o paradeiro de [FNameA1].">>
 <<set $ShortDescription to "Aumente sua Reputacao com os cidadaos de [questTown]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -9658,7 +9658,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 685,-546
 ---
-<<set $QuestName to "Path of Vengeance">>
+<<set $QuestName to "Caminho da Vinganca">>
 <<set $QuestDescription to "Finalmente temos uma pista do paradeiro de [FNameA1]. Parece que ele adotou a vida de cacador depois de comprar uma cabana nas redondezas.">>
 <<set $ShortDescription to "Procure por [FNameA1] na floresta">>
 <<set $QuestGiverLocation to "None">>
@@ -9666,7 +9666,7 @@ position: 685,-546
 <<set $DungeonLocation to "TERRAIN_SNOW">>
 <<set $Tileset to "snow">>
 <<set $DungeonMarkerType to "Outpost">>
-<<set $DungeonLocName to "Snowy Forest">>
+<<set $DungeonLocName to "Floresta Nevada">>
 //<<set $Expiration to 2000>>
 <<set $Difficulty to 2>>
 ===
@@ -9879,7 +9879,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 1446,-541
 ---
-<<set $QuestName to "Path of Vengeance: Westmire">>
+<<set $QuestName to "Caminho da Vinganca: Westmire">>
 <<set $QuestDescription to "Va ate [destinationCity] para procurar um daqueles que nos trairam.">>
 <<set $ShortDescription to "Siga pistas em [destinationCity].">>
 <<set $QuestGiverLocation to "None">>
@@ -9894,7 +9894,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 1067,-543
 ---
-<<set $QuestName to "Path of Vengeance: Redlands">>
+<<set $QuestName to "Caminho da Vinganca: Redlands">>
 <<set $QuestDescription to "Va ate [destinationCity] para procurar um daqueles que nos trairam.">>
 <<set $ShortDescription to "Siga pistas em [destinationCity].">>
 <<set $QuestGiverLocation to "None">>
@@ -9935,7 +9935,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 1074,17
 ---
-<<set $QuestName to "Path of Vengeance Redlands">>
+<<set $QuestName to "Caminho da Vinganca: Redlands">>
 <<set $QuestDescription to "A localizacao de [FNameA2] foi encontrada. Precisamos ir ate o local marcado em nosso mapa e confronta-lo.">>
 <<set $ShortDescription to "Confrontar [FNameA2]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -9943,7 +9943,7 @@ position: 1074,17
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
 <<set $DungeonMarkerType to "Outpost">>
 <<set $Tileset to "sand">>
-<<set $DungeonLocName to "The Dunes">>
+<<set $DungeonLocName to "As Dunas">>
 <<set $DungeonLength to "Medium">>
 <<set $DungeonEvents to "SE.PathOfVengeanceA2Boss">>
 //<<set $Expiration to 2000>>
@@ -10101,7 +10101,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 1445,16
 ---
-<<set $QuestName to "Path of Vengeance: Westmire">>
+<<set $QuestName to "Caminho da Vinganca: Westmire">>
 <<set $QuestDescription to "A localizacao de [FNameA3] foi descoberta. Precisamos ir ate o ponto marcado no mapa e confronta-la.">>
 <<set $ShortDescription to "Confrontar [FNameA3]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -10110,7 +10110,7 @@ position: 1445,16
 //<<set $DungeonMarkerType to "Outpost">>
 <<set $DungeonMarkerCustomArt to "caravan">>
 <<set $Tileset to "marsh">>
-<<set $DungeonLocName to "Stronghold">>
+<<set $DungeonLocName to "Baluarte">>
 <<set $DungeonLength to "Medium">>
 //<<set $Expiration to 2000>>
 <<set $Difficulty to 3>>
@@ -10287,7 +10287,7 @@ tags: Quest
 groupName: CampaignPathOfVengence
 position: 1822,-543
 ---
-<<set $QuestName to "A Merchant Escort">>
+<<set $QuestName to "Escolta de Mercador">>
 <<set $QuestDescription to "Apos derrotar [FNameA3], voce cruzou com um mercador precisando de ajuda. Ele estava ferido e pediu sua assistencia para escolta-lo ate [destinationCity].">>
 <<set $ShortDescription to "Escolte um mercador ate [destinationCity]">>
 <<set $QuestGiverLocation to "None">>
@@ -10354,7 +10354,7 @@ tags: Quest
 groupName: CampaignStrengthInNumbersAndOldFriend
 position: -537,-428
 ---
-<<set $QuestName to "Strength In Numbers">>
+<<set $QuestName to "Forca em Numeros">>
 <<set $QuestDescription to "Enfrentar os [antCompany] nao sera tarefa facil. Precisaremos fortalecer nossas fileiras e nossa reputacao antes de sequer pensar nos proximos passos.\n\n-Maintain um efetivo de pelo menos 10 membros\n-Reach Nivel de Renome 10\n-Employ ao menos um personagem de nivel 8\n-Complete todos os objetivos do Caminho da Vinganca">>
 <<set $ShortDescription to "Reconstruir e fortalecer nossa companhia">>
 <<set $QuestGiverLocation to "None">>
@@ -10543,7 +10543,7 @@ tags: Quest
 groupName: CampaignFortVanguard
 position: -125,-395
 ---
-<<set $QuestName to "Blighted Assault">>
+<<set $QuestName to "Assalto dos Pragados">>
 <<set $QuestDescription to "Mal chegamos a fortaleza da Vanguarda, ao norte, e ja fomos convocados para ajudar a defende-la de um ataque dos Profanados.">>
 <<set $ShortDescription to "Rechacar as ondas de Profanados">>
 <<set $QuestGiverLocation to "None">>
@@ -10556,7 +10556,7 @@ tags: ScriptedEvent
 groupName: CampaignFortVanguard
 position: 1456,-99
 ---
-<<SetPrimaryQuestObjectiveComplete "Fend off the waves of Blighted">>
+<<SetPrimaryQuestObjectiveComplete "Resista as ondas de Pragados">>
 <<ModifyGlobalVar $temp true>>
 ===
 title: SE.CampaignFortVanguardEnterFort
@@ -10661,12 +10661,12 @@ groupName: Company Work
 position: -199,-434
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Direct Action">>
+<<set $QuestName to "Acao Direta">>
 <<set $QuestDescription to "Fomos contratados para garantir que os empregados de um nobre local voltem a trabalhar nas minas de ferro nas proximidades. Devemos usar todos os meios necessarios para resolver o problema.">>
 <<set $ShortDescription to "Acabar com a paralisacao nas minas locais">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "CLOSEST_AVAILABLE">>
-<<set $DungeonLocName to "Iron Mine">>
+<<set $DungeonLocName to "Mina de Ferro">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "origin">>
 <<set $Difficulty to "3">>
@@ -10722,12 +10722,12 @@ groupName: Company Work
 position: 196,-438
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Direct Action">>
+<<set $QuestName to "Acao Direta">>
 <<set $QuestDescription to "Um nobre rico pediu nossa ajuda para acabar com uma greve numa mina de ferro local. Nao achamos prudente tomar o lado dele, entao decidimos ir ate la investigar o que estava realmente acontecendo.">>
 <<set $ShortDescription to "Encontre-se com os mineiros em greve">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "CLOSEST_AVAILABLE">>
-<<set $DungeonLocName to "Iron Mine">>
+<<set $DungeonLocName to "Mina de Ferro">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $Difficulty to "3">>
@@ -10798,12 +10798,12 @@ groupName: Company Work
 position: 600,-442
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Direct Action">>
+<<set $QuestName to "Acao Direta">>
 <<set $QuestDescription to "Depois de ouvir a situacao dos mineradores, voce decidiu abracar a causa deles. Vamos infiltrar {npcName:companyManMiner} em uma reuniao com {npcName:companyManNpc} para que ela possa por fim ao reinado monstruoso dele sobre a vida dos trabalhadores da mina de ferro.">>
 <<set $ShortDescription to "Volte para {npcName:companyManNpc} para que {npcName:companyManMiner} possa mata-lo">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "IN_CITY">>
-<<set $DungeonLocName to "Nobleman Fort">>
+<<set $DungeonLocName to "Forte do Nobre">>
 <<set $EnemyCategoryGroup to "Soldiers">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonMarkerType to "Outpost">>
@@ -10874,7 +10874,7 @@ tags: ScriptedEvent
 groupName: Company Work
 position: -186,390
 ---
-<<UpdateQuestObjectiveText "Enter the mine and squash the worker's strike">> 
+<<UpdateQuestObjectiveText "Entre na mina e esmague a greve dos trabalhadores">> 
 **Cuidamos dos guardas que estavam do lado de fora, mas o restante dos trabalhadores e mercenarios recuou para dentro da mina.**
 {advisor}Se vamos mesmo fazer isso, o melhor jeito de diminuir o derramamento de sangue seria eliminar a lider deles, a {npcName:companyManMiner}. Acredito que a vi entrar nas minas.
 ->Vamos.
@@ -10884,7 +10884,7 @@ tags: ScriptedEvent
 groupName: Company Work
 position: -189,666
 ---
-<<UpdateQuestObjectiveText "Enter the mine and squash the worker's strike">>
+<<UpdateQuestObjectiveText "Entre na mina e esmague a greve dos trabalhadores">>
 **Apos sofrer uma derrota terrivel, o restante dos mercenarios e trabalhadores recuou para mais fundo na mina.**
 {advisor}Acabamos de levar uma surra e tanto, mas, se vamos mesmo levar isso adiante, a melhor forma de minimizar o derramamento de sangue seria eliminar a lider deles, {npcName:companyManMiner}. Creio que a vi entrar nas minas.
 ->Vamos.
@@ -10949,7 +10949,7 @@ tags: ScriptedEvent
 groupName: Company Work
 position: 213,398
 ---
-<<UpdateQuestObjectiveText "Return to {npcName:companyManNpc} so {npcName:companyManMiner} can kill {npcName:companyManNpc}">> 
+<<UpdateQuestObjectiveText "Volte para {npcName:companyManNpc} para que {npcName:companyManMiner} possa matar {npcName:companyManNpc}">> 
 <<CompleteQuest Quest.CompanyManRevolt skipResults>>
 <<AssignQuest Quest.CompanyManJoinRevolt>> 
 {advisor}Precisamos agir rapido antes que {npcName:companyManNpc} descubra que matamos os soldados dele.
@@ -10964,7 +10964,7 @@ position: 208,669
 ---
 <<CompleteQuest Quest.CompanyManRevolt skipResults>>
 <<AssignQuest Quest.CompanyManJoinRevolt>> 
-<<UpdateQuestObjectiveText "Return to {npcName:companyManNpc} so {npcName:companyManMiner} can kill {npcName:companyManNpc}">> 
+<<UpdateQuestObjectiveText "Volte para {npcName:companyManNpc} para que {npcName:companyManMiner} possa matar {npcName:companyManNpc}">> 
 **Apos uma derrota tragica, um grupo de mineiros invadiu o campo de batalha para ajudar na luta e conseguiu ajudar a acabar com o restante dos atacantes.**
 {advisor}Precisamos agir rapido antes que {npcName:companyManNpc} descubra que matamos os soldados dele.
 {npc:companyManMiner}Estou pronta para partir quando voce estiver.
@@ -12116,7 +12116,7 @@ position: 259,-49
 ->**Entregar o pagamento**
     <<RemoveItem itm_retrieveGoodCoins>> 
     <<UpdateTurnInLocation origin>> 
-    <<UpdateQuestObjectiveText "Return the [itemNameLower:itm_retrieveGood] to [questTown]">>
+    <<UpdateQuestObjectiveText "Devolva [itemNameLower:itm_retrieveGood] a [questTown]">>
     **Ela conta as moedas rapidamente para garantir que esta tudo certo. Satisfeita, guarda-as no bolso com um sorriso.**
     {npc:tempNpc}Tudo certo. Bom fazer negocio com voces!
     ->Igualmente. **Continuar**
@@ -12252,7 +12252,7 @@ tags: Quest
 groupName: GeneralQuests
 position: -465,-41
 ---
-<<set $QuestName to "Supply Run">>
+<<set $QuestName to "Buscar Suprimentos">>
 <<set $QuestDescription to "[questTown] pediu que [itemNameLower:itm_retrieveGood] fosse retirado com um contato em [destinationCity].">>
 <<set $ShortDescription to "Retirar [itemNameLower:itm_retrieveGood] de [destinationCity]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -12271,7 +12271,7 @@ groupName: GeneralQuests
 position: -454,262
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "A Barkeep's Husband">>
+<<set $QuestName to "O Marido da Taverneira">>
 <<set $QuestDescription to "O marido de uma tavernista desapareceu. Ela marcou a ultima localizacao conhecida dele em nosso mapa.">>
 <<set $ShortDescription to "Encontre o desaparecido">>
 <<set $QuestGoal to "Open">>
@@ -12346,7 +12346,7 @@ position: 269,261
     ->Ela nao vai gostar de ouvir isso. Mas ao menos sabera a verdade. 
     {npc:merchantNpc}E. Ela e uma boa mulher. Com certeza merece um marido melhor. Ele sempre foi problema, e pelo que tenho visto, ela provavelmente esta melhor sem ele. 
     ->Entao vou indo.
-        <<SetPrimaryQuestObjectiveComplete "Return to [questTown] and inform the barkeep of her husband's infidelity">>
+        <<SetPrimaryQuestObjectiveComplete "Volte para [questTown] e informe a taverneira a infidelidade do marido dela">>
         <<stop>>
 }
 <<elseif $MissingPersonVariation is 3>>
@@ -12360,7 +12360,7 @@ position: 269,261
     {npc:findPersonHusbandNpc}Ela contratou voces, nao e? Imaginei que ela pudesse estar ficando ansiosa, mas nunca pensei que ela mandaria alguem para me procurar. **Ele ri, apontando para a perna.** Acabei me ferindo na viagem ate aqui. Ainda nao posso montar no meu cavalo, mas estarei apto a viajar em alguns dias. Se puderem transmitir essa mensagem a ela, eu agradeceria. Isso ao menos acalmaria a mente dela.
     ->Vamos avisa-la. **Ir embora**
         <<set $MissingPersonEnding to 3>>
-        <<SetPrimaryQuestObjectiveComplete "Return to [questTown] and inform the barkeep of her husband's injury">>
+        <<SetPrimaryQuestObjectiveComplete "Volte para [questTown] e informe a taverneira o ferimento do marido dela">>
     ->Temos lugar em uma de nossas carruagens, se quiser uma carona de volta a cidade. Melhor que montar a cavalo, ao menos. 
         <<set $MissingPersonEnding to 4>>
         {npc:findPersonHusbandNpc}Serio? Nao quero lhes dar trabalho.
@@ -12368,7 +12368,7 @@ position: 269,261
             {npc:findPersonHusbandNpc}Bem, entao esta certo. Estarei pronto em um instante.
             <<AddCitizenToGuildOpinion closest 5>>
             ->**Continuar**
-                <<SetPrimaryQuestObjectiveComplete "Escort the husband back to [questTown]">>
+                <<SetPrimaryQuestObjectiveComplete "Escolte o marido de volta a [questTown]">>
                 <<stop>>
 }
 <<endif>>
@@ -12523,7 +12523,7 @@ tags: Quest
 groupName: GeneralQuests
 position: -449,551
 ---
-<<set $QuestName to "Merchant Convoy To [destinationCity]">>
+<<set $QuestName to "Comboio de Mercadores Ate [destinationCity]">>
 <<set $QuestDescription to "Um mercador local precisa que escoltemos um grupo deles ate [destinationCity].">>
 <<set $ShortDescription to "Escoltar mercadores ate [destinationCity]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -12545,7 +12545,7 @@ position: 1003,854
 **Depois de muito procurar, voce avista mais um naco de Minerio do Homem-Morto - o bastante para cumprir seu contrato.**
 ->**Pegue o minerio.**
 <<GiveQuestItem tioDeadmansOre>>
-<<SetPrimaryQuestObjectiveComplete "Return the Deadman's Ore to [questTown]">>
+<<SetPrimaryQuestObjectiveComplete "Devolva o Minerio do Morto a [questTown]">>
 **Ao pegar a ultima peca, voce ouve um chacoalhar vindo do corredor. Voce se vira na direcao do som e ve um par de olhos verdes brilhantes atravessando a escuridao da cripta, se aproximando cada vez mais. Voce despertou algo terrivel...**
 <<if getXCharactersWithTraits("Cowardly,Brave") is "true">>
      {player:[$Person0]}Nunca deveriamos ter vindo aqui...
@@ -12567,12 +12567,12 @@ groupName: GeneralQuests
 position: -452,841
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Deadman's Ore">>
+<<set $QuestName to "Minerio do Morto">>
 <<set $QuestDescription to "Ha um material raro que cresce em criptas, chamado Minerio do Homem-Morto. Fomos contratados para encontrar um pouco e leva-lo ate [questTown].">>
 <<set $ShortDescription to "Obter Minerio do Homem-Morto (0/3)">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Crypt">>
+<<set $DungeonLocName to "Cripta de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Necromancer">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Recupere um recurso raro de uma cripta proxima.">>
@@ -12636,7 +12636,7 @@ position: 288,850
 ->**Pegar o minerio.**
     <<SetEventFinished>>
     <<GiveQuestItem tioDeadmansOre>>
-    <<UpdateQuestObjectiveText "Acquire Deadman's Ore (1/3)">>
+    <<UpdateQuestObjectiveText "Obtenha Minerio do Morto (1/3)">>
     ->Vamos continuar.
         <<stop>>
 ===
@@ -12650,7 +12650,7 @@ position: 647,850
 ->**Pegar o minerio.**
     <<SetEventFinished>>
     <<GiveQuestItem tioDeadmansOre>>
-    <<UpdateQuestObjectiveText "Acquire Deadman's Ore (2/3)">>
+    <<UpdateQuestObjectiveText "Obtenha Minerio do Morto (2/3)">>
     ->Vamos continuar.
         <<stop>>
 ===
@@ -12716,12 +12716,12 @@ position: -455,1126
 ---
 //this quest should be more about like a citizen who wants to kill another person who wronged them, killing a special creature who will drop something rare that the employer wants. stuff like that.  
 <<set $Tileset to "cave">>
-<<set $QuestName to "Banishing The Beasts">>
+<<set $QuestName to "Expulsando as Feras">>
 <<set $QuestDescription to "Um homem nos pediu para limpar uma caverna cheia de bestas perto de sua propriedade.">>
 <<set $ShortDescription to "Elimine todas as bestas dentro da caverna">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Um morador local precisa de ajuda para eliminar algumas bestas">>
@@ -12767,7 +12767,7 @@ position: 414,-629
 ->[Time:4]Todos ao trabalho! **Extrair**
     **Apos algum tempo, voce consegue extrair minerio suficiente para satisfazer as exigencias do seu contratante.**
     <<GiveQuestItem itm_blackIron>>
-    <<SetPrimaryQuestObjectiveComplete "Return the ore to [questTown].">>
+    <<SetPrimaryQuestObjectiveComplete "Devolva o minerio a [questTown].">>
     ->Vamos voltar antes que chamemos atencao indesejada. **Continuar**
         <<TriggerDungeonComplete true>>
         <<stop>>
@@ -12777,7 +12777,7 @@ position: 414,-629
 ->[RemoveRequiredItem:tio_tools,Time:1]Isto deve ser util. **Extrair com ferramentas.** 
     **O processo e mais rapido do que voce esperava com as ferramentas que trouxe, e apos pouco tempo voce consegue extrair minerio suficiente para satisfazer as exigencias do seu contratante.**
     <<GiveQuestItem itm_blackIron>>
-    <<SetPrimaryQuestObjectiveComplete "Return to the blacksmith in [questTown].">>
+    <<SetPrimaryQuestObjectiveComplete "Volte ao ferreiro em [questTown].">>
     ->Vamos voltar antes que chamemos atencao indesejada. **Continuar**
         <<TriggerDungeonComplete true>>
     	<<stop>>
@@ -12798,13 +12798,13 @@ position: 414,-368
 {player:0}Parece mais um deposito, chefe.
 ->[Time:4]Todos ao trabalho! **Extrair**
     <<GiveQuestItem itm_blackIron>>
-    <<UpdateQuestObjectiveText "Obtain black iron ore (2/3)">>
+    <<UpdateQuestObjectiveText "Obtenha minerio de ferro negro (2/3)">>
     ->Vamos continuar procurando. **Continuar**
         <<stop>>
 ->[RemoveRequiredItem:tio_tools,Time:1]Isso pode ser util. **Extrair com ferramentas.** 
     **O processo e mais rapido do que voce esperava com as ferramentas que trouxe, e depois de um tempo voce consegue extrair um pouco mais do minerio raro.**
     <<GiveQuestItem itm_blackIron>>
-    <<UpdateQuestObjectiveText "Obtain black iron ore (2/3)">>
+    <<UpdateQuestObjectiveText "Obtenha minerio de ferro negro (2/3)">>
     ->Vamos continuar procurando. **Continuar**
         <<stop>>
 ===
@@ -13039,7 +13039,7 @@ position: 1001,268
 **Ele coca o queixo, pensativo.**
 {npc:findPersonHusbandNpc}E so isso, hein? Tudo bem. De qualquer forma, nao chega aos pes do que tomamos daquele mercador e da familia dele. **Ele tira uma pequena bolsa e a joga em sua direcao.** Agora caia fora.
 <<GiveQuestCoins "itm_findPersonCoins" 200>>
-<<SetPrimaryQuestObjectiveComplete "Return to [questTown]">>
+<<SetPrimaryQuestObjectiveComplete "Volte para [questTown]">>
 ->Entao vamos indo. **Ir embora**
     <<stop>>
 ===
@@ -13394,7 +13394,7 @@ tags: ScriptedEvent
 groupName: Company Work
 position: 593,127
 ---
-<<UpdateQuestObjectiveText "Return to {npcName:companyManNpc} so {npcName:companyManMiner} can kill {npcName:companyManNpc}">> 
+<<UpdateQuestObjectiveText "Volte para {npcName:companyManNpc} para que {npcName:companyManMiner} possa matar {npcName:companyManNpc}">> 
 {advisor}Vamos precisar agir rapido antes que chegue aos ouvidos de {npcName:companyManNpc} que matamos os soldados dele.
 {npc:companyManMiner}Estou pronto para partir quando voce estiver.
 ->Vamos.
@@ -13405,7 +13405,7 @@ tags: ScriptedEvent
 groupName: Company Work
 position: 602,396
 ---
-<<UpdateQuestObjectiveText "Return to {npcName:companyManNpc} so {npcName:companyManMiner} can kill {npcName:companyManNpc}">>
+<<UpdateQuestObjectiveText "Volte para {npcName:companyManNpc} para que {npcName:companyManMiner} possa matar {npcName:companyManNpc}">>
 **Apos uma derrota tragica, um grupo de mineradores invadiu o campo de batalha para ajudar na luta e conseguiu ajudar a acabar com o resto dos atacantes.** 
 {advisor}Vamos precisar agir rapido antes que chegue aos ouvidos de {npcName:companyManNpc} que matamos os soldados dele.
 {npc:companyManMiner}Estou pronto para partir quando voce estiver.
@@ -13813,7 +13813,7 @@ position: -68,-516
 ---
 //this quest shows up once the timer reaches 0. From that point, the player has 30(?) days to accept and attempt it
 /// WARNING DO NOT CHANGE THE NODE NAME IT IS REFERENCED IN CODE!
-<<set $QuestName to "A City in Peril">>
+<<set $QuestName to "Uma Cidade em Perigo">>
 <<set $QuestDescription to "Uma horda de Voidspawn esta se abatendo sobre [scourgeCity]. Se quisermos participar de sua defesa, precisaremos partir para la em breve.">>
 <<set $ShortDescription to "Defenda [scourgeCity] dos Voidspawn.">>
 <<set $DungeonLocation to "SCOURGE_CITY">>
@@ -13840,17 +13840,17 @@ position: -68,-253
 <<set $EventTrigger to "AFTER_DRAGON_ATTACK">>
 <<if hasHighCityRep() is "true">> 
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "TO Flagelo esta sobre nos, [myTitle]. Para piorar, ouvi dizer que o dragao atacou a cidade de [scourgeCity]. O condado com certeza vai estar repleto de Voidspawn em breve. Devemos mudar o rumo? Tenho certeza de que os nossos aliados de la ficariam gratos pela nossa ajuda, como ja ficaram no passado. Os deuses sabem que eles vao precisar de cada gota dela. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "TO Flagelo esta sobre nos, [myTitle]. Para piorar, ouvi dizer que o dragao atacou a cidade de [scourgeCity]. O condado com certeza vai estar repleto de Voidspawn em breve. Devemos mudar o rumo? Tenho certeza de que os nossos aliados de la ficariam gratos pela nossa ajuda, como ja ficaram no passado. Os deuses sabem que eles vao precisar de cada gota dela. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "AOutro Flagelo comecou, [myTitle]. Ouvi dizer que o dragao atingiu a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nos melhores termos, mas pode ser uma chance de melhorarmos as nossas relacoes com eles. Afinal, vidas inocentes estao em jogo. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "AOutro Flagelo comecou, [myTitle]. Ouvi dizer que o dragao atingiu a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nos melhores termos, mas pode ser uma chance de melhorarmos as nossas relacoes com eles. Afinal, vidas inocentes estao em jogo. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "IParece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque do dragao. Sem duvida vai haver um rastro de Voidspawn por onde ele passou. Apesar das circunstancias, e uma boa oportunidade de ganhar algumas moedas, se voce achar que a companhia esta a altura da tarefa. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IParece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque do dragao. Sem duvida vai haver um rastro de Voidspawn por onde ele passou. Apesar das circunstancias, e uma boa oportunidade de ganhar algumas moedas, se voce achar que a companhia esta a altura da tarefa. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<endif>>
@@ -13864,17 +13864,17 @@ position: 310,-257
 <<AssignQuest Quest.ScourgeCrisisCityDefense>> 
 <<if hasHighCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito que e do nosso interesse faze-lo, se quiser a minha opiniao. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito que e do nosso interesse faze-lo, se quiser a minha opiniao. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Incontaveis inocentes serao perdidos se a cidade cair. Sei que a nossa relacao com eles e no maximo tensa, entao nao ha necessidade de arriscar as nossas vidas no que pode muito bem ser uma missao suicida. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Incontaveis inocentes serao perdidos se a cidade cair. Sei que a nossa relacao com eles e no maximo tensa, entao nao ha necessidade de arriscar as nossas vidas no que pode muito bem ser uma missao suicida. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 << else >>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Tenho certeza de que seriamos bem compensados pela ajuda, mas se a cidade cair, nao sobrara ninguem para pagar. Honestamente, nao tenho certeza se vale o risco para as nossas tropas, [myTitle], mas a decisao e sua. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Tenho certeza de que seriamos bem compensados pela ajuda, mas se a cidade cair, nao sobrara ninguem para pagar. Honestamente, nao tenho certeza se vale o risco para as nossas tropas, [myTitle], mas a decisao e sua. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<endif>>
@@ -13888,12 +13888,12 @@ position: 691,-252
 <<set $EventTrigger to "SCOURGE_DEFENSE_SIM_FAILURE">>
 <<if $ScourgeCrisisHelped is "true">>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "GNoticias sombrias, [myTitle]: a cidade de [scourgeCity] infelizmente foi tomada pelos Voidspawn. Ouvi dizer que foi um verdadeiro massacre. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]: a cidade de [scourgeCity] infelizmente foi tomada pelos Voidspawn. Ouvi dizer que foi um verdadeiro massacre. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SSSFlagelo "" "GNoticias sombrias, [myTitle]. Acabo de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Ouvi dizer que foi um verdadeiro massacre, entao duvido que a nossa participacao faria muita diferenca. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]. Acabo de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Ouvi dizer que foi um verdadeiro massacre, entao duvido que a nossa participacao faria muita diferenca. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
     <<stop>>
 }
 <<endif>>
@@ -13921,7 +13921,7 @@ position: 1049,-523
 {player:0}Atrevo-me a dizer que os Deuses estiveram do nosso lado nessa. Acho que todos nos precisamos de uma bebida depois disso, hein, chefe?
 ->E de um descanso mais que necessario. **Continuar**
     <<RemoveTempAlliesFromThisQuest>>
-    <<UpdateQuestObjective Quest.ScourgeCrisisCityDefense primary success "Collect your reward in [questTown]">>    
+    <<UpdateQuestObjective Quest.ScourgeCrisisCityDefense primary success "Recolha a sua recompensa em [questTown]">>    
     <<ScourgeEndSuccess>>
     <<stop>>
 ===
@@ -14165,7 +14165,7 @@ groupName: Scourge Crisis
 position: -50,1328
 ---
 //smuggle nobles out of the city. need combat with vanguard as a possibilty to make this work
-<<set $QuestName to "Merchant Convoy To [destinationCity]">>
+<<set $QuestName to "Comboio de Mercadores Ate [destinationCity]">>
 <<set $QuestDescription to "Um mercador local precisa que escoltemos um grupo deles ate [destinationCity].">>
 <<set $ShortDescription to "Escoltar mercadores ate [destinationCity]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -14192,7 +14192,7 @@ position: -53,549
 ---
 //retrieve serum from nearby Vanguard garrisons
 
-<<set $QuestName to "Serum Retrieval">>
+<<set $QuestName to "Recuperacao do Soro">>
 <<set $QuestDescription to "Apos o ataque do dragao, muitos cidadaos de [questTown] foram afligidos pela Praga. O estoque de Soro Pestilento esta acabando, e a Vanguarda nos contratou para buscar mais em uma de suas guarnicoes em [destinationCity].">>
 <<set $ShortDescription to "Recuperar o Soro Pestilento de [destinationCity]">>
 <<set $QuestGiverLocation to "VanguardCity">>
@@ -14215,7 +14215,7 @@ position: -54,811
 //patrol roads, clearing the way for vanguard serum transports
 
 <<set $Tileset to "cave">>
-<<set $QuestName to "Clear a Path">>
+<<set $QuestName to "Abrir Caminho">>
 <<set $QuestDescription to "Com muitos forasteiros viajando ate [questTown] para ajudar, nos pediram para patrulhar as estradas ate [destinationCity] e garantir que estejam seguras para a viagem.">>
 <<set $ShortDescription to "Patrulhar em busca de Voidspawn entre [questTown] e [destinationCity].">>
 <<set $QuestGiverLocation to "VanguardCity">>
@@ -14245,7 +14245,7 @@ position: -36,3491
 //this can occur before or after the attack on the city. we can do an if/else statement depending on whether the attack has occurred or not
 //Escort Blighted Vanguard recruits to Fort Vanguard
 
-<<set $QuestName to "Fresh Recruits">>
+<<set $QuestName to "Recrutas Novos">>
 <<set $QuestDescription to "A Vanguarda tem um novo grupo de recrutas que precisaria de escolta ate o Forte Vanguarda. Nos oferecemos para fazer o servico.">>
 <<set $ShortDescription to "Escoltar recrutas ate o Forte Vanguarda">>
 <<set $QuestGiverLocation to "VanguardCity">>
@@ -14276,12 +14276,12 @@ position: -38,3226
 //from vanguard employer, Retrieve Blighted serum that has been stolen from them (option to take it for yourself)
 
 <<set $Tileset to "fort">>
-<<set $QuestName to "Stolen Serum">>
+<<set $QuestName to "Soro Roubado">>
 <<set $QuestDescription to "Um comboio da Vanguarda - que transportava Soro Pestilento - foi emboscado por bandidos a caminho de [questTown]. A Vanguarda acredita ter uma pista de onde os bandidos estao escondidos, mas, dada a situacao atual, nao podem se dar ao luxo de perder mais tropas numa missao de recuperacao. Fomos contratados para fazer o trabalho no lugar deles.">>
 <<set $ShortDescription to "Localizar os bandidos e recuperar os frascos roubados">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Abandoned Fort">>
+<<set $DungeonLocName to "Forte Abandonado">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $DungeonLength to "Short">>
 <<set $TurnInSpot to "NearestTown">>
@@ -14300,7 +14300,7 @@ position: -37,2968
 ---
 //if city saved
 <<set $Tileset to "cave">>
-<<set $QuestName to "Blighted on the Run">>
+<<set $QuestName to "Pragados em Fuga">>
 <<set $QuestDescription to "Um grupo de civis afligidos pela Praga conseguiu passar para alem dos muros de [scourgeCity]. Embora estejam, sem duvida, apenas assustados, acabarao se tornando uma ameaca para os outros e precisam ser capturados.">>
 <<set $ShortDescription to "Rastrear os fugitivos da Praga">>
 <<set $QuestGiverLocation to "VanguardCity">>
@@ -14324,7 +14324,7 @@ position: -50,1071
 ---
 //Local forces need supplies to help prepare the city's defenses. this will be a bounty
 
-<<set $QuestName to "Mouths to Feed">>
+<<set $QuestName to "Bocas para Alimentar">>
 <<set $QuestDescription to "A cidade de [questTown] esta passando por uma fome e seus suprimentos de comida estao diminuindo. Um rico morador local garantiu um carregamento de alimentos muito necessario vindo da cidade de [destinationCity]. Como nao pode fazer a jornada ele mesmo, ele nos contratou para buscar o carregamento em seu nome e retornar com ele para [questTown]. Ele nos deu o dinheiro necessario para fazer a compra e prometeu nos recompensar quando voltarmos.">>
 <<set $ShortDescription to "Pague e recupere o carregamento de alimentos de [destinationCity]">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -14614,7 +14614,7 @@ groupName: Scourge Crisis
 position: -43,2420
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "A Lost Soul">>
+<<set $QuestName to "Uma Alma Perdida">>
 <<set $QuestDescription to "Uma mulher de [questTown] nos pediu para trazer de volta o marido dela, que partiu em busca de um ouro lendario. Ele foi afligido pela Praga e nao tem muito tempo de vida.">>
 <<set $ShortDescription to "Encontre o marido de Anne">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -14667,7 +14667,7 @@ position: 687,545
 <<GiveQuestItem itm_BlightedSerumRetrieval>>
 ->Garantiremos que chegue de volta a [scourgeCity]. **Continuar**
     <<UpdateTurnInLocation origin>> 
-    <<UpdateQuestObjectiveText "Deliver the Blighted Serum to [questTown]">>
+    <<UpdateQuestObjectiveText "Entregue o Soro Pragado em [questTown]">>
     <<ModifyGlobalVar $ScourgeCrisisRetrieveSerumAcquired "true">>
     <<stop>>
 ===
@@ -14770,7 +14770,7 @@ position: 689,1073
 ->Trago sim. **Entregar o pagamento**
     <<RemoveItem itm_coinsForFood>>  
     <<UpdateTurnInLocation origin>>
-    <<SetPrimaryQuestObjectiveComplete "Return the crates of food to [questTown].">>
+    <<SetPrimaryQuestObjectiveComplete "Devolva as caixas de comida a [questTown].">>
     **Ela conta as moedas rapidamente para garantir que esta tudo certo. Satisfeita, guarda-as no bolso com um sorriso.**
     {npc:mouthsToFeedNpc2}Esplendido! O resto fica por sua conta, entao. Mande minhas lembrancas ao seu contratante. 
     <<GiveQuestItem itm_foodCrates>>
@@ -15031,7 +15031,7 @@ position: 1049,2427
 }
 <<endif>>
 ->[Greedy]Enrole o corpo dele. Vamos encontrar esse ouro. **Continuar**
-    <<UpdateQuestObjectiveText "Find the gold.">>
+    <<UpdateQuestObjectiveText "Ache o ouro.">>
     <<ModifyQuestVar "Quest.ScourgeCrisisLostBlighted" "PursueGold" "true">>
     <<RevealGoalTile>>
     <<stop>>
@@ -15438,7 +15438,7 @@ position: 1419,2425
 ---
 <<set $Icon to "Mission">>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Return to Anne.">>
+<<UpdateQuestObjectiveText "Volte para Anne.">>
 **[FNameAdvisor] ergue os olhos do mapa no diario de Harol.**
 {advisor}Deve estar bem por aqui. 
 **[FNameP0] ergue um dedo, apontando para um monte de terra e pedras remexidas junto a parede, com uma pa apoiada bem ao lado.**
@@ -15531,7 +15531,7 @@ tags: Quest
 groupName: Scourge Crisis
 position: -2739,289
 ---
-<<set $QuestName to "Aid for the Afflicted">>
+<<set $QuestName to "Ajuda para os Aflitos">>
 <<set $QuestDescription to "Apos um encontro com um mercador do mercado negro, adquirimos um Soro da Praga e o entregaremos ao povo de [scourgeCity].">>
 <<set $ShortDescription to "Entregar Soro da Praga a [scourgeCity]">>
 <<set $QuestGiverLocation to "None">>
@@ -15548,7 +15548,7 @@ tags: Quest
 groupName: Scourge Crisis
 position: -1993,286
 ---
-<<set $QuestName to "Into Vanguard Custody">>
+<<set $QuestName to "Sob Custodia da Vanguarda">>
 <<set $QuestDescription to "Encontramos um mercador que estava ilegalmente de posse de Soro da Praga. O detivemos, junto com suas mercadorias, e pretendemos entrega-lo a Vanguarda.">>
 <<set $ShortDescription to "Leve o mercador ate a Vanguarda em [scourgeCity]">>
 <<set $QuestGiverLocation to "None">>
@@ -15595,7 +15595,7 @@ tags: Quest
 groupName: Scourge Crisis
 position: -1264,277
 ---
-<<set $QuestName to "A Merchant Escort">>
+<<set $QuestName to "Escolta de Mercador">>
 <<set $QuestDescription to "Um mercador vendendo Soro Corrompido no mercado negro pediu para se juntar a nos para conseguir acesso a cidade. Em troca, ele prometeu nos dar uma parte dos lucros da venda dos frascos.">>
 <<set $ShortDescription to "Escoltar o mercador ate [scourgeCity]">>
 <<set $QuestGiverLocation to "None">>
@@ -19656,12 +19656,12 @@ groupName: ContentUpdateQuests
 position: -402,-199
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Old Mine">>
+<<set $QuestName to "A Velha Mina">>
 <<set $QuestDescription to "Um minerador nos pediu para livrar uma antiga mina de ouro das feras.">>
 <<set $ShortDescription to "Limpar a mina.">>
 <<set $QuestGiverLocation to "Civilian">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Mine">>
+<<set $DungeonLocName to "Mina de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Um minerador quer ajuda com sua mina.">>
@@ -19756,12 +19756,12 @@ groupName: ContentUpdateQuests
 position: -409,-539
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Grain Thief">>
+<<set $QuestName to "O Ladrao de Graos">>
 <<set $QuestDescription to "Um mercador rico vem vendendo graos a um lucro imenso enquanto o povo de [questTown] passa fome. Temos que por um fim nisso.">>
 <<set $ShortDescription to "Execute o contrabandista de graos.">>
 <<set $QuestGiverLocation to "Citizen">>
 <<set $DungeonLocation to "ON_PATH">>
-<<set $DungeonLocName to "[RandomLocationName] Mine">>
+<<set $DungeonLocName to "Mina de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "[questTown] precisa de alguem para punir um mercador sem escrupulos">>
@@ -19924,7 +19924,7 @@ tags: Quest
 groupName: ContentUpdateQuests
 position: -414,119
 ---
-<<set $QuestName to "A Mother's Revenge">>
+<<set $QuestName to "A Vinganca de uma Mae">>
 <<set $QuestDescription to "Uma mae consumida pela dor nos contratou para matar o proprio marido.">>
 <<set $ShortDescription to "Mate o marido e pai.">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -20024,7 +20024,7 @@ position: 362,116
             {npc:ManRevengeNPC}Pelos deuses... O que eu fiz? Sinto como se tivesse passado um ano com a cabeca enfiada num saco. Voce tem razao, preciso voltar para casa agora mesmo!
             **E com isso ele sai correndo - ou melhor, tropecando - para longe.**
             ->**Continuar**
-                <<SetPrimaryQuestObjectiveComplete "Return to [questTown]">>
+                <<SetPrimaryQuestObjectiveComplete "Volte para [questTown]">>
                 <<stop>> 
         <<endif>>
 ===
@@ -20391,12 +20391,12 @@ groupName: ContentUpdateQuests
 position: -409,-859
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Dark Deeds">>
+<<set $QuestName to "Atos Sombrios">>
 <<set $QuestDescription to "A Guarda da Cidade de [questTown] quer que encontremos um cidadao desaparecido, Jorgen, cujo sumico possivelmente esta ligado a uma conspiracao maior.">>
 <<set $ShortDescription to "Procure por Jorgen.">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Mine">>
+<<set $DungeonLocName to "Mina de [RandomLocationName]">>
 <<set $DungeonLength to "Short">>
 <<set $EnemyCategoryGroup to "Local">>
 <<set $TurnInSpot to "NearestTown">>
@@ -20556,7 +20556,7 @@ position: 3742,-853
     <<RemoveTempAlliesFromThisQuest>>
 <<endif>> 
 //<<UpdateQuestObjective success>>
-<<SetPrimaryQuestObjectiveComplete "Speak with the Captain in [questTown].">>
+<<SetPrimaryQuestObjectiveComplete "Fale com o Capitao em [questTown].">>
 ->Vamos voltar e informar o Capitao. **Partir**
     <<TriggerDungeonComplete true>>
     <<stop>>
@@ -20570,7 +20570,7 @@ groupName: ContentUpdateQuests
 position: -25,-1171
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "The Farmer and the Highwaymen">>
+<<set $QuestName to "O Fazendeiro e os Salteadores">>
 <<set $QuestDescription to "Uma mulher nos pediu para convencer o marido, um ex-soldado, a nao se juntar a um bando de salteadores.">>
 <<set $ShortDescription to "Fale com o marido.">>
 <<set $QuestGiverLocation to "None">>
@@ -20769,12 +20769,12 @@ groupName: ContentUpdateQuests
 position: -407,-1456
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Prison Break">>
+<<set $QuestName to "Fuga da Prisao">>
 <<set $QuestDescription to "Uma nobre abastada quer que tiremos seu amante da masmorra.">>
 <<set $ShortDescription to "Encontre a entrada secreta">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "IN_CITY">>
-<<set $DungeonLocName to "Secret Tunnels">>
+<<set $DungeonLocName to "Tuneis Secretos">>
 <<set $EnemyCategoryGroup to "PrisonBreak">>
 //<<set $Requirements to "Location:NorthernHold">>
 <<set $TurnInSpot to "NearestTown">>
@@ -20873,7 +20873,7 @@ position: 1854,-1458
 {advisor}Tive uma ideia--devemos vestir os uniformes dos guardas. Seremos menos propensos a ser parados se estivermos usando as cores de [questHouse]. Talvez nao engane a todos, mas mesmo alguns minutos de livre circulacao seriam inestimaveis.
 {hasTrait:Treacherous}Eu adoro um bom engano.
 ->Ideia astuta, [FNameAdvisor]. Devemos tambem esconder os corpos deles. **Continuar**
-    <<UpdateQuestObjectiveText "Proceed through the entrance">>
+    <<UpdateQuestObjectiveText "Siga pela entrada">>
     <<stop>>
 ===
 title: SE.PrisonBreakSecondBattle
@@ -21051,11 +21051,11 @@ groupName: ContentUpdateQuests
 position: -412,-1731
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Thieves' Den">>
+<<set $QuestName to "Covil dos Ladroes">>
 <<set $QuestDescription to "Fomos contratados para eliminar um bando de ladroes que vende mercadorias roubadas a viajantes.">>
 <<set $ShortDescription to "Elimine os ladroes.">>
 <<set $QuestGiverLocation to "Noble">>
-<<set $DungeonLocName to "Fort [RandomLocationName]">>
+<<set $DungeonLocName to "Forte [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "[questTown] precisa de ajuda com uns ladroes.">>
@@ -21096,7 +21096,7 @@ position: 350,-1733
 **Depois de atravessar os pantanos por mais tempo do que gostariam, voces finalmente avistam a base dos ladroes, pelo que ela vale. Alguns bandidos estao sentados num banco - de guarda, presumem - protegendo um casebre modesto. Parecem mais propensos a tirar um cochilo do que a repelir qualquer intruso com sucesso.**
 {player:0}Nao e la grande operacao, nao e? 
 {hasTrait:Harsh}Amadores.
-<<UpdateQuestObjectiveText "Defeat the guards outside, and the thieves inside (0/2 Fights Completed)">>
+<<UpdateQuestObjectiveText "Derrote os guardas la fora e os ladroes la dentro (0/2 Lutas Concluidas)">>
 <<if checkForJob("Tracker") == "true">>
     {player:$CharacterWithJob}Devemos conseguir embosca-los, chefe. Deixe-me primeiro garantir que nao ha nenhuma surpresa esperando por nos.
     ->Sim, faca sua parte, [$CharacterWithJobName]. **Emboscar o inimigo**  
@@ -21153,7 +21153,7 @@ position: 1485,-1726
 **Com o primeiro grupo de ladroes eliminado, voce entra com cautela na estrutura que eles guardavam. La dentro, voce avista um alcapao pesado que se abre para um lance de escadas escuras. Voce desce sorrateiramente ate o porao...**
 {player:0}Quem nao ama uma passagem mal iluminada?
 ->Preparem-se para qualquer coisa...
-    <<UpdateQuestObjectiveText "Defeat the thieves inside (1/2 Fights Completed)">>
+    <<UpdateQuestObjectiveText "Derrote os ladroes la dentro (1/2 Lutas Concluidas)">>
     <<FadeOutScreen>>
     <<GoToNextEvent SE.ThievesDenAttack2>>
     <<stop>>
@@ -21182,7 +21182,7 @@ position: 2227,-1728
 {player:0}Parece que ha algumas mercadorias das quais eles ainda nao se desfizeram. 
 {advisor}O magistrado disse mesmo que gostaria que elas fossem devolvidas...
 ->Temos bastante tempo para decidir o que fazer com isso na volta. Carreguem tudo. **Sair**
-    <<UpdateQuestObjectiveText "Return to the magistrate">>
+    <<UpdateQuestObjectiveText "Volte para o magistrado">>
     <<GiveItem itm_ThievesDenGoods>>
     <<UpdateQuestObjective success>>
     <<TriggerDungeonComplete true>>
@@ -21215,12 +21215,12 @@ groupName: ContentUpdateQuests
 position: -410,-2016
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "The Deep Archive">>
+<<set $QuestName to "O Arquivo Profundo">>
 <<set $QuestDescription to "O curandeiro-chefe de [questTown] nos pediu que encontrassemos um pergaminho perdido que pode ser a chave para a cura da praga em curso. Infelizmente, ele esta bem no fundo das catacumbas sob a antiga igreja.">>
 <<set $ShortDescription to "Encontre o pergaminho nas catacumbas.">>
 <<set $QuestGiverLocation to "Noble">>
 <<set $DungeonLocation to "CLOSEST_AVAILABLE">>
-<<set $DungeonLocName to "[RandomLocationName] Catacombs">>
+<<set $DungeonLocName to "Catacumbas de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Wraiths">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "O curandeiro de [questTown] precisa de um item que foi perdido.">>
@@ -21419,13 +21419,13 @@ groupName: ContentUpdateQuests
 position: 2611,-848
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Dark Deeds">>
+<<set $QuestName to "Atos Sombrios">>
 <<set $QuestDescription to "Encontramos algumas evidencias que apontam para uma cripta proxima. Esperamos que isso nos aproxime de encontrar Jorgen, vivo ou morto.">>
 <<set $ShortDescription to "Procure por Jorgen na cripta.">>
 <<set $QuestGiverLocation to "Noble">>
 //<<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Crypt">>
+<<set $DungeonLocName to "Cripta de [RandomLocationName]">>
 <<set $DungeonLength to "Short">>
 <<set $EnemyCategoryGroup to "Undead">>
 <<set $TurnInSpot to "Quest.DarkDeeds">>
@@ -21557,7 +21557,7 @@ position: 5606,-862
 {hasTrait:Cowardly}Com certeza nao assinamos contrato para enfrentar um necromante mestre. 
 {hasTrait:Greedy}De fato. Nao vou reclamar, contanto que sejamos compensados.
 ->Concordo. **Continuar**
-    <<UpdateQuestObjective Quest.DarkDeeds3 primary success "Speak with the Captain in [questTown].">>
+    <<UpdateQuestObjective Quest.DarkDeeds3 primary success "Fale com o Capitao em [questTown].">>
     <<RemoveTempAlliesFromThisQuest>>
     <<stop>>
 ===
@@ -21570,7 +21570,7 @@ position: 5978,-856
 **Depois de infligir pesadas perdas a sua companhia, Percival aproveita a oportunidade para fugir.**
 {advisor}Sera dificil nos recuperarmos de uma perda dessas. **Ele suspira.** Vamos falar com o Capitao e contar o que aconteceu. Ainda nos devem uma recompensa, ao menos.
 ->**Continuar**
-    <<UpdateQuestObjective Quest.DarkDeeds3 primary success "Speak with the Captain in [questTown].">>
+    <<UpdateQuestObjective Quest.DarkDeeds3 primary success "Fale com o Capitao em [questTown].">>
     <<ModifyQuestRewardGold "Quest.DarkDeeds3" 0.5>>
     <<RemoveTempAlliesFromThisQuest>>
     <<stop>>
@@ -21601,7 +21601,7 @@ position: -42,38
 //|NEXTPAGE|
 {advisor}Uma carta de [FNameC1], [myTitle]. O ardil dele deve ter dado certo. 
 ->Vamos torcer. **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "RVoltar para a Black Skull foi mais facil do que o esperado. [FNameA0] ficou quase feliz com o meu retorno, ou pelo menos o mais proximo disso que ele conseguiria chegar. De qualquer forma, ele parece nao suspeitar dos meus motivos.  Voce vai ficar feliz em saber que o Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele tem mostrado real talento como ferreiro, e [FNameA0] o tem mantido trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que a vida dele esteja em perigo. E antes que pense nisso, ja considerei tira-lo de la as escondidas, e infelizmente nao e uma opcao. Temo que vamos precisar ver o nosso plano por inteiro.|NEXTPAGE|Vou precisar de um tempo para me ambientar e ganhar a confianca de [FNameA0], mas mandarei noticias assim que tiver algo para voces agirem. Cuidado la fora, meus amigos; [FNameA0] vai mandar muito mais que assassinos de segunda linha no caminho de voces.>>
+<<ShowLetter "AAUma carta de [FNameC1] "RVoltar para a Black Skull foi mais facil do que o esperado. [FNameA0] ficou quase feliz com o meu retorno, ou pelo menos o mais proximo disso que ele conseguiria chegar. De qualquer forma, ele parece nao suspeitar dos meus motivos.  Voce vai ficar feliz em saber que o Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele tem mostrado real talento como ferreiro, e [FNameA0] o tem mantido trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que a vida dele esteja em perigo. E antes que pense nisso, ja considerei tira-lo de la as escondidas, e infelizmente nao e uma opcao. Temo que vamos precisar ver o nosso plano por inteiro.|NEXTPAGE|Vou precisar de um tempo para me ambientar e ganhar a confianca de [FNameA0], mas mandarei noticias assim que tiver algo para voces agirem. Cuidado la fora, meus amigos; [FNameA0] vai mandar muito mais que assassinos de segunda linha no caminho de voces.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     **Voce lanca um olhar de relance para [FNameC0], que sorri aliviado com a noticia sobre Gedrick.**
     {mainChar0}Gracas aos Deuses. O fantasma da minha irma nao precisa me atormentar ainda. E pelo menos agora ele tem [FNameC1] cuidando dele. 
@@ -21838,7 +21838,7 @@ tags: Quest
 groupName: CampaignSabotageEvents
 position: 911,-330
 ---
-<<set $QuestName to "Finishing the Job">>
+<<set $QuestName to "Terminando o Servico">>
 <<set $QuestDescription to "Conseguimos algo que a Black Skull havia recuperado para um contrato deles. Felizmente, eles estavam com a documentacao, entao podemos entregar em [questTown] e ficar com a recompensa.">>
 <<set $ShortDescription to "Devolva o item em [questTown].">>
 <<set $QuestGiverLocation to "NONE">>
@@ -22014,7 +22014,7 @@ position: -274,755
 <<set $Priority to 50>>
 {advisor}Recebemos uma correspondencia de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "IEspero que esta carta os encontre bem. Descobri o paradeiro de um acampamento da Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer estacionados la por pelo menos algumas semanas. Nao posso dizer com certeza o que [FNameA0] os tem feito fazer, mas se voces interromperem a missao que estiverem cumprindo, isso vai ajudar muito a nossa causa.  [FNameC1]>>
+<<ShowLetter "AAUma carta de [FNameC1] "IEspero que esta carta os encontre bem. Descobri o paradeiro de um acampamento da Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer estacionados la por pelo menos algumas semanas. Nao posso dizer com certeza o que [FNameA0] os tem feito fazer, mas se voces interromperem a missao que estiverem cumprindo, isso vai ajudar muito a nossa causa.  [FNameC1]>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}[FNameC1]'s position in the Black Skull seems to be bearing fruit. 
 <<else>>
@@ -22274,7 +22274,7 @@ position: -277,1855
 <<set $Priority to 100>>
 {advisor}Recebemos uma carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "MMeus amigos, descobri que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do empregador com quem eles vao se encontrar. Pode valer a pena conferir se voces estiverem por perto. [FNameA0] nao ficara nada contente se souber de outro contrato fracassado, mas sera musica para os meus ouvidos. Boa sorte.   [FNameC1]>>
+<<ShowLetter "AAUma carta de [FNameC1] "MMeus amigos, descobri que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do empregador com quem eles vao se encontrar. Pode valer a pena conferir se voces estiverem por perto. [FNameA0] nao ficara nada contente se souber de outro contrato fracassado, mas sera musica para os meus ouvidos. Boa sorte.   [FNameC1]>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Este nosso plano parece estar dando certo ate agora. O que acha, chefe?
 <<else>>
@@ -22291,7 +22291,7 @@ tags: Quest
 groupName: CampaignSabotageEvents
 position: 105,1855
 ---
-<<set $QuestName to "Undercutting the Competition">>
+<<set $QuestName to "Batendo a Concorrencia">>
 <<set $QuestDescription to "[FNameC1] nos enviou informacoes sobre o paradeiro de um grupo da Black Skull. Eles estao postados em [questTown] e tem um servico combinado com um contratante. Talvez possamos convencer o contratante a trabalhar conosco em vez disso.">>
 <<set $ShortDescription to "Encontre o contratante da Black Skull em [questTown].">>
 <<set $QuestGiverLocation to "NONE">>
@@ -22339,12 +22339,12 @@ groupName: CampaignSabotageEvents
 position: 870,1859
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Undercutting the Competition">>
+<<set $QuestName to "Batendo a Concorrencia">>
 <<set $QuestDescription to "Apos uma dica de [FNameC1], negociamos com um garimpeiro em [questTown] para fazer um trabalho por menos do que ele havia prometido a Caveira Negra. Precisamos ser rapidos se quisermos recuperar os cristais de eter antes que a Caveira Negra chegue ate eles.">>
 <<set $ShortDescription to "Recupere os Cristais de Eter antes da Caveira Negra.">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $DungeonLength to "Medium">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
@@ -22388,7 +22388,7 @@ groupName: CampaignSabotageEvents
 position: 1626,1859
 ---
 <<GiveQuestItem tioAether>>
-<<SetPrimaryQuestObjectiveComplete "Return the Aether Crystals to [questTown]">>
+<<SetPrimaryQuestObjectiveComplete "Devolva os Cristais de Eter a [questTown]">>
 {advisor}Acho melhor irmos embora agora, [myTitle]. Quem sabe o que mais espreita aqui embaixo.
 {player:0}Cristais de eter tambem nao sao conhecidos por serem estaveis. Quanto antes nos livrarmos dele, melhor.
 <<UpdateQuestObjective success>>
@@ -22436,7 +22436,7 @@ position: -50,318
 <<set $Priority to 9999>>
 {advisor}Uma carta urgente de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "DQueridos amigos,  Descobri recentemente a localizacao de um dos principais armazens da Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos sao nada perto desta tarefa. Mal posso esperar para ver [FNameA0] surtar quando ouvir a noticia. Boa sorte!>>
+<<ShowLetter "AAUma carta de [FNameC1] "DQueridos amigos,  Descobri recentemente a localizacao de um dos principais armazens da Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos sao nada perto desta tarefa. Mal posso esperar para ver [FNameA0] surtar quando ouvir a noticia. Boa sorte!>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Finalmente, uma missao com algum peso de verdade. 
 <<else>>
@@ -22461,12 +22461,12 @@ groupName: CampaignSabotageQuests
 position: 328,311
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Storehouse Raid">>
+<<set $QuestName to "Ataque ao Armazem">>
 <<set $QuestDescription to "[FNameC1] nos deu a localizacao de um deposito da [antCompany]. Ele e fracamente guardado, e nao devemos ter muito trabalho com o servico. Esta e a nossa primeira chance de desferir um grande golpe, entao e melhor nao desperdica-la.">>
 <<set $ShortDescription to "Invada o deposito da Black Skull.">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TOTAL_RANDOM">>
-<<set $DungeonLocName to "Black Skull Storehouse">>
+<<set $DungeonLocName to "Armazem da Black Skull">>
 <<set $EnemyCategoryGroup to "BlackSkull">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Short">>
@@ -22610,7 +22610,7 @@ position: 2590,295
         <<RemoveItem tio_campsite>>
         <<ActivateTimeMod SPREADING_FIRE>>
         <<UpdateQuestObjective success>>
-        <<UpdateQuestObjectiveText "Escape the burning storehouse.">>
+        <<UpdateQuestObjectiveText "Fuja do armazem em chamas.">>
         <<RevealAllMissionIcons>>
         <<stop>>
 ===
@@ -22732,7 +22732,7 @@ position: -54,612
 {advisor}Outra carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
 <<CacheHouseWithHighRepExcludeCapital "CampaignBSWarHouseHighRep" "CampaignBSWarHouseHighRepName">>
-<<ShowLetter "AAAUma carta de [FNameC1] "ITemo ter noticias preocupantes, meus amigos. A Black Skull foi contratada pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles der certo, [FNameA0] vai ganhar muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas vai acontecer em breve: voces precisam chegar ate o Rei e alerta-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao espero que tenham problema com isso, mas o tempo e essencial.>>
+<<ShowLetter "AAUma carta de [FNameC1] "ITemo ter noticias preocupantes, meus amigos. A Black Skull foi contratada pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles der certo, [FNameA0] vai ganhar muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas vai acontecer em breve: voces precisam chegar ate o Rei e alerta-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao espero que tenham problema com isso, mas o tempo e essencial.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Isso nao e uma boa noticia. Temos que nos apressar.
 <<else>>
@@ -22757,12 +22757,12 @@ groupName: CampaignSabotageQuests
 position: 330,615
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "The Impatient Prince">>
+<<set $QuestName to "O Principe Impaciente">>
 <<set $QuestDescription to "[FNameC1] nos contou que o principe da Casa [$CampaignBSWarHouseHighRepName] planeja assassinar o proprio pai e tomar o trono, e contrataram os [antCompany] para fazer o servico. Precisamos chegar ate o rei e alerta-lo antes que seja tarde demais.\n\n<color=#cb0000>(Death durante esta missao resultara em fim de jogo)</color>">>
 <<set $ShortDescription to "Impeca o assassinato do rei.">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "CAMPAIGN_WAR_HOUSE">>
-<<set $DungeonLocName to "King's Manor">>
+<<set $DungeonLocName to "Solar do Rei">>
 <<set $EnemyCategoryGroup to "BlackSkull">>
 <<set $QuestCity to "$_CityForQuestCapital">>
 <<set $TurnInSpot to "$_CityForQuestCapital">>
@@ -22946,7 +22946,7 @@ position: 3742,598
 ---
 <<ModifyGlobalVar $BSWarSaveKingWin "true">>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Speak with the King in [questTown]">>
+<<UpdateQuestObjectiveText "Fale com o Rei em [questTown]">>
 <<if isTempAllyAlive("campaignRebellionKing1") is "false">>
     **Com seus inimigos dando o ultimo suspiro, voce corre ate o Rei para ver como ele esta. Ele se ergue com esforco, sem ajuda, ferido, mas vivo.**
     {npc:campaignRebellionKing1}A [CompanyName]! Tenho sorte de ter aliados tao diligentes. Voces tem minha gratidao. 
@@ -23032,12 +23032,12 @@ groupName: CampaignSabotageQuests
 position: 716,908
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Persuade a Nobleman">>
+<<set $QuestName to "Persuadir um Nobre">>
 <<set $QuestDescription to "Num esforco para conquistar o favor de um nobre e faze-lo aliar-se ao Rei de [currentKingdom], aceitamos um contrato para recuperar uma reliquia de familia roubada. O nobre havia trabalhado recentemente com um ladrao que a levou, e agora ele se esconde numa caverna proxima. Os [antCompany] tambem foram contratados antes de nos, na tentativa de conquistar o nobre para o lado do Principe. O Rei diz que nao podemos permitir isso. Temos de nos apressar e chegar antes dos [antCompany].">>
 <<set $ShortDescription to "Recupere a reliquia antes dos [antCompany].">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Thief's Hideout">>
+<<set $DungeonLocName to "Esconderijo do Ladrao">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Medium">>
@@ -23203,7 +23203,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -48,1190
 ---
-<<set $QuestName to "Audience with the King">>
+<<set $QuestName to "Audiencia com o Rei">>
 <<set $QuestDescription to "Deveriamos voltar a [$CampaignBSWarHouseHighRepCapitalName] e informar o Rei sobre a decisao de {npcName:campaignNoblemanHelp}.">>
 <<set $ShortDescription to "Fale com o Rei em [$CampaignBSWarHouseHighRepCapitalName]">>
 <<set $QuestGiverLocation to "None">>
@@ -23265,12 +23265,12 @@ groupName: CampaignSabotageQuests
 position: -42,1469
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Persuade a Nobleman">>
+<<set $QuestName to "Persuadir um Nobre">>
 <<set $QuestDescription to "Na tentativa de conquistar o favor de um nobre e faze-lo alinhar-se ao Rei de [thisRegion], aceitamos um contrato para recuperar uma reliquia de familia roubada. O nobre havia trabalhado recentemente com um ladrao, que a levou e agora se esconde em uma caverna proxima. Os [antCompany] tambem foram contratados antes de nos, na tentativa de conquistar o nobre para o lado do Principe. O Rei diz que nao podemos permitir que isso aconteca. Precisamos nos apressar e chegar antes dos [antCompany].">>
 <<set $ShortDescription to "Recupere a reliquia antes dos [antCompany].">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Thief's Hideout">>
+<<set $DungeonLocName to "Esconderijo do Ladrao">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Medium">>
@@ -23425,7 +23425,7 @@ groupName: CampaignSabotageQuests
 position: -47,1748
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Baggage Train">>
+<<set $QuestName to "A Tropa de Bagagem">>
 <<set $QuestDescription to "O Rei nos pediu para ajudar suas tropas a atacar a caravana de suprimentos dos rebeldes. Devemos resistir tempo suficiente para dar as forcas dele tempo de causar dano e caos consideraveis.\n\n<color=#cb0000>(Death durante esta missao resultara em fim de jogo)</color>">>
 <<set $ShortDescription to "Atacar a caravana de suprimentos do Principe.">>
 <<set $QuestGoal to "Open">>
@@ -23469,7 +23469,7 @@ position: 336,1749
 ->**Lutar**
     <<ModifyGlobalVar $CampaignBaggageTrainRound5 false>>
     <<SetPartySizeLimit 7>>
-    <<UpdateQuestObjectiveText "Hold out for 5 Combat Rounds">>
+    <<UpdateQuestObjectiveText "Aguente firme por 5 Rodadas de Combate">>
     <<ShowPartyOnRegionTileset SE.CampaignBSRaidBaggageFight>>
 //->You're right. Let's double check that we're prepared. **Exit**
 //<<stop>>
@@ -23486,7 +23486,7 @@ position: 1852,1744
 **Suas tropas recuam; o inimigo esta desorganizado demais para perseguir enquanto luta para capturar os cavalos e apagar os muitos incendios que seus aliados conseguiram atear.**
 {advisor}Um plano bem executado, [myTitle]. Mas nao devemos ficar por aqui.
 ->Vamos embora. **Continuar**
-    <<SetPrimaryQuestObjectiveComplete "Report your success to the King in [questTown]">>
+    <<SetPrimaryQuestObjectiveComplete "Reporte o seu sucesso ao Rei em [questTown]">>
     <<ModifyGlobalVar $CampaignBaggageTrainRound5 true>>
     <<ForceEndToCombat>>
     <<stop>>
@@ -23526,12 +23526,12 @@ groupName: CampaignSabotageQuests
 position: -52,2036
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Hostage Rescue">>
+<<set $QuestName to "Resgate de Refens">>
 <<set $QuestDescription to "{npcName:campaignRebellionGeneral} foi feito refem pelas forcas do Principe. Ele esta sendo mantido em uma masmorra abandonada e degradada. Devemos entrar as escondidas e resgata-lo.">>
 <<set $ShortDescription to "Resgate {npcName:campaignRebellionGeneral} das maos inimigas.">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_REGION_NOT_CURRENT_COUNTY">>
-<<set $DungeonLocName to "Abandoned Fortress">>
+<<set $DungeonLocName to "Fortaleza Abandonada">>
 <<set $EnemyCategoryGroup to "BlackSkullHouse">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Medium">>
@@ -23599,7 +23599,7 @@ groupName: CampaignSabotageQuests
 position: 1466,2039
 ---
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Return to the King in [questTown].">>
+<<UpdateQuestObjectiveText "Volte ao Rei em [questTown].">>
 <<if isTempAllyAlive("campaignRebellionGeneral") is "true">>
     <<ModifyGlobalVar $CampaignRebellionGeneralAlive "true">>
     **Outro som de passos ecoa pelo corredor e, para sua surpresa, [FNameC1] irrompe na sala. {npcName:campaignRebellionGeneral} ergue a arma, pronto para atacar.**
@@ -23743,7 +23743,7 @@ groupName: CampaignSabotageQuests
 position: -49,2312
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Last Stand">>
+<<set $QuestName to "A Ultima Resistencia">>
 <<set $QuestDescription to "As forcas rebeldes logo estarao as portas de [questTown]. Elaboramos um plano para conte-las enquanto uma segunda equipe de ataque investe contra o acampamento delas na esperanca de matar o Principe.\n\n<color=#cb0000>(Death durante esta missao resultara em fim de jogo)</color>">>
 <<set $ShortDescription to "Una-se as forcas do Rei nos arredores de [questTown]">>
 <<set $QuestGoal to "Open">>
@@ -23766,7 +23766,7 @@ position: 333,2304
 ---
 <<set $EventTrigger to "ON_QUEST_DESTINATION_ARRIVAL">>
 <<set $CheckForActiveQuest to "Quest.CampaignBSWarFinal">>
-<<UpdateQuestObjectiveText "Defend the Capital from rebel forces">>
+<<UpdateQuestObjectiveText "Defenda a Capital das forcas rebeldes">>
 <<SetTimeOfDayEvening true>>
 <<ModifyGlobalVar $CampaignDoingPrinceFight "false">>
 <<ModifyGlobalVar $CampaignRebellionGeneralAliveAfter1stFight "false">>
@@ -23828,7 +23828,7 @@ position: 1454,2311
 ---
 //this is a 2nd group. if euric is alive he's forced into the party (and cant be picked for the first party). not sure if we can have text/dialogue here (does party select occur before or after this!?)
 <<set $CheckForActiveQuest to "Quest.CampaignBSWarFinal">>
-<<UpdateQuestObjectiveText "Draw out and kill the Prince">>
+<<UpdateQuestObjectiveText "Atraia e mate o Principe">>
 <<ModifyGlobalVar $CampaignDoingPrinceFight "true">>
 <<RemoveTempAlliesFromThisQuest>>
 <<MoveEventPanelToTop>>
@@ -23965,7 +23965,7 @@ position: 2949,2322
 ---
 //It returns back to the main battle, where the allied side has retreated into the keep walls, (we'll use the same tileset as final torin battle maybe? with a few theme tweaks). Possibly let you use up to 8 party members here (but can't use people who were in the second group). Probably would need to scale the enemypoints based on party size though for balance
 <<set $CheckForActiveQuest to "Quest.CampaignBSWarFinal">>
-<<UpdateQuestObjectiveText "Defeat the rebel forces (Optional: Protect the King)">>
+<<UpdateQuestObjectiveText "Derrote as forcas rebeldes (Opcional: Proteja o Rei)">>
 <<AddTempPartyMember HouseCommanderAlly campaignRebellionKing2 "King Godfrey">>
 <<AddTempPartyMember HouseSkirmisherAlly rebelDefenseAlly0 "[questHouse] Soldier">>
 <<if $CampaignRebellionGeneralAliveAfter1stFight is "true">>
@@ -24075,7 +24075,7 @@ position: 3317,2320
         ->Sim, senhor. **Continuar**
             <<ModifyGlobalVar $CampaignRebellionKingSurvivedWar "true">>
             <<RemoveTempAlliesFromThisQuest>>
-            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Speak with the King in [questTown].">>
+            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Fale com o Rei em [questTown].">>
             <<stop>>
     <<else>>  
         **{npcName:campaignRebellionGeneral} se aproxima de voce, sangue e terra manchando sua armadura que antes era impecavel. {npcName:campaignRebellionAdvisor} vem atras, com semblante abatido apesar da vitoria.**
@@ -24087,7 +24087,7 @@ position: 3317,2320
         {npc:campaignRebellionAdvisor}Voce e a [CompanyName] tem minha mais profunda gratidao. Meu irmao gostava de voce, e espero que possamos continuar essa amizade. **Ela examina o patio ao redor, os mortos de ambos os lados tornando-o quase irreconhecivel.** O dia esta vencido, mas ha muito o que resolver agora que serei Rainha. Por favor, venha me ver mais tarde na cidade. 
         ->Sim, Milady. **Continuar**
             <<RemoveTempAlliesFromThisQuest>>
-            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Speak with {npcName:campaignRebellionAdvisor} in [questTown].">>
+            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Fale com {npcName:campaignRebellionAdvisor} em [questTown].">>
             <<stop>>
     <<endif>>
 <<else>>
@@ -24099,7 +24099,7 @@ position: 3317,2320
         ->Sim, Milorde. **Continuar**
             <<ModifyGlobalVar $CampaignRebellionKingSurvivedWar "true">>
             <<RemoveTempAlliesFromThisQuest>>
-            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Speak with the King in [questTown].">>
+            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Fale com o Rei em [questTown].">>
             <<stop>> 
     <<else>>
         **Das fileiras dos soldados aliados restantes, {npcName:campaignRebellionAdvisor} aparece e se aproxima de voce, parecendo consternada apesar da vitoria.**
@@ -24109,7 +24109,7 @@ position: 3317,2320
         {npc:campaignRebellionAdvisor}Voce e a [CompanyName] tem minha mais profunda gratidao. Meu irmao gostava de voce, e espero que possamos continuar essa amizade. Com tudo o que perdemos, precisarei de todos os aliados que puder conseguir. **Ela examina o patio ao redor, os mortos de ambos os lados tornando-o quase irreconhecivel.** O dia esta vencido, mas ha muito o que resolver agora que serei Rainha. Por favor, venha me ver mais tarde na cidade. 
         ->Sim, Milady. **Continuar**
             <<RemoveTempAlliesFromThisQuest>>
-            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Speak with {npcName:campaignRebellionAdvisor} in [questTown].">>
+            <<UpdateQuestObjective Quest.CampaignBSWarFinal primary success "Fale com {npcName:campaignRebellionAdvisor} em [questTown].">>
             <<stop>>
     <<endif>>
 <<endif>>
@@ -24125,7 +24125,7 @@ position: -47,2578
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "DApesar dos nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos dele sao graves, mas suspeito que ele vai se recuperar, pelo menos em parte. De qualquer forma, provavelmente sera um homem mudado. Ja pensei em terminar o servico eu mesmo, mas ele e vigiado dia e noite, mais do que nunca. Seria a morte para mim e para o Gedrick, mesmo que eu conseguisse.  A boa noticia e que os [antCompany] sofreram um grande golpe em numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.  Acredito que o momento em que eles estarao fracos o suficiente para voces atacarem esta se aproximando. Como sempre, vou mante-los informados de qualquer oportunidade.>>
+<<ShowLetter "AAUma carta de [FNameC1] "DApesar dos nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos dele sao graves, mas suspeito que ele vai se recuperar, pelo menos em parte. De qualquer forma, provavelmente sera um homem mudado. Ja pensei em terminar o servico eu mesmo, mas ele e vigiado dia e noite, mais do que nunca. Seria a morte para mim e para o Gedrick, mesmo que eu conseguisse.  A boa noticia e que os [antCompany] sofreram um grande golpe em numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.  Acredito que o momento em que eles estarao fracos o suficiente para voces atacarem esta se aproximando. Como sempre, vou mante-los informados de qualquer oportunidade.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     **[FNameC0] resmunga com desagrado.**
     {mainChar0}Ele esta vivo, hein? Como sempre.
@@ -24168,7 +24168,7 @@ position: -46,3380
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos uma correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAAUma carta de [FNameC1] "ICertamente ja ouviram as noticias de Dragate. O proprio [FNameA0] foi verificar, e embora eu nao possa confirmar, acredito que ele voltou com algo de valor. Ele e um homem mudado desde o retorno: mais forte do que nunca foi, mesmo antes do ferimento, se puderem acreditar.  Na cabeca, no entanto, duvidas sobre a lideranca dele permanecem. Mais de uma vez, o peguei falando sozinho como um lunatico. Alguns pobres cocebolas ate tentaram desafia-lo, mas tudo o que ganharam foi uma nova casa a dois metros de profundidade. Ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mover a nossa base de operacoes para um forte abandonado que ele encontrou em Dragate. Todos os dias, ele envia novas equipes de busca para as ruinas. Ele parece estar procurando algo especifico, mas nao diz o que. Ele so quer que tudo o que for encontrado seja relatado a ele.  Dados esses desenvolvimentos, provavelmente temos apenas uma curta janela para atacar. Vou formular um plano e entrar em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por Caelum.>>
+<<ShowLetter "AAUma carta de [FNameC1] "ICertamente ja ouviram as noticias de Dragate. O proprio [FNameA0] foi verificar, e embora eu nao possa confirmar, acredito que ele voltou com algo de valor. Ele e um homem mudado desde o retorno: mais forte do que nunca foi, mesmo antes do ferimento, se puderem acreditar.  Na cabeca, no entanto, duvidas sobre a lideranca dele permanecem. Mais de uma vez, o peguei falando sozinho como um lunatico. Alguns pobres cocebolas ate tentaram desafia-lo, mas tudo o que ganharam foi uma nova casa a dois metros de profundidade. Ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mover a nossa base de operacoes para um forte abandonado que ele encontrou em Dragate. Todos os dias, ele envia novas equipes de busca para as ruinas. Ele parece estar procurando algo especifico, mas nao diz o que. Ele so quer que tudo o que for encontrado seja relatado a ele.  Dados esses desenvolvimentos, provavelmente temos apenas uma curta janela para atacar. Vou formular um plano e entrar em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por Caelum.>>
 {advisor}Noticias perturbadoras. O que [FNameA0] descobriu, entao?
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Talvez possamos encontrar uma reliquia nossa para equilibrar o jogo.
@@ -24188,7 +24188,7 @@ position: -44,3112
 <<set $PrevNode to "SE.CampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WWWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer.  Vou tentar reunir mais informacoes antes de pensarmos em pisar na regiao. "IInteressante. Mantenha-me informado.>>
+<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer.  Vou tentar reunir mais informacoes antes de pensarmos em pisar na regiao. "IInteressante. Mantenha-me informado.>>
     <<stop>>
 ===
 title: Quest.DragateQuestsRebuildKorunhal
@@ -24199,7 +24199,7 @@ position: 55,535
 //this is the only quest you can pick up in Korunhal. Once you complete it, all city amenities are restored and there won't be any other quests (for now). 
 //ideally id prefer to do this as more of a bounty quest where it has you buy/collect resources on your own (10 Wood, 10 Medicine, 6 Stone, 6 Iron), and turn it in, so it feels more like you're actively doing something. 
 
-<<set $QuestName to "Aid for Korunhal">>
+<<set $QuestName to "Ajuda para Korunhal">>
 <<set $QuestDescription to "[questTown] precisa de suprimentos para reconstruir a cidade deles. Devemos viajar ate [destinationCity] para buscar um grande carregamento que um nobre doou generosamente a causa.">>
 <<set $ShortDescription to "Busque os suprimentos em [destinationCity]">>
 <<set $QuestGiverLocation to "Dragate">>
@@ -24348,7 +24348,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -43,913
 ---
-<<set $QuestName to "Persuade a Nobleman">>
+<<set $QuestName to "Persuadir um Nobre">>
 <<set $QuestDescription to "Devemos ir a [destinationCity] para garantir que um nobre local e seus servicais apoiem o Rei.">>
 <<set $ShortDescription to "Fale com o nobre em [destinationCity]">>
 <<set $QuestGiverLocation to "None">>
@@ -24461,7 +24461,7 @@ position: 2225,906
 <<RemoveTempAlliesFromThisQuest>>
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Return the heirloom to the Nobleman in [questTown].">>
+<<UpdateQuestObjectiveText "Devolva a reliquia ao Nobre em [questTown].">>
 ->Vamos voltar para {npcName:campaignNoblemanHelp}. **Sair**
     <<TriggerDungeonComplete true>>
     <<stop>>
@@ -24509,7 +24509,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: 2579,2040
 ---
-<<set $QuestName to "Report to the King">>
+<<set $QuestName to "Reportar ao Rei">>
 <<set $QuestDescription to "Deveriamos retornar a [$CampaignBSWarHouseHighRepCapitalName] e informar {npcName:campaignRebellionKing1} sobre o que aconteceu.">>
 <<set $ShortDescription to "Fale com o Rei em [$CampaignBSWarHouseHighRepCapitalName]">>
 <<set $QuestGiverLocation to "None">>
@@ -24598,7 +24598,7 @@ position: 813,536
 {advisor}E muito generoso da sua parte, meu senhor.
 {npc:tempNpc}E o minimo que posso fazer! Segundo me disseram, eles sofreram decadas de doutrinacao nas maos de um maniaco. Sem falar na explosao recente, que tornou a terra natal deles quase inabitavel! Espero trazer de volta um pouco de civilizacao para eles com este presente. Um momento, por favor. Mandarei meus trabalhadores carregarem tudo em suas carrocas.
 <<UpdateTurnInLocation origin>> 
-<<UpdateQuestObjectiveText "Return the supplies to [questTown]">>
+<<UpdateQuestObjectiveText "Devolva os suprimentos a [questTown]">>
 **Com os suprimentos carregados, o nobre estende a mao para que voce a aperte.**
 {npc:tempNpc}Confio que voce os levara em seguranca ate o destino. Transmita minhas saudacoes aquele pobre povo. 
 ->Pode confiar. **Continuar**
@@ -24703,7 +24703,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: 320,3655
 ---
-<<set $QuestName to "The Final Meet">>
+<<set $QuestName to "O Encontro Final">>
 <<set $QuestDescription to "[FNameC1] quer que nos encontremos com ele em Korunhal, embora nao tenha dito o porque.">>
 <<set $ShortDescription to "Encontre-se com [FNameC1] em Korunhal">>
 <<set $QuestGiverLocation to "None">>
@@ -24774,13 +24774,13 @@ position: -55,3923
 //Euric is forced in the party if he's alive
 //not sure if we wanna force certain dungeon mods and maybe even time mods for this, just so theres no wrenches we need to account for with balance
 <<set $Tileset to "dragateRuins">>
-<<set $QuestName to "Vengeance at Hand">>
+<<set $QuestName to "Vinganca ao Alcance">>
 <<set $QuestDescription to "Com grande parte do [antCompany] ocupada com uma missao importante, [FNameC1] nos diz que nunca teremos uma chance melhor de matar [FNameA0] e resgatar Gedrick. Devemos usar uma serie de tuneis para acessar os niveis inferiores da base deles.\n\n<color=#cb0000>(Death durante esta missao resultara em fim de jogo)</color>">>
 <<set $ShortDescription to "Infiltrar-se no Forte da Caveira Negra em Dragate">>
 <<set $QuestGoal to "Open">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "BLACK_SKULL_FORT">>
-<<set $DungeonLocName to "Black Skull Fort">>
+<<set $DungeonLocName to "Forte da Black Skull">>
 <<set $EnemyCategoryGroup to "BSFortEntrance">>
 //<<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Medium">>
@@ -24823,7 +24823,7 @@ position: 1058,3926
 //{player:0}It might be a good time for a breather before we head into the lion's den.
 ->Vamos localizar Gedrick. **Continuar**
     <<SetEventFinished>>
-    <<UpdateQuestObjectiveText "Find Gedrick and [FNameC1]">>
+    <<UpdateQuestObjectiveText "Encontre Gedrick e [FNameC1]">>
     <<FadeOutScreen>>
     <<MoveToNewFloor Fort "CampaignKillTorinFloor2" "Black Skull Fort (Lower Levels)" "BlackSkull">>
     <<FadeInScreen>>
@@ -25277,7 +25277,7 @@ position: 2538,3929
     <<endif>> 
     ->**Continuar**
         <<SetEventFinished>>
-        <<UpdateQuestObjectiveText "Find and kill [FNameA0]">>
+        <<UpdateQuestObjectiveText "Encontre e mate [FNameA0]">>
         <<AddTempPartyMember AdventurerAlly campaignGedrick Gedrick>>  
         <<ModifyAllyStat campaignGedrick HP 2.0>>
         <<stop>>
@@ -25345,12 +25345,12 @@ groupName: LegendaryQuests
 position: -285,-793
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "True Arc Shield">>
+<<set $QuestName to "Escudo de Arco Verdadeiro">>
 <<set $QuestDescription to "Encontramos um mapa que aponta para o local de um tesouro antigo chamado Escudo do Arco Verdadeiro.">>
 <<set $ShortDescription to "Localizar o tesouro">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TERRAIN_GRASS">>
-<<set $DungeonLocName to "Forgotten Crypt">>
+<<set $DungeonLocName to "Cripta Esquecida">>
 <<set $EnemyCategoryGroup to "TrueArc">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Medium">>
@@ -25428,7 +25428,7 @@ position: 1196,-776
 **O Escudo do Arco Verdadeiro e seu, e qualquer desgraca que venha com ele.**
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the crypt">>
+<<UpdateQuestObjectiveText "Saia da cripta">>
 <<GiveItem tio_trueArcShield>>
 ->Conseguimos o que viemos buscar. Vamos embora.
     {advisor}Pois e, um ar fresco cairia bem depois de tudo isso.
@@ -25480,12 +25480,12 @@ groupName: LegendaryQuests
 position: -281,-453
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Lumella's Wings">>
+<<set $QuestName to "Asas de Lumella">>
 <<set $QuestDescription to "Encontramos um mapa e um registro de diario que apontam para uma cripta que pode abrigar um tesouro raro.">>
 <<set $ShortDescription to "Entrar no Tumulo de Lumella">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TERRAIN_GRASS">>
-<<set $DungeonLocName to "Lumella's Tomb">>
+<<set $DungeonLocName to "Tumba de Lumella">>
 <<set $EnemyCategoryGroup to "DiseasedTomb">>
 <<set $Theme to "Overgrown">>
 <<set $DungeonLength to "Medium">>
@@ -25561,7 +25561,7 @@ position: 1192,-455
 {advisor}Ora, vejam so!
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the crypt">>
+<<UpdateQuestObjectiveText "Saia da cripta">>
 <<GiveItem tio_lumellasWings>>
 ->Vamos cuidar bem disso. **Sair**
     <<TriggerDungeonComplete true>>
@@ -25657,7 +25657,7 @@ position: 334,3118
 <<set $PrevNode to "SE.FailedCampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WWWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer. "WVamos ter que descobrir por conta propria.>>
+<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer. "WVamos ter que descobrir por conta propria.>>
     <<SetCanTravelTo Korunhal true>>
     <<stop>>
 ===
@@ -25667,7 +25667,7 @@ groupName: CampaignDragate
 position: 59,1376
 ---
 <<set $Tileset to "dragateRuins">>
-<<set $QuestName to "Dragate Ruins">>
+<<set $QuestName to "Ruinas de Dragate">>
 <<set $QuestDescription to "Explorando as Ruinas de Dragate. Que misterios poderiamos encontrar la embaixo?">>
 <<set $ShortDescription to "Explore as ruinas">>
 <<set $QuestGiverLocation to "None">>
@@ -25715,7 +25715,7 @@ groupName: CampaignDragate
 position: 62,1641
 ---
 <<set $Tileset to "dragateRuins">>
-<<set $QuestName to "Dragate Ruins">>
+<<set $QuestName to "Ruinas de Dragate">>
 <<set $QuestDescription to "Explorando as Ruinas de Dragate. Que misterios poderiamos encontrar la embaixo?">>
 <<set $ShortDescription to "Explore as ruinas">>
 <<set $QuestGiverLocation to "None">>
@@ -25733,7 +25733,7 @@ groupName: CampaignDragate
 position: 55,1908
 ---
 <<set $Tileset to "dragateRuins">>
-<<set $QuestName to "Dragate Ruins">>
+<<set $QuestName to "Ruinas de Dragate">>
 <<set $QuestDescription to "Explorando as Ruinas de Dragate. Que misterios poderiamos encontrar la embaixo?">>
 <<set $ShortDescription to "Explore as ruinas">>
 <<set $QuestGiverLocation to "None">>
@@ -26010,7 +26010,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -434,34
 ---
-<<set $QuestName to "Blood Feud">>
+<<set $QuestName to "Rixa de Sangue">>
 <<set $QuestDescription to "Enquanto aguardamos noticias de [FNameC1], devemos sabotar as operacoes dos [antCompany] por toda Caelum. Quanto mais perdas eles sofrerem, mais desesperados e vulneraveis ficarao. Eventualmente, teremos uma oportunidade de atacar e derrubar [FNameA0]. Precisaremos ficar de olho neles em cidades, masmorras e durante nossas viagens pelo mundo.">>
 <<set $ShortDescription to "Sabotar as operacoes dos [antCompany] por toda Caelum">>
 <<set $QuestGiverLocation to "None">>
@@ -26047,7 +26047,7 @@ position: 2234,1749
 **Suas tropas recuam; o inimigo esta desorganizado demais para perseguir enquanto tenta capturar os cavalos e apagar os varios incendios que seus aliados conseguiram provocar.**
 {advisor}Um plano bem executado, [myTitle]. Mas nao devemos ficar por aqui.
 ->Vamos nessa. **Continuar**
-    <<SetPrimaryQuestObjectiveComplete "Report your success to the King in [questTown]">>
+    <<SetPrimaryQuestObjectiveComplete "Reporte o seu sucesso ao Rei em [questTown]">>
     <<ModifyGlobalVar $CampaignBaggageTrainRound5 true>>
     <<ForceEndToCombat>>
     <<stop>>
@@ -26188,13 +26188,13 @@ groupName: LegendaryQuests
 position: -279,-91
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Harland's Spyglass">>
+<<set $QuestName to "Luneta de Harland">>
 <<set $QuestDescription to "Encontramos um mapa que aponta para o local de um tesouro antigo chamado Luneta de Harland.">>
 <<set $ShortDescription to "Encontrar o tesouro">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TERRAIN_MARSH">>
 <<set $Theme to "Bandits">>
-<<set $DungeonLocName to "Harland's Hideout">>
+<<set $DungeonLocName to "Esconderijo de Harland">>
 <<set $EnemyCategoryGroup to "Undead">>
 <<set $DungeonLength to "Medium">>
 <<set $TurnInSpot to "NearestTown">>
@@ -26211,13 +26211,13 @@ groupName: LegendaryQuests
 position: -286,272
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Chameleon Cloak">>
+<<set $QuestName to "Manto Camaleao">>
 <<set $QuestDescription to "Encontramos um mapa que aponta para o local de um tesouro antigo chamado Manto Camaleao.">>
 <<set $ShortDescription to "Encontrar o tesouro">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TOTAL_RANDOM">>
 <<set $Theme to "Bandits">>
-<<set $DungeonLocName to "Run Down Enclave">>
+<<set $DungeonLocName to "Enclave Deteriorado">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $DungeonLength to "Short">>
 <<set $TurnInSpot to "NearestTown">>
@@ -26233,13 +26233,13 @@ groupName: LegendaryQuests
 position: -293,643
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Amulet of the Phoenix">>
+<<set $QuestName to "Amuleto da Fenix">>
 <<set $QuestDescription to "Encontramos um mapa que aponta para o local de um tesouro antigo que parece conter poderes de ressurreicao.">>
 <<set $ShortDescription to "Encontrar o tesouro">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TERRAIN_SAND">>
 //<<set $Theme to "Bandits">>
-<<set $DungeonLocName to "Ancient Crypt">>
+<<set $DungeonLocName to "Cripta Antiga">>
 <<set $DungeonLength to "Medium">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
@@ -26255,13 +26255,13 @@ groupName: LegendaryQuests
 position: -299,1004
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Fleet-Footed Boots">>
+<<set $QuestName to "Botas Ligeiras">>
 <<set $QuestDescription to "Encontramos um mapa que aponta para o local de um par de botas encantadas.">>
 <<set $ShortDescription to "Localize o tesouro">>
 <<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "TERRAIN_SNOW">>
 <<set $Theme to "Bandits">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "local">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $DungeonLength to "Short">>
@@ -26424,7 +26424,7 @@ position: 830,-86
 
 **A luz da sua tocha revela dezenas de restos esqueleticos adiante: cranios esmagados, ossos rachados e vestes antigas que ja sao pouco mais que fibras soltas de tecido. [FNameP0] pega um diario com capa de couro meio escondido debaixo de um femur e o abre nas ultimas paginas. Voce se inclina por tras de [pronounObj0] para ler as palavras.**
 ->**Ler o registro**
-<<ShowLetter "6666o de Primavera, 87 "ITemo que, mesmo tendo jogado aquele espolio amaldicoado no mar, o dano ja esta feito. Desde o nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Alegou que estavam roubando dele, mas nao sei se acredito. O resto da tripulacao nao esta nada melhor, eu inclusive. Tenho visto coisas, ouvido coisas. Os deuses sabem se e real ou nao. Ja nao consigo dizer. So sei que nunca deveriamos ter ido aquele maldito lugar, e agora a nossa ganancia sera a morte de todos nos.>>
+<<ShowLetter "666o de Primavera, 87 "ITemo que, mesmo tendo jogado aquele espolio amaldicoado no mar, o dano ja esta feito. Desde o nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Alegou que estavam roubando dele, mas nao sei se acredito. O resto da tripulacao nao esta nada melhor, eu inclusive. Tenho visto coisas, ouvido coisas. Os deuses sabem se e real ou nao. Ja nao consigo dizer. So sei que nunca deveriamos ter ido aquele maldito lugar, e agora a nossa ganancia sera a morte de todos nos.>>
 {player:0}Deuses... ele deve ter enlouquecido e abatido toda a tripulacao. 
 {advisor}E melhor encontrarmos logo essa Luneta.
 **O ar de repente esfria, e os ossos espalhados ao seu redor comecam a chacoalhar, tentando se reconstruir mais uma vez. Um arranhar se ouve vindo de um corredor proximo, como metal contra rocha, e uma voz grave e inumana troveja logo em seguida.**
@@ -26515,7 +26515,7 @@ position: 1201,-91
 **O Capitao Harland, ou o que restava dele, nao existe mais. Voce olha ao redor, e seus olhos se fixam em um bau ornamentado no fundo da camara. [FNameP0] ja se move ate la com determinacao e logo abre a tampa para retirar o conteudo.**
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the hideout">>
+<<UpdateQuestObjectiveText "Saia do esconderijo">>
 <<GiveItem tio_HarlandsSpyglass>>
 {player:0}Ainda funciona, chefe!
 {advisor}Pelo menos a luneta dele esta intacta, ainda que a sanidade nao estivesse.
@@ -26538,7 +26538,7 @@ position: 1209,264
 {player:0}Deve ser isto!
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the enclave">>
+<<UpdateQuestObjectiveText "Saia do enclave">>
 <<GiveItem tio_chameleonCloak>>
 ->Bem avistado, [FNameP0]. Esperemos que toda essa morte tenha valido a pena. **Sair**
     <<TriggerDungeonComplete true>>
@@ -26557,7 +26557,7 @@ position: 1184,646
 {player:0}Nao e uma coisa ruim de se ter a mao, supondo que funcione.
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the crypt">>
+<<UpdateQuestObjectiveText "Saia da cripta">>
 <<GiveItem tio_amuletOfThePhoenix>>
 ->De fato. Mas torcamos para nunca precisarmos dela. **Ir embora**
     <<TriggerDungeonComplete true>>
@@ -26583,7 +26583,7 @@ position: 1176,1001
 <<endif>>
 <<PlaySound LootItems>>
 <<UpdateQuestObjective success>>
-<<UpdateQuestObjectiveText "Leave the cave">>
+<<UpdateQuestObjectiveText "Saia da caverna">>
 <<GiveItem tio_fleetFootedBoots>>
 ->Ao menos elas serao uteis agora. **Ir embora**
     <<TriggerDungeonComplete true>>
@@ -26651,7 +26651,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -834,31
 ---
-<<set $QuestName to "Ears to the Ground">>
+<<set $QuestName to "Ouvidos no Chao">>
 <<set $QuestDescription to "[FNameAdvisor] esta trabalhando para rastrear a localizacao do(a) [antCompany]. Precisaremos dar a ele algum tempo. Ate la, ha muito trabalho para nos em Caelum.">>
 <<set $ShortDescription to "Aguardar noticias das fontes de [FNameAdvisor]">>
 <<set $QuestGiverLocation to "None">>
@@ -26667,7 +26667,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -839,320
 ---
-<<set $QuestName to "Man on the Inside">>
+<<set $QuestName to "Infiltrado">>
 <<set $QuestDescription to "Teremos de esperar [FNameC1] se posicionar junto a Black Skull. Se tudo correr conforme o plano, ele entrara em contato em breve e poderemos comecar a sabotar as operacoes deles com a ajuda dele.">>
 <<set $ShortDescription to "Aguardar noticias de [FNameC1]">>
 <<set $QuestGiverLocation to "None">>
@@ -26704,7 +26704,7 @@ tags: Quest
 groupName: CampaignSabotageQuests
 position: -434,318
 ---
-<<set $QuestName to "Inside Information">>
+<<set $QuestName to "Informacao Privilegiada">>
 <<set $QuestDescription to "Com [FNameA0] ferido e em fuga, precisaremos aguardar noticias de [FNameC1] sobre o que aconteceu com ele.">>
 <<set $ShortDescription to "Aguarde noticias sobre o destino de [FNameA0]">>
 <<set $QuestGiverLocation to "None">>
@@ -26751,7 +26751,7 @@ groupName: CampaignFortVanguard
 position: 1339,613
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Lost Patrol">>
+<<set $QuestName to "Patrulha Perdida">>
 <<set $QuestDescription to "O Comandante Owayn nos pediu para procurar uma patrulha da Vanguarda cujo retorno esta muito atrasado.">>
 <<set $ShortDescription to "Encontre a patrulha desaparecida da Vanguarda">>
 <<set $QuestGoal to "Open">>
@@ -26775,7 +26775,7 @@ groupName: CampaignFortVanguard
 position: 1339,1146
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Reclaim Wealden">>
+<<set $QuestName to "Retomar Wealden">>
 <<set $QuestDescription to "Depois de nos reunirmos com os nomades no acampamento deles, e hora de seguirmos para Wealden.">>
 <<set $ShortDescription to "Viaje para Wealden">>
 <<set $QuestGoal to "Open">>
@@ -26807,7 +26807,7 @@ position: 1722,613
 {player:0}Pobres almas...
 **O vento subitamente se aquieta em um momento sinistro de silencio, e de uma floresta proxima voce ouve o estalar distinto de passos na neve, o som se multiplicando com rapidez e ficando cada vez mais alto. Um instante depois, um grupo de Corrompidos irrompe do limite da mata, correndo direto para voce.**
 ->As armas! **Lutar**
-    <<UpdateQuestObjectiveText "Kill the Blighted">>
+    <<UpdateQuestObjectiveText "Mate os Pragados">>
     <<ShowPartyOnRegionTileset SE.VanguardFindScoutsCombat>>
 ===
 title: SE.VanguardFindScoutsCombat
@@ -26858,7 +26858,7 @@ position: 2477,612
 {npc:nurrenNomadChief}Hmm. Talvez. Nem sempre concordamos, mas compartilhamos um inimigo em comum. **O Chefe Nurren se vira, conversando com os mais proximos em sua lingua nativa.** 
 {npc:nurrenNomadChief}Digam a Owayn que estamos dispostos a ajudar. Venham aos nossos acampamentos quando estiverem prontos. Ele sabe como nos encontrar.
 ->Faremos isso. **Continuar**
-    <<SetPrimaryQuestObjectiveComplete "Return to Fort Vanguard and report your findings">>
+    <<SetPrimaryQuestObjectiveComplete "Volte ao Forte Vanguarda e reporte o que encontrou">>
     <<ForceEndToCombat>>
     <<stop>>
 ===
@@ -26907,7 +26907,7 @@ position: 1713,1142
 <<AddTempPartyMember VanguardSoldierAlly wealdenAlly0 "Vanguard Soldier">>
 <<AddTempPartyMember VanguardSoldierAlly wealdenAlly1 "Vanguard Soldier">>
 <<AddTempPartyMember OutlawEnforcerAlly wealdenAlly2 "Nurren Nomad">>
-<<UpdateQuestObjectiveText "Defeat the Blighted">>
+<<UpdateQuestObjectiveText "Derrote os Pragados">>
 <<ShowPartyOnRegionTileset SE.VanguardTakeWealdenCombat>>
 ===
 title: SE.VanguardTakeWealdenCombat
@@ -26971,7 +26971,7 @@ groupName: CampaignFortVanguard
 position: 1339,1414
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Reclaim Wealden">>
+<<set $QuestName to "Retomar Wealden">>
 <<set $QuestDescription to "Apos uma breve escaramuca em nossa chegada, os Flagelados fugiram, provavelmente para se reagrupar. O Comandante Owayn espera que eles voltem em breve, e precisamos nos preparar para defender a cidade.">>
 <<set $ShortDescription to "Derrote a horda de Flagelados.">>
 <<set $QuestGoal to "Open">>
@@ -27216,7 +27216,7 @@ groupName: CampaignFortVanguard
 position: 1341,877
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Reclaim Wealden">>
+<<set $QuestName to "Retomar Wealden">>
 <<set $QuestDescription to "O chefe dos Nurren ofereceu a ajuda de sua tribo para retomar Wealden. Devemos nos juntar a eles no caminho para la.">>
 <<set $ShortDescription to "Viaje ate o acampamento nomade">>
 <<set $QuestGoal to "Open">>
@@ -27254,7 +27254,7 @@ groupName: CampaignFortVanguard
 position: 1338,1682
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Survivors of Wealden">>
+<<set $QuestName to "Sobreviventes de Wealden">>
 <<set $QuestDescription to "Fomos encarregados de localizar alguns sobreviventes que possam ter se refugiado em um sistema de cavernas perto de Wealden.">>
 <<set $ShortDescription to "Encontre os sobreviventes">>
 <<set $QuestGiverLocation to "Citizen">>
@@ -27332,12 +27332,12 @@ position: 2084,1680
 <<SetEventFinished>>
 ->Vamos espera-los la fora. **Sair da Masmorra**
     <<ModifyCityStatus wealden NORMAL 0>>
-    <<SetPrimaryQuestObjectiveComplete "Escort the survivors back to Wealden">>
+    <<SetPrimaryQuestObjectiveComplete "Escolte os sobreviventes de volta a Wealden">>
     <<TriggerDungeonComplete true>> 
     <<stop>>
 ->Vamos dar uma olhada ao redor enquanto isso. **Ficar**
     <<ModifyCityStatus wealden NORMAL 0>>
-    <<SetPrimaryQuestObjectiveComplete "Escort the survivors back to Wealden">>
+    <<SetPrimaryQuestObjectiveComplete "Escolte os sobreviventes de volta a Wealden">>
     <<TriggerDungeonComplete false>> 
     <<stop>>
 ===
@@ -27397,12 +27397,12 @@ groupName: ContentUpdateQuests
 position: -412,724
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "The Deal">>
+<<set $QuestName to "O Acordo">>
 <<set $QuestDescription to "Um homem rico em [questTown] deseja ver morto o mago que o amaldicoou.">>
 <<set $ShortDescription to "Mate o mago e acabe com a maldicao">>
 <<set $QuestGiverLocation to "Citizen">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Mysterious Lair">>
+<<set $DungeonLocName to "Toca Misteriosa">>
 <<set $EnemyCategoryGroup to "Bandits,Wraiths,Demons">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Um homem quer um mago morto.">>
@@ -27581,12 +27581,12 @@ groupName: ContentUpdateQuests
 position: -417,999
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "Demons' Den">>
+<<set $QuestName to "Covil dos Demonios">>
 <<set $QuestDescription to "Um Comandante desesperado de [questTown] nos pediu para fechar a principal fenda do vazio que vem produzindo ondas de demonios na regiao.">>
 <<set $ShortDescription to "Feche as Fendas do Vazio (Opcional: Resgate os soldados)">>
 <<set $QuestGiverLocation to "House">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "[RandomLocationName] Cave">>
+<<set $DungeonLocName to "Caverna de [RandomLocationName]">>
 <<set $EnemyCategoryGroup to "Voidspawn">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Elimine a ameaca dos voidspawn.">>
@@ -27828,12 +27828,12 @@ groupName: ContentUpdateQuests
 position: -415,1275
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "An Altar of Stone">>
+<<set $QuestName to "Um Altar de Pedra">>
 <<set $QuestDescription to "Um estudioso chamado Orlos nos pediu para irmos ao fundo de uma montanha proxima e colocarmos uma pedra sobre um altar para apaziguar um espirito da terra descontente. Quando chegarmos a uma bifurcacao, devemos seguir o maior dos dois sistemas de tuneis.">>
 <<set $ShortDescription to "Recupere a pedra.">>
 <<set $QuestGiverLocation to "Citizen">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Primordial's Cavern">>
+<<set $DungeonLocName to "Caverna do Primordial">>
 <<set $EnemyCategoryGroup to "Charions,Bandits">>
 <<set $TurnInSpot to "NearestTown">>
 <<set $QuestIntro to "Um estudioso procura aventureiros para uma missao peculiar.">>
@@ -27928,7 +27928,7 @@ position: 1069,1271
 ---
 **Com os ladroes derrotados, [FNameP0] se aproxima do altar e ergue a pedra com cuidado de seu lugar de repouso. A caverna treme suavemente por um instante antes de se acalmar.**
 {player:0}Vamos encontrar o proximo altar. Deve ser simples o bastante para deduzir qual e o correto.
-<<UpdateQuestObjectiveText "Place the stone upon the correct altar.">>
+<<UpdateQuestObjectiveText "Coloque a pedra no altar correto.">>
 ->Contanto que nao nos percamos no caminho. **Continuar**
     <<ModifyGlobalVar $AltarOfStoneRetrieved "true">>
     <<stop>>
@@ -28152,7 +28152,7 @@ groupName: ContentUpdateQuests
 position: -414,1551
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "A House on a Hill">>
+<<set $QuestName to "Uma Casa na Colina">>
 <<set $QuestDescription to "Uma mulher desapareceu perto de uma casa abandonada a beira da estrada. Fomos contratados para investigar e encontra-la.">>
 <<set $ShortDescription to "Descubra o que aconteceu com a mae de Matilde.">>
 <<set $EnemyCategoryGroup to "HouseOnHill">>
@@ -28160,7 +28160,7 @@ position: -414,1551
 <<set $QuestGiverLocation to "Citizen">>
 //<<set $QuestGiverLocation to "None">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Hidden Cavern">>
+<<set $DungeonLocName to "Caverna Escondida">>
 <<set $DungeonLength to "Medium">>
 <<set $DungeonEvents to "SE.HouseOnHillPathCombat,SE.HouseOnHillMother,SE.HouseOnHillBoss">>
 //<<set $OptionalDungeonEvents to "SE.HouseOnHillCombat1,SE.HouseOnHillCombat2,SE.HouseOnHillCombat3">>
@@ -28257,7 +28257,7 @@ position: 699,1553
     <<PlaySound Campfire>>
     {advisor}Esses sao todos. Com sorte, os espiritos restantes vao pegar leve com a gente agora. 
     ->Vamos seguir em frente. **Continuar**
-        <<UpdateQuestObjectiveText "Discover the fate of Matilde's mother">>
+        <<UpdateQuestObjectiveText "Descubra o destino da mae de Matilde">>
         <<SetEventFinished>>
         <<stop>>
 <<endif>>
@@ -28288,7 +28288,7 @@ position: 1067,1550
     <<PlaySound Campfire>>
     {advisor}E so isso. Com sorte, os espiritos que restam vao nos atormentar menos agora. 
     ->Sigamos em frente. **Continuar**
-        <<UpdateQuestObjectiveText "Discover the fate of Matilde's mother">>
+        <<UpdateQuestObjectiveText "Descubra o destino da mae de Matilde">>
         <<SetEventFinished>>
         <<stop>>
 <<endif>>
@@ -28461,7 +28461,7 @@ position: 329,1551
     {advisor}Esperemos que a mae de Matilde nao tenha tido o mesmo destino.
     **A pira sinistra esta acesa. Melhor seguir em frente e se afastar da fumaca gordurosa.**
     ->Faltam duas, entao. Vamos. **Continuar**
-        <<UpdateQuestObjectiveText "Burn the bodies (reduces the number of specters)">>
+        <<UpdateQuestObjectiveText "Queime os corpos (reduz o numero de espectros)">>
         <<SetEventFinished>>
         <<stop>>
 ===
@@ -28685,7 +28685,7 @@ position: 3655,1553
         {hasTrait:Treacherous,Harsh}Pela primeira vez, nao poderia concordar mais com voce.
     <<endif>> 
     ->**Continuar**
-        <<UpdateQuestObjectiveText "Kill the man responsible">>
+        <<UpdateQuestObjectiveText "Mate o homem responsavel">>
         <<SetEventFinished>>
         <<stop>>
 ===
@@ -29693,7 +29693,7 @@ position: 6712,-1430
 <<endif>>
 <<UpdateQuestObjective success>>
 ->Vamos sair daqui. **Partir**
-    <<UpdateQuestObjectiveText "Return with Rudolf">>
+    <<UpdateQuestObjectiveText "Volte com Rudolf">>
     <<RemoveTempAlliesFromThisQuest>>
     <<TriggerDungeonComplete true>>
     <<stop>>
@@ -29770,7 +29770,7 @@ position: 363,-1455
 **[FNameP0] vasculha o corpo e pega um diario ensopado de sangue.**
 {player:0}Talvez encontremos alguma informacao util aqui?
 ->**Ler a ultima anotacao**
-<<ShowLetter "BBBDiario de Brynn "TO capitao designou a nossa unidade para a passagem antiga. Nao sei por que; ela esta barricada ha anos. Nos disseram que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem passar, certo? Ao menos isso nos da algo para fazer. Espero que esta designacao seja apenas temporaria.>>
+<<ShowLetter "BBDiario de Brynn "TO capitao designou a nossa unidade para a passagem antiga. Nao sei por que; ela esta barricada ha anos. Nos disseram que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem passar, certo? Ao menos isso nos da algo para fazer. Espero que esta designacao seja apenas temporaria.>>
 {advisor}Parece que os desejos de Brynn se realizaram.
 {player:0}E. Os deuses podem ser crueis assim.
 ->Parece que tiveram problemas aqui embaixo. Isso quer dizer que podemos nao estar sozinhos, entao fiquem atentos. **Continuar**
@@ -29901,7 +29901,7 @@ position: 4839,-1433
 <<AddHiddenEventToTile 0 SE.PrisonBreakAlarmGuards Boss>>
 <<AddHiddenEventToTile 1 SE.PrisonBreakAlarmExit Mission>>
 <<CreateNpc "id:temp,name:Guard,img:npc_male_hostile">>
-<<UpdateQuestObjectiveText "Reach the secret entrance and keep Rudolf alive">>
+<<UpdateQuestObjectiveText "Chegue a entrada secreta e mantenha Rudolf vivo">>
 {player:0}Espera, o que foi isso?
 **O som aspero de sinos ecoa pelo corredor.**
 {npc:PrisonBreakRudolf}E o alarme, fomos descobertos! Ah, voce realmente estragou tudo. Claro que Cassiopeia contratou um bando de puxa-sacos so para economizar algumas moedas.
@@ -29926,7 +29926,7 @@ position: 4468,-1714
 <<ModifyGlobalVar $PrisonBreakRudolfAlive "true">>
 <<AddHiddenEventToTile 1 SE.PrisonBreakAlarmExit Mission>>
 <<AddHiddenEventToTile 2 SE.PrisonBreakAlarmDelayed Unknown>>
-<<UpdateQuestObjectiveText "Reach the secret entrance and keep Rudolf alive">>
+<<UpdateQuestObjectiveText "Chegue a entrada secreta e mantenha Rudolf vivo">>
 <<stop>>
 ===
 title: SE.PrisonBreakBossDead
@@ -29944,7 +29944,7 @@ position: 6339,-1429
     {player:0}E o nosso pagamento foi com ele. 
     {hasTrait:Honorable}Nao posso, em sa consciencia, dizer que sentirao falta dele. Afinal, ele era um criminoso.
     ->Fizemos tudo o que pudemos. **Continuar**
-        <<UpdateQuestObjectiveText "Escape">>
+        <<UpdateQuestObjectiveText "Fuja">>
         <<stop>>
 <<endif>>
 ===
@@ -29973,7 +29973,7 @@ position: 2223,-1461
 {player:0}Sim. Contanto que ninguem note o sangue na minha capa.
 ->Ajam como se fossemos do lugar. **Continuar**
     <<SetEventFinished>>
-    <<UpdateQuestObjectiveText "Find and rescue Rudolf">>
+    <<UpdateQuestObjectiveText "Encontre e resgate Rudolf">>
     <<FadeOutScreen>>
     <<MoveToNewFloor Fort "PrisonBreakFloor2" "[questHouse] Dungeons" "Soldiers" "" "false">>
     <<FadeInScreen>>
@@ -29987,7 +29987,7 @@ groupName: ContentUpdateQuests
 position: 4486,-851
 ---
 <<set $Tileset to "fort">>
-<<set $QuestName to "Dark Deeds">>
+<<set $QuestName to "Atos Sombrios">>
 <<set $QuestDescription to "O Capitao da Guarda acredita saber o paradeiro de Percival. Quando estivermos prontos, vamos confronta-lo e leva-lo a justica.">>
 <<set $ShortDescription to "Encontre e confronte Percival">>
 <<set $QuestGoal to "Open">>
@@ -30009,7 +30009,7 @@ position: 4862,-855
 ---
 <<set $EventTrigger to "ON_QUEST_DESTINATION_ARRIVAL">>
 <<set $CheckForActiveQuest to "Quest.DarkDeeds3">>
-<<UpdateQuestObjectiveText "Defeat Percival">>
+<<UpdateQuestObjectiveText "Derrote Percival">>
 //<<SetTimeOfDayEvening true>>
 **Prontos para enfrentar Percival, um par de guardas os conduz para fora do escritorio do Capitao e pelas ruas enquanto a ultima luz do dia comeca a se esvanecer. Voces os seguem ate uma casa pequena e, sem esperar que a porta seja atendida, um dos guardas a derruba sem aviso. Esperando por voces no meio da sala seguinte esta Percival, parecendo um homem diferente, muito mais capaz do que fizera crer.**
 {npc:darkDeedsPercival}Entao voce sobreviveu?! **Seu leve choque se transforma em um sorriso cruel.** Fui um pouco descuidado ao encobrir meus rastros, nao fui? Vou precisar recomecar em outro lugar. **Ele suspira.** E logo quando eu estava me sentindo confortavel aqui. E um incomodo de verdade...
@@ -30026,7 +30026,7 @@ groupName: ContentUpdateQuests
 position: -416,1825
 ---
 <<set $Tileset to "cave">>
-<<set $QuestName to "A Dagger for Dridge">>
+<<set $QuestName to "Uma Adaga para Dridge">>
 <<set $QuestDescription to "Um sujeito de ma aparencia chamado Dridge nos pediu para comprar uma faca kris em seu nome.">>
 <<set $ShortDescription to "Obter a faca kris dos foras da lei">>
 <<set $EnemyCategoryGroup to "Bandits">>
@@ -30049,12 +30049,12 @@ groupName: ContentUpdateQuests
 position: 2556,1820
 ---
 <<set $Tileset to "crypt">>
-<<set $QuestName to "Delivery Among the Dead">>
+<<set $QuestName to "Entrega entre os Mortos">>
 <<set $QuestDescription to "Dridge nos pediu para entregar a faca kris que adquirimos ao seu mestre. Ao que parece, ele pode ser encontrado em uma cripta proxima, fazendo o que Dridge descreveu como pesquisa.">>
 <<set $ShortDescription to "Entregar a faca ao mestre de Dridge">>
 <<set $QuestGiverLocation to "Citizen">>
 <<set $DungeonLocation to "RANDOM_IN_COUNTY">>
-<<set $DungeonLocName to "Zubite Crypt">>
+<<set $DungeonLocName to "Cripta de Zubite">>
 <<set $EnemyCategoryGroup to "ZubiteCryptDelivery">>
 <<set $TurnInSpot to "NearestTown">>
 //<<set $QuestIntro to "End the voidspawn menace.">>
@@ -30223,7 +30223,7 @@ position: 694,1829
             {npc:dridgeBanditNpc}Agora, se nao se importam, voces todos podem se retirar. 
             ->**Continuar**
                 <<ModifyGlobalVar $DridgeKrisKnifePaid400 "true">>
-                <<UpdateQuestObjective Quest.DaggerForDridge primary success "Return to Dridge in [questTown].">>
+                <<UpdateQuestObjective Quest.DaggerForDridge primary success "Volte para Dridge em [questTown].">>
                 <<stop>>
         ->Tentei ser razoavel. Acho que teremos de seguir por outro caminho. **Lutar**
             <<ModifyGlobalVar $DridgeKrisKnifeFought "true">>
@@ -30235,7 +30235,7 @@ position: 694,1829
         <<ModifyGold -10>>
         <<GiveQuestItem itm_DridgeKrisKnife>>
         ->Vamos seguir nosso caminho. **Continuar**
-            <<UpdateQuestObjective Quest.DaggerForDridge primary success "Return to Dridge in [questTown].">>
+            <<UpdateQuestObjective Quest.DaggerForDridge primary success "Volte para Dridge em [questTown].">>
             <<stop>>
     ->[CheckGold:40]Quarenta pecas de ouro. **Oferecer 40[coin]**
         {npc:dridgeBanditNpc}Olha so o Senhor Importantao esbanjando ouro como quem joga graos de arroz! Queria eu saber quanto mais voces carregam nessas algibeiras ai.
@@ -30272,7 +30272,7 @@ position: 1439,1829
 {advisor}Conseguimos o que viemos buscar, [myTitle]. Mas acho que nossas taticas de negociacao ainda podem melhorar, hein?
 <<GiveQuestItem itm_DridgeKrisKnife>>
 ->De fato. **Continuar**
-    <<UpdateQuestObjective Quest.DaggerForDridge primary success "Return to Dridge in [questTown].">>
+    <<UpdateQuestObjective Quest.DaggerForDridge primary success "Volte para Dridge em [questTown].">>
     <<stop>>
 ===
 title: SE.DridgeKrisKnifeLost

@@ -1,5 +1,5 @@
 {
-  "generation": "20261015135802",
+  "generation": "20261015190338",
   "formats": {
     "hjson": 267,
     "textasset_xml": 1,
@@ -8,12 +8,13 @@
     "yarn": 1,
     "dll": 1
   },
-  "units": 13033,
+  "units": 13264,
   "interface": {
     "i2_mono": 2188,
     "scene_mono": 199,
-    "dll": 342,
+    "dll": 375,
+    "yarn_commands": 299,
     "semantics": 2
   },
-  "created_at": "2026-10-15T13:58:43"
+  "created_at": "2026-10-15T19:04:20"
 }

@@ -37,6 +37,20 @@ _SET_VAR_WHITELIST = {
     "ObjectiveText",
 }
 
+# Display-name and objective commands: their quoted arguments are pure
+# display text (SetPrimaryQuestObjectiveComplete only forwards the string
+# to UpdateQuestObjective, which sets the tracker text), so they can be
+# translated by value without touching quest ids or variables.
+_COMMAND_SHAPES = (
+    re.compile(r'^(\s*<<set \$(?:QuestName|DungeonLocName) to ")([^"]+)(">>)\s*$'),
+    re.compile(r'^(\s*<<UpdateQuestObjectiveText ")([^"]+)(">>)\s*$'),
+    re.compile(r'^(\s*<<SetPrimaryQuestObjectiveComplete ")([^"]+)(">>)\s*$'),
+    re.compile(
+        r'^(\s*<<UpdateQuestObjective Quest\.[A-Za-z0-9]+ [a-z]+ '
+        r'(?:active|success|failed) ")([^"]+)(">>)\s*$'
+    ),
+)
+
 
 def _translatable(value: str) -> bool:
     """Yarn body lines are always display text, so the HJSON identifier
@@ -223,8 +237,19 @@ class YarnFormat:
         )
 
     @classmethod
-    def rebuild(cls, input_root: Path, relpath: str, translations_by_id: dict[str, str]) -> bytes:
-        """Return rebuilt file bytes with translated lines applied by span."""
+    def rebuild(
+        cls,
+        input_root: Path,
+        relpath: str,
+        translations_by_id: dict[str, str],
+        commands: dict[str, str] | None = None,
+    ) -> bytes:
+        """Return rebuilt file bytes with translated lines applied by span.
+
+        When a command map is given, quoted display arguments of the
+        quest-name and objective commands are replaced by value as well;
+        quest ids, slot names and statuses are structural and untouched.
+        """
         path = input_root / relpath
         raw = path.read_bytes()
         bom = raw.startswith(b"\xef\xbb\xbf")
@@ -240,12 +265,62 @@ class YarnFormat:
             if in_quotes:
                 text = text.replace('"', '\"')
             edits.append((start, end, text))
+        # Span edits use offsets computed on the original text, so they
+        # must land before the line-anchored command map (which changes
+        # line lengths and would invalidate every remaining offset).
         for start, end, text in sorted(edits, reverse=True):
             decoded = decoded[:start] + text + decoded[end:]
+        if commands:
+            decoded, _ = cls.apply_command_map(decoded, commands)
         data = decoded.encode("utf-8")
         if bom:
             data = b"\xef\xbb\xbf" + data
         return data
+
+    @staticmethod
+    def apply_command_map(decoded: str, command_map: dict[str, str]) -> tuple[str, dict]:
+        """Replace quoted display args of quest/objective commands by value.
+
+        Returns (patched text, report) where the report counts one patch
+        per replaced argument. Lines commented with // are skipped, and
+        quest ids, slot names and statuses are structural and untouched.
+        """
+        lines = decoded.splitlines(keepends=True)
+        patched = 0
+        for index, line in enumerate(lines):
+            stripped = line.strip()
+            if stripped.startswith("//"):
+                continue
+            for shape in _COMMAND_SHAPES:
+                match = shape.match(line.rstrip("\r\n"))
+                if not match:
+                    continue
+                source = match.group(2)
+                target = command_map.get(source)
+                if target is None:
+                    break
+                clean = target.replace("\r", " ").replace("\n", " ").replace("\t", " ").strip()
+                new_line = line.replace(f'"{source}"', f'"{clean}"', 1)
+                lines[index] = new_line
+                patched += 1
+                break
+        report = {"patched": patched}
+        return "".join(lines), report
+
+    @classmethod
+    def validate_rebuilt(cls, data: bytes, command_map: dict[str, str]) -> list[str]:
+        """Re-scan rebuilt bytes; no mapped EN argument may survive."""
+        problems: list[str] = []
+        decoded = data.decode("utf-8-sig")
+        for line in decoded.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("//"):
+                continue
+            for shape in _COMMAND_SHAPES:
+                match = shape.match(line.rstrip("\r\n"))
+                if match and match.group(2) in command_map:
+                    problems.append(f"command arg still English: {match.group(2)!r}")
+        return problems
 
     @classmethod
     def validate_file(cls, input_root: Path, relpath: str) -> int:

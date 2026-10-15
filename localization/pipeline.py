@@ -543,11 +543,24 @@ class Pipeline:
                     target.parent.mkdir(parents=True, exist_ok=True)
                     target.write_bytes(rebuilt)
             elif handler_name == "yarn":
+                command_total = 0
                 for relpath in paths:
-                    rebuilt = handler.rebuild(input_root, relpath, accepted)
+                    rebuilt = handler.rebuild(
+                        input_root, relpath, accepted, (interface_map or {}).get("yarn_commands")
+                    )
+                    if interface_map and interface_map.get("yarn_commands"):
+                        problems = handler.validate_rebuilt(rebuilt, interface_map["yarn_commands"])
+                        if problems:
+                            raise ValueError(f"yarn command validation failed: {problems[:3]}")
+                    _, command_report = handler.apply_command_map(
+                        (input_root / relpath).read_bytes().decode("utf-8-sig"),
+                        interface_map["yarn_commands"],
+                    )
+                    command_total += command_report["patched"]
                     target = staging / relpath
                     target.parent.mkdir(parents=True, exist_ok=True)
                     target.write_bytes(rebuilt)
+                report["yarn_commands"] = {"patched": command_total}
             elif handler_name == "textasset_xml":
                 relpath = paths[0]
                 xml = handler.rebuild(input_root, relpath, accepted)
@@ -675,6 +688,7 @@ class Pipeline:
                 "i2_mono": report.get("i2_mono", {}).get("changed", 0),
                 "scene_mono": report.get("scene_mono", {}).get("patched_strings", 0),
                 "dll": report.get("dll", {}).get("total", 0),
+                "yarn_commands": report.get("yarn_commands", {}).get("patched", 0),
                 # Guard semantics version; counts are only comparable
                 # between manifests carrying the same version.
                 "semantics": 2,
