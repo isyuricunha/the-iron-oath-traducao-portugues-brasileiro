@@ -612,9 +612,9 @@ def _os_walk_gen(root: Path):
 
 
 def _maybe_asset(src: Path, dst: Path) -> bool:
-    """True when the source should be skipped for output (binary engine files)."""
+    """Skip game artwork and reference binaries in the player overlay."""
     del dst
     name = src.name.lower()
-    return name == "manifest.json" or (
+    return name == "manifest.json" or src.suffix.lower() == ".png" or (
         src.suffix.lower() in (".dll", ".exe") and "managed" in src.parts[-2].lower()
     )

@@ -10,6 +10,19 @@ Files copied from a clean GOG install (`D:\GOG Games\The Iron Oath` on the
 backend. The directory layout mirrors the game install so translated files
 can be dropped back in place.
 
+## Installation layout
+
+Copy the **contents of `PTBR/`** into the game's root directory, merging
+`The Iron Oath_Data/` with the existing folder. Do not copy the `PTBR`
+folder itself or the repository's original `The Iron Oath_Data/` tree.
+For example, `PTBR/The Iron Oath_Data/resources.assets` belongs at
+`<game>/The Iron Oath_Data/resources.assets`.
+
+PNG artwork is outside the translation scope. It is excluded from both
+repository trees and future generated overlays; the game uses the images
+already present in the player's installation. This overlay requires an
+existing game installation.
+
 ## Contents
 
 - `The Iron Oath_Data/StreamingAssets/Data/` - plain HJSON data files read
@@ -42,6 +55,20 @@ can be dropped back in place.
   MonoBehaviours and TMP components, so only the LocalizationText TextAsset
   is handled in the binary pipeline; the rest of the serialized text is
   deferred to a later phase.
+
+The files needed to investigate menus are already present at their game
+paths: `resources.assets`, `level0` through `level6`, `sharedassets*.assets`
+and `Managed/Assembly-CSharp.dll`. Keep the repository originals separate
+from the translated `PTBR/` overlay. Do not replace the original
+`resources.assets` with the installed copy, which already contains changes.
+
+The actual I2 localization table is the `I2Languages` MonoBehaviour in
+`resources.assets` (path ID 1841 in this build): 2,718 entries. The current
+pipeline does not translate it. The `LocalizationText` XML contains sample
+labels and is not the main UI table. Menu text also exists in scene assets
+and directly in game code, so the current overlay does not provide a full
+menu translation. Managed DLLs are retained as source references and are
+currently excluded from generated overlays.
 
 ## Translation toolkit
 

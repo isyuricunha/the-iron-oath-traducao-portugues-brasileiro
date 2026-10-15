@@ -16,3 +16,6 @@ __pycache__/
 # Unity blob data (900 MB class, stays out of git)
 *.resS
 *.resource
+
+# Game artwork is outside the translation scope (source and PTBR overlay).
+*.[pP][nN][gG]
