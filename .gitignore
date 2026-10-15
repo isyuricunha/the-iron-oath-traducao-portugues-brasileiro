@@ -12,6 +12,11 @@ __pycache__/
 .ruff_cache/
 
 # Local tooling (never committed)
+# --- overlays and local tooling ---
+/PTBR.prev-*/
+localization/dotnet/DllStringPatch/bin/
+localization/dotnet/DllStringPatch/obj/
+
 /tools/
 # Unity blob data (900 MB class, stays out of git)
 *.resS

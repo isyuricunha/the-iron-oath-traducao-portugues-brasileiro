@@ -1982,7 +1982,7 @@ groupName: Safeguarding A Shipment
 position: -282,7
 ---
 <<set $CheckForActiveQuest to "Quest.SafeguardingAShipment" >>
-**Nosso contratante perdeu a paciencia e acabou de ser visto saindo de nossa caravana furioso. Infelizmente, isso repercutira mal na reputacao de nossa companhia na cidade de [questTown].**
+Nosso contratante perdeu a paciencia e acabou de ser visto saindo de nossa caravana furioso. Infelizmente, isso repercutira mal na reputacao de nossa companhia na cidade de [questTown].
 ->**Continuar**
     <<stop>>
 ===
@@ -3172,7 +3172,7 @@ position: -517,215
 {player:0}Dificil acreditar que e de manha. E de manha, nao e? Ultimamente nao da pra saber, com o ceu tao escuro pra caramba. 
 **Nesse instante, um estrondo ensurdecedor atrai a atencao de todos, fazendo sua caravana parar bruscamente. Voce fixa os olhos na direcao do som, sem saber o que espera ver, mas fitando atentamente mesmo assim. O ceu escurece ainda mais, agora negro como a noite, e algumas pessoas comecam a tatear ao redor, tentando localizar e acender tochas.**
 {player:0}Mas que--
-**Um rugido aterrorizante de outro mundo ecoa a distancia e, instantes depois, um dragao de tamanho imensuravel rasga o proprio tecido do ceu e surge a vista, energias sombrias se espalhando ao seu redor. Com as asas batendo enquanto serpenteia pelos ares, ele desce em direcao ao chao em velocidade alarmante, cruzando a terra em direcao oposta a sua, para o alivio de todos.** 
+Um rugido aterrorizante de outro mundo ecoa a distancia e, instantes depois, um dragao de tamanho imensuravel rasga o proprio tecido do ceu e surge a vista, energias sombrias se espalhando ao seu redor. Com as asas batendo enquanto serpenteia pelos ares, ele desce em direcao ao chao em velocidade alarmante, cruzando a terra em direcao oposta a sua, para o alivio de todos. 
 ->**Continuar**
     <<ForceScourge graveswood>> 
     <<stop>>
@@ -3476,7 +3476,7 @@ position: -431,-1394
 <<set $EventTrigger to "ON_COMPANY_MOMENT">>
 <<set $Requirements to "CompanyMoment:RecentDeath,HighRepThem">>
 <<set $Priority to 11>>
-**Enquanto a noticia sombria da morte de [FNameP0] se espalha pela sua caravana, o animo de todos se abate visivelmente. [FNameP1] se aproxima de voce, sentindo a perda mais do que a maioria.** 
+Enquanto a noticia sombria da morte de [FNameP0] se espalha pela sua caravana, o animo de todos se abate visivelmente. [FNameP1] se aproxima de voce, sentindo a perda mais do que a maioria. 
 {player:1}E dificil acreditar que se foi, ne, chefe? Eu esperava que pudessemos tirar um tempo para dar a [FNameP0] uma despedida a altura. Sei que muitos de nos ficariam gratos pela chance de lamentar [pronounPoss0] morte como se deve.
 ->[FNameP0] merece um funeral de guerreiro, e suponho que um tempo de folga faria bem a todos nos. **Passam-se 7 dias**  
     <<AdjustLoyaltyBasedOnFondnessFor 0 5>>
@@ -7161,7 +7161,7 @@ groupName: CampaignPrologue
 position: 23,184
 ---
 <<set $Icon to "Loot">>
-<<ShowTutorialMessage "EEventos de Exploracao "WAo interagir com um Evento de Exploracao, muitas vezes voce tera varias escolhas disponiveis, algumas custando diferentes quantidades de Tempo. Seus personagens terao suas proprias opinioes sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.>> 
+<<ShowTutorialMessage "EEEventos de Exploracao "WAo interagir com um Evento de Exploracao, voce geralmente tera varias escolhas disponiveis, as vezes custando varias quantidades de Tempo. Os seus personagens terao opiniao propria sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.>> 
 **Voce avista uma mochila descartada adiante, provavelmente largada as pressas pelos violadores de tumulos.**
 {mainChar0}Nao espere encontrar muito valor, mas nao faz sentido deixa-la para tras.
 ->[Time:1]Pegue o que parecer util. **Saquear**
@@ -7675,7 +7675,7 @@ position: -222,-41
 <<SetFacingLeft [npc8]>>
 <<AddPause 1.5>> 
 <<MoveNpc 8 400 0 true>>
-<<ShowTutorialMessage "FLute ate a Morte! "WQuando as chances estao contra voce, as vezes tudo o que pode fazer e minimizar suas perdas. Use tudo o que estiver a sua disposicao e nao se segure!>>
+<<ShowTutorialMessage "FFLute ate a Morte! "WQuando as chances estao contra voce, as vezes tudo o que se pode fazer e minimizar as perdas. Use tudo o que estiver ao seu alcance e nao segure nada!>>
 //Torin and other antagonists escape
 
 //combat starts, new mission name: 'Betrayed and Broken', objective: 'Fight to the Death'
@@ -8108,7 +8108,7 @@ position: 361,-566
 {player:0}Ele estava com isso. Achei que poderiamos dar utilidade a isso.
 <<GiveItem "tioEnchantmentAccuracy1">>
 ->Bom olho, [FNameP0]. **Continuar**
-<<ShowTutorialMessage "TutorialEnchantment" "EEncantamentos "EEncantamentos sao pergaminhos magicos que podem ser aplicados ao seu equipamento para conceder varios atributos e efeitos unicos. Os pergaminhos sao consumidos ao usar e os efeitos sao permanentes, a menos que sejam substituidos por outro encantamento.\n\nTo Para usar um encantamento, abra a tela 'Gerenciar Companhia' (<sprite name=\PC-g\">>). Clique com o botao esquerdo <sprite name=\PC-leftClick\">> no encantamento que deseja aplicar e, em seguida, clique com o botao direito <sprite name=\PC-rightClick\">> em um equipamento adequado para aplica-lo.>>
+<<ShowTutorialMessage "TutorialEnchantment" "EEEncantamentos "E>>). Clique com o botao esquerdo <sprite name=\PC-leftClick\PC-g\">>). Clique com o botao esquerdo <sprite name=\PC-leftClick\">> sobre o encantamento que deseja aplicar, e depois clique com o botao direito <sprite name=\PC-rightClick\">> sobre uma peca de equipamento adequada para aplica-lo.>>
     <<stop>>
 ===
 title: SE.CampaignRefugeesCaveCamp
@@ -13840,17 +13840,17 @@ position: -68,-253
 <<set $EventTrigger to "AFTER_DRAGON_ATTACK">>
 <<if hasHighCityRep() is "true">> 
 {
-    <<ShowAdvisorMessage "SFlagelo "" "TO Flagelo esta sobre nos, [myTitle]. Para piorar as coisas, disseram-me que o dragao atacou a cidade de [scourgeCity]. O condado nao tardara a ficar repleto de Voidspawn. Devemos mudar de rota? Tenho certeza de que nossos aliados de la agradeceriam nossa ajuda, como agradeceram no passado. Que os deuses saibam que precisarao de cada gota dela. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "TO Flagelo esta sobre nos, [myTitle]. Para piorar, ouvi dizer que o dragao atacou a cidade de [scourgeCity]. O condado com certeza vai estar repleto de Voidspawn em breve. Devemos mudar o rumo? Tenho certeza de que os nossos aliados de la ficariam gratos pela nossa ajuda, como ja ficaram no passado. Os deuses sabem que eles vao precisar de cada gota dela. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "AOutro Flagelo comecou, [myTitle] - soube que o dragao atacou a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nas melhores relacoes, mas pode ser uma chance de melhorarmos nossos lacos com eles. Afinal, vidas inocentes estao em jogo. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "AOutro Flagelo comecou, [myTitle]. Ouvi dizer que o dragao atingiu a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nos melhores termos, mas pode ser uma chance de melhorarmos as nossas relacoes com eles. Afinal, vidas inocentes estao em jogo. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "IParece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque de dragao. Sem duvida havera um rastro de Voidspawn em seu caminho. Apesar das circunstancias, isso e uma boa oportunidade para ganharmos algum dinheiro - se voce achar que a companhia esta a altura da tarefa, claro. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IParece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque do dragao. Sem duvida vai haver um rastro de Voidspawn por onde ele passou. Apesar das circunstancias, e uma boa oportunidade de ganhar algumas moedas, se voce achar que a companhia esta a altura da tarefa. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<endif>>
@@ -13864,17 +13864,17 @@ position: 310,-257
 <<AssignQuest Quest.ScourgeCrisisCityDefense>> 
 <<if hasHighCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "IDisseram-me que a horda de Voidspawn chegara a [scourgeCity] em no maximo trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito mesmo que seja do nosso interesse fazer isso, se quiser minha opiniao. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito que e do nosso interesse faze-lo, se quiser a minha opiniao. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "IDisseram-me que a horda de Voidspawn chegara a [scourgeCity] em no maximo trinta dias. Inumeras vidas inocentes serao perdidas se a cidade cair. Sei que nossa relacao com eles e conturbada na melhor das hipoteses, entao nao ha necessidade de arriscar nossas vidas no que pode muito bem ser uma missao suicida. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Incontaveis inocentes serao perdidos se a cidade cair. Sei que a nossa relacao com eles e no maximo tensa, entao nao ha necessidade de arriscar as nossas vidas no que pode muito bem ser uma missao suicida. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 << else >>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "IDisseram-me que a horda de Voidspawn chegara a [scourgeCity] em no maximo trinta dias. Tenho certeza de que seriamos bem recompensados por nossa ajuda, mas se a cidade cair, nao havera ninguem sobrando para receber o pagamento. Sinceramente, nao sei se vale o risco para nossas tropas, [myTitle], mas a decisao e sua. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Tenho certeza de que seriamos bem compensados pela ajuda, mas se a cidade cair, nao sobrara ninguem para pagar. Honestamente, nao tenho certeza se vale o risco para as nossas tropas, [myTitle], mas a decisao e sua. "IDe fato. Obrigado por me informar.>>
     <<stop>>
 }
 <<endif>>
@@ -13888,12 +13888,12 @@ position: 691,-252
 <<set $EventTrigger to "SCOURGE_DEFENSE_SIM_FAILURE">>
 <<if $ScourgeCrisisHelped is "true">>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "GNoticias sombrias, [myTitle]: a cidade de [scourgeCity] foi infelizmente tomada pelos Voidspawn. Disseram-me que foi um verdadeiro massacre. Cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so nos resta esperar que suas mortes tenham sido rapidas. "TEssas sao noticias terriveis.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]: a cidade de [scourgeCity] infelizmente foi tomada pelos Voidspawn. Ouvi dizer que foi um verdadeiro massacre. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SFlagelo "" "GNoticias sombrias, [myTitle]. Acabei de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Disseram-me que foi um verdadeiro massacre, entao duvido que nossa participacao tivesse feito muita diferenca. Cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so nos resta esperar que suas mortes tenham sido rapidas. "TEssas sao noticias terriveis.>>
+    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]. Acabo de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Ouvi dizer que foi um verdadeiro massacre, entao duvido que a nossa participacao faria muita diferenca. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
     <<stop>>
 }
 <<endif>>
@@ -21601,7 +21601,7 @@ position: -42,38
 //|NEXTPAGE|
 {advisor}Uma carta de [FNameC1], [myTitle]. O ardil dele deve ter dado certo. 
 ->Vamos torcer. **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "RReunir-me aos Black Skull foi mais facil do que eu esperava. [FNameA0] ficou quase contente com meu retorno, ou pelo menos tao perto disso quanto ele jamais chegara de uma emocao assim. De todo modo, ele parece nao desconfiar dos meus motivos.\n\nYou ficara satisfeito em saber que Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele mostrou talento de verdade como ferreiro, e [FNameA0] o mantem trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que sua vida corra perigo. E antes que voce pense nisso, eu ja cogitei tira-lo de la as escondidas e, infelizmente, nao e uma opcao. Receio que teremos de levar nosso plano ate o fim.|NEXTPAGE|Precisarei de algum tempo para me estabelecer e conquistar a confianca de [FNameA0], mas enviarei noticias assim que tiver algo para voces agirem. Cuidem-se por ai, meus amigos; [FNameA0] enviara muito mais do que assassinos de segunda categoria contra voces.>>
+<<ShowLetter "AAUma carta de [FNameC1] "RVoltar para a Black Skull foi mais facil do que o esperado. [FNameA0] ficou quase feliz com o meu retorno, ou pelo menos o mais proximo disso que ele conseguiria chegar. De qualquer forma, ele parece nao suspeitar dos meus motivos.  Voce vai ficar feliz em saber que o Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele tem mostrado real talento como ferreiro, e [FNameA0] o tem mantido trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que a vida dele esteja em perigo. E antes que pense nisso, ja considerei tira-lo de la as escondidas, e infelizmente nao e uma opcao. Temo que vamos precisar ver o nosso plano por inteiro.|NEXTPAGE|Vou precisar de um tempo para me ambientar e ganhar a confianca de [FNameA0], mas mandarei noticias assim que tiver algo para voces agirem. Cuidado la fora, meus amigos; [FNameA0] vai mandar muito mais que assassinos de segunda linha no caminho de voces.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     **Voce lanca um olhar de relance para [FNameC0], que sorri aliviado com a noticia sobre Gedrick.**
     {mainChar0}Gracas aos Deuses. O fantasma da minha irma nao precisa me atormentar ainda. E pelo menos agora ele tem [FNameC1] cuidando dele. 
@@ -22014,7 +22014,7 @@ position: -274,755
 <<set $Priority to 50>>
 {advisor}Recebemos uma correspondencia de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "IEspero que esta carta o encontre bem. Descobri o paradeiro de um acampamento dos Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer la por pelo menos algumas semanas. Nao posso afirmar com certeza o que [FNameA0] os mandou fazer, mas se voces conseguirem interromper qualquer que seja a missao deles, isso ajudara muito a nossa causa.\n\n[FNameC1]>>
+<<ShowLetter "AAUma carta de [FNameC1] "IEspero que esta carta os encontre bem. Descobri o paradeiro de um acampamento da Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer estacionados la por pelo menos algumas semanas. Nao posso dizer com certeza o que [FNameA0] os tem feito fazer, mas se voces interromperem a missao que estiverem cumprindo, isso vai ajudar muito a nossa causa.  [FNameC1]>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}[FNameC1]'s position in the Black Skull seems to be bearing fruit. 
 <<else>>
@@ -22274,7 +22274,7 @@ position: -277,1855
 <<set $Priority to 100>>
 {advisor}Recebemos uma carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "MMeus amigos, fiquei sabendo que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do contratante com quem devem se encontrar. Pode valer a pena investigar, caso voces estejam por perto. [FNameA0] nao ficara contente se souber de outro contrato fracassado, mas para os meus ouvidos sera musica. Boa sorte. \n\n[FNameC1]>>
+<<ShowLetter "AAUma carta de [FNameC1] "MMeus amigos, descobri que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do empregador com quem eles vao se encontrar. Pode valer a pena conferir se voces estiverem por perto. [FNameA0] nao ficara nada contente se souber de outro contrato fracassado, mas sera musica para os meus ouvidos. Boa sorte.   [FNameC1]>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Este nosso plano parece estar dando certo ate agora. O que acha, chefe?
 <<else>>
@@ -22436,7 +22436,7 @@ position: -50,318
 <<set $Priority to 9999>>
 {advisor}Uma carta urgente de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "DQueridos amigos,\n\nI recentemente descobri a localizacao de um dos principais depositos dos Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos empalidecem diante desta tarefa. Mal posso esperar para ver [FNameA0] perder as estribeiras quando souber da noticia. Boa sorte!>>
+<<ShowLetter "AAUma carta de [FNameC1] "DQueridos amigos,  Descobri recentemente a localizacao de um dos principais armazens da Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos sao nada perto desta tarefa. Mal posso esperar para ver [FNameA0] surtar quando ouvir a noticia. Boa sorte!>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Finalmente, uma missao com algum peso de verdade. 
 <<else>>
@@ -22732,7 +22732,7 @@ position: -54,612
 {advisor}Outra carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
 <<CacheHouseWithHighRepExcludeCapital "CampaignBSWarHouseHighRep" "CampaignBSWarHouseHighRepName">>
-<<ShowLetter "AUma carta de [FNameC1] "IReceio ter noticias perturbadoras para voces, meus amigos. Os Black Skull foram contratados pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles for bem-sucedido, [FNameA0] ganhara muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas deve acontecer em breve - voces precisam chegar ate o Rei e avisa-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao imagino que terao muita dificuldade, mas o tempo e essencial.>>
+<<ShowLetter "AAUma carta de [FNameC1] "ITemo ter noticias preocupantes, meus amigos. A Black Skull foi contratada pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles der certo, [FNameA0] vai ganhar muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas vai acontecer em breve: voces precisam chegar ate o Rei e alerta-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao espero que tenham problema com isso, mas o tempo e essencial.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Isso nao e uma boa noticia. Temos que nos apressar.
 <<else>>
@@ -24125,7 +24125,7 @@ position: -47,2578
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "DApesar de nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos sao graves, mas suspeito que ele se recupere - ao menos parcialmente. De todo modo, provavelmente sera um homem mudado. Pensei em tentar terminar o servico eu mesmo, mas ele esta sob guarda dia e noite, mais do que nunca. Mesmo se eu tivesse sucesso, isso significaria a morte para mim e para Gedrick.\n\nThe boa noticia e que os [antCompany] sofreram um grande golpe em seus numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.\n\nI acredito que logo chegara o momento em que estarao fracos o bastante para voces atacarem. Como sempre, manterei voces informados sobre qualquer oportunidade.>>
+<<ShowLetter "AAUma carta de [FNameC1] "DApesar dos nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos dele sao graves, mas suspeito que ele vai se recuperar, pelo menos em parte. De qualquer forma, provavelmente sera um homem mudado. Ja pensei em terminar o servico eu mesmo, mas ele e vigiado dia e noite, mais do que nunca. Seria a morte para mim e para o Gedrick, mesmo que eu conseguisse.  A boa noticia e que os [antCompany] sofreram um grande golpe em numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.  Acredito que o momento em que eles estarao fracos o suficiente para voces atacarem esta se aproximando. Como sempre, vou mante-los informados de qualquer oportunidade.>>
 <<if isCharacterAlive("mainChar0") is "true">>
     **[FNameC0] resmunga com desagrado.**
     {mainChar0}Ele esta vivo, hein? Como sempre.
@@ -24168,7 +24168,7 @@ position: -46,3380
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos uma correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AUma carta de [FNameC1] "ITenho certeza de que todos voces ja ouviram as noticias de Dragate a esta altura. O proprio [FNameA0] foi investigar pessoalmente e, embora eu nao possa confirmar, acredito que ele voltou com algo digno de nota. Ele e um homem mudado desde o retorno: mais forte do que jamais foi, ate mesmo antes do ferimento, se e que podem acreditar.\n\nMentally, porem, ainda restam duvidas sobre a lideranca dele. Mais de uma vez, o peguei falando sozinho como um lunatico desvairado. Algumas pobres almas ate tentaram a sorte ao desafia-lo, mas tudo o que ganharam foi uma nova morada seis pes abaixo da terra. Agora ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mudar nossa base de operacoes para um forte abandonado que encontrou em Dragate. Todos os dias, ele envia novos grupos de busca para as ruinas. Parece estar procurando algo especifico, mas nao diz o que. So exige que tudo o que for encontrado lhe seja relatado.\n\nGiven esses acontecimentos, provavelmente temos apenas uma janela curta para atacar. Vou elaborar um plano e entrarei em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por todo Caelum.>>
+<<ShowLetter "AAUma carta de [FNameC1] "ICertamente ja ouviram as noticias de Dragate. O proprio [FNameA0] foi verificar, e embora eu nao possa confirmar, acredito que ele voltou com algo de valor. Ele e um homem mudado desde o retorno: mais forte do que nunca foi, mesmo antes do ferimento, se puderem acreditar.  Na cabeca, no entanto, duvidas sobre a lideranca dele permanecem. Mais de uma vez, o peguei falando sozinho como um lunatico. Alguns pobres cocebolas ate tentaram desafia-lo, mas tudo o que ganharam foi uma nova casa a dois metros de profundidade. Ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mover a nossa base de operacoes para um forte abandonado que ele encontrou em Dragate. Todos os dias, ele envia novas equipes de busca para as ruinas. Ele parece estar procurando algo especifico, mas nao diz o que. Ele so quer que tudo o que for encontrado seja relatado a ele.  Dados esses desenvolvimentos, provavelmente temos apenas uma curta janela para atacar. Vou formular um plano e entrar em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por Caelum.>>
 {advisor}Noticias perturbadoras. O que [FNameA0] descobriu, entao?
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Talvez possamos encontrar uma reliquia nossa para equilibrar o jogo.
@@ -24188,7 +24188,7 @@ position: -44,3112
 <<set $PrevNode to "SE.CampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WNoticias do Leste "" "[[myTitle], tenho ouvido dizer que houve uma explosao colossal em Dragate que despedacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que sao dos proprios Deuses. Cacadores de tesouros e pesquisadores tambem afirmam ter encontrado reliquias poderosas nas profundezas da terra. Nao posso afirmar se esses boatos sao verdadeiros ou nao.\n\nI tentarei reunir mais informacoes antes de pensarmos em pisar na regiao. "IInteressante. Mantenha-me informado.>>
+<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer.  Vou tentar reunir mais informacoes antes de pensarmos em pisar na regiao. "IInteressante. Mantenha-me informado.>>
     <<stop>>
 ===
 title: Quest.DragateQuestsRebuildKorunhal
@@ -25657,7 +25657,7 @@ position: 334,3118
 <<set $PrevNode to "SE.FailedCampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WNoticias do Leste "" "[[myTitle], estou sabendo que houve uma explosao enorme em Dragate que despedacou completamente a terra. Ao que parece, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que sao dos proprios Deuses. Cacadores de tesouros e pesquisadores tambem afirmam ter encontrado reliquias poderosas nas profundezas da terra. Se esses rumores sao verdadeiros ou nao, nao posso afirmar. "WTeremos que descobrir por nos mesmos.>>
+<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer. "WVamos ter que descobrir por conta propria.>>
     <<SetCanTravelTo Korunhal true>>
     <<stop>>
 ===
@@ -26424,7 +26424,7 @@ position: 830,-86
 
 **A luz da sua tocha revela dezenas de restos esqueleticos adiante: cranios esmagados, ossos rachados e vestes antigas que ja sao pouco mais que fibras soltas de tecido. [FNameP0] pega um diario com capa de couro meio escondido debaixo de um femur e o abre nas ultimas paginas. Voce se inclina por tras de [pronounObj0] para ler as palavras.**
 ->**Ler o registro**
-<<ShowLetter "66o de Primavera, 87 "ITemo que, mesmo tendo lancado aquele espolio amaldicoado ao mar, o estrago ja esteja feito. Desde nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Afirmou que estavam roubando dele, mas nao sei se acredito nisso. O resto da tripulacao nao esta muito melhor, eu inclusive. Ando vendo coisas, ouvindo coisas. So os Deuses sabem se e real ou nao. Ja nao consigo distinguir. Tudo o que sei e que nunca deveriamos ter ido aquele maldito lugar, e agora nossa ganancia sera a morte de todos nos.>>
+<<ShowLetter "666o de Primavera, 87 "ITemo que, mesmo tendo jogado aquele espolio amaldicoado no mar, o dano ja esta feito. Desde o nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Alegou que estavam roubando dele, mas nao sei se acredito. O resto da tripulacao nao esta nada melhor, eu inclusive. Tenho visto coisas, ouvido coisas. Os deuses sabem se e real ou nao. Ja nao consigo dizer. So sei que nunca deveriamos ter ido aquele maldito lugar, e agora a nossa ganancia sera a morte de todos nos.>>
 {player:0}Deuses... ele deve ter enlouquecido e abatido toda a tripulacao. 
 {advisor}E melhor encontrarmos logo essa Luneta.
 **O ar de repente esfria, e os ossos espalhados ao seu redor comecam a chacoalhar, tentando se reconstruir mais uma vez. Um arranhar se ouve vindo de um corredor proximo, como metal contra rocha, e uma voz grave e inumana troveja logo em seguida.**
@@ -29770,7 +29770,7 @@ position: 363,-1455
 **[FNameP0] vasculha o corpo e pega um diario ensopado de sangue.**
 {player:0}Talvez encontremos alguma informacao util aqui?
 ->**Ler a ultima anotacao**
-<<ShowLetter "BDiario de Brynn "TO capitao designou nossa unidade para a passagem antiga. Nao sei por que, ela esta barricada ha anos. Disseram-nos que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem atravessar, nao e? Ao menos isso nos daria algo para fazer. Espero mesmo que essa designacao seja apenas temporaria.>>
+<<ShowLetter "BBDiario de Brynn "TO capitao designou a nossa unidade para a passagem antiga. Nao sei por que; ela esta barricada ha anos. Nos disseram que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem passar, certo? Ao menos isso nos da algo para fazer. Espero que esta designacao seja apenas temporaria.>>
 {advisor}Parece que os desejos de Brynn se realizaram.
 {player:0}E. Os deuses podem ser crueis assim.
 ->Parece que tiveram problemas aqui embaixo. Isso quer dizer que podemos nao estar sozinhos, entao fiquem atentos. **Continuar**

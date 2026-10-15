@@ -48,10 +48,12 @@ _BAD_QUOTES = "«»‹›“”‘’′″"
 _BAD_DASHES = "—–―−‐‑﹣"
 _BAD_ANGLE_QUOTES = ("<<", ">>")
 
-# Common PT-BR words whose ASCII-fied form is a spelling error.
+# Common PT-BR words whose ASCII-fied form is a spelling error. Only
+# words that own a diacritic belong here: 'guerra' and friends never
+# carry one and would flag correct text.
 _ASCIIFIED = re.compile(
     r"\b(?:nao|voce|lider|configuracao|traducao|publicacao|informacao|"
-    r"educacao|opcao|acao|precis|guerra|estrategia|agencia|experiencia)\b",
+    r"educacao|opcao|acao|estrategia|agencia|experiencia)\b",
     re.IGNORECASE,
 )
 
@@ -193,6 +195,99 @@ def validate_punctuation(text: str) -> list[str]:
     if _ASCIIFIED.search(text):
         violations.append("ASCII-fied Portuguese word detected (missing diacritics)")
     return violations
+
+
+# Token patterns for hand-written targets: only genuine technical
+# fragments (placeholders, markup, bracket references, numbers, URLs).
+# Deliberately lighter than protect(): prose like 'retire/die' or a
+# leading '\n' escape is translatable text, not a path.
+_MANUAL_TOKEN_RE = re.compile(
+    r"\{[^{}]*\}"                       # {[PARAM1]}, {0}, {*refs*}
+    r"|</?[a-zA-Z][a-zA-Z0-9]*(?:=[^<>]*)?/?>"   # <color=#...>, </color>
+    r"|\[[^\[\]]*\]"                    # [myTitle], [i2p_One]
+    r"|__KEEP_\d+__"
+    r"|\d+(?:[.,]\d+)*%?"
+    r"|https?://\S+"
+)
+
+_ESCAPE_RUN_RE = re.compile(r"\\+n")
+
+
+def _manual_tokens(text: str) -> Counter:
+    return Counter(_MANUAL_TOKEN_RE.findall(text))
+
+
+def _align_escape_runs(en: str, pt: str) -> str:
+    """Copy the EN escaped-newline structure onto the PT text.
+
+    The game may treat literal '\n' escapes specially, so the PT keeps
+    the exact same run lengths as the EN source.
+    """
+    en_runs = _ESCAPE_RUN_RE.findall(en)
+    if not en_runs:
+        return pt
+    # Walk the PT runs with finditer and substitute each with the EN
+    # counterpart so escape lengths match the source exactly.
+    out = []
+    last = 0
+    for pos, match in enumerate(_ESCAPE_RUN_RE.finditer(pt)):
+        out.append(pt[last:match.start()])
+        out.append(en_runs[pos] if pos < len(en_runs) else match.group(0))
+        last = match.end()
+    out.append(pt[last:])
+    return "".join(out)
+
+
+def _balanced_markup(target: str) -> None:
+    """Paired tags (with or without attributes) must balance and nest."""
+    for name in sorted(set(re.findall(r"<([a-zA-Z][a-zA-Z0-9]*)", target))):
+        token_re = re.compile(rf"<(/?){name}(?:[\s=][^<>]*)?>")
+        depth = 0
+        has_close = False
+        for match in token_re.finditer(target):
+            if match.group(1):
+                depth -= 1
+                has_close = True
+                if depth < 0:
+                    raise ProtectionError(f"tag </{name}> closes before its opening tag")
+            else:
+                depth += 1
+        if has_close and depth != 0:
+            raise ProtectionError(f"tag <{name}> is unbalanced in the output")
+
+
+def validate_manual_target(source: str, target: str) -> str:
+    """Validate a hand-written target against its source's token contract.
+
+    Both sides are tokenized with the same technical-fragment patterns
+    and the multisets must match exactly (nothing lost, nothing
+    invented, numbers unchanged). Color tags must stay balanced.
+
+    Returns the canonical target with escape runs mirrored to the
+    source; callers must store the returned value.
+    """
+    target = _align_escape_runs(source, target)
+
+    expected = _manual_tokens(source)
+    actual = _manual_tokens(target)
+    if expected != actual:
+        missing = expected - actual
+        extra = actual - expected
+        problems = []
+        if missing:
+            problems.append(f"missing fragments: {sorted(missing.elements())[:4]}")
+        if extra:
+            problems.append(f"unexpected fragments: {sorted(extra.elements())[:4]}")
+        raise ProtectionError("; ".join(problems))
+
+    # Paired markup must stay balanced in the target.
+    _balanced_markup(target)
+
+    violations = validate_punctuation(target)
+    if violations:
+        raise ProtectionError("; ".join(violations))
+
+    return target
 
 
 def restore(text: str, by_token: dict[str, ProtectedToken]) -> str:

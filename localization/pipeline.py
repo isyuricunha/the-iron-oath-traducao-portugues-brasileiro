@@ -504,9 +504,34 @@ class Pipeline:
 
     # ---------------- publication ----------------
 
-    def build_staging(self, input_root: Path, accepted: dict[str, str], staging: Path) -> None:
+    def build_staging(
+        self,
+        input_root: Path,
+        accepted: dict[str, str],
+        staging: Path,
+        interface_map: dict | None = None,
+    ) -> dict:
+        """Build the complete player overlay in staging.
+
+        `accepted` maps unit ids to targets for the provider-driven
+        formats (hjson, yarn, textasset_xml) and the I2 table. The
+        optional `interface_map` carries the hand-written sections
+        ({scenes: {en: pt}, dll: {type: {en: pt}}}) patched surgically.
+        Returns a report with per-source patch counts.
+        """
+        import shutil as _shutil
+
+        from .formats.dll_format import DllFormat
+        from .formats.i2_mono_format import I2MonoFormat
+        from .formats.scene_mono_format import SceneMonoFormat
+
+        interface_map = interface_map or {}
+        scene_map: dict[str, str] = interface_map.get("scenes", {})
+        dll_map: dict[str, dict[str, str]] = interface_map.get("dll", {})
+        report: dict = {}
+
         discovered = formats.discover(input_root, self.settings.format)
-        shutil.rmtree(staging, ignore_errors=True)
+        _shutil.rmtree(staging, ignore_errors=True)
         staging.mkdir(parents=True, exist_ok=True)
         for handler_name, paths in discovered.items():
             handler = formats.HANDLERS[handler_name]
@@ -550,6 +575,63 @@ class Pipeline:
                                 )
                 if not found:
                     raise ValueError("resources.assets rebuilt without LocalizationText")
+            elif handler_name == "i2_mono":
+                translations = {
+                    uid.split(":", 1)[1]: value
+                    for uid, value in accepted.items()
+                    if uid.startswith("i2:")
+                }
+                target = staging / I2MonoFormat.ASSET_PATH
+                target.parent.mkdir(parents=True, exist_ok=True)
+                # The staging copy already carries the LocalizationText
+                # patch from the textasset_xml branch; patch the table
+                # into that same file.
+                write_report = I2MonoFormat.write_asset(target, translations)
+                problems = I2MonoFormat.validate_table(target, translations)
+                if problems:
+                    raise ValueError(f"I2 table validation failed: {problems[:3]}")
+                diff = _asset_object_diff(
+                    input_root / I2MonoFormat.ASSET_PATH,
+                    target,
+                    allowed_textassets={"LocalizationText"},
+                    allowed_monobehaviours={write_report["path_id"]},
+                )
+                if diff:
+                    raise ValueError(f"resources.assets diff includes unintended objects: {diff[:3]}")
+                report["i2_mono"] = {**write_report, "problems": 0}
+            elif handler_name == "scene_mono":
+                hits: dict[str, int] = {}
+                for relpath in paths:
+                    src = input_root / relpath
+                    dst = staging / relpath
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    _shutil.copy2(src, dst)
+                    file_report = SceneMonoFormat.patch_file(dst, scene_map)
+                    for source, count in file_report["hits"].items():
+                        hits[source] = hits.get(source, 0) + count
+                    problems = SceneMonoFormat.validate_file(
+                        dst, {k: scene_map[k] for k in file_report["hits"]}
+                    )
+                    if problems:
+                        raise ValueError(f"scene validation failed for {relpath}: {problems[:3]}")
+                    diff = _asset_object_diff(
+                        input_root / relpath,
+                        dst,
+                        allowed_monobehaviours=set(file_report["touched"]),
+                    )
+                    if diff:
+                        raise ValueError(f"{relpath} diff includes unintended objects: {diff[:3]}")
+                if scene_map and set(hits) != set(scene_map):
+                    missing = sorted(set(scene_map) - set(hits))
+                    raise ValueError(f"scene map entries never found at verified sites: {missing[:5]}")
+                report["scene_mono"] = {"files": len(paths), "patched_strings": len(hits), "hits": hits}
+            elif handler_name == "dll" and dll_map:
+                target = staging / DllFormat.MANAGED_DIRECTORY / DllFormat.ASSEMBLY_NAME
+                patch_report = DllFormat.patch(input_root, target, dll_map)
+                problems = DllFormat.validate_patched(target, dll_map)
+                if problems:
+                    raise ValueError(f"dll validation failed: {problems[:3]}")
+                report["dll"] = {**patch_report}
         # Copy the untouched mirror tree so PTBR stays copy-ready. The
         # repository's own artifacts (git dir, env files, toolkit) must
         # never ship inside the player overlay.
@@ -566,8 +648,10 @@ class Pipeline:
             "localization",
             "tests",
             "translate_project.py",
+            "translate_project.py.orig",
             "requirements.txt",
             "game-profile.json",
+            "interface-translations.json",
         }
         for root, dirs, files in os_walk(input_root):
             dirs[:] = [d for d in dirs if d not in skip_names]
@@ -587,11 +671,17 @@ class Pipeline:
             "generation": self.generation_id,
             "formats": {name: len(paths) for name, paths in discovered.items()},
             "units": len(accepted),
+            "interface": {
+                "i2_mono": report.get("i2_mono", {}).get("patched", 0),
+                "scene_mono": report.get("scene_mono", {}).get("patched_strings", 0),
+                "dll": report.get("dll", {}).get("total", 0),
+            },
             "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }
         (staging / "manifest.json").write_text(
             json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
         )
+        return report
 
     def publish(self, staging: Path, output_root: Path) -> None:
         output_root = Path(output_root)
@@ -599,6 +689,68 @@ class Pipeline:
             previous = output_root.with_name(f"PTBR.prev-{time.strftime('%Y%m%d%H%M%S')}")
             shutil.move(str(output_root), str(previous))
         shutil.move(str(staging), str(output_root))
+
+
+def _asset_object_diff(
+    original: Path,
+    rebuilt: Path,
+    allowed_textassets: set[str] | None = None,
+    allowed_monobehaviours: set[int] | None = None,
+) -> list[tuple[str, int]]:
+    """Compare two .assets files object by object (raw content hashes).
+
+    Returns the objects whose content differs; the caller asserts the
+    list is empty or matches the intended patch targets.
+    """
+    import hashlib
+
+    import UnityPy
+
+    allowed_textassets = allowed_textassets or set()
+    allowed_monobehaviours = allowed_monobehaviours or set()
+
+    def snapshot(path: Path) -> dict[tuple[str, int], str]:
+        env = UnityPy.load(str(path))
+        out = {}
+        for obj in env.objects:
+            try:
+                raw = obj.get_raw_data()
+            except Exception:  # noqa: BLE001 - unreadable objects compare by absence
+                raw = b""
+            out[(obj.type.name, obj.path_id)] = hashlib.sha256(raw).hexdigest()
+        return out
+
+    before = snapshot(original)
+    after = snapshot(rebuilt)
+    diff: list[tuple[str, int]] = []
+    for key, digest in before.items():
+        type_name, path_id = key
+        if after.get(key) == digest:
+            continue
+        if type_name == "TextAsset":
+            name = _textasset_name(rebuilt, path_id)
+            if name in allowed_textassets:
+                continue
+        elif type_name == "MonoBehaviour" and path_id in allowed_monobehaviours:
+            continue
+        diff.append(key)
+    for key in after:
+        if key not in before:
+            diff.append(("-extra-", key[1]))
+    return diff
+
+
+def _textasset_name(path: Path, path_id: int) -> str:
+    import UnityPy
+
+    env = UnityPy.load(str(path))
+    for obj in env.objects:
+        if obj.type.name == "TextAsset" and obj.path_id == path_id:
+            try:
+                return str(obj.read_typetree().get("m_Name") or "")
+            except Exception:  # noqa: BLE001
+                return ""
+    return ""
 
 
 def os_walk(root: Path):

@@ -58,6 +58,11 @@ class Settings:
     project_context: str = ""
     mode: str = "translate"
     verbose: bool = False
+    # Manual translation mode: publish checkpointed/overlay translations
+    # plus the hand-written map without ever calling the provider.
+    map_file: str = ""
+    apply_map: bool = False
+    manual_translations: dict = field(default_factory=dict)
 
     def validate_profile(self) -> None:
         host = urlparse(self.base_url).hostname or ""

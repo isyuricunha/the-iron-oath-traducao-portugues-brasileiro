@@ -14,6 +14,7 @@ deepseek-v4-flash. A real translation run requires FREEINFERENCE_API_KEY
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -77,6 +78,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--wait-for-glossary", action="store_true")
     parser.add_argument("--verbose", action="store_true")
     parser.add_argument("--self-test", action="store_true", help="run offline self tests and exit")
+    parser.add_argument(
+        "--map-file",
+        default="",
+        help="hand-written translations JSON ({i2, scenes, dll, units}) applied in --apply-map mode",
+    )
+    parser.add_argument(
+        "--apply-map",
+        action="store_true",
+        help="publish existing translations plus the map file without provider calls",
+    )
     return parser
 
 
@@ -114,10 +125,35 @@ def apply_cli(settings: Settings, args: argparse.Namespace) -> Settings:
     settings.target_lang = args.target_lang
     settings.project_context = args.project_context
     settings.verbose = args.verbose
+    settings.apply_map = args.apply_map
+    if args.map_file:
+        settings.map_file = args.map_file
+        settings.manual_translations = load_manual_map(Path(args.map_file))
     if args.review and args.remake:
         raise SystemExit("--review and --remake are mutually exclusive")
     settings.mode = "review" if args.review else ("remake" if args.remake else "translate")
     return settings
+
+
+def load_manual_map(path: Path) -> dict[str, str]:
+    """Load the hand-written translation map and flatten it to unit ids.
+
+    Sections: i2 {term: target}, scenes {english: target}, dll
+    {type: {english: target}} and units {unit_id: target} for individual
+    pipeline units (stray leftovers from earlier runs).
+    """
+    data = json.loads(path.read_text(encoding="utf-8"))
+    flat: dict[str, str] = {}
+    for term, target in data.get("i2", {}).items():
+        flat[f"i2:{term}"] = target
+    for source, target in data.get("scenes", {}).items():
+        flat[f"scene:{source}"] = target
+    for type_name, string_map in data.get("dll", {}).items():
+        for source, target in string_map.items():
+            flat[f"dll:{type_name}:{source}"] = target
+    for unit_id, target in data.get("units", {}).items():
+        flat[unit_id] = target
+    return flat
 
 
 def self_test() -> int:
@@ -210,6 +246,8 @@ def main(argv: list[str] | None = None) -> int:
         return validate_only(settings, profile)
     if args.dry_run:
         return dry_run(settings, profile)
+    if settings.apply_map:
+        return apply_map_publish(settings, profile)
 
     if not settings.api_key:
         print(
@@ -276,6 +314,182 @@ def validate_only(settings: Settings, profile: dict) -> int:
     return 1 if problems else 0
 
 
+def apply_map_publish(settings: Settings, profile: dict) -> int:
+    """Publish the existing translation plus the hand-written map.
+
+    Reuses every translation already present in the output overlay,
+    overlays the manual map (validated), refuses to publish while any
+    unit of the provider-driven formats lacks a target, and never calls
+    the provider.
+    """
+    print(startup_report(settings))
+    from localization import formats
+    from localization.models import RunStats, TranslationUnit, UnitStatus
+    from localization.pipeline import Pipeline
+    from localization.protection import ProtectionError, validate_manual_target
+
+    manual = settings.manual_translations
+    if not manual:
+        print("--apply-map needs --map-file with at least one translation", file=sys.stderr)
+        return 2
+
+    pipeline = Pipeline(settings, provider=None, profile=profile, stats=RunStats())
+    try:
+        discovered = formats.discover(settings.input_root, settings.format)
+
+        # Reuse the published overlay as the base translation.
+        accepted: dict[str, str] = {}
+        if settings.output_root.is_dir():
+            for handler_name, paths in discovered.items():
+                handler = formats.HANDLERS[handler_name]
+                for relpath in paths:
+                    try:
+                        cur_units, _ = handler.extract(settings.output_root, relpath)
+                    except Exception:  # noqa: BLE001, S112 - partial overlays tolerated
+                        continue
+                    for unit in cur_units:
+                        if unit.source.strip():
+                            accepted.setdefault(unit.unit_id, unit.source)
+
+        # Collect sources for validation and coverage checks.
+        source_by_id: dict[str, str] = {}
+        scene_texts: set[str] = set()
+        for handler_name, paths in discovered.items():
+            handler = formats.HANDLERS[handler_name]
+            for relpath in paths:
+                try:
+                    if handler_name == "scene_mono":
+                        units, _ = handler.extract(settings.input_root, relpath)
+                        scene_texts.update(u.source for u in units)
+                    else:
+                        units, _ = handler.extract(settings.input_root, relpath)
+                        for unit in units:
+                            source_by_id[unit.unit_id] = unit.source
+                except Exception as exc:  # noqa: BLE001
+                    print(f"extraction failed for {handler_name}:{relpath}: {exc}", file=sys.stderr)
+                    return 2
+
+        # Manual targets must honor the token contract of their source;
+        # the validated (escape-aligned) value is what gets published.
+        invalid = 0
+        for unit_id, target in list(manual.items()):
+            if unit_id.startswith("dll:"):
+                source = unit_id.split(":", 2)[2]
+            elif unit_id.startswith("scene:"):
+                source = unit_id.split(":", 1)[1]
+            else:
+                source = source_by_id.get(unit_id, "")
+            if not source:
+                print(f"stale manual entry (no source found): {unit_id}", file=sys.stderr)
+                invalid += 1
+                continue
+            try:
+                manual[unit_id] = validate_manual_target(source, target)
+            except ProtectionError as exc:
+                print(f"manual target rejected for {unit_id}: {exc}", file=sys.stderr)
+                invalid += 1
+        if invalid:
+            print(f"{invalid} manual entries rejected; fix the map and rerun", file=sys.stderr)
+            return 2
+
+        # Scene map entries must exist in the scanned scenes.
+        stale_scenes = [
+            uid for uid in manual
+            if uid.startswith("scene:") and uid.split(":", 1)[1] not in scene_texts
+        ]
+        if stale_scenes:
+            print("scene entries with no matching m_Text:", file=sys.stderr)
+            for uid in stale_scenes[:10]:
+                print(f"  {uid}", file=sys.stderr)
+            return 2
+
+        # Every provider-driven and I2 unit needs a target.
+        blockers = [
+            uid for uid in source_by_id
+            if uid not in accepted and uid not in manual
+        ]
+        if blockers:
+            print(f"{len(blockers)} units without a target; first blockers:", file=sys.stderr)
+            for uid in blockers[:10]:
+                print(f"  {uid}", file=sys.stderr)
+            return 2
+
+        merged = {
+            **{k: v for k, v in accepted.items() if not k.startswith(("scene:", "dll:"))},
+            **{k: v for k, v in manual.items() if not k.startswith(("scene:", "dll:"))},
+        }
+        interface_map: dict = {
+            "scenes": {
+                uid.split(":", 1)[1]: target
+                for uid, target in manual.items()
+                if uid.startswith("scene:")
+            },
+            "dll": {},
+        }
+        for uid, target in manual.items():
+            if uid.startswith("dll:"):
+                _, type_name, source = uid.split(":", 2)
+                interface_map["dll"].setdefault(type_name, {})[source] = target
+        if settings.strip_diacritics:
+            merged = {k: strip_diacritics(v) for k, v in merged.items()}
+            interface_map["scenes"] = {k: strip_diacritics(v) for k, v in interface_map["scenes"].items()}
+            interface_map["dll"] = {
+                t: {k: strip_diacritics(v) for k, v in m.items()}
+                for t, m in interface_map["dll"].items()
+            }
+
+        staging = Path(f".staging-{pipeline.generation_id}")
+        report = pipeline.build_staging(settings.input_root, merged, staging, interface_map)
+
+        # Record the hand-written targets so future provider runs reuse them.
+        saves = []
+        for unit_id, target in manual.items():
+            source = unit_id.split(":", 2)[2] if unit_id.startswith("dll:") else (
+                unit_id.split(":", 1)[1] if unit_id.startswith("scene:") else source_by_id.get(unit_id, "")
+            )
+            saves.append(
+                TranslationUnit(
+                    unit_id=unit_id,
+                    source=source,
+                    source_hash=f"{len(source)}:{source[:24]}",
+                    path="interface",
+                    accepted_target=target,
+                    status=UnitStatus.ACCEPTED,
+                    generation_id=pipeline.generation_id,
+                )
+            )
+        pipeline.checkpoint.save_units(saves, pipeline.generation_id)
+
+        pipeline.publish(staging, settings.output_root)
+        print(
+            f"published {len(merged)} pipeline units; interface patches: "
+            f"i2 {report.get('i2_mono', {}).get('patched', 0)}, "
+            f"scenes {report.get('scene_mono', {}).get('patched_strings', 0)}, "
+            f"dll {report.get('dll', {}).get('total', 0)}"
+        )
+        print("generation:", pipeline.generation_id)
+        return 0
+    finally:
+        pipeline.close()
+
+
+def interface_map_from_accepted(accepted: dict[str, str]) -> dict:
+    """Rebuild the {scenes, dll} patch sections from stored unit ids.
+
+    Scene and DLL patches live outside the provider unit flow, so every
+    publication (manual or provider run) must reconstruct their maps
+    from the accepted unit ids, otherwise a future run would drop them.
+    """
+    interface_map: dict = {"scenes": {}, "dll": {}}
+    for unit_id, target in accepted.items():
+        if unit_id.startswith("scene:"):
+            interface_map["scenes"][unit_id.split(":", 1)[1]] = target
+        elif unit_id.startswith("dll:"):
+            _, type_name, source = unit_id.split(":", 2)
+            interface_map["dll"].setdefault(type_name, {})[source] = target
+    return interface_map
+
+
 def run_translation(settings: Settings, profile: dict, provider: Provider) -> int:
     print(startup_report(settings))
     pipeline = Pipeline(settings, provider, profile, RunStats())
@@ -291,7 +505,17 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
 
         total_accepted: dict[str, str] = {}
         failed: list = []
+        # i2_mono, scene_mono and dll are manual-map sources: they are
+        # never sent to the provider; their targets arrive via resume
+        # (checkpointed hand translations) and interface_map_from_accepted.
+        manual_only = {"i2_mono": "i2:", "scene_mono": "scene:", "dll": "dll:"}
         for handler_name, paths in discovered.items():
+            if handler_name in manual_only:
+                prefix = manual_only[handler_name]
+                for uid, target in reused.items():
+                    if uid.startswith(prefix):
+                        total_accepted[uid] = target
+                continue
             handler = formats.HANDLERS[handler_name]
             all_units: list = []
             current_by_id: dict[str, str] = {}
@@ -334,7 +558,12 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
             merged_accepted = {
                 k: strip_diacritics(v) for k, v in merged_accepted.items()
             }
-        pipeline.build_staging(settings.input_root, merged_accepted, staging)
+        pipeline.build_staging(
+            settings.input_root,
+            merged_accepted,
+            staging,
+            interface_map_from_accepted(merged_accepted),
+        )
         pipeline.publish(staging, settings.output_root)
         stats = pipeline.stats
         print(

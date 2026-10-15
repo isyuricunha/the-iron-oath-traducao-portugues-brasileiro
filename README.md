@@ -48,13 +48,16 @@ existing game installation.
 
 - The shipped `StreamingAssets/Data/Localization/*.properties` files are a
   dead system: 5 UI keys and a bundled JLokalize editor. Ignore them.
-- The game is officially English-only. UI uses TextMeshPro with a pixel
-  font (Perfect DOS VGA 437) that lacks Brazilian accent glyphs (ã, õ, Ã,
-  Õ); a font replacement or atlas regeneration is required.
+- The game is officially English-only. UI uses TextMeshPro with pixel
+  bitmap font assets (IronOathText family) that contain no accented Latin
+  glyphs, so the published overlay strips diacritics
+  (`TRANSLATION_STRIP_DIACRITICS=1`). Accented targets remain in
+  `interface-translations.json` and in the checkpoints for a future font
+  replacement or atlas regeneration.
 - Unity assets in this build ship WITHOUT type trees for custom
-  MonoBehaviours and TMP components, so only the LocalizationText TextAsset
-  is handled in the binary pipeline; the rest of the serialized text is
-  deferred to a later phase.
+  MonoBehaviours and TMP components. The binary handlers parse the raw
+  object data structurally instead: the I2Languages table, display-text
+  sites in scenes, and scoped `ldstr` literals in Assembly-CSharp.dll.
 
 The files needed to investigate menus are already present at their game
 paths: `resources.assets`, `level0` through `level6`, `sharedassets*.assets`
@@ -63,12 +66,14 @@ from the translated `PTBR/` overlay. Do not replace the original
 `resources.assets` with the installed copy, which already contains changes.
 
 The actual I2 localization table is the `I2Languages` MonoBehaviour in
-`resources.assets` (path ID 1841 in this build): 2,718 entries. The current
-pipeline does not translate it. The `LocalizationText` XML contains sample
-labels and is not the main UI table. Menu text also exists in scene assets
-and directly in game code, so the current overlay does not provide a full
-menu translation. Managed DLLs are retained as source references and are
-currently excluded from generated overlays.
+`resources.assets` (path ID 1841 in this build): 2,718 terms with an
+English column plus empty Spanish/Description columns. It is translated in
+place (the English values become PT-BR) together with baked scene text
+(TextMeshPro and legacy UGUI sites in `level*`/`sharedassets*`) and
+player-visible `ldstr` literals in `Assembly-CSharp.dll`. The patched
+`Assembly-CSharp.dll` is the only Managed DLL shipped in the overlay, at
+its game path. Hand-written interface translations live in
+`interface-translations.json`.
 
 ## Translation toolkit
 
@@ -79,7 +84,12 @@ master prompt. Structure:
     localization/                 package (config, provider, pipeline...)
       formats/hjson_format.py     StreamingAssets HJSON handler
       formats/textasset_xml_format.py   Unity LocalizationText asset
+      formats/i2_mono_format.py   I2 Languages table (resources.assets)
+      formats/scene_mono_format.py      scene/prefab display-text sites
+      formats/dll_format.py       Assembly-CSharp.dll scoped patch wrapper
+      dotnet/DllStringPatch/      Mono.Cecil patcher (dotnet build)
     tests/                        fake-provider and round-trip tests
+    interface-translations.json   hand-written interface translations
     game-profile.json             evidence-backed game profile
     requirements.txt              hjson, UnityPy
 
@@ -96,6 +106,11 @@ Commands:
     python3 translate_project.py                  # real run (needs API key)
     python3 translate_project.py --review         # review PTBR output
     python3 translate_project.py --remake         # full retranslation
+
+    # Publish the existing translation plus the hand-written interface
+    # map (no provider calls):
+    TRANSLATION_STRIP_DIACRITICS=1 python3 translate_project.py \
+        --apply-map --map-file interface-translations.json
 
 The provider profile is strict: host freeinference.org, model
 deepseek-v4-flash, reasoning effort max by default, streaming on,

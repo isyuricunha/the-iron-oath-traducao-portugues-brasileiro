@@ -1,22 +1,34 @@
-# The Iron Oath - Traducao PT-BR
+# The Iron Oath - Traducao para Portugues (Brasil)
+
+Traducao dos menus, da interface e dos textos do jogo para Portugues
+(Brasil).
 
 ## Instalacao
 
-1. Feche o jogo e guarde uma copia dos arquivos que serao substituidos.
-2. Copie o **conteudo desta pasta PTBR** para a pasta raiz do jogo,
-   onde fica `The Iron Oath.exe`.
-3. Mescle a pasta `The Iron Oath_Data` e aceite substituir os arquivos.
+1. Feche o jogo.
+2. Copie o CONTEUDO desta pasta para a raiz da instalacao do jogo,
+   mesclando a pasta `The Iron Oath_Data/` com a que ja existe.
+   Nao copie a pasta `PTBR` em si.
+3. A traducao inclui a DLL `The Iron Oath_Data/Managed/Assembly-CSharp.dll`
+   (textos de interface que ficam no codigo). Ela substitui a original na
+   instalacao; faca um backup da sua `Assembly-CSharp.dll` antes de colar,
+   caso queira voltar atras.
+4. PNGs, musicas e videos nao fazem parte da traducao: o jogo usa os que
+   ja existem na sua instalacao.
 
-Exemplo de destino:
+## O que esta incluido
 
-    D:\GOG Games\The Iron Oath\The Iron Oath_Data\StreamingAssets\Data\...
+- Dialogos, itens, sistemas, mundo e dungeons (HJSON em `StreamingAssets`)
+- A tabela I2Languages (`resources.assets`): menu, tooltips, habilidades,
+  upgrades, vagas e contratos
+- Textos de interface gravados nas cenas (`level*` / `sharedassets*`):
+  menus principais, paineis, tela de game over, janela de feedback
+- Textos de interface no codigo (`Assembly-CSharp.dll`): telas de
+  dificuldade, mercado, mercador, contratos, taverna, enfermaria,
+  estabulo, guilda e mais
 
-Nao crie uma pasta `PTBR` dentro da instalacao. Nao copie a pasta de
-originais `The Iron Oath_Data` da raiz do repositorio por cima da traducao.
+## Sobre acentos
 
-Este pacote depende do jogo instalado. As imagens PNG nao sao traduzidas
-nem incluidas: o jogo continua usando as imagens da instalacao existente.
-Nao apague PNGs da pasta do jogo.
-
-A traducao atual ainda nao cobre todos os menus e textos da interface.
-Os arquivos-base estao preservados para essa etapa futura.
+As fontes do jogo sao bitmaps sem glifos acentuados, entao a traducao e
+distribuida sem acentos. Quando as fontes forem substituidas por versoes
+com acentos, o pipeline publica a versao acentuada sem retrabalho.
