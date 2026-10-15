@@ -342,6 +342,12 @@ class I2MonoFormat:
             raise ValueError(f"{ASSET_NAME!r} not found in {asset_path}")
         raw = obj.get_raw_data()
         table = parse_table(raw)
+        by_term = table.term_map()
+        changed = sum(
+            1
+            for term, value in translations.items()
+            if by_term[term].values[0].text != value
+        )
         patched = apply_translations(raw, table, translations)
         obj.set_raw_data(patched)
 
@@ -358,7 +364,12 @@ class I2MonoFormat:
             import shutil
 
             shutil.rmtree(tmp_dir, ignore_errors=True)
-        return {"path_id": obj.path_id, "terms": table.term_count, "patched": len(translations)}
+        return {
+            "path_id": obj.path_id,
+            "terms": table.term_count,
+            "patched": len(translations),
+            "changed": changed,
+        }
 
     @classmethod
     def read_table(cls, asset_path: Path) -> I2Table:

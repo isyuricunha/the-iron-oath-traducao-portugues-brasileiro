@@ -233,41 +233,20 @@ internal static class Program
             }
             resolver.Stubs[scopeName] = stub;
         }
-        // Debug: verify a stub type resolves and exposes value__.
-        foreach (var type in assembly.MainModule.GetTypes())
+    }
+
+    private static IEnumerable<TypeDefinition> WithNested(TypeDefinition type)
+    {
+        // Compiler-generated closure classes (<c__DisplayClass*, <Async*>)
+        // are nested inside their logical scope type and carry ldstr
+        // sites of their own, so scope replacement must descend.
+        yield return type;
+        foreach (var nested in type.NestedTypes)
         {
-            foreach (var method in type.Methods)
+            foreach (var inner in WithNested(nested))
             {
-                if (!method.HasParameters)
-                {
-                    continue;
-                }
-                foreach (var parameter in method.Parameters)
-                {
-                    if (!parameter.HasDefault || parameter.Constant is null)
-                    {
-                        continue;
-                    }
-                    if (parameter.ParameterType.Scope is not AssemblyNameReference)
-                    {
-                        continue;
-                    }
-                    try
-                    {
-                        var resolved = parameter.ParameterType.Resolve();
-                        Console.Error.WriteLine(
-                            $"debug resolve {parameter.ParameterType.FullName} -> {resolved?.FullName} fields={resolved?.Fields.Count}");
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.Error.WriteLine($"debug resolve {parameter.ParameterType.FullName} -> EX {ex.Message}");
-                        continue;
-                    }
-                    break;
-                }
-                break;
+                yield return inner;
             }
-            break;
         }
     }
 
@@ -338,7 +317,7 @@ internal static class Program
                 Console.Error.WriteLine($"error: type not found: {typeName}");
                 return 2;
             }
-            foreach (var method in type.Methods)
+            foreach (var method in WithNested(type).SelectMany(t => t.Methods))
             {
                 if (!method.HasBody)
                 {
@@ -395,7 +374,10 @@ internal static class Program
         {
             var type = verify.MainModule.GetTypes().Single(t => t.FullName == typeName || t.Name == typeName);
             var found = new Dictionary<string, int>(StringComparer.Ordinal);
-            CollectStrings(type, found);
+            foreach (var scopeType in WithNested(type))
+            {
+                CollectStrings(scopeType, found);
+            }
             foreach (var (source, target) in map)
             {
                 if (found.ContainsKey(source))

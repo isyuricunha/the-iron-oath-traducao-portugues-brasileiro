@@ -126,9 +126,12 @@ def apply_cli(settings: Settings, args: argparse.Namespace) -> Settings:
     settings.project_context = args.project_context
     settings.verbose = args.verbose
     settings.apply_map = args.apply_map
-    if args.map_file:
-        settings.map_file = args.map_file
-        settings.manual_translations = load_manual_map(Path(args.map_file))
+    map_file = Path(args.map_file) if args.map_file else Path("interface-translations.json")
+    if map_file.exists():
+        # The committed hand-written map is the durable source of the
+        # interface translations; default to it so every run keeps them.
+        settings.map_file = str(map_file)
+        settings.manual_translations = load_manual_map(map_file)
     if args.review and args.remake:
         raise SystemExit("--review and --remake are mutually exclusive")
     settings.mode = "review" if args.review else ("remake" if args.remake else "translate")
@@ -439,7 +442,44 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
             }
 
         staging = Path(f".staging-{pipeline.generation_id}")
+        # Register the generation so the committed manual units belong to
+        # a real checkpoint generation instead of orphan rows.
+        source_files: list[str] = []
+        for paths in discovered.values():
+            source_files.extend(paths)
+        pipeline.open_generation(
+            "apply-map",
+            ",".join(sorted(set(source_files))),
+            resume=False,
+            staging=staging,
+        )
         report = pipeline.build_staging(settings.input_root, merged, staging, interface_map)
+
+        # Guard against a shrunken map silently reverting published
+        # strings: never publish fewer interface patches than the
+        # current overlay carries.
+        previous_manifest = settings.output_root / "manifest.json"
+        if previous_manifest.is_file():
+            previous = json.loads(previous_manifest.read_text(encoding="utf-8")).get("interface", {})
+            current = {
+                "i2_mono": report.get("i2_mono", {}).get("changed", 0),
+                "scene_mono": report.get("scene_mono", {}).get("patched_strings", 0),
+                "dll": report.get("dll", {}).get("total", 0),
+            }
+            if previous.get("semantics") == 2:
+                drops = {
+                    key: (previous[key], current.get(key, 0))
+                    for key in ("i2_mono", "scene_mono", "dll")
+                    if current.get(key, 0) < previous.get(key, 0)
+                }
+                if drops:
+                    print(
+                        "interface patch counts dropped vs the published overlay "
+                        f"(refusing to publish): {drops}; restore the missing "
+                        "interface-translations.json entries and rerun",
+                        file=sys.stderr,
+                    )
+                    return 2
 
         # Record the hand-written targets so future provider runs reuse them.
         saves = []
@@ -509,11 +549,42 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
         # never sent to the provider; their targets arrive via resume
         # (checkpointed hand translations) and interface_map_from_accepted.
         manual_only = {"i2_mono": "i2:", "scene_mono": "scene:", "dll": "dll:"}
+        # Hand-written map targets are validated against their sources and
+        # accepted directly, so provider runs keep the interface patched
+        # even when the checkpoint has no compatible generation yet.
+        if settings.manual_translations:
+            from localization.protection import ProtectionError, validate_manual_target
+
+            manual_units: dict[str, str] = {}
+            for handler_name, paths in discovered.items():
+                if handler_name not in manual_only:
+                    continue
+                handler = formats.HANDLERS[handler_name]
+                for relpath in paths:
+                    units, _ = handler.extract(settings.input_root, relpath)
+                    for unit in units:
+                        manual_units[unit.unit_id] = unit.source
+            for uid, target in settings.manual_translations.items():
+                if not uid.startswith(tuple(f"{p}" for p in manual_only.values())):
+                    continue
+                source = (
+                    uid.split(":", 2)[2] if uid.startswith("dll:")
+                    else uid.split(":", 1)[1] if uid.startswith("scene:")
+                    else manual_units.get(uid, "")
+                )
+                if not source:
+                    print(f"stale map entry skipped: {uid}", file=sys.stderr)
+                    continue
+                try:
+                    total_accepted[uid] = validate_manual_target(source, target)
+                except ProtectionError as exc:
+                    print(f"map target rejected for {uid}: {exc}", file=sys.stderr)
+                    return 2
         for handler_name, paths in discovered.items():
             if handler_name in manual_only:
                 prefix = manual_only[handler_name]
                 for uid, target in reused.items():
-                    if uid.startswith(prefix):
+                    if uid.startswith(prefix) and uid not in total_accepted:
                         total_accepted[uid] = target
                 continue
             handler = formats.HANDLERS[handler_name]

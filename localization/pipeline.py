@@ -672,9 +672,12 @@ class Pipeline:
             "formats": {name: len(paths) for name, paths in discovered.items()},
             "units": len(accepted),
             "interface": {
-                "i2_mono": report.get("i2_mono", {}).get("patched", 0),
+                "i2_mono": report.get("i2_mono", {}).get("changed", 0),
                 "scene_mono": report.get("scene_mono", {}).get("patched_strings", 0),
                 "dll": report.get("dll", {}).get("total", 0),
+                # Guard semantics version; counts are only comparable
+                # between manifests carrying the same version.
+                "semantics": 2,
             },
             "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }

@@ -1,34 +1,124 @@
-# The Iron Oath - Traducao para Portugues (Brasil)
+# The Iron Oath - Portuguese (Brazil) Translation
 
-Traducao dos menus, da interface e dos textos do jogo para Portugues
-(Brasil).
+Working repository for the fan translation of The Iron Oath (GOG release,
+Curious Panda Games) to Portuguese (Brazil).
 
-## Instalacao
+## Source
 
-1. Feche o jogo.
-2. Copie o CONTEUDO desta pasta para a raiz da instalacao do jogo,
-   mesclando a pasta `The Iron Oath_Data/` com a que ja existe.
-   Nao copie a pasta `PTBR` em si.
-3. A traducao inclui a DLL `The Iron Oath_Data/Managed/Assembly-CSharp.dll`
-   (textos de interface que ficam no codigo). Ela substitui a original na
-   instalacao; faca um backup da sua `Assembly-CSharp.dll` antes de colar,
-   caso queira voltar atras.
-4. PNGs, musicas e videos nao fazem parte da traducao: o jogo usa os que
-   ja existem na sua instalacao.
+Files copied from a clean GOG install (`D:\GOG Games\The Iron Oath` on the
+`ysinot` machine). Game data uses Unity 2019.4.20f1 with the Mono scripting
+backend. The directory layout mirrors the game install so translated files
+can be dropped back in place.
 
-## O que esta incluido
+## Installation layout
 
-- Dialogos, itens, sistemas, mundo e dungeons (HJSON em `StreamingAssets`)
-- A tabela I2Languages (`resources.assets`): menu, tooltips, habilidades,
-  upgrades, vagas e contratos
-- Textos de interface gravados nas cenas (`level*` / `sharedassets*`):
-  menus principais, paineis, tela de game over, janela de feedback
-- Textos de interface no codigo (`Assembly-CSharp.dll`): telas de
-  dificuldade, mercado, mercador, contratos, taverna, enfermaria,
-  estabulo, guilda e mais
+Copy the **contents of `PTBR/`** into the game's root directory, merging
+`The Iron Oath_Data/` with the existing folder. Do not copy the `PTBR`
+folder itself or the repository's original `The Iron Oath_Data/` tree.
+For example, `PTBR/The Iron Oath_Data/resources.assets` belongs at
+`<game>/The Iron Oath_Data/resources.assets`.
 
-## Sobre acentos
+PNG artwork is outside the translation scope. It is excluded from both
+repository trees and future generated overlays; the game uses the images
+already present in the player's installation. This overlay requires an
+existing game installation.
 
-As fontes do jogo sao bitmaps sem glifos acentuados, entao a traducao e
-distribuida sem acentos. Quando as fontes forem substituidas por versoes
-com acentos, o pipeline publica a versao acentuada sem retrabalho.
+## Contents
+
+- `The Iron Oath_Data/StreamingAssets/Data/` - plain HJSON data files read
+  by the game at runtime (dialogue, world sim, dungeons, items, systems,
+  guild, actors). This is the primary translation surface (~119k chars of
+  English prose across ~1.85k strings). Note: the files are HJSON (unquoted
+  keys, trailing commas), not strict JSON.
+- `The Iron Oath_Data/resources.assets` - serialized assets holding UI and
+  tooltip text (~65k chars, TextMeshPro rich text).
+- `The Iron Oath_Data/level*.assets` / `sharedassets*.assets` - scenes and
+  shared assets with baked UI strings.
+- `The Iron Oath_Data/globalgamemanagers*` - engine managers (context only).
+- `The Iron Oath_Data/Managed/Assembly-CSharp*.dll` - game code with ~24k
+  chars of embedded strings (mixed with developer logs).
+
+## Deliberately excluded
+
+- `*.resS` / `*.resource` binary blobs (900 MB video/audio bundle included)
+- `StreamingAssets/Data/Worldmap` (map icons, no text)
+- Engine binaries (`UnityPlayer.dll`, `MonoBleedingEdge/`), launcher files
+
+## Localization notes
+
+- The shipped `StreamingAssets/Data/Localization/*.properties` files are a
+  dead system: 5 UI keys and a bundled JLokalize editor. Ignore them.
+- The game is officially English-only. UI uses TextMeshPro with pixel
+  bitmap font assets (IronOathText family) that contain no accented Latin
+  glyphs, so the published overlay strips diacritics
+  (`TRANSLATION_STRIP_DIACRITICS=1`). Accented targets remain in
+  `interface-translations.json` and in the checkpoints for a future font
+  replacement or atlas regeneration.
+- Unity assets in this build ship WITHOUT type trees for custom
+  MonoBehaviours and TMP components. The binary handlers parse the raw
+  object data structurally instead: the I2Languages table, display-text
+  sites in scenes, and scoped `ldstr` literals in Assembly-CSharp.dll.
+
+The files needed to investigate menus are already present at their game
+paths: `resources.assets`, `level0` through `level6`, `sharedassets*.assets`
+and `Managed/Assembly-CSharp.dll`. Keep the repository originals separate
+from the translated `PTBR/` overlay. Do not replace the original
+`resources.assets` with the installed copy, which already contains changes.
+
+The actual I2 localization table is the `I2Languages` MonoBehaviour in
+`resources.assets` (path ID 1841 in this build): 2,718 terms with an
+English column plus empty Spanish/Description columns. It is translated in
+place (the English values become PT-BR) together with baked scene text
+(TextMeshPro and legacy UGUI sites in `level*`/`sharedassets*`) and
+player-visible `ldstr` literals in `Assembly-CSharp.dll`. The patched
+`Assembly-CSharp.dll` is the only Managed DLL shipped in the overlay, at
+its game path. Hand-written interface translations live in
+`interface-translations.json`.
+
+## Translation toolkit
+
+Modular EN -> PT-BR pipeline built from the `original-freeinference.md`
+master prompt. Structure:
+
+    translate_project.py          CLI entry point
+    localization/                 package (config, provider, pipeline...)
+      formats/hjson_format.py     StreamingAssets HJSON handler
+      formats/textasset_xml_format.py   Unity LocalizationText asset
+      formats/i2_mono_format.py   I2 Languages table (resources.assets)
+      formats/scene_mono_format.py      scene/prefab display-text sites
+      formats/dll_format.py       Assembly-CSharp.dll scoped patch wrapper
+      dotnet/DllStringPatch/      Mono.Cecil patcher (dotnet build)
+    tests/                        fake-provider and round-trip tests
+    interface-translations.json   hand-written interface translations
+    game-profile.json             evidence-backed game profile
+    requirements.txt              hjson, UnityPy
+
+Setup (Linux/macOS or Windows with py -3.11):
+
+    python3 -m pip install -r requirements.txt
+    cp .env.example .env          # add FREEINFERENCE_API_KEY (freeinference.org)
+
+Commands:
+
+    python3 translate_project.py --dry-run        # unit census, no calls
+    python3 translate_project.py --validate-only  # byte round-trip gate
+    python3 translate_project.py --self-test      # offline checks
+    python3 translate_project.py                  # real run (needs API key)
+    python3 translate_project.py --review         # review PTBR output
+    python3 translate_project.py --remake         # full retranslation
+
+    # Publish the existing translation plus the hand-written interface
+    # map (no provider calls):
+    TRANSLATION_STRIP_DIACRITICS=1 python3 translate_project.py \
+        --apply-map --map-file interface-translations.json
+
+The provider profile is strict: host freeinference.org, model
+deepseek-v4-flash, reasoning effort max by default, streaming on,
+3 concurrent requests of up to 40 units. Accepted checkpoints live in
+`.checkpoints/` (gitignored) and resume by default (`--no-resume` for a
+fresh generation). Output lands in `PTBR/` mirroring the install layout;
+`--input`/`--output` override the roots. Never commits the API key: it
+resolves from the process environment first, then `.env`.
+
+The HJSON handler edits values by byte span and is proven lossless on the
+whole corpus (validate-only returns byte-identical rebuilt files).
