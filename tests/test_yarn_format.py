@@ -108,6 +108,62 @@ class YarnFormatTests(unittest.TestCase):
         assert _translatable("...") is False
         assert _translatable("Watch the archer!") is True
 
+    def test_show_command_args_span_exact(self):
+        # Regression: the Show-branch span used to start one character
+        # late, leaving a stray leading character in the published file
+        # and compounding on every publication that reused the overlay.
+        sample = (
+            "title: SE.Tut\r\n"
+            "---\r\n"
+            '<<ShowTutorialMessage "Exploration Events" "When interacting you choose.>>\r\n'
+            '<<ShowTutorialMessage "TutorialX" "Enchantments" "Scrolls apply. To use one, press <sprite name=\\"PC-leftClick\\"> now.>>\r\n'
+            "===\r\n"
+        )
+        (self.root / self.rel).write_bytes(sample.encode("utf-8"))
+        units, spans = YarnFormat.extract(self.root, self.rel)
+        decoded = sample.encode("utf-8").decode("utf-8-sig")
+        for u in units:
+            start, end, _ = spans[u.unit_id]
+            assert decoded[start:end] == u.source, (u.unit_id, decoded[start:end], u.source)
+
+    def test_shortcut_choice_extracted_with_link_intact(self):
+        sample = (
+            "title: SE.Shortcut\r\n"
+            "---\r\n"
+            "[[I'd like more details first.|nodeIntro2]]\r\n"
+            "[[nodeJumpOnly]]\r\n"
+            "===\r\n"
+        )
+        (self.root / self.rel).write_bytes(sample.encode("utf-8"))
+        units, _ = YarnFormat.extract(self.root, self.rel)
+        assert any(u.source == "I'd like more details first." for u in units)
+        # jump-only line is not a display unit
+        assert not any(u.source == "nodeJumpOnly" for u in units)
+        target_id = next(u.unit_id for u in units if u.source == "I'd like more details first.")
+        rebuilt = YarnFormat.rebuild(self.root, self.rel, {target_id: "Quero mais detalhes primeiro."}).decode("utf-8")
+        assert "[[Quero mais detalhes primeiro.|nodeIntro2]]" in rebuilt
+
+    def test_rebuild_idempotent_with_shortcuts(self):
+        sample = (
+            "title: SE.Tut\r\n"
+            "---\r\n"
+            '<<ShowTutorialMessage "Exploration Events" "When interacting you choose.>>\r\n'
+            "[[I'd like more details first.|nodeIntro2]]\r\n"
+            "===\r\n"
+        )
+        (self.root / self.rel).write_bytes(sample.encode("utf-8"))
+        units, _ = YarnFormat.extract(self.root, self.rel)
+        translations = {
+            u.unit_id: {"Exploration Events": "Eventos de Exploracao",
+                        "When interacting you choose.": "Ao interagir voce escolhe.",
+                        "I'd like more details first.": "Quero mais detalhes primeiro."}.get(u.source, u.source)
+            for u in units
+        }
+        first = YarnFormat.rebuild(self.root, self.rel, translations)
+        second = YarnFormat.rebuild(self.root, self.rel, translations)
+        assert first == second
+        assert b"EEEventos" not in first and b"EEventos" not in first
+
 
 if __name__ == "__main__":
     unittest.main()

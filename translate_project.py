@@ -346,19 +346,30 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
     try:
         discovered = formats.discover(settings.input_root, settings.format)
 
-        # Reuse the published overlay as the base translation.
-        accepted: dict[str, str] = {}
-        if settings.output_root.is_dir():
-            for handler_name, paths in discovered.items():
-                handler = formats.HANDLERS[handler_name]
-                for relpath in paths:
-                    try:
-                        cur_units, _ = handler.extract(settings.output_root, relpath)
-                    except Exception:  # noqa: BLE001, S112 - partial overlays tolerated
+        # Reuse the published overlay as the base translation, but only
+        # where the checkpoint has no target: overlay text may carry
+        # historical corruption, and adopting it wholesale let every
+        # publication re-feed its own output (each run added one stray
+        # leading character to Show* command args). The checkpoint holds
+        # the clean provider-accepted targets.
+        # Seed from the checkpoint (clean provider-accepted targets),
+        # then let the published overlay fill only the gaps. Adopting
+        # overlay text wholesale re-fed every publication its own
+        # output (each run added one stray leading character to Show*
+        # command args).
+        checkpoint_accepted = pipeline.checkpoint.accepted_units_latest()
+        accepted: dict[str, str] = dict(checkpoint_accepted)
+        for handler_name, paths in discovered.items():
+            handler = formats.HANDLERS[handler_name]
+            for relpath in paths:
+                try:
+                    cur_units, _ = handler.extract(settings.output_root, relpath)
+                except Exception:  # noqa: BLE001, S112 - partial overlays tolerated
+                    continue
+                for unit in cur_units:
+                    if not unit.source.strip():
                         continue
-                    for unit in cur_units:
-                        if unit.source.strip():
-                            accepted.setdefault(unit.unit_id, unit.source)
+                    accepted.setdefault(unit.unit_id, unit.source)
 
         # Collect sources for validation and coverage checks.
         source_by_id: dict[str, str] = {}

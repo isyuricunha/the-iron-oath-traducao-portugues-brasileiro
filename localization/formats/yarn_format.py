@@ -51,6 +51,8 @@ _COMMAND_SHAPES = (
     ),
 )
 
+_SHORTCUT_RE = re.compile(r'^\[\[([^|\]]+)\|([^\]]+)\]\]$')
+
 
 def _translatable(value: str) -> bool:
     """Yarn body lines are always display text, so the HJSON identifier
@@ -141,7 +143,6 @@ class YarnFormat:
                             offset
                             + (len(content) - len(content.lstrip()))
                             + match.start(1)
-                            + 1
                         )
                         unit_id = cls._unit_id(relpath, index, arg_index)
                         spans[unit_id] = (value_start, value_start + len(value), True)
@@ -182,6 +183,20 @@ class YarnFormat:
                     )
                     units.append(
                         cls._unit(relpath, index, node, choice.group(2), "choice")
+                    )
+            elif (shortcut := _SHORTCUT_RE.match(stripped)) is not None:
+                # Whole-line "[[text|node]]" Yarn shortcuts are player
+                # choices; the span covers only the text so the link and
+                # destination node survive untouched.
+                if _translatable(shortcut.group(1)):
+                    text_start = start + 2
+                    spans[cls._unit_id(relpath, index)] = (
+                        text_start,
+                        text_start + len(shortcut.group(1)),
+                        False,
+                    )
+                    units.append(
+                        cls._unit(relpath, index, node, shortcut.group(1), "choice")
                     )
             else:
                 speaker = _SPEAKER_RE.match(stripped)

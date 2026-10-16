@@ -169,6 +169,19 @@ class Checkpoint:
         ).fetchall()
         return {r["unit_id"]: r["accepted_target"] for r in rows}
 
+    def accepted_units_latest(self) -> dict[str, str]:
+        """Latest accepted target per unit across every generation."""
+        rows = self.conn.execute(
+            "SELECT unit_id, accepted_target FROM units "
+            "WHERE status='accepted' AND accepted_target IS NOT NULL "
+            "AND accepted_target != '' "
+            "ORDER BY rowid",
+        ).fetchall()
+        merged: dict[str, str] = {}
+        for r in rows:
+            merged[r["unit_id"]] = r["accepted_target"]
+        return merged
+
     def get_unit(self, unit_id: str) -> sqlite3.Row | None:
         return self.conn.execute("SELECT * FROM units WHERE unit_id=?", (unit_id,)).fetchone()
 
