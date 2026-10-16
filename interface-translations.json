@@ -2534,7 +2534,8 @@
       "That's great to hear! I'm looking forward to working with you.": "Que bom ouvir isso! Mal posso esperar para trabalhar com você.",
       "What's going on with my money? You can't afford to even pay my wages anymore? If this is how you are going to treat me then I'm leaving.": "O que houve com o meu dinheiro? Você não pode mais pagar nem o meu salário? Se é assim que você vai me tratar, então eu vou embora.",
       "Where's my money? I'm getting pretty sick of these working conditions. I might need to look for work elsewhere pretty soon. I'll stick around a little longer.": "Cadê o meu dinheiro? Estou ficando bem cansado dessas condições de trabalho. Talvez eu precise procurar trabalho em outro lugar em breve. Fico um pouco mais de tempo por enquanto.",
-      "You're looking for new recruits? I'm looking for some work. What do you think about these terms?": "Procurando novos recrutas? Estou procurando trabalho. O que acha destes termos?"
+      "You're looking for new recruits? I'm looking for some work. What do you think about these terms?": "Procurando novos recrutas? Estou procurando trabalho. O que acha destes termos?",
+      "I'll have to think it over.": "Vou ter que pensar."
     },
     "TownInnScreen": {
       "Come Back Later": "Volte Mais Tarde",
@@ -2549,7 +2550,8 @@
       ". What'll it be then?": ". O que vai ser então?",
       "Sort: Level ": "Ordenar: Nível ",
       "Sort": "Ordenar",
-      "Cancel": "Cancelar"
+      "Cancel": "Cancelar",
+      "Reputation Discount: ": "Desconto de Reputação: "
     },
     "InfirmaryScreen": {
       "Admit Patient": "Internar Paciente",
@@ -2564,7 +2566,10 @@
       " days to fully heal in the infirmary. Send ": " dias para curar totalmente na enfermaria. Enviar ",
       " to the infirmary?": " para a enfermaria?",
       "There are currently no soldiers in need of healing.": "Não há soldados precisando de tratamento no momento.",
-      "Reputation Discount: ": "Desconto de Reputação: "
+      "Reputation Discount: ": "Desconto de Reputação: ",
+      "You need at least ": "Você precisa de pelo menos ",
+      " to send ": " para enviar ",
+      " to the infirmary.": " para a enfermaria."
     },
     "HospitalScreen": {
       "Physician": "Médico",
@@ -2573,12 +2578,40 @@
       "Level": "Nível",
       "Efficiency": "Eficiência",
       "Name": "Nome",
-      "Unlocked": "Desbloqueado"
+      "Unlocked": "Desbloqueado",
+      "Patient Care I": "Cuidado com Pacientes I",
+      "Patient Care II": "Cuidado com Pacientes II",
+      "Patient Care III": "Cuidado com Pacientes III",
+      "Reduce recovery time for all ailments by 10%": "Reduz o tempo de recuperação de todas as enfermidades em 10%",
+      "Reduce recovery time for all ailments by 20%": "Reduz o tempo de recuperação de todas as enfermidades em 20%",
+      "Reduce recovery time for all ailments by 30%": "Reduz o tempo de recuperação de todas as enfermidades em 30%",
+      "Advanced Diagnostics": "Diagnósticos Avançados",
+      "Advanced Medicine": "Medicina Avançada",
+      "Advanced Surgery": "Cirurgia Avançada",
+      "Enable treatment of minor minor injuries": "Permite tratar ferimentos leves",
+      "Enable treatment of all diseases": "Permite tratar todas as doenças",
+      "Enable treatment of all major physical injuries": "Permite tratar todos os ferimentos físicos graves",
+      "Expertise I": "Especialização I",
+      "Expertise II": "Especialização II",
+      "Expertise III": "Especialização III",
+      "Increase chance of patient making a full recovery": "Aumenta a chance de o paciente ter uma recuperação completa"
     },
     "StableScreen": {
       "Level : ": "Nível : ",
       "Durability : ": "Durabilidade : ",
-      "Efficiency : ": "Eficiência : "
+      "Efficiency : ": "Eficiência : ",
+      "Endurance I": "Resistência I",
+      "Endurance II": "Resistência II",
+      "Endurance III": "Resistência III",
+      "Tradecart Speed increase by 10%": "Aumenta a velocidade do carrinho de comércio em 10%",
+      "Tradecart Speed increase by 20%": "Aumenta a velocidade do carrinho de comércio em 20%",
+      "Tradecart Speed increase by 30%": "Aumenta a velocidade do carrinho de comércio em 30%",
+      "Strength I": "Força I",
+      "Strength II": "Força II",
+      "Strength III": "Força III",
+      "Tradecart capacity increased by 10%": "Capacidade do carrinho de comércio aumentada em 10%",
+      "Tradecart capacity increased by 20%": "Capacidade do carrinho de comércio aumentada em 20%",
+      "Tradecart capacity increased by 30%": "Capacidade do carrinho de comércio aumentada em 30%"
     },
     "RecruitPartyMemberScreen": {
       "RECRUIT TO GUILD": "RECRUTAR PARA A GUILDA",
@@ -2614,7 +2647,10 @@
       ". They have been named the enemy of the city of ": ". Eles foram declarados inimigos da cidade de ",
       ". Upon verification of completion of this bounty you will be paid the reward of ": ". Após a verificação da conclusão desta caça, você receberá a recompensa de ",
       ". We probably should probably run away for now and be careful before returning anytime soon.": ". Provavelmente é melhor fugirmos por agora e termos cuidado antes de voltar em breve.",
-      "We probably shouldn't do this for now. No need to upset the locals just yet.": "Provavelmente não deveríamos fazer isso por agora. Não há necessidade de irritar os locais tão cedo."
+      "We probably shouldn't do this for now. No need to upset the locals just yet.": "Provavelmente não deveríamos fazer isso por agora. Não há necessidade de irritar os locais tão cedo.",
+      "We managed to pillage ": "Conseguimos saquear ",
+      "Ran Away": "Fugiu",
+      "A bounty has been issues for any member of ": "Uma recompensa foi emitida para qualquer membro de "
     },
     "QuestLogUi": {
       "Abandon Quest": "Abandonar Missão",
@@ -2644,7 +2680,15 @@
     },
     "ScriptedSceneUiPanel": {
       "[Disarm:": "[Desarmar:",
-      " Disarm trap.": " Desarmar armadilha."
+      " Disarm trap.": " Desarmar armadilha.",
+      "Confirm Action": "Confirmar Ação",
+      "Resume Auto Scroll": "Retomar Rolagem Automática",
+      "Next Line (Hold to Skip)": "Próxima Linha (Segure para Pular)",
+      "Xp Rate": "Taxa de XP",
+      " traits revealed from new recruits": " traços revelados de novos recrutas",
+      "Cost Per Month : ": "Custo por Mês : ",
+      "% Faction Rep Gain Bonus": "% de Bônus de Ganho de Rep da Facção",
+      "% Quest Gold Bonus": "% de Bônus de Ouro de Missão"
     },
     "ScriptedDialogueSceneManager": {
       "I can't agree to this.": "Não posso concordar com isso.",
@@ -2652,7 +2696,12 @@
       "Why should we concern ourselves with this?": "Por que deveríamos nos preocupar com isso?",
       "Not the decision I would have made.": "Não é a decisão que eu teria tomado.",
       "Terrible...": "Péssimo...",
-      "Great idea.": "Ótima ideia."
+      "Great idea.": "Ótima ideia.",
+      "I agree.": "Concordo.",
+      "Very good.": "Muito bom.",
+      "Right away.": "Imediatamente.",
+      "A fine idea.": "Boa ideia.",
+      "I concur.": "Concordo plenamente."
     },
     "GuildManager": {
       "The following character's injuries have healed and have returned to active duty.\n\n": "Os ferimentos do seguinte personagem curaram e ele voltou ao serviço ativo.\n\n",
@@ -2664,7 +2713,19 @@
       "You don't have enough Scrap to repair all of your equipped gear. Would you like to repair some of your gear with your ": "Você não tem Sucata suficiente para reparar todo o seu equipamento equipado. Deseja reparar parte do seu equipamento com ",
       "You don't have enough Scrap to repair all of your gear. Would you like to repair some of your gear with your ": "Você não tem Sucata suficiente para reparar todo o seu equipamento. Deseja reparar parte do seu equipamento com ",
       "Repair all gear with ": "Reparar todo o equipamento com ",
-      " scrap.": " de sucata."
+      " scrap.": " de sucata.",
+      "Go to ": "Ir para ",
+      " but after ownership payments we are left with a profit of ": ", mas depois dos pagamentos de propriedade sobra um lucro de ",
+      " to PARTY inventory": " para o inventário do GRUPO",
+      " to GUILD inventory": " para o inventário da GUILDA",
+      "Repair Gear": "Reparar Equipamento",
+      "Overworld encounter!": "Encontro no mapa!",
+      "Turn In Quest": "Entregar Missão",
+      "Add Quest": "Adicionar Missão",
+      "Select quest to start": "Selecione a missão para começar",
+      "Can't use In Combat": "Não Pode Usar em Combate",
+      "Unable to use this item while in combat.": "Não é possível usar este item durante o combate.",
+      "TODO : Show bounty progress updated somewhere. [Bounty progress: ": "TODO : Mostrar o progresso da recompensa em algum lugar. [Progresso da recompensa: "
     },
     "GuildManagementDetails": {
       "Gear": "Equipamento",
@@ -2701,12 +2762,49 @@
       "This item is currently out of energy and needs time to recharge. It will be availabe in ": "Este item está sem energia e precisa de tempo para recarregar. Estará disponível em ",
       "This item needs to be repaired before it can be equipped.": "Este item precisa ser reparado antes de poder ser equipado.",
       "Which enchantment would you like to destroy and replace? This cannot be undone.": "Qual encantamento você gostaria de destruir e substituir? Isso não pode ser desfeito.",
-      "You have not currently spent any Attribute points.": "Você não gastou nenhum ponto de Atributo até agora."
+      "You have not currently spent any Attribute points.": "Você não gastou nenhum ponto de Atributo até agora.",
+      "Unable to Refund Attribute Points": "Não é Possível Devolver Pontos de Atributo",
+      "Refund Attributes": "Devolver Atributos",
+      " and you will receive ": " e você receberá ",
+      " Attribute points.": " pontos de atributo.",
+      "Yes, refund the points.": "Sim, devolver os pontos.",
+      "Need More Coin": "Moedas Insuficientes",
+      "You need at ": "Você precisa de pelo menos ",
+      " in order to refund your attibute points.": " para devolver os seus pontos de atributo.",
+      " Abilities Equipped": " Habilidades Equipadas",
+      "Upgrade Points : ": "Pontos de Aprimoramento : ",
+      "Toggle Ability": "Alternar Habilidade",
+      "Previous Character": "Personagem Anterior",
+      "Next Character": "Próximo Personagem",
+      "Repair Item": "Reparar Item",
+      "Contract length : ": "Duração do Contrato : ",
+      "Remaining length : ": "Duração Restante : ",
+      "Yearly rate : ": "Valor Anual : ",
+      "Contract Details": "Detalhes do Contrato",
+      "Dismiss From Company": "Demitir da Companhia",
+      "Give Bonus": "Dar Bônus",
+      "Fire them without pay": "Demitir sem pagar",
+      "Enchant Item?": "Encantar Item?",
+      "Enchant item": "Encantar item",
+      "Replace Enchantment": "Substituir Encantamento",
+      "? This cannot be undone.": "? Isso não pode ser desfeito.",
+      "Replace enchantment?": "Substituir encantamento?",
+      "Enchantment Not Compatible": "Encantamento Incompatível",
+      "Cannot Equip": "Não é Possível Equipar"
     },
     "GuildManagementAbilityScreen": {
       "New ability unlocked! Select a new one to unlock it.\n\n": "Nova habilidade desbloqueada! Selecione uma nova para desbloqueá-la.\n\n",
       "Cannot change active abilities during missions | Ability Points Available: ": "Não é possível trocar habilidades ativas durante missões | Pontos de Habilidade Disponíveis: ",
-      "You need to have 4 abilities active before you can resume.": "Você precisa ter 4 habilidades ativas antes de poder continuar."
+      "You need to have 4 abilities active before you can resume.": "Você precisa ter 4 habilidades ativas antes de poder continuar.",
+      "Add/Remove Ability": "Adicionar/Remover Habilidade",
+      "You need to have ": "Você precisa ter ",
+      " abilities active before you can resume.": " habilidades ativas antes de continuar.",
+      "Unlock Ability?": "Desbloquear Habilidade?",
+      "Do you want to unlock ": "Você quer desbloquear ",
+      "Unlock Ability": "Desbloquear Habilidade",
+      "View Ability Tree": "Ver Árvore de Habilidades",
+      " Abilities Equipped | Upgrade Points : ": " Habilidades Equipadas | Pontos de Aprimoramento : ",
+      " abilities active before you do that.": " habilidades ativas antes de fazer isso."
     },
     "GuildCharacterAbilityUpgradesScreen": {
       "Confirm Upgrades": "Confirmar Aprimoramentos",
@@ -2721,7 +2819,12 @@
       "Locked": "Trancado",
       "Unlocks at level 5.": "Desbloqueia no nível 5.",
       "Unlocks at level 10.": "Desbloqueia no nível 10.",
-      "Ability Limit: ": "Limite de Habilidades: "
+      "Ability Limit: ": "Limite de Habilidades: ",
+      "Revert Upgrades": "Reverter Aprimoramentos",
+      "Previous Ability": "Habilidade Anterior",
+      "Next Ability": "Próxima Habilidade",
+      "Undo Upgrades": "Desfazer Aprimoramentos",
+      "Confirm Action": "Confirmar Ação"
     },
     "CityDetails": {
       " has successfully led a revolt and the citizens have seized control. ": " liderou uma revolta com sucesso e os cidadãos tomaram o controle. ",
@@ -2745,7 +2848,12 @@
       "<sprite name=\"PC-leftClick\"> Select Tile To Scout": "<sprite name=\"PC-leftClick\"> Selecione a Célula para Explorar",
       "<sprite name=\"XboxOne-a\"> Select Tile To Scout": "<sprite name=\"XboxOne-a\"> Selecione a Célula para Explorar",
       "<color=red>No tiles to Scout in range</color>": "<color=red>Sem células para Explorar no alcance</color>",
-      "Yikes! Couldnt find a place for a key in the dungeo so just give it to the user so we dont get stuck potentially": "Eita! Não encontramos lugar para a chave no calabouço, então entregue direto ao jogador para não travarmos."
+      "Yikes! Couldnt find a place for a key in the dungeo so just give it to the user so we dont get stuck potentially": "Eita! Não encontramos lugar para a chave no calabouço, então entregue direto ao jogador para não travarmos.",
+      "Open Quest Journal": "Abrir Diário de Missões",
+      "Show Legend": "Mostrar Legenda",
+      "Open Company Management": "Abrir Gerenciamento da Companhia",
+      "Begin Camping": "Começar Acampamento",
+      "Open Inventory": "Abrir Inventário"
     },
     "SystemUi": {
       "Abandon the current mission": "Abandonar a missão atual",
@@ -2801,7 +2909,19 @@
       "Unable to act. Any damage incurred will dispel the condition. While asleep, character is healed by a small amount": "Não pode agir. Qualquer dano recebido dissipa a condição. Enquanto dorme, o personagem é curado por uma pequena quantidade",
       "Victim suffers Fire damage once per round on their turn": "A vítima sofre dano de Fogo uma vez por turno",
       "Victim will attack friendly units on their turn": "A vítima ataca unidades aliadas no turno dela",
-      "While Bleeding, any action besides Waiting or Guarding will inflict damage. Use a Bandage to remove this condition": "Enquanto sangra, qualquer ação além de Esperar ou Proteger causa dano. Use uma Bandagem para remover esta condição"
+      "While Bleeding, any action besides Waiting or Guarding will inflict damage. Use a Bandage to remove this condition": "Enquanto sangra, qualquer ação além de Esperar ou Proteger causa dano. Use uma Bandagem para remover esta condição",
+      "Damage Shield": "Escudo de Dano",
+      "Grievous Wounds": "Ferimentos Graves",
+      "Holy based attack": "Ataque baseado em Sacro",
+      "Dark based attack": "Ataque baseado em Trevas",
+      "Lightning based attack": "Ataque baseado em Raio",
+      "Fire based attack": "Ataque baseado em Fogo",
+      "Frost based attack": "Ataque baseado em Gelo",
+      "Earth based attack": "Ataque baseado em Terra",
+      "Force based attack": "Ataque baseado em Força",
+      "Slashing based attack": "Ataque baseado em Corte",
+      "Piercing based attack": "Ataque baseado em Perfuração",
+      "Crushing based attack": "Ataque baseado em Contusão"
     },
     "AbilityDawn": {
       "Single target heal for ": "Cura de alvo único de ",
@@ -3003,6 +3123,1749 @@
     },
     "AbilityWildfire": {
       "Instant": "Instantâneo"
+    },
+    "CharacterCustomizerScreen": {
+      "Apparel": "Vestuário",
+      "Background": "Histórico",
+      "Eyebrows": "Sobrancelhas",
+      "Eyes": "Olhos",
+      "Facial Hair": "Pelo Facial",
+      "Hair": "Cabelo",
+      "Outfit": "Traje",
+      "Pronouns": "Pronomes",
+      "Scars": "Cicatrizes",
+      "Skin": "Pele",
+      "Skin Tone": "Tom de Pele",
+      "Tattoos": "Tatuagens",
+      "She": "Ela",
+      "Her": "Dela",
+      "Him": "Ele",
+      "His": "Dele",
+      "They": "Elu",
+      "Them": "Delu",
+      "Their": "Delu",
+      "she": "ela",
+      "her": "dela",
+      "him": "ele",
+      "his": "dele",
+      "they": "elu",
+      "them": "delu",
+      "their": "delu",
+      "Cancel": "Cancelar",
+      "Close": "Fechar"
+    },
+    "PartyManager": {
+      " will join you later when you get back to the rest of the Company.": " vai se juntar a você mais tarde, quando voltar para o resto da Companhia.",
+      "Everyone gained ": "Todos ganharam ",
+      "Notice": "Aviso",
+      "You're party is full. ": "O seu grupo está cheio. "
+    },
+    "GuildManagementRosterGear": {
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Select": "Selecionar",
+      "Move": "Mover",
+      "Navigate": "Navegar",
+      " slot for enchantments.": " espaço para encantamentos.",
+      " slots. This item only has ": " espaços. Esse item só tem ",
+      "? This cannot be undone.": "? Isso não pode ser desfeito.",
+      "Are you sure you want to add the following enchantment to this item? This will consume this enchantment scroll (": "Tem certeza que deseja adicionar o seguinte encantamento a este item? Isso vai consumir o pergaminho de encantamento (",
+      "Are you sure you want to destroy any existing enchantments and replace with ": "Tem certeza que deseja destruir os encantamentos existentes e substituir por ",
+      "Cannot Equip": "Não é Possível Equipar",
+      "Cannot remove your basic weapon. Equip a better item to replace this item.": "Não é possível remover a sua arma básica. Equipe um item melhor para substituí-la.",
+      "Customize": "Personalizar",
+      "Enchant Item?": "Encantar Item?",
+      "Enchant item": "Encantar item",
+      "Enchantment Not Compatible": "Encantamento Incompatível",
+      "Gear": "Equipamento",
+      "Next Character": "Próximo Personagem",
+      "Not able to add the same enchantment type to the same item multiple times.": "Não é possível adicionar o mesmo tipo de encantamento ao mesmo item várias vezes.",
+      "Previous Character": "Personagem Anterior",
+      "Repair Item": "Reparar Item",
+      "Replace Enchantment": "Substituir Encantamento",
+      "Replace enchantment?": "Substituir encantamento?",
+      "This enchantment cannot be slotted into this piece of gear.": "Esse encantamento não pode ser colocado nesta peça de equipamento.",
+      "This enchantment requires ": "Esse encantamento requer ",
+      "This item needs to be repaired before it can be equipped.": "Este item precisa ser reparado antes de poder ser equipado.",
+      "Unable To Enchant": "Não é Possível Encantar",
+      "Which enchantment would you like to destroy and replace? This cannot be undone.": "Qual encantamento você gostaria de destruir e substituir? Isso não pode ser desfeito."
+    },
+    "GuildManagementStorageScreen": {
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Move": "Mover",
+      "Navigate": "Navegar",
+      "Sort": "Ordenar",
+      ") If you discard the item, the contract will be abandoned.": ") Se você descartar o item, o contrato será abandonado.",
+      ") You cannot discard this item.": ") Você não pode descartar este item.",
+      ") is required for a contract. (": ") é necessário para um contrato. (",
+      ") is required for an important contract. (": ") é necessário para um contrato importante. (",
+      "All": "Tudo",
+      "Armor": "Armadura",
+      "Cannot Sell Item": "Não é Possível Vender o Item",
+      "Discard": "Descartar",
+      "Discard Item?": "Descartar Item?",
+      "Do you want to discard this item?\n\n": "Você quer descartar este item?\n\n",
+      "Enchantments": "Encantamentos",
+      "Offhand": "Arma Secundária",
+      "Other": "Outros",
+      "Repair Item": "Reparar Item",
+      "Sort: ": "Ordenar: ",
+      "This item (": "Este item (",
+      "Warning": "Atenção",
+      "Weapons": "Armas",
+      "over-encumbered": "sobrecarregado"
+    },
+    "NewMissionPartySelectScreen": {
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Navigate": "Navegar",
+      "Sort": "Ordenar",
+      "  Location: ": "  Local: ",
+      "  Mission Length: ": "  Duração da Missão: ",
+      "  Sort: ": "  Ordenar: ",
+      " injuries.": " ferimentos.",
+      " is required to be on this team.": " é necessário neste time.",
+      " is still recovering from ": " ainda está se recuperando de ",
+      " is unavailable for this encounter.": " está indisponível para este encontro.",
+      "Allies": "Aliados",
+      "Cannot Remove From Team": "Não é Possível Remover do Time",
+      "Confirm Action": "Confirmar Ação",
+      "Objectives": "Objetivos",
+      "Please remove a party member first before adding anymore": "Remova um membro do grupo antes de adicionar mais",
+      "Rewards": "Recompensas",
+      "Select Character": "Selecionar Personagem",
+      "Select Provisions": "Selecionar Provisões",
+      "Start": "Começar",
+      "Survive": "Sobreviver",
+      "Team 1": "Time 1",
+      "Team 2": "Time 2",
+      "Venture Forth": "Partir para a Aventura",
+      "Warning": "Atenção",
+      "Survive <color=red>(Cannot retreat)</color>": "Sobreviver <color=red>(Não é possível recuar)</color>",
+      "\n\n<color=red>Unable to retreat.</color>": "\n\n<color=red>Não é possível recuar.</color>"
+    },
+    "GuildCouncilSpymaster": {
+      " and House ": " e a Casa ",
+      " are now growing more suspicious of each other.": " estão ficando mais desconfiadas uma da outra.",
+      " cost]": " de custo]",
+      " day": " dia",
+      " days": " dias",
+      " for another ": " por mais ",
+      "Discovering secrets within House ": "Descobrindo segredos dentro da Casa ",
+      "Disrupting relations between House ": "Perturbando as relações entre a Casa ",
+      "Proceed [Faster ": "Prosseguir [Mais rápido ",
+      "Proceed [Fastest ": "Prosseguir [O mais rápido ",
+      "Proceed [Moderate ": "Prosseguir [Moderado ",
+      "Proceed [Slow ": "Prosseguir [Lento ",
+      "Ready for orders": "Pronto para ordens",
+      "Rumor": "Boato",
+      "Your Master Of Intrigue has a returned with a detailed report on House ": "O seu Mestre Espião voltou com um relatório detalhado sobre a Casa ",
+      "Your Master Of Intrigue has returned successfully. House ": "O seu Mestre Espião voltou com sucesso. A Casa ",
+      "Your Master Of Intrigue has returned unsuccessfully from their mission.": "O seu Mestre Espião voltou sem sucesso da missão dele.",
+      "Your Master Of Intrigue was unable to uncover anything being plotted by House ": "O seu Mestre Espião não conseguiu descobrir nada tramado pela Casa ",
+      "• Unlocks Rumors In Cities\n• Find Hidden Intel\n• Discover Lies": "• Desbloqueia Rumores nas Cidades\n• Encontra Informações Ocultas\n• Descobre Mentiras",
+      "Placeholder, add variations of rumor messages. I'm having my spies look into some rumors I've been hearing. How should we proceed?": "Placeholder, adicione variações das mensagens de rumor. Mandei meus espiões investigarem alguns boatos que ando ouvindo. Como devemos pros"
+    },
+    "GuildPerkUpgradeScreen": {
+      " Requires ": " Requer ",
+      " Requires Renown Level ": " Requer Nível de Renome ",
+      "Apply Upgrades": "Aplicar Aprimoramentos",
+      "Are you sure you want to apply your upgrades and close the screen?": "Tem certeza que deseja aplicar os seus aprimoramentos e fechar a tela?",
+      "Are you sure you want to apply your upgrades?": "Tem certeza que deseja aplicar os seus aprimoramentos?",
+      "Available": "Disponível",
+      "Complete": "Concluído",
+      "Confirm Action": "Confirmar Ação",
+      "Confirm Upgrades": "Confirmar Aprimoramentos",
+      "Only the general tab is available in this build": "Só a aba geral está disponível nesta versão",
+      "Open Upgrades": "Abrir Aprimoramentos",
+      "Purchase Upgrade": "Comprar Aprimoramento",
+      "Undo Upgrades": "Desfazer Aprimoramentos",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Move": "Mover",
+      "Navigate": "Navegar"
+    },
+    "GuildMemberRosterCard": {
+      " ago.": " atrás.",
+      " days": " dias",
+      " injuries at an infirmary": " ferimentos em uma enfermaria",
+      " is Well-Rested": " está Bem Descansado",
+      " until ": " até ",
+      ".\nJoined ": ".\nEntrou ",
+      "Age ": "Idade ",
+      "Available ": "Disponível ",
+      "Click to select an available job": "Clique para selecionar um trabalho disponível",
+      "Cut of profits and loyalty for ": "Corte dos lucros e lealdade para ",
+      "Fatigued ": "Fatigado ",
+      "Infirmary ": "Enfermaria ",
+      "Job Unassigned": "Trabalho sem Atribuição",
+      "Loyalty for ": "Lealdade para ",
+      "Needs to heal from ": "Precisa se curar de ",
+      "Ready for Duty. Well-Rested buff +25% XP and +5% Power": "Pronto para o serviço. Buff Bem Descansado +25% de XP e +5% de Poder",
+      "Ready for duty. ": "Pronto para o serviço. ",
+      "Requires immediate treatment at an infirmary in town": "Precisa de tratamento imediato em uma enfermaria na cidade",
+      "Yearly salary and loyalty for ": "Salário anual e lealdade para "
+    },
+    "OptionsScreen": {
+      "(Experimental) Won't update until loading a save or entering a new dungeon": "(Experimental) Só aplica ao carregar um save ou entrar em um novo calabouço",
+      "100% Speed": "Velocidade 100%",
+      "125% Speed": "Velocidade 125%",
+      "150% Speed": "Velocidade 150%",
+      "200% Speed": "Velocidade 200%",
+      "25% Speed": "Velocidade 25%",
+      "300% Speed": "Velocidade 300%",
+      "50% Speed": "Velocidade 50%",
+      "80% Speed": "Velocidade 80%",
+      "Are you sure you want to reset these key bindings to their default settings?": "Tem certeza que deseja restaurar as teclas para os padrões?",
+      "High": "Alta",
+      "Large": "Grande",
+      "Low": "Baixa",
+      "Off": "Desligado",
+      "Reset Key Bindings?": "Restaurar Teclas?",
+      "Settings": "Opções",
+      "Small": "Pequeno",
+      "Uncapped": "Sem Limite"
+    },
+    "LevelUpScreen": {
+      " Abilities)\n": " Habilidades)\n",
+      "Choose a new ability to unock it\n\n": "Escolha uma nova habilidade para desbloqueá-la\n\n",
+      "Do you want to unlock ": "Você quer desbloquear ",
+      "Spend points": "Gastar pontos",
+      "Unlock Ability": "Desbloquear Habilidade",
+      "Unlock Ability?": "Desbloquear Habilidade?",
+      "View Ability Tree": "Ver Árvore de Habilidades",
+      "Close menu": "Fechar menu",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Move": "Mover",
+      "Navigate": "Navegar",
+      "Select": "Selecionar",
+      "You have unspent ability upgrade points. Select an ability you wish to upgrade. You may also choose to spend the points at a later time in the roster management menu.": "Você tem pontos de aprimoramento de habilidade não gastos. Selecione uma habilidade que deseja aprimorar. Você também pode escolher gastar os pontos "
+    },
+    "GuildHistoryScreen": {
+      "\nDamage Dealt : ": "\nDano Causado : ",
+      "\nMissions Total :": "\nTotal de Missões :",
+      "Battles Fought": "Batalhas Travadas",
+      "Damage Dealt": "Dano Causado",
+      "Distance Traveled": "Distância Percorrida",
+      "Enemies Killed": "Inimigos Mortos",
+      "Kills : ": "Mortes : ",
+      "Missions Completed": "Missões Concluídas",
+      "Total Coin Earned ": "Total de Moedas Ganhas ",
+      "Total Members": "Total de Membros",
+      "Move Camera": "Mover a Câmera",
+      "Cancel": "Cancelar",
+      "Close": "Fechar"
+    },
+    "PostCombatUI": {
+      ". Needs to be lower than ": ". Precisa ser menor que ",
+      "Anything we leave behind will be gone, are we sure we don't need it?": "Tudo que deixarmos para trás se perderá. Temos certeza que não precisamos disso?",
+      "Confirm Action": "Confirmar Ação",
+      "Important Item": "Item Importante",
+      "Leave Loot?": "Deixar o Espólio?",
+      "Loot": "Espólio",
+      "Loot All": "Pegar Todo o Espólio",
+      "You are about to leave behind an important item. We might need that key so make sure to grab it.": "Você está prestes a deixar para trás um item importante. Podemos precisar dessa chave, então garanta pegá-la.",
+      "Exit": "Sair",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Move": "Mover"
+    },
+    "AssignJobPopup": {
+      " in order to retrain with this job.": " para treinar novamente com este trabalho.",
+      "Assign a Job to: ": "Atribuir um Trabalho a: ",
+      "Assigning your first job is free, however, retraining to a new job will cost ": "Atribuir o primeiro trabalho é grátis, mas treinar novamente para um novo trabalho vai custar ",
+      "Continue exploring the world to find the knowledge to use this job.": "Continue explorando o mundo para encontrar o conhecimento para usar este trabalho.",
+      "Cost To Change Job : ": "Custo para Trocar de Trabalho : ",
+      "Current Job: ": "Trabalho Atual: ",
+      "Current Job: None": "Trabalho Atual: Nenhum",
+      "Not Enough Coin": "Moedas Insuficientes",
+      "You need ": "Você precisa de ",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Select": "Selecionar",
+      "Move": "Mover",
+      "Navigate": "Navegar"
+    },
+    "WorldInfoUi": {
+      " 1 Day (": " 1 Dia (",
+      " Days (": " Dias (",
+      " days in a month\n": " dias em um mês\n",
+      " days in a year": " dias em um ano",
+      " people available for active duty": " pessoas disponíveis para o serviço ativo",
+      "Company upgrade points": "Pontos de aprimoramento da companhia",
+      "Current Coin:\n": "Moedas Atuais:\n",
+      "Daily Upkeep:\n": "Custo Diário:\n",
+      "Make camp": "Acampar",
+      "Salaries Due": "Salários Devidos",
+      "Salary Costs:\n": "Custos com Salários:\n",
+      "Stop moving if you are currently traveling": "Parar de viajar se você estiver viajando",
+      "Toggle the borders of regions": "Alternar as fronteiras das regiões",
+      "Total renown earned": "Renome total ganho",
+      "Travel speed": "Velocidade de viagem",
+      "View who controls the various regions": "Ver quem controla as várias regiões"
+    },
+    "WorldInfo": {
+      " was founded and their journey began.": " foi fundada e a jornada deles começou.",
+      " | Food = ": " | Comida = ",
+      " | Iron = ": " | Ferro = ",
+      " | Stone = ": " | Pedra = ",
+      " | Wealth = ": " | Riqueza = ",
+      " | Wood = ": " | Madeira = ",
+      "'s Seat (": " (",
+      "Can only rest on the world map screen.": "Só é possível descansar na tela do mapa-múndi.",
+      "Cannot Rest Right Now": "Não é Possível Descansar Agora",
+      "House ": "Casa ",
+      "Spring": "Primavera"
+    },
+    "ContractCompletedUI": {
+      " coins.": " moedas.",
+      "Pouch containing ": "Bolsa contendo ",
+      "Exit": "Sair",
+      "Cancel": "Cancelar",
+      "Close": "Fechar"
+    },
+    "FactionSelectorScreen": {
+      "\n\nIt will take ": "\n\nVai levar ",
+      "\n\nSelect 2 Houses to send your spies. They will spread rumors and try to pit their leaders against each other.": "\n\nSelecione 2 Casas para enviar os seus espiões. Eles vão espalhar rumores e tentar colocar os líderes uma contra a outra.",
+      "  Sort: Capitals Only": "  Ordenar: Só Capitais",
+      "  Sort: High Rep": "  Ordenar: Alta Rep",
+      "  Sort: Kingdom Rulers": "  Ordenar: Governantes dos Reinos",
+      "  Sort: Low Rep": "  Ordenar: Baixa Rep",
+      "  Sort: Major Houses Only": "  Ordenar: Só Casas Maiores",
+      " days for your emissary to improve relations with ": " dias para o seu emissário melhorar as relações com ",
+      "Navigate": "Navegar",
+      "Sort": "Ordenar",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar"
+    },
+    "GuildMentorSelectorScreen": {
+      "Active, ": "Ativo, ",
+      "Age ": "Idade ",
+      "Deceased, ": "Falecido, ",
+      "End Mentorship": "Encerrar Mentoria",
+      "Unavailable, ": "Indisponível, ",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Select": "Selecionar",
+      "Move": "Mover",
+      "Navigate": "Navegar",
+      "Sort": "Ordenar"
+    },
+    "GuildMemberHistoryScreen": {
+      "Active, ": "Ativo, ",
+      "Age ": "Idade ",
+      "Deceased, ": "Falecido, ",
+      "Unavailable, ": "Indisponível, ",
+      "Navigate": "Navegar",
+      "Select": "Selecionar",
+      "Sort": "Ordenar",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar"
+    },
+    "CampingScreen": {
+      "\" is preventing anyone from being put on lookout for the time being.": "\" está impedindo que alguém fique de vigia por enquanto.",
+      "Are you sure you want to camp without using any incense?": "Tem certeza que deseja acampar sem usar nenhum incenso?",
+      "Modify incense": "Modificar incenso",
+      "No Incense Selected": "Nenhum Incenso Selecionado",
+      "Primary effects of incense are applied to your entire party": "Os efeitos primários do incenso são aplicados a todo o seu grupo",
+      "The Time Modifier \"": "O Modificador de Tempo \"",
+      "Those on lookout do not receive secondary effects from incense.": "Quem fica de vigia não recebe os efeitos secundários do incenso.",
+      "Unable To Be Placed On Lookout": "Não Pode Ficar de Vigia",
+      "Yes": "Sim"
+    },
+    "GuildCouncilEmissary": {
+      " and will return in ": " e vai voltar em ",
+      " day": " dia",
+      " days": " dias",
+      ". Relationship +": ". Relação +",
+      "Improving relations with House ": "Melhorando as relações com a Casa ",
+      "Improving relations with the city ": "Melhorando as relações com a cidade ",
+      "Ready for orders": "Pronto para ordens",
+      "Your emissary has returned from ": "O seu emissário voltou de ",
+      "Your emissary has returned from House ": "O seu emissário voltou da Casa ",
+      "Your emissary has returned unsuccessfully from ": "O seu emissário voltou sem sucesso de ",
+      "Your emissary has returned unsuccessfully from House ": "O seu emissário voltou sem sucesso da Casa ",
+      "• Unlocks Noble Quests\n• Earn Bonus Rep\n• Earn More Gold From Missions": "• Desbloqueia Missões Nobres\n• Ganha Rep Extra\n• Ganha Mais Ouro em Missões"
+    },
+    "MissionPartySelectScreen": {
+      "AVAILABLE CHARACTERS": "PERSONAGENS DISPONÍVEIS",
+      "COMBAT FORMATION": "FORMAÇÃO DE COMBATE",
+      "CONFIRM PARTY": "CONFIRMAR GRUPO",
+      "PARTY SELECTION": "SELEÇÃO DE GRUPO",
+      "PARTY SYNERGY": "SINERGIA DO GRUPO",
+      "Please remove a party member first before adding anymore": "Remova um membro do grupo antes de adicionar mais",
+      "Synergy Percent = ": "Porcentagem de Sinergia = "
+    },
+    "SkillbarUI": {
+      "Ability": "Habilidade",
+      "Ability 1": "Habilidade 1",
+      "Ability 2": "Habilidade 2",
+      "Ability 3": "Habilidade 3",
+      "Ability 4": "Habilidade 4",
+      "Escape From Combat": "Fugir do Combate",
+      "Guard Ability": "Habilidade de Guarda",
+      "Open Inventory": "Abrir Inventário",
+      "Open Item In Combat": "Abrir Item em Combate",
+      "Wait": "Esperar",
+      "Confirm": "Confirmar",
+      "Move": "Mover"
+    },
+    "ExpeditionSummaryRosterCard": {
+      " broke": " quebrou",
+      "Fatigue ": "Fadiga ",
+      "Loyalty change\n<color=#43bdde>": "Mudança de Lealdade\n<color=#43bdde>",
+      "Loyalty change\n<color=red>": "Mudança de Lealdade\n<color=red>",
+      "Number of killing blows": "Número de golpes fatais",
+      "Total damage dealt": "Dano total causado",
+      "Total damage taken": "Dano total recebido",
+      "Total days until fatigue wears off": "Total de dias até a fadiga passar",
+      "Total healing dispensed to allies": "Cura total distribuída a aliados"
+    },
+    "PartySelectCompactListItem": {
+      " Job Unassigned ": " Trabalho sem Atribuição ",
+      " days": " dias",
+      " is rested": " está descansado",
+      " until ": " até ",
+      "Available ": "Disponível ",
+      "Click to select an available job": "Clique para selecionar um trabalho disponível",
+      "Fatigued ": "Fatigado ",
+      "Infirmary ": "Enfermaria ",
+      "Job Unassigned ": "Trabalho sem Atribuição ",
+      "Modify gear and abilities": "Modificar equipamento e habilidades",
+      "Ready for Duty. Well-Rested buff +25% XP and +5% Power": "Pronto para o serviço. Buff Bem Descansado +25% de XP e +5% de Poder"
+    },
+    "WanderingMerchantScreen": {
+      "Coin On Hand ": "Moedas em Mãos ",
+      "Coin will be lost if you die or run away during combat.": "As moedas serão perdidas se você morrer ou fugir durante o combate.",
+      "Cost Of Provisions ": "Custo das Provisões ",
+      "Out Of Space": "Sem Espaço",
+      "Remove an item from your inventory before adding anymore items. You've reached your capacity.": "Remova um item do inventário antes de adicionar mais. Você atingiu a sua capacidade.",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar",
+      "Select": "Selecionar",
+      "Move": "Mover",
+      "Navigate": "Navegar"
+    },
+    "GuildCouncilBountyScreen": {
+      "\n\nDo you want to bribe ": "\n\nVocê quer subornar ",
+      " to remove the bounty for ": " para remover a recompensa por ",
+      "Placeholder text for this.": "Texto de exemplo para isto.",
+      "Placeholder text, select a bounty to pay off.": "Texto de exemplo, selecione uma recompensa para pagar.",
+      "Placeholder text, there are currently no bounties on your head so that's good.": "Texto de exemplo, não há recompensas pela sua cabeça no momento, e isso é bom.",
+      "Navigate": "Navegar",
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Confirm": "Confirmar"
+    },
+    "OptionsMenu": {
+      "Action Unavailable": "Ação Indisponível",
+      "Cannot change difficulty during combat.": "Não é possível mudar a dificuldade durante o combate.",
+      "Cannot change difficulty in Iron Man mode.": "Não é possível mudar a dificuldade no modo Iron Man.",
+      "Prologue Chapter": "Capítulo do Prólogo",
+      "Quit To Desktop": "Sair para o Desktop",
+      "Quit to Main Menu": "Voltar ao Menu Principal",
+      "Exit": "Sair"
+    },
+    "GuildCouncilBattlemaster": {
+      " day": " dia",
+      " days": " dias",
+      " for another ": " por mais ",
+      "Battlemaster \"I have details on a mission I wanted to bring to your attention.\"": "Mestre de Batalha \"Tenho detalhes de uma missão que queria trazer à sua atenção.\"",
+      "Ready for orders": "Pronto para ordens",
+      "Teaching ": "Ensinando ",
+      "Working with ": "Trabalhando com ",
+      "days": "dias",
+      "• Characters Earn Bonus XP\n• Find More Recruits In Towns\n• Learn More Info On Recruits": "• Personagens Ganham XP Extra\n• Encontra Mais Recrutas nas Cidades\n• Aprende Mais Informações sobre Recrutas"
+    },
+    "TargetStatsUI": {
+      "<sprite name=\"chanceToHit\"> Hit Chance ": "<sprite name=\"chanceToHit\"> Chance de Acerto ",
+      "<sprite name=\"chanceToHit\"> Hit Chance 100%": "<sprite name=\"chanceToHit\"> Chance de Acerto 100%",
+      "<sprite name=\"defense\"> Defense ": "<sprite name=\"defense\"> Defesa ",
+      "Hero Hit Chance <sprite name=\"chanceToHit\">": "Chance de Acerto do Herói <sprite name=\"chanceToHit\">",
+      "Target Defense <sprite name=\"defense\">": "Defesa do Alvo <sprite name=\"defense\">",
+      "Info": "Informação"
+    },
+    "EndOfCombatPartyXPGet": {
+      "Damage dealt": "Dano causado",
+      "Damage taken": "Dano recebido",
+      "Healing dispensed": "Cura distribuída",
+      "Killing blows": "Golpes fatais"
+    },
+    "TownHubScreen": {
+      " (DESTROYED)": " (DESTRUÍDA)",
+      " (REVOLTING)": " (EM REVOLTA)",
+      "Enter": "Entrar",
+      "History": "Histórico",
+      "Cancel": "Cancelar",
+      "Some text detailing this history of this place (data needs to be filled out in json and dynamic data appended to the end of it)": "Um texto detalhando a história deste lugar (os dados precisam ser preenchidos no json)",
+      "Info": "Informação"
+    },
+    "EnemyHoverDetailsUi": {
+      "+25% XP and + 5% Power": "+25% de XP e + 5% de Poder",
+      "Fatigued": "Fatigado",
+      "Traits": "Traços",
+      "Well-rested": "Bem descansado"
+    },
+    "GuildManagementUi": {
+      "Apply Upgrades": "Aplicar Aprimoramentos",
+      "Are you sure you want to apply your upgrades and change screens?": "Tem certeza que deseja aplicar os seus aprimoramentos e trocar de tela?",
+      "Coming Soon": "Em Breve",
+      "Confirm Upgrades": "Confirmar Aprimoramentos",
+      "Council will be added in a future early access update": "O Conselho será adicionado em uma atualização futura do acesso antecipado",
+      "Not available in this build.": "Não disponível nesta versão.",
+      "Unavailable": "Indisponível"
+    },
+    "PrepareForDungeonScreen": {
+      "Alert": "Alerta",
+      "One of your teams isn't full. Continue anyway?": "Um dos seus times não está cheio. Continuar mesmo assim?",
+      "Team Not Full": "Time Incompleto",
+      "You need at least 1 person in your party to continue.": "Você precisa de pelo menos 1 pessoa no grupo para continuar.",
+      "You need at least 1 person per team to continue.": "Você precisa de pelo menos 1 pessoa por time para continuar.",
+      "Your team isn't full. Continue anyway?": "O seu time não está cheio. Continuar mesmo assim?"
+    },
+    "UseItemUi": {
+      " cannot be used right now.": " não pode ser usado agora.",
+      "(Fortified) Costs 0": "(Fortificado) Custa 0",
+      "Can't Use Here": "Não Pode Usar Aqui",
+      "Costs 1": "Custa 1",
+      "Open Inventory": "Abrir Inventário",
+      "Cancel": "Cancelar"
+    },
+    "CivilianUiDetails": {
+      "   |   Age: ": "   |   Idade: ",
+      " years old": " anos",
+      " years old   |    ": " anos   |    ",
+      "Skills": "Perícias",
+      "Skills: ": "Perícias: ",
+      "Button": "Botão"
+    },
+    "GuildReputationScreen": {
+      "  Sort: High Rep": "  Ordenar: Alta Rep",
+      "  Sort: Low Rep": "  Ordenar: Baixa Rep",
+      "Navigate": "Navegar",
+      "Sort": "Ordenar",
+      "Cancel": "Cancelar",
+      "Close": "Fechar"
+    },
+    "MissionGearSelectScreen": {
+      "BEGIN MISSION": "COMEÇAR MISSÃO",
+      "Character": "Personagem",
+      "GUILD STORAGE": "ARMAZÉM DA GUILDA",
+      "MISSION PROVISIONS": "PROVISÕES DA MISSÃO",
+      "QUICK SHOP": "LOJA RÁPIDA",
+      "REVISE PARTY": "REVISAR GRUPO"
+    },
+    "WorldCanvasUi": {
+      "Open Company Management": "Abrir Gerenciamento da Companhia",
+      "Open History": "Abrir Histórico",
+      "Open Inventory": "Abrir Inventário",
+      "Open Reputation": "Abrir Reputação",
+      "Open Upgrades": "Abrir Aprimoramentos",
+      "Cancel": "Cancelar"
+    },
+    "GuildManagementRoster": {
+      "Cancel": "Cancelar",
+      "Confirm": "Confirmar",
+      "Move": "Mover",
+      "Sort": "Ordenar"
+    },
+    "DeploymentPhaseUI": {
+      "Confirm": "Confirmar",
+      "Confirm Action": "Confirmar Ação",
+      "Select Character To Move": "Selecione o Personagem para Mover",
+      "Start Combat": "Começar o Combate"
+    },
+    "DungeonUi": {
+      "Current coin available": "Moedas disponíveis",
+      "Number of tiles explored": "Número de células exploradas",
+      "Total combat encounters": "Total de encontros de combate"
+    },
+    "PlayerHoverDetailsUi": {
+      "+25% XP and +5% Power": "+25% de XP e +5% de Poder",
+      "Fatigued Debuff\n": "Penalidade de Fadiga\n",
+      "Rested Bonus\n+25% XP and +5% Power": "Bônus de Descanso\n+25% de XP e +5% de Poder"
+    },
+    "ReadableScreen": {
+      "Cancel": "Cancelar",
+      "Confirm": "Confirmar",
+      "Move": "Mover"
+    },
+    "TutorialTooltip": {
+      "Cancel": "Cancelar"
+    },
+    "CinematicDialogueUiPanel": {},
+    "ItemDescriptionDetailsComponent": {},
+    "QuestContractButton": {
+      "Too Many Contracts": "Contratos Demais",
+      "You have the maximum number of contracts you can accept at this time. Cancel a contract or complete one first.": "Você tem o número máximo de contratos que pode aceitar neste momento. Cancele ou conclua um contrato primeiro."
+    },
+    "RepairItemScreen": {
+      "Repair Cost: ": "Custo do Reparo: ",
+      "Repair Cost: <color=red>": "Custo do Reparo: <color=red>"
+    },
+    "MainMenu": {
+      "Prologue Chapter": "Capítulo do Prólogo"
+    },
+    "OptionsChangeMiscScreen": {
+      "Cancel": "Cancelar",
+      "Close": "Fechar",
+      "Move": "Mover"
+    },
+    "ScriptedEventTextChoice": {
+      "Action": "Ação",
+      "Have your Miner take action": "Faça o seu Mineiro agir",
+      "Locked": "Trancado",
+      "Open with a key": "Abrir com uma chave",
+      "Option requirement CheckGold ": "Requisito da opção CheckGold ",
+      "Spend time to increase your chance of success": "Gaste tempo para aumentar a sua chance de sucesso",
+      "Stat": "Atributo",
+      "Time": "Tempo",
+      "Use magic to blast it": "Use magia para detonar",
+      "Use tools for a better chance at success": "Use ferramentas para uma chance maior de sucesso"
+    },
+    "SynergyBonusObject": {
+      " Per Tile Explored": " por Célula Explorada",
+      "+10% Chance To Avoid Traps": "+10% de Chance de Evitar Armadilhas",
+      "+10% Party Affinity Gains": "+10% de Ganhos de Afinidade do Grupo",
+      "+10% Secret Find": "+10% de Descoberta de Segredos",
+      "+10% Spirit Regen": "+10% de Regeneração de Espírito",
+      "+25% To Evade When Waiting": "+25% de Evasão ao Esperar",
+      "+25% XP": "+25% de XP",
+      "+5% Max HP": "+5% de Vida Máxima",
+      "+50% Gold Find": "+50% de Ouro Encontrado",
+      "+50% Guild Loyalty Gains": "+50% de Ganhos de Lealdade da Guilda",
+      "Ability Spirit Cost - 1": "Custo de Espírito da Habilidade - 1",
+      "Bonus Healing Items": "Bônus de Itens de Cura",
+      "Camping Takes Half Time": "Acampar Leva Metade do Tempo",
+      "Environment Hazards Deal 50% Damage": "Perigos do Ambiente Causam 50% de Dano",
+      "Every Kill Restores 5% HP": "Cada Abate Restaura 5% da Vida",
+      "First Combat Action Costs 0 Spirit": "A Primeira Ação de Combate Custa 0 de Espírito",
+      "Merchant Costs Reduced By 10%": "Custos de Mercador Reduzidos em 10%",
+      "Movement In Dungeon Costs 25% Time": "Movimento no Calabouço Custa 25% do Tempo",
+      "New Injuries Recover 25% Faster": "Ferimentos Novos Recuperam 25% Mais Rápido",
+      "Receive 10": "Receba 10",
+      "Scouting Time Reduced By 25%": "Tempo de Exploração Reduzido em 25%",
+      "Show 3 Random Tiles At Start": "Mostra 3 Células Aleatórias no Início",
+      "Time Costs From Combat Halved": "Custos de Tempo do Combate Cortados pela Metade"
+    },
+    "InjuriesManager": {
+      " (Left)": " (Esquerdo)",
+      " (Right)": " (Direito)",
+      "Ankle": "Tornozelo",
+      "Complication": "Complicação",
+      "Elbow": "Cotovelo",
+      "Forearm": "Antebraço",
+      "Hamstring": "Posterior da Coxa",
+      "Hand": "Mão",
+      "Knee": "Joelho",
+      "Laceration": "Laceração",
+      "Left": "Esquerdo",
+      "Left Arm ": "Braço Esquerdo ",
+      "Left Leg ": "Perna Esquerda ",
+      "Right": "Direito",
+      "Right Arm ": "Braço Direito ",
+      "Right Leg ": "Perna Direita ",
+      "Shoulder": "Ombro",
+      "Thigh": "Coxa"
+    },
+    "SaveLoadListItem": {
+      " (Auto Save)": " (Save Automático)",
+      " Emperor - ": " Imperador - ",
+      " hrs": " h",
+      " mins": " min",
+      ")? Warning! This cannot be undone!": ")? Atenção! Isso não pode ser desfeito!",
+      "1 hr": "1 h",
+      "Adventurer - ": "Aventureiro - ",
+      "Are you sure you want to delete every save file associated with this campaign (": "Tem certeza que deseja apagar todos os arquivos de save associados a esta campanha (",
+      "Are you sure you want to delete this save file?": "Tem certeza que deseja apagar este arquivo de save?",
+      "Are you sure you want to overwrite the existing save data? This cannot be undone.": "Tem certeza que deseja sobrescrever os dados de save existentes? Isso não pode ser desfeito.",
+      "Battle-Hardened - ": "Endurecido - ",
+      "Confirm Save": "Confirmar Save",
+      "Delete": "Apagar",
+      "Delete Campaign?": "Apagar Campanha?",
+      "Delete File?": "Apagar Arquivo?",
+      "Mercenary - ": "Mercenário - ",
+      "Overwrite Save?": "Sobrescrever Save?"
+    },
+    "CityStageObject": {
+      " Destroyed": " Destruída",
+      " because it is currently in ruins. We will need to wait for it to be rebuilt before we can head there.": " porque ela está em ruínas. Vamos precisar esperar que ela seja reconstruída antes de irmos para lá.",
+      " first.": " primeiro.",
+      " is closed and you are unable to pass.": " está fechada e você não consegue passar.",
+      "Alert": "Alerta",
+      "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
+      "Confirm": "Confirmar",
+      "Important Message": "Mensagem Importante",
+      "That's a good idea.": "Boa ideia.",
+      "The border to ": "A fronteira para ",
+      "Unable To Travel to ": "Não é Possível Viajar para ",
+      "Unable to travel to ": "Não é possível viajar para "
+    },
+    "NewQuestNotification": {
+      "Contracts Available": "Contratos Disponíveis"
+    },
+    "CachedQuest": {
+      " days.\n\n": " dias.\n\n",
+      "Campaign Contract Expiring": "Contrato de Campanha Expirando",
+      "Campaign Expiration": "Expiração da Campanha",
+      "Contract Expiration": "Expiração do Contrato",
+      "Contract Expiration Warning": "Aviso de Expiração do Contrato",
+      "Thank you for bringing this to my attention.": "Obrigado por trazer isso à minha atenção.",
+      "Thanks for bringing this to my attention.": "Obrigado por me avisar disso.",
+      "Thanks for letting me know.": "Obrigado por me avisar.",
+      "[myTitle], I bring bad news. The following contract we took on has expired.\n\n": "[myTitle], trago más notícias. O seguinte contrato que assumimos expirou.\n\n",
+      "[myTitle], I wanted to bring to your attention that the following contract is going to expire in ": "[myTitle], queria avisar que o seguinte contrato vai expirar em ",
+      "[myTitle], I'm afraid the trail on [FNameA0] has gone cold, and with it, our chance at vengeance. I will let you know if the situation changes. For the sake of our troops' morale, I hope it does.": "[myTitle], temo que o rastro de [FNameA0] esfriou e, com ele, a nossa chance de vingança. Aviso se a situação mudar. Pela moral das nossas tropas, espero que mude.",
+      "[myTitle], we're running out of time to complete an important contract in our campaign against The Black Skull. We won't get a second chance at it should we fail to act.\n\n": "[myTitle], o tempo está acabando para concluir um contrato importante na nossa campanha contra The Black Skull. Não teremos uma segunda chance se não agirmos.\n\n"
+    },
+    "TurnOrderUI": {
+      "Reinforcements remaining": "Reforços restantes"
+    },
+    "WorldInfo/<_DoYearlyWorldUpdateLogicOverTime>d__81": {
+      "Placeholder bounty notice, enemy of House ": "Aviso de recompensa de exemplo, inimigo da Casa ",
+      "Placeholder bounty notice, enemy of city ": "Aviso de recompensa de exemplo, inimigo da cidade "
+    },
+    "WorldMapCanvasUi/<_factionHubQuestCheck>d__20": {
+      " Contracts": " Contratos",
+      "Welcome! I don't currently have any work for you but if you want to come back another time maybe we can find something for you.": "Bem-vindo! No momento não tenho nenhum trabalho para você, mas se voltar em outra ocasião talvez encontremos algo."
+    },
+    "Boot/<ShowSplashScreen>d__70": {
+      "Loading Main Assets": "Carregando Recursos Principais"
+    },
+    "CharacterPortraitUI": {
+      "Damage": "Dano"
+    },
+    "GuildMemberInfirmaryInfoTxt": {
+      "Injuries : ": "Ferimentos : "
+    },
+    "GuildMemberPartySelectCard": {
+      "View stats and abilities": "Ver atributos e habilidades"
+    },
+    "InfirmaryBedListitem": {
+      " Being treated in ": " Sendo tratado em "
+    },
+    "ItemTooltip": {
+      "Recommended!": "Recomendado!"
+    },
+    "PerkScreenItem": {
+      "Activated": "Ativado"
+    },
+    "ResistUiStageObject": {
+      "Placeholder": "Exemplo"
+    },
+    "UI_RebindKey": {
+      "PRESS ANY KEY": "PRESSIONE QUALQUER TECLA"
+    },
+    "BuffDebuffMouseOverUI": {
+      " round remaining": " rodada restante",
+      " rounds remaining": " rodadas restantes"
+    },
+    "CharacterInfoPop": {
+      "Description of the trait we want to remove and how long it will take to remove it.": "Descrição do traço que queremos remover e quanto tempo leva para removê-lo."
+    },
+    "CivilianScreen": {
+      "Civilians": "Civis",
+      "Name": "Nome"
+    },
+    "EnemyStatsUI": {
+      "<sprite name=\"PC-rightClick\"> View Codex": "<sprite name=\"PC-rightClick\"> Ver Códex",
+      "<sprite name=\"XboxOne-view\"> View Codex": "<sprite name=\"XboxOne-view\"> Ver Códex"
+    },
+    "ObjectiveTitleUI": {
+      "\n<s>Optional : ": "\n<s>Opcional : ",
+      "\nOptional : ": "\nOpcional : "
+    },
+    "PreCampingScreen": {
+      "Risk is calculated by the following:\n+20% for ever adjacent tiles not visited or scouted\n+10% for other adjacent tiles": "O risco é calculado assim:\n+20% para cada célula adjacente não visitada ou explorada\n+10% para as outras células adjacentes",
+      "Cancel": "Cancelar"
+    },
+    "WorldMapCanvasUi/<_injuryWarningCheck>d__15": {
+      " days": " dias",
+      " left": " restantes",
+      " needs to immediately seek treatment for their critical injuries. If you don't treat these injuries they will get worse. Some injuries can lead to death if left untreated.\n": " precisa procurar tratamento imediato para os ferimentos críticos. Sem tratamento, eles vão piorar. Alguns ferimentos podem levar à morte se ficarem sem tratamento.\n",
+      "1 day": "1 dia",
+      "Critical Injuries": "Ferimentos Críticos",
+      "Let's get them some help immediately.": "Vamos dar ajuda a essa pessoa imediatamente."
+    },
+    "WorldInfoUi/<_UpdateWarningIcons>d__36": {
+      " left": " restantes",
+      " to cover the costs of paying your company contracts at the end of the year.": " para cobrir os custos dos contratos da companhia no fim do ano.",
+      " to cover the costs. People will abandon you quickly if you continue to miss payments.": " para cobrir os custos. As pessoas vão te abandonar rápido se você continuar deixando de pagar.",
+      "Having less than 4 people in your company is risky. You should try and have enough to fill out an entire team and, ideally, a few to keep in reserves to cover for injured or fatigued teammates.": "Ter menos de 4 pessoas na companhia é arriscado. Tente ter gente suficiente para montar um time inteiro e, de preferência, algumas de reserva para cobrir companheiros feridos ou fatigados.",
+      "The following company members are unhappy and might decide to leave if things don't improve.\n\n": "Os seguintes membros da companhia estão infelizes e podem decidir ir embora se as coisas não melhorarem.\n\n",
+      "The following mission contracts will be expiring soon.\n\n": "Os seguintes contratos de missão vão expirar em breve.\n\n",
+      "The following people need immediate medical attention or their injuries will worsen.": "As seguintes pessoas precisam de atenção médica imediata ou os ferimentos delas vão piorar.",
+      "You have too many items in storage. You will travel at 50% speed when over-encumbered.": "Você tem itens demais no armazém. Vai viajar a 50% da velocidade quando estiver sobrecarregado.",
+      "You recently were late on payments for your company contracts. You need at least ": "Você atrasou recentemente os pagamentos dos contratos da companhia. Você precisa de pelo menos ",
+      "Your funds are running low. You need at least ": "Seus fundos estão acabando. Você precisa de pelo menos "
+    },
+    "GuildManagementDetails/<>c__DisplayClass74_0": {
+      "Bonus Amount": "Valor do Bônus",
+      "How much of a bonus would you like to give ": "Quanto de bônus você gostaria de dar para "
+    },
+    "GuildManagementDetails/<>c__DisplayClass76_0": {
+      "Insufficient Coin": "Moedas Insuficientes",
+      "You lack the needed coin to buy out their contract.": "Faltam moedas para comprar o contrato dele."
+    },
+    "DungeonUi/<_showObjective>d__5": {
+      "Defeat all enemy encounters": "Derrote todos os encontros de inimigos"
+    },
+    "CampingScreen/<FellAsleepPop>d__52": {
+      " was unable to stay awake and has fallen asleep while on watch.": " não conseguiu ficar acordado e adormeceu durante a vigília.",
+      "Narcolepsy": "Narcolepsia"
+    },
+    "GuildCouncil": {
+      "TODO, need some form a description for guild council members that come from retired players": "TODO, falta uma descrição para membros do conselho da guilda vindos de jogadores aposentados"
+    },
+    "BuffAegis": {
+      "\n15% Critical Chance": "\n15% de Chance Crítica",
+      "\nImmune to Knockback": "\nImune a Empurrão"
+    },
+    "BuffArcticShield": {
+      "Arctic Shield": "Escudo Ártico",
+      "Resistance and Immunity to Freeze": "Resistência e Imunidade a Congelamento"
+    },
+    "BuffAttack": {
+      "Attack Buff": "Buff de Ataque",
+      "Increased Attack": "Ataque Aumentado"
+    },
+    "BuffBalladeerBattleChordUser": {
+      "\n10% Life Leech": "\n10% de Roubo de Vida",
+      "Allies within range receive:\n+15 Defense": "Aliados no alcance recebem:\n+15 de Defesa",
+      "Allies within range receive:\n+15% Power": "Aliados no alcance recebem:\n+15% de Poder",
+      "Allies within range receive:\n+25% Power": "Aliados no alcance recebem:\n+25% de Poder",
+      "Battle Chord": "Acorde de Batalha"
+    },
+    "BuffBalladeerDestruction": {
+      "\n+10 Critical Chance": "\n+10 de Chance Crítica"
+    },
+    "BuffBalladeerPreservation": {
+      "\n10% Life Leech": "\n10% de Roubo de Vida"
+    },
+    "BuffBattleChords": {
+      "Battle Chords - Destruction": "Acordes de Batalha - Destruição",
+      "Battle Chords - Preservation": "Acordes de Batalha - Preservação"
+    },
+    "BuffBattleInstinct": {
+      "Attack Power, Evasion, and Defense increased by 35%.": "Poder de Ataque, Evasão e Defesa aumentados em 35%."
+    },
+    "BuffChampionsOrder": {
+      "Champion's Order": "Ordem do Campeão"
+    },
+    "BuffChameleonCloak": {
+      "Chameleon Cloak": "Capa Camaleão",
+      "Wearing the cloak grants the wearer a random resistance at the start of combat based on the enemies before them. Gained resistance to ": "A capa concede a quem a veste uma resistência aleatória no início do combate, baseada nos inimigos à frente. Resistência ganha contra "
+    },
+    "BuffConditionalImmunity": {
+      "Conditional Immunity": "Imunidade Condicional",
+      "Immune to most debuffs": "Imune à maioria das penalidades"
+    },
+    "BuffCover": {
+      "Ice Wall Cover": "Cobertura de Muralha de Gelo",
+      "Increased Defense": "Defesa Aumentada"
+    },
+    "BuffCrowdPleaser": {
+      "+10 Speed and doubles the Morale boost with Upbeat passive": "+10 de Velocidade e dobra o bônus de Moral com a passiva Animada",
+      "Crowd Pleaser": "Agrada o Público"
+    },
+    "BuffCrystalize": {
+      " Defense\n\nHoarwulfs gain +10 Defense every round they remain stationary, stacking up to 3 times. The buff is lost if they change locations or are Burning.": " de Defesa\n\nOs Hoarwulfs ganham +10 de Defesa por rodada em que ficam parados, acumulando até 3 vezes. O buff se perde se mudarem de lugar ou estiverem Em Chamas."
+    },
+    "BuffDefense": {
+      "Defense Buff": "Buff de Defesa",
+      "Immune to damage": "Imune a dano",
+      "Increased Defense by ": "Defesa Aumentada em "
+    },
+    "BuffEmpower": {
+      "On the death of a demon, an adjacent ally is buffed with increased Power, Defense, Mending, and Speed": "Quando um demônio morre, um aliado adjacente ganha Poder, Defesa, Cura e Velocidade aumentados"
+    },
+    "BuffFuelledByFire": {
+      "% Power (From Pyrolancer's Passive for standing next to fire or burning targets)": "% de Poder (Da Passiva do Pyrolancer por ficar ao lado de fogo ou alvos em chamas)",
+      "Fuelled By Fire": "Alimentado pelo Fogo"
+    },
+    "BuffGuard": {
+      "Defense and Evasion increased by by 25%. Cannot be Critically hit when Guarding.": "Defesa e Evasão aumentadas em 25%. Não pode ser atingido por Acertos Críticos enquanto Protege.",
+      "Defense and Evasion increased by by 30%. Cannot be Critically hit when Guarding.": "Defesa e Evasão aumentadas em 30%. Não pode ser atingido por Acertos Críticos enquanto Protege."
+    },
+    "BuffHeatshield": {
+      "A temporary shield which can absorb ": "Um escudo temporário que pode absorver ",
+      "Damage Shield (Heatshield)": "Escudo de Dano (Térmico)"
+    },
+    "BuffHone": {
+      "Deft Hands": "Mãos Precisas",
+      "Hone charge restored": "Carga de Afiar restaurada"
+    },
+    "BuffIgnoreAOO": {
+      "Free to move and not incur an attack of opportunity": "Livre para se mover sem sofrer Ataque de Oportunidade",
+      "Ignore Attack Of Opportunity": "Ignorar Ataque de Oportunidade"
+    },
+    "BuffIgnoreFlank": {
+      "Can not longer be flanked.": "Não pode mais ser flanqueado.",
+      "Ignore Flank": "Ignorar Flanqueamento"
+    },
+    "BuffMotivate": {
+      "+10 Speed, +2 Move, +50 Critical Chance": "+10 de Velocidade, +2 de Movimento, +50 de Chance Crítica"
+    },
+    "BuffOvershield": {
+      "A temporary shield which can absorb ": "Um escudo temporário que pode absorver ",
+      "Damage Shield": "Escudo de Dano",
+      "Pool of temporary HP. ": "Reserva de vida temporária. "
+    },
+    "BuffPyromania": {
+      "Adds burn to attack": "Adiciona queimadura ao ataque"
+    },
+    "BuffRadiance": {
+      "After using 5 Abilities, cleanses the negative Conditions for both the Guardian and their adjacent allies.": "Depois de usar 5 Habilidades, purifica as Condições negativas do Guardião e dos aliados adjacentes."
+    },
+    "BuffRenewingMelody": {
+      "15% Life Leech": "15% de Roubo de Vida",
+      "Renewing Melody": "Melodia Renovadora"
+    },
+    "BuffRevitalize": {
+      "Doubles the effects of their Healing Spores passive": "Dobra os efeitos da passiva Esporos de Cura"
+    },
+    "BuffSoulFragment": {
+      "Receive 1 soul fragment when dealing damage. Consume soul fragments to unleash devastating magic.": "Receba 1 fragmento de alma ao causar dano. Consuma fragmentos de alma para liberar magia devastadora.",
+      "Soul Fragment": "Fragmento de Alma"
+    },
+    "BuffStormShroud": {
+      "+25 Evasion and Immune to Push/Pull while channeling Conduit": "+25 de Evasão e Imunidade a Empurrar/Puxar enquanto canaliza Condutor",
+      "+25 Evasion and Immunity to Push/Pull": "+25 de Evasão e Imunidade a Empurrar/Puxar",
+      ". Taking damage applies Static Charge to attacker.": ". Sofrer dano aplica Carga Estática ao atacante.",
+      "Storm Shroud": "Manto de Tempestade"
+    },
+    "BuffVoidOfTheShroud": {
+      "Immune to all damage": "Imune a todo dano",
+      "Immune to all damage but also unable to take any action": "Imune a todo dano, mas incapaz de realizar qualquer ação",
+      "Void Shroud": "Manto do Vazio"
+    },
+    "BuffWait": {
+      "This character has delayed their turn for this round.": "Este personagem adiou o turno dele para esta rodada."
+    },
+    "BuffWindSurge": {
+      "Wind Surge": "Maré de Vento"
+    },
+    "DebuffAmbushed": {
+      "Take 10% extra damage and -5 to Speed for the first round": "Recebe 10% a mais de dano e -5 de Velocidade na primeira rodada",
+      "Take 15% extra damage and -5 to Speed for the first round": "Recebe 15% a mais de dano e -5 de Velocidade na primeira rodada"
+    },
+    "DebuffBleed": {
+      " Damage amount is 33% of the attacker's PWR value.": " O valor do dano é 33% do valor de PWR do atacante.",
+      " damage. Use a Bandage to remove this condition.": " de dano. Use uma Bandagem para remover esta condição.",
+      "While Bleeding, any action besides Waiting or Guarding will inflict ": "Enquanto Sangrando, qualquer ação além de Esperar ou Proteger vai causar "
+    },
+    "DebuffColdFeet": {
+      "Cold Feet": "Pés Frios",
+      "If not cleansed by their next turn, they will be Frozen for ": "Se não for purificada até o próximo turno, a pessoa ficará Congelada por "
+    },
+    "DebuffDecay": {
+      "Every round your maximum HP is reduced temporarily.\n\nCurrently Max HP is reduced by ": "A cada rodada a sua vida máxima é reduzida temporariamente.\n\nNo momento a Vida Máxima está reduzida em ",
+      "Every round your maximum HP is reduced temporarily.\n\nCurrently Max HP is reduced by 5%": "A cada rodada a sua vida máxima é reduzida temporariamente.\n\nNo momento a Vida Máxima está reduzida em 5%",
+      "Max Hp<sprite name=\"decrease\"/>": "Vida Máx.<sprite name=\"decrease\"/>"
+    },
+    "DebuffDrunk": {
+      "Accuracy and Evasion reduced by 25%\nPower is increased by 50%": "Precisão e Evasão reduzidas em 25%\nPoder aumentado em 50%"
+    },
+    "DebuffFear": {
+      "Resist Fear": "Resistir ao Medo"
+    },
+    "DebuffFlameFiend": {
+      "Fire and Frost Resistance": "Resistência a Fogo e Gelo",
+      "Flame Fiend": "Fiende das Chamas"
+    },
+    "DebuffFlanked": {
+      "Receive an addition 15% damage from all incoming attacks. Claustrophobic trait adds an additional 5%. Evasion dropped to 0.": "Recebe 15% a mais de dano de todos os ataques. O traço Claustrofóbico adiciona mais 5%. Evasão cai para 0."
+    },
+    "DebuffFrozen": {
+      "Unable to act while frozen, also immune to all damage for the duration of the effect.\n\nNegates 1 more attack.": "Incapaz de agir enquanto congelado e imune a todo dano durante o efeito.\n\nNega mais 1 ataque.",
+      "Unable to act while frozen, also immune to all damage for the duration of the effect.\n\nNegates the next ": "Incapaz de agir enquanto congelado e imune a todo dano durante o efeito.\n\nNega o próximo "
+    },
+    "DebuffGreviousWounds": {
+      "Grievous Wounds": "Ferimentos Graves"
+    },
+    "DebuffMeltArmor": {
+      "Defense reduced by 20% of maximum value": "Defesa reduzida em 20% do valor máximo",
+      "Melt Armor": "Derreter Armadura"
+    },
+    "DebuffResist": {
+      " Resist Debuff": " Resistir à Penalidade",
+      " resist minus ": " de resistência menos ",
+      "Debuff Resist": "Resistência a Penalidades"
+    },
+    "DebuffRestrain": {},
+    "DebuffSleep": {
+      "Unable to act. Any damage incurred will dispel the condition. While asleep, character is healed for ": "Incapaz de agir. Qualquer dano recebido dissipa a condição. Enquanto dorme, o personagem recebe cura de "
+    },
+    "DebuffStaticCharge": {
+      "Increased chance to be stunned.\n\n1 charge = 5%\n2 charges = 15%\n3 charges = 40%\n4 charges = 75%\n": "Chance aumentada de ser atordoado.\n\n1 carga = 5%\n2 cargas = 15%\n3 cargas = 40%\n4 cargas = 75%\n",
+      "Static Charge": "Carga Estática"
+    },
+    "DebuffSunderedArmor": {
+      "Defense reduced by 100%": "Defesa reduzida em 100%",
+      "Sundered Armor": "Armadura Rasgada"
+    },
+    "AdventurerAlly": {
+      "Deal [dmg] crushing damage.": "Causa [dmg] de dano contundente."
+    },
+    "HedgeKnightAlly": {
+      "Deal [dmg] crushing damage.": "Causa [dmg] de dano contundente."
+    },
+    "HouseCommanderAlly": {
+      "Deal [dmg] crushing damage.": "Causa [dmg] de dano contundente."
+    },
+    "OutlawChiefAlly": {
+      "Deal [dmg] crushing damage.": "Causa [dmg] de dano contundente."
+    },
+    "OutlawEnforcerAlly": {
+      "Deal [dmg] crushing damage.": "Causa [dmg] de dano contundente."
+    },
+    "HousePikemanAlly": {
+      "Deal [dmg] piercing damage.": "Causa [dmg] de dano perfurante."
+    },
+    "HouseSkirmisherAlly": {
+      "Deal [dmg] piercing damage.": "Causa [dmg] de dano perfurante."
+    },
+    "VanguardSoldierAlly": {
+      "Deal [dmg] piercing damage.": "Causa [dmg] de dano perfurante.",
+      "Vanguard Soldier": "Soldado da Vanguarda"
+    },
+    "Adventurer": {
+      "Sunder Armor": "Rasgar Armadura"
+    },
+    "AncientWealdere": {
+      "Corrupting Swipe": "Golpe Corruptor",
+      "Den Of Thorns": "Antro de Espinhos",
+      "Restricting Vines": "Trepadeiras Contensoras"
+    },
+    "Anguished": {
+      "End The Suffering": "Fim do Sofrimento",
+      "Face Of Agony": "Face da Agonia",
+      "Corrupting Swipe": "Golpe Corruptor"
+    },
+    "Assassin": {
+      "Assassin's Mark": "Marca do Assassino",
+      "Poison Daggers": "Adagas Envenenadas",
+      "Way Of The Blade": "Caminho da Lâmina"
+    },
+    "AttributeListItem": {
+      "Base Value = ": "Valor Base = ",
+      "\nAge Modifier = ": "\nModificador de Idade = ",
+      "\nAttribute Points spent: ": "\nPontos de Atributo gastos: ",
+      "\nFinal Value = ": "\nValor Final = ",
+      "\nGear Modifier = ": "\nModificador de Equipamento = ",
+      "\nInjury Modifier = ": "\nModificador de Ferimento = ",
+      "\nOther Modifiers = ": "\nOutros Modificadores = ",
+      "Ranks acquired: ": "Patamares adquiridos: ",
+      "\n\nHold Shift and click to spend enough points for a level up": "\n\nSegure Shift e clique para gastar pontos suficientes para subir de nível"
+    },
+    "Balladeer": {
+      "Passive - Upbeat\nAfter acting for the round, their adjacent allies gain 5 Morale (doesn't trigger from Wait).": "Passiva - Animada\nDepois de agir na rodada, os aliados adjacentes ganham 5 de Moral (não dispara ao Esperar)."
+    },
+    "BaseSkill": {},
+    "BattleOverheadText": {
+      "Battle For ": "Batalha por ",
+      "Battle ongoing...": "Batalha em andamento...",
+      "Concluded on ": "Concluída em ",
+      "Neither side was victorious in the battle, however, House ": "Nenhum dos lados venceu a batalha, porém a Casa ",
+      "Started on ": "Iniciada em ",
+      " has retained their claim over the city of ": " manteve o domínio sobre a cidade de ",
+      " won the battle and laid claim to the city of ": " venceu a batalha e tomou posse da cidade de ",
+      " won the battle and retained their claim over the city of ": " venceu a batalha e manteve o domínio sobre a cidade de "
+    },
+    "BountiesManager": {
+      "A bounty placed on your head by ": "Uma recompensa colocada na sua cabeça por ",
+      "Bounty Notice": "Aviso de Recompensa"
+    },
+    "BountyHunterEnemy": {
+      "+50 Critical Hit Chance": "+50 de Chance de Acerto Crítico",
+      "Bonus Critical Chance": "Chance Crítica Bônus",
+      "Defense Down": "Defesa Reduzida",
+      "Disarming Strike": "Golpe Desarmante",
+      "Evasion Down": "Evasão Reduzida",
+      "Lose all Defense": "Perde Toda a Defesa",
+      "Lose all Evasion": "Perde Toda a Evasão",
+      "Steel Sweep": "Golpe de Aço"
+    },
+    "BrightmaneKing": {
+      "Corrupted Swipe": "Golpe Corrompido",
+      "Hunter's Call": "Chamado do Caçador",
+      "Hunter's Strike": "Golpe do Caçador",
+      "King's Call": "Chamado do Rei",
+      "Sweeping Lightrend": "Varredura Rasga-luz"
+    },
+    "CameraAnimManager": {
+      "Move Camera": "Mover a Câmera"
+    },
+    "CellGridStateUnitSelected": {
+      "Unable to move from injury": "Não é possível se mover por causa do ferimento"
+    },
+    "CharionBehemoth": {
+      "Fire Claw": "Garra de Fogo",
+      "Corrupted Swipe": "Golpe Corrompido"
+    },
+    "CircleMagus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "DarkMagus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "EarthMagus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "FrostMagus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "LightningMagus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "Magus": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "OutlawBladedancer": {
+      "Dance of Death": "Dança da Morte",
+      "Forceful Swing": "Golpe Vigoroso",
+      "Slice attack will add bleed": "O golpe de corte aplica sangramento"
+    },
+    "CityViewerController": {
+      "Exit town.": "Sair da cidade.",
+      "Let's head to the Inn and look for potential hires.": "Vamos à estalagem procurar possíveis contratados.",
+      "Low On Troops": "Tropas Insuficientes",
+      "We don't, currently, have enough people ready to fill out an entire 5 man squad. Perhaps, before leaving town we should recruit a few more to our company.": "No momento não temos gente suficiente para montar um esquadrão completo de 5 pessoas. Talvez, antes de sair da cidade, devêssemos recrutar mais alguns para a companhia."
+    },
+    "CorruptedTile": {
+      "Party members that occupy this spot take 15 Morale Damage on their turn. Enemies, however, are healed by 10% of their maximum Health each round. Lasts for 3 Rounds.": "Os membros do grupo que ocuparem esta célula recebem 15 de Dano de Moral no turno deles. Os inimigos, por outro lado, recebem cura de 10% da vida máxima por rodada. Dura 3 Rodadas."
+    },
+    "Credits": {
+      "Move Camera": "Mover a Câmera"
+    },
+    "CullingBlades": {
+      "Culling Blade": "Lâmina Ceifadora",
+      "All adjacent player characters take 150 damage at the end of the round.": "Todos os personagens do jogador adjacentes recebem 150 de dano no fim da rodada."
+    },
+    "DeadzoneTile": {
+      "Characters gain a Weakended debuff and Attack Power is halved while occupying this hex. Nullbeasts receive an evasion buff instead.": "Os personagens recebem a penalidade Enfraquecido e o Poder de Ataque cai pela metade enquanto ocuparem este hexágono. Os Nullbeasts recebem um buff de evasão em vez disso.",
+      "Deadzone Shroud Buff": "Buff Manto de Zona Morta"
+    },
+    "DeathOnTile": {
+      "Entering or occupying this hex will make characters take 100 damage": "Entrar ou ocupar este hexágono faz o personagem receber 100 de dano"
+    },
+    "Dreadknight": {
+      "Corrupting Touch": "Toque Corruptor",
+      "Dark Lance": "Lança Sombria",
+      "Pull Of The Void": "Puxão do Vazio"
+    },
+    "DungeonTileEventIcon": {
+      "Boss Battle": "Batalha de Chefe",
+      "Enemies Detected": "Inimigos Detectados",
+      "Hazard Detected": "Perigo Detectado",
+      "Trap Detected": "Armadilha Detectada",
+      "Void Breach": "Ruptura do Vazio"
+    },
+    "DungeonTime": {},
+    "DungeonTrap": {
+      "Trap triggered": "Armadilha disparada"
+    },
+    "DynamicTravelDestinationObj": {},
+    "ExitCell": {
+      "Reach this destination to escape from combat.": "Alcance este destino para escapar do combate."
+    },
+    "ExpeditionSummary": {
+      "+200 XP for fully exploring the map": "+200 de XP por explorar o mapa por completo",
+      "Combats Cleared": "Combates Vencidos",
+      "Item needs to be repaired.": "O item precisa ser reparado.",
+      "Tiles Explored": "Células Exploradas",
+      "Time Spent": "Tempo Gasto",
+      "Coin": "Moedas",
+      "Renown": "Renome",
+      "Next": "Avançar",
+      "Confirm": "Confirmar",
+      "Move": "Mover",
+      "Navigate": "Navegar"
+    },
+    "FallingArrowTrapTile": {
+      "At the end of the round, arrows will rain from the sky damaging anyone in the way.": "No fim da rodada, flechas vão chover do céu causando dano a quem estiver no caminho.",
+      "Rain of Arrows": "Chuva de Flechas"
+    },
+    "FallingRocksTrapTile": {
+      "At the end of the round, rocks will fall in this spot, damaging anyone in the way.": "No fim da rodada, pedras vão cair neste lugar, causando dano a quem estiver no caminho.",
+      "Falling Rocks": "Queda de Pedras"
+    },
+    "FireMagus": {
+      "Fan The Flames": "Atiçar as Chamas",
+      "Volcanic Geyser": "Gêiser Vulcânico"
+    },
+    "FireOnTile": {
+      "Applies burn to anyone passing through or standing in the fire. Disappears in ": "Aplica queimadura a quem passa ou fica no fogo. Some em "
+    },
+    "Flayer": {
+      "Consume the Dark": "Consumir as Trevas"
+    },
+    "FleeFight": {
+      "Attempt to flee. Even if successful, you may sustain heavy damage and injury.": "Tenta fugir. Mesmo com sucesso, você pode sofrer dano pesado e ferimentos.",
+      "Cannot run away from the current encounter due to the Dungeon Modifier \"No Escape\".": "Não é possível fugir do encontro atual por causa do Modificador de Calabouço \"Sem Escapatória\".",
+      "Cannot run away from the current encounter.": "Não é possível fugir do encontro atual.",
+      "Unable To Run": "Não é Possível Fugir"
+    },
+    "GameSceneManager": {},
+    "GrassTile": {
+      "-15 Accuracy. +15 Evasion. Moving through tall grass allows you to avoid all Attacks of Opportunity.": "-15 de Precisão. +15 de Evasão. Atravessar o mato alto permite evitar todos os Ataques de Oportunidade.",
+      "Tall Grass": "Mato Alto"
+    },
+    "Guardian": {
+      "Debuffs Cleared": "Penalidades Purificadas",
+      "Passive - Radiance\nAfter using 5 Abilities, the Guardian's holy conviction showers adjacent allies with light, cleansing the negative Conditions for both the Guardian and their allies.": "Passiva - Esplendor\nDepois de usar 5 Habilidades, a convicção sagrada do Guardião banha os aliados adjacentes com luz, purificando as Condições negativas do Guardião e dos aliados."
+    },
+    "GuardSkill": {
+      "Increase Defense and Evasion by 25 for 1 Round. While Guarding, you also fully block line of sight for enemies. This will end your turn.": "Aumenta a Defesa e a Evasão em 25 por 1 Rodada. Enquanto Protege, você também bloqueia completamente a linha de visão dos inimigos. Isso encerra o seu turno.",
+      "Increase Defense and Evasion by 30 for 1 Round. While Guarding, you also fully block line of sight for enemies. This will end your turn.": "Aumenta a Defesa e a Evasão em 30 por 1 Rodada. Enquanto Protege, você também bloqueia completamente a linha de visão dos inimigos. Isso encerra o seu turno."
+    },
+    "GuildCouncilBountRowItem": {
+      "Emissary is looking into details": "O emissário está verificando os detalhes",
+      "Unable to bribe.": "Não é possível subornar."
+    },
+    "GuildHistoryMembeItem": {
+      " days until ": " dias até ",
+      " injuries at an infirmary": " ferimentos em uma enfermaria",
+      " is rested": " está descansado",
+      "+25% XP and +5% PWR": "+25% de XP e +5% de PWR",
+      "Needs to heal from ": "Precisa se curar de "
+    },
+    "GuildHistoryMemberListItem": {
+      " days until ": " dias até ",
+      " injuries at an infirmary": " ferimentos em uma enfermaria",
+      " is rested": " está descansado",
+      "+25% XP and +5% PWR": "+25% de XP e +5% de PWR",
+      "Needs to heal from ": "Precisa se curar de "
+    },
+    "GuildMonthlyReport": {
+      "\nTraits To Teach Guild Members\n": "\nTraços para Ensinar aos Membros da Guilda\n",
+      " Years Old\n": " Anos\n",
+      " additional recruit found in cities\n": " recruta extra encontrado nas cidades\n",
+      " additional recruits found in cities\n": " recrutas extras encontrados nas cidades\n",
+      " hidden trait revealed from potential recruits\n": " traço oculto revelado de recrutas em potencial\n",
+      " hidden traits revealed from potential recruits\n": " traços ocultos revelados de recrutas em potencial\n",
+      "% XP Rate\n": "% de Taxa de XP\n",
+      "Up to ": "Até "
+    },
+    "GuildMonthlyReportFinances": {
+      "Base Income:\nMission Rewards:\nLooted:\nStolen:\nSold Items:\nMiscellaneous:": "Renda Base:\nRecompensas de Missão:\nSaqueado:\nRoubado:\nItens Vendidos:\nDiversos:",
+      "Monthly Income:\nMonthly Expenses:\nNet:": "Renda Mensal:\nDespesas Mensais:\nSaldo:",
+      "Salaries:\nSigning Bonuses:\nCouncil Salaries:\nItems Purchased:\nInfirmary Bills:\nTravel:\nMiscellaneous:": "Salários:\nBônus de Contratação:\nSalários do Conselho:\nItens Comprados:\nContas da Enfermaria:\nViagens:\nDiversos:"
+    },
+    "GuildReputation": {
+      "Great Allies": "Grandes Aliados"
+    },
+    "GuildSkillsManager": {
+      "Allows you to hire guild council members.": "Permite contratar membros do conselho da guilda.",
+      "Guild Council": "Conselho da Guilda",
+      "Unlock the ability to hire a Battlemaster to aid with training your troops.": "Desbloqueia a possibilidade de contratar um Mestre de Batalha para ajudar a treinar as suas tropas.",
+      "Unlock the ability to hire a Master Of Intrigue to aid your ability to make political plays from the shadows.": "Desbloqueia a possibilidade de contratar um Mestre Espião para ajudar a fazer jogadas políticas nas sombras.",
+      "Unlock the ability to hire an Emissary to help improve relations among other factions.": "Desbloqueia a possibilidade de contratar um Emissário para melhorar as relações com as outras facções."
+    },
+    "Hexagon": {
+      " is flanked!": " foi flanqueado!"
+    },
+    "HouseBannerman": {
+      "Enemy Sighted": "Inimigo à Vista",
+      "Reinforcements incoming": "Reforços a caminho",
+      "Request Aid": "Pedir Ajuda"
+    },
+    "HouseGrenadier": {
+      "Fire Grenade": "Granada Incendiária"
+    },
+    "HouseKnight": {
+      "Mocking Guard": "Guarda Zombeteira",
+      "Skull Hunter": "Caçador de Caveiras",
+      "Sunder Armor": "Rasgar Armadura"
+    },
+    "HouseMapLegend": {
+      "\n\nSolid <color=red>red</color> line denotes Kingdoms at war.": "\n\nA linha <color=red>vermelha</color> sólida indica Reinos em guerra.",
+      "   Vassal Houses - ": "   Casas Vassalas - "
+    },
+    "HouseSkirmisher": {
+      "No Target": "Sem Alvo"
+    },
+    "IceTerrainCellEffect": {
+      "Applies Slow": "Aplica Lentidão"
+    },
+    "IceWallTile": {
+      "A wall of ice that can provide some cover.": "Uma muralha de gelo que pode oferecer cobertura.",
+      "Ice Wall": "Muralha de Gelo"
+    },
+    "Icebinder": {
+      "Passive - Chilling Touch\nAll melee attacks against the Icebinder chill the target, Slowing them for 1 Round.": "Passiva - Toque Gélido\nTodos os ataques corpo a corpo contra a Icebinder gelam o alvo, aplicando Lentidão por 1 Rodada."
+    },
+    "InjuriesOverlay": {
+      "NO INJURIES": "SEM FERIMENTOS"
+    },
+    "InspectableObject": {
+      "I need to get closer to inspect that.": "Preciso me aproximar para inspecionar isso."
+    },
+    "InvItemGraphic": {
+      "This piece of gear is about to break and will need to be repaired following your current expedition.": "Esta peça de equipamento está prestes a quebrar e vai precisar de reparo após a expedição atual."
+    },
+    "Item": {
+      " <color=red>Low demand in region</color>": " <color=red>Procura baixa na região</color>"
+    },
+    "ItemDescriptionCondensedHover": {
+      "\n\n<color=red>Item is out of energy and is recharging. Will be available for use in ": "\n\n<color=red>O item está sem energia e recarregando. Fica disponível para uso em ",
+      "Average Price: ": "Preço Médio: ",
+      "Average Selling Price: ": "Preço Médio de Venda: ",
+      "Recommended": "Recomendado",
+      "Repair Item": "Reparar Item",
+      "Repair With Coin": "Reparar com Moedas",
+      "Repair With Coin: ": "Reparar com Moedas: ",
+      "Repair With Coin: <color=red>": "Reparar com Moedas: <color=red>",
+      "Requirements : Armor": "Requisitos : Armadura",
+      "Requirements : Artifact": "Requisitos : Artefato",
+      "Requirements : None": "Requisitos : Nenhum",
+      "Requirements : OffHand": "Requisitos : Arma Secundária",
+      "Requirements : Weapon": "Requisitos : Arma"
+    },
+    "ItemDescriptionEnchantmentHover": {
+      "<sprite name=\"PC-rightClick\"> Apply To Gear": "<sprite name=\"PC-rightClick\"> Aplicar ao Equipamento",
+      "<sprite name=\"XboxOne-rb\"> Apply To Gear": "<sprite name=\"XboxOne-rb\"> Aplicar ao Equipamento",
+      "Average Price: ": "Preço Médio: ",
+      "Average Selling Price: ": "Preço Médio de Venda: "
+    },
+    "ArmorEquipment": {
+      " Critical Chance\n": " de Chance Crítica\n"
+    },
+    "OffhandEquipment": {
+      " Critical Chance\n": " de Chance Crítica\n"
+    },
+    "WeaponEquipment": {
+      " Critical Chance\n": " de Chance Crítica\n",
+      " Crtitical Damage\n": " de Dano Crítico\n"
+    },
+    "MerchantView": {
+      "Current Coin: ": "Moedas Atuais: ",
+      "Shopping Cart": "Carrinho de Compras",
+      "Total Cost: ": "Custo Total: "
+    },
+    "MiasmaTile": {
+      "Inflicts Poison to the occupant on their turn.": "Aplica Veneno a quem ocupa a célula no turno dela."
+    },
+    "MissionOverheadText": {
+      " Mission Length : ": " Duração da Missão : "
+    },
+    "MoveSkill": {
+      "Move to another position. You can move to any Green Hex and still act, while moving to a Grey Hex will end your turn.\n\nAlternatively, you can hold <sprite name=\"PC-shift\"> to draw a custom path.": "Move para outra posição. Você pode ir para qualquer Hexágono Verde e ainda agir; ir para um Hexágono Cinza encerra o seu turno.\n\nAlternativamente, segure <sprite name=\"PC-shift\"> para desenhar um caminho personalizado."
+    },
+    "MudTile": {
+      "Inflicts Slow on occupants, lowering their Speed.": "Aplica Lentidão a quem ocupa a célula, reduzindo a Velocidade."
+    },
+    "NecrocatEnemy": {
+      "Nasty Bite": "Mordida Nefasta"
+    },
+    "NecromancerBoss": {
+      "Soul Siphon": "Sifão de Almas"
+    },
+    "NewTimeModPop": {
+      "Luckily, nothing of value was lost this time.": "Por sorte, nada de valor foi perdido desta vez.",
+      "You lost 50": "Você perdeu 50"
+    },
+    "NullbeastPrime": {
+      "Corrupting Swipe": "Golpe Corruptor",
+      "Deadzone Shroud": "Manto de Zona Morta",
+      "Deadzone Surge": "Surto de Zona Morta",
+      "Paralyzing Roar": "Rugido Paralisante"
+    },
+    "OutlawEnforcer": {
+      "Increased Evasion": "Evasão Aumentada",
+      "Mocking Guard": "Guarda Zombeteira",
+      "Sunder Armor": "Rasgar Armadura"
+    },
+    "OutlawMarksman": {
+      "Full Draw": "Tensão Máxima",
+      "Half Draw": "Meia Tensão",
+      "Quick Draw": "Arco Rápido"
+    },
+    "OutlawScout": {
+      "Patch Job": "Remendo",
+      "Pecking Order": "Hierarquia"
+    },
+    "OverheadText": {
+      ". The city's chance of survival is currently ": ". A chance de sobrevivência da cidade é de ",
+      "A horde of voidspawn will arrive at ": "Uma horda de voidspawn vai chegar em ",
+      "Contracts Available: ": "Contratos Disponíveis: ",
+      "very high": "muito alta",
+      "very low": "muito baixa"
+    },
+    "PassTurn": {
+      "Accuracy increased by 15%": "Precisão aumentada em 15%",
+      "Calculated Approach": "Abordagem Calculada",
+      "Delay your turn until the end of the current Round. Waiting a second time will pass your turn.": "Adia o turno até o fim da Rodada atual. Esperar uma segunda vez passa o turno."
+    },
+    "PlayerInventory": {
+      "The dungeon modifier \"Burden\" is active which prevents you from using provisions.": "O modificador de calabouço \"Fardo\" está ativo e impede o uso de provisões.",
+      "Unable To Use Provisions": "Não é Possível Usar Provisões",
+      "Can't equip because the durability is 0. Needs to be repaired first! TODO play a sfx and probably warn the player why they couldn't equip it.": "Não é possível equipar porque a durabilidade é 0. Precisa de reparo primeiro!"
+    },
+    "PlayerRelationship": {
+      "Great Friends": "Grandes Amigos"
+    },
+    "PullOfTheVoidTile": {
+      "Adjacent targets are rooted and unable to move.": "Alvos adjacentes ficam presos e não conseguem se mover.",
+      "Pull Of The Void": "Puxão do Vazio"
+    },
+    "PuddleTile": {
+      "Applies the Wet debuff": "Aplica a penalidade Molhado"
+    },
+    "Pugilist": {
+      "Mind Over Matter": "Mente Sobre Matéria",
+      "Passive - Mind Over Matter\nThe Pugilist shrugs off the first conditions applied to them in combat.": "Passiva - Mente Sobre Matéria\nO Pugilista ignora as primeiras condições aplicadas a ele em combate."
+    },
+    "Pyrolancer": {
+      "Passive - Fuelled by Fire\nStanding next to a Burning enemy or cell increases Attack Power by 5% per stack": "Passiva - Alimentado pelo Fogo\nFicar ao lado de um inimigo ou célula em chamas aumenta o Poder de Ataque em 5% por acúmulo"
+    },
+    "RecruitCompactListItem": {
+      " per year": " por ano",
+      "At Capacity": "Na Capacidade Máxima",
+      "View stats and abilities": "Ver atributos e habilidades",
+      "You are at the limit of troops your company can sustain currently.": "Você atingiu o limite de tropas que a sua companhia aguenta no momento."
+    },
+    "RefundRowItem": {
+      "Item needs to be repaired.": "O item precisa ser reparado."
+    },
+    "RestingManager": {
+      "Force of Will": "Força de Vontade",
+      "Mend Wounds": "Curar Ferimentos",
+      "One Mind": "Mente Única",
+      "Restore Mind": "Restaurar a Mente",
+      "Restore Stamina": "Restaurar o Vigor",
+      "Restore Vitality": "Restaurar a Vitalidade",
+      "Time Jump": "Salto no Tempo"
+    },
+    "RisenFamiliar": {
+      "Breath of Decay": "Sopro de Decadência"
+    },
+    "RisenGeneral": {
+      "Revives in ": "Ressuscita em ",
+      "Revives in 1 round": "Ressuscita em 1 rodada"
+    },
+    "SkeletonEnemy": {
+      "Revives in ": "Ressuscita em ",
+      "Revives in 1 round": "Ressuscita em 1 rodada",
+      "Grave Bash": "Golpe de Túmulo",
+      "Shield Stunner": "Atordoar com Escudo",
+      "When hitting 0 HP they will turn into a pile of bones. If the bones aren't destroyed quickly then in a few rounds they will resurrect with half health.": "Ao chegar a 0 de vida, vira um monte de ossos. Se os ossos não forem destruídos rápido, em algumas rodadas ela ressuscita com metade da vida."
+    },
+    "RisenGhoul": {
+      "Sacrificial Lamb": "Cordeiro Sacrificial"
+    },
+    "RisenScourge": {
+      "Bone Yard": "Pátio de Ossos"
+    },
+    "Ritualist": {
+      "Hex Aura": "Aura Maldita",
+      "Rite Of Life": "Rito da Vida"
+    },
+    "ScourgeDragonManager": {
+      " was able to fend off the horde's forces. Caelum has been protected from the Scourge for the time being.": " conseguiu repelir as forças da horda. Caelum está protegida da Praga por enquanto.",
+      "Scourge Ended": "Praga Encerrada",
+      "Successfully Defended!": "Defesa Bem-sucedida!",
+      "That's great to hear.": "Que bom ouvir isso."
+    },
+    "ShieldWallSoldier": {
+      "Shieldwall Defense": "Defesa de Muralha",
+      "Shieldwall Evasion": "Evasão de Muralha"
+    },
+    "SkeletonArcherEnemy": {
+      "Bone Bolt": "Dardo de Ossos"
+    },
+    "SkillbarBase": {
+      "<color=red>Warning! You have spent all charges. Using this ability now you will take damage equal to 40% of your max health (ignores defense and any Damage Shields).</color>": "<color=red>Atenção! Você gastou todas as cargas. Usar esta habilidade agora vai causar dano igual a 40% da sua vida máxima (ignora defesa e Escudos de Dano).</color>",
+      "No targets in range": "Nenhum alvo no alcance",
+      "No uses remaining": "Sem usos restantes"
+    },
+    "SnowPitTile": {
+      "Ice Pit": "Poço de Gelo",
+      "The ice is cracked and traversing it could pose a danger.": "O gelo está rachado e atravessar pode ser perigoso.",
+      "Will break the next time anyone enters this tile.": "Vai se romper na próxima vez que alguém entrar nesta célula."
+    },
+    "SpectralBladeTileTrap": {
+      "At the end of every round they will attack every member of your team adjacent to it.": "No fim de cada rodada, ataca todo membro do seu time adjacente a ele.",
+      "Spectral Blade": "Lâmina Espectral"
+    },
+    "SpectralReaper": {
+      "Culling Blades": "Lâminas Ceifadoras",
+      "Marked For Death": "Marcado para a Morte",
+      "Void Shroud": "Manto do Vazio"
+    },
+    "SpectralSoulpiercer": {
+      "Impaling Rush": "Investida Empalante"
+    },
+    "SpectralWeeper": {
+      "Pity for the Dead": "Dó pelos Mortos",
+      "Protector of the Dead": "Protetor dos Mortos"
+    },
+    "SpymasterRumor": {
+      "Investigation Complete": "Investigação Concluída",
+      "We uncovered something interesting...\n\nQuest [": "Descobrimos algo interessante...\n\nMissão [",
+      "] has been added to your quest log.": "] foi adicionada ao seu diário de missões."
+    },
+    "StoryTextAnimation": {
+      "Press <sprite name=\"XboxOne-a\"> to continue": "Pressione <sprite name=\"XboxOne-a\"> para continuar",
+      "Press any key to continue": "Pressione qualquer tecla para continuar",
+      "In an era all but forgotten, the Gods once lived alongside humanity in the heart of Caelum. However, an unknown cataclysmic event plunged the world into a dark age. History was lost to time, and so too were the Gods. In their absence, a rebuilding humanity was left to contend with the emergence of a great being of darkness from the Void.\n\nEvery few decades, in an event called the Scourge, the dragon's arrival would bring death and disease to the land. Those afflicted by the dragon's blight would lose their minds and bodies as they slowly became abominations of flesh, and outcasts to society known as the Blighted.": "Em uma era quase esquecida, os Deuses viveram ao lado da humanidade no coração de Caelum. Porém, um cataclismo desconhecido mergulhou o mundo em uma era sombria. A história se perdeu no tempo, e os Deuses também. Sem eles, a humanidade em reconstrução teve que enfrentar o surgimento de um grande ser de trevas vindo do Vazio.\n\nA cada poucas décadas, em um evento chamado Praga, a chegada do dragão trazia morte e doença à terra. Atingidos pela praga do dragão, os afetados perdiam a mente e o corpo enquanto lentamente se tornavam abominações de carne, excluídos da sociedade e conhecidos como os Corrompidos.",
+      "Despite centuries of effort from the Vanguard Order and the realm's greatest heroes, no lasting victory against the dragon could be achieved.\n\nHumanity has now come to accept the inevitability of the Scourge as part of life. Enduring, or in some cases thriving despite it. With whispers of an impending Scourge circulating, you and your company find yourselves in a burial crypt not far from the city of Andilon. A simple retrieval of smuggled supplies, or at least that's what your employer had promised...": "Após séculos de esforços da Ordem da Vanguarda e dos maiores heróis do reino, nenhuma vitória duradoura contra o dragão foi alcançada.\n\nA humanidade hoje aceita a inevitabilidade da Praga como parte da vida. Suportando, ou em alguns casos prosperando apesar dela. Com rumores de uma nova Praga se espalhando, você e a sua companhia se encontram em uma cripta funerária não muito longe da cidade de Andilon. Uma simples recuperação de suprimentos contrabandeados, ou pelo menos era o que o seu empregador prometeu..."
+    },
+    "StunGrenadeTile": {
+      "Stun Grenade": "Granada Atordoante",
+      "The grenade will explode and all adjacent characters will be stunned in ": "A granada vai explodir e todos os personagens adjacentes serão atordoados em ",
+      "The grenade will explode and all adjacent characters will be stunned in 1 turn.": "A granada vai explodir e todos os personagens adjacentes serão atordoados em 1 turno."
+    },
+    "SwapSkill": {
+      "Swap places with an adjacent ally, avoiding any Attacks of Opportunity from an enemy. This will end your turn.": "Troca de lugar com um aliado adjacente, evitando qualquer Ataque de Oportunidade de inimigos. Isso encerra o seu turno."
+    },
+    "TarPitTile": {
+      "Inflicts Slow on occupants, lowering their Speed. Any flame based attacks will light the tar pit on fire.": "Aplica Lentidão a quem ocupa a célula, reduzindo a Velocidade. Qualquer ataque baseado em fogo incendeia o poço de piche.",
+      "Tar Pit": "Poço de Piche"
+    },
+    "Temptress": {
+      "Alluring Darkness": "Escuridão Sedutora",
+      "Corrupting Touch": "Toque Corruptor"
+    },
+    "Tormentor": {
+      "Blood Magic": "Magia de Sangue",
+      "Respite From Pain": "Alívio da Dor",
+      "Spilling Blood": "Derramamento de Sangue",
+      "Terrible Sickness": "Enfermidade Terrível"
+    },
+    "TrapTile": {
+      "Entering this tile will trigger the trap; dealing damage and rooting the target for 1 round.": "Entrar nesta célula dispara a armadilha, causando dano e prendendo o alvo por 1 rodada."
+    },
+    "TravelConfirmPop": {
+      "Show City Info": "Ver Informações da Cidade"
+    },
+    "UndeadEnemy": {
+      "Icky Punch": "Soco Nojento"
+    },
+    "UndoMoveSkill": {
+      "Cancel your currently selected ability or undo your last movement (if possible). Cannot be used if you have triggered any hazards or taken damage.": "Cancela a habilidade selecionada ou desfaz o último movimento (se possível). Não pode ser usado se você disparou perigos ou tomou dano.",
+      "Undo Movement / Cancel Ability": "Desfazer Movimento / Cancelar Habilidade"
+    },
+    "UseItemSkill": {
+      "Use Item": "Usar Item",
+      "Use an item from your bag. This will end your turn.": "Usa um item da bolsa. Isso encerra o seu turno."
+    },
+    "UseLegendaryItemSkill": {
+      " is not able to use this ability.": " não pode usar esta habilidade.",
+      "Can only use this once per combat.": "Só pode ser usado uma vez por combate.",
+      "Can't use this again during this mission.": "Não é possível usar de novo nesta missão.",
+      "Cannot Use": "Não é Possível Usar",
+      "Choose unique abilities tied to Legendary gear": "Escolha habilidades únicas ligadas a equipamento Lendário",
+      "Out of Uses": "Sem Usos",
+      "Use Legendary Item Abilies": "Usar Habilidades de Item Lendário"
+    },
+    "Valkyrie": {
+      "Vismyr's Protection": "Proteção de Vismyr",
+      "Passive - Vismyr's Protection\nThe Valkyrie is blessed by the Nurren God Vismyr with a small damage shield at the start of every combat encounter.": "Passiva - Proteção de Vismyr\nA Valkyrie é abençoada pelo deus nurren Vismyr com um pequeno escudo de dano no início de cada encontro de combate."
+    },
+    "VoidBreachOverheadText": {
+      "Void Breach ": "Ruptura do Vazio "
+    },
+    "VoidBreachTile": {
+      "Void Breach": "Ruptura do Vazio",
+      "Every other round new enemies will pour through the Void Breach until it is closed.\n\n<color=green>Select to attempt to close portal with Breach stone.</color>": "A cada duas rodadas, novos inimigos surgem pela Ruptura do Vazio até que ela seja fechada.\n\n<color=green>Selecione para tentar fechar o portal com a Pedra de Ruptura.</color>",
+      "Every other round new enemies will pour through the Void Breach until it is closed.\n\n<color=red>Must be adjacent to interact with.</color>": "A cada duas rodadas, novos inimigos surgem pela Ruptura do Vazio até que ela seja fechada.\n\n<color=red>Precisa estar adjacente para interagir.</color>"
+    },
+    "VoidPortalDestinationObj": {
+      "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
+      "Important Message": "Mensagem Importante",
+      "That's a good idea.": "Boa ideia.",
+      "Confirm": "Confirmar"
+    },
+    "VolcanicGeyserTile": {
+      "Applies burn to adjacent characters. Explodes in ": "Aplica queimadura aos personagens adjacentes. Explode em ",
+      "Applies burn to adjacent characters. Explodes in 1 round.": "Aplica queimadura aos personagens adjacentes. Explode em 1 rodada.",
+      "Volcanic Geyser": "Gêiser Vulcânico"
+    },
+    "VolcanicGeyserTileTrap": {
+      "Applies burn to adjacent characters. Explodes in ": "Aplica queimadura aos personagens adjacentes. Explode em ",
+      "Applies burn to adjacent characters. Explodes in 1 round.": "Aplica queimadura aos personagens adjacentes. Explode em 1 rodada.",
+      "Volcanic Geyser": "Gêiser Vulcânico"
+    },
+    "WarObject": {
+      " has begun!": " começou!",
+      " has defeated ": " derrotou ",
+      " has started a battle in ": " começou uma batalha em ",
+      " has won a war": " venceu uma guerra",
+      " has won a war!": " venceu uma guerra!",
+      " was victorious": " foi vitoriosa",
+      " and the war has ended. Sometimes, in the aftermath of these tumultuous times there are extra odd jobs to help restore order and give aid to those in need. It might be worth checking out if we're looking for work.": " e a guerra terminou. Às vezes, na esteira desses tempos conturbados, surgem bicos extras para ajudar a restaurar a ordem e dar auxílio a quem precisa. Vale conferir se estivermos procurando trabalho.",
+      "Thank you for bringing this to my attention.": "Obrigado por trazer isso à minha atenção.",
+      "The attacker of this battle caught the other person off guard! They were ambushed!": "O atacante desta batalha pegou o outro de surpresa! Foi uma emboscada!",
+      "War Ended": "Guerra Encerrada"
+    },
+    "Warlord": {
+      "Death From Above": "Morte do Alto",
+      "Piercing Shot": "Tiro Perfurante",
+      "Shooting Star": "Estrela Cadente",
+      "Viper's Strike": "Golpe da Víbora"
+    },
+    "WaterTile": {
+      "Applies the Wet condition": "Aplica a condição Molhado"
+    },
+    "WorldMap": {
+      "Begin Camping": "Começar Acampamento",
+      "Move Camera": "Mover a Câmera",
+      "Open Quest Journal": "Abrir Diário de Missões"
+    },
+    "WorldFactionStageObject": {
+      " is closed and you are unable to pass.": " está fechada e você não consegue passar.",
+      "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
+      "Important Message": "Mensagem Importante",
+      "That's a good idea.": "Boa ideia.",
+      "The border to ": "A fronteira para ",
+      "We should attend to our own affairs before visiting the Vanguard.": "Devemos cuidar dos nossos próprios assuntos antes de visitar a Vanguarda.",
+      "Confirm": "Confirmar",
+      "Alert": "Alerta"
+    },
+    "AbilityCyclone/<DoDamage>d__5": {
+      "Increase Defense and Evasion by 25% for 1 Round. This will end your turn.": "Aumenta a Defesa e a Evasão em 25% por 1 Rodada. Isso encerra o seu turno."
+    },
+    "DebuffRestrain/<ShowStatusText>d__2": {
+      "\"/> Movement Disabled By Restrain": "\"/> Movimento Desativado por Contenção"
+    },
+    "BaseSkill/<SkipTurnContinueChannelingCoroutine>d__286": {
+      "Continue Channeling": "Continuar Canalizando"
+    },
+    "DungeonTime/<_ForceExitDungeonFromFire>d__45": {
+      "The fire is too great!": "O fogo é grande demais!",
+      "We have to leave our treasure and get out immediately or risk the lives of everyone here! Run for it!": "Temos que deixar o tesouro e sair imediatamente ou arriscar a vida de todos aqui! Corram!",
+      "You're right, we have to go now!": "Você tem razão, temos que ir agora!"
+    },
+    "DynamicTravelDestinationObj/<UpdateWhenLoaded>d__12": {
+      "Point of interest": "Ponto de interesse"
+    },
+    "GameSceneManager/<_gameOver>d__17": {
+      "Press any key to continue...": "Pressione qualquer tecla para continuar..."
+    },
+    "RestingManager/<LoadIncenseData>d__20": {
+      "\n\nIncense can be burned when camping to give special buffs to the party.\n\nPrimary Effect : ": "\n\nO incenso pode ser queimado ao acampar para dar buffs especiais ao grupo.\n\nEfeito Primário : ",
+      "\n\nSecondary Effect : ": "\n\nEfeito Secundário : ",
+      "Incense Cost : ": "Custo do Incenso : "
+    },
+    "StoryTextAnimation/<_startAnim>d__11": {
+      "Despite centuries of effort from the Vanguard Order and the realm's greatest heroes, no lasting victory against the dragon could be achieved.Humanity has now come to accept the inevitability of the Scourge as part of life. Enduring, or in some cases thriving despite it.\n\nBetrayed and left for dead by those you once trusted, the remnants of your company were able to regroup and rebuild in the city of Andilon, assisting the local forces in their time of need.With your coffers filled and the worst of the Scourge behind you, thoughts of vengeance are once again at the forefront of your collective minds.": "Após séculos de esforços da Ordem da Vanguarda e dos maiores heróis do reino, nenhuma vitória duradoura contra o dragão foi alcançada.A humanidade hoje aceita a inevitabilidade da Praga como parte da vida. Suportando, ou em alguns casos prosperando apesar dela.\n\nTraidas e deixadas para morrer por quem você um dia confiou, os remanescentes da sua companhia conseguiram se reagrupar e se reerguer na cidade de Andilon, ajudando as forças locais no momento de necessidade.Com os cofres cheios e o pior da Praga para trás, a vingança volta ao centro dos pensamentos de todos."
+    },
+    "WorldMap/<_finishLoadAfterLoaded>d__91": {
+      "Prince's Baggage Train": "Trem de Bagagem do Príncipe"
+    },
+    "WorldMap/TempDynamicTraveObject": {
+      "Point Of Interest": "Ponto de Interesse"
+    },
+    "WorldMap/<_focusOnPosition>d__82": {
+      "The dragon has attacked ": "O dragão atacou "
+    },
+    "TIO.Quests.QuestAndDialogueLoader": {
+      "Sadly, you were unable to find any materials of value.": "Tristemente, você não conseguiu encontrar nenhum material de valor.",
+      "You destroyed the shrine and everyone gained 30 morale.": "Você destruiu o santuário e todos ganharam 30 de moral.",
+      "You destroyed the shrine and found 100 coin.": "Você destruiu o santuário e encontrou 100 moedas.",
+      "You have significantly aided the war effort for House ": "Você ajudou significativamente o esforço de guerra da Casa ",
+      "Your oath has been severed, and with it the end to your time as the leader of ": "O seu juramento foi rompido e, com ele, termina o seu tempo como líder de ",
+      "Blessing received : ": "Bênção recebida : ",
+      "Shrine effect received\n": "Efeito do santuário recebido\n",
+      "Received a blessing from ": "Recebeu uma bênção de ",
+      "Gained ": "Ganhou ",
+      "Lost ": "Perdeu ",
+      "Stole ": "Roubou ",
+      "Everyones loyalty decreased by ": "A lealdade de todos caiu em ",
+      "Everyones loyalty increased by ": "A lealdade de todos subiu em ",
+      " has died.": " morreu.",
+      " has left ": " deixou ",
+      "Coin Pouch": "Bolsa de Moedas"
+    },
+    "Utility": {
+      "\n\n<color=red>Seek out an infirmary in a nearby town to heal a critical injury before it worsens.</color>": "\n\n<color=red>Procure uma enfermaria em uma cidade próxima para curar o ferimento crítico antes que ele piore.</color>",
+      "\n\n<color=yellow>Bandage your injuries to greatly reduce the chance that you will worsen a current injury.</color>": "\n\n<color=yellow>Use bandagens nos ferimentos para reduzir muito a chance de piorar um ferimento existente.</color>",
+      "\n\nYou've bandaged your injuries so your chance of making an existing injury worse has been greatly reduced.": "\n\nVocê usou bandagens nos ferimentos, então a chance de piorar um ferimento existente foi muito reduzida.",
+      "Head Injury": "Ferimento na Cabeça",
+      "Torso Injury": "Ferimento no Tronco",
+      "Arm Injury": "Ferimento no Braço",
+      "Leg Injury": "Ferimento na Perna",
+      "Light Armor": "Armadura Leve",
+      "Medium Armor": "Armadura Média",
+      "Heavy Armor": "Armadura Pesada",
+      "Field Medic": "Paramédico"
+    },
+    "BaseClass": {
+      " has been injured! (": " se feriu! (",
+      " has decided to retire": " decidiu se aposentar",
+      " has died from old age": " morreu de velhice",
+      " has died of old age at ": " morreu de velhice aos ",
+      " has retired at the age of ": " se aposentou aos ",
+      " has succumbed to ": " sucumbiu a ",
+      " injury has been made worse!": " o ferimento piorou!",
+      " is no longer ": " não é mais ",
+      " is now ": " agora é ",
+      "-1 Bleedout point": "-1 ponto de sangramento",
+      "-2 Bleedout points": "-2 pontos de sangramento",
+      "'s fatigue has ended.": " a fadiga terminou.",
+      "<sprite name=\"burning\"> resisted": "<sprite name=\"burning\"> resistiu",
+      "<sprite name=\"burning\"> resisted  from <sprite name=\"wet\">": "<sprite name=\"burning\"> resistiu por causa de <sprite name=\"wet\">"
+    },
+    "TioDungeons/<_finishedLoading>d__75": {
+      "Patch 0.7.000 heavily modified the way dungeon exploration works. You will need to be sent back to the worldmap and restart the current dungeon. The usual negative effects of leaving a dungeon early will not apply.": "O patch 0.7.000 mudou bastante o funcionamento da exploração de calabouços. Você vai ser mandado de volta para o mapa-múndi e precisará recomeçar o calabouço atual. Os efeitos negativos habituais de sair de um calabouço mais cedo não serão aplicados."
+    },
+    "SaveLoadManager/<_saveData>d__19": {
+      "Unexpected error while saving. Please check that your save folder has proper read/write permissions and try again.": "Erro inesperado ao salvar. Verifique se a pasta de saves tem permissões corretas de leitura/escrita e tente de novo.",
+      "Save Campaign": "Salvar Campanha",
+      "Select Save Slot": "Selecione o Espaço de Save",
+      "Create New Save File": "Criar Novo Save",
+      "Failed To Save": "Falha ao Salvar"
+    },
+    "SaveLoadManager": {
+      "AUTO SAVING...": "SALVANDO..."
+    },
+    "TownInnScreen/<>c__DisplayClass28_0": {
+      "Insufficient Funds": "Fundos Insuficientes",
+      "You lack the required coin to set up a camp.": "Faltam moedas para montar um acampamento."
+    },
+    "TownInnScreen/<>c__DisplayClass29_0": {
+      "Your troops appreciate your kindness.\n\n": "As suas tropas agradecem a gentileza.\n\n"
+    },
+    "TIO.Quests.QuestAndDialogueLoader/<DialogueStarted>d__418": {
+      "Dialogue starting!": "Diálogo começando!"
+    },
+    "TIO.Quests.QuestAndDialogueLoader/<_addShrine_createRuneToucherList>d__394": {
+      "Maybe we'll come back to this later.": "Talvez a gente volte nisso depois."
+    },
+    "SaveLoadManager/SaveHeaderObject": {
+      " (Auto Save)": " (Save Automático)"
+    },
+    "SaveLoadManager/<_load>d__33": {
+      "Choose Campaign": "Escolher Campanha",
+      "Select Campaign to Load": "Selecione a Campanha para Carregar",
+      "Load Campaign": "Carregar Campanha",
+      "Select File to Load": "Selecione o Arquivo para Carregar"
     }
   },
   "units": {
