@@ -137,8 +137,9 @@ class YarnFormatTests(unittest.TestCase):
         (self.root / self.rel).write_bytes(sample.encode("utf-8"))
         units, _ = YarnFormat.extract(self.root, self.rel)
         assert any(u.source == "I'd like more details first." for u in units)
-        # jump-only line is not a display unit
+        # jump-only line is not a display unit and must not be extracted
         assert not any(u.source == "nodeJumpOnly" for u in units)
+        assert not any(u.source == "[[nodeJumpOnly]]" for u in units)
         target_id = next(u.unit_id for u in units if u.source == "I'd like more details first.")
         rebuilt = YarnFormat.rebuild(self.root, self.rel, {target_id: "Quero mais detalhes primeiro."}).decode("utf-8")
         assert "[[Quero mais detalhes primeiro.|nodeIntro2]]" in rebuilt
@@ -163,6 +164,25 @@ class YarnFormatTests(unittest.TestCase):
         second = YarnFormat.rebuild(self.root, self.rel, translations)
         assert first == second
         assert b"EEEventos" not in first and b"EEventos" not in first
+
+    def test_legacy_whole_line_targets_dropped_for_shortcuts(self):
+        # Regression: pre-shortcut-support checkpoints stored the whole
+        # "[[text|node]]" line as the unit target; injecting it into the
+        # text-only span double-wrapped the choice.
+        from translate_project import _drop_legacy_shortcut_targets
+
+        sample = (
+            "title: SE.Shortcut\r\n"
+            "---\r\n"
+            "[[End|nodeEnd]]\r\n"
+            "---\r\n"
+        )
+        (self.root / self.rel).write_bytes(sample.encode("utf-8"))
+        unit_id = f"yarn:{self.rel}:2"
+        kept = _drop_legacy_shortcut_targets({unit_id: "Fim"}, self.root)
+        assert kept == {unit_id: "Fim"}
+        dropped = _drop_legacy_shortcut_targets({unit_id: "[[End|nodeEnd]]"}, self.root)
+        assert dropped == {}
 
 
 if __name__ == "__main__":

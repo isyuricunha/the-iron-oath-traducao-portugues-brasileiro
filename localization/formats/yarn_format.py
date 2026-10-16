@@ -213,18 +213,24 @@ class YarnFormat:
                 elif _translatable(stripped):
                     # Bold narration: the ** markers are formatting; the
                     # span covers only the text between them.
-                    bold = stripped.startswith("**") and stripped.endswith("**") and len(stripped) > 4
-                    unit_id = cls._unit_id(relpath, index)
-                    spans[unit_id] = (start + (2 if bold else 0), end - (2 if bold else 0), False)
-                    units.append(
-                        cls._unit(
-                            relpath,
-                            index,
-                            node,
-                            stripped[2:-2] if bold else stripped,
-                            "narration",
+                    if stripped.startswith("[[") and stripped.endswith("]]"):
+                        # Pure "[[node]]" jumps carry no display text and
+                        # must never become translation units: a provider
+                        # target would corrupt the jump.
+                        pass
+                    else:
+                        bold = stripped.startswith("**") and stripped.endswith("**") and len(stripped) > 4
+                        unit_id = cls._unit_id(relpath, index)
+                        spans[unit_id] = (start + (2 if bold else 0), end - (2 if bold else 0), False)
+                        units.append(
+                            cls._unit(
+                                relpath,
+                                index,
+                                node,
+                                stripped[2:-2] if bold else stripped,
+                                "narration",
+                            )
                         )
-                    )
             offset += len(raw_line)
         return units, spans
 

@@ -705,7 +705,7 @@ position: 1557,308
             ->Voce pode ter trabalhado duro, mas pelo que parece, nao teve uma vida dificil.
             {
                 {npc:QGthiefChase}Ah, e o que voce sabe disso? **Ele faz um gesto irritado na sua direcao.** E melhor sumir da minha frente antes que eu decida por uma recompensa tao alta pela sua cabeca que voce nunca mais vai conseguir pisar em [currentKingdom]! 
-                [[[Treacherous] Isso nao pode acontecer se voce estiver morto agora, pode? **Mata-lo**|ThiefChaseKillHimEnd]]
+                [[[Treacherous] That can't happen if you're dead now, can it? **Kill him**|ThiefChaseKillHimEnd]]
                 [[Calma. Estamos de partida. **Ir Embora**|ThiefChaseEndWithBountyOnHead]]
             }
             ->Entendo. Entao vamos embora.
@@ -758,7 +758,7 @@ position: 1557,308
         ->Faca o que achar certo.
         {
             {npc:QGthiefChase}Pode ter certeza de que farei! 
-            [[[[**Continue**|ThiefChaseCleanEnd]]|ThiefChaseCleanEnd]]
+            [[**Continuar**|ThiefChaseCleanEnd]]
         }
     }
 }
@@ -799,7 +799,7 @@ position: 148,934
 <<SetEventFinished>> 
 {npc:thiefChaseNpc}Olha, eu devolvo a bolsa. So preciso de uma coisa que esta dentro dela, por favor!
 [[O que seria tao importante a ponto de precisar roubar?|ThiefChaseExplaination]]
-[[[Harsh]Nos vamos tira-la do seu cadaver.|ThiefChaseTakeOffCorpse]]
+[[[Harsh]We'll just take it off your corpse.|ThiefChaseTakeOffCorpse]]
 ===
 title: SE.ThiefChase1
 tags: ScriptedEvent
@@ -834,7 +834,7 @@ position: 614,936
         <<CreateItem "itm_StolenSatchelNoMedicine" "Stolen Satchel" "A satchel holding various items" "300" "generic">>
         <<GiveQuestItem itm_StolenSatchelNoMedicine>>
         <<RemoveNpc 0>>
-        [[[[End|ThiefChasePeacefulEnd]]|ThiefChasePeacefulEnd]]
+        [[Fim|ThiefChasePeacefulEnd]]
 ->[Merciful]Apenas vao. Diremos a ele que voces fugiram.
     {npc:thiefChaseNpc}De verdade? So queria poder retribuir sua bondade! Ainda podemos viver gracas a voces. 
     <<AddCitizenToGuildOpinion "current" "30">>
@@ -842,15 +842,15 @@ position: 614,936
         <<ModifyQuestVar "Quest.ThiefChase" "BagContents" "none">>
         <<MoveNpc 0 500 0 true>>
         <<RemoveNpc 0>>
-        [[[[End|ThiefChasePeacefulEnd]]|ThiefChasePeacefulEnd]]
+        [[Fim|ThiefChasePeacefulEnd]]
 ->[Harsh]Gente como voces nao devia estar aqui fora. Vamos leva-los de volta a [scourgeCity]. La voces podem apelar a Vanguarda.
     **Ela sibila entre dentes cerrados.**
     {npc:thiefChaseNpc}Nao vamos voltar! Vamos lutar por nossas vidas se for preciso! 
-        [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
+        [[Atacar|ThiefChaseCombat]]
 ->[Harsh]Fomos contratados para recuperar aquela bolsa, e e exatamente o que vamos fazer. **Lutar**
     **Ela sibila entre dentes cerrados.**
     {npc:thiefChaseNpc}Muito bem, entao! Vamos lutar por nossas vidas se for preciso! 
-        [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
+        [[Atacar|ThiefChaseCombat]]
 ===
 title: ThiefChaseTakeOffCorpse
 tags: 
@@ -859,7 +859,7 @@ position: 340,1247
 ---
 **Ela sibila entre dentes cerrados.**
 {npc:thiefChaseNpc}Muito bem, entao! Vamos lutar por nossas vidas se for preciso! 
-    [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
+    [[Atacar|ThiefChaseCombat]]
 ===
 title: ThiefChaseCombat
 tags: 
@@ -930,7 +930,7 @@ groupName: Thief On The Road
 position: 1559,624
 ---
 {npc:QGthiefChase}Ceus! Pegue logo sua recompensa e suma daqui!
-[[[[**Continue**|ThiefChaseEndWithBountyOnHeadPaid]]|ThiefChaseEndWithBountyOnHeadPaid]]
+[[**Continuar**|ThiefChaseEndWithBountyOnHeadPaid]]
 ===
 title: ThiefChaseCleanEnd
 tags: 
@@ -3383,7 +3383,7 @@ position: 682,1396
     <<GiveItem "tio_breachPouch">>
     {npc:vanguardOfficerNpc}O conteudo e altamente volatil, entao manuseie-o com muito cuidado. Quanto aos outros perigos, o desaparecimento dos meus homens sugere que o lugar estara infestado de voidspawn, principalmente conforme voce se aproximar da fenda. Sei que estamos pedindo muito de voce, mas estamos com as costas contra a parede. Pode ficar tranquilo que voce sera bem pago se conseguir dar conta do recado.
 [[O que voce sabe da Praga?|node.CampaignVoidBreachScourgeInfo]]
-[[[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]|node.CampaignVoidBreachBreachInfo]]
+[[Uma Fenda do Vazio?|node.CampaignVoidBreachBreachInfo]]
 [[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignVoidBreachAccept]]
 ===
 title: node.CampaignVoidBreachBreachInfo
@@ -3414,7 +3414,7 @@ groupName: TutorialQuest
 position: 1110,1394
 ---
 {npc:vanguardOfficerNpc} Apenas o que me ensinaram. Eu ainda era um bebe quando a ultima ocorreu, ha quase 50 anos. O que posso lhe dizer e que o pior ainda esta por vir. Demonios e espectros sao uma coisa, mas quando aquele dragao profano rasga o ceu enegrecido e desce sobre nossas cidades, bem... rezo para que nao estejamos em lugar nenhum perto disso.
-[[[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]|node.CampaignVoidBreachBreachInfo]]
+[[Uma Fenda do Vazio?|node.CampaignVoidBreachBreachInfo]]
 [[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignVoidBreachAccept]]
 ===
 title: SE.CompanyMomentLowUsage
@@ -6849,7 +6849,7 @@ position: -171,-247
     [[node.battlefieldEventOfferPrayer]]
 ->[Honorable,Merciful]Ajude a enterrar os mortos.
     [[node.battlefieldEventBuryTheDead]]
-[[[[Move Along|node.battlefieldEventMoveAlong]]|node.battlefieldEventMoveAlong]]
+[[Seguir em Frente|node.battlefieldEventMoveAlong]]
 ===
 title: node.battlefieldEventScavenge
 tags: 
@@ -7767,7 +7767,7 @@ position: 188,-34
                     <<GiveItem "tioScrap" "10">>
                 }
                 <<endif>>
-                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
+                [[**Continuar**|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -7801,7 +7801,7 @@ position: 188,-34
                 {advisor}Certo, entao. Vamos salvar o que pudermos daqui, mas e melhor viajarmos leves; a caminhada ate Andilon e longa.
                 <<ModifyGold 300>> 
                 <<GiveItem "tioScrap" "15">>
-                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
+                [[**Continuar**|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -7837,7 +7837,7 @@ position: 188,-34
                 <<GiveItem "tio_clothVest">>
                 <<GiveItem "tio_boiledLeather">>
                 <<GiveItem "tio_ironLamellar">>
-                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
+                [[**Continuar**|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -8263,7 +8263,7 @@ groupName: CampaignBackOnYourFeet
 position: 807,-859
 ---
 {npc:prologueVanguardNpc}A Primeira Devastacao aconteceu ha mais de um seculo, e ela se repete a cada decada desde entao. Ainda nao sabemos por que. O que posso lhe dizer e que o pior ainda esta por vir. Demonios e espectros sao uma coisa, mas quando aquele dragao profano rasga o ceu enegrecido e desce sobre nossas cidades, bom... rezo para que nao estejamos por perto.
-[[[[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
+[[Uma Fenda do Vazio?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
 [[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignBackOnYourFeetVoidBreachAccept]]
 ===
 title: node.CampaignBackOnYourFeetVoidBreachBreachInfo
@@ -10608,7 +10608,7 @@ tags:
 groupName: CampaignFortVanguard
 position: 255,789
 ---
-[[[[Nomads?|node.VanguardFactionNomadsInfo]]|node.VanguardFactionNomadsInfo]]
+[[Nomades?|node.VanguardFactionNomadsInfo]]
 [[Quantas Pragas voce ja atravessou?|node.VanguardFactionScourgeInfo]]
 [[O que voce sabe do dragao?|node.VanguardFactionDragonInfo]]
 [[Fale-me sobre os Corrompidos.|node.VanguardFactionBlightedInfo]]
@@ -14348,7 +14348,7 @@ position: 550,-1356
 <<RemoveAllOfItem "tioDemonHead" "true" "1.25">>
 //givecoin based on amount of demon heads in storage
 [[Quais sao as chances de sobrevivencia da cidade?|node.ScourgeCrisisCityStatus]]
-[[[[**Enter City**|node.Stop]]|node.Stop]]
+[[**Entrar na Cidade**|node.Stop]]
 ===
 title: SE.ScourgeCrisisCityDefenseFight
 tags: ScriptedEvent
@@ -14429,7 +14429,7 @@ position: 324,-1063
 {
     **Um soldado da Vanguarda acena em reconhecimento enquanto voces se aproximam das muralhas da cidade. Ele se vira, gritando ordens, e os pesados portoes rangem lentamente diante de voces.**
     {npc:vanguardSoldier}Bem-vindos de volta. Espero que estejam progredindo por ai? 
-    [[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para receber.|node.ScourgeCrisisDemonHeads]]
+    [[[RequireItem:tioDemonHead]We've some demon heads to collect on.|node.ScourgeCrisisDemonHeads]]
     [[Quais sao as chances de sobrevivencia da cidade?|node.ScourgeCrisisCityStatus]]
     [[Temos negocios na cidade. **Continuar**|node.Stop]]
 }
@@ -14478,8 +14478,8 @@ position: 118,-1354
     {npc:vanguardSoldier}Pequenas, a menos que os proprios deuses decidam intervir. Suponho que descobriremos em [scourgeCrisisTimer] dias, quando esses bastardos profanos chegarem.
 }
 <<endif>>
-[[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para resgatar.|node.ScourgeCrisisDemonHeads]]
-[[[[**Enter City**|node.Stop]]|node.Stop]]
+[[[RequireItem:tioDemonHead]We've some demon heads to collect on.|node.ScourgeCrisisDemonHeads]]
+[[**Entrar na Cidade**|node.Stop]]
 ===
 title: node.ScourgeCrisisBreachQ1
 tags: 
@@ -14984,18 +14984,18 @@ position: 1793,2426
 {
     <<if hasItemAmount("tioGold","4") is true>>
     {
-        [[[Honorable,Content]Ele encontrou, na verdade. Queria que voce ficasse com tudo. **Entregar todo o ouro a ela** |node.lostBlightedGiveAllGold]] 
-        [[[Greedy]Ele encontrou, na verdade. Conseguimos trazer um pouco de volta para voce. **Entregar metade do ouro a ela** |node.lostBlightedGiveHalfGold]] 
-        [[[Treacherous,Greedy]Receio que nao. **Mentir** |node.lostBlightedLie]]
+        [[[Honorable,Content]He did, actually. Wanted you to have it all. **Give her all the gold** |node.lostBlightedGiveAllGold]] 
+        [[[Greedy]He did, actually. We managed to bring a little back for you. **Give her half the gold** |node.lostBlightedGiveHalfGold]] 
+        [[[Treacherous,Greedy]I'm afraid not. **Lie** |node.lostBlightedLie]]
     }
     <<elseif hasItemAmount("tioGold","2") is true>>
     {
-        [[[Greedy]Ele encontrou, na verdade. Conseguimos trazer um pouco de volta para voce. **Entregar metade do ouro a ela** |node.lostBlightedGiveHalfGold]] 
-        [[[Treacherous,Greedy]Receio que nao. **Mentir** |node.lostBlightedLie]]
+        [[[Greedy]He did, actually. We managed to bring a little back for you. **Give her half the gold** |node.lostBlightedGiveHalfGold]] 
+        [[[Treacherous,Greedy]I'm afraid not. **Lie** |node.lostBlightedLie]]
     }
     <<else>> 
     {
-        [[[Treacherous]Receio que nao.**Mentir** |node.lostBlightedLie]]
+        [[[Treacherous]I'm afraid not.**Lie** |node.lostBlightedLie]]
     }
     <<endif>>
 }
@@ -15955,7 +15955,7 @@ position: 1177,-1307
     **Ele entrega a bolsa com um toque delicado.**
     {npc:prologueVanguardNpc}Me disseram que elas podem ser frageis, entao tenha cuidado ao manusea-las. Quanto aos demais perigos, o desaparecimento dos meus homens sugere que o lugar estara infestado de vazio-gerados, principalmente perto da propria fenda. Sei que estamos pedindo muito de voces, mas estamos encurralados. Pode ter certeza de que serao bem pagos se conseguirem realizar isso.
     [[O que voce sabe da Praga?|node.CampaignBackOnYourFeetVoidBreachScourgeInfo]]
-    [[[[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
+    [[Uma Fenda do Vazio?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
     [[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignBackOnYourFeetVoidBreachAccept]]
 ===
 title: SE.AnOldFriendMidCombat
@@ -30093,7 +30093,7 @@ groupName: ContentUpdateQuests
 position: 142,2103
 ---
 [[Muito bem, Dridge. Onde podemos encontrar essa faca sua?|node.DridgeOptionsAccept]]
-[[[Honorable]Comprar uma lamina e um trabalho pequeno demais; por que nao faz voce mesmo? Por acaso e roubada?|node.dridgeOptionsQuestion]]
+[[[Honorable]Purchasing a blade is a small enough job, why not do it yourself? Is it perhaps stolen?|node.dridgeOptionsQuestion]]
 [[Nao, nao estamos interessados.|node.dridgeOptionsDecline]]
 ===
 title: node.DridgeOptionsAccept

@@ -165,6 +165,61 @@ def load_manual_map(path: Path) -> dict[str, str]:
     return flat
 
 
+def _yarn_unit_id_parts(unit_id: str) -> tuple[str, str] | None:
+    """Split a yarn unit id into (relpath, line index) when parseable."""
+    if not unit_id.startswith("yarn:"):
+        return None
+    parts = unit_id.split(":")
+    if parts[-1].startswith("a") and len(parts) >= 4 and parts[-2].isdigit():
+        return ":".join(parts[1:-2]), parts[-2]
+    if len(parts) >= 3 and parts[-1].isdigit():
+        return ":".join(parts[1:-1]), parts[-1]
+    return None
+
+
+def _drop_legacy_shortcut_targets(
+    targets: dict[str, str],
+    input_root: Path,
+) -> dict[str, str]:
+    """Remove whole-line "[[text|node]]" artifacts stored for yarn units
+    whose current extraction yields the text-only shortcut span.
+
+    Pre-shortcut-support publications stored the raw line as the unit
+    target; injecting that into the text-only span double-wraps the
+    choice ("[[[[End|node]]|node]]"). Such targets are dropped so the
+    line stays in English until a proper text-only target exists.
+    Targets for genuinely raw lines (cost-prefixed choices such as
+    "[[[Harsh]...|node]]") are left alone because those lines are still
+    treated as whole-line narration units.
+    """
+    from localization.formats.yarn_format import _SHORTCUT_RE
+
+    line_cache: dict[tuple[str, str], str] = {}
+    out: dict[str, str] = {}
+    for uid, target in targets.items():
+        if target.startswith("[["):
+            parsed = _yarn_unit_id_parts(uid)
+            if parsed is not None:
+                relpath, line = parsed
+                key = (relpath, line)
+                if key not in line_cache:
+                    path = input_root / relpath
+                    decoded = path.read_bytes().decode("utf-8-sig")
+                    lines = decoded.splitlines()
+                    index = int(line)
+                    line_cache[key] = lines[index] if index < len(lines) else ""
+                raw_line = line_cache[key].strip()
+                shortcut_line = _SHORTCUT_RE.match(raw_line) is not None
+                if shortcut_line or not raw_line.startswith("[["):
+                    print(
+                        f"dropping legacy whole-line target (unit is a text-only shortcut): {uid}",
+                        file=sys.stderr,
+                    )
+                    continue
+        out[uid] = target
+    return out
+
+
 def self_test() -> int:
     """Offline self tests: profile, request shape, punctuation, protection."""
     from localization.protection import (
@@ -357,7 +412,9 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
         # overlay text wholesale re-fed every publication its own
         # output (each run added one stray leading character to Show*
         # command args).
-        checkpoint_accepted = pipeline.checkpoint.accepted_units_latest()
+        checkpoint_accepted = _drop_legacy_shortcut_targets(
+            pipeline.checkpoint.accepted_units_latest(), settings.input_root
+        )
         accepted: dict[str, str] = dict(checkpoint_accepted)
         for handler_name, paths in discovered.items():
             handler = formats.HANDLERS[handler_name]
@@ -370,6 +427,7 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
                     if not unit.source.strip():
                         continue
                     accepted.setdefault(unit.unit_id, unit.source)
+        accepted = _drop_legacy_shortcut_targets(accepted, settings.input_root)
 
         # Collect sources for validation and coverage checks.
         source_by_id: dict[str, str] = {}
@@ -572,6 +630,7 @@ def run_translation(settings: Settings, profile: dict, provider: Provider) -> in
             source_files.extend(paths)
         source_manifest = ",".join(sorted(set(source_files)))
         _, reused = pipeline.open_generation(settings.mode, source_manifest, settings.resume, staging)
+        reused = _drop_legacy_shortcut_targets(reused, settings.input_root)
 
         total_accepted: dict[str, str] = {}
         failed: list = []
