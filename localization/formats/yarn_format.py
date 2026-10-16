@@ -53,6 +53,9 @@ _COMMAND_SHAPES = (
 
 _SHORTCUT_RE = re.compile(r'^\[\[([^|\]]+)\|([^\]]+)\]\]$')
 
+# Pure "[[node]]" jump lines: no pipe, no inner bracket.
+_JUMP_ONLY_RE = re.compile(r'^\[\[[^|\[\]]+\]\]$')
+
 
 def _translatable(value: str) -> bool:
     """Yarn body lines are always display text, so the HJSON identifier
@@ -213,7 +216,7 @@ class YarnFormat:
                 elif _translatable(stripped):
                     # Bold narration: the ** markers are formatting; the
                     # span covers only the text between them.
-                    if stripped.startswith("[[") and stripped.endswith("]]"):
+                    if _JUMP_ONLY_RE.match(stripped) is not None:
                         # Pure "[[node]]" jumps carry no display text and
                         # must never become translation units: a provider
                         # target would corrupt the jump.

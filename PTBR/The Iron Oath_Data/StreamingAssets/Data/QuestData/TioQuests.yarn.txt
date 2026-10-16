@@ -705,7 +705,7 @@ position: 1557,308
             ->Voce pode ter trabalhado duro, mas pelo que parece, nao teve uma vida dificil.
             {
                 {npc:QGthiefChase}Ah, e o que voce sabe disso? **Ele faz um gesto irritado na sua direcao.** E melhor sumir da minha frente antes que eu decida por uma recompensa tao alta pela sua cabeca que voce nunca mais vai conseguir pisar em [currentKingdom]! 
-                [[[Treacherous] That can't happen if you're dead now, can it? **Kill him**|ThiefChaseKillHimEnd]]
+                [[[Treacherous] Isso nao pode acontecer se voce estiver morto agora, pode? **Mata-lo**|ThiefChaseKillHimEnd]]
                 [[Calma. Estamos de partida. **Ir Embora**|ThiefChaseEndWithBountyOnHead]]
             }
             ->Entendo. Entao vamos embora.
@@ -799,7 +799,7 @@ position: 148,934
 <<SetEventFinished>> 
 {npc:thiefChaseNpc}Olha, eu devolvo a bolsa. So preciso de uma coisa que esta dentro dela, por favor!
 [[O que seria tao importante a ponto de precisar roubar?|ThiefChaseExplaination]]
-[[[Harsh]We'll just take it off your corpse.|ThiefChaseTakeOffCorpse]]
+[[[Harsh]Nos vamos tira-la do seu cadaver.|ThiefChaseTakeOffCorpse]]
 ===
 title: SE.ThiefChase1
 tags: ScriptedEvent
@@ -14429,7 +14429,7 @@ position: 324,-1063
 {
     **Um soldado da Vanguarda acena em reconhecimento enquanto voces se aproximam das muralhas da cidade. Ele se vira, gritando ordens, e os pesados portoes rangem lentamente diante de voces.**
     {npc:vanguardSoldier}Bem-vindos de volta. Espero que estejam progredindo por ai? 
-    [[[RequireItem:tioDemonHead]We've some demon heads to collect on.|node.ScourgeCrisisDemonHeads]]
+    [[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para receber.|node.ScourgeCrisisDemonHeads]]
     [[Quais sao as chances de sobrevivencia da cidade?|node.ScourgeCrisisCityStatus]]
     [[Temos negocios na cidade. **Continuar**|node.Stop]]
 }
@@ -14478,7 +14478,7 @@ position: 118,-1354
     {npc:vanguardSoldier}Pequenas, a menos que os proprios deuses decidam intervir. Suponho que descobriremos em [scourgeCrisisTimer] dias, quando esses bastardos profanos chegarem.
 }
 <<endif>>
-[[[RequireItem:tioDemonHead]We've some demon heads to collect on.|node.ScourgeCrisisDemonHeads]]
+[[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para resgatar.|node.ScourgeCrisisDemonHeads]]
 [[**Entrar na Cidade**|node.Stop]]
 ===
 title: node.ScourgeCrisisBreachQ1
@@ -14984,18 +14984,18 @@ position: 1793,2426
 {
     <<if hasItemAmount("tioGold","4") is true>>
     {
-        [[[Honorable,Content]He did, actually. Wanted you to have it all. **Give her all the gold** |node.lostBlightedGiveAllGold]] 
-        [[[Greedy]He did, actually. We managed to bring a little back for you. **Give her half the gold** |node.lostBlightedGiveHalfGold]] 
-        [[[Treacherous,Greedy]I'm afraid not. **Lie** |node.lostBlightedLie]]
+        [[[Honorable,Content]Ele encontrou, na verdade. Queria que voce ficasse com tudo. **Entregar todo o ouro a ela** |node.lostBlightedGiveAllGold]] 
+        [[[Greedy]Ele encontrou, na verdade. Conseguimos trazer um pouco de volta para voce. **Entregar metade do ouro a ela** |node.lostBlightedGiveHalfGold]] 
+        [[[Treacherous,Greedy]Receio que nao. **Mentir** |node.lostBlightedLie]]
     }
     <<elseif hasItemAmount("tioGold","2") is true>>
     {
-        [[[Greedy]He did, actually. We managed to bring a little back for you. **Give her half the gold** |node.lostBlightedGiveHalfGold]] 
-        [[[Treacherous,Greedy]I'm afraid not. **Lie** |node.lostBlightedLie]]
+        [[[Greedy]Ele encontrou, na verdade. Conseguimos trazer um pouco de volta para voce. **Entregar metade do ouro a ela** |node.lostBlightedGiveHalfGold]] 
+        [[[Treacherous,Greedy]Receio que nao. **Mentir** |node.lostBlightedLie]]
     }
     <<else>> 
     {
-        [[[Treacherous]I'm afraid not.**Lie** |node.lostBlightedLie]]
+        [[[Treacherous]Receio que nao.**Mentir** |node.lostBlightedLie]]
     }
     <<endif>>
 }
@@ -30093,7 +30093,7 @@ groupName: ContentUpdateQuests
 position: 142,2103
 ---
 [[Muito bem, Dridge. Onde podemos encontrar essa faca sua?|node.DridgeOptionsAccept]]
-[[[Honorable]Purchasing a blade is a small enough job, why not do it yourself? Is it perhaps stolen?|node.dridgeOptionsQuestion]]
+[[[Honorable]Comprar uma lamina e um trabalho pequeno demais; por que nao faz voce mesmo? Por acaso e roubada?|node.dridgeOptionsQuestion]]
 [[Nao, nao estamos interessados.|node.dridgeOptionsDecline]]
 ===
 title: node.DridgeOptionsAccept
