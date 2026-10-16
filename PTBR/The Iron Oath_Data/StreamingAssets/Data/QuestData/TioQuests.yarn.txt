@@ -357,8 +357,8 @@ position: 1406,936
 // this is the text that will show up in the body of the event
 **O nobre se aproxima de voces, o tempo todo olhando por cima do ombro. Ele com certeza esta tramando algo.**
 {npc:atAnyCostNpcQG}Tenho uma tarefa q...que preciso que alguem com suas habilidades assuma, sem fazer perguntas. E bem simples, mas pode ser um pouco.... complicada.
-[[As long as it pays good I don't care.|nodeIntroAtAnyCost2]]
-[[I'd like more details first.|nodeIntroAtAnyCost3]]
+[[Desde que pague bem, nao me importo.|nodeIntroAtAnyCost2]]
+[[Quero mais detalhes primeiro.|nodeIntroAtAnyCost3]]
 ===
 title: nodeIntroAtAnyCost2
 tags: 
@@ -371,8 +371,8 @@ position: 1401,633
     [[nodeIntroAtAnyCost5]]
 ->O que o pergaminho faz?
     {npc:atAnyCostNpcQG}Eu disse: nada de perguntas. Vai dar problema?
-    [[Fine, I'll do it. Just hand over the scroll.|nodeIntroAtAnyCost5]]
-    [[If you can't give me more details then we must part ways.|nodeIntroAtAnyCost4]]
+    [[Ta bom, eu faco. So me entregue o pergaminho.|nodeIntroAtAnyCost5]]
+    [[Se voce nao puder dar mais detalhes, teremos que nos separar por aqui.|nodeIntroAtAnyCost4]]
 ===
 title: nodeIntroAtAnyCost3
 tags: 
@@ -380,8 +380,8 @@ groupName: At Any Cost
 position: 1930,859
 ---
 {npc:atAnyCostNpcQG}Se voce nao consegue seguir minhas ordens sem fazer um monte de perguntas, talvez seja melhor nos separarmos aqui.
-[[Fine. Tell me what you want.|nodeIntroAtAnyCost2]]
-[[I can't agree to those terms.|nodeIntroAtAnyCost4]]
+[[Ta bom. Me diga o que voce quer.|nodeIntroAtAnyCost2]]
+[[Nao posso concordar com esses termos.|nodeIntroAtAnyCost4]]
 ===
 title: nodeIntroAtAnyCost4
 tags: 
@@ -411,7 +411,7 @@ position: 1927,528
                         ->**Sair pela janela e bater na porta.**
                             **O mesmo nobre com quem voce falou antes abre a porta com uma expressao de choque no rosto.**
                             {npc:atAnyCostNpcQG}O que voce esta fazendo aqui? Como me encontrou?
-                            [[I've changed my mind, I'll assist you.|nodeIntroAtAnyCost6]]
+                            [[Mudei de ideia, eu ajudo voce.|nodeIntroAtAnyCost6]]
                         ->**Sair (Recusar a missao)**
                             <<DeclineQuest Quest.AtAnyCost>>
                             <<stop>>
@@ -448,14 +448,14 @@ position: 1927,153
 <<set $modifiedScroll to 1>>
 <<if $heardDetails == 1>>
 {npc:atAnyCostNpcQG}Nao aprecio ser seguido, mas suponho que a esta altura nao tenho escolha. Apenas faca o que pedi e nao teremos problemas.
-[[I can agree to that.|nodeIntroAtAnyCost5]]
-[[On second thought, I can't help you.|nodeIntroAtAnyCost7]]
+[[Posso concordar com isso.|nodeIntroAtAnyCost5]]
+[[Pensando melhor, nao posso ajudar voce.|nodeIntroAtAnyCost7]]
 <<else>>
 {npc:atAnyCostNpcQG}Nao aprecio ser seguido, mas suponho que a esta altura nao tenho escolha. 
 ->**Continuar**
     {npc:atAnyCostNpcQG}Consegui um pergaminho magico e preciso que voce o use em um monstro especifico conhecido como Wight. Um deles foi avistado nao muito longe daqui; vou marcar no seu mapa. Tem que ser esse Wight especifico, entao so esse serve.
-    [[I can agree to that.|nodeIntroAtAnyCost5]]
-    [[On second thought, I can't help you.|nodeIntroAtAnyCost7]]
+    [[Posso concordar com isso.|nodeIntroAtAnyCost5]]
+    [[Pensando melhor, nao posso ajudar voce.|nodeIntroAtAnyCost7]]
 <<endif>>
 ===
 title: Conv.AtAnyCostBossCutScene
@@ -706,7 +706,7 @@ position: 1557,308
             {
                 {npc:QGthiefChase}Ah, e o que voce sabe disso? **Ele faz um gesto irritado na sua direcao.** E melhor sumir da minha frente antes que eu decida por uma recompensa tao alta pela sua cabeca que voce nunca mais vai conseguir pisar em [currentKingdom]! 
                 [[[Treacherous] Isso nao pode acontecer se voce estiver morto agora, pode? **Mata-lo**|ThiefChaseKillHimEnd]]
-                [[Easy now. We're leaving. **Leave**|ThiefChaseEndWithBountyOnHead]]
+                [[Calma. Estamos de partida. **Ir Embora**|ThiefChaseEndWithBountyOnHead]]
             }
             ->Entendo. Entao vamos embora.
             {
@@ -742,8 +742,8 @@ position: 1557,308
             ->A familia dela precisava do soro. Mais do que voce, pelo que parece. 
             {
                 {npc:QGthiefChase}E como voce sabe disso? Pensei que voce nao a tinha encontrado.
-                [[I think we've heard enough. **Kill him**|ThiefChaseKillHimEnd]]
-                [[If you put a bounty on her, we'll make sure it's the last thing you do.|ThiefChaseUpsetBeforeBountyEnd]]
+                [[Acho que ja ouvimos o suficiente. **Matar ele**|ThiefChaseKillHimEnd]]
+                [[Se voce colocar uma recompensa nela, vamos garantir que essa seja a ultima coisa que voce faca.|ThiefChaseUpsetBeforeBountyEnd]]
             }
             ->Tanto faz, a escolha e sua. So vamos pegar a nossa recompensa. 
             {
@@ -758,7 +758,7 @@ position: 1557,308
         ->Faca o que achar certo.
         {
             {npc:QGthiefChase}Pode ter certeza de que farei! 
-            [[**Continue**|ThiefChaseCleanEnd]]
+            [[[[**Continue**|ThiefChaseCleanEnd]]|ThiefChaseCleanEnd]]
         }
     }
 }
@@ -798,7 +798,7 @@ position: 148,934
 **Voce persegue a ladra ate um beco sem saida, deixando-a sem ter para onde correr. Ela se vira para voce com olhos desesperados enquanto algumas figuras emergem das sombras atras dela, os rostos jovens tambem marcados por sinais da Praga.**
 <<SetEventFinished>> 
 {npc:thiefChaseNpc}Olha, eu devolvo a bolsa. So preciso de uma coisa que esta dentro dela, por favor!
-[[What's so important that you needed to steal it?|ThiefChaseExplaination]]
+[[O que seria tao importante a ponto de precisar roubar?|ThiefChaseExplaination]]
 [[[Harsh]Nos vamos tira-la do seu cadaver.|ThiefChaseTakeOffCorpse]]
 ===
 title: SE.ThiefChase1
@@ -834,7 +834,7 @@ position: 614,936
         <<CreateItem "itm_StolenSatchelNoMedicine" "Stolen Satchel" "A satchel holding various items" "300" "generic">>
         <<GiveQuestItem itm_StolenSatchelNoMedicine>>
         <<RemoveNpc 0>>
-        [[End|ThiefChasePeacefulEnd]]
+        [[[[End|ThiefChasePeacefulEnd]]|ThiefChasePeacefulEnd]]
 ->[Merciful]Apenas vao. Diremos a ele que voces fugiram.
     {npc:thiefChaseNpc}De verdade? So queria poder retribuir sua bondade! Ainda podemos viver gracas a voces. 
     <<AddCitizenToGuildOpinion "current" "30">>
@@ -842,15 +842,15 @@ position: 614,936
         <<ModifyQuestVar "Quest.ThiefChase" "BagContents" "none">>
         <<MoveNpc 0 500 0 true>>
         <<RemoveNpc 0>>
-        [[End|ThiefChasePeacefulEnd]]
+        [[[[End|ThiefChasePeacefulEnd]]|ThiefChasePeacefulEnd]]
 ->[Harsh]Gente como voces nao devia estar aqui fora. Vamos leva-los de volta a [scourgeCity]. La voces podem apelar a Vanguarda.
     **Ela sibila entre dentes cerrados.**
     {npc:thiefChaseNpc}Nao vamos voltar! Vamos lutar por nossas vidas se for preciso! 
-        [[Attack|ThiefChaseCombat]]
+        [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
 ->[Harsh]Fomos contratados para recuperar aquela bolsa, e e exatamente o que vamos fazer. **Lutar**
     **Ela sibila entre dentes cerrados.**
     {npc:thiefChaseNpc}Muito bem, entao! Vamos lutar por nossas vidas se for preciso! 
-        [[Attack|ThiefChaseCombat]]
+        [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
 ===
 title: ThiefChaseTakeOffCorpse
 tags: 
@@ -859,7 +859,7 @@ position: 340,1247
 ---
 **Ela sibila entre dentes cerrados.**
 {npc:thiefChaseNpc}Muito bem, entao! Vamos lutar por nossas vidas se for preciso! 
-    [[Attack|ThiefChaseCombat]]
+    [[[[Attack|ThiefChaseCombat]]|ThiefChaseCombat]]
 ===
 title: ThiefChaseCombat
 tags: 
@@ -930,7 +930,7 @@ groupName: Thief On The Road
 position: 1559,624
 ---
 {npc:QGthiefChase}Ceus! Pegue logo sua recompensa e suma daqui!
-[[**Continue**|ThiefChaseEndWithBountyOnHeadPaid]]
+[[[[**Continue**|ThiefChaseEndWithBountyOnHeadPaid]]|ThiefChaseEndWithBountyOnHeadPaid]]
 ===
 title: ThiefChaseCleanEnd
 tags: 
@@ -1038,8 +1038,8 @@ position: 683,-103
 **[FNameP1] corre para verificar Joren, mas logo fica claro que ele esta morto. [FNameP0] suspira, abaixando a cabeca lentamente em respeito.**
 {player:0} Ele era um bom homem. Sempre imaginei que seus feitos heroicos seriam o fim dele. Adeus, meu amigo. 
 **Voce observa demoradamente a multidao de rostos exaustos ao seu redor. Dezenas de refugiados dispersos de seus lares, todos contando com voce para mante-los vivos. Voce nao achou que o trabalho seria tao dificil, mas desde quando as coisas saem como planejado?**
-[[We need to keep moving and get these people to safety.|SE.TutorialQuestPostBattle2]]
-[[The Vanguard should pay us extra for this mess. Let's go, you lot had better not slow us down.|SE.TutorialQuestPostBattle2]]
+[[Precisamos continuar andando e levar essas pessoas a um lugar seguro.|SE.TutorialQuestPostBattle2]]
+[[A Vanguarda deveria pagar a gente extra por essa bagunca. Vamos embora, e e melhor voces nao nos atrasarem.|SE.TutorialQuestPostBattle2]]
 ===
 title: SE.TutorialQuestPostBattle2
 tags: 
@@ -1868,8 +1868,8 @@ position: -680,320
 ->De fato. O que pode nos contar sobre o trabalho?
     **Ele se vira e bate a mao numa das caixas que aguardam para serem carregadas.**
     {npc:safeguardNpc}Bem, e bem simples, na verdade. Vou levar essas mercadorias para negociar na cidade de [destinationCity]. Normalmente, eu nao precisaria de ajuda extra, mas com toda essa situacao de bandidos, estou bem desconfiado das estradas no momento. Na verdade, ja perdi uma carroca para esses malditos ladroes, e nao estou a fim de que isso aconteca outra vez. E ai que voces entram: acredito que so a sua presenca ja seja suficiente para dete-los. Mas, se nao for, bem... tenho certeza de que voces saberao lidar com a situacao. **Ele aponta para as armas do seu companheiro e pisca o olho.**
-    [[Sounds pretty straight forward. And the payment?|node.safeguardingshipmentpaymentq]]
-    [[What type of goods are you transporting?|node.safeguaardinggoodstransportingq]] 
+    [[Parece bem simples. E o pagamento?|node.safeguardingshipmentpaymentq]]
+    [[Que tipo de mercadorias voce esta transportando?|node.safeguaardinggoodstransportingq]] 
 ->Pensando bem, nao estamos interessados. **Recusar Contrato**
     <<DeclineQuest Quest.SafeguardingAShipment>>
     <<stop>>
@@ -1885,7 +1885,7 @@ position: 142,5
 <<set $CheckForActiveQuest to "Quest.SafeguardingAShipment" >>
 <<set $Priority to 99>>
 //TODO: this gold value for the bribe needs to dynamically be double of whatever the quest reward is
-**You are riding along when suddenly you hear several war cries from over a nearby ridge, followed closely by the sound of loosing arrows - one narrowly missing you.**
+**Voce cavalga quando, de repente, ouve varios gritos de guerra vindo de uma crista proxima, seguidos de perto pelo som de flechas disparadas, e uma delas passa raspando em voce.**
 {advisor}[myTitle], e uma emboscada!
 {npc:safeguardNpc}Esses malditos devem ter nos seguido para fora de [questTown]! Ainda bem que contratei voces, hein?
 <<if getRandomChance(50) is "true">>
@@ -1953,7 +1953,7 @@ groupName: Safeguarding A Shipment
 position: -456,640
 ---
 {npc:safeguardNpc}Bem, eu negocio com todo tipo de coisa! Nada fora do comum, posso garantir. E prefiro nao revelar meu inventario. **Ele olha ao redor e se aproxima.** Nunca se sabe quem pode estar ouvindo.
-[[Sounds pretty straight forward. And the payment?|node.safeguardingshipmentpaymentq]]
+[[Parece bem simples. E o pagamento?|node.safeguardingshipmentpaymentq]]
 ===
 title: SE.SafeguardingAShipmentRoadAttackCombat
 tags: ScriptedEvent
@@ -1982,7 +1982,7 @@ groupName: Safeguarding A Shipment
 position: -282,7
 ---
 <<set $CheckForActiveQuest to "Quest.SafeguardingAShipment" >>
-Nosso contratante perdeu a paciencia e acabou de ser visto saindo de nossa caravana furioso. Infelizmente, isso repercutira mal na reputacao de nossa companhia na cidade de [questTown].
+**Nosso contratante perdeu a paciencia e acabou de ser visto saindo de nossa caravana furioso. Infelizmente, isso repercutira mal na reputacao de nossa companhia na cidade de [questTown].**
 ->**Continuar**
     <<stop>>
 ===
@@ -2021,7 +2021,7 @@ position: -710,-127
 <<CreateNpc "id:creatureDenNpc,name:Ada,img:OldPriest">>
 **Ao atravessar o movimentado centro da cidade, gritos de preocupacao de uma mulher de meia-idade ecoam pela multidao e chamam sua atencao. Voce caminha ate ela, e ela encontra seu olhar.**
 {npc:creatureDenNpc}Finalmente alguem com cara de capaz! Venho tentando arranjar ajuda para lidar com essas feras malditas que vem assolando o condado ultimamente. **Ela gesticula em direcao a multidao que segue sua rotina e ergue as maos num gesto de frustracao.** Mas, infelizmente, poucos se importam em ouvir, e menos ainda tem coragem de fazer algo a respeito.
-[[My Advisor told me you could use some help. Can you elaborate on the details?|node.ClearingACreatureDenMoreDetails]]
+[[O meu conselheiro me disse que voce poderia usar uma ajuda. Pode detalhar melhor?|node.ClearingACreatureDenMoreDetails]]
 ===
 title: node.ClearingACreatureDenAcceptQuest
 tags: 
@@ -2053,10 +2053,10 @@ position: -389,-415
 {npc:creatureDenNpc}Meu marido, na verdade... ja tomou a tarefa para si. Acha que e um grande cacador! **Ela ri, tentando disfarcar a preocupacao, antes de assumir um tom mais apreensivo.** Mas ele ainda nao voltou, e estou temendo o pior. Espero que consigam encontra-lo naquela caverna - de preferencia, ainda vivo. Mas, se nao, agradeceria se trouxessem o corpo dele para que meus filhos e eu possamos lhe dar um descanso.
 **Ela faz uma pausa e tira um pequeno saquinho de moedas da bolsa.**
 {npc:creatureDenNpc}Nao temos muito, mas claro que pagarei o que puder. [goldReward] moedas seriam aceitaveis?
-[[I suppose that will suffice. **Accept Contract**|node.ClearingACreatureDenAcceptQuest]]
-[[That will do just fine, and we will do our best to locate your husband. **Accept Contract**|node.ClearingACreatureDenAcceptQuest]]
-[[Sorry, but we're not interested. **Dismiss Contract**|node.ClearingACreatureDenDeclineQuest]]
-[[What can you tell me of the creatures?|node.ClearingACreatureDenCreatureDetails]]
+[[Acho que isso basta. **Aceitar Contrato**|node.ClearingACreatureDenAcceptQuest]]
+[[Isso serve perfeitamente, e vamos fazer o nosso melhor para encontrar o seu marido. **Aceitar Contrato**|node.ClearingACreatureDenAcceptQuest]]
+[[Desculpe, mas nao estamos interessados. **Recusar Contrato**|node.ClearingACreatureDenDeclineQuest]]
+[[O que voce pode me contar sobre as criaturas?|node.ClearingACreatureDenCreatureDetails]]
 ===
 title: node.ClearingACreatureDenCreatureDetails
 tags: 
@@ -2064,9 +2064,9 @@ groupName: Clearing A Creature Den
 position: -300,39
 ---
 {npc:creatureDenNpc}Nao posso dizer muito, pois procuro nao chegar perto delas. Claro, elas sao nativas da regiao, entao nao e incomum ve-las tao perto da cidade. Mas as ocorrencias se tornaram frequentes demais, e sei que nao somos os unicos que tem tido problemas com elas.
-[[I suppose that will suffice. **Accept Contract**|node.ClearingACreatureDenAcceptQuest]]
-[[That will do just fine, and we will do our best to locate your husband. **Accept Contract**|node.ClearingACreatureDenAcceptQuest]]
-[[Sorry, but we're not interested. **Dismiss Contract**|node.ClearingACreatureDenDeclineQuest]]
+[[Acho que isso basta. **Aceitar Contrato**|node.ClearingACreatureDenAcceptQuest]]
+[[Isso serve perfeitamente, e vamos fazer o nosso melhor para encontrar o seu marido. **Aceitar Contrato**|node.ClearingACreatureDenAcceptQuest]]
+[[Desculpe, mas nao estamos interessados. **Recusar Contrato**|node.ClearingACreatureDenDeclineQuest]]
 ===
 title: SE.ClearingACreatureDenHusbandFound
 tags: ScriptedEvent
@@ -2275,7 +2275,7 @@ position: 108,234
 <<CreateNpc "id:lostPossNpc,name:Man,img:OldPriest">>
 **Voces estao conversando com membros da sua companhia na taverna local quando uma batidinha no ombro interrompe a conversa. Voces se viram no assento e veem um homem de meia-idade, levemente nervoso, diante de voces.**
 {npc:lostPossNpc}Desculpe se estou atrapalhando algo importante, mas me disseram que voces talvez possam ajudar com um problema meu. Posso pagar, caso tenham interesse.
-[[What is it you need?|node.lostPossessionsWhatDoYouNeed]]
+[[O que voce precisa?|node.lostPossessionsWhatDoYouNeed]]
 ===
 title: node.lostPossessionsWhatDoYouNeed
 tags: 
@@ -2286,9 +2286,9 @@ position: 515,230
 {npc:lostPossNpc}Minha filha - garotinha aventureira que e - fugiu na semana passada e foi explorar um [tilesetName] proximo daqui. Ela me contou que levou um susto com umas criaturas e acabou saindo de la correndo, em panico. Gracas aos deuses, ela nao se feriu, so ficou com a roupa suja, mas em algum lugar do passeio ela perdeu o anel que estava com ela. 
 **O homem faz uma pausa, a mente vagando por um instante ate uma lembranca feliz.** 
 {npc:lostPossNpc}E uma heranca de familia que pertenceu a minha falecida esposa. E uma das poucas ligacoes que minha filha tem com a mae. Como voces devem imaginar, ela esta bem arrasada com isso. Eu tambem estou, francamente. Por isso vim falar com voces.
-[[A ring you say? Not an easy thing to spot. You mentioned payment before?|node.lostPossessionsRewardInfo]]
-[[Can't you find it yourself?|node.lostPossessionsFindItYourself]]
-[[What kind of dangers can we expect?|node.lostPossessionsDanger]]
+[[Um anel, voce disse? Nao e algo facil de avistar. Voce mencionou pagamento antes, nao?|node.lostPossessionsRewardInfo]]
+[[Voce nao pode encontrar sozinho?|node.lostPossessionsFindItYourself]]
+[[Que tipo de perigos podemos esperar?|node.lostPossessionsDanger]]
 ===
 title: node.lostPossessionsRewardInfo
 tags: 
@@ -2315,8 +2315,8 @@ groupName: Lost Possessions
 position: 763,547
 ---
 {npc:lostPossNpc}Eu poderia tentar, mas aquele lugar nao e sem perigo. Nao vou permitir que minha filha volte para la, isso e certo. De todo modo, sinto-me mais confortavel confiando a tarefa a alguem como voce.
-[[A ring you say? Not an easy thing to spot. You mentioned payment before?|node.lostPossessionsRewardInfo]]
-[[What kind of dangers can we expect?|node.lostPossessionsDanger]]
+[[Um anel, voce disse? Nao e algo facil de avistar. Voce mencionou pagamento antes, nao?|node.lostPossessionsRewardInfo]]
+[[Que tipo de perigos podemos esperar?|node.lostPossessionsDanger]]
 ===
 title: node.lostPossessionsDanger
 tags: 
@@ -2324,8 +2324,8 @@ groupName: Lost Possessions
 position: 735,-101
 ---
 {npc:lostPossNpc}Nao posso dizer ao certo, mas desconfio que voces encontrarao algumas criaturas nativas da regiao. Tenho certeza de que nao sera nada alem do que voces podem lidar.
-[[Can't you find it yourself?|node.lostPossessionsFindItYourself]]
-[[A ring you say? Not an easy thing to spot. You mentioned payment before?|node.lostPossessionsRewardInfo]]
+[[Voce nao pode encontrar sozinho?|node.lostPossessionsFindItYourself]]
+[[Um anel, voce disse? Nao e algo facil de avistar. Voce mencionou pagamento antes, nao?|node.lostPossessionsRewardInfo]]
 ===
 title: SE.LostPossessionsFoundRing
 tags: ScriptedEvent
@@ -2422,8 +2422,8 @@ position: -57,-659
     {npc:mouthsToFeedNpc}Consegui garantir um carregamento de comida em [destinationCity], mas preciso de um mensageiro para busca-lo e traze-lo de volta para ca. **Ele olha para baixo, segurando a barriga com as duas maos e rindo.** Como podem ver, nao fui feito para viajar. Entao nao posso fazer isso sozinho. O que me dizem?
     ->Acho que podemos cuidar disso. O que podemos esperar de pagamento?
         {npc:mouthsToFeedNpc}Vamos direto ao assunto, entao. Gosto disso. O trabalho nao e dificil por si so, a menos que voces encontrem alguns imprevistos no caminho. Tendo isso em mente, acho que [goldReward] e mais do que justo.
-        [[It's a deal then. **Accept Contract**|node.MouthsToFeedAccept]]
-        [[Sorry, but we're not interested in this type of work. **Decline Contract**|node.MouthsToFeedDismiss]]
+        [[Fechado entao. **Aceitar Contrato**|node.MouthsToFeedAccept]]
+        [[Desculpe, mas nao estamos interessados nesse tipo de trabalho. **Recusar Contrato**|node.MouthsToFeedDismiss]]
     ->Desculpe, mas nao temos interesse nesse tipo de trabalho. **Recusar Contrato
         [[node.MouthsToFeedDismiss]]
 ===
@@ -2709,7 +2709,7 @@ position: -219,-416
 ---
 <<CreateNpc "id:houseLeaderNpc,name:Local Liege,img:maleCivilian">>
 **Um servo [questHouse] escolta voces ate o salao real, enquanto guardas alinhados em ambos os lados observam atentamente cada passo seu enquanto voces se aproximam do senhor deles. O servo para e faz uma reverencia diante do trono antes de se afastar para o lado da sala. [rulerTitle] [rulerLName] se dirige a voces, sem se dar ao trabalho de se levantar do assento.**
-{npc:houseLeaderNpc}I understand you have come to offer your assistance in this war of mine. I will not say no to capable help.
+{npc:houseLeaderNpc}Entendo que voce veio oferecer a sua ajuda nesta guerra minha. Nao vou recusar ajuda de gente capaz.
 ->Da forma que pudermos, desde que o preco seja justo. 
     {npc:houseLeaderNpc}Hah! Falou como um verdadeiro mercenario. Muito bem, tenho um trabalho que parece adequado a uma companhia como a de voces. Ha uma torre de vigia que caiu em maos inimigas, e desejo retoma-la. Nao e muito guarnecida, e acreditamos que uma forca menor deve ser capaz de tomar a torre sem grande problema. Facam isso, e serao cobertos de riquezas, junto com meu favor. 
     ->Cuidaremos disso para voce. **Aceitar Contrato**
@@ -2718,7 +2718,7 @@ position: -219,-416
             <<AssignQuest Quest.WatchtowerAssault>> 
             <<stop>>
     ->Nao acho que somos os certos para esse trabalho. **Recusar Contrato**
-       	{npc:houseLeaderNpc}Leave me, then. I have a war to win.
+       	{npc:houseLeaderNpc}Entao me deixe. Tenho uma guerra para vencer.
         <<AddHouseToGuildOpinion [closestHouse] -5>>
         ->**Continuar**
  	        <<DeclineQuest Quest.WatchtowerAssault>>
@@ -2774,7 +2774,7 @@ position: 577,-141
 ---
 <<CreateNpc "id:tempNpc,name:Officer,img:OldPriest">>
 **Voces retornam a fortaleza da cidade, esperando uma audiencia com seu governante, mas sao recebidos por um de seus subordinados.**  
-{npc:tempNpc}I've received word of your success. My [rulerTitle] will be thrilled, I'm sure, but they are currently occupied elsewhere and couldn't be here to thank you in person. I suspect you've come for your reward, then? [goldReward], was it? A hefty price, but war is costly in more ways than one I suppose. 
+{npc:tempNpc}Recebi a noticia do sucesso de voces. Tenho certeza de que o meu [rulerTitle] vai ficar empolgado, mas esta ocupado em outro lugar e nao pode estar aqui para agradecer pessoalmente. Suspeito que voces vieram buscar a recompensa, nao? [goldReward], nao era? Um preco alto, mas guerra custa caro de mais de um jeito, imagino. 
 **Ele entrega um bau cheio de moedas, cujo peso o pega de surpresa.** 
 {npc:tempNpc}Se puderem se retirar, tenho muitos deveres a que retornar.
 ->**Concluir**
@@ -2804,7 +2804,7 @@ tags: ScriptedEvent
 groupName: Watchtower Assault
 position: 1006,21
 ---
-{advisor][myTitle], are you sure you want to abandon this contract? With the war raging, House [thisHouse] is counting on our efforts to seize this watchtower. If we go back on our word, I imagine they will be no less than furious, and our reputation will surely be tarnished.
+{advisor][myTitle], tem certeza de que quer abandonar este contrato? Com a guerra em furia, a Casa [thisHouse] conta com os nossos esforcos para tomar esta torre de vigia. Se voltarmos atras na nossa palavra, imagino que eles nao ficarao nada satisfeitos, e a nossa reputacao certamente vai sair manchada.
 ->E necessario. **Abandonar**
     <<stop>>
 ===
@@ -3172,7 +3172,7 @@ position: -517,215
 {player:0}Dificil acreditar que e de manha. E de manha, nao e? Ultimamente nao da pra saber, com o ceu tao escuro pra caramba. 
 **Nesse instante, um estrondo ensurdecedor atrai a atencao de todos, fazendo sua caravana parar bruscamente. Voce fixa os olhos na direcao do som, sem saber o que espera ver, mas fitando atentamente mesmo assim. O ceu escurece ainda mais, agora negro como a noite, e algumas pessoas comecam a tatear ao redor, tentando localizar e acender tochas.**
 {player:0}Mas que--
-Um rugido aterrorizante de outro mundo ecoa a distancia e, instantes depois, um dragao de tamanho imensuravel rasga o proprio tecido do ceu e surge a vista, energias sombrias se espalhando ao seu redor. Com as asas batendo enquanto serpenteia pelos ares, ele desce em direcao ao chao em velocidade alarmante, cruzando a terra em direcao oposta a sua, para o alivio de todos. 
+**Um rugido aterrorizante de outro mundo ecoa a distancia e, instantes depois, um dragao de tamanho imensuravel rasga o proprio tecido do ceu e surge a vista, energias sombrias se espalhando ao seu redor. Com as asas batendo enquanto serpenteia pelos ares, ele desce em direcao ao chao em velocidade alarmante, cruzando a terra em direcao oposta a sua, para o alivio de todos.** 
 ->**Continuar**
     <<ForceScourge graveswood>> 
     <<stop>>
@@ -3382,9 +3382,9 @@ position: 682,1396
     **Ele entrega a bolsa com um toque delicado, ainda que levemente nervoso.**
     <<GiveItem "tio_breachPouch">>
     {npc:vanguardOfficerNpc}O conteudo e altamente volatil, entao manuseie-o com muito cuidado. Quanto aos outros perigos, o desaparecimento dos meus homens sugere que o lugar estara infestado de voidspawn, principalmente conforme voce se aproximar da fenda. Sei que estamos pedindo muito de voce, mas estamos com as costas contra a parede. Pode ficar tranquilo que voce sera bem pago se conseguir dar conta do recado.
-[[What do you know of the Scourge?|node.CampaignVoidBreachScourgeInfo]]
-[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]
-[[We won't let you down. **Accept Contract**|node.CampaignVoidBreachAccept]]
+[[O que voce sabe da Praga?|node.CampaignVoidBreachScourgeInfo]]
+[[[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]|node.CampaignVoidBreachBreachInfo]]
+[[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignVoidBreachAccept]]
 ===
 title: node.CampaignVoidBreachBreachInfo
 tags: 
@@ -3392,8 +3392,8 @@ groupName: TutorialQuest
 position: 1110,1674
 ---
 {npc:vanguardOfficerNpc}Nao sou especialista nesses assuntos, mas tente imagina-la como um portal entre o nosso mundo e o Vazio. Demonios e espectros estao sempre a procura de um caminho para entrar, e isto lhes da o acesso mais facil. Enquanto ela nao for fechada, os voidspawn sao como a agua que escapa de uma represa.
-[[What do you know of the Scourge?|node.CampaignVoidBreachScourgeInfo]]
-[[We won't let you down. **Accept Contract**|node.CampaignVoidBreachAccept]]
+[[O que voce sabe da Praga?|node.CampaignVoidBreachScourgeInfo]]
+[[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignVoidBreachAccept]]
 ===
 title: node.CampaignVoidBreachAccept
 tags: 
@@ -3414,8 +3414,8 @@ groupName: TutorialQuest
 position: 1110,1394
 ---
 {npc:vanguardOfficerNpc} Apenas o que me ensinaram. Eu ainda era um bebe quando a ultima ocorreu, ha quase 50 anos. O que posso lhe dizer e que o pior ainda esta por vir. Demonios e espectros sao uma coisa, mas quando aquele dragao profano rasga o ceu enegrecido e desce sobre nossas cidades, bem... rezo para que nao estejamos em lugar nenhum perto disso.
-[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]
-[[We won't let you down. **Accept Contract**|node.CampaignVoidBreachAccept]]
+[[[[A Void Breach?|node.CampaignVoidBreachBreachInfo]]|node.CampaignVoidBreachBreachInfo]]
+[[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignVoidBreachAccept]]
 ===
 title: SE.CompanyMomentLowUsage
 tags: 
@@ -3476,7 +3476,7 @@ position: -431,-1394
 <<set $EventTrigger to "ON_COMPANY_MOMENT">>
 <<set $Requirements to "CompanyMoment:RecentDeath,HighRepThem">>
 <<set $Priority to 11>>
-Enquanto a noticia sombria da morte de [FNameP0] se espalha pela sua caravana, o animo de todos se abate visivelmente. [FNameP1] se aproxima de voce, sentindo a perda mais do que a maioria. 
+**Enquanto a noticia sombria da morte de [FNameP0] se espalha pela sua caravana, o animo de todos se abate visivelmente. [FNameP1] se aproxima de voce, sentindo a perda mais do que a maioria.** 
 {player:1}E dificil acreditar que se foi, ne, chefe? Eu esperava que pudessemos tirar um tempo para dar a [FNameP0] uma despedida a altura. Sei que muitos de nos ficariam gratos pela chance de lamentar [pronounPoss0] morte como se deve.
 ->[FNameP0] merece um funeral de guerreiro, e suponho que um tempo de folga faria bem a todos nos. **Passam-se 7 dias**  
     <<AdjustLoyaltyBasedOnFondnessFor 0 5>>
@@ -3744,17 +3744,17 @@ position: -889,-787
 {npc:historiansPlightNpc}Por favor, me diga que tem boas noticias! Encontrou meu livro?
 <<if getQuestVar("Quest.HistoriansPlight","FoundBook") is "true">>
 {
-    [[Here is your book|node.HistoriansPlightHereIsYourBook]]
-    [[I was unable to find your book. **Lie**|node.HistoriansPlightUnableToFindBook]]
+    [[Aqui esta o seu livro|node.HistoriansPlightHereIsYourBook]]
+    [[Nao consegui encontrar o seu livro. **Mentir**|node.HistoriansPlightUnableToFindBook]]
     <<if getQuestVar("Quest.HistoriansPlight","BlewUpMine") is "true">>
     {
-        [[It was too dangerous to venture far in the mine. We collapsed the entrance so save anyone else from wandering in and getting killed.|node.HistoriansPlightBlewUpMine]]
+        [[Era perigoso demais se aventurar fundo na mina. Nos desabamos a entrada para que mais ninguem entre sem querer e morra.|node.HistoriansPlightBlewUpMine]]
     }
     <<endif>>
 }
 <<else>>
-    [[I was unable to find your book.|node.HistoriansPlightUnableToFindBook]]
-    [[It was too dangerous to venture far in the mine. We collapsed the entrance so save anyone else from wandering in and getting killed.|node.HistoriansPlightBlewUpMine]]
+    [[Nao consegui encontrar o seu livro.|node.HistoriansPlightUnableToFindBook]]
+    [[Era perigoso demais se aventurar fundo na mina. Nos desabamos a entrada para que mais ninguem entre sem querer e morra.|node.HistoriansPlightBlewUpMine]]
 <<endif>>
 ===
 title: SE.HistoriansPlightIntroEvent
@@ -3768,11 +3768,11 @@ position: -506,-23
 {npc:historiansPlightNpc}, esse e bem antigo... mas tambem nao vale nada. Comparei o conteudo dele com as anotacoes dos meus outros volumes do mesmo periodo. Ele faz referencia a eventos que nunca aconteceram.
 ->Nao me importo.
     {npc:historiansPlightNpc}, voce e quem esta com o livro nas maos. O que posso fazer por voce?
-    [[I heard you are looking for some help.|node.HistoriansPlightRequestInfo]]
+    [[Fiquei sabendo que voce esta procurando ajuda.|node.HistoriansPlightRequestInfo]]
 ->Por que eles fariam isso?
     {npc:historiansPlightNpc}Nao faco ideia. Ficaram entediados? Talvez estivessem preocupados que o trabalho deles nunca fosse lembrado se nao tivesse um tempero a mais.
-    [[What did they make up?|node.HistoriansPlightMadeUpContents]]
-    [[I heard you are looking for some help.|node.HistoriansPlightRequestInfo]]
+    [[O que eles inventaram?|node.HistoriansPlightMadeUpContents]]
+    [[Fiquei sabendo que voce esta procurando ajuda.|node.HistoriansPlightRequestInfo]]
 ===
 title: node.HistoriansPlightMadeUpContents
 tags: 
@@ -3784,13 +3784,13 @@ position: -886,297
     {npc:historiansPlightNpc}Como eu disse, nao e verdade. Mas esse autor com certeza tinha um jeito e tanto com as palavras. Ele deixou passar sua verdadeira vocacao, que era ser bardo, tecendo contos de aventuras e meias verdades para passar o tempo num bar da regiao. A historia em si e sobre um homem que abatia impiedosamente alguns Flagelados recem-infectados que estavam escondidos, mas ainda nao tinham se transformado. Antes que pudesse terminar o servico, afirma o autor, Argis apareceu e salvou um punhado deles torturando o pobre coitado de forma bem macabra. Acredito que a passagem dizia: "ele arrancou o olho da vitima antes de coloca-lo na boca, forcando-o a mastiga-lo. Ele fez questao de que provasse ate o ultimo pedacinho". O texto continua por um bom tempo, detalhando mais atos de violencia. Depois disso, ele foi embora. Foi o unico encontro com Argis que o autor registrou.
     ->Nojento.
         {npc:historiansPlightNpc}E, mas de vez em quando eu aprecio uma boa historia.
-        [[I heard you are looking for some help.|node.HistoriansPlightRequestInfo]]
+        [[Fiquei sabendo que voce esta procurando ajuda.|node.HistoriansPlightRequestInfo]]
     ->O que te faz achar que a historia nao e verdadeira?
         {npc:historiansPlightNpc}Voce nao me ouviu? Argis ja devia estar morto ha muito tempo naquela altura.
-            [[I heard you are looking for some help.|node.HistoriansPlightRequestInfo]]
+            [[Fiquei sabendo que voce esta procurando ajuda.|node.HistoriansPlightRequestInfo]]
 ->Fascinante. **Coloque o livro no chao.**
     {npc:historiansPlightNpc}Suponho.
-    [[I heard you are looking for some help.|node.HistoriansPlightRequestInfo]]
+    [[Fiquei sabendo que voce esta procurando ajuda.|node.HistoriansPlightRequestInfo]]
 ===
 title: node.HistoriansPlightRequestInfo
 tags: 
@@ -3932,11 +3932,11 @@ position: -359,-642
 {npc:historiansPlightNpc} Por favor, me diga que voce encontrou meu livro antes de se atrever a fazer algo tao drastico!
 <<if getQuestVar("Quest.HistoriansPlight","FoundBook") is "true">>
 {
-    [[Here is your book|node.HistoriansPlightHereIsYourBook]]
-    [[I was unable to find your book **Lie**.|node.HistoriansPlightUnableToFindBook]]
+    [[Aqui esta o seu livro|node.HistoriansPlightHereIsYourBook]]
+    [[Nao consegui encontrar o seu livro **Mentir**.|node.HistoriansPlightUnableToFindBook]]
 }
 <<else>>
-    [[I'm sorry I was unable to locate it.|node.HistoriansPlightUnableToFindBook]]
+    [[Sinto muito, nao consegui localizar.|node.HistoriansPlightUnableToFindBook]]
 <<endif>>
 ===
 title: Quest.RisingTensionsKidnap
@@ -4244,7 +4244,7 @@ position: 55,-300
 <<set $EventTrigger to "NONE">>
 <<CreateNpc "id:tempNpc,name:Captain,img:Soldier">>
 **Voce se aproxima do quartel e e recebido por um capitao da Casa [questHouse].**
-{npc:tempNpc}I'm glad you've come. The war effort has us spread thin at the moment, and we could use some extra help patrolling the roads from here to [destinationCity]. Be on the lookout for enemy scouts and raiders. Anything you can do to keep our soldiers and citizens safe during these trying times will be greatly appreciated by my liege.
+{npc:tempNpc}Que bom que voces vieram. O esforco de guerra nos deixa em poucas nesse momento, e poderiamos usar ajuda extra para patrulhar as estradas daqui ate [destinationCity]. Fique de olho nos batedores e saqueadores inimigos. Qualquer coisa que voces fizerem para manter os nossos soldados e cidadaos seguros nesses tempos dificeis sera muito apreciada pelo meu suserano.
 ->Partiremos imediatamente. **Aceitar Contrato**
     {npc:tempNpc} Que bom ouvir isso. **Ele entrega a voces um envelope com o selo da Casa [questHouse].** Entreguem esta carta quando chegarem e receberao o pagamento.
     ->**Continuar**    
@@ -4289,7 +4289,7 @@ position: 59,15
 <<set $EventTrigger to "NONE">>
 // header of this event
 <<CreateNpc "id:tempNpc,name:Officer,img:Soldier">>
-{npc:tempNpc}Thanks for answering our call for additional support. We're looking for a small group to assist in a surgical strike on an enemy encampment. It will be dangerous but this will greatly help our war efforts. Can you handle the job?
+{npc:tempNpc}Valeu por atender o nosso pedido de apoio extra. Estamos procurando um pequeno grupo para ajudar num ataque cirurgico a um acampamento inimigo. Vai ser perigoso, mas isso vai ajudar muito os nossos esforcos de guerra. Da conta do servico?
 ->Nada que nao possamos dar conta. **Aceitar Servico**
     <<AssignQuest Quest.WartimeRaidOnCamp>>
     <<stop>>
@@ -4948,7 +4948,7 @@ groupName: Blighted Activity
 position: 404,2032
 ---
 <<set $Icon to "Boss">>
-**You spot a rather large Blighted up ahead, hunched over and picking at something, or someone, along the ground. It turns to you with its deformed and diseased face before letting out a terrible warcry, rallying even more Blighted to its position.**
+**Voce avista um Corrompido bem grande adiante, curvado sobre algo, ou alguem, no chao. Ele se vira para voce com a cara deformada e doentia antes de soltar um grito de guerra terrivel, reunindo ainda mais Corrompidos a posicao dele.**
 ->Matar esses miseraveis! **Lutar**
     <<SetEventFinished>> 
     <<ShowParty>>
@@ -6849,7 +6849,7 @@ position: -171,-247
     [[node.battlefieldEventOfferPrayer]]
 ->[Honorable,Merciful]Ajude a enterrar os mortos.
     [[node.battlefieldEventBuryTheDead]]
-[[Move Along|node.battlefieldEventMoveAlong]]
+[[[[Move Along|node.battlefieldEventMoveAlong]]|node.battlefieldEventMoveAlong]]
 ===
 title: node.battlefieldEventScavenge
 tags: 
@@ -6967,7 +6967,7 @@ position: -681,-2134
 {player:0}Ha um pequeno acampamento militar logo alem daquela crista, chefe. Soldados da Casa [atWarWithLocalHouse], a julgar pelos estandartes.  
 {player:1}Estao bem longe de casa. 
 **[FNameAdvisor] coca o queixo, os olhos semicerrados.**
-{advisor}Playing their part in the war against House [currentHouse], no doubt. We might want to steer clear, [myTitle], or we may soon find ourselves in the midst of a battlefield. 
+{advisor}Fazendo a parte deles na guerra contra a Casa [currentHouse], sem duvida. Talvez seja bom mantermos distancia, [myTitle], ou podemos nos ver no meio de um campo de batalha em breve. 
 {player:0}Poderiamos esperar o anoitecer e nos esgueirar para dentro do acampamento deles. Tenho certeza de que a Casa [currentHouse] agradeceria qualquer golpe desferido contra o inimigo dela. 
 **[FNameAdvisor] da de ombros, inclinando a cabeca.**
 {advisor}Ja ouvi planos piores. A decisao e sua, [myTitle].
@@ -7161,7 +7161,7 @@ groupName: CampaignPrologue
 position: 23,184
 ---
 <<set $Icon to "Loot">>
-<<ShowTutorialMessage "EEEventos de Exploracao "WAo interagir com um Evento de Exploracao, voce geralmente tera varias escolhas disponiveis, as vezes custando varias quantidades de Tempo. Os seus personagens terao opiniao propria sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.>> 
+<<ShowTutorialMessage "Eventos de Exploracao" "Ao interagir com um Evento de Exploracao, voce geralmente tera varias escolhas disponiveis, as vezes custando varias quantidades de Tempo. Os seus personagens terao opiniao propria sobre as escolhas que voce fizer, o que pode afetar a Lealdade geral deles a companhia.">> 
 **Voce avista uma mochila descartada adiante, provavelmente largada as pressas pelos violadores de tumulos.**
 {mainChar0}Nao espere encontrar muito valor, mas nao faz sentido deixa-la para tras.
 ->[Time:1]Pegue o que parecer util. **Saquear**
@@ -7675,7 +7675,7 @@ position: -222,-41
 <<SetFacingLeft [npc8]>>
 <<AddPause 1.5>> 
 <<MoveNpc 8 400 0 true>>
-<<ShowTutorialMessage "FFLute ate a Morte! "WQuando as chances estao contra voce, as vezes tudo o que se pode fazer e minimizar as perdas. Use tudo o que estiver ao seu alcance e nao segure nada!>>
+<<ShowTutorialMessage "Lute ate a Morte!" "Quando as chances estao contra voce, as vezes tudo o que se pode fazer e minimizar as perdas. Use tudo o que estiver ao seu alcance e nao segure nada!">>
 //Torin and other antagonists escape
 
 //combat starts, new mission name: 'Betrayed and Broken', objective: 'Fight to the Death'
@@ -7767,7 +7767,7 @@ position: 188,-34
                     <<GiveItem "tioScrap" "10">>
                 }
                 <<endif>>
-                [[**Continue**|node.campaignBattleAftermathEnd]]
+                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -7801,7 +7801,7 @@ position: 188,-34
                 {advisor}Certo, entao. Vamos salvar o que pudermos daqui, mas e melhor viajarmos leves; a caminhada ate Andilon e longa.
                 <<ModifyGold 300>> 
                 <<GiveItem "tioScrap" "15">>
-                [[**Continue**|node.campaignBattleAftermathEnd]]
+                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -7837,7 +7837,7 @@ position: 188,-34
                 <<GiveItem "tio_clothVest">>
                 <<GiveItem "tio_boiledLeather">>
                 <<GiveItem "tio_ironLamellar">>
-                [[**Continue**|node.campaignBattleAftermathEnd]]
+                [[[[**Continue**|node.campaignBattleAftermathEnd]]|node.campaignBattleAftermathEnd]]
             }
         }
     }
@@ -8108,7 +8108,7 @@ position: 361,-566
 {player:0}Ele estava com isso. Achei que poderiamos dar utilidade a isso.
 <<GiveItem "tioEnchantmentAccuracy1">>
 ->Bom olho, [FNameP0]. **Continuar**
-<<ShowTutorialMessage "TutorialEnchantment" "EEEncantamentos "E>>). Clique com o botao esquerdo <sprite name=\PC-leftClick\PC-g\">>). Clique com o botao esquerdo <sprite name=\PC-leftClick\">> sobre o encantamento que deseja aplicar, e depois clique com o botao direito <sprite name=\PC-rightClick\">> sobre uma peca de equipamento adequada para aplica-lo.>>
+<<ShowTutorialMessage "TutorialEnchantment" "Encantamentos" "Encantamentos sao pergaminhos magicos que podem ser aplicados ao seu equipamento para conceder varios atributos e efeitos unicos. Os pergaminhos sao consumidos ao uso e os efeitos sao permanentes, a menos que sejam substituidos por outro encantamento.\n\nPara usar um encantamento, abra a tela 'Gerenciar Efetivo' (<sprite name=\"PC-g\">). Clique com o botao esquerdo <sprite name=\"PC-leftClick\"> sobre o encantamento que deseja aplicar, e depois clique com o botao direito <sprite name=\"PC-rightClick\"> sobre uma peca de equipamento adequada para aplica-lo.">>
     <<stop>>
 ===
 title: SE.CampaignRefugeesCaveCamp
@@ -8263,8 +8263,8 @@ groupName: CampaignBackOnYourFeet
 position: 807,-859
 ---
 {npc:prologueVanguardNpc}A Primeira Devastacao aconteceu ha mais de um seculo, e ela se repete a cada decada desde entao. Ainda nao sabemos por que. O que posso lhe dizer e que o pior ainda esta por vir. Demonios e espectros sao uma coisa, mas quando aquele dragao profano rasga o ceu enegrecido e desce sobre nossas cidades, bom... rezo para que nao estejamos por perto.
-[[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
-[[We won't let you down. **Accept Contract**|node.CampaignBackOnYourFeetVoidBreachAccept]]
+[[[[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
+[[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignBackOnYourFeetVoidBreachAccept]]
 ===
 title: node.CampaignBackOnYourFeetVoidBreachBreachInfo
 tags: 
@@ -8272,8 +8272,8 @@ groupName: CampaignBackOnYourFeet
 position: 1184,-1004
 ---
 {npc:prologueVanguardNpc}Nao sou especialista nesses assuntos, mas tente imaginar como um portal entre o nosso mundo e o Vazio. Demonios e espectros estao sempre procurando um caminho para entrar, e isso lhes da o acesso mais facil. Ate que seja fechado, os voidspawn sao como agua vazando de uma represa.
-[[What do you know of the Scourge?|node.CampaignBackOnYourFeetVoidBreachScourgeInfo]]
-[[We won't let you down. **Accept Contract**|node.CampaignBackOnYourFeetVoidBreachAccept]]
+[[O que voce sabe da Praga?|node.CampaignBackOnYourFeetVoidBreachScourgeInfo]]
+[[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignBackOnYourFeetVoidBreachAccept]]
 ===
 title: node.CampaignBackOnYourFeetVoidBreachAccept
 tags: 
@@ -8646,9 +8646,9 @@ position: -156,-1055
 **Ao se aproximar da mulher, voce sente como se alguma forca ao redor dela dificultasse a aproximacao. O ar e denso e voce sente como se estivesse ficando um pouco mais dificil respirar, como se estivesse no alto de uma montanha. Mesmo quando voce fica a poucos passos dela, a expressao enlouquecida em seu rosto nao muda. Ela ou nao notou voce, ou nao se importa. Ela permanece em transe na mesma pose, com os bracos abertos e uma expressao no rosto como se estivesse gritando para o ceu.**
 ->**Chegue bem na frente dela e agite as maos.**
     **Nao ha nenhuma mudanca em sua expressao. Ela nao reconhece sua presenca de forma alguma.**
-    [[**Tap her on the shoulder**|node.worldEventSilenceWomanTap]]
-    [[**Take out a dagger and plunge it into her heart.**|node.worldEventSilenceWomanStab]]
-    [[**Shake her violently to try and startle her awake.**|node.worldEventSilenceWomanTap]]
+    [[**Tocar no ombro dela**|node.worldEventSilenceWomanTap]]
+    [[**Sacar uma adaga e crava-la no coracao dela.**|node.worldEventSilenceWomanStab]]
+    [[**Sacudir ela com forca para tentar acorda-la.**|node.worldEventSilenceWomanTap]]
 ->**Ela deve ser a causa de tudo isso; apunhale-a no coracao.**
     [[node.worldEventSilenceWomanStab]]
 ->**Sacuda-a violentamente para tentar desperta-la com o susto.**
@@ -9685,7 +9685,7 @@ position: 686,-267
     **Ele pega um punhado de neve ao se levantar e o esfrega nas maos para limpar o sangue.**
     {mainChar0} Acho que estamos perto, chefe. Esperemos que ele nao nos tenha visto. **Ele olha ao redor com a testa franzida.** Chamamos atencao demais nestas matas.
     ->Sigamos os rastros. **Continuar**
-    **You trace the tracks to a small clearing, a log cabin standing in the midst of it. A figure emerges from inside, frowning in your direction with bow in hand. He whistles sharply, summoning a group of warhounds to his side, their teeth bared at your presence.**
+    **Voce segue os rastros ate uma pequena clareira com uma cabana de troncos no meio dela. Uma figura sai de dentro, franze a testa na sua direcao com o arco na mao. Ele assobia agudo, chamando um grupo de caes de guerra para perto, os dentes a mostra na sua presenca.**
     ->**Continuar**
 //party select, enter combat view/cinematic
 }
@@ -9696,7 +9696,7 @@ position: 686,-267
     **[FNameP0] pega um punhado de neve ao se levantar e o esfrega nas maos para limpar o sangue. [FNameAdvisor] se aproxima de voce, mantendo a voz baixa.**
     {advisor}Acredito que estamos perto, [myTitle]. Tomara que ele nao nos tenha visto. **Ele olha em volta, com a testa franzida.** Estas matas oferecem pouco esconderijo. 
     ->Sigamos as pegadas. **Continuar**
-    **You trace the tracks to a small clearing, a log cabin standing in the midst of it. A figure emerges from inside, frowning in your direction with bow in hand. He whistles sharply, summoning a group of warhounds to his side, their teeth bared at your presence.**
+    **Voce segue os rastros ate uma pequena clareira com uma cabana de troncos no meio dela. Uma figura sai de dentro, franze a testa na sua direcao com o arco na mao. Ele assobia agudo, chamando um grupo de caes de guerra para perto, os dentes a mostra na sua presenca.**
     ->**Continuar**
 }
 <<endif>>
@@ -10608,12 +10608,12 @@ tags:
 groupName: CampaignFortVanguard
 position: 255,789
 ---
-[[Nomads?|node.VanguardFactionNomadsInfo]]
-[[How many Scourges have you lived through?|node.VanguardFactionScourgeInfo]]
-[[What do you know of the dragon?|node.VanguardFactionDragonInfo]]
-[[Tell me of the Blighted.|node.VanguardFactionBlightedInfo]]
-[[Wealden has been lost for some time. Why wait so long?|node.VanguardFactionWealdenCampaignQuery]]
-[[We'll do our best to find them. **Leave**|node.VanguardExitFort]]
+[[[[Nomads?|node.VanguardFactionNomadsInfo]]|node.VanguardFactionNomadsInfo]]
+[[Quantas Pragas voce ja atravessou?|node.VanguardFactionScourgeInfo]]
+[[O que voce sabe do dragao?|node.VanguardFactionDragonInfo]]
+[[Fale-me sobre os Corrompidos.|node.VanguardFactionBlightedInfo]]
+[[Wealden se perdeu ha um tempo. Por que esperar tanto?|node.VanguardFactionWealdenCampaignQuery]]
+[[Vamos fazer o nosso melhor para encontrar eles. **Ir Embora**|node.VanguardExitFort]]
 ===
 title: node.VanguardFactionWealdenCampaignQuery
 tags: 
@@ -11214,7 +11214,7 @@ position: 680,-867
     {player:0}Tenho. Venho pensando nisso ha um tempo, mas nao queria te sobrecarregar com meus pensamentos ate ter certeza. 
     ->Voce foi um bom amigo. Se algo mudar, sempre tera um lugar aqui.
         {player:0}Agradeco, chefe. **[FNameP0] bate uma mao no seu joelho ao se levantar.** Acho que devo avisar os outros, nao e?
-        **With the announcement of [FNameP0]'s retirement, your company spends the night celebrating [pronounPoss0] career - laughing and sharing old war stories while drinking themselves into oblivion. You wake the next morning to find they've already left, eager to start the final chapter of [pronounPoss0] life. 
+        **Com o anuncio da aposentadoria de [FNameP0], a sua companhia passa a noite celebrando a carreira de [pronounPoss0], rindo e contando historias antigas de guerra enquanto bebem ate cair. Na manha seguinte voce acorda e descobre que a pessoa ja partiu, ansiosa para comecar o capitulo final da vida de [pronounPoss0]. 
         ->**Continuar**
             <<stop>>
 ===
@@ -12872,7 +12872,7 @@ groupName: War Quests
 position: 1923,-301
 ---
 <<CreateNpc "id:tempNpc,name:Captain,img:Soldier">>
-**You approach the local barracks and seek out an officer who is busy overseeing logistics for the war effort. You hand him the sealed letter, and he gives it a quick read, glancing up at you with a raised brow.**
+**Voce se aproxima dos quarteis locais e procura um oficial ocupado supervisionando a logistica do esforco de guerra. Voce entrega a ele a carta lacrada, ele faz uma leitura rapida e ergue a sobrancelha ao olhar para voce.**
 {npc:tempNpc}Hmm... Creio que esta tudo em ordem. Entao aqui esta a sua recompensa. Obrigado pela ajuda.
 ->O prazer e nosso. **Continuar**
     <<stop>>
@@ -13009,7 +13009,7 @@ position: 147,-119
 <<set $Icon to "Loot">>
 **Voce chega a uma sala bem decorada, sem duvida os aposentos de um oficial importante.**
 ->[Greedy,Rash,Time:2]Vasculhe o aposento. Pode haver algo valioso. 
-    {player:0}Looks like some war plans, boss. I'm sure House [questHouse] would appreciate this intel. 
+    {player:0}Parecem planos de guerra, chefe. A Casa [questHouse] certamente apreciaria essa informacao. 
     <<CreateItem "itm_assaultWarPlans" "War Plans" "Some war plans that may be valuable to the right person." "0" "generic">>
     <<GiveItem itm_assaultWarPlans>> 
     ->Bom olho, [FNameP0]. **Continuar**
@@ -13722,10 +13722,10 @@ position: -69,-792
 <<set $EventTrigger to "VOID_PORTAL">>
 **Voces se aproximam do local da brecha e avistam um grupo de soldados da Vanguarda acampado a uma distancia segura. Observando, mas evidentemente sem pressa para fecha-la.**
 {npc:vanguardSoldier}Foram enviados para ajudar? **Ele acena com a cabeca na direcao da brecha.** Se toparem nos acompanhar, creio que podemos dar conta disso. 
-[[Can you not deal with this on your own?|node.ScourgeCrisisBreachQ1]]
-[[Have you got a plan, at least?|node.ScourgeCrisisBreachQ2]]
-[[The sooner we close that thing, the better. **Attempt to close the Breach**|node.ScourgeCrisisBreachFight]]
-[[I think we'll be leaving. Good luck.|node.ScourgeCrisisBreachLeave]]
+[[Voce nao consegue resolver isso sozinho?|node.ScourgeCrisisBreachQ1]]
+[[Voce tem um plano, pelo menos?|node.ScourgeCrisisBreachQ2]]
+[[Quanto antes fecharmos aquilo, melhor. **Tentar Fechar a Fenda**|node.ScourgeCrisisBreachFight]]
+[[Acho que a gente vai embora. Boa sorte.|node.ScourgeCrisisBreachLeave]]
 ===
 title: SE.ScourgeCrisisBreachClosed
 tags: ScriptedEvent
@@ -13840,17 +13840,17 @@ position: -68,-253
 <<set $EventTrigger to "AFTER_DRAGON_ATTACK">>
 <<if hasHighCityRep() is "true">> 
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "TO Flagelo esta sobre nos, [myTitle]. Para piorar, ouvi dizer que o dragao atacou a cidade de [scourgeCity]. O condado com certeza vai estar repleto de Voidspawn em breve. Devemos mudar o rumo? Tenho certeza de que os nossos aliados de la ficariam gratos pela nossa ajuda, como ja ficaram no passado. Os deuses sabem que eles vao precisar de cada gota dela. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "O Flagelo esta sobre nos, [myTitle]. Para piorar, ouvi dizer que o dragao atacou a cidade de [scourgeCity]. O condado com certeza vai estar repleto de Voidspawn em breve. Devemos mudar o rumo? Tenho certeza de que os nossos aliados de la ficariam gratos pela nossa ajuda, como ja ficaram no passado. Os deuses sabem que eles vao precisar de cada gota dela." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "AOutro Flagelo comecou, [myTitle]. Ouvi dizer que o dragao atingiu a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nos melhores termos, mas pode ser uma chance de melhorarmos as nossas relacoes com eles. Afinal, vidas inocentes estao em jogo. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Outro Flagelo comecou, [myTitle]. Ouvi dizer que o dragao atingiu a cidade de [scourgeCity] e que brechas surgiram por todo o condado. Sei que nao estamos nos melhores termos, mas pode ser uma chance de melhorarmos as nossas relacoes com eles. Afinal, vidas inocentes estao em jogo." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "IParece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque do dragao. Sem duvida vai haver um rastro de Voidspawn por onde ele passou. Apesar das circunstancias, e uma boa oportunidade de ganhar algumas moedas, se voce achar que a companhia esta a altura da tarefa. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Parece que o Flagelo comecou, [myTitle]. Os relatos indicam que [scourgeCity] foi devastada por um ataque do dragao. Sem duvida vai haver um rastro de Voidspawn por onde ele passou. Apesar das circunstancias, e uma boa oportunidade de ganhar algumas moedas, se voce achar que a companhia esta a altura da tarefa." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 <<endif>>
@@ -13864,17 +13864,17 @@ position: 310,-257
 <<AssignQuest Quest.ScourgeCrisisCityDefense>> 
 <<if hasHighCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito que e do nosso interesse faze-lo, se quiser a minha opiniao. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Ouvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. O tempo e essencial, se quisermos ajudar na defesa da cidade. Acredito que e do nosso interesse faze-lo, se quiser a minha opiniao." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 <<elseif hasLowCityRep() is "true">>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Incontaveis inocentes serao perdidos se a cidade cair. Sei que a nossa relacao com eles e no maximo tensa, entao nao ha necessidade de arriscar as nossas vidas no que pode muito bem ser uma missao suicida. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Ouvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Incontaveis inocentes serao perdidos se a cidade cair. Sei que a nossa relacao com eles e no maximo tensa, entao nao ha necessidade de arriscar as nossas vidas no que pode muito bem ser uma missao suicida." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 << else >>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "IOuvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Tenho certeza de que seriamos bem compensados pela ajuda, mas se a cidade cair, nao sobrara ninguem para pagar. Honestamente, nao tenho certeza se vale o risco para as nossas tropas, [myTitle], mas a decisao e sua. "IDe fato. Obrigado por me informar.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Ouvi dizer que a horda de Voidspawn vai chegar a [scourgeCity] em nao mais de trinta dias. Tenho certeza de que seriamos bem compensados pela ajuda, mas se a cidade cair, nao sobrara ninguem para pagar. Honestamente, nao tenho certeza se vale o risco para as nossas tropas, [myTitle], mas a decisao e sua." "De fato. Obrigado por me informar.">>
     <<stop>>
 }
 <<endif>>
@@ -13888,12 +13888,12 @@ position: 691,-252
 <<set $EventTrigger to "SCOURGE_DEFENSE_SIM_FAILURE">>
 <<if $ScourgeCrisisHelped is "true">>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]: a cidade de [scourgeCity] infelizmente foi tomada pelos Voidspawn. Ouvi dizer que foi um verdadeiro massacre. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Noticias sombrias, [myTitle]: a cidade de [scourgeCity] infelizmente foi tomada pelos Voidspawn. Ouvi dizer que foi um verdadeiro massacre. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas." "Que noticia terrivel.">>
     <<stop>>
 }
 <<else>>
 {
-    <<ShowAdvisorMessage "SSFlagelo "" "GNoticias sombrias, [myTitle]. Acabo de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Ouvi dizer que foi um verdadeiro massacre, entao duvido que a nossa participacao faria muita diferenca. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas. "TQue noticia terrivel.>>
+    <<ShowAdvisorMessage "Flagelo" "" "Noticias sombrias, [myTitle]. Acabo de saber que a cidade de [scourgeCity] caiu para os Voidspawn. Ouvi dizer que foi um verdadeiro massacre, entao duvido que a nossa participacao faria muita diferenca. As cidades vizinhas estao acolhendo alguns dos sobreviventes que conseguiram escapar. Quanto ao resto... so podemos torcer para que as mortes deles tenham sido rapidas." "Que noticia terrivel.">>
     <<stop>>
 }
 <<endif>>
@@ -14347,8 +14347,8 @@ position: 550,-1356
 {npc:vanguardOfficerNpc}Toda ajuda conta. Aqui esta sua recompensa.
 <<RemoveAllOfItem "tioDemonHead" "true" "1.25">>
 //givecoin based on amount of demon heads in storage
-[[What are the city's chances of survival?|node.ScourgeCrisisCityStatus]]
-[[**Enter City**|node.Stop]]
+[[Quais sao as chances de sobrevivencia da cidade?|node.ScourgeCrisisCityStatus]]
+[[[[**Enter City**|node.Stop]]|node.Stop]]
 ===
 title: SE.ScourgeCrisisCityDefenseFight
 tags: ScriptedEvent
@@ -14430,8 +14430,8 @@ position: 324,-1063
     **Um soldado da Vanguarda acena em reconhecimento enquanto voces se aproximam das muralhas da cidade. Ele se vira, gritando ordens, e os pesados portoes rangem lentamente diante de voces.**
     {npc:vanguardSoldier}Bem-vindos de volta. Espero que estejam progredindo por ai? 
     [[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para receber.|node.ScourgeCrisisDemonHeads]]
-    [[What are the city's chances of survival?|node.ScourgeCrisisCityStatus]]
-    [[We have business in the city. **Continue**|node.Stop]]
+    [[Quais sao as chances de sobrevivencia da cidade?|node.ScourgeCrisisCityStatus]]
+    [[Temos negocios na cidade. **Continuar**|node.Stop]]
 }
 <<endif>>
 ===
@@ -14479,7 +14479,7 @@ position: 118,-1354
 }
 <<endif>>
 [[[RequireItem:tioDemonHead]Temos algumas cabecas de demonio para resgatar.|node.ScourgeCrisisDemonHeads]]
-[[**Enter City**|node.Stop]]
+[[[[**Enter City**|node.Stop]]|node.Stop]]
 ===
 title: node.ScourgeCrisisBreachQ1
 tags: 
@@ -14487,9 +14487,9 @@ groupName: Scourge Crisis
 position: 298,-795
 ---
 {npc:vanguardSoldier}Fomos encarregados de guardar a area ate nossos reforcos chegarem. Abatemos alguns retardatarios que vieram em nossa direcao, mas somos poucos para lancar qualquer ataque significativo contra a brecha.
-[[Have you got a plan, at least?|node.ScourgeCrisisBreachQ2]]
-[[The sooner we close that thing, the better. **Attempt to close the Breach**|node.ScourgeCrisisBreachFight]]
-[[I think we'll be leaving. Good luck.|node.ScourgeCrisisBreachLeave]]
+[[Voce tem um plano, pelo menos?|node.ScourgeCrisisBreachQ2]]
+[[Quanto antes fecharmos aquilo, melhor. **Tentar Fechar a Fenda**|node.ScourgeCrisisBreachFight]]
+[[Acho que a gente vai embora. Boa sorte.|node.ScourgeCrisisBreachLeave]]
 ===
 title: node.ScourgeCrisisBreachQ2
 tags: 
@@ -14497,9 +14497,9 @@ groupName: Scourge Crisis
 position: 666,-798
 ---
 {npc:vanguardSoldier}Poucos planos sobrevivem ao contato com o inimigo, ainda mais quando brechas do vazio estao envolvidas. Suponho que voce tenha algumas Pedras de Brecha com voce? Precisaremos chegar perto da brecha para desestabiliza-la. Parece simples o bastante, mas garanto que nao e nada disso.
-[[Can you not deal with this on your own?|node.ScourgeCrisisBreachQ1]]
-[[The sooner we close that thing, the better. **Attempt to close the Breach**|node.ScourgeCrisisBreachFight]]
-[[I think we'll be leaving. Good luck.|node.ScourgeCrisisBreachLeave]]
+[[Voce nao consegue resolver isso sozinho?|node.ScourgeCrisisBreachQ1]]
+[[Quanto antes fecharmos aquilo, melhor. **Tentar Fechar a Fenda**|node.ScourgeCrisisBreachFight]]
+[[Acho que a gente vai embora. Boa sorte.|node.ScourgeCrisisBreachLeave]]
 ===
 title: node.ScourgeCrisisBreachFight
 tags: 
@@ -14529,7 +14529,7 @@ position: 679,-527
 ---
 <<set $EventTrigger to "ON_QUEST_DESTINATION_ARRIVAL">>
 <<set $CheckForActiveQuest to "Quest.ScourgeCrisisCityDefense">>
-**Amongst the sea of defenders, you pick out the Vanguard standard flying high and make your way towards it, shouldering past both soldiers and civilians who have been called upon to save the city, regardless of their age or ability. As you approach, you spot the Officer emerging from a war tent, fully adorned in a suit of armor and issuing orders to a pair of soldiers at his side. With a salute, the three of them part ways. The Officer strides toward you, the faintest smile upon his stressed face.** 
+**No mar de defensores, voce avista o estandarte da Vanguarda tremulando no alto e segue na direcao dele, abrindo caminho no meio de soldados e civis chamados para salvar a cidade, sem importar idade ou capacidade. Ao se aproximar, voce ve o Oficial saindo de uma tenda de guerra, vestido por completo numa armadura e passando ordens a um par de soldados ao lado. Com uma saudacao, os tres se separam. O Oficial caminha na sua direcao, com o mais leve dos sorrisos no rosto cansado.** 
 <<if $ScourgeCrisisHelped is "true">>
 {
     {npc:vanguardOfficerNpc}Eles chegarao logo. A [CompanyName] ja ajudou bastante nas ultimas semanas. Fico feliz que voces decidiram ir ate o fim. A cidade ficara em divida com voces se continuar de pe.  
@@ -14819,7 +14819,7 @@ position: 692,1335
 <<set $CheckForActiveQuest to "Quest.SafeguardingAShipment" >>
 <<set $Priority to 99>>
 //TODO: this gold value for the bribe needs to dynamically be double of whatever the quest reward is
-**You are riding along when suddenly you hear several war cries from over a nearby ridge, followed closely by the sound of loosing arrows - one narrowly missing you.**
+**Voce cavalga quando, de repente, ouve varios gritos de guerra vindo de uma crista proxima, seguidos de perto pelo som de flechas disparadas, e uma delas passa raspando em voce.**
 {advisor}[myTitle], e uma emboscada!
 {npc:safeguardNpc}Aqueles malditos devem ter nos seguido para fora de [questTown]! Ainda bem que contratei voces, hein?
 <<if getRandomChance(50) is "true">>
@@ -14920,11 +14920,11 @@ position: 320,2423
 {npc:lostBlightedQuestGiver}Tudo isso foi uma surpresa para mim. **Ela ergue um pequeno pedaco de papel.** Contou os planos numa carta. Para ser sincera, nao ligo para o maldito ouro. Se ele tem tao pouco tempo restante, quero que o passemos juntos. 
 **Ela faz uma pausa e ergue a mao para enxugar os olhos.**
 {npc:lostBlightedQuestGiver}Mas ja faz um tempo que ele se foi. Temo que esteja morto, ou pior. Preciso que voce descubra o que aconteceu. Se ele estiver morto, por favor, traga o corpo dele para mim... para que possa ser enterrado ao lado do nosso filho.
-[[What happened to your son? |node.lostBlightedSon]] 
-[[How did you avoid the Blight when your husband didn't? |node.lostBlightedHow]] 
-[[Why did he not join the Vanguard? |node.lostBlightedVanguard]] 
-[[We'd be happy to help. **Accept Contract** |node.lostBlightedAccept]] 
-[[I'm afraid we have other things to do. **Decline Contract** |node.lostBlightedDecline]]
+[[O que aconteceu com o seu filho?|node.lostBlightedSon]] 
+[[Como voce evitou a Corrupcao se o seu marido nao evitou?|node.lostBlightedHow]] 
+[[Por que ele nao entrou na Vanguarda?|node.lostBlightedVanguard]] 
+[[Ajudaremos com prazer. **Aceitar Contrato**|node.lostBlightedAccept]] 
+[[Temo que temos outras coisas a fazer. **Recusar Contrato**|node.lostBlightedDecline]]
 ===
 title: SE.ScourgeCrisisLostBlightedDeadFriend
 tags: ScriptedEvent
@@ -15053,12 +15053,12 @@ position: 331,2970
 {npc:vanguardOfficerNpc}Parece que um grupo de afligidos escapou da cidade. Duvido que tenham mas intencoes. Mas, independentemente da intencao, logo representarao um perigo para si mesmos e para os outros. Voce estaria disposto a captura-los? Minhas tropas estao ocupadas com outros assuntos. 
 ->E se eles nao vierem por vontade propria? 
     {npc:vanguardOfficerNpc}Provavelmente nao virao. So peco que faca o melhor. Se tudo mais falhar, eles devem ser mortos. **Ele suspira.** Sei que parece extremo. Mas nao podemos permitir que ponham inocentes em risco. 
-    [[Understood. We'll take care of it. **Accept Contract** |node.blightedHuntAccept]]
-    [[We're not interested. **Decline Contract** |node.blightedHuntDecline]]
+    [[Entendido. Nos cuidamos disso. **Aceitar Contrato**|node.blightedHuntAccept]]
+    [[Nao estamos interessados. **Recusar Contrato**|node.blightedHuntDecline]]
 ->Nao deveriamos simplesmente mata-los?
     {npc:vanguardOfficerNpc}Apenas como ultimo recurso. Por enquanto, ainda sao humanos e devem ser tratados como tais. 
-    [[Understood. We'll take care of it. **Accept Contract** |node.blightedHuntAccept]]
-    [[We're not interested. **Decline Contract** |node.blightedHuntDecline]]
+    [[Entendido. Nos cuidamos disso. **Aceitar Contrato**|node.blightedHuntAccept]]
+    [[Nao estamos interessados. **Recusar Contrato**|node.blightedHuntDecline]]
 ===
 title: SE.ScourgeCrisisBlightedHuntFound
 tags: ScriptedEvent
@@ -15725,10 +15725,10 @@ position: 58,2138
 ---
 **Os olhos dela brilham de orgulho.**
 {npc:lostBlightedQuestGiver}Ele fazia parte da guarda da cidade. Nunca quis fazer outra coisa, apesar das minhas suplicas. **O sorriso tenue dela desaparece.** Bandidos o assassinaram ha alguns anos.
-[[How did you avoid the Blight when your husband didn't? |node.lostBlightedHow]] 
-[[Why did he not join the Vanguard? |node.lostBlightedVanguard]] 
-[[We'd be happy to help. **Accept Contract** |node.lostBlightedAccept]] 
-[[I'm afraid we have other things to do. **Decline Contract** |node.lostBlightedDecline]]
+[[Como voce evitou a Corrupcao se o seu marido nao evitou?|node.lostBlightedHow]] 
+[[Por que ele nao entrou na Vanguarda?|node.lostBlightedVanguard]] 
+[[Ajudaremos com prazer. **Aceitar Contrato**|node.lostBlightedAccept]] 
+[[Temo que temos outras coisas a fazer. **Recusar Contrato**|node.lostBlightedDecline]]
 ===
 title: node.lostBlightedHow
 tags: 
@@ -15736,10 +15736,10 @@ groupName: Scourge Crisis
 position: 423,2138
 ---
 {npc:lostBlightedQuestGiver}Consegui chegar a um abrigo a tempo. Meu marido - como tantas outras almas pobres - nao teve tanta sorte. Tudo aconteceu tao rapido...
-[[What happened to your son? |node.lostBlightedSon]] 
-[[Why did he not join the Vanguard? |node.lostBlightedVanguard]] 
-[[We'd be happy to help. **Accept Contract** |node.lostBlightedAccept]] 
-[[I'm afraid we have other things to do. **Decline Contract** |node.lostBlightedDecline]]
+[[O que aconteceu com o seu filho?|node.lostBlightedSon]] 
+[[Por que ele nao entrou na Vanguarda?|node.lostBlightedVanguard]] 
+[[Ajudaremos com prazer. **Aceitar Contrato**|node.lostBlightedAccept]] 
+[[Temo que temos outras coisas a fazer. **Recusar Contrato**|node.lostBlightedDecline]]
 ===
 title: node.lostBlightedVanguard
 tags: 
@@ -15747,10 +15747,10 @@ groupName: Scourge Crisis
 position: 785,2140
 ---
 {npc:lostBlightedQuestGiver}Ele tentou. Disseram que nao atendia aos requisitos. Algo sobre o ritmo de progressao e que nao achavam que o soro teria muito efeito nele.
-[[What happened to your son? |node.lostBlightedSon]] 
-[[How did you avoid the Blight when your husband didn't? |node.lostBlightedHow]] 
-[[We'd be happy to help. **Accept Contract** |node.lostBlightedAccept]] 
-[[I'm afraid we have other things to do. **Decline Contract** |node.lostBlightedDecline]]
+[[O que aconteceu com o seu filho?|node.lostBlightedSon]] 
+[[Como voce evitou a Corrupcao se o seu marido nao evitou?|node.lostBlightedHow]] 
+[[Ajudaremos com prazer. **Aceitar Contrato**|node.lostBlightedAccept]] 
+[[Temo que temos outras coisas a fazer. **Recusar Contrato**|node.lostBlightedDecline]]
 ===
 title: node.lostBlightedAccept
 tags: 
@@ -15954,9 +15954,9 @@ position: 1177,-1307
     {npc:prologueVanguardNpc}Pedras de Ruptura - um pequeno presente de nossos aliados no Circulo. Pegue uma pedra, aproxime-se da fenda, e ela desestabilizara - ou e o que me disseram. Francamente, essa magia esta alem do meu entendimento.
     **Ele entrega a bolsa com um toque delicado.**
     {npc:prologueVanguardNpc}Me disseram que elas podem ser frageis, entao tenha cuidado ao manusea-las. Quanto aos demais perigos, o desaparecimento dos meus homens sugere que o lugar estara infestado de vazio-gerados, principalmente perto da propria fenda. Sei que estamos pedindo muito de voces, mas estamos encurralados. Pode ter certeza de que serao bem pagos se conseguirem realizar isso.
-    [[What do you know of the Scourge?|node.CampaignBackOnYourFeetVoidBreachScourgeInfo]]
-    [[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
-    [[We won't let you down. **Accept Contract**|node.CampaignBackOnYourFeetVoidBreachAccept]]
+    [[O que voce sabe da Praga?|node.CampaignBackOnYourFeetVoidBreachScourgeInfo]]
+    [[[[A Void Breach?|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]|node.CampaignBackOnYourFeetVoidBreachBreachInfo]]
+    [[Nao vamos te decepcionar. **Aceitar Contrato**|node.CampaignBackOnYourFeetVoidBreachAccept]]
 ===
 title: SE.AnOldFriendMidCombat
 tags: ScriptedEvent
@@ -16754,7 +16754,7 @@ position: 351,1867
 <<set $TriggerTags to "generic,positive,shrine">>
 <<if checkForJob("Theologian") == "true">>
     **Voces se deparam com um santuario dedicado a um dos Deuses. O rosto de [$CharacterWithJobName] se ilumina ao seu lado, ansioso para oferecer alguns esclarecimentos.**
-    {player:$CharacterWithJob}This shrine is dedicated to Tian's Trial of War. An offering of blood would be appropriate, I suspect. If we do gain Tian's favor, our enemies might never see us coming.
+    {player:$CharacterWithJob}Este santuario e dedicado ao Julgamento da Guerra de Tian. Uma oferenda de sangue parece apropriada, suspeito. Se conquistarmos o favor de Tian, os nossos inimigos talvez nunca nos vejam chegando.
     <<if getRandomChance(20) is "true">>
         <<if getCharacterWithTrait("Treacherous") is "true">> 
             {hasTrait:Treacherous}Sempre gosto de uma boa emboscada.
@@ -21601,7 +21601,7 @@ position: -42,38
 //|NEXTPAGE|
 {advisor}Uma carta de [FNameC1], [myTitle]. O ardil dele deve ter dado certo. 
 ->Vamos torcer. **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "RVoltar para a Black Skull foi mais facil do que o esperado. [FNameA0] ficou quase feliz com o meu retorno, ou pelo menos o mais proximo disso que ele conseguiria chegar. De qualquer forma, ele parece nao suspeitar dos meus motivos.  Voce vai ficar feliz em saber que o Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele tem mostrado real talento como ferreiro, e [FNameA0] o tem mantido trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que a vida dele esteja em perigo. E antes que pense nisso, ja considerei tira-lo de la as escondidas, e infelizmente nao e uma opcao. Temo que vamos precisar ver o nosso plano por inteiro.|NEXTPAGE|Vou precisar de um tempo para me ambientar e ganhar a confianca de [FNameA0], mas mandarei noticias assim que tiver algo para voces agirem. Cuidado la fora, meus amigos; [FNameA0] vai mandar muito mais que assassinos de segunda linha no caminho de voces.>>
+<<ShowLetter "Uma carta de [FNameC1]" "Voltar para a Black Skull foi mais facil do que o esperado. [FNameA0] ficou quase feliz com o meu retorno, ou pelo menos o mais proximo disso que ele conseguiria chegar. De qualquer forma, ele parece nao suspeitar dos meus motivos.  Voce vai ficar feliz em saber que o Gedrick esta vivo e sendo tratado tao bem quanto poderiamos esperar. Ele tem mostrado real talento como ferreiro, e [FNameA0] o tem mantido trabalhando longas horas na forja. Nao e o ideal, mas enquanto ele continuar sendo util, nao acredito que a vida dele esteja em perigo. E antes que pense nisso, ja considerei tira-lo de la as escondidas, e infelizmente nao e uma opcao. Temo que vamos precisar ver o nosso plano por inteiro.|NEXTPAGE|Vou precisar de um tempo para me ambientar e ganhar a confianca de [FNameA0], mas mandarei noticias assim que tiver algo para voces agirem. Cuidado la fora, meus amigos; [FNameA0] vai mandar muito mais que assassinos de segunda linha no caminho de voces.">>
 <<if isCharacterAlive("mainChar0") is "true">>
     **Voce lanca um olhar de relance para [FNameC0], que sorri aliviado com a noticia sobre Gedrick.**
     {mainChar0}Gracas aos Deuses. O fantasma da minha irma nao precisa me atormentar ainda. E pelo menos agora ele tem [FNameC1] cuidando dele. 
@@ -22014,9 +22014,9 @@ position: -274,755
 <<set $Priority to 50>>
 {advisor}Recebemos uma correspondencia de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "IEspero que esta carta os encontre bem. Descobri o paradeiro de um acampamento da Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer estacionados la por pelo menos algumas semanas. Nao posso dizer com certeza o que [FNameA0] os tem feito fazer, mas se voces interromperem a missao que estiverem cumprindo, isso vai ajudar muito a nossa causa.  [FNameC1]>>
+<<ShowLetter "Uma carta de [FNameC1]" "Espero que esta carta os encontre bem. Descobri o paradeiro de um acampamento da Black Skull. Nao sei se voces estao por perto, mas eles devem permanecer estacionados la por pelo menos algumas semanas. Nao posso dizer com certeza o que [FNameA0] os tem feito fazer, mas se voces interromperem a missao que estiverem cumprindo, isso vai ajudar muito a nossa causa.  [FNameC1]">>
 <<if isCharacterAlive("mainChar0") is "true">>
-    {mainChar0}[FNameC1]'s position in the Black Skull seems to be bearing fruit. 
+    {mainChar0}A posicao de [FNameC1] dentro da Black Skull parece estar dando frutos. 
 <<else>>
     {player:0}Otimo. Mais uma chance de enfraquecermos as operacoes deles.
 <<endif>> 
@@ -22274,7 +22274,7 @@ position: -277,1855
 <<set $Priority to 100>>
 {advisor}Recebemos uma carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "MMeus amigos, descobri que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do empregador com quem eles vao se encontrar. Pode valer a pena conferir se voces estiverem por perto. [FNameA0] nao ficara nada contente se souber de outro contrato fracassado, mas sera musica para os meus ouvidos. Boa sorte.   [FNameC1]>>
+<<ShowLetter "Uma carta de [FNameC1]" "Meus amigos, descobri que ha um grupo de Black Skulls estacionado em [currentCity]. Estou incluindo os detalhes do empregador com quem eles vao se encontrar. Pode valer a pena conferir se voces estiverem por perto. [FNameA0] nao ficara nada contente se souber de outro contrato fracassado, mas sera musica para os meus ouvidos. Boa sorte.   [FNameC1]">>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Este nosso plano parece estar dando certo ate agora. O que acha, chefe?
 <<else>>
@@ -22436,7 +22436,7 @@ position: -50,318
 <<set $Priority to 9999>>
 {advisor}Uma carta urgente de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "DQueridos amigos,  Descobri recentemente a localizacao de um dos principais armazens da Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos sao nada perto desta tarefa. Mal posso esperar para ver [FNameA0] surtar quando ouvir a noticia. Boa sorte!>>
+<<ShowLetter "Uma carta de [FNameC1]" "Queridos amigos,  Descobri recentemente a localizacao de um dos principais armazens da Black Skull. A guarda e leve e nao deve dar muito trabalho para voces. Sei que voces ja tiveram alguns sucessos, mas todos sao nada perto desta tarefa. Mal posso esperar para ver [FNameA0] surtar quando ouvir a noticia. Boa sorte!">>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Finalmente, uma missao com algum peso de verdade. 
 <<else>>
@@ -22732,7 +22732,7 @@ position: -54,612
 {advisor}Outra carta de [FNameC1], [myTitle].
 ->E mesmo? **Ler a carta**
 <<CacheHouseWithHighRepExcludeCapital "CampaignBSWarHouseHighRep" "CampaignBSWarHouseHighRepName">>
-<<ShowLetter "AAUma carta de [FNameC1] "ITemo ter noticias preocupantes, meus amigos. A Black Skull foi contratada pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles der certo, [FNameA0] vai ganhar muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas vai acontecer em breve: voces precisam chegar ate o Rei e alerta-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao espero que tenham problema com isso, mas o tempo e essencial.>>
+<<ShowLetter "Uma carta de [FNameC1]" "Temo ter noticias preocupantes, meus amigos. A Black Skull foi contratada pelo Principe da Casa [$CampaignBSWarHouseHighRepName] para assassinar o pai dele, o Rei. Ele pretende tomar o trono para si. Basta dizer que, se o plano deles der certo, [FNameA0] vai ganhar muito mais poder e influencia do que ja tem. Nao sei o plano exato, mas vai acontecer em breve: voces precisam chegar ate o Rei e alerta-lo. Dada a reputacao de voces com [$CampaignBSWarHouseHighRepName], nao espero que tenham problema com isso, mas o tempo e essencial.">>
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Isso nao e uma boa noticia. Temos que nos apressar.
 <<else>>
@@ -22914,7 +22914,7 @@ position: 3355,609
     **O Capitao se vira e passa por entre seu grupo, e o guarda logo se tranquiliza ao ve-lo.**
     {npc:saveKingPatrolGuard}Senhor!
     {npc:bsWarSaveKingCaptain}A mansao foi infiltrada. A vida do Rei esta em jogo. Precisamos entrar em seus aposentos! 
-    **With a combined effort, you're able to break the door down with a well-timed heave. You dash into the room to see the King surrounded by Black Skulls, his flailing war hammer the only thing keeping them all at bay.**
+    **Com um esforco conjunto, voces conseguem arrebentar a porta com um empurrao bem dado. Voces entram disparados no quarto e veem o Rei cercado por Black Skulls, com o martelo de guerra dele girando sendo a unica coisa que os mantem a distancia.**
     {npc:tempNpc}Maldicao! Eu sabia que aqueles paspalhos nos deixariam na mao. Formem fileiras, soldados! Temos visita!
     {npc:bsWarSaveKingCaptain}Meu rei! Cuidaremos dessa escoria. Ponha-se a salvo!
     ->**Lutar**
@@ -22928,7 +22928,7 @@ position: 3355,609
 <<else>>
     **Voce caminha com determinacao em direcao aos aposentos do Rei, cuja entrada esta alarmantemente desguarnecida.**
     {advisor}Sem guardas? Tomara que ainda nao seja tarde demais.
-    **You dash into the room to see the King surrounded by Black Skulls, his flailing war hammer the only thing keeping them all at bay.**
+    **Voce entra disparado no quarto e ve o Rei cercado por Black Skulls, com o martelo de guerra dele girando sendo a unica coisa que os mantem a distancia.**
     {npc:tempNpc}Maldicao! Eu sabia que aqueles paspalhos nos deixariam na mao. Formem fileiras, soldados! Temos visita!
         <<ModifyGlobalVar $BSWarSaveKingWin "false">>
         <<AddTempPartyMember HouseCommanderAlly campaignRebellionKing1 "Godfrey, King of [currentKingdom]">>
@@ -23230,9 +23230,9 @@ position: 338,1190
     {npc:campaignRebellionKing1}De fato, esta. **Ele olha para voce.** Agora, espero que voce tenha boas noticias para mim.
     ->Infelizmente, The Black Skull conseguiu agir mais rapido que nos. {npcName:campaignNoblemanHelp} lutara ao lado do Principe.
     **O Rei cruza os bracos e contrai os musculos da mandibula, visivelmente irritado.**
-    {npc:campaignRebellionKing1}That is troubling, and will make this war more difficult. But we must move on - our reports indicate that my son has begun marching here with his forces, which are now more formidable than we'd hoped.  
+    {npc:campaignRebellionKing1}Isso e preocupante e vai tornar esta guerra mais dificil. Mas precisamos seguir em frente. Os nossos relatorios indicam que o meu filho comecou a marchar para ca com as forcas dele, que agora sao mais formidaveis do que esperavamos.  
     {npc:campaignRebellionAdvisor}Felizmente, um grande exercito nao significa muito quando esta em marcha. Eles ficarao dispersos ao longo da estrada, e o trem de bagagem deles estara pronto para um ataque.
-    {npc:campaignRebellionKing1}We're dispatching a small force to make such a raid. I need you to strike their ranks first, distracting them long enough for my troops to get away with the loot. It won't win us the war, but it will cripple their resources and morale, which is the next best thing.
+    {npc:campaignRebellionKing1}Estamos despachando uma pequena forca para fazer um ataque assim. Preciso que voces golpeem as fileiras deles primeiro, distraindo-os tempo suficiente para as minhas tropas fugirem com o saque. Nao vai vencer a guerra para nos, mas vai mutilar os recursos e a moral deles, que e o proximo melhor.
     **O Rei coloca uma mao firme em seu ombro.**
     {npc:campaignRebellionKing1}Esta missao e crucial. Nao me decepcione.
     ->Pode contar com [CompanyName].
@@ -23249,7 +23249,7 @@ position: 338,1190
     **O Rei sorri e solta um suspiro de alivio.**
     {npc:campaignRebellionKing1}Pelo menos essa e uma boa noticia hoje. Nossos relatorios indicam que meu filho comecou a marchar para ca com suas forcas. Apesar de seus esforcos, ele ainda tem uma forca formidavel com alguns aliados importantes ao lado dele. 
     {npc:campaignRebellionAdvisor}Felizmente, um grande exercito nao significa muito quando esta em marcha. Eles ficarao dispersos ao longo da estrada, e o trem de bagagem deles estara pronto para um ataque.
-    {npc:campaignRebellionKing1}We're dispatching a small force to make such a raid. I need you to strike their ranks first, distracting them long enough for my troops to get away with the loot. It won't win us the war, but it will cripple their resources and morale, which is the next best thing.
+    {npc:campaignRebellionKing1}Estamos despachando uma pequena forca para fazer um ataque assim. Preciso que voces golpeem as fileiras deles primeiro, distraindo-os tempo suficiente para as minhas tropas fugirem com o saque. Nao vai vencer a guerra para nos, mas vai mutilar os recursos e a moral deles, que e o proximo melhor.
     **O Rei da um tapinha amigavel em seu ombro.**
     {npc:campaignRebellionKing1}Nao consigo pensar em ninguem melhor do que a [CompanyName] para essa tarefa. 
     ->Pode contar conosco, senhor.
@@ -23345,7 +23345,7 @@ position: 1854,1468
     **O capitao se vira e abre caminho por entre seu grupo, e os guardas se acalmam ao reconhece-lo.**
     {npc:saveKingPatrolGuard}Senhor!
     {npc:bsWarSaveKingCaptain}A mansao foi infiltrada. A vida do rei esta em jogo. Precisamos entrar nos aposentos dele! 
-    **With a combined effort, you're all able to break the door down with a well-timed heave. You dash into the room, spotting the King surrounded by Black Skull soldiers, flailing his warhammer to keep them at bay.**
+    **Com um esforco conjunto, voces todos conseguem arrebentar a porta com um empurrao bem dado. Voces entram disparados no quarto e avistam o Rei cercado por soldados Black Skull, girando o martelo de guerra para mante-los a distancia.**
     {npc:tempNpc}Droga! Eu sabia que aqueles paspalhos nos deixariam na mao. Formem fileiras, soldados! Temos companhia!
     {npc:bsWarSaveKingCaptain}Meu rei! Nos cuidamos dessa escoria. Ponha-se a salvo!
     ->**Lutar**
@@ -23360,7 +23360,7 @@ position: 1854,1468
 <<else>>
     **Voce se aproxima dos aposentos do rei. A porta esta sem guardas.**
     {advisor}Sem guardas? Esperemos que nao seja tarde demais.
-    **You dash into the room, spotting the King surrounded by Black Skull soldiers, flailing his warhammer to keep them at bay.**
+    **Voce entra disparado no quarto e avista o Rei cercado por soldados Black Skull, girando o martelo de guerra para mante-los a distancia.**
     {npc:tempNpc}Droga! Eu sabia que aqueles paspalhos nos deixariam na mao. Formem fileiras, soldados! Temos companhia!
         <<ModifyGlobalVar $BSWarSaveKingWin "false">>
         <<AddTempPartyMember HouseCommander campaignRebellionKing1 "Lord [questHouse]">>
@@ -23584,7 +23584,7 @@ position: 707,2033
 {advisor}Igualmente, General.
 ->Vamos tirar voce daqui.
 **Voce destrava as algemas e ele se levanta, fazendo um gesto para voce se afastar.**
-{npc:campaignRebellionGeneral}Not yet. I heard some of my captors discussing the Prince's war plans. We need to get our hands on those documents.
+{npc:campaignRebellionGeneral}Ainda nao. Ouvi alguns dos meus captores discutindo os planos de guerra do Principe. Precisamos colocar as maos nesses documentos.
 ->Pelo menos esta em condicoes de lutar?
 **Ele caminha ate o canto da sala e recolhe sua arma e armadura.**
 {npc:campaignRebellionGeneral}Estou um pouco machucado, mas vou me virar muito bem. 
@@ -23685,7 +23685,7 @@ groupName: CampaignSabotageQuests
 position: 2944,2039
 ---
 <<if $CampaignRebellionGeneralAlive is "false">>
-    **You return to [questTown], seeking an audience with the King. After waiting in the halls of the keep, one of his servants comes to collect you, leading you into a war room. As you enter, you're met by the eyes of the King and his closest advisors, each seated around a table supporting a scale model of the capital and its surrounding lands.**
+    **Voce volta a [questTown] buscando uma audiencia com o Rei. Depois de esperar nos saloes da fortaleza, um dos servos dele vem buscar voce e o leva ate uma sala de guerra. Ao entrar, voce encontra os olhos do Rei e dos conselheiros mais proximos dele, cada um sentado em volta de uma mesa com uma maquete da capital e das terras ao redor.**
     <<if $CampaignRebellionHaveWarDocs is "true">>
         {npc:campaignRebellionKing1}Soube que voces nao conseguiram salvar {npcName:campaignRebellionGeneral}. Nao por falta de esforco, imagino. Entendo que nao foi em vao, ao menos?
         ->De fato. Encontramos alguns planos de batalha do seu filho.
@@ -23712,7 +23712,7 @@ position: 2944,2039
         <<AssignQuest Quest.CampaignBSWarFinal>>
         <<stop>>
 <<else>>
-    **You return to [questTown] with {npcName:campaignRebellionGeneral}. The halls of the keep are strangely sparse and quiet, and you are led into a war room by one of the King's servants. Crossing the threshold, you're met by the eyes of the King and his closest advisors, each seated around a table supporting a scale model of the Capital and its surrounding lands. The King rises at the sight of {npcName:campaignRebellionGeneral} by your side, a warm and relieved smile on his face.**
+    **Voce volta a [questTown] com {npcName:campaignRebellionGeneral}. Os saloes da fortaleza estao estranhamente vazios e silenciosos, e um dos servos do Rei o leva ate uma sala de guerra. Ao cruzar o umbral, voce encontra os olhos do Rei e dos conselheiros mais proximos dele, cada um sentado em volta de uma mesa com uma maquete da Capital e das terras ao redor. O Rei se levanta ao ver {npcName:campaignRebellionGeneral} ao seu lado, com um sorriso caloroso e aliviado no rosto.**
     {npc:campaignRebellionKing1}{npcName:campaignRebellionGeneral}! Pelos deuses, fiquei preocupado com voce. Que bom ve-lo sao e salvo, meu amigo. 
     {npc:campaignRebellionGeneral}Alegro-me em estar de volta, meu senhor. **O general se vira para acenar com a cabeca em sua direcao.** Tudo gracas a este e a [CompanyName].
     {npc:campaignRebellionKing1}E claro! Todos voces tem a minha mais profunda gratidao.
@@ -24125,7 +24125,7 @@ position: -47,2578
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "DApesar dos nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos dele sao graves, mas suspeito que ele vai se recuperar, pelo menos em parte. De qualquer forma, provavelmente sera um homem mudado. Ja pensei em terminar o servico eu mesmo, mas ele e vigiado dia e noite, mais do que nunca. Seria a morte para mim e para o Gedrick, mesmo que eu conseguisse.  A boa noticia e que os [antCompany] sofreram um grande golpe em numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.  Acredito que o momento em que eles estarao fracos o suficiente para voces atacarem esta se aproximando. Como sempre, vou mante-los informados de qualquer oportunidade.>>
+<<ShowLetter "Uma carta de [FNameC1]" "Apesar dos nossos esforcos, [FNameA0] infelizmente ainda se agarra a vida. Os ferimentos dele sao graves, mas suspeito que ele vai se recuperar, pelo menos em parte. De qualquer forma, provavelmente sera um homem mudado. Ja pensei em terminar o servico eu mesmo, mas ele e vigiado dia e noite, mais do que nunca. Seria a morte para mim e para o Gedrick, mesmo que eu conseguisse.  A boa noticia e que os [antCompany] sofreram um grande golpe em numeros e reputacao. A participacao deles na rebeliao fracassada foi especialmente custosa, tanto financeiramente quanto em vidas perdidas.  Acredito que o momento em que eles estarao fracos o suficiente para voces atacarem esta se aproximando. Como sempre, vou mante-los informados de qualquer oportunidade.">>
 <<if isCharacterAlive("mainChar0") is "true">>
     **[FNameC0] resmunga com desagrado.**
     {mainChar0}Ele esta vivo, hein? Como sempre.
@@ -24168,7 +24168,7 @@ position: -46,3380
 <<set $Priority to 9999>>
 {advisor}Parece que recebemos uma correspondencia de [FNameC1], [myTitle]. 
 ->E mesmo? **Ler a carta**
-<<ShowLetter "AAUma carta de [FNameC1] "ICertamente ja ouviram as noticias de Dragate. O proprio [FNameA0] foi verificar, e embora eu nao possa confirmar, acredito que ele voltou com algo de valor. Ele e um homem mudado desde o retorno: mais forte do que nunca foi, mesmo antes do ferimento, se puderem acreditar.  Na cabeca, no entanto, duvidas sobre a lideranca dele permanecem. Mais de uma vez, o peguei falando sozinho como um lunatico. Alguns pobres cocebolas ate tentaram desafia-lo, mas tudo o que ganharam foi uma nova casa a dois metros de profundidade. Ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mover a nossa base de operacoes para um forte abandonado que ele encontrou em Dragate. Todos os dias, ele envia novas equipes de busca para as ruinas. Ele parece estar procurando algo especifico, mas nao diz o que. Ele so quer que tudo o que for encontrado seja relatado a ele.  Dados esses desenvolvimentos, provavelmente temos apenas uma curta janela para atacar. Vou formular um plano e entrar em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por Caelum.>>
+<<ShowLetter "Uma carta de [FNameC1]" "Certamente ja ouviram as noticias de Dragate. O proprio [FNameA0] foi verificar, e embora eu nao possa confirmar, acredito que ele voltou com algo de valor. Ele e um homem mudado desde o retorno: mais forte do que nunca foi, mesmo antes do ferimento, se puderem acreditar.  Na cabeca, no entanto, duvidas sobre a lideranca dele permanecem. Mais de uma vez, o peguei falando sozinho como um lunatico. Alguns pobres cocebolas ate tentaram desafia-lo, mas tudo o que ganharam foi uma nova casa a dois metros de profundidade. Ninguem mais ousa tentar.|NEXTPAGE|[FNameA0] nos fez mover a nossa base de operacoes para um forte abandonado que ele encontrou em Dragate. Todos os dias, ele envia novas equipes de busca para as ruinas. Ele parece estar procurando algo especifico, mas nao diz o que. Ele so quer que tudo o que for encontrado seja relatado a ele.  Dados esses desenvolvimentos, provavelmente temos apenas uma curta janela para atacar. Vou formular um plano e entrar em contato em breve. Ate la, sugiro que continuem atrapalhando as outras operacoes deles por Caelum.">>
 {advisor}Noticias perturbadoras. O que [FNameA0] descobriu, entao?
 <<if isCharacterAlive("mainChar0") is "true">>
     {mainChar0}Talvez possamos encontrar uma reliquia nossa para equilibrar o jogo.
@@ -24188,7 +24188,7 @@ position: -44,3112
 <<set $PrevNode to "SE.CampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer.  Vou tentar reunir mais informacoes antes de pensarmos em pisar na regiao. "IInteressante. Mantenha-me informado.>>
+<<ShowAdvisorMessage "Noticias do Leste" "" "[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer.  Vou tentar reunir mais informacoes antes de pensarmos em pisar na regiao." "Interessante. Mantenha-me informado.">>
     <<stop>>
 ===
 title: Quest.DragateQuestsRebuildKorunhal
@@ -24392,7 +24392,7 @@ position: 1836,2040
 <<set $Priority to 9999999>>
 <<set $DaysUntilRepeat to -1>>
 **Sua companhia, destrocada, recua da masmorra com pesadas baixas, tendo falhado em salvar o General.**
-{advisor}This doesn't bode well for the war. The King won't be pleased.
+{advisor}Isso nao e um bom pressagio para a guerra. O Rei nao vai gostar.
 ->Teremos de compensar essa falha. **Continuar**
     <<RemoveTempAlliesFromThisQuest>>
     <<CompleteQuest Quest.CampaignBSWarHostage skipResults>>
@@ -24496,7 +24496,7 @@ position: 2204,2040
 ---
 <<set $DaysUntilRepeat to -1>>
 **A noticia da morte do General nas maos de seus captores chega ao seu acampamento, com seu enforcamento transformado em espetaculo publico.**
-{advisor}This doesn't bode well for the war, and the King won't be pleased with our efforts.
+{advisor}Isso nao e um bom pressagio para a guerra, e o Rei nao vai ficar satisfeito com os nossos esforcos.
 ->Teremos de compensar essa falha. **Continuar**
     <<RemoveTempAlliesFromThisQuest>>
     <<ModifyGlobalVar $CampaignRebellionGeneralAlive "false">>
@@ -25657,7 +25657,7 @@ position: 334,3118
 <<set $PrevNode to "SE.FailedCampaignDragateExplosion|0">> 
 <<set $DaysUntilRepeat to -1>> 
 <<set $Priority to 9999>>
-<<ShowAdvisorMessage "WWNoticias do Leste "" "[[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer. "WVamos ter que descobrir por conta propria.>>
+<<ShowAdvisorMessage "Noticias do Leste" "" "[myTitle], ouvi dizer que houve uma explosao massiva em Dragate que estilhacou completamente a terra. Aparentemente, ela desenterrou ruinas de uma civilizacao antiga. Alguns dizem que e dos proprios Deuses. Cacadores de tesouro e pesquisadores tambem afirmam ter encontrado reliquias poderosas no fundo da terra. Se esses rumores sao verdadeiros ou nao, nao posso dizer." "Vamos ter que descobrir por conta propria.">>
     <<SetCanTravelTo Korunhal true>>
     <<stop>>
 ===
@@ -26086,9 +26086,9 @@ position: -652,-93
 <<SetCodexEntryVisible harlandsSpyglassEntry>>
 **Voce guarda as anotacoes no bolso.**
 <<if checkForJob("Scholar") == "true">>
-    {player:$CharacterWithJob}Most interesting. Harland, of course, was an infamous pirate many centuries ago. Once a soldier of Midland, he turned to a life of piracy following the Midland-Westmire War in the early Common Age. What became of him, however, is not known. Perhaps this location will shed some light?
+    {player:$CharacterWithJob}Muito interessante. Harland, claro, era um pirata infame de seculos atras. Soldado de Midland um dia, virou a vida de pirataria depois da guerra entre Midland e Westmire, no inicio da Era Comum. O que dele se tornou, porem, nao se sabe. Talvez este local jogue alguma luz?
 <<else>>
-    {advisor}Most interesting. Harland, of course, was an infamous pirate many centuries ago. Once a soldier of Midland, he turned to a life of piracy following the Midland-Westmire War in the early Common Age. What became of him, however, is not known. Perhaps this location will shed some light?
+    {advisor}Muito interessante. Harland, claro, era um pirata infame de seculos atras. Soldado de Midland um dia, virou a vida de pirataria depois da guerra entre Midland e Westmire, no inicio da Era Comum. O que dele se tornou, porem, nao se sabe. Talvez este local jogue alguma luz?
 <<endif>>
 {hasTrait:Honorable}Entao ele era um desertor e pirata? O nivel mais baixo da escoria. 
 {hasTrait:Greedy}Sempre topo uma boa caca ao tesouro. Pode contar comigo.
@@ -26424,7 +26424,7 @@ position: 830,-86
 
 **A luz da sua tocha revela dezenas de restos esqueleticos adiante: cranios esmagados, ossos rachados e vestes antigas que ja sao pouco mais que fibras soltas de tecido. [FNameP0] pega um diario com capa de couro meio escondido debaixo de um femur e o abre nas ultimas paginas. Voce se inclina por tras de [pronounObj0] para ler as palavras.**
 ->**Ler o registro**
-<<ShowLetter "666o de Primavera, 87 "ITemo que, mesmo tendo jogado aquele espolio amaldicoado no mar, o dano ja esta feito. Desde o nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Alegou que estavam roubando dele, mas nao sei se acredito. O resto da tripulacao nao esta nada melhor, eu inclusive. Tenho visto coisas, ouvido coisas. Os deuses sabem se e real ou nao. Ja nao consigo dizer. So sei que nunca deveriamos ter ido aquele maldito lugar, e agora a nossa ganancia sera a morte de todos nos.>>
+<<ShowLetter "6o de Primavera, 87" "Temo que, mesmo tendo jogado aquele espolio amaldicoado no mar, o dano ja esta feito. Desde o nosso retorno, uma loucura doentia comecou a tomar conta da tripulacao, afetando o Capitao mais do que todos. Ele ja matou dois de nos. Alegou que estavam roubando dele, mas nao sei se acredito. O resto da tripulacao nao esta nada melhor, eu inclusive. Tenho visto coisas, ouvido coisas. Os deuses sabem se e real ou nao. Ja nao consigo dizer. So sei que nunca deveriamos ter ido aquele maldito lugar, e agora a nossa ganancia sera a morte de todos nos.">>
 {player:0}Deuses... ele deve ter enlouquecido e abatido toda a tripulacao. 
 {advisor}E melhor encontrarmos logo essa Luneta.
 **O ar de repente esfria, e os ossos espalhados ao seu redor comecam a chacoalhar, tentando se reconstruir mais uma vez. Um arranhar se ouve vindo de um corredor proximo, como metal contra rocha, e uma voz grave e inumana troveja logo em seguida.**
@@ -29770,7 +29770,7 @@ position: 363,-1455
 **[FNameP0] vasculha o corpo e pega um diario ensopado de sangue.**
 {player:0}Talvez encontremos alguma informacao util aqui?
 ->**Ler a ultima anotacao**
-<<ShowLetter "BBDiario de Brynn "TO capitao designou a nossa unidade para a passagem antiga. Nao sei por que; ela esta barricada ha anos. Nos disseram que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem passar, certo? Ao menos isso nos da algo para fazer. Espero que esta designacao seja apenas temporaria.>>
+<<ShowLetter "Diario de Brynn" "O capitao designou a nossa unidade para a passagem antiga. Nao sei por que; ela esta barricada ha anos. Nos disseram que hoarwulfs habitam as cavernas do outro lado, mas eles nao conseguem passar, certo? Ao menos isso nos da algo para fazer. Espero que esta designacao seja apenas temporaria.">>
 {advisor}Parece que os desejos de Brynn se realizaram.
 {player:0}E. Os deuses podem ser crueis assim.
 ->Parece que tiveram problemas aqui embaixo. Isso quer dizer que podemos nao estar sozinhos, entao fiquem atentos. **Continuar**
@@ -30092,9 +30092,9 @@ tags:
 groupName: ContentUpdateQuests
 position: 142,2103
 ---
-[[Very well, Dridge. Where can we find this knife of yours?|node.DridgeOptionsAccept]]
+[[Muito bem, Dridge. Onde podemos encontrar essa faca sua?|node.DridgeOptionsAccept]]
 [[[Honorable]Comprar uma lamina e um trabalho pequeno demais; por que nao faz voce mesmo? Por acaso e roubada?|node.dridgeOptionsQuestion]]
-[[No, we're not interested.|node.dridgeOptionsDecline]]
+[[Nao, nao estamos interessados.|node.dridgeOptionsDecline]]
 ===
 title: node.DridgeOptionsAccept
 tags: 
@@ -30118,8 +30118,8 @@ position: 521,2106
     {player:$CharacterWithTrait}Ha! Isso eu consigo imaginar.
     {hasTrait:Merciful}Psiu!
 <<endif>>
-[[Very well, Dridge. Where can we find this knife of yours?|node.DridgeOptionsAccept]]
-[[No, we're not interested.|node.dridgeOptionsDecline]]
+[[Muito bem, Dridge. Onde podemos encontrar essa faca sua?|node.DridgeOptionsAccept]]
+[[Nao, nao estamos interessados.|node.dridgeOptionsDecline]]
 ===
 title: node.dridgeOptionsDecline
 tags: 
