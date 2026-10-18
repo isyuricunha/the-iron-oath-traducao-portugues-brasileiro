@@ -81,10 +81,15 @@ internal static class Program
             {
                 return RunPatch(args[1], args[2], args[3]);
             }
+            if (args.Length == 4 && args[0] == "usages")
+            {
+                return RunUsages(args[1], args[2], args[3]);
+            }
             Console.Error.WriteLine("usage: DllStringPatch list <in.dll> <out.json>");
             Console.Error.WriteLine("       DllStringPatch seq <in.dll> <type> <out.json>");
             Console.Error.WriteLine("       DllStringPatch trace <in.dll> <type> <method> <out.txt>");
             Console.Error.WriteLine("       DllStringPatch patch <in.dll> <map.json> <out.dll>");
+            Console.Error.WriteLine("       DllStringPatch usages <in.dll> <map.json> <out.json>");
             return 64;
         }
         catch (Exception ex)
@@ -395,5 +400,191 @@ internal static class Program
 
         Console.WriteLine(JsonSerializer.Serialize(new { applied, total = applied.Values.Sum() }));
         return 0;
+    }
+
+    // Scan every mapped (scope, en) string and report the sites where the
+    // game COMPARES it: input-action checks, pronoun/save-value switches,
+    // enum parse and string-keyed collection lookups. Translating any of
+    // those ldstr operands breaks the comparison at runtime, so the map
+    // must not touch them. Display-only sites (stfld/call as a value) are
+    // ignored. List<int> get_Item is array access, not a string lookup.
+    private static int RunUsages(string inputPath, string mapPath, string outputPath)
+    {
+        using var assembly = AssemblyDefinition.ReadAssembly(inputPath, ReadParams());
+        var mapJson = JsonDocument.Parse(File.ReadAllText(mapPath));
+        var map = mapJson.RootElement.GetProperty("dll");
+
+        var findings = new SortedSet<string>(StringComparer.Ordinal);
+        int checkedEntries = 0;
+        foreach (var cls in map.EnumerateObject())
+        {
+            var scope = cls.Name;
+            var type = assembly.MainModule.GetTypes()
+                .SingleOrDefault(t => t.FullName == scope || t.Name == scope);
+            if (type == null)
+            {
+                continue;
+            }
+            foreach (var entry in cls.Value.EnumerateObject())
+            {
+                var en = entry.Name;
+                checkedEntries++;
+                foreach (var method in type.Methods)
+                {
+                    if (!method.HasBody)
+                    {
+                        continue;
+                    }
+                    var instructions = method.Body.Instructions;
+                    for (var i = 0; i < instructions.Count; i++)
+                    {
+                        if (instructions[i].OpCode != OpCodes.Ldstr || (string)instructions[i].Operand != en)
+                        {
+                            continue;
+                        }
+                        if (IsLogicUse(method, instructions, i))
+                        {
+                            findings.Add(scope + "\u0001" + en + "\u0001" + method.Name);
+                        }
+                    }
+                }
+            }
+        }
+
+        var pairs = findings
+            .Select(f => f.Split('\u0001'))
+            .Select(p => new[] { p[0], p[1], p[2] });
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true,
+            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        };
+        File.WriteAllText(outputPath, JsonSerializer.Serialize(pairs, options));
+        Console.WriteLine($"checked={checkedEntries} logic_usages={findings.Count}");
+        return 0;
+    }
+
+    private static bool IsLogicUse(MethodDefinition method, IList<Instruction> instructions, int siteIndex)
+    {
+        // Direct window: the ldstr feeds a comparison within 15 instructions
+        // before being consumed as a value (stfld/stsfld/call ends the chain).
+        for (var j = siteIndex + 1; j < Math.Min(siteIndex + 15, instructions.Count); j++)
+        {
+            var instruction = instructions[j];
+            if (instruction.OpCode.Code == Code.Switch || IsLogicCall(instruction.Operand as MethodReference))
+            {
+                return true;
+            }
+            if (instruction.OpCode == OpCodes.Bne_Un || instruction.OpCode == OpCodes.Bne_Un_S
+                || instruction.OpCode == OpCodes.Beq || instruction.OpCode == OpCodes.Beq_S)
+            {
+                return true;
+            }
+            var code = instruction.OpCode.Code;
+            if (code == Code.Stfld || code == Code.Stsfld || code == Code.Call || code == Code.Callvirt)
+            {
+                break;
+            }
+        }
+
+        // Local dataflow: ldstr -> stloc, later read into a comparison.
+        VariableDefinition? stored = null;
+        var storeIndex = -1;
+        for (var j = siteIndex + 1; j < Math.Min(siteIndex + 6, instructions.Count); j++)
+        {
+            var opcode = instructions[j].OpCode;
+            if (opcode == OpCodes.Stloc || opcode == OpCodes.Stloc_S
+                || (instructions[j].OpCode.Code >= Code.Stloc_0 && instructions[j].OpCode.Code <= Code.Stloc_3))
+            {
+                storeIndex = j;
+                stored = ResolveVariable(method, instructions[j]);
+                break;
+            }
+            var chainCode = instructions[j].OpCode.Code;
+            if (chainCode == Code.Stfld || chainCode == Code.Stsfld || chainCode == Code.Call || chainCode == Code.Callvirt)
+            {
+                break;
+            }
+        }
+        if (storeIndex < 0 || stored == null)
+        {
+            return false;
+        }
+        for (var j = storeIndex + 1; j < instructions.Count; j++)
+        {
+            var instruction = instructions[j];
+            var loads = instruction.OpCode == OpCodes.Ldloc || instruction.OpCode == OpCodes.Ldloc_S
+                || (instruction.OpCode.Code >= Code.Ldloc_0 && instruction.OpCode.Code <= Code.Ldloc_3);
+            if (!loads || ResolveVariable(method, instruction) != stored)
+            {
+                continue;
+            }
+            for (var k = j + 1; k < Math.Min(j + 6, instructions.Count); k++)
+            {
+                var consumer = instructions[k];
+                if (consumer.OpCode.Code == Code.Switch || IsLogicCall(consumer.Operand as MethodReference))
+                {
+                    return true;
+                }
+                var code = consumer.OpCode.Code;
+                if (code == Code.Stfld || code == Code.Stsfld || code == Code.Call || code == Code.Callvirt)
+                {
+                    break;
+                }
+            }
+        }
+        return false;
+    }
+
+    private static bool IsLogicCall(MethodReference? callee)
+    {
+        if (callee == null)
+        {
+            return false;
+        }
+        var full = callee.FullName ?? string.Empty;
+        if (full.Contains("System.String::Equals") || full.Contains("String::Equals")
+            || full.Contains("op_Equality") || full.Contains("op_Inequality")
+            || full.Contains("::Contains(") || full.Contains("::StartsWith(") || full.Contains("::EndsWith(")
+            || full.Contains("String::Compare") || full.Contains("System.Enum::Parse"))
+        {
+            return true;
+        }
+        if (full.Contains("get_Item") || full.Contains("TryGetValue") || full.Contains("ContainsKey")
+            || full.Contains("Dictionary`2::Add") || full.Contains("::Remove("))
+        {
+            return callee.Parameters.Any(p => p.ParameterType.Name == "String");
+        }
+        return false;
+    }
+
+    private static VariableDefinition? ResolveVariable(MethodDefinition method, Instruction instruction)
+    {
+        if (instruction.Operand is VariableDefinition definition)
+        {
+            return definition;
+        }
+        var code = instruction.OpCode.Code;
+        if (code is Code.Stloc_0 or Code.Ldloc_0)
+        {
+            return method.Body.Variables[0];
+        }
+        if (code is Code.Stloc_1 or Code.Ldloc_1)
+        {
+            return method.Body.Variables[1];
+        }
+        if (code is Code.Stloc_2 or Code.Ldloc_2)
+        {
+            return method.Body.Variables[2];
+        }
+        if (code is Code.Stloc_3 or Code.Ldloc_3)
+        {
+            return method.Body.Variables[3];
+        }
+        if (instruction.Operand is int index)
+        {
+            return method.Body.Variables[index];
+        }
+        return null;
     }
 }

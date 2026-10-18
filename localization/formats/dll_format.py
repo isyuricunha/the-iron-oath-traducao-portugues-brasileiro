@@ -55,6 +55,21 @@ def _run_tool(args: list[str]) -> str:
     return proc.stdout
 
 
+def find_logic_usages(dll_path: Path, map_path: Path) -> list[list[str]]:
+    """Report mapped strings the game compares at runtime.
+
+    Runs the DllStringPatch `usages` mode: dataflow scan of every mapped
+    (scope, en) ldstr operand for string comparisons, string-keyed
+    collections and enum parses. Translating any reported entry breaks
+    that comparison, so callers must refuse to publish while findings
+    exist. Returns [scope, en, methodName] triples.
+    """
+    with tempfile.TemporaryDirectory(prefix="dllusages-") as tmp:
+        out = Path(tmp) / "usages.json"
+        _run_tool(["usages", str(dll_path), str(map_path), str(out)])
+        return json.loads(out.read_text(encoding="utf-8"))
+
+
 class DllFormat:
     ASSEMBLY_NAME = ASSEMBLY_NAME
     MANAGED_DIRECTORY = MANAGED_DIRECTORY

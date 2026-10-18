@@ -480,6 +480,30 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
             print(f"{invalid} manual entries rejected; fix the map and rerun", file=sys.stderr)
             return 2
 
+        # No mapped string may be one the game compares at runtime:
+        # translating it breaks the comparison (input actions, pronoun
+        # values, save tiers, choice cost tags).
+        from localization.formats.dll_format import (
+            ASSEMBLY_NAME,
+            MANAGED_DIRECTORY,
+            find_logic_usages,
+        )
+
+        dll_path = settings.input_root / MANAGED_DIRECTORY / ASSEMBLY_NAME
+        if dll_path.is_file():
+            usages = find_logic_usages(dll_path, Path(settings.map_file))
+            if usages:
+                print(
+                    f"{len(usages)} mapped strings are compared by game logic; "
+                    "remove them from the map:",
+                    file=sys.stderr,
+                )
+                for scope, en, method in usages[:15]:
+                    print(f"  {scope} :: {en[:60]!r} in {method}", file=sys.stderr)
+                return 2
+        else:
+            print("warning: input assembly not found; skipped logic-usage check", file=sys.stderr)
+
         # Scene map entries must exist in the scanned scenes.
         stale_scenes = [
             uid for uid in manual
