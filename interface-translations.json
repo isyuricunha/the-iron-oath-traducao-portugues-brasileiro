@@ -2538,7 +2538,6 @@
       "Welcome to ": "Bem-vindo a ",
       ". What'll it be then?": ". O que vai ser então?",
       "Sort: Level ": "Ordenar: Nível ",
-      "Sort": "Ordenar",
       "Reputation Discount: ": "Desconto de Reputação: "
     },
     "InfirmaryScreen": {
@@ -2651,7 +2650,6 @@
       "4 Days": "4 Dias",
       "5 Days": "5 Dias",
       "6 Days": "6 Dias",
-      "Camp": "Acampamento",
       "Rest": "Descansar",
       "Choose how many days to make camp and rest.": "Escolha quantos dias acampar e descansar.",
       "\n\nCharacters With Fatigue": "\n\nPersonagens com Fadiga",
@@ -2792,15 +2790,13 @@
       "Revert All Upgrades?": "Reverter Todos os Aprimoramentos?",
       "This will revert all upgrades for ALL abilities. Are you sure you spend ": "Isso vai reverter todos os aprimoramentos de TODAS as habilidades. Você tem certeza que quer gastar ",
       " to refund all spent upgrade points?": " para reembolsar todos os pontos gastos?",
-      "Locked": "Trancado",
       "Unlocks at level 5.": "Desbloqueia no nível 5.",
       "Unlocks at level 10.": "Desbloqueia no nível 10.",
       "Ability Limit: ": "Limite de Habilidades: ",
       "Revert Upgrades": "Reverter Aprimoramentos",
       "Previous Ability": "Habilidade Anterior",
       "Next Ability": "Próxima Habilidade",
-      "Undo Upgrades": "Desfazer Aprimoramentos",
-      "Confirm Action": "Confirmar Ação"
+      "Undo Upgrades": "Desfazer Aprimoramentos"
     },
     "CityDetails": {
       " has successfully led a revolt and the citizens have seized control. ": " liderou uma revolta com sucesso e os cidadãos tomaram o controle. ",
@@ -2815,9 +2811,7 @@
       "Toggle the map legend": "Alterna a legenda do mapa"
     },
     "TioDungeons": {
-      "Move": "Mover",
       "Toggle Scouting": "Alternar Exploração",
-      "Camp": "Acampar",
       "Legend": "Legenda",
       "There are no Shrines to be found.": "Não há Santuários para serem encontrados.",
       "New Codex Entries Added\n": "Novas Entradas de Códice Adicionadas\n",
@@ -3106,7 +3100,6 @@
       "Skin": "Pele",
       "Skin Tone": "Tom de Pele",
       "Tattoos": "Tatuagens",
-      "Cancel": "Cancelar",
       "Close": "Fechar"
     },
     "PartyManager": {
@@ -3142,22 +3135,18 @@
       "Which enchantment would you like to destroy and replace? This cannot be undone.": "Qual encantamento você gostaria de destruir e substituir? Isso não pode ser desfeito."
     },
     "GuildManagementStorageScreen": {
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Move": "Mover",
       "Navigate": "Navegar",
       ") If you discard the item, the contract will be abandoned.": ") Se você descartar o item, o contrato será abandonado.",
       ") You cannot discard this item.": ") Você não pode descartar este item.",
       ") is required for a contract. (": ") é necessário para um contrato. (",
       ") is required for an important contract. (": ") é necessário para um contrato importante. (",
       "All": "Tudo",
-      "Armor": "Armadura",
       "Cannot Sell Item": "Não é Possível Vender o Item",
       "Discard": "Descartar",
       "Discard Item?": "Descartar Item?",
       "Do you want to discard this item?\n\n": "Você quer descartar este item?\n\n",
       "Enchantments": "Encantamentos",
-      "Offhand": "Arma Secundária",
       "Other": "Outros",
       "Sort: ": "Ordenar: ",
       "This item (": "Este item (",
@@ -3182,7 +3171,6 @@
       "Rewards": "Recompensas",
       "Select Character": "Selecionar Personagem",
       "Select Provisions": "Selecionar Provisões",
-      "Start": "Começar",
       "Survive": "Sobreviver",
       "Team 1": "Time 1",
       "Team 2": "Time 2",
@@ -3226,7 +3214,6 @@
       "Purchase Upgrade": "Comprar Aprimoramento",
       "Undo Upgrades": "Desfazer Aprimoramentos",
       "Close": "Fechar",
-      "Move": "Mover",
       "Navigate": "Navegar"
     },
     "GuildMemberRosterCard": {
@@ -3279,10 +3266,7 @@
       "Unlock Ability?": "Desbloquear Habilidade?",
       "View Ability Tree": "Ver Árvore de Habilidades",
       "Close menu": "Fechar menu",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
-      "Move": "Mover",
       "Navigate": "Navegar",
       "Select": "Selecionar",
       "You have unspent ability upgrade points. Select an ability you wish to upgrade. You may also choose to spend the points at a later time in the roster management menu.": "Você tem pontos de aprimoramento de habilidade não gastos. Selecione uma habilidade que deseja aprimorar. Você também pode escolher gastar os pontos "
@@ -3309,8 +3293,7 @@
       "Loot All": "Pegar Todo o Espólio",
       "You are about to leave behind an important item. We might need that key so make sure to grab it.": "Você está prestes a deixar para trás um item importante. Podemos precisar dessa chave, então garanta pegá-la.",
       "Exit": "Sair",
-      "Close": "Fechar",
-      "Move": "Mover"
+      "Close": "Fechar"
     },
     "AssignJobPopup": {
       " in order to retrain with this job.": " para treinar novamente com este trabalho.",
@@ -3324,7 +3307,6 @@
       "You need ": "Você precisa de ",
       "Close": "Fechar",
       "Select": "Selecionar",
-      "Move": "Mover",
       "Navigate": "Navegar"
     },
     "WorldInfoUi": {
@@ -3382,10 +3364,8 @@
       "Deceased, ": "Falecido, ",
       "End Mentorship": "Encerrar Mentoria",
       "Unavailable, ": "Indisponível, ",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
       "Select": "Selecionar",
-      "Move": "Mover",
       "Navigate": "Navegar"
     },
     "GuildMemberHistoryScreen": {
@@ -3395,8 +3375,6 @@
       "Unavailable, ": "Indisponível, ",
       "Navigate": "Navegar",
       "Select": "Selecionar",
-      "Sort": "Ordenar",
-      "Cancel": "Cancelar",
       "Close": "Fechar"
     },
     "CampingScreen": {
@@ -3434,17 +3412,7 @@
       "Synergy Percent = ": "Porcentagem de Sinergia = "
     },
     "SkillbarUI": {
-      "Ability": "Habilidade",
-      "Ability 1": "Habilidade 1",
-      "Ability 2": "Habilidade 2",
-      "Ability 3": "Habilidade 3",
-      "Ability 4": "Habilidade 4",
-      "Escape From Combat": "Fugir do Combate",
-      "Guard Ability": "Habilidade de Guarda",
-      "Open Inventory": "Abrir Inventário",
-      "Open Item In Combat": "Abrir Item em Combate",
-      "Wait": "Esperar",
-      "Move": "Mover"
+      "Ability": "Habilidade"
     },
     "ExpeditionSummaryRosterCard": {
       " broke": " quebrou",
@@ -3478,7 +3446,6 @@
       "Remove an item from your inventory before adding anymore items. You've reached your capacity.": "Remova um item do inventário antes de adicionar mais. Você atingiu a sua capacidade.",
       "Close": "Fechar",
       "Select": "Selecionar",
-      "Move": "Mover",
       "Navigate": "Navegar"
     },
     "GuildCouncilBountyScreen": {
@@ -3528,8 +3495,7 @@
       " (REVOLTING)": " (EM REVOLTA)",
       "Enter": "Entrar",
       "History": "Histórico",
-      "Some text detailing this history of this place (data needs to be filled out in json and dynamic data appended to the end of it)": "Um texto detalhando a história deste lugar (os dados precisam ser preenchidos no json)",
-      "Info": "Informação"
+      "Some text detailing this history of this place (data needs to be filled out in json and dynamic data appended to the end of it)": "Um texto detalhando a história deste lugar (os dados precisam ser preenchidos no json)"
     },
     "EnemyHoverDetailsUi": {
       "+25% XP and + 5% Power": "+25% de XP e + 5% de Poder",
@@ -3574,19 +3540,14 @@
     },
     "MissionGearSelectScreen": {
       "BEGIN MISSION": "COMEÇAR MISSÃO",
-      "Character": "Personagem",
       "GUILD STORAGE": "ARMAZÉM DA GUILDA",
       "MISSION PROVISIONS": "PROVISÕES DA MISSÃO",
       "QUICK SHOP": "LOJA RÁPIDA",
       "REVISE PARTY": "REVISAR GRUPO"
     },
     "WorldCanvasUi": {},
-    "GuildManagementRoster": {
-      "Cancel": "Cancelar",
-      "Move": "Mover"
-    },
+    "GuildManagementRoster": {},
     "DeploymentPhaseUI": {
-      "Confirm": "Confirmar",
       "Select Character To Move": "Selecione o Personagem para Mover",
       "Start Combat": "Começar o Combate"
     },
@@ -3600,10 +3561,7 @@
       "Fatigued Debuff\n": "Penalidade de Fadiga\n",
       "Rested Bonus\n+25% XP and +5% Power": "Bônus de Descanso\n+25% de XP e +5% de Poder"
     },
-    "ReadableScreen": {
-      "Confirm": "Confirmar",
-      "Move": "Mover"
-    },
+    "ReadableScreen": {},
     "TutorialTooltip": {},
     "CinematicDialogueUiPanel": {},
     "ItemDescriptionDetailsComponent": {},
@@ -3619,8 +3577,7 @@
       "Prologue Chapter": "Capítulo do Prólogo"
     },
     "OptionsChangeMiscScreen": {
-      "Close": "Fechar",
-      "Move": "Mover"
+      "Close": "Fechar"
     },
     "ScriptedEventTextChoice": {
       "Have your Miner take action": "Faça o seu Mineiro agir",
@@ -3658,7 +3615,6 @@
     "InjuriesManager": {
       " (Left)": " (Esquerdo)",
       " (Right)": " (Direito)",
-      "Left": "Esquerdo",
       "Left Arm ": "Braço Esquerdo ",
       "Left Leg ": "Perna Esquerda ",
       "Right": "Direito",
@@ -3688,7 +3644,6 @@
       " is closed and you are unable to pass.": " está fechada e você não consegue passar.",
       "Alert": "Alerta",
       "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
-      "Confirm": "Confirmar",
       "Important Message": "Mensagem Importante",
       "That's a good idea.": "Boa ideia.",
       "The border to ": "A fronteira para ",
@@ -4176,7 +4131,6 @@
       "Coin": "Moedas",
       "Renown": "Renome",
       "Next": "Avançar",
-      "Move": "Mover",
       "Navigate": "Navegar"
     },
     "FallingArrowTrapTile": {
@@ -4309,8 +4263,6 @@
       "Average Price: ": "Preço Médio: ",
       "Average Selling Price: ": "Preço Médio de Venda: ",
       "Recommended": "Recomendado",
-      "Repair Item": "Reparar Item",
-      "Repair With Coin": "Reparar com Moedas",
       "Repair With Coin: ": "Reparar com Moedas: ",
       "Repair With Coin: <color=red>": "Reparar com Moedas: <color=red>",
       "Requirements : Armor": "Requisitos : Armadura",
@@ -4571,8 +4523,7 @@
     "VoidPortalDestinationObj": {
       "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
       "Important Message": "Mensagem Importante",
-      "That's a good idea.": "Boa ideia.",
-      "Confirm": "Confirmar"
+      "That's a good idea.": "Boa ideia."
     },
     "VolcanicGeyserTile": {
       "Applies burn to adjacent characters. Explodes in ": "Aplica queimadura aos personagens adjacentes. Explode em ",
@@ -4611,7 +4562,6 @@
       "That's a good idea.": "Boa ideia.",
       "The border to ": "A fronteira para ",
       "We should attend to our own affairs before visiting the Vanguard.": "Devemos cuidar dos nossos próprios assuntos antes de visitar a Vanguarda.",
-      "Confirm": "Confirmar",
       "Alert": "Alerta"
     },
     "AbilityCyclone/<DoDamage>d__5": {

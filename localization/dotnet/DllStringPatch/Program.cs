@@ -402,50 +402,52 @@ internal static class Program
         return 0;
     }
 
-    // Scan every mapped (scope, en) string and report the sites where the
-    // game COMPARES it: input-action checks, pronoun/save-value switches,
-    // enum parse and string-keyed collection lookups. Translating any of
-    // those ldstr operands breaks the comparison at runtime, so the map
-    // must not touch them. Display-only sites (stfld/call as a value) are
-    // ignored. List<int> get_Item is array access, not a string lookup.
+    // Scan the WHOLE assembly for logic usage of every mapped value: the
+    // game registers input actions by name (RegisterInput/HandleInput), so
+    // translating a mapped operand that any class registers or compares
+    // breaks the action even when the patch is internally consistent.
+    // Display-only sites (stfld/call as a value) are ignored. List<int>
+    // get_Item is array access, not a string lookup.
     private static int RunUsages(string inputPath, string mapPath, string outputPath)
     {
         using var assembly = AssemblyDefinition.ReadAssembly(inputPath, ReadParams());
         var mapJson = JsonDocument.Parse(File.ReadAllText(mapPath));
         var map = mapJson.RootElement.GetProperty("dll");
 
-        var findings = new SortedSet<string>(StringComparer.Ordinal);
-        int checkedEntries = 0;
+        var mapped = new Dictionary<string, List<string>>(StringComparer.Ordinal);
         foreach (var cls in map.EnumerateObject())
         {
-            var scope = cls.Name;
-            var type = assembly.MainModule.GetTypes()
-                .SingleOrDefault(t => t.FullName == scope || t.Name == scope);
-            if (type == null)
-            {
-                continue;
-            }
             foreach (var entry in cls.Value.EnumerateObject())
             {
-                var en = entry.Name;
-                checkedEntries++;
-                foreach (var method in type.Methods)
+                if (!mapped.TryGetValue(entry.Name, out var scopes))
                 {
-                    if (!method.HasBody)
+                    mapped[entry.Name] = scopes = new List<string>();
+                }
+                scopes.Add(cls.Name);
+            }
+        }
+
+        var findings = new SortedSet<string>(StringComparer.Ordinal);
+        foreach (var type in assembly.MainModule.GetTypes())
+        {
+            foreach (var method in type.Methods)
+            {
+                if (!method.HasBody)
+                {
+                    continue;
+                }
+                var instructions = method.Body.Instructions;
+                for (var i = 0; i < instructions.Count; i++)
+                {
+                    if (instructions[i].OpCode != OpCodes.Ldstr || (string)instructions[i].Operand is not string en
+                        || !mapped.TryGetValue(en, out var scopes))
                     {
                         continue;
                     }
-                    var instructions = method.Body.Instructions;
-                    for (var i = 0; i < instructions.Count; i++)
+                    if (IsLogicUse(method, instructions, i))
                     {
-                        if (instructions[i].OpCode != OpCodes.Ldstr || (string)instructions[i].Operand != en)
-                        {
-                            continue;
-                        }
-                        if (IsLogicUse(method, instructions, i))
-                        {
-                            findings.Add(scope + "\u0001" + en + "\u0001" + method.Name);
-                        }
+                        var valueShort = en.Length > 60 ? en[..60] + "..." : en;
+                        findings.Add($"{string.Join("+", scopes)}\u0001{valueShort}\u0001{type.Name}::{method.Name}");
                     }
                 }
             }
@@ -460,7 +462,7 @@ internal static class Program
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         };
         File.WriteAllText(outputPath, JsonSerializer.Serialize(pairs, options));
-        Console.WriteLine($"checked={checkedEntries} logic_usages={findings.Count}");
+        Console.WriteLine($"mapped_values={mapped.Count} logic_usages={findings.Count}");
         return 0;
     }
 
