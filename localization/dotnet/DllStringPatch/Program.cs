@@ -555,6 +555,15 @@ internal static class Program
         {
             return callee.Parameters.Any(p => p.ParameterType.Name == "String");
         }
+        // Object lookup by name: translating the operand breaks the lookup
+        // (Find returns null, then the first use of it throws NRE).
+        if (full.Contains("::Find(") || full.Contains("::FindChild(")
+            || (full.Contains("::GetComponent") && callee.HasParameters)
+            || full.Contains("::FindFirstAncestor")
+            || full.Contains("::FindObjectsOfType(") && callee.HasParameters)
+        {
+            return callee.Parameters.Any(p => p.ParameterType.Name == "String");
+        }
         return false;
     }
 

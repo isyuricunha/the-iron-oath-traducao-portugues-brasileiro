@@ -2469,12 +2469,7 @@
       "Export Profit +15%": "Lucro de Exportação +15%",
       "Importing Cost -5%": "Custo de Importação -5%",
       "Importing Cost -10%": "Custo de Importação -10%",
-      "Importing Cost -15%": "Custo de Importação -15%",
-      "Unlocked": "Desbloqueado",
-      "Level": "Nível",
-      "Name": "Nome",
-      "Durability": "Durabilidade",
-      "Efficiency": "Eficiência"
+      "Importing Cost -15%": "Custo de Importação -15%"
     },
     "MerchantScreen": {
       "Sell Item": "Vender Item",
@@ -2565,13 +2560,6 @@
       " to the infirmary.": " para a enfermaria."
     },
     "HospitalScreen": {
-      "Physician": "Médico",
-      "Apothecary": "Boticário",
-      "Surgeon": "Cirurgião",
-      "Level": "Nível",
-      "Efficiency": "Eficiência",
-      "Name": "Nome",
-      "Unlocked": "Desbloqueado",
       "Patient Care I": "Cuidado com Pacientes I",
       "Patient Care II": "Cuidado com Pacientes II",
       "Patient Care III": "Cuidado com Pacientes III",
@@ -3527,8 +3515,7 @@
       "<sprite name=\"chanceToHit\"> Hit Chance 100%": "<sprite name=\"chanceToHit\"> Chance de Acerto 100%",
       "<sprite name=\"defense\"> Defense ": "<sprite name=\"defense\"> Defesa ",
       "Hero Hit Chance <sprite name=\"chanceToHit\">": "Chance de Acerto do Herói <sprite name=\"chanceToHit\">",
-      "Target Defense <sprite name=\"defense\">": "Defesa do Alvo <sprite name=\"defense\">",
-      "Info": "Informação"
+      "Target Defense <sprite name=\"defense\">": "Defesa do Alvo <sprite name=\"defense\">"
     },
     "EndOfCombatPartyXPGet": {
       "Damage dealt": "Dano causado",
@@ -3577,9 +3564,7 @@
       "   |   Age: ": "   |   Idade: ",
       " years old": " anos",
       " years old   |    ": " anos   |    ",
-      "Skills": "Perícias",
-      "Skills: ": "Perícias: ",
-      "Button": "Botão"
+      "Skills: ": "Perícias: "
     },
     "GuildReputationScreen": {
       "  Sort: High Rep": "  Ordenar: Alta Rep",
@@ -3756,9 +3741,7 @@
     "ItemTooltip": {
       "Recommended!": "Recomendado!"
     },
-    "PerkScreenItem": {
-      "Activated": "Ativado"
-    },
+    "PerkScreenItem": {},
     "ResistUiStageObject": {
       "Placeholder": "Exemplo"
     },
@@ -3773,8 +3756,7 @@
       "Description of the trait we want to remove and how long it will take to remove it.": "Descrição do traço que queremos remover e quanto tempo leva para removê-lo."
     },
     "CivilianScreen": {
-      "Civilians": "Civis",
-      "Name": "Nome"
+      "Civilians": "Civis"
     },
     "EnemyStatsUI": {
       "<sprite name=\"PC-rightClick\"> View Codex": "<sprite name=\"PC-rightClick\"> Ver Códex",
