@@ -63,6 +63,7 @@ class Settings:
     map_file: str = ""
     apply_map: bool = False
     manual_translations: dict = field(default_factory=dict)
+    allow_drops: list = field(default_factory=list)
 
     def validate_profile(self) -> None:
         host = urlparse(self.base_url).hostname or ""

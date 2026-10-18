@@ -88,10 +88,18 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="publish existing translations plus the map file without provider calls",
     )
+    parser.add_argument(
+        "--allow-drops",
+        nargs="+",
+        choices=["i2_mono", "scene_mono", "dll", "yarn_commands"],
+        default=[],
+        help="interface counters allowed to decrease vs the published overlay (intentional reverts)",
+    )
     return parser
 
 
 def apply_cli(settings: Settings, args: argparse.Namespace) -> Settings:
+    settings.allow_drops = list(getattr(args, "allow_drops", []) or [])
     if args.batch_size is not None:
         settings.batch_size = args.batch_size
     if args.max_batch_chars is not None:
@@ -553,16 +561,19 @@ def apply_map_publish(settings: Settings, profile: dict) -> int:
                 "yarn_commands": report.get("yarn_commands", {}).get("patched", 0),
             }
             if previous.get("semantics") == 2:
+                allowed = set(settings.allow_drops)
                 drops = {
                     key: (previous[key], current.get(key, 0))
                     for key in ("i2_mono", "scene_mono", "dll", "yarn_commands")
                     if current.get(key, 0) < previous.get(key, 0)
+                    and key not in allowed
                 }
                 if drops:
                     print(
                         "interface patch counts dropped vs the published overlay "
                         f"(refusing to publish): {drops}; restore the missing "
-                        "interface-translations.json entries and rerun",
+                        "interface-translations.json entries and rerun, or pass "
+                        "--allow-drops with the keys being reverted on purpose",
                         file=sys.stderr,
                     )
                     return 2

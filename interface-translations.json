@@ -2480,8 +2480,6 @@
       "Sell Item": "Vender Item",
       "Cannot Sell Item": "Não é Possível Vender o Item",
       "Repair Gear": "Reparar Equipamento",
-      "Repair Item": "Reparar Item",
-      "Repair With Coin": "Reparar com Moedas",
       "Repair all equipped gear for ": "Reparar todo o equipamento equipado por ",
       "Unable to repair all of your gear. You need at least ": "Não foi possível reparar todo o seu equipamento. Você precisa de pelo menos ",
       "You have no damaged gear in need of repair.": "Você não tem equipamentos danificados precisando de reparo.",
@@ -2500,11 +2498,7 @@
       "[myTitle], I would highly advise selling that item. If lost it could never be replaced.": "[myTitle], eu recomendo fortemente vender esse item. Se perdido, jamais poderá ser substituído.",
       "You're right. Let's hang onto it.": "Você tem razão. Vamos ficar com ele.",
       "Close": "Fechar",
-      "Cancel": "Cancelar",
-      "Confirm": "Confirmar",
       "Select": "Selecionar",
-      "Sort": "Ordenar",
-      "Cost High": "Custo Alto",
       "Cost Low": "Custo Baixo"
     },
     "ContractNegotiationsScreen": {
@@ -2550,7 +2544,6 @@
       ". What'll it be then?": ". O que vai ser então?",
       "Sort: Level ": "Ordenar: Nível ",
       "Sort": "Ordenar",
-      "Cancel": "Cancelar",
       "Reputation Discount: ": "Desconto de Reputação: "
     },
     "InfirmaryScreen": {
@@ -2659,8 +2652,6 @@
       "Expires in ": "Expira em ",
       " out of ": " de ",
       "Sort: ": "Ordenar: ",
-      "Sort": "Ordenar",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
       "\n\nCampaign expires in ": "\n\nA campanha expira em ",
       "\n\nCampaign never expires.": "\n\nA campanha nunca expira."
@@ -2679,9 +2670,7 @@
       "You have no characters with fatigue in need of rest.": "Você não tem personagens com fadiga precisando descansar."
     },
     "ScriptedSceneUiPanel": {
-      "[Disarm:": "[Desarmar:",
       " Disarm trap.": " Desarmar armadilha.",
-      "Confirm Action": "Confirmar Ação",
       "Resume Auto Scroll": "Retomar Rolagem Automática",
       "Next Line (Hold to Skip)": "Próxima Linha (Segure para Pular)",
       "Xp Rate": "Taxa de XP",
@@ -2776,7 +2765,6 @@
       "Toggle Ability": "Alternar Habilidade",
       "Previous Character": "Personagem Anterior",
       "Next Character": "Próximo Personagem",
-      "Repair Item": "Reparar Item",
       "Contract length : ": "Duração do Contrato : ",
       "Remaining length : ": "Duração Restante : ",
       "Yearly rate : ": "Valor Anual : ",
@@ -2848,12 +2836,7 @@
       "<sprite name=\"PC-leftClick\"> Select Tile To Scout": "<sprite name=\"PC-leftClick\"> Selecione a Célula para Explorar",
       "<sprite name=\"XboxOne-a\"> Select Tile To Scout": "<sprite name=\"XboxOne-a\"> Selecione a Célula para Explorar",
       "<color=red>No tiles to Scout in range</color>": "<color=red>Sem células para Explorar no alcance</color>",
-      "Yikes! Couldnt find a place for a key in the dungeo so just give it to the user so we dont get stuck potentially": "Eita! Não encontramos lugar para a chave no calabouço, então entregue direto ao jogador para não travarmos.",
-      "Open Quest Journal": "Abrir Diário de Missões",
-      "Show Legend": "Mostrar Legenda",
-      "Open Company Management": "Abrir Gerenciamento da Companhia",
-      "Begin Camping": "Começar Acampamento",
-      "Open Inventory": "Abrir Inventário"
+      "Yikes! Couldnt find a place for a key in the dungeo so just give it to the user so we dont get stuck potentially": "Eita! Não encontramos lugar para a chave no calabouço, então entregue direto ao jogador para não travarmos."
     },
     "SystemUi": {
       "Abandon the current mission": "Abandonar a missão atual",
@@ -2961,9 +2944,7 @@
       "% Power": "% de Poder",
       "Instant": "Instantâneo"
     },
-    "AbilityFistsOfFury": {
-      "Channel": "Canalizar"
-    },
+    "AbilityFistsOfFury": {},
     "AbilityAnthemOfWarding": {
       "+10 Speed": "+10 de Velocidade",
       "+15 Evasion": "+15 de Evasão",
@@ -3137,20 +3118,6 @@
       "Skin": "Pele",
       "Skin Tone": "Tom de Pele",
       "Tattoos": "Tatuagens",
-      "She": "Ela",
-      "Her": "Dela",
-      "Him": "Ele",
-      "His": "Dele",
-      "They": "Elu",
-      "Them": "Delu",
-      "Their": "Delu",
-      "she": "ela",
-      "her": "dela",
-      "him": "ele",
-      "his": "dele",
-      "they": "elu",
-      "them": "delu",
-      "their": "delu",
       "Cancel": "Cancelar",
       "Close": "Fechar"
     },
@@ -3161,11 +3128,8 @@
       "You're party is full. ": "O seu grupo está cheio. "
     },
     "GuildManagementRosterGear": {
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Select": "Selecionar",
-      "Move": "Mover",
       "Navigate": "Navegar",
       " slot for enchantments.": " espaço para encantamentos.",
       " slots. This item only has ": " espaços. Esse item só tem ",
@@ -3174,7 +3138,6 @@
       "Are you sure you want to destroy any existing enchantments and replace with ": "Tem certeza que deseja destruir os encantamentos existentes e substituir por ",
       "Cannot Equip": "Não é Possível Equipar",
       "Cannot remove your basic weapon. Equip a better item to replace this item.": "Não é possível remover a sua arma básica. Equipe um item melhor para substituí-la.",
-      "Customize": "Personalizar",
       "Enchant Item?": "Encantar Item?",
       "Enchant item": "Encantar item",
       "Enchantment Not Compatible": "Encantamento Incompatível",
@@ -3182,7 +3145,6 @@
       "Next Character": "Próximo Personagem",
       "Not able to add the same enchantment type to the same item multiple times.": "Não é possível adicionar o mesmo tipo de encantamento ao mesmo item várias vezes.",
       "Previous Character": "Personagem Anterior",
-      "Repair Item": "Reparar Item",
       "Replace Enchantment": "Substituir Encantamento",
       "Replace enchantment?": "Substituir encantamento?",
       "This enchantment cannot be slotted into this piece of gear.": "Esse encantamento não pode ser colocado nesta peça de equipamento.",
@@ -3194,10 +3156,8 @@
     "GuildManagementStorageScreen": {
       "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Move": "Mover",
       "Navigate": "Navegar",
-      "Sort": "Ordenar",
       ") If you discard the item, the contract will be abandoned.": ") Se você descartar o item, o contrato será abandonado.",
       ") You cannot discard this item.": ") Você não pode descartar este item.",
       ") is required for a contract. (": ") é necessário para um contrato. (",
@@ -3211,7 +3171,6 @@
       "Enchantments": "Encantamentos",
       "Offhand": "Arma Secundária",
       "Other": "Outros",
-      "Repair Item": "Reparar Item",
       "Sort: ": "Ordenar: ",
       "This item (": "Este item (",
       "Warning": "Atenção",
@@ -3219,11 +3178,8 @@
       "over-encumbered": "sobrecarregado"
     },
     "NewMissionPartySelectScreen": {
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Navigate": "Navegar",
-      "Sort": "Ordenar",
       "  Location: ": "  Local: ",
       "  Mission Length: ": "  Duração da Missão: ",
       "  Sort: ": "  Ordenar: ",
@@ -3233,7 +3189,6 @@
       " is unavailable for this encounter.": " está indisponível para este encontro.",
       "Allies": "Aliados",
       "Cannot Remove From Team": "Não é Possível Remover do Time",
-      "Confirm Action": "Confirmar Ação",
       "Objectives": "Objetivos",
       "Please remove a party member first before adding anymore": "Remova um membro do grupo antes de adicionar mais",
       "Rewards": "Recompensas",
@@ -3278,15 +3233,11 @@
       "Are you sure you want to apply your upgrades?": "Tem certeza que deseja aplicar os seus aprimoramentos?",
       "Available": "Disponível",
       "Complete": "Concluído",
-      "Confirm Action": "Confirmar Ação",
       "Confirm Upgrades": "Confirmar Aprimoramentos",
       "Only the general tab is available in this build": "Só a aba geral está disponível nesta versão",
-      "Open Upgrades": "Abrir Aprimoramentos",
       "Purchase Upgrade": "Comprar Aprimoramento",
       "Undo Upgrades": "Desfazer Aprimoramentos",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Move": "Mover",
       "Navigate": "Navegar"
     },
@@ -3359,23 +3310,18 @@
       "Missions Completed": "Missões Concluídas",
       "Total Coin Earned ": "Total de Moedas Ganhas ",
       "Total Members": "Total de Membros",
-      "Move Camera": "Mover a Câmera",
-      "Cancel": "Cancelar",
       "Close": "Fechar"
     },
     "PostCombatUI": {
       ". Needs to be lower than ": ". Precisa ser menor que ",
       "Anything we leave behind will be gone, are we sure we don't need it?": "Tudo que deixarmos para trás se perderá. Temos certeza que não precisamos disso?",
-      "Confirm Action": "Confirmar Ação",
       "Important Item": "Item Importante",
       "Leave Loot?": "Deixar o Espólio?",
       "Loot": "Espólio",
       "Loot All": "Pegar Todo o Espólio",
       "You are about to leave behind an important item. We might need that key so make sure to grab it.": "Você está prestes a deixar para trás um item importante. Podemos precisar dessa chave, então garanta pegá-la.",
       "Exit": "Sair",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Move": "Mover"
     },
     "AssignJobPopup": {
@@ -3388,9 +3334,7 @@
       "Current Job: None": "Trabalho Atual: Nenhum",
       "Not Enough Coin": "Moedas Insuficientes",
       "You need ": "Você precisa de ",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Select": "Selecionar",
       "Move": "Mover",
       "Navigate": "Navegar"
@@ -3430,7 +3374,6 @@
       " coins.": " moedas.",
       "Pouch containing ": "Bolsa contendo ",
       "Exit": "Sair",
-      "Cancel": "Cancelar",
       "Close": "Fechar"
     },
     "FactionSelectorScreen": {
@@ -3443,10 +3386,7 @@
       "  Sort: Major Houses Only": "  Ordenar: Só Casas Maiores",
       " days for your emissary to improve relations with ": " dias para o seu emissário melhorar as relações com ",
       "Navigate": "Navegar",
-      "Sort": "Ordenar",
-      "Cancel": "Cancelar",
-      "Close": "Fechar",
-      "Confirm": "Confirmar"
+      "Close": "Fechar"
     },
     "GuildMentorSelectorScreen": {
       "Active, ": "Ativo, ",
@@ -3456,11 +3396,9 @@
       "Unavailable, ": "Indisponível, ",
       "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Select": "Selecionar",
       "Move": "Mover",
-      "Navigate": "Navegar",
-      "Sort": "Ordenar"
+      "Navigate": "Navegar"
     },
     "GuildMemberHistoryScreen": {
       "Active, ": "Ativo, ",
@@ -3471,8 +3409,7 @@
       "Select": "Selecionar",
       "Sort": "Ordenar",
       "Cancel": "Cancelar",
-      "Close": "Fechar",
-      "Confirm": "Confirmar"
+      "Close": "Fechar"
     },
     "CampingScreen": {
       "\" is preventing anyone from being put on lookout for the time being.": "\" está impedindo que alguém fique de vigia por enquanto.",
@@ -3519,7 +3456,6 @@
       "Open Inventory": "Abrir Inventário",
       "Open Item In Combat": "Abrir Item em Combate",
       "Wait": "Esperar",
-      "Confirm": "Confirmar",
       "Move": "Mover"
     },
     "ExpeditionSummaryRosterCard": {
@@ -3552,9 +3488,7 @@
       "Cost Of Provisions ": "Custo das Provisões ",
       "Out Of Space": "Sem Espaço",
       "Remove an item from your inventory before adding anymore items. You've reached your capacity.": "Remova um item do inventário antes de adicionar mais. Você atingiu a sua capacidade.",
-      "Cancel": "Cancelar",
       "Close": "Fechar",
-      "Confirm": "Confirmar",
       "Select": "Selecionar",
       "Move": "Mover",
       "Navigate": "Navegar"
@@ -3566,9 +3500,7 @@
       "Placeholder text, select a bounty to pay off.": "Texto de exemplo, selecione uma recompensa para pagar.",
       "Placeholder text, there are currently no bounties on your head so that's good.": "Texto de exemplo, não há recompensas pela sua cabeça no momento, e isso é bom.",
       "Navigate": "Navegar",
-      "Cancel": "Cancelar",
-      "Close": "Fechar",
-      "Confirm": "Confirmar"
+      "Close": "Fechar"
     },
     "OptionsMenu": {
       "Action Unavailable": "Ação Indisponível",
@@ -3609,7 +3541,6 @@
       " (REVOLTING)": " (EM REVOLTA)",
       "Enter": "Entrar",
       "History": "Histórico",
-      "Cancel": "Cancelar",
       "Some text detailing this history of this place (data needs to be filled out in json and dynamic data appended to the end of it)": "Um texto detalhando a história deste lugar (os dados precisam ser preenchidos no json)",
       "Info": "Informação"
     },
@@ -3640,9 +3571,7 @@
       " cannot be used right now.": " não pode ser usado agora.",
       "(Fortified) Costs 0": "(Fortificado) Custa 0",
       "Can't Use Here": "Não Pode Usar Aqui",
-      "Costs 1": "Custa 1",
-      "Open Inventory": "Abrir Inventário",
-      "Cancel": "Cancelar"
+      "Costs 1": "Custa 1"
     },
     "CivilianUiDetails": {
       "   |   Age: ": "   |   Idade: ",
@@ -3656,8 +3585,6 @@
       "  Sort: High Rep": "  Ordenar: Alta Rep",
       "  Sort: Low Rep": "  Ordenar: Baixa Rep",
       "Navigate": "Navegar",
-      "Sort": "Ordenar",
-      "Cancel": "Cancelar",
       "Close": "Fechar"
     },
     "MissionGearSelectScreen": {
@@ -3668,23 +3595,13 @@
       "QUICK SHOP": "LOJA RÁPIDA",
       "REVISE PARTY": "REVISAR GRUPO"
     },
-    "WorldCanvasUi": {
-      "Open Company Management": "Abrir Gerenciamento da Companhia",
-      "Open History": "Abrir Histórico",
-      "Open Inventory": "Abrir Inventário",
-      "Open Reputation": "Abrir Reputação",
-      "Open Upgrades": "Abrir Aprimoramentos",
-      "Cancel": "Cancelar"
-    },
+    "WorldCanvasUi": {},
     "GuildManagementRoster": {
       "Cancel": "Cancelar",
-      "Confirm": "Confirmar",
-      "Move": "Mover",
-      "Sort": "Ordenar"
+      "Move": "Mover"
     },
     "DeploymentPhaseUI": {
       "Confirm": "Confirmar",
-      "Confirm Action": "Confirmar Ação",
       "Select Character To Move": "Selecione o Personagem para Mover",
       "Start Combat": "Começar o Combate"
     },
@@ -3699,13 +3616,10 @@
       "Rested Bonus\n+25% XP and +5% Power": "Bônus de Descanso\n+25% de XP e +5% de Poder"
     },
     "ReadableScreen": {
-      "Cancel": "Cancelar",
       "Confirm": "Confirmar",
       "Move": "Mover"
     },
-    "TutorialTooltip": {
-      "Cancel": "Cancelar"
-    },
+    "TutorialTooltip": {},
     "CinematicDialogueUiPanel": {},
     "ItemDescriptionDetailsComponent": {},
     "QuestContractButton": {
@@ -3720,19 +3634,14 @@
       "Prologue Chapter": "Capítulo do Prólogo"
     },
     "OptionsChangeMiscScreen": {
-      "Cancel": "Cancelar",
       "Close": "Fechar",
       "Move": "Mover"
     },
     "ScriptedEventTextChoice": {
-      "Action": "Ação",
       "Have your Miner take action": "Faça o seu Mineiro agir",
-      "Locked": "Trancado",
       "Open with a key": "Abrir com uma chave",
       "Option requirement CheckGold ": "Requisito da opção CheckGold ",
       "Spend time to increase your chance of success": "Gaste tempo para aumentar a sua chance de sucesso",
-      "Stat": "Atributo",
-      "Time": "Tempo",
       "Use magic to blast it": "Use magia para detonar",
       "Use tools for a better chance at success": "Use ferramentas para uma chance maior de sucesso"
     },
@@ -3764,26 +3673,15 @@
     "InjuriesManager": {
       " (Left)": " (Esquerdo)",
       " (Right)": " (Direito)",
-      "Ankle": "Tornozelo",
-      "Complication": "Complicação",
-      "Elbow": "Cotovelo",
-      "Forearm": "Antebraço",
-      "Hamstring": "Posterior da Coxa",
-      "Hand": "Mão",
-      "Knee": "Joelho",
-      "Laceration": "Laceração",
       "Left": "Esquerdo",
       "Left Arm ": "Braço Esquerdo ",
       "Left Leg ": "Perna Esquerda ",
       "Right": "Direito",
       "Right Arm ": "Braço Direito ",
-      "Right Leg ": "Perna Direita ",
-      "Shoulder": "Ombro",
-      "Thigh": "Coxa"
+      "Right Leg ": "Perna Direita "
     },
     "SaveLoadListItem": {
       " (Auto Save)": " (Save Automático)",
-      " Emperor - ": " Imperador - ",
       " hrs": " h",
       " mins": " min",
       ")? Warning! This cannot be undone!": ")? Atenção! Isso não pode ser desfeito!",
@@ -3792,12 +3690,10 @@
       "Are you sure you want to delete every save file associated with this campaign (": "Tem certeza que deseja apagar todos os arquivos de save associados a esta campanha (",
       "Are you sure you want to delete this save file?": "Tem certeza que deseja apagar este arquivo de save?",
       "Are you sure you want to overwrite the existing save data? This cannot be undone.": "Tem certeza que deseja sobrescrever os dados de save existentes? Isso não pode ser desfeito.",
-      "Battle-Hardened - ": "Endurecido - ",
       "Confirm Save": "Confirmar Save",
       "Delete": "Apagar",
       "Delete Campaign?": "Apagar Campanha?",
       "Delete File?": "Apagar Arquivo?",
-      "Mercenary - ": "Mercenário - ",
       "Overwrite Save?": "Sobrescrever Save?"
     },
     "CityStageObject": {
@@ -3889,8 +3785,7 @@
       "\nOptional : ": "\nOpcional : "
     },
     "PreCampingScreen": {
-      "Risk is calculated by the following:\n+20% for ever adjacent tiles not visited or scouted\n+10% for other adjacent tiles": "O risco é calculado assim:\n+20% para cada célula adjacente não visitada ou explorada\n+10% para as outras células adjacentes",
-      "Cancel": "Cancelar"
+      "Risk is calculated by the following:\n+20% for ever adjacent tiles not visited or scouted\n+10% for other adjacent tiles": "O risco é calculado assim:\n+20% para cada célula adjacente não visitada ou explorada\n+10% para as outras células adjacentes"
     },
     "WorldMapCanvasUi/<_injuryWarningCheck>d__15": {
       " days": " dias",
@@ -4206,9 +4101,7 @@
       "King's Call": "Chamado do Rei",
       "Sweeping Lightrend": "Varredura Rasga-luz"
     },
-    "CameraAnimManager": {
-      "Move Camera": "Mover a Câmera"
-    },
+    "CameraAnimManager": {},
     "CellGridStateUnitSelected": {
       "Unable to move from injury": "Não é possível se mover por causa do ferimento"
     },
@@ -4260,9 +4153,7 @@
     "CorruptedTile": {
       "Party members that occupy this spot take 15 Morale Damage on their turn. Enemies, however, are healed by 10% of their maximum Health each round. Lasts for 3 Rounds.": "Os membros do grupo que ocuparem esta célula recebem 15 de Dano de Moral no turno deles. Os inimigos, por outro lado, recebem cura de 10% da vida máxima por rodada. Dura 3 Rodadas."
     },
-    "Credits": {
-      "Move Camera": "Mover a Câmera"
-    },
+    "Credits": {},
     "CullingBlades": {
       "Culling Blade": "Lâmina Ceifadora",
       "All adjacent player characters take 150 damage at the end of the round.": "Todos os personagens do jogador adjacentes recebem 150 de dano no fim da rodada."
@@ -4303,7 +4194,6 @@
       "Coin": "Moedas",
       "Renown": "Renome",
       "Next": "Avançar",
-      "Confirm": "Confirmar",
       "Move": "Mover",
       "Navigate": "Navegar"
     },
@@ -4714,15 +4604,13 @@
     },
     "WarObject": {
       " has begun!": " começou!",
-      " has defeated ": " derrotou ",
       " has started a battle in ": " começou uma batalha em ",
       " has won a war": " venceu uma guerra",
       " has won a war!": " venceu uma guerra!",
       " was victorious": " foi vitoriosa",
       " and the war has ended. Sometimes, in the aftermath of these tumultuous times there are extra odd jobs to help restore order and give aid to those in need. It might be worth checking out if we're looking for work.": " e a guerra terminou. Às vezes, na esteira desses tempos conturbados, surgem bicos extras para ajudar a restaurar a ordem e dar auxílio a quem precisa. Vale conferir se estivermos procurando trabalho.",
       "Thank you for bringing this to my attention.": "Obrigado por trazer isso à minha atenção.",
-      "The attacker of this battle caught the other person off guard! They were ambushed!": "O atacante desta batalha pegou o outro de surpresa! Foi uma emboscada!",
-      "War Ended": "Guerra Encerrada"
+      "The attacker of this battle caught the other person off guard! They were ambushed!": "O atacante desta batalha pegou o outro de surpresa! Foi uma emboscada!"
     },
     "Warlord": {
       "Death From Above": "Morte do Alto",
@@ -4733,11 +4621,7 @@
     "WaterTile": {
       "Applies the Wet condition": "Aplica a condição Molhado"
     },
-    "WorldMap": {
-      "Begin Camping": "Começar Acampamento",
-      "Move Camera": "Mover a Câmera",
-      "Open Quest Journal": "Abrir Diário de Missões"
-    },
+    "WorldMap": {},
     "WorldFactionStageObject": {
       " is closed and you are unable to pass.": " está fechada e você não consegue passar.",
       "Before we head anywhere else, we should tend to our business in ": "Antes de irmos para qualquer outro lugar, devemos cuidar dos nossos negócios em ",
