@@ -282,6 +282,7 @@ class Project:
         dry_run: bool = False,
         import_into_en: bool = False,
         allow_removed_files: bool = False,
+        force: bool = False,
     ) -> dict:
         """Synchronize candidate EN source tree against accepted manifest/JSONL."""
         if not self.path(MANIFEST_REL).is_file():
@@ -308,10 +309,10 @@ class Project:
         added_files = sorted(set(cand_sources) - set(old_sources))
         modified_files = sorted(k for k in set(old_sources) & set(cand_sources) if old_sources[k] != cand_sources[k])
 
-        if cand_gen == manifest["generation"] and not import_into_en:
+        if not force and cand_gen == manifest["generation"] and not import_into_en:
             return {"status": "unchanged", "generation": cand_gen, "entries": len(old_rows)}
 
-        if cand_gen == manifest["generation"] and import_into_en and cand_sources == old_sources:
+        if not force and cand_gen == manifest["generation"] and import_into_en and cand_sources == old_sources:
             return {"status": "unchanged", "generation": cand_gen, "entries": len(old_rows)}
 
         # Extract candidate records & fingerprints
@@ -483,7 +484,14 @@ class Project:
             txid = self.store.commit(changes, expected=expected, operation="sync")
         return {"status": "synced", "transaction": txid, **report}
 
-    def sync(self, source_root: Path | None = None, source_file: Path | None = None, *, dry_run: bool = False) -> dict:
+    def sync(
+        self,
+        source_root: Path | None = None,
+        source_file: Path | None = None,
+        *,
+        dry_run: bool = False,
+        force: bool = False,
+    ) -> dict:
         if source_root and source_file:
             raise Invalid("--source-root and --source-file are mutually exclusive")
         if source_file:
@@ -504,13 +512,13 @@ class Project:
                 dst = safe(tmp_root, target_rel)
                 dst.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(sf, dst)
-                return self.sync_candidate(tmp_root, dry_run=dry_run, import_into_en=True)
+                return self.sync_candidate(tmp_root, dry_run=dry_run, import_into_en=True, force=force)
 
         if source_root:
             cand = self._resolve_game_root_candidate(Path(source_root))
-            return self.sync_candidate(cand, dry_run=dry_run, import_into_en=True)
+            return self.sync_candidate(cand, dry_run=dry_run, import_into_en=True, force=force)
 
-        return self.sync_candidate(self.path("EN"), dry_run=dry_run, import_into_en=False)
+        return self.sync_candidate(self.path("EN"), dry_run=dry_run, import_into_en=False, force=force)
 
     def _resolve_game_root_candidate(self, given: Path) -> Path:
         """Accept either game root (containing The Iron Oath_Data) or The Iron Oath_Data directly (when unambiguous)."""
@@ -957,6 +965,7 @@ def build_parser() -> argparse.ArgumentParser:
     sy.add_argument("--source-root", type=Path)
     sy.add_argument("--source-file", type=Path)
     sy.add_argument("--dry-run", action="store_true")
+    sy.add_argument("--force", action="store_true")
 
     us = sub.add_parser("update-sources", help="Import verified original game files from local install or --game-root and sync")
     us.add_argument("--game-root", type=Path)
@@ -1010,7 +1019,7 @@ def main(argv: list[str] | None = None) -> int:
         if cmd == "extract":
             out = proj.extract(batch_size=args.batch_size)
         elif cmd == "sync":
-            out = proj.sync(source_root=args.source_root, source_file=args.source_file, dry_run=args.dry_run)
+            out = proj.sync(source_root=args.source_root, source_file=args.source_file, dry_run=args.dry_run, force=args.force)
         elif cmd in ("update-sources", "update"):
             out = proj.update_sources(game_root=args.game_root, dry_run=args.dry_run)
         elif cmd == "check":

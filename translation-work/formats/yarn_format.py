@@ -46,11 +46,14 @@ _SHORTCUT_RE = re.compile(r"^\[\[([^|\]]+)\|([^\]]+)\]\]$")
 _JUMP_ONLY_RE = re.compile(r"^\[\[[^|\[\]]+\]\]$")
 _ACTION_LABEL_RE = re.compile(r"^(\[Action:)([^\]]+)(\])$")
 _CODE_DIRECTIVE_ONLY_RE = re.compile(r"^\[(?:Locked|Mining|DodgeTrap|Disarm|RequireItem|RemoveRequiredItem|Time):[^\[\]]+\]$")
+_INTERNAL_ID_RE = re.compile(r"^(?:Quest|SE|Bounty|Conv|node)\.[A-Za-z0-9_.]+$")
 
 
 def _translatable(value: str) -> bool:
     s = value.strip()
     if len(s) < 2 or not re.search(r"[A-Za-z]", s) or re.fullmatch(r"[\W_]+", s):
+        return False
+    if _INTERNAL_ID_RE.match(s):
         return False
     return not (s == s.upper() and len(s.split()) == 1)
 

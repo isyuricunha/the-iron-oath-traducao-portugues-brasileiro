@@ -115,6 +115,7 @@ class FormatRoundtripTests(unittest.TestCase):
                 b"---\r\n"
                 b"// designer comment\r\n"
                 b"<<set $EventTitle to \"Roadside Ambush\">>\r\n"
+                b"<<set $QuestName to \"Quest.AtAnyCost\">>\r\n"
                 b"<<ChangeQuestTrackerDisplayString Quest.AtAnyCost>>\r\n"
                 b"{mainChar0}Stay behind my shield!\r\n"
                 b"->[Locked:keyOrTools]Pick the chest\r\n"
@@ -148,6 +149,7 @@ class FormatRoundtripTests(unittest.TestCase):
             }
             rebuilt = YarnFormat.rebuild(root, rel, pt_map).decode("utf-8")
             self.assertIn("// designer comment\r\n", rebuilt)
+            self.assertIn("<<set $QuestName to \"Quest.AtAnyCost\">>", rebuilt)
             self.assertIn("<<ChangeQuestTrackerDisplayString Quest.AtAnyCost>>", rebuilt)
             self.assertIn("->[Locked:keyOrTools]Arrombar o bau", rebuilt)
             self.assertIn("->[Action:Continuar]", rebuilt)

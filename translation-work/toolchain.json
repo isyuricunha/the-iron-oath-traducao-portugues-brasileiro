@@ -72,7 +72,7 @@
     },
     "translation-work/formats/yarn_format.py": {
       "mode": "git-lf",
-      "sha256": "852424d32f81fc9fed5655aae39c17acdfc096d7c41386147ab2f418358f1204"
+      "sha256": "e568db1dadba20151ad176c5c4b8179ddd37133312c6d761056a72727b821df2"
     },
     "translation-work/native.py": {
       "mode": "git-lf",
@@ -104,7 +104,7 @@
     },
     "translation-work/toolkit.py": {
       "mode": "git-lf",
-      "sha256": "24257dc8fda54e6f56518d5fe0c2b8bf07833925c87885b91e629e3117ad93b4"
+      "sha256": "d4b84d5165ff2d474b1f8090ab760b95c129bdce802de256ba4741bcde3158e1"
     },
     "translation-work/vendor/DllStringPatch/DllStringPatch.deps.json": {
       "mode": "binary",
