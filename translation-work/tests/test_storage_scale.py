@@ -14,7 +14,8 @@ if str(TW) not in sys.path:
     sys.path.insert(0, str(TW))
 
 from native import Invalid, sha256_bytes
-from storage import Store, digest, json_bytes, safe
+import storage
+from storage import Store, digest, durable, json_bytes, safe
 from toolkit import DEFAULT_BATCH_SIZE, Project, attach_fingerprints, lines_bytes
 
 
@@ -209,6 +210,40 @@ class StorageAndScaleTests(unittest.TestCase):
                 return
             with self.assertRaises(Invalid):
                 safe(root, "translation-work/escape")
+
+    def test_durable_retries_transient_permission_error_and_cleans_temp_on_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target = root / "bundle.bin"
+            real_replace = os.replace
+            attempts = {"count": 0}
+
+            def flaky_replace(src: Path, dst: Path) -> None:
+                attempts["count"] += 1
+                if attempts["count"] <= 2:
+                    raise PermissionError("transient lock")
+                real_replace(src, dst)
+
+            with (
+                mock.patch.object(storage.os, "name", "nt"),
+                mock.patch.object(storage.os, "replace", side_effect=flaky_replace),
+                mock.patch.object(storage.time, "sleep") as sleep_mock,
+            ):
+                durable(target, b"patched")
+            self.assertEqual(target.read_bytes(), b"patched")
+            self.assertEqual(attempts["count"], 3)
+            self.assertEqual(sleep_mock.call_count, 2)
+            self.assertEqual([p.name for p in root.iterdir()], ["bundle.bin"])
+
+            with (
+                mock.patch.object(storage.os, "name", "nt"),
+                mock.patch.object(storage.os, "replace", side_effect=PermissionError("locked")),
+                mock.patch.object(storage.time, "sleep"),
+            ):
+                with self.assertRaises(PermissionError):
+                    durable(target, b"failed")
+            self.assertEqual([p.name for p in root.iterdir()], ["bundle.bin"])
+            self.assertEqual(target.read_bytes(), b"patched")
 
 
 if __name__ == "__main__":

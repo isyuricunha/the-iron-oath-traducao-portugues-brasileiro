@@ -99,16 +99,38 @@ def digest(path: Path) -> str | None:
     return sha(path.read_bytes()) if path.is_file() else None
 
 
+def _replace_with_retry(src: Path, dst: Path) -> None:
+    if os.name != "nt":
+        os.replace(src, dst)
+        return
+    # Windows AV/indexer scanners can briefly lock a newly closed large file.
+    delays = (0.05, 0.1, 0.2, 0.35, 0.5, 0.75, 1.0, 1.5, 2.0)
+    for delay in delays:
+        try:
+            os.replace(src, dst)
+            return
+        except PermissionError:
+            time.sleep(delay)
+    os.replace(src, dst)
+
+
 def durable(path: Path, data: bytes) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp-" + uuid.uuid4().hex)
     defer = _DEFER_FSYNC.get()
-    with tmp.open("xb") as f:
-        f.write(data)
-        f.flush()
-        if not defer:
-            os.fsync(f.fileno())
-    os.replace(tmp, path)
+    try:
+        with tmp.open("xb") as f:
+            f.write(data)
+            f.flush()
+            if not defer:
+                os.fsync(f.fileno())
+        _replace_with_retry(tmp, path)
+    except BaseException:
+        try:
+            tmp.unlink(missing_ok=True)
+        except OSError:
+            pass
+        raise
     if os.name != "nt" and not defer:
         fd = os.open(path.parent, os.O_RDONLY)
         try:
