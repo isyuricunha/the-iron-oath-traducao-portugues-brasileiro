@@ -30,6 +30,8 @@ _SET_VAR_WHITELIST = {
     "ObjectiveText",
 }
 
+_START_TUTORIAL_RE = re.compile(r'^\s*<<StartTutorial\s+"[^"]+"\s+"([^"]*)"\s*>>\s*$')
+
 _COMMAND_SHAPES = (
     re.compile(r'^(\s*<<set \$(?:QuestName|DungeonLocName) to ")([^"]+)(">>)\s*$'),
     re.compile(r'^(\s*<<UpdateQuestObjectiveText ")([^"]+)(">>)\s*$'),
@@ -115,6 +117,12 @@ class YarnFormat:
                 pass
             elif cls._match_command_shape(content, offset, index, relpath, node, records, spans, chunk_info.get(index)):
                 pass
+            elif (tutorial := _START_TUTORIAL_RE.match(content)) is not None:
+                value = tutorial.group(1)
+                if _translatable(value):
+                    uid = cls._unit_id(relpath, index, 1)
+                    spans[uid] = (offset + tutorial.start(1), offset + tutorial.end(1), True)
+                    records.append(cls._make_record(uid, relpath, index, node, value, "StartTutorial:1", records, chunk_info.get(index)))
             elif stripped.startswith("<<Show"):
                 space = stripped.find(" ", 2)
                 family = stripped[2 : space if space != -1 else len(stripped)].strip("<>")

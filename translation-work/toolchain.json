@@ -72,7 +72,7 @@
     },
     "translation-work/formats/yarn_format.py": {
       "mode": "git-lf",
-      "sha256": "dc4cb32894e6dddab2368fd14f0375e380b1d9447fca3993380aa5886d2396df"
+      "sha256": "852424d32f81fc9fed5655aae39c17acdfc096d7c41386147ab2f418358f1204"
     },
     "translation-work/native.py": {
       "mode": "git-lf",
@@ -84,7 +84,7 @@
     },
     "translation-work/source-policy.json": {
       "mode": "git-lf",
-      "sha256": "35ca0c11d50e9d7312084d3bfd4068131466ddf24134898be271dd27d8b59afe"
+      "sha256": "2002170e96b88b37077c2d01f51c9e7c09edbd77d87cb50cbc5eb169e63c2dcb"
     },
     "translation-work/storage.py": {
       "mode": "git-lf",

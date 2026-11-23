@@ -1288,7 +1288,8 @@
       "Unable to use this item while in combat.",
       "You don't have any gear that can be repaired with scrap at this time.",
       "You don't have enough Scrap to repair all of your equipped gear. Would you like to repair some of your gear with your ",
-      "You don't have enough Scrap to repair all of your gear. Would you like to repair some of your gear with your "
+      "You don't have enough Scrap to repair all of your gear. Would you like to repair some of your gear with your ",
+      "Received "
     ],
     "GuildMemberHistoryScreen": [
       "Active, ",
@@ -1367,7 +1368,10 @@
       "Undo Upgrades"
     ],
     "GuildReputation": [
-      "Great Allies"
+      "Great Allies",
+      "Friendly",
+      "Neutral",
+      "Enemies"
     ],
     "GuildReputationScreen": [
       "  Sort: High Rep",
@@ -1505,7 +1509,11 @@
       "This piece of gear is about to break and will need to be repaired following your current expedition."
     ],
     "Item": [
-      " <color=red>Low demand in region</color>"
+      " <color=red>Low demand in region</color>",
+      "Common",
+      "Rare",
+      "Epic",
+      "Legendary"
     ],
     "ItemDescriptionCondensedHover": [
       "\n\n<color=red>Item is out of energy and is recharging. Will be available for use in ",
@@ -1525,7 +1533,12 @@
       "<sprite name=\"PC-rightClick\"> Apply To Gear",
       "<sprite name=\"XboxOne-rb\"> Apply To Gear",
       "Average Price: ",
-      "Average Selling Price: "
+      "Average Selling Price: ",
+      "Requirements : Weapon",
+      "Requirements : Armor",
+      "Requirements : Offhand",
+      "Requirements : Artifact",
+      "Requirements : None"
     ],
     "ItemTooltip": [
       "Recommended!"
@@ -1850,7 +1863,11 @@
       "Are you sure you want to abandon this quest?",
       "Close",
       "Expires in ",
-      "Sort: "
+      "Sort: ",
+      "Campaign expires in ",
+      "Date acquired : ",
+      "Open Contracts",
+      "Completed"
     ],
     "ReadableScreen": [],
     "RecruitCompactListItem": [
@@ -2034,7 +2051,8 @@
       "Cost Per Month : ",
       "Next Line (Hold to Skip)",
       "Resume Auto Scroll",
-      "Xp Rate"
+      "Xp Rate",
+      "Select"
     ],
     "ShieldWallSoldier": [
       "Shieldwall Defense",
