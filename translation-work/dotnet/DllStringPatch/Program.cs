@@ -444,7 +444,18 @@ internal static class Program
                     {
                         continue;
                     }
-                    if (IsLogicUse(method, instructions, i))
+                    // Animator names belong to each controller. Only report a site
+                    // if the patch would actually rewrite it, including nested types.
+                    var patchesSite = false;
+                    for (var owner = type; owner != null; owner = owner.DeclaringType)
+                    {
+                        if (scopes.Contains(owner.FullName) || scopes.Contains(owner.Name))
+                        {
+                            patchesSite = true;
+                            break;
+                        }
+                    }
+                    if (IsLogicUse(method, instructions, i, patchesSite))
                     {
                         var valueShort = en.Length > 60 ? en[..60] + "..." : en;
                         findings.Add($"{string.Join("+", scopes)}\u0001{valueShort}\u0001{type.Name}::{method.Name}");
@@ -466,14 +477,14 @@ internal static class Program
         return 0;
     }
 
-    private static bool IsLogicUse(MethodDefinition method, IList<Instruction> instructions, int siteIndex)
+    private static bool IsLogicUse(MethodDefinition method, IList<Instruction> instructions, int siteIndex, bool patchesSite)
     {
         // Direct window: the ldstr feeds a comparison within 15 instructions
         // before being consumed as a value (stfld/stsfld/call ends the chain).
         for (var j = siteIndex + 1; j < Math.Min(siteIndex + 15, instructions.Count); j++)
         {
             var instruction = instructions[j];
-            if (instruction.OpCode.Code == Code.Switch || IsLogicCall(instruction.Operand as MethodReference))
+            if (instruction.OpCode.Code == Code.Switch || IsLogicCall(instruction.Operand as MethodReference, patchesSite))
             {
                 return true;
             }
@@ -524,7 +535,7 @@ internal static class Program
             for (var k = j + 1; k < Math.Min(j + 6, instructions.Count); k++)
             {
                 var consumer = instructions[k];
-                if (consumer.OpCode.Code == Code.Switch || IsLogicCall(consumer.Operand as MethodReference))
+                if (consumer.OpCode.Code == Code.Switch || IsLogicCall(consumer.Operand as MethodReference, patchesSite))
                 {
                     return true;
                 }
@@ -538,7 +549,7 @@ internal static class Program
         return false;
     }
 
-    private static bool IsLogicCall(MethodReference? callee)
+    private static bool IsLogicCall(MethodReference? callee, bool patchesSite)
     {
         if (callee == null)
         {
@@ -556,6 +567,12 @@ internal static class Program
             || full.Contains("Dictionary`2::Add") || full.Contains("::Remove("))
         {
             return callee.Parameters.Any(p => p.ParameterType.Name == "String");
+        }
+        // Animator parameters and state names must match the controller asset.
+        if (patchesSite && callee.DeclaringType.FullName == "UnityEngine.Animator"
+            && callee.Parameters.Any(p => p.ParameterType.MetadataType == MetadataType.String))
+        {
+            return true;
         }
         // Object lookup by name: translating the operand breaks the lookup
         // (Find returns null, then the first use of it throws NRE).

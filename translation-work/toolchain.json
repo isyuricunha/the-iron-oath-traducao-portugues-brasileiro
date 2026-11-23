@@ -32,7 +32,7 @@
     },
     "translation-work/dotnet/DllStringPatch/Program.cs": {
       "mode": "git-lf",
-      "sha256": "19d59b85d6f4ac1d6609768fc02d507e478a85d2abbc780ee20f136ad23c23ba"
+      "sha256": "ca6edd55bf7d78c36db988420fe45934574bb23f7af9d06427118b2f8ab6991b"
     },
     "translation-work/engine-shapes.json": {
       "mode": "git-lf",
@@ -84,7 +84,7 @@
     },
     "translation-work/source-policy.json": {
       "mode": "git-lf",
-      "sha256": "f4a192fa0efaed6d3d6a9983ec37750a4b21e4b43712fc9fb92bd42e5adb9680"
+      "sha256": "35ca0c11d50e9d7312084d3bfd4068131466ddf24134898be271dd27d8b59afe"
     },
     "translation-work/storage.py": {
       "mode": "git-lf",
@@ -112,7 +112,7 @@
     },
     "translation-work/vendor/DllStringPatch/DllStringPatch.dll": {
       "mode": "binary",
-      "sha256": "765e47725dac1a0618de25742220455438f8b1dad3b444e2f37d9dd3ccc1611e"
+      "sha256": "7a5fb0a9450034f2b8b70a2387d6764a2db6102beef0140a4111bbc36edb2880"
     },
     "translation-work/vendor/DllStringPatch/DllStringPatch.runtimeconfig.json": {
       "mode": "binary",

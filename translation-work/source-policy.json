@@ -687,9 +687,6 @@
     "CharacterInfoPop": [
       "Description of the trait we want to remove and how long it will take to remove it."
     ],
-    "CharacterPortraitUI": [
-      "Damage"
-    ],
     "CharionBehemoth": [
       "Corrupted Swipe",
       "Fire Claw"
@@ -736,7 +733,6 @@
     "ContractCompletedUI": [
       " coins.",
       "Close",
-      "Exit",
       "Pouch containing "
     ],
     "ContractNegotiationsScreen": [
@@ -1810,7 +1806,6 @@
       ". Needs to be lower than ",
       "Anything we leave behind will be gone, are we sure we don't need it?",
       "Close",
-      "Exit",
       "Important Item",
       "Leave Loot?",
       "Loot",
