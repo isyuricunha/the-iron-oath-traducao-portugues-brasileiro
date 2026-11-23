@@ -1,1 +1,0 @@
-Place any 100x100 PNGs you want loaded as portraits in this folder

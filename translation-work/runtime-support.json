@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "game": "The Iron Oath",
+  "toolchain_sha256": "5fd1abfc2ab4f8fb21868f8f2cba248e1949fe5f62259c4aae0ebbd7920210f4",
+  "expected_handoff_platform": "Ubuntu Server 24.04 LTS ARM64/aarch64",
+  "verified_platforms": {
+    "windows": "verified (Python 3.14 + .NET 8/10 + Mono.Cecil)",
+    "linux_arm64": "pending first Ubuntu ARM64 preflight via doctor / smoke-linux-arm64.py"
+  },
+  "runtime_requirements": {
+    "python": ">=3.10 (stdlib only)",
+    "dotnet": ".NET 8.0+ runtime (required by extract, sync, update-sources, check, build, doctor)",
+    "native_deps": "none (UnityPy and hjson are NOT required at runtime)"
+  },
+  "vendor_bundle": "translation-work/vendor/DllStringPatch/DllStringPatch.dll"
+}

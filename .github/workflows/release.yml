@@ -1,0 +1,63 @@
+name: Release PT-BR
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'PTBR/**'
+      - 'translation-work/build-manifest.json'
+      - '.github/workflows/release.yml'
+      - 'translation-work/release.py'
+  workflow_dispatch:
+
+concurrency:
+  group: the-iron-oath-ptbr-release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Check build presence on push
+        id: precheck
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ ! -e "PTBR" ] && [ ! -e "translation-work/build-manifest.json" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipping release: PTBR/ and translation-work/build-manifest.json are both absent before the first completed build."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.precheck.outputs.skip != 'true'
+        with:
+          python-version: '3.12'
+
+      - name: Validate translation output
+        if: steps.precheck.outputs.skip != 'true'
+        run: python -B translation-work/toolkit.py verify-output > /dev/null
+
+      - name: Package and publish
+        if: steps.precheck.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! python -B translation-work/release.py > release-result.log 2>&1; then
+            cat release-result.log
+            while IFS= read -r line; do
+              line="${line//%/%25}"
+              line="${line//$'\r'/%0D}"
+              printf '::error::%s\n' "$line"
+            done < release-result.log
+            exit 1
+          fi
+          cat release-result.log

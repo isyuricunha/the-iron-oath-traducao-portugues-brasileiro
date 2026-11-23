@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "game": "The Iron Oath",
+  "steam_appid": 699330,
+  "native_version": "1.0.021",
+  "developer": "Curious Panda Games",
+  "publishers": [
+    "Balor Games",
+    "Humble Games"
+  ],
+  "engine": "Unity 2019.4.20f1",
+  "serialized_version": 21,
+  "scripting_backend": "Mono",
+  "data_directory": "The Iron Oath_Data",
+  "strip_diacritics_on_build": true,
+  "font_glyph_audit": {
+    "IronOathText": {
+      "asset": "The Iron Oath_Data/sharedassets1.assets",
+      "path_id": 1119,
+      "glyphs": 88,
+      "pt_accents": 0
+    },
+    "IronOathTextStroke": {
+      "asset": "The Iron Oath_Data/sharedassets1.assets",
+      "path_id": 1120,
+      "glyphs": 88,
+      "pt_accents": 0
+    },
+    "IronOathTextStrokeUnderline": {
+      "asset": "The Iron Oath_Data/sharedassets2.assets",
+      "path_id": 2713,
+      "glyphs": 88,
+      "pt_accents": 0
+    },
+    "IronOathTextAlt": {
+      "asset": "The Iron Oath_Data/resources.assets",
+      "path_id": 1837,
+      "glyphs": 98,
+      "pt_accents": 0
+    },
+    "IronOathTextAltCustom": {
+      "asset": "The Iron Oath_Data/resources.assets",
+      "path_id": 1838,
+      "glyphs": 98,
+      "pt_accents": 0
+    },
+    "dum1 SDF": {
+      "asset": "The Iron Oath_Data/sharedassets2.assets",
+      "path_id": 2714,
+      "glyphs": 97,
+      "pt_accents": 0
+    },
+    "LiberationSans SDF": {
+      "asset": "The Iron Oath_Data/resources.assets",
+      "path_id": 1842,
+      "glyphs": 250,
+      "pt_accents": 24
+    }
+  },
+  "formats": [
+    "hjson",
+    "yarn",
+    "codex_xml",
+    "textasset_xml",
+    "i2_mono",
+    "scene_mono",
+    "dll"
+  ]
+}

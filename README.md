@@ -1,124 +1,121 @@
-# The Iron Oath - Portuguese (Brazil) Translation
+<div align="center">
+  <a href="https://store.steampowered.com/app/699330/The_Iron_Oath/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/699330/header.jpg" alt="Arte oficial de The Iron Oath" width="650"></a>
+  <h1>The Iron Oath</h1>
+  <p><strong>🇧🇷 Tradução para Português Brasileiro</strong></p>
+  <p><em>Entre juramentos de ferro e o avanço do Vazio, toda companhia paga o preço do tempo.</em></p>
+  <p>
+    <a href="https://store.steampowered.com/app/699330/The_Iron_Oath/"><img src="https://img.shields.io/badge/Steam-The_Iron_Oath-1b2838?style=for-the-badge" alt="Steam — página do jogo"></a>
+    <a href="https://www.gog.com/en/game/the_iron_oath"><img src="https://img.shields.io/badge/GOG-The_Iron_Oath-5c2d91?style=for-the-badge" alt="GOG — página do jogo"></a>
+    <a href="https://github.com/isyuricunha/the-iron-oath-traducao-portugues-brasileiro/releases"><img src="https://img.shields.io/badge/GitHub-Releases-3478b8?style=for-the-badge" alt="GitHub — versões da tradução"></a>
+    <a href="https://discord.gg/uFEwSMwUYb"><img src="https://img.shields.io/badge/Discord-Vai_Brasil-5865f2?style=for-the-badge" alt="Discord — comunidade Vai Brasil"></a>
+  </p>
+  <p><a href="https://traducao.yuricunha.com/">Portal de Traduções</a> · <a href="#-instalação">Como instalar</a> · <a href="#-comunidade-e-suporte">Suporte</a></p>
+</div>
 
-Working repository for the fan translation of The Iron Oath (GOG release,
-Curious Panda Games) to Portuguese (Brazil).
+## ⚔️ Um reino à beira do Flagelo
 
-## Source
+No reino de **Caelum**, contratos de sangue mantêm estradas abertas enquanto casas nobres disputam território e antigas ruínas guardam segredos de eras passadas. De décadas em décadas, porém, o **Flagelo** retorna com o despertar das fendas do Vazio, espalhando praga e criaturas por cinco regiões — de **Midland** e **Northern Hold** a **Westmire**, **Redlands** e **Dragate**.
 
-Files copied from a clean GOG install (`D:\GOG Games\The Iron Oath` on the
-`ysinot` machine). Game data uses Unity 2019.4.20f1 with the Mono scripting
-backend. The directory layout mirrors the game install so translated files
-can be dropped back in place.
+Em *The Iron Oath*, você assume o comando de uma companhia mercenária em um RPG tático por turnos de fantasia sombria. Cada expedição cobra seu preço: semanas passam na estrada, recrutas envelhecem, acumulam ferimentos, mudam de lealdade ou tombam em calabouços sem retorno, enquanto decisões diplomáticas e escolhas em eventos moldam a reputação do grupo ao longo dos anos.
 
-## Installation layout
+## 🇧🇷 O que a tradução cobre
 
-Copy the **contents of `PTBR/`** into the game's root directory, merging
-`The Iron Oath_Data/` with the existing folder. Do not copy the `PTBR`
-folder itself or the repository's original `The Iron Oath_Data/` tree.
-For example, `PTBR/The Iron Oath_Data/resources.assets` belongs at
-`<game>/The Iron Oath_Data/resources.assets`.
+O projeto traduz para o português brasileiro os textos voltados ao jogador nos recursos originais do jogo:
 
-PNG artwork is outside the translation scope. It is excluded from both
-repository trees and future generated overlays; the game uses the images
-already present in the player's installation. This overlay requires an
-existing game installation.
+- **Campanha, diálogos e eventos:** prólogo, missões principais e secundárias, escolhas de diálogo, eventos de viagem, conselhos da guilda, rumores e conversas de acampamento.
+- **Códice e lore de Caelum:** registros históricos das eras do mundo, famílias nobres, religiões, bestiário, habilidades inimigas, traços e condições de combate.
+- **Interface, combate e gestão:** menus principais, telas de dificuldade, atributos, habilidades de classe, equipamentos, provisões, cidades, contratos e modificadores de masmorra.
 
-## Contents
+As vozes e efeitos sonoros originais em inglês permanecem inalterados. Para evitar caracteres ausentes ou quadrados brancos nas fontes embutidas do jogo, o pacote final aplica a forma sem acentuação nos textos exibidos na maioria das telas de diálogo e menus.
 
-- `The Iron Oath_Data/StreamingAssets/Data/` - plain HJSON data files read
-  by the game at runtime (dialogue, world sim, dungeons, items, systems,
-  guild, actors). This is the primary translation surface (~119k chars of
-  English prose across ~1.85k strings). Note: the files are HJSON (unquoted
-  keys, trailing commas), not strict JSON.
-- `The Iron Oath_Data/resources.assets` - serialized assets holding UI and
-  tooltip text (~65k chars, TextMeshPro rich text).
-- `The Iron Oath_Data/level*.assets` / `sharedassets*.assets` - scenes and
-  shared assets with baked UI strings.
-- `The Iron Oath_Data/globalgamemanagers*` - engine managers (context only).
-- `The Iron Oath_Data/Managed/Assembly-CSharp*.dll` - game code with ~24k
-  chars of embedded strings (mixed with developer logs).
+## 🌐 Onde encontrar
 
-## Deliberately excluded
+- [GitHub Releases](https://github.com/isyuricunha/the-iron-oath-traducao-portugues-brasileiro/releases): pacote validado (`PTBR.zip`) a cada versão publicada.
+- [Portal Vai Brasil!](https://traducao.yuricunha.com/): catálogo com os demais projetos e atualizações da comunidade.
 
-- `*.resS` / `*.resource` binary blobs (900 MB video/audio bundle included)
-- `StreamingAssets/Data/Worldmap` (map icons, no text)
-- Engine binaries (`UnityPlayer.dll`, `MonoBleedingEdge/`), launcher files
+## 📦 Download
 
-## Localization notes
+Consulte a [página de Releases](https://github.com/isyuricunha/the-iron-oath-traducao-portugues-brasileiro/releases) e baixe **`PTBR.zip`** da versão compatível, quando disponível. Leia as notas da versão antes de instalar: elas informam a edição de referência do jogo, as categorias atualizadas e eventuais observações.
 
-- The shipped `StreamingAssets/Data/Localization/*.properties` files are a
-  dead system: 5 UI keys and a bundled JLokalize editor. Ignore them.
-- The game is officially English-only. UI uses TextMeshPro with pixel
-  bitmap font assets (IronOathText family) that contain no accented Latin
-  glyphs, so the published overlay strips diacritics
-  (`TRANSLATION_STRIP_DIACRITICS=1`). Accented targets remain in
-  `interface-translations.json` and in the checkpoints for a future font
-  replacement or atlas regeneration.
-- Unity assets in this build ship WITHOUT type trees for custom
-  MonoBehaviours and TMP components. The binary handlers parse the raw
-  object data structurally instead: the I2Languages table, display-text
-  sites in scenes, and scoped `ldstr` literals in Assembly-CSharp.dll.
+O pacote é publicado automaticamente somente após uma compilação completa e verificada. Os arquivos **Source code** listados pelo GitHub representam o código-fonte do repositório de trabalho, e não o pacote pronto para extrair no jogo. Verificação estrutural dos arquivos e teste visual em partida são etapas distintas; confira nas notas o alcance de cada atualização.
 
-The files needed to investigate menus are already present at their game
-paths: `resources.assets`, `level0` through `level6`, `sharedassets*.assets`
-and `Managed/Assembly-CSharp.dll`. Keep the repository originals separate
-from the translated `PTBR/` overlay. Do not replace the original
-`resources.assets` with the installed copy, which already contains changes.
+## 🛠️ Instalação
 
-The actual I2 localization table is the `I2Languages` MonoBehaviour in
-`resources.assets` (path ID 1841 in this build): 2,718 terms with an
-English column plus empty Spanish/Description columns. It is translated in
-place (the English values become PT-BR) together with baked scene text
-(TextMeshPro and legacy UGUI sites in `level*`/`sharedassets*`) and
-player-visible `ldstr` literals in `Assembly-CSharp.dll`. The patched
-`Assembly-CSharp.dll` is the only Managed DLL shipped in the overlay, at
-its game path. Hand-written interface translations live in
-`interface-translations.json`.
+Como o jogo recebe a tradução diretamente nos arquivos de dados em `The Iron Oath_Data/`, faça sempre uma cópia de segurança antes de aplicar o pacote.
 
-## Translation toolkit
+1. Feche completamente *The Iron Oath*.
+2. Localize a pasta de instalação do jogo (na Steam: **Propriedades → Arquivos instalados → Explorar**; no GOG: pasta selecionada no GOG GALAXY ou no instalador).
+3. Faça uma cópia de segurança da pasta `The Iron Oath_Data` em um local seguro fora da pasta do jogo.
+4. Extraia o **conteúdo** de **`PTBR.zip`** diretamente dentro da pasta raiz de *The Iron Oath*, aceitando mesclar e substituir os arquivos existentes. A estrutura final deve manter os arquivos dentro de `The Iron Oath_Data/`:
 
-Modular EN -> PT-BR pipeline built from the `original-freeinference.md`
-master prompt. Structure:
+   ```text
+   The Iron Oath/
+   └── The Iron Oath_Data/
+       ├── level0 ... level6
+       ├── resources.assets
+       ├── sharedassets0.assets ... sharedassets6.assets
+       ├── Managed/
+       │   └── Assembly-CSharp.dll
+       └── StreamingAssets/
+           └── Data/
+               ├── Codex/
+               ├── Dialogue/
+               ├── QuestData/
+               └── ... demais subpastas em JSON e Yarn
+   ```
 
-    translate_project.py          CLI entry point
-    localization/                 package (config, provider, pipeline...)
-      formats/hjson_format.py     StreamingAssets HJSON handler
-      formats/textasset_xml_format.py   Unity LocalizationText asset
-      formats/i2_mono_format.py   I2 Languages table (resources.assets)
-      formats/scene_mono_format.py      scene/prefab display-text sites
-      formats/dll_format.py       Assembly-CSharp.dll scoped patch wrapper
-      dotnet/DllStringPatch/      Mono.Cecil patcher (dotnet build)
-    tests/                        fake-provider and round-trip tests
-    interface-translations.json   hand-written interface translations
-    game-profile.json             evidence-backed game profile
-    requirements.txt              hjson, UnityPy
+5. Abra o jogo e confira o menu inicial, uma ficha de personagem e o códice para confirmar o carregamento dos textos em português.
 
-Setup (Linux/macOS or Windows with py -3.11):
+Para atualizar para uma nova versão da tradução, feche o jogo e extraia o novo `PTBR.zip` sobre a pasta de instalação (ou restaure primeiro o backup original se o jogo base também tiver sido atualizado). Para remover a tradução, substitua `The Iron Oath_Data` pela sua cópia de segurança ou use a opção de **Verificar integridade dos arquivos** na Steam / **Verify / Repair** no GOG GALAXY.
 
-    python3 -m pip install -r requirements.txt
-    cp .env.example .env          # add FREEINFERENCE_API_KEY (freeinference.org)
+## ⚙️ Compatibilidade e ajuda
 
-Commands:
+A tradução toma como base os arquivos da versão **1.0.021** de *The Iron Oath* para Windows (PC). Atualizações futuras do jogo podem alterar textos, cenas ou bibliotecas compiladas e exigir uma nova compilação do pacote; evite misturar arquivos de versões diferentes.
 
-    python3 translate_project.py --dry-run        # unit census, no calls
-    python3 translate_project.py --validate-only  # byte round-trip gate
-    python3 translate_project.py --self-test      # offline checks
-    python3 translate_project.py                  # real run (needs API key)
-    python3 translate_project.py --review         # review PTBR output
-    python3 translate_project.py --remake         # full retranslation
+<details>
+<summary>Parte da tela apareceu em inglês ou falhou ao abrir após uma atualização do jogo</summary>
 
-    # Publish the existing translation plus the hand-written interface
-    # map (no provider calls):
-    TRANSLATION_STRIP_DIACRITICS=1 python3 translate_project.py \
-        --apply-map --map-file interface-translations.json
+Verifique nas notas da Release se a versão instalada do jogo corresponde à versão de referência do pacote. Caso o jogo tenha sido atualizado recentemente, restaure os arquivos originais pela loja (Steam ou GOG) até que uma nova versão da tradução seja publicada. Também confira se o conteúdo de `PTBR.zip` foi extraído na pasta raiz do jogo sem criar uma pasta extra (como `PTBR/The Iron Oath_Data/`).
 
-The provider profile is strict: host freeinference.org, model
-deepseek-v4-flash, reasoning effort max by default, streaming on,
-3 concurrent requests of up to 40 units. Accepted checkpoints live in
-`.checkpoints/` (gitignored) and resume by default (`--no-resume` for a
-fresh generation). Output lands in `PTBR/` mirroring the install layout;
-`--input`/`--output` override the roots. Never commits the API key: it
-resolves from the process environment first, then `.env`.
+</details>
 
-The HJSON handler edits values by byte span and is proven lossless on the
-whole corpus (validate-only returns byte-identical rebuilt files).
+<details>
+<summary>Texto cortado, concordância estranha ou palavra em inglês durante a partida</summary>
+
+Abra uma Issue informando o contexto da tela (menu, nome do evento, habilidade ou entrada do códice), a versão do pacote instalada e, se possível, uma captura de tela. Não envie dados pessoais ao anexar registros ou saves de reprodução.
+
+</details>
+
+<details>
+<summary>Os textos aparecem sem acentos nos diálogos e em vários menus</summary>
+
+Esse comportamento é esperado no pacote final: a maioria das fontes embutidas no jogo original contém apenas o conjunto básico de caracteres ASCII sem diacríticos. Para evitar letras faltando ou símbolos substituídos em combate e diálogos, a compilação converte esses caracteres automaticamente para exibição limpa dentro do motor do jogo.
+
+</details>
+
+## 💬 Comunidade e suporte
+
+- [Vai Brasil no Discord](https://discord.gg/uFEwSMwUYb): comunidade para tirar dúvidas, acompanhar atualizações e relatar erros.
+- [Issues do projeto](https://github.com/isyuricunha/the-iron-oath-traducao-portugues-brasileiro/issues): relatos reproduzíveis, sugestões de termos e correções de texto.
+- [Portal de Traduções](https://traducao.yuricunha.com/): outros projetos e novidades.
+
+## 💚 Apoio
+
+Se quiser apoiar voluntariamente a manutenção dos projetos, a chave Pix é **`pix@yuricunha.com`**. O apoio é totalmente opcional.
+
+## 🤝 Créditos
+
+- **Coordenação e manutenção:** [Yuri Cunha](https://github.com/isyuricunha).
+- **Jogo:** desenvolvido por Curious Panda Games; publicação por Balor Games (e Humble Games nos créditos originais de lançamento), conforme a [página oficial na Steam](https://store.steampowered.com/app/699330/The_Iron_Oath/).
+
+Projeto independente de tradução feito por fãs, sem vínculo oficial com os criadores ou publicadoras do jogo.
+
+### 📜 Licença
+
+O conteúdo original criado para este projeto de tradução, dentro dos direitos efetivamente detidos, segue a [CC BY-NC-SA 4.0](./LICENSE): atribua créditos, indique alterações, utilize sem fins comerciais e compartilhe adaptações sob a mesma licença ou outra compatível autorizada. [Resumo oficial da licença](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Há uma [permissão adicional gratuita para integração oficial](./GAME-DEVELOPER-PERMISSION.md), inclusive em edições comerciais do jogo, mediante crédito e apenas para o material com direitos devidamente autorizados. As [diretrizes de contribuição](./CONTRIBUTING.md) exigem consentimento explícito para qualquer envio. Textos, nomes, imagens, marcas e arquivos originais do jogo permanecem sob titularidade de seus respectivos autores e publicadoras.
+
+---
+
+<p align="center"><em>Que nenhum juramento seja esquecido antes do próximo alvorecer em Caelum.</em></p>

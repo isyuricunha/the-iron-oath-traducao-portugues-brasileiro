@@ -1,0 +1,21 @@
+* text=auto eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+LICENSE -text -whitespace
+EN/** -text -whitespace
+PTBR/** -text -whitespace
+translation-work/vendor/** -text -whitespace
+translation-work/tests/fixtures/** -text -whitespace
+*.dll -text
+*.assets -text
+*.resS -text
+*.resource -text
+*.jar -text
+*.png -text

@@ -1,4 +1,0 @@
-Abos,Agon,Armand,Aygil,Arnol,Adalfys,Adelard,Aygulf,Alberd,Alwin,Amallus,Ayman,Bernild,Berenger,Bernart,Beytolf,Breytus,Blaemund,Cassyn,Celdric,Clodmunn,Clodomir,Clothayr,Corbayn,Cyrus,Cyrel,Dalbett,Dagon,Dago,Dalfinn,Dalfos,Draemunn,Doryn,Dorul,Eddon,Edwinn,Ebert,Emrun,Evred,Einard,Edelbert,Edmund,Fredrik,Fulrek,Faros,Gebert,Gerald,Gerryn,Geoffrun,Gerrus,Gilbett,Gozbaer,Grimalt,Gunthyr,Hagol,Harolt,Harren,Hanol,Hilden,Iyan,Irvun,Ivus,Lamberd,Leofrin,Leffric,Lauten,Lotar,Lothric,Leofrey,Markus,Maerven,Manfret,Mikal,Norben,Nedd,Odgar,Owenn,Petric,Phillon,Philmunn,Ranfred,Randul,Rogerd,Rodrin,Rodrik,Rolyn,Rowayn,Reffrey,Richald,Sergus,Sigbert,Sigmund,Sollos,Steffent,Tarron,Theodun,Theodric,Theiran,Tommes,Tomman,Victyr,Vaegor,Walton,Waldenn,Wilfrem,Willem,Wilber
-
-
-

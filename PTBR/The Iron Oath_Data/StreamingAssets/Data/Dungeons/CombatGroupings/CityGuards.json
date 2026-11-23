@@ -1,6 +1,0 @@
-{
-	Name: "CityGuards",
-	Group: ["HouseCommander","HouseBannerman","HouseKnight","HouseKnight","Warhound"],
-	Loot: ["Armor,allArmor","Armor,allArmor","Weapon,allWeapons","Weapon,allWeapons","OffHand,shield","Enchantment,any","Enchantment,any"],
-	Weight: 1,
-}

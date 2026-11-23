@@ -1,26 +1,25 @@
-# Environment
-.env
-
-# Checkpoints, generations and staging
-.checkpoints*/
-.staging-*
-
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
 .ruff_cache/
 
-# Local tooling (never committed)
-# --- overlays and local tooling ---
-/PTBR.prev-*/
-localization/dotnet/DllStringPatch/bin/
-localization/dotnet/DllStringPatch/obj/
+# Local runtime state, recovery journals, and staging (never committed)
+translation-work/.state/
+.staging-*/
+PTBR.zip
 
+# Build artifacts for C# source (runtime bundle lives in translation-work/vendor/DllStringPatch/)
+translation-work/dotnet/DllStringPatch/bin/
+translation-work/dotnet/DllStringPatch/obj/
+translation-work/tests/fixtures/smoke_src/bin/
+translation-work/tests/fixtures/smoke_src/obj/
+
+# Local tooling / environment
+.env
 /tools/
-# Unity blob data (900 MB class, stays out of git)
+
+# Unity binary media blobs and game artwork (stay out of Git)
 *.resS
 *.resource
-
-# Game artwork is outside the translation scope (source and PTBR overlay).
 *.[pP][nN][gG]

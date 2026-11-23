@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "game": "The Iron Oath",
+  "files": {
+    ".gitattributes": {
+      "mode": "git-lf",
+      "sha256": "26772390d846749f6e3353326e442f8026a02e5eb8d1ba68589a6390e1fabda7"
+    },
+    ".github/workflows/contributions.yml": {
+      "mode": "git-lf",
+      "sha256": "384c43e0ecaef8ac8f5ede288125c877dce29d5ae021eb15373561fa7d2fce21"
+    },
+    ".github/workflows/release.yml": {
+      "mode": "git-lf",
+      "sha256": "b64bd8d1c5c52228d88fd72714c9d787f1cfe6efd19360def42851f0ee2b0b35"
+    },
+    "translation-work/consent.py": {
+      "mode": "git-lf",
+      "sha256": "a73e095e3ed47bc601592bf2d62f00a9452a9b364638343c1b6510dbce3997e0"
+    },
+    "translation-work/context.py": {
+      "mode": "git-lf",
+      "sha256": "b34e66fcc9603475ed5e1d0f0c95a9feb10e74ac584046ec5d66ad90bb160244"
+    },
+    "translation-work/doctor.py": {
+      "mode": "git-lf",
+      "sha256": "9171a33bee101fef72a8b546903af5e165f3d47a040fbfc35c9f773f89b084d4"
+    },
+    "translation-work/dotnet/DllStringPatch/DllStringPatch.csproj": {
+      "mode": "git-lf",
+      "sha256": "43d7839edb413e61b23224dccea1b88d242880a42f6b20b10ac1739d9e990724"
+    },
+    "translation-work/dotnet/DllStringPatch/Program.cs": {
+      "mode": "git-lf",
+      "sha256": "19d59b85d6f4ac1d6609768fc02d507e478a85d2abbc780ee20f136ad23c23ba"
+    },
+    "translation-work/engine-shapes.json": {
+      "mode": "git-lf",
+      "sha256": "50893e66f072345aeee87d4b01a007231dc2d5a14039b1e5e30610557a30b122"
+    },
+    "translation-work/formats/__init__.py": {
+      "mode": "git-lf",
+      "sha256": "7a41398e4a07e7b07216042e4b308105848da798294b5d165067df6004100a50"
+    },
+    "translation-work/formats/codex_xml_format.py": {
+      "mode": "git-lf",
+      "sha256": "99cc71e4c51d19ab179be45cc54e07dac109c597ceae087628f593b51b6b47f3"
+    },
+    "translation-work/formats/dll_format.py": {
+      "mode": "git-lf",
+      "sha256": "fe3fa90fa196827b6d8b69469fa74ccad5b48f2162ca57d02f95b1041b740c72"
+    },
+    "translation-work/formats/hjson_format.py": {
+      "mode": "git-lf",
+      "sha256": "bed7910ebda371978f321c39ee6a289d5da6c6abbd2c4a944e58e299a821f7d3"
+    },
+    "translation-work/formats/i2_mono_format.py": {
+      "mode": "git-lf",
+      "sha256": "59d2951acfa469f4e77add4b02375fb80bd520a7fc0caa646a6d5539acead75d"
+    },
+    "translation-work/formats/scene_mono_format.py": {
+      "mode": "git-lf",
+      "sha256": "401e14636a1a02c4d193d1dc9d15ad4617c685338bf3ceb9d07c16550c645f0c"
+    },
+    "translation-work/formats/textasset_xml_format.py": {
+      "mode": "git-lf",
+      "sha256": "6f8b557739f839980236c7e11d2178df0c633481a01e98809cacfa1eaf886a32"
+    },
+    "translation-work/formats/unity_assets.py": {
+      "mode": "git-lf",
+      "sha256": "15217d6f8401b426282208ba4db341f6614cf1c1a10e6d65f5453ce8caf3294f"
+    },
+    "translation-work/formats/yarn_format.py": {
+      "mode": "git-lf",
+      "sha256": "dc4cb32894e6dddab2368fd14f0375e380b1d9447fca3993380aa5886d2396df"
+    },
+    "translation-work/native.py": {
+      "mode": "git-lf",
+      "sha256": "38d88b87081e088574989b519ea18c283a28da039cb87e702c5c24dc989dd851"
+    },
+    "translation-work/release.py": {
+      "mode": "git-lf",
+      "sha256": "81ed6f380409a145413df2825624564f36316234df5223c7d10a812f5630275a"
+    },
+    "translation-work/source-policy.json": {
+      "mode": "git-lf",
+      "sha256": "f4a192fa0efaed6d3d6a9983ec37750a4b21e4b43712fc9fb92bd42e5adb9680"
+    },
+    "translation-work/storage.py": {
+      "mode": "git-lf",
+      "sha256": "4fa8913c4a1225535f25e17f4966241235d031502f9a695544e2b4f20ffb591f"
+    },
+    "translation-work/syntax.py": {
+      "mode": "git-lf",
+      "sha256": "d3daad26de36b1e52167c9170e5a6f9e4c6c485a6fe04f6d4e2380226e14f1e1"
+    },
+    "translation-work/tests/fixtures/smoke-sample.dll": {
+      "mode": "binary",
+      "sha256": "9bf14bc2b78d303fef3e5966a770e3f388ca97845472e749b6c30bcc27981d96"
+    },
+    "translation-work/tests/smoke-linux-arm64.py": {
+      "mode": "git-lf",
+      "sha256": "c14b7ab47b85f1a10769042380eb3390fb364c1a3966cd2a80328b2f3d0aeb58"
+    },
+    "translation-work/toolkit.py": {
+      "mode": "git-lf",
+      "sha256": "24257dc8fda54e6f56518d5fe0c2b8bf07833925c87885b91e629e3117ad93b4"
+    },
+    "translation-work/vendor/DllStringPatch/DllStringPatch.deps.json": {
+      "mode": "binary",
+      "sha256": "7b3b19dd4d1853bc5cf7b739c70e8c9916a974afc8b055d1613f5d842d3ef515"
+    },
+    "translation-work/vendor/DllStringPatch/DllStringPatch.dll": {
+      "mode": "binary",
+      "sha256": "765e47725dac1a0618de25742220455438f8b1dad3b444e2f37d9dd3ccc1611e"
+    },
+    "translation-work/vendor/DllStringPatch/DllStringPatch.runtimeconfig.json": {
+      "mode": "binary",
+      "sha256": "95505548c838f72a6a829fd5332dbc674c715ce26a216e9eb32bec8b5821eae2"
+    },
+    "translation-work/vendor/DllStringPatch/LICENSE.Mono.Cecil.txt": {
+      "mode": "binary",
+      "sha256": "13d58ecbed676511c0c4c4009bff107025e50007ff5e7901dc562700ec62509e"
+    },
+    "translation-work/vendor/DllStringPatch/Mono.Cecil.Mdb.dll": {
+      "mode": "binary",
+      "sha256": "28cb367972bdc1cd43e4006306af2fd96d37f4ed4b239ee90e1dc7237a93af7f"
+    },
+    "translation-work/vendor/DllStringPatch/Mono.Cecil.Pdb.dll": {
+      "mode": "binary",
+      "sha256": "a332332633fbcb20e8d50e49b4db7bd1557721417122cf0c5f4c42f2332391d0"
+    },
+    "translation-work/vendor/DllStringPatch/Mono.Cecil.Rocks.dll": {
+      "mode": "binary",
+      "sha256": "bf992f3dce364ebcc3200fa7832ef07e20b4e2dbc3a8a6213ce44e3d239db984"
+    },
+    "translation-work/vendor/DllStringPatch/Mono.Cecil.dll": {
+      "mode": "binary",
+      "sha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf"
+    }
+  }
+}
