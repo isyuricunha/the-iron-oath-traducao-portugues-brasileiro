@@ -36,7 +36,7 @@
     },
     "translation-work/engine-shapes.json": {
       "mode": "git-lf",
-      "sha256": "50893e66f072345aeee87d4b01a007231dc2d5a14039b1e5e30610557a30b122"
+      "sha256": "92607125cc13619df8c01214add1062e3c8f0553e9be2fdf43ac0fa44ecc8fe3"
     },
     "translation-work/formats/__init__.py": {
       "mode": "git-lf",
@@ -78,6 +78,10 @@
       "mode": "git-lf",
       "sha256": "38d88b87081e088574989b519ea18c283a28da039cb87e702c5c24dc989dd851"
     },
+    "translation-work/patch-prefab-labels.py": {
+      "mode": "git-lf",
+      "sha256": "223b18885a1527191c23498bbab1f0ca393c6fcea2e68c0c6fb04836beb31ecb"
+    },
     "translation-work/release.py": {
       "mode": "git-lf",
       "sha256": "81ed6f380409a145413df2825624564f36316234df5223c7d10a812f5630275a"
@@ -104,7 +108,7 @@
     },
     "translation-work/toolkit.py": {
       "mode": "git-lf",
-      "sha256": "d4b84d5165ff2d474b1f8090ab760b95c129bdce802de256ba4741bcde3158e1"
+      "sha256": "1b24362dd9afc44ee0288a1aae34af7f602c0c263501e35869cdcdd60b228931"
     },
     "translation-work/vendor/DllStringPatch/DllStringPatch.deps.json": {
       "mode": "binary",

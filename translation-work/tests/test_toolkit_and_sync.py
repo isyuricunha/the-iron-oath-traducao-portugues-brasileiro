@@ -105,7 +105,7 @@ def _populate_game_tree(target_root: Path, *, yarn_line2: str = "Guard the gate.
         )
 
 
-def _init_sandbox_project(root: Path) -> Project:
+def _init_sandbox_project(root: Path, *, prefab_bundle: dict | None = None) -> Project:
     tw = root / "translation-work"
     tw.mkdir(parents=True, exist_ok=True)
     shapes = {
@@ -114,6 +114,8 @@ def _init_sandbox_project(root: Path) -> Project:
         "native_version": "1.0.021",
         "strip_diacritics_on_build": True,
     }
+    if prefab_bundle is not None:
+        shapes["prefab_bundle"] = prefab_bundle
     policy = {
         "schema": 1,
         "dll_scope": {"SmokeFixture.SampleDialog": ["Fixture Label"]},
@@ -351,6 +353,86 @@ class ToolkitSyncAndBuildTests(unittest.TestCase):
             with self.assertRaises(Invalid) as inc_src:
                 proj.sync(source_root=broken_src)
             self.assertIn("INCOMPLETE_SOURCE", str(inc_src.exception))
+
+    def test_build_integrates_prefab_labels_without_versioning_original_bundle(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            orig_prefab_bytes = b"UNITY-PREFAB-ORIGINAL"
+            orig_sha = hashlib.sha256(orig_prefab_bytes).hexdigest()
+            prefab_rel = "The Iron Oath_Data/StreamingAssets/prefabs"
+            proj = _init_sandbox_project(
+                root,
+                prefab_bundle={"relpath": prefab_rel, "original_sha256": orig_sha},
+            )
+            proj.extract()
+            manifest, rows, _, _ = proj.load()
+            all_p = root / "all.json"
+            all_p.write_bytes(
+                json_bytes(
+                    {
+                        "generation": manifest["generation"],
+                        "entries": [{"id": r["id"], "PTBR": f"PT {r['EN']}"} for r in rows],
+                    }
+                )
+            )
+            proj.apply(all_p)
+
+            # Fails closed if original bundle cannot be discovered
+            with mock.patch.object(proj, "_discover_installed_game_roots", return_value=[]):
+                with self.assertRaises(Invalid) as miss_err:
+                    proj.build()
+                self.assertIn("MISSING_PREFAB_SOURCE", str(miss_err.exception))
+
+            # Refuses reading original bundle from EN/
+            en_prefab = root / "EN" / prefab_rel
+            en_prefab.parent.mkdir(parents=True, exist_ok=True)
+            en_prefab.write_bytes(orig_prefab_bytes)
+            with self.assertRaises(Invalid) as en_err:
+                proj.build(prefabs_source=en_prefab)
+            self.assertIn("INVALID_PREFAB_SOURCE", str(en_err.exception))
+            en_prefab.unlink()
+
+            # Valid external game installation builds and packages PTBR/.../prefabs
+            ext_game = root / "ExternalInstall"
+            ext_prefab = ext_game / prefab_rel
+            ext_prefab.parent.mkdir(parents=True, exist_ok=True)
+            ext_prefab.write_bytes(orig_prefab_bytes)
+
+            patched_bytes = b"UNITY-PREFAB-PATCHED-PTBR"
+
+            class _FakePatcher:
+                @staticmethod
+                def patch(source: Path, output: Path, *, strip_accents: bool = True, expected_sha256: str | None = None) -> int:
+                    self.assertTrue(strip_accents)
+                    self.assertEqual(expected_sha256, orig_sha)
+                    self.assertEqual(source.resolve(), ext_prefab.resolve())
+                    output.parent.mkdir(parents=True, exist_ok=True)
+                    output.write_bytes(patched_bytes)
+                    return 24
+
+            with mock.patch("toolkit._load_prefab_patcher", return_value=_FakePatcher()):
+                built = proj.build(game_root=ext_game)
+            self.assertEqual(built["status"], "built")
+            self.assertEqual(built["report"]["formats"]["prefab_labels"], {"written": 1, "labels": 24})
+            self.assertFalse(en_prefab.exists())
+            self.assertEqual((root / "PTBR" / prefab_rel).read_bytes(), patched_bytes)
+
+            ver = proj.verify_output()
+            self.assertEqual(ver["status"], "verified")
+            pkg = proj.package()
+            self.assertEqual(pkg["status"], "packaged")
+            with zipfile.ZipFile(root / "PTBR.zip") as zf:
+                self.assertIn(prefab_rel, zf.namelist())
+                self.assertEqual(zf.read(prefab_rel), patched_bytes)
+
+            # Removing prefab from build-manifest outputs fails verify_output
+            bm_path = root / "translation-work" / "build-manifest.json"
+            bm = json.loads(bm_path.read_text(encoding="utf-8"))
+            del bm["outputs"][prefab_rel]
+            bm_path.write_bytes(json_bytes(bm))
+            with self.assertRaises(Invalid) as bm_err:
+                proj.verify_output()
+            self.assertIn("MISSING_PREFAB_OUTPUT", str(bm_err.exception))
 
 
 if __name__ == "__main__":

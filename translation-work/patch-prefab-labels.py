@@ -45,13 +45,22 @@ def text_field(raw: bytes) -> tuple[str, int] | None:
     return raw[start:end].decode("utf-8"), (end + 3) & ~3
 
 
-def patch(source: Path, output: Path) -> int:
-    import UnityPy
+def patch(
+    source: Path,
+    output: Path,
+    *,
+    strip_accents: bool = True,
+    expected_sha256: str | None = ORIGINAL_SHA256,
+) -> int:
+    try:
+        import UnityPy
+    except ImportError as exc:
+        raise RuntimeError("UnityPy is required to patch the prefabs bundle") from exc
 
     if source.resolve() == output.resolve() or output.exists():
         raise ValueError("Output must be a new file distinct from the original")
     original = source.read_bytes()
-    if hashlib.sha256(original).hexdigest() != ORIGINAL_SHA256:
+    if expected_sha256 and hashlib.sha256(original).hexdigest() != expected_sha256:
         raise ValueError("Expected an original Windows 1.0.021 prefabs bundle")
     environment = UnityPy.load(original)
     changes = {}
@@ -64,7 +73,7 @@ def patch(source: Path, output: Path) -> int:
         if field is None or field[0] not in LABELS:
             continue
         label, end = field
-        translated = strip_diacritics(LABELS[label])
+        translated = strip_diacritics(LABELS[label]) if strip_accents else LABELS[label]
         replacement = apply_edits(raw, [(TEXT_OFFSET, end, label)], {label: translated})
         changes[obj.assets_file.name, obj.path_id] = replacement
         obj.set_raw_data(replacement)
@@ -82,6 +91,7 @@ def patch(source: Path, output: Path) -> int:
     for key, obj in verified_objects.items():
         if obj.get_raw_data() != changes.get(key, original_objects[key].get_raw_data()):
             raise ValueError(f"Unexpected prefab object data: {key}")
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_bytes(result)
     return len(changes)
 

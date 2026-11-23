@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "game": "The Iron Oath",
-  "toolchain_sha256": "e5dd00140ee078db6afca68b0408904ec8ddd597a542b2d5b547e85187c26e62",
+  "toolchain_sha256": "22df1baeb76984e02b0d7a7db053311ea8c442c3894e14aa766f7a6b5b50c43f",
   "expected_handoff_platform": "Ubuntu Server 24.04 LTS ARM64/aarch64",
   "verified_platforms": {
     "windows": "verified (Python 3.14 + .NET 8/10 + Mono.Cecil)",

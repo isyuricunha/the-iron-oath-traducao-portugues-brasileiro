@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -55,6 +56,16 @@ STEAM_APPID = "699330"
 
 def lines_bytes(rows: list[dict]) -> bytes:
     return b"".join((json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8") for r in rows)
+
+
+def _load_prefab_patcher():
+    path = WORK_DIR / "patch-prefab-labels.py"
+    require(path.is_file(), "MISSING_DEPENDENCY: missing translation-work/patch-prefab-labels.py")
+    spec = importlib.util.spec_from_file_location("patch_prefab_labels", path)
+    require(spec is not None and spec.loader is not None, "Unable to load patch-prefab-labels.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def record_source_fingerprint(rec: dict) -> str:
@@ -817,7 +828,68 @@ class Project:
         require(rep.is_file(), "NO_DIFF_REPORT: sync-latest.json not found")
         return read_json(rep)
 
-    def build(self, *, keep_diacritics: bool = False) -> dict:
+    def _resolve_prefab_bundle_source(
+        self,
+        shapes: dict,
+        *,
+        game_root: Path | None = None,
+        prefabs_source: Path | None = None,
+    ) -> tuple[str, str, Path] | None:
+        if game_root is not None and prefabs_source is not None:
+            raise Invalid("--game-root and --prefabs-source are mutually exclusive")
+        spec = shapes.get("prefab_bundle")
+        if not spec and game_root is None and prefabs_source is None:
+            return None
+
+        relpath = (spec or {}).get("relpath", "The Iron Oath_Data/StreamingAssets/prefabs")
+        safe(self.root, relpath)
+        require(relpath.startswith("The Iron Oath_Data/"), f"INVALID_PREFAB_RELPATH: {relpath}")
+        expected_sha = (spec or {}).get("original_sha256")
+        repo_en = self.path("EN")
+        repo_ptbr = self.path("PTBR")
+
+        def validate_candidate(cand: Path) -> str:
+            require(cand.is_file(), f"MISSING_PREFAB_SOURCE: {cand} not found")
+            require(
+                not cand.is_relative_to(repo_ptbr) and not cand.is_relative_to(repo_en),
+                f"INVALID_PREFAB_SOURCE: {cand} must reside outside EN/ and PTBR/",
+            )
+            actual_sha = sha256_bytes(cand.read_bytes())
+            if expected_sha:
+                require(
+                    actual_sha == expected_sha,
+                    f"INVALID_PREFAB_SOURCE: {cand} sha256 mismatch (expected {expected_sha[:12]}, got {actual_sha[:12]})",
+                )
+            return actual_sha
+
+        if prefabs_source is not None:
+            cand = Path(prefabs_source).resolve()
+            return relpath, validate_candidate(cand), cand
+
+        if game_root is not None:
+            cand_root = self._resolve_game_root_candidate(Path(game_root))
+            cand = (cand_root / relpath).resolve()
+            return relpath, validate_candidate(cand), cand
+
+        reasons: list[str] = []
+        for cand_root in self._discover_installed_game_roots():
+            cand = (cand_root / relpath).resolve()
+            try:
+                return relpath, validate_candidate(cand), cand
+            except Invalid as exc:
+                reasons.append(str(exc))
+        detail = "; ".join(reasons) if reasons else "no local installation detected"
+        raise Invalid(
+            f"MISSING_PREFAB_SOURCE: original {relpath} not found ({detail}); pass --game-root or --prefabs-source"
+        )
+
+    def build(
+        self,
+        *,
+        keep_diacritics: bool = False,
+        game_root: Path | None = None,
+        prefabs_source: Path | None = None,
+    ) -> dict:
         verify_layered_integrity(self.root)
         manifest, rows, _membership, expected = self.load()
         en_root = self.path("EN")
@@ -833,6 +905,9 @@ class Project:
         shapes = self.shapes()
         strip_accents = False if keep_diacritics else bool(shapes.get("strip_diacritics_on_build", True))
         policy = self.policy()
+        prefab_src = self._resolve_prefab_bundle_source(
+            shapes, game_root=game_root, prefabs_source=prefabs_source
+        )
 
         with self.store.lock():
             with tempfile.TemporaryDirectory(prefix="tio-build-") as tmp:
@@ -840,6 +915,30 @@ class Project:
                 outputs, build_report = native.build_deployable_tree(
                     en_root, rows, staging, policy=policy, strip_accents=strip_accents
                 )
+                prefab_meta = None
+                if prefab_src is not None:
+                    prefab_rel, prefab_src_sha, prefab_path = prefab_src
+                    patcher = _load_prefab_patcher()
+                    prefab_out = staging / prefab_rel
+                    try:
+                        patched_count = patcher.patch(
+                            prefab_path,
+                            prefab_out,
+                            strip_accents=strip_accents,
+                            expected_sha256=prefab_src_sha,
+                        )
+                    except RuntimeError as exc:
+                        raise Invalid(f"MISSING_DEPENDENCY: {exc}") from exc
+                    except (ValueError, OSError) as exc:
+                        raise Invalid(f"PREFAB_PATCH_FAILED: {exc}") from exc
+                    require(prefab_out.is_file(), f"PREFAB_PATCH_FAILED: missing {prefab_rel}")
+                    outputs[prefab_rel] = sha256_bytes(prefab_out.read_bytes())
+                    prefab_meta = {
+                        "relpath": prefab_rel,
+                        "labels": patched_count,
+                        "source_sha256": prefab_src_sha,
+                    }
+                    build_report["formats"]["prefab_labels"] = {"written": 1, "labels": patched_count}
 
                 # Prepare atomic commit over PTBR/ + translation-work/build-manifest.json
                 changes: dict[str, bytes | None] = {}
@@ -871,6 +970,8 @@ class Project:
                     "outputs": outputs,
                     "built_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 }
+                if prefab_meta is not None:
+                    build_manifest["prefab_labels"] = prefab_meta
                 changes[BUILD_REL] = json_bytes(build_manifest)
                 txid = self.store.commit(changes, expected=expected, operation="build")
                 return {
@@ -918,6 +1019,13 @@ class Project:
         require(ptbr_dir.is_dir(), "MISSING_PTBR_DIR: PTBR/ does not exist")
         expected_outputs = receipt.get("outputs", {})
         require(isinstance(expected_outputs, dict) and bool(expected_outputs), "EMPTY_OUTPUT_MANIFEST")
+        prefab_spec = self.shapes().get("prefab_bundle")
+        if prefab_spec:
+            prefab_rel = prefab_spec.get("relpath", "The Iron Oath_Data/StreamingAssets/prefabs")
+            require(
+                prefab_rel in expected_outputs,
+                f"MISSING_PREFAB_OUTPUT: {prefab_rel} missing from build-manifest.json outputs",
+            )
 
         actual_files: set[str] = set()
         for p in sorted(ptbr_dir.rglob("*")):
@@ -991,6 +1099,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     bd = sub.add_parser("build", help="Validate 100%% completion and atomically build deployable PTBR/")
     bd.add_argument("--keep-diacritics", action="store_true")
+    bd.add_argument("--game-root", type=Path)
+    bd.add_argument("--prefabs-source", type=Path)
 
     sub.add_parser("verify-output", help="Fast read-only CI verification of PTBR/ and build-manifest.json")
 
@@ -1033,7 +1143,11 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps(out, ensure_ascii=False, indent=2))
             return 1 if out["rejected"] else 0
         elif cmd == "build":
-            out = proj.build(keep_diacritics=args.keep_diacritics)
+            out = proj.build(
+                keep_diacritics=args.keep_diacritics,
+                game_root=args.game_root,
+                prefabs_source=args.prefabs_source,
+            )
         elif cmd == "verify-output":
             out = proj.verify_output()
         elif cmd == "package":

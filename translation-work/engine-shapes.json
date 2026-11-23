@@ -13,6 +13,10 @@
   "scripting_backend": "Mono",
   "data_directory": "The Iron Oath_Data",
   "strip_diacritics_on_build": true,
+  "prefab_bundle": {
+    "relpath": "The Iron Oath_Data/StreamingAssets/prefabs",
+    "original_sha256": "eccce0f458424b529c5994b76b22ad994fd865c262d005f288b0998453dba0f9"
+  },
   "font_glyph_audit": {
     "IronOathText": {
       "asset": "The Iron Oath_Data/sharedassets1.assets",
