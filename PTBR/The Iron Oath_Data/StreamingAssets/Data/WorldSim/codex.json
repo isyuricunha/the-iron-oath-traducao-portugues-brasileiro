@@ -1,0 +1,336 @@
+{
+	Name: "Spymaster",
+	Description: "Alguem responsavel por todos os assuntos de intriga, subterfugio e segredos. Geralmente trabalha para um nobre ou para altos funcionarios do governo, mas as vezes e contratado por guildas maiores.",
+}
+{
+	Name: "Caelum",
+	Description: "O mundo conhecido, formado por cinco regioes.",
+}
+{
+	Name: "Vanguard",
+	Description: "Uma ordem ancestral encarregada de defender o Reino Mortal contra todos os males nao naturais. Foi estabelecida durante a Era das Trevas por Tian, o primeiro Rei do agora dissolvido Reino de Caelum. A Vanguarda possui guarnicoes por toda Caelum, com sua sede principal no Baluarte do Norte.",
+}
+{
+	Name: "Scourge",
+	Description: "O Flagelo e um evento global que ocorre a cada poucas decadas, no qual o dragao - acompanhado por hordas demoniacas do Vazio - retorna ao Reino Mortal, atacando cidades e infligindo a Praga sobre seus habitantes.",
+}
+{
+	Name: "Overseers",
+	Description: "Os Vigias sao uma organizacao que monitora as atividades dos magos, cacando qualquer um que se envolva com escolas proibidas de magia. Aqueles que conseguem empunhar magia sao uma raridade em Caelum, e as origens dessa afinidade permanecem desconhecidas. Embora a existencia da magia remonte a Era das Trevas, seu uso ainda e malvisto por alguns, que sustentam a crenca de que a humanidade nao deveria maneja-la.",
+}
+{
+	Name: "Circulo do Eter",
+	Description: "O Circulo do Eter - ou Circulo, como muitos o chamam - foi originalmente fundado como um ramo da Ordem de Vanguarda, com o proposito expresso de treinar magos promissores e estudar a propria magia. Embora o Circulo seja hoje uma ordem autonoma, permanece intimamente ligado a Vanguarda e frequentemente trabalha ao seu lado em tempos de crise.",
+}
+{
+	Name: "Ruptura do Vazio",
+	Description: "Uma Ruptura do Vazio ocorre quando uma fenda se abre entre o Reino Mortal e o Vazio, permitindo que demonios e espiritos transitem livremente entre os dois reinos de existencia.",
+}
+{
+	Name: "Void",
+	Description: "Embora o conhecimento sobre o Vazio seja limitado, ele foi descrito como um reino de escuridao infinita que corrompe tudo o que ha em seu interior. Abriga muitas criaturas abjetas nascidas dessa corrupcao, como espiritos, demonios e o proprio dragao.",
+}
+{
+	Name: "Blighted",
+	Description: "Outrora humanos, os Flagelados sao abominacoes agressivas e sem mente que nao se parecem mais com a pessoa que um dia foram. A transformacao e provocada pela Praga do Dragao, infligida sobre os cidadaos durante todo Flagelo.",
+}
+{
+	Name: "Voidspawn",
+	Description: "Criaturas do Vazio, como demonios e espiritos, sao chamadas de Voidspawn.",
+}
+{
+	Name: "Redlands",
+	Description: "A regiao mais ao sul de Caelum e uma vasta paisagem desertica de clima quente. Seus habitantes, os Tyrosene, afirmam ter vindo de uma terra inteiramente diferente ha muitas eras. Embora os Tyrosene nao sigam mais as ideias de uma religiao tradicional, mantem profundo respeito por seus Reis antigos, conhecidos como os Divinos.",
+}
+{
+	Name: "Midland",
+	Description: "Com seu clima ameno e planicies verdejantes, e geralmente considerada a regiao mais agradavel de se habitar. Midland e o berco da Fe Ascendida e o lar de seu influente lider religioso, o Arquipadre. A Capital de Midland, Solace, ja foi a Capital do Reino de Caelum, antes de a Praga Vermelha e as guerras subsequentes provocarem sua dissolucao.",
+}
+{
+	Name: "Dominio Setentrional",
+	Description: "Lar do povo resistente de Nurren, esta regiao mais setentrional enfrenta condicoes de neve quase o ano inteiro. Embora seus antigos ancestrais pertencessem a tribos nomades, a maioria dos Nurren ja adotou ha muito os costumes da civilizacao moderna. Contudo, seus velhos costumes nao foram abandonados por completo, pois ainda mantem devocao a seu criador: Vismyr, o Forjador de Tudo.",
+}
+{
+	Name: "Dragate",
+	Description: "Dragate e, por todos os relatos, uma terra hostil habitada por fanaticos adoradores de dragoes. Pouco se sabe do estado atual da regiao, no entanto, pois o Muro Negro de Dragate, construido ha algum tempo, impede que qualquer um entre ou saia. Dada a natureza inospita da regiao, poucos se arriscam a tentar faze-lo.",
+}
+{
+	Name: "Westmire",
+	Description: "A regiao mais ocidental de Caelum, onde os pantanos sao abundantes. Embora seus habitantes sejam descendentes dos Midden, suas crencas religiosas diferem das de seus pares culturais em Midland, pois preferem os Deuses Ancioes.",
+}
+{
+	Name: "Midden",
+	Description: "Uma cultura de pessoas do Dominio Setentrional.",
+}
+{
+	Name: "Nurren",
+	Description: "Uma cultura de pessoas do Dominio Setentrional.",
+}
+{
+	Name: "Normedic",
+	Description: "Uma cultura de pessoas de Dragate.",
+}
+{
+	Name: "Tyrosene",
+	Description: "Uma cultura de pessoas das Terras Vermelhas.",
+}
+{
+	Name: "Deuses Ancioes",
+	Description: "Segundo a historia oral, a Fe Ancia existia na cultura Midden ja antes da Era Sombria, e se baseia em um panteao de Deuses a quem se credita a criacao da vida como ela e hoje. Embora os seguidores da Fe Ascendida incluam Tian nesse panteao, a nocao e rejeitada pelos praticantes da Fe Ancia.",
+}
+{
+	Name: "Fe Ancia",
+	Description: "Segundo a historia oral, a Fe Ancia existia na cultura Midden ja antes da Era Sombria, e se baseia em um panteao de Deuses a quem se credita a criacao da vida como ela e hoje. Embora os seguidores da Fe Ascendida incluam Tian nesse panteao, a nocao e rejeitada pelos praticantes da Fe Ancia.",
+}
+{
+	Name: "Tian",
+	Description: "Tian, tambem conhecido como o Ascendido, foi um heroi da Era Sombria que se tornou o primeiro Rei do extinto Reino de Caelum e tambem fundou a Ordem de Vanguarda. A Fe Ascendida afirma que ele foi escolhido para essa tarefa pelos proprios Deuses Ancioes e que, ao morrer, ascendeu ao Eter para se juntar ao panteao divino deles.",
+}
+{
+	Name: "Fe Ascendida",
+	Description: "A Fe Ascendida foi fundada sobre as historias escritas por Lorrec perto do fim da Era Sombria. Essas historias narravam a vida de Tian, um grande heroi escolhido pelos Deuses Ancioes para unir a humanidade, o que ele fez como o primeiro Rei de Caelum. Acredita-se que, ao morrer, ele ascendeu ao Eter, juntando-se ao panteao dos Deuses Ancioes.",
+}
+{
+	Name: "Vismyr",
+	Description: "Vismyr, o Tudo-Criador, e um deus nurren no qual eles creem ser o criador de tudo. Impressionado com a forca e a coragem de um antigo chefe nurren chamado Hyldr, Vismyr criou o plano de Hvillholl para que ele e outros grandes guerreiros nurren ali residissem apos a morte. Por causa disso, a morte nao e temida na cultura nurren; em vez disso, e vista como um grande privilegio.",
+}
+{
+	Name: "Allmaker",
+	Description: "Vismyr, o Tudo-Criador, e um deus nurren no qual eles creem ser o criador de tudo. Impressionado com a forca e a coragem de um antigo chefe nurren chamado Hyldr, Vismyr criou o plano de Hvillholl para que ele e outros grandes guerreiros nurren ali residissem apos a morte. Por causa disso, a morte nao e temida na cultura nurren; em vez disso, e vista como um grande privilegio.",
+}
+{
+	Name: "Divines",
+	Description: "Os Divinos sao reis ancestrais que governaram o povo tiroseno. Foram tratados como seres divinos, e seus corpos embalsamados eram visitados por muitos que ofereciam dadivas e sacrificios em troca de protecao. A maioria dos tirosenos de hoje nao acredita nessas coisas, mas mantem profundo respeito pelos Divinos.",
+}
+{
+	Name: "Fe do Dragao",
+	Description: "A Fe do Dragao tem poucos seguidores fora de Dragate, embora ocasionalmente sejam relatados pequenos grupos de cultistas. E vista como uma religiao fanatica, na qual o sacrificio ritual e aparentemente comum, feito na tentativa de apaziguar o dragao e poupar os adoradores do Flagelo.",
+}
+{
+	Name: "Muralha Negra",
+	Description: "A Muralha Negra de Dragate e uma grande muralha impenetravel cuja construcao isolou Dragate do resto de Caelum. O estado atual da regiao e um misterio para todos, e assim tem sido ha decadas.",
+}
+{
+	Name: "Praga Vermelha",
+	Description: "A Praga Vermelha foi um dos primeiros eventos registrados na historia escrita de Caelum, ocorrendo pouco depois do fim da Era Sombria. Foi uma praga mortal que se espalhou por todo Caelum, ceifando vidas de plebeus e nobres igualmente. A morte do Rei de Caelum e a do herdeiro seguinte levaram a dissolucao do Reino, enquanto as Casas Nobres de cada regiao disputavam o poder.",
+}
+{
+	Name: "Cavernas Partidas",
+	Description: "As Cavernas Partidas sao um abismo colossal localizado nas Terras Vermelhas, repleto de quilometros de tuneis inexplorados e labirinticos que se estendem bem para o subsolo. Muitas almas corajosas perderam a vida em busca das supostas riquezas, e as profundezas tornaram-se um cemiterio de aventureiros afoitos.",
+}
+{
+	Name: "Piramide dos Divinos",
+	Description: "Os tirosenos acreditavam originalmente que as Cavernas Partidas eram uma fonte de grande mal. Ao longo de muitos anos, construiram a colossal Piramide dos Divinos, que se erguia sobre o grande abismo - um local de onde seus reis embalsamados poderiam afastar qualquer mal.",
+}
+{
+	Name: "Primeira Era",
+	Description: "Segundo a lenda, a Primeira Era e o periodo em que o mundo e toda a vida foram criados pelos Deuses.",
+}
+{
+	Name: "Era dos Deuses",
+	Description: "Dizia-se que os Deuses viveram ao lado da humanidade durante essa era, mas um evento cataclismico desconhecido trouxe seu fim. Historia e conhecimento se perderam no caos, mergulhando o mundo na Era Sombria.",
+}
+{
+	Name: "Era Sombria",
+	Description: "Pouco se sabe da Era Sombria, apenas historias que foram passadas adiante. Foi durante essa era que Tian - um grande guerreiro, favorecido pelos Deuses - teria liderado a humanidade contra uma grande ameaca e, por fim, unificado Caelum em um unico Reino sob seu reinado. A Era Sombria aproximou-se do fim com o advento da escrita comum, permitindo que os eventos subsequentes da historia de Caelum fossem oficialmente documentados.",
+}
+{
+	Name: "Era Comum",
+	Description: "Com o advento da Escrita Comum, a Era Sombria logo chegou ao fim. Uma nova era de registros se seguiu e marcou o comeco da Era Comum, que se estende do ano 0 ate os dias atuais.",
+}
+{
+	Name: "Escrita Comum",
+	Description: "A Escrita Comum e uma lingua escrita utilizada em toda Caelum. Seu desenvolvimento trouxe uma nova era de registros e impulsionou a humanidade para a Era Comum. Embora outra forma de escrita pareca ter existido durante a Era dos Deuses, provavelmente era uma habilidade que poucos possuiam, e todo o seu conhecimento se perdeu na Era Sombria.",
+}
+{
+	Name: "Aether",
+	Description: "Segundo a lenda, o Eter e o sangue vital do mundo, que flui entre o Reino Mortal e o Vazio, contendo o combustivel de toda criacao e destruicao. Alguns teorizam que ele seja a fonte do poder de um mago.",
+}
+{
+	Name: "Lorrec",
+	Description: "Lorrec foi um escritor famoso que viveu no fim da Era Sombria. Com o advento da Escrita Comum, foi um dos primeiros a adota-la e colocou pela primeira vez em palavras escritas a vida lendaria de Tian. O livro ganhou popularidade em Midland e, poucas decadas apos a morte de Lorrec, tornou-se a base sobre a qual a Fe Ascendida foi fundada. Suas outras obras famosas incluem 'O Panteao' e 'A Guerra dos Deuses'.",
+}
+{
+	Name: "'Move'",
+	Description: "Em seu turno, um personagem pode se mover para qualquer hexagono dentro do alcance.",
+}
+{
+	Name: "'Movement'",
+	Description: "O numero maximo de hexagonos que um personagem pode percorrer em seu turno e ainda realizar uma acao em seguida.",
+}
+{
+	Name: "'Sprint'",
+	Description: "Um personagem pode correr alem de seu alcance normal de movimento, ao custo de encerrar seu turno.",
+}
+{
+	Name: "'Swap'",
+	Description: "Permite que dois personagens aliados troquem de posicao. Nao provoca Ataques de Oportunidade.",
+}
+{
+	Name: "'Wait'",
+	Description: "Adia o turno de um personagem ate o fim da rodada atual.",
+}
+{
+	Name: "'Guard'",
+	Description: "Uma postura defensiva que aumenta a Defesa e a Evasao e encerra o turno do personagem.",
+}
+{
+	Name: "'Defense'",
+	Description: "Reduz o dano recebido em porcentagem.",
+}
+{
+	Name: "'Evasion'",
+	Description: "A chance percentual de bloquear ou esquivar de um ataque recebido.",
+}
+{
+	Name: "'Abilities'",
+	Description: "As habilidades unicas de uma classe que possuem uso limitado.",
+}
+{
+	Name: "'Charges'",
+	Description: "Quantos usos restam para uma habilidade.",
+}
+{
+	Name: "Ataque de Oportunidade",
+	Description: "Um ataque gratuito que e acionado quando um personagem se afasta de um inimigo adjacente.",
+}
+{
+	Name: "'Stun'",
+	Description: "Personagens atordoados nao conseguem agir de forma alguma e perdem o turno.",
+}
+{
+	Name: "'Ataque Basico'",
+	Description: "Causa menos dano que a maioria das habilidades, mas tem uso ilimitado.",
+}
+{
+	Name: "'Linha de Visao'",
+	Description: "Uma checagem de visao para determinar quais alvos sao validos. Inimigos parcialmente visiveis sofrerao 50% de dano de ataques.",
+}
+{
+	Name: "'Spirit'",
+	Description: "Representa o animo de um personagem em relacao a missao atual e influencia o quao fatigado ele ficara depois.",
+}
+{
+	Name: "'Fatigue'",
+	Description: "Dias ate a Saude, o Espirito e as Cargas de Habilidade de um personagem se recuperarem totalmente.",
+}
+{
+	Name: "'Flanked'",
+	Description: "O dano recebido aumenta em 15% quando dois inimigos ocupam hexagonos opostos adjacentes ao alvo.",
+}
+{
+	Name: "'Time'",
+	Description: "Uma medida de quanto tempo passou em uma masmorra, determinada por acoes de exploracao e combate.",
+}
+{
+	Name: "'Scout'",
+	Description: "A acao Explorar revela quaisquer eventos de exploracao nas casas a frente.",
+}
+{
+	Name: "Evento de Exploracao",
+	Description: "Uma casa de masmorra que contem um encontro narrativo ou de combate, representada por um icone unico.",
+}
+{
+	Name: "'Loyalty'",
+	Description: "Uma medida dos sentimentos de um personagem por voce e pela companhia como um todo (de 0 a 100). Personagens leais sao mais faceis de agradar e de manter por meio da negociacao de contratos.",
+}
+{
+	Name: "'Tools'",
+	Description: "Um tipo de provisao que pode ser consumida para aumentar a chance de sucesso de certas acoes, como arrombar fechaduras. Ferramentas tambem podem habilitar acoes que custam menos Tempo e que, de outro modo, nao estariam disponiveis.",
+}
+{
+	Name: "'Provisions'",
+	Description: "Itens que voce pode comprar e levar ao entrar em uma masmorra. Eles tambem podem ser saqueados de inimigos e eventos ao longo do percurso de uma masmorra.",
+}
+{
+	Name: "'Health'",
+	Description: "A vida de um personagem e determinada por seus atributos de Constituicao e Forca. Quando o valor cai para 0, ele entra em Sangramento.",
+}
+{
+	Name: "'Modificadores de Tempo'",
+	Description: "Varios modificadores que alteram a masmorra atual. Novos modificadores sao adicionados sempre que a barra de tempo enche.",
+}
+{
+	Name: "'Camp'",
+	Description: "Descanse em um tile vazio e queime incensos que podem recuperar Vida, Espirito e conceder outros bonus. Acampar so esta disponivel quando a duracao da masmorra e media ou longa.",
+}
+{
+	Name: "'Incenses'",
+	Description: "Uma combinacao de ingredientes imbuidos de propriedades magicas, usada durante o acampamento para conceder varios bonus ao seu grupo. Voce pode desbloquear mais Incensos por meio das Melhorias da Companhia na arvore de 'Alquimia'.",
+}
+{
+	Name: "'Perception'",
+	Description: "Um atributo secundario usado para detectar eventos de exploracao, como armadilhas e segredos que, de outra forma, permaneceriam escondidos de voce. Personagens com Percepcao alta tambem sao mais eficazes que outros quando ficam de vigia durante o acampamento.",
+}
+{
+	Name: "'Traits'",
+	Description: "Os Tracos de Personagem podem ser positivos, negativos ou neutros. Eles modificam uma variedade de coisas, como atributos, funcionalidades de combate e outras estatisticas.",
+}
+{
+	Name: "'Bandage'",
+	Description: "Um item consumivel que pode ser usado tanto em combate quanto fora dele para estabilizar ferimentos e recuperar uma pequena fracao da Vida.",
+}
+{
+	Name: "'Infirmary'",
+	Description: "Um edificio encontrado em qualquer centro urbano, no qual personagens podem ser internados para acelerar a recuperacao de seus ferimentos.",
+}
+{
+	Name: "'Antidote'",
+	Description: "Um item consumivel que pode ser usado em combate para remover quaisquer condicoes negativas e conceder imunidade temporaria.",
+}
+{
+	Name: "'Bleedout'",
+	Description: "Um estado de caido no qual o personagem entra quando sua Vida chega a 0. Nao se aplica a inimigos.",
+}
+{
+	Name: "'Reserva de Sangramento'",
+	Description: "Durante o Sangramento, o valor de Vida de um personagem e substituido por uma Reserva de Sangramento. Essa reserva persiste por toda a masmorra, e o personagem morrera se a reserva chegar a 0.",
+}
+{
+	Name: "'Affinity'",
+	Description: "A Afinidade representa o quao forte e o relacionamento entre dois membros da sua companhia (de 0 a 100). Se um grupo formado tiver Afinidade media alta o suficiente, cada personagem recebera um bonus de Espirito para a missao.",
+}
+{
+	Name: "'Melhorias da Companhia'",
+	Description: "Melhorias que podem ser compradas com Pontos de Renome para aprimorar diversos aspectos da sua companhia.",
+}
+{
+	Name: "'Renown'",
+	Description: "Uma medida do seu nivel geral de fama no mundo. Acumular Renome lhe rendera Pontos de Renome, que podem ser gastos, por sua vez, em Melhorias da Companhia.",
+}
+{
+	Name: "'Reputation'",
+	Description: "Uma medida do seu relacionamento com cada Casa nobre, Cidade e Faccao no mundo. Reputacao alta oferece diversos beneficios, enquanto reputacao baixa pode provocar consequencias.",
+}
+{
+	Name: "'Pontos de Renome'",
+	Description: "Usados para comprar Melhorias da Companhia. Ganhe mais ao completar contratos e acumular Renome.",
+}
+{
+	Name: "'Durability'",
+	Description: "A Durabilidade indica a condicao das suas armas e armaduras. Quando um equipamento chega a 0 de durabilidade, ele se quebra e vira sucata.",
+}
+{
+	Name: "'Scrap'",
+	Description: "Sucata e obtida quando um equipamento perde toda a durabilidade e se quebra. Equipamentos com durabilidade maior rendem mais sucata. Ela pode ser vendida no mercado de uma cidade ou guardada para completar Recompensas especificas.",
+}
+{
+	Name: "'XP'",
+	Description: "Personagens ganham Experiencia (XP) ao vencer batalhas. Com XP suficiente, eles sobem de nivel.",
+}
+{
+	Name: "'Pontos de Atributo'",
+	Description: "Pontos obtidos ao subir de nivel, que podem ser gastos para aumentar o valor de um Atributo especifico.",
+}
+{
+	Name: "'Pontos de Habilidade'",
+	Description: "Pontos obtidos ao subir de nivel, que podem ser gastos para aprimorar ou alterar as habilidades unicas de um personagem.",
+}
+{
+	Name: "'Dexterity'",
+	Description: "Um atributo primario que influencia a Precisao, a Chance de Critico e a Esquiva de um personagem.",
+}
+{
+	Name: "'Wisdom'",
+	Description: "Um atributo primario que influencia o Dano Critico e a Percepcao de um personagem.",
+}

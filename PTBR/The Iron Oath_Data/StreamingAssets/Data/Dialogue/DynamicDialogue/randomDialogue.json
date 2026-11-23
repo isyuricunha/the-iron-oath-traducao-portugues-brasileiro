@@ -1,0 +1,193 @@
+{
+	UniqueName: "AllyDeath0",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	DaysUntilRepeat: "400",
+	ClassReq: ["None", "T:Harsh"],
+	Text: ["1:Pathetic."],
+}
+{
+	UniqueName: "AllyDeath1",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	ClassReq: ["None", "T:Harsh"],
+	DaysUntilRepeat: "400",
+	Text: ["1:Worthless."],
+}
+{
+	UniqueName: "AllyDeath2",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "400",
+	Text: ["1:Seu tolo. Sua incompetencia colocou todos nos em perigo."],
+}
+{
+	UniqueName: "AllyDeath3",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "400",
+	Text: ["1:Eu sempre soube que voce morreria antes de mim."],
+}
+{
+	UniqueName: "AllyDeath4",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "400",
+	Text: ["1:Naaao! [FNameP0]!", "1:Esses malditos vao pagar por isso!"],
+}
+{
+	UniqueName: "AllyDeath5",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "200",
+	Text: ["1:[FNameP0]!"],
+}
+{
+	UniqueName: "AllyDeath6",
+	Catalyst: "ALLY_DIES",
+	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "400",
+	Text: ["1:Sua morte sera vingada!"],
+}
+{
+	UniqueName: "AllyKnockedOut0",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	ClassReq: ["None", "T:!Honorable"],
+	DaysUntilRepeat: "200",
+	Text: ["0:Aghh!","1:Pare de reclamar. Reaja."],
+}
+{
+	UniqueName: "AllyKnockedOut1",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
+	CatalystTriggerTags: ["RANDOM_CHANCE_10_PERCENT"],
+	ClassReq: ["None", "T:Brave"],
+	DaysUntilRepeat: "200",
+	Text: ["1:Eu vou te salvar!"],
+}
+{
+	UniqueName: "AllyKnockedOut2",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET",
+	CatalystTriggerTags: ["RANDOM_CHANCE_5_PERCENT"],
+	ClassReq: ["None"],
+	DaysUntilRepeat: "120",
+	Text: ["0:Nao sei se aguento muito mais pancada dessa."],
+} 
+{
+	UniqueName: "AllyKnockedOut2",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET",
+	CatalystTriggerTags: ["RANDOM_CHANCE_5_PERCENT"],
+	ClassReq: ["None"],
+	DaysUntilRepeat: "120",
+	Text: ["0:Preciso de ajuda."],
+}
+{
+	UniqueName: "AllyKnockedOut2",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET",
+	CatalystTriggerTags: ["RANDOM_CHANCE_10_PERCENT"],
+	ClassReq: ["None"],
+	DaysUntilRepeat: "120",
+	Text: ["0:Aghhh"],
+}
+{
+	UniqueName: "AllyKnockedOut3",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET_AND_RAND_GREAT_FRIENDS_ALLY",
+	ClassReq: ["None", "None"],
+	DaysUntilRepeat: "200",
+	Text: ["1:Cuidado!"],
+}
+{
+	UniqueName: "AllyKnockedOut4",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET_AND_RAND_HATED_ALLY",
+	ClassReq: ["None", "T:Harsh"],
+	DaysUntilRepeat: "200",
+	Text: ["1:Pior que uma crianca."],
+}
+{
+	UniqueName: "AllyKnockedOut5",
+	Catalyst: "ALLY_KNOCKED_OUT",
+	PartyMakeupReq: "TARGET",
+	CatalystTriggerTags: ["RANDOM_CHANCE_10_PERCENT"],
+	ClassReq: ["T:Cowardly"],
+	DaysUntilRepeat: "120",
+	Text: ["0:Nao! Nao quero morrer!"],
+}
+{
+	UniqueName: "TracksCombatComplete",
+	Catalyst: "NONE",
+	PartyMakeupReq: "TARGET",
+	Text: ["0:Acredito que esses rastros sejam daqueles demonios que enfrentamos mais cedo."],
+}
+{
+	UniqueName: "TracksCombatNearby",
+	Catalyst: "NONE",
+	PartyMakeupReq: "TARGET",
+	Text: ["0:Cuidado, vejo rastros. Deve haver inimigos por perto."],
+}
+{
+	UniqueName: "MoraleCheckFail0",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Preciso de mais tempo."],
+}
+{
+	UniqueName: "MoraleCheckFail1",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Nao estou pronto."],
+}
+{
+	UniqueName: "MoraleCheckFail2",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:De-me um momento para me recompor."],
+}
+{
+	UniqueName: "MoraleCheckFail3",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Nao sei se consigo fazer isso."],
+}
+{
+	UniqueName: "MoraleCheckFail4",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Sera que a gente consegue?"],
+}
+{
+	UniqueName: "MoraleCheckFail5",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Nao estou muito confiante nas nossas chances."],
+}
+{
+	UniqueName: "MoraleCheckFail6",
+	Catalyst: "MORALE_CHECK_FAIL",
+	PartyMakeupReq: "TARGET",
+	ClassReq: ["None"],
+	DaysUntilRepeat: "0",
+	Text: ["0:Preciso de mais tempo para bolarmos um plano."],
+}

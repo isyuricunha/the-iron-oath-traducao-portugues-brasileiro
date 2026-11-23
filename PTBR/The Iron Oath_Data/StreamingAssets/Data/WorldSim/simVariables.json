@@ -1,0 +1,162 @@
+{
+	// Battles
+	CostToHireNewSoldier: "2",
+	BattleAttritionHomeTeamPercent: "1",
+	HomeTeamAttritionPerDayRange: ["45","70"], // how many troops are lost per day in battle
+	AwayTeamAttritionPerDayRange: ["50","80"],
+	SimDaysBetweenBattleChecks: "10", // we only sim battles ever X days
+	NextBattleDaysBetween: ["100","110"], // when should the next battle occur in this war
+	LengthOfBattles: ["40", "60"], // if a battle lasts longer than this it will be considered over with no real victor (doesnt count for sieges which can last a lot longer)
+	
+	// Wealth
+	WealthResourceName: "Wealth",
+	WealthResourceMax: "10000",
+	WealthResourceStartingAmount: ["2000","3000"],
+	WealthDesiredMinPercent: "0.3", // they will begin spending less when below this amount
+	WealthLostFromRaid: "20",
+	ResourceLostFromRaid: "40",
+	
+	// Food
+	FoodResourceName: "Food",
+	FoodResourceStartingAmount: "100",
+	FoodResourceSmallCityMax: "200",
+	FoodResourceMediumCityMax: "225",
+	FoodResourceLargeCityMax: "250",
+	FoodResourceDesiredMinPercent: "0.75",
+	FoodResourceTickAmount: "10",
+	FoodResourceOverLimitConvertToWealthAmount: "10",
+	FoodResourceNodesMax: "40",
+	FoodResourceHighValue: "150",
+	FoodResourceMediumValue: "100",
+	FoodResourceLowValue: "20",
+	
+	// Wood
+	WoodResourceName: "Wood",
+	WoodResourceStartingAmount: "50",
+	WoodResourceSmallCityMax: "150",
+	WoodResourceMediumCityMax: "175",
+	WoodResourceLargeCityMax: "200",
+	WoodResourceDesiredMinPercent: "0.75",
+	WoodResourceTickAmount: "5",
+	WoodResourceOverLimitConvertToWealthAmount: "5",
+	WoodResourceNodesMax: "25",
+	WoodResourceHighValue: "100",
+	WoodResourceMediumValue: "70",
+	WoodResourceLowValue: "15",
+	
+	// Stone
+	StoneResourceName: "Stone",
+	StoneResourceStartingAmount: "50",
+	StoneResourceSmallCityMax: "125",
+	StoneResourceMediumCityMax: "140",
+	StoneResourceLargeCityMax: "150",
+	StoneResourceDesiredMinPercent: "0.75",
+	StoneResourceTickAmount: "5",
+	StoneResourceOverLimitConvertToWealthAmount: "5",
+	StoneResourceNodesMax: "40",
+	StoneResourceHighValue: "80",
+	StoneResourceMediumValue: "50",
+	StoneResourceLowValue: "10",
+	
+	// Iron
+	IronResourceName: "Iron",
+	IronResourceStartingAmount: "50",
+	IronResourceSmallCityMax: "100",
+	IronResourceMediumCityMax: "115",
+	IronResourceLargeCityMax: "125",
+	IronResourceDesiredMinPercent: "0.75",
+	IronResourceTickAmount: "5",
+	IronResourceOverLimitConvertToWealthAmount: "5",
+	IronResourceNodesMax: "20",
+	IronResourceHighValue: "75",
+	IronResourceMediumValue: "40",
+	IronResourceLowValue: "10",
+	
+	// Military
+	MilitaryResourceName: "Soldiers",
+	MilitaryResourceStartingAmount: "50",
+	MilitaryResourceSmallCityMax: "80",
+	MilitaryResourceMediumCityMax: "95",
+	MilitaryResourceLargeCityMax: "110",
+	
+	// Misc World Sim
+	DaysBetweenResourceTicks: "5",
+	UnrestToAddToCityForCriticalFoodShortage: "9",
+	UnrestToAddToCityForUnhappyCitizens: "1",
+	DaysToLastToPutDownRevolt: "50",
+	TroopsKilledPerTickDuringRevolt: "20",
+	DefaultRecruitsPerCity: "2",
+	
+	// Guild Variables
+    DefaultDaysToTeachTraits: "45",
+	DefaultDaysToRemoveTraits: "45",
+	
+	// Random House related variables
+	KingdomCouncilPositions: ["Mao do Rei", "Arbitro Sagrado", "Mestre das Sombras", "Supervisor Financeiro"],
+	
+	// House Simming Logic
+	FertilityScorePercentMultiplier: "5",
+	AngerWithLiegeOverForcingReligion: "0.5",
+	PercentAppeasedOverLiegeGivingUpHolding: "15", // 0 - 100
+	
+	// House Succession rules
+	AppointedChooseKidsChance: "80",
+	AppointedChanceBrotherSisterTakeOver: "40",
+	AppointedChanceAuntUncleTakeOver: "5",
+	AppointedChanceCousinTakeOver: "20",
+	AppointedChanceNephewNieceTakeOver: "50",
+	AppointedChanceCouncilMemberTakeOver: "20",
+	AppointedChangeCouncilMemberTakeOverIfNoHoldings: "1",
+	
+	// Religion
+	ReligionChangeOverTimeThroughForce: ["0.005", "0.008", "0.0125", "0.05"], // SupportForReligion = RulersReligion.SupportForReligion * ReligionChangeOverTimeThroughForce (called every 10 days Kingdom.cs)
+	ReligionSupportAfterConversion: "15", // 0 - 100
+	UnrestToAddToCityFromReligiousConversion: "1",
+	
+	// Plots
+    FeeFromFailedPlotToSteal: "30",
+    FeeFromFailedPlotToKidnap: "45",
+    FeeFromFailedPlotToMurder: "60",
+    PlotToStealNoPunishmentOpinion: "50",
+    PlotToStealBanishmentOpinion: "10",
+    PlotToStealImprisonmentOpinion: "-40",
+    PlotToStealExecutionOpinion: "-100",
+    PlotToKidnapBanishmentOpinion: "30",
+    PlotToKidnapImprisonmentOpinion: "-30",
+    PlotToKidnapExecutionOpinion: "-100",
+    PlotToMurderBanishmentOpinion: "60",
+    PlotToMurderImprisonmentOpinion: "-20",
+    PlotToMurderExecutionOpinion: "-100",
+
+    // Claims
+    OpinionOfTargetForForeignWar: "0",
+    OpinionOfTargetForDomesticWar: "0",
+
+    // Wars
+    KingVsKingWarCooldownInYears: "5",
+    BuildupDaysBeforeWarStarts: "120",
+	EconomicWarCooldownInYears: "5",
+	PersonalWarCooldownInYears: "5",
+	ReligiousWarCooldownInYears: "10",
+	TroopsCountLow: "10",
+	ClaimedAreaScoreTotalWorth: "50",
+	WarScoreChangeFromBattle: "10",
+	WarScoreChangePlayerInfluenceSmall: "5",
+	WarScoreChangePlayerInfluenceMedium: "10",
+	WarScoreChangePlayerInfluenceLarge: "20",
+	WarScoreChangePlayerInfluenceEnormous: "35",
+	
+	// Bounties
+	BountyLight: ["50","100"],
+    BountyLightBribeMultiplier: "2",
+    BountyLightMonthsLength: ["3","8"],
+    BountyMedium: ["200","400"],
+    BountyMediumBribeMultiplier: "2",
+    BountyMediumYearsLength: ["2","4"],
+    BountyHigh: ["800","1000"],
+    BountyHighBribeMultiplier: "3",
+    BountyHighYearsLength: ["5","10"],
+    BountySevere: ["1500","2000"],
+    BountySevereBribeMultiplier: "5",
+    BountySevereYearsLength: ["100","100"],
+}

@@ -1,0 +1,206 @@
+{	
+	HouseName: "Frosborn",
+    UniqueId: "frosborn",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+    Banner: "",
+    Colors: [0xb0fdff,0x3e335b],
+	ForcesReligionOnOwnPeople: "true",
+	CodexEntry: "Uma Casa nobre de Caelum",
+}
+{	
+	HouseName: "Harthvalr",
+    UniqueId: "harthvalr",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+    Banner: "",
+    Colors: [0xffc13b,0xb93952],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma Casa nobre de Caelum",
+}
+{	
+	HouseName: "Jorsten",
+    UniqueId: "jorsten",
+	Description: "",
+	DefaultCity: "jorhurst,raynelheim,haestenhold,wealden",
+	Religion: "",
+	Banner: "",
+	Colors: [0xc71437,0x1b1d22],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "A nobre Casa de Jorsten comecou com Jorun Jorsten, um cacique nurren durante a Era das Trevas. Os Jorsten governaram o Dominio do Norte por seculos como vassalos do Reino de Caelum, mas com o tempo se rebelaram e conquistaram a independencia do Dominio do Norte.",	
+}
+{	
+	HouseName: "Stoneshield",
+    UniqueId: "stoneshield",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+    Banner: "",
+    Colors: [0xf1f6f7,0x15314f],
+	ForcesReligionOnOwnPeople: "true" ,
+	CodexEntry: "Uma Casa nobre de Caelum",	
+}
+{	
+	HouseName: "Felsgrave",
+    UniqueId: "felsgrave",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+    Banner: "",
+    Colors: [0xf1f6f7,0x268265],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma Casa nobre de Caelum",
+}
+{	
+	HouseName: "Kathir",
+    UniqueId: "kathir",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+    Banner: "",
+    Colors: [0xf1f6f7,0x118ab0],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma Casa nobre de Caelum",
+}
+{	
+	HouseName: "Athira",
+    UniqueId: "athira",
+	Description: "",
+	DefaultCity: "athirton,graveswood,shepfeld",
+	Religion: "",
+    Banner: "",
+    Colors: [0xf1e2ed,0x472b92],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "A Casa Athira e uma familia orgulhosa com raizes antigas em Caelum, que supostamente remontam ao tempo de Tian na Era Sombria. Sua devocao firme aos Deuses Ancioes levou a Guerra Midland-Westmire, e eles ainda guardam rancor da Casa Talyron pela derrota.",
+}
+{	
+	HouseName: "Turren",
+    UniqueId: "turren",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+    Banner: "",
+    Colors: [0x38bba1,0x572331],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",	
+}
+{	
+	HouseName: "Oaken",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Talyron",
+	UniqueId: "talyron",
+	Description: "",
+	DefaultCity: "solace,turrenhold,andilon,terham",	
+	Religion: "",
+	Banner: "",
+	Colors: [0xe7964b,0x76132a],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "A Casa Talyron ascendeu ao poder em algum momento durante a Era Sombria, quando reinava sobre o agora extinto Reino de Caelum. Foi derrubada no ano 50, mas devido aos eventos que se seguiram - e aos efeitos da Peste Vermelha - Nerris Talyron conseguiu recuperar seu assento em Solace e governar as Terras Centrais.",
+}
+{	
+	HouseName: "Nerathen",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Mallus",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Ironcaste",
+	Description: "",
+	DefaultCity: "",	
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Sandfury",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Volaros",
+	UniqueId: "volaros",
+	Description: "",
+	DefaultCity: "tyr,eyros,kashaat,talayse",
+	Religion: "",	
+	Banner: "",
+	Colors: [0xe7964b,0x42a0c0],
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "A Nobre Casa de Volaros comecou com Nasos Volaros, cujas acoes deflagraram a Reconquista, uma revolta que arrancou o controle das Terras Vermelhas das maos de invasores estrangeiros e o devolveu as maos tyrosenes. No ano 58, ele foi escolhido por unanimidade por seus pares para governar a regiao.",
+}
+{	
+	HouseName: "Grym",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Durnwal",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Rothwyke",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Gallaster",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Zahiir",
+	Description: "",
+	DefaultCity: "korunhal",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
+{	
+	HouseName: "Marconis",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",	
+}
+{	
+	HouseName: "Raynel",
+	Description: "",
+	DefaultCity: "",
+	Religion: "",	
+	ForcesReligionOnOwnPeople: "true", 
+	CodexEntry: "Uma casa nobre de Caelum",
+}
